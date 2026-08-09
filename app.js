@@ -17,6 +17,7 @@
   var playerReady = false;
   var watchTimer = null;
   var targetEnd = null;
+  var startedAt = 0;
   var wantPlay = null;
 
   function $(id) { return document.getElementById(id); }
@@ -229,11 +230,34 @@
     });
   }
 
+  function toggleList(open) {
+    var box = $('sentence-list');
+    var on = (open === undefined) ? (box.style.display === 'none') : open;
+    box.style.display = on ? 'block' : 'none';
+    $('list-btn').textContent = on ? '문장 목록 닫기' : '문장 목록 (' + listLength() + '개)';
+    if (on) scrollListTo(current);
+  }
+
+  function listLength() {
+    return ((video && video.sentences) || []).length;
+  }
+
+  function scrollListTo(idx) {
+    var box = $('sentence-list');
+    var item = $('sentence-' + idx);
+    if (!item || box.style.display === 'none') return;
+    var top = item.offsetTop - box.offsetTop;
+    if (top < box.scrollTop || top > box.scrollTop + box.clientHeight - item.offsetHeight) {
+      box.scrollTop = Math.max(0, top - 20);
+    }
+  }
+
   function drawSentences() {
     var box = $('sentence-list');
     clear(box);
+    box.style.display = 'none';
     var list = video.sentences || [];
-    $('sentence-count').textContent = '문장 ' + list.length + '개 — 눌러서 들어 보세요';
+    $('list-btn').textContent = '문장 목록 (' + list.length + '개)';
     var frag = document.createDocumentFragment();
     for (var i = 0; i < list.length; i++) {
       (function (s, idx) {
@@ -241,7 +265,7 @@
         b.id = 'sentence-' + idx;
         b.appendChild(el('span', 'no', (idx + 1) + '.'));
         b.appendChild(document.createTextNode(s.text));
-        b.onclick = function () { select(idx, true); };
+        b.onclick = function () { toggleList(false); select(idx, true); };
         var li = document.createElement('li');
         li.appendChild(b);
         frag.appendChild(li);
@@ -260,10 +284,9 @@
     if (old) old.className = 'sentence';
     current = idx;
     var now = $('sentence-' + current);
-    if (now) {
-      now.className = 'sentence playing';
-      if (now.scrollIntoView) now.scrollIntoView({ block: 'nearest' });
-    }
+    if (now) now.className = 'sentence playing';
+    scrollListTo(current);
+    $('position').textContent = (idx + 1) + ' / ' + list.length;
 
     var s = list[idx];
     var box = $('now');
@@ -334,7 +357,12 @@
             say('준비됐습니다. 문장을 눌러 보세요.');
           },
           onStateChange: function (e) {
-            if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) stopWatch();
+            if (e.data === YT.PlayerState.ENDED) {
+              stopWatch();
+            } else if (e.data === YT.PlayerState.PAUSED) {
+              // 자리를 옮기는 순간에도 잠깐 멈춤으로 잡힌다. 그건 사용자가 멈춘 게 아니다.
+              if ((new Date()).getTime() - startedAt > 800) stopWatch();
+            }
           },
           onError: function () {
             stopWatch();
@@ -359,11 +387,29 @@
     var s = list[current];
     var from = Math.max(0, s.start - LEAD_IN);
     stopWatch();
-    player.setPlaybackRate(slow ? 0.75 : 1);
-    player.seekTo(from, true);
+    startedAt = (new Date()).getTime();
+
+    // 순서가 중요하다. 모바일 사파리는 화면을 누른 그 흐름에서 재생을 시작해야 받아 준다.
+    // 자리를 먼저 옮기면 재생 명령이 씹혀서 "위치만 가고 안 들리는" 상태가 된다.
     player.playVideo();
+    player.seekTo(from, true);
+    player.setPlaybackRate(slow ? 0.75 : 1);
+
     startWatch(s.end);
+    nudge(0);
     say('재생 중 — ' + (current + 1) + '번째 문장' + (slow ? ' (0.75배속)' : ''));
+  }
+
+  function nudge(tries) {
+    if (tries > 6) return;
+    setTimeout(function () {
+      if (!watchTimer || !player || typeof player.getPlayerState !== 'function') return;
+      var st = player.getPlayerState();
+      if (st !== YT.PlayerState.PLAYING && st !== YT.PlayerState.BUFFERING) {
+        player.playVideo();
+        nudge(tries + 1);
+      }
+    }, 250);
   }
 
   function toggleSlow() {
@@ -389,6 +435,7 @@
     $('prev-btn').onclick = function () { select(current - 1, true); };
     $('next-btn').onclick = function () { select(current + 1, true); };
     $('change-profile').onclick = function () { go('#/'); };
+    $('list-btn').onclick = function () { toggleList(); };
 
     if (window.addEventListener) window.addEventListener('hashchange', route, false);
     route();

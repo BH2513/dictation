@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from add_video import (extract_video_id, parse_vtt, words_from_cues,
                        units_from_words, split_sentences, to_sentences,
-                       attach_korean)
+                       attach_korean, pick_korean, rate_limited)
 
 FAILED = []
 
@@ -202,6 +202,26 @@ s = attach_korean(sentences_of(MANUAL), [])
 check("ko 필드를 넣지 않음", "ko" in s[0], False)
 check("recording 은 항상 null", [x["recording"] for x in s], [None, None, None])
 check("i 는 0부터 차례로", [x["i"] for x in s], [0, 1, 2])
+
+
+# ---------------------------------------------------------------- 한국어 자막 고르기
+
+REAL_KO = [{"ext": "vtt", "url": "https://www.youtube.com/api/timedtext?lang=ko&v=x"}]
+TRANSLATED_KO = [{"ext": "vtt", "url": "https://www.youtube.com/api/timedtext?lang=en&tlang=ko&v=x"}]
+
+print("\n한국어 자막 고르기")
+check("직접 단 한국어가 있으면 그것",
+      pick_korean({"ko": REAL_KO}, {"ko": TRANSLATED_KO}), ("ko", False))
+check("직접 단 것이 없고 자동자막이 원문이면 사용",
+      pick_korean({}, {"ko": REAL_KO}), ("ko", True))
+check("자동자막이 영어를 기계번역한 것이면 쓰지 않음",
+      pick_korean({}, {"ko": TRANSLATED_KO}), (None, False))
+check("한국어가 아예 없을 때", pick_korean({}, {"en": REAL_KO}), (None, False))
+
+
+print("\n유튜브가 요청을 막았을 때 알아보기")
+check("429", rate_limited("ERROR: HTTP Error 429: Too Many Requests"), True)
+check("다른 오류", rate_limited("ERROR: Video unavailable"), False)
 
 
 # ---------------------------------------------------------------- 결과

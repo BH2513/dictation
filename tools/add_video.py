@@ -248,17 +248,55 @@ def attach_korean(sentences, ko_cues, min_overlap=0.4):
 
 # ---------------------------------------------------------------- yt-dlp
 
+# 유튜브가 짧은 시간에 여러 번 부르면 막는다(429). 요청 사이를 띄우고 재시도한다.
+GENTLE = ["--retries", "10", "--sleep-requests", "1", "--no-warnings"]
+
+
 def run(cmd, **kw):
     return subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", **kw)
 
 
+def rate_limited(err):
+    return "429" in (err or "") or "Too Many Requests" in (err or "")
+
+
+def busy_message():
+    return ("유튜브가 잠시 요청을 막았습니다.\n"
+            "5~10분 뒤에 같은 명령을 다시 실행해 주세요. 기다리는 것 말고 할 일은 없습니다.")
+
+
 def ytdlp_info(url):
     say("영상 정보를 확인하는 중…")
-    r = run(["yt-dlp", "-J", "--skip-download", "--no-warnings", url])
+    r = run(["yt-dlp", "-J", "--skip-download"] + GENTLE + [url])
     if r.returncode != 0:
+        if rate_limited(r.stderr):
+            die(busy_message())
         die("유튜브에서 영상 정보를 가져오지 못했습니다.\n"
             "인터넷 연결과 주소를 확인해 주세요.\n\n" + (r.stderr or "").strip()[:800])
     return json.loads(r.stdout)
+
+
+def is_translated(entries):
+    """유튜브는 자동자막을 100개 언어로 기계번역해서 함께 내놓는다.
+
+    그 번역본은 원문이 아니라 자동자막을 한 번 더 기계에 넣은 것이라
+    받아쓰기 교재로 쓸 수 없다. 주소에 tlang 이 붙어 있으면 번역본이다.
+    """
+    for e in entries or []:
+        if "tlang=" in (e.get("url") or ""):
+            return True
+    return False
+
+
+def pick_korean(manual, auto):
+    """직접 단 한국어를 우선. 자동자막은 기계번역본이면 쓰지 않는다."""
+    code = pick_lang(manual, ["ko"])
+    if code:
+        return code, False
+    code = pick_lang(auto, ["ko"])
+    if code and not is_translated((auto or {}).get(code)):
+        return code, True
+    return None, False
 
 
 def pick_lang(table, prefixes):
@@ -275,12 +313,17 @@ def pick_lang(table, prefixes):
     return None
 
 
-def download_subs(url, lang, auto, tmpdir):
+def download_subs(url, lang, auto, tmpdir, required=True):
+    """자막 하나를 받아 문자열로 돌려준다. required=False 면 실패해도 None."""
     flag = "--write-auto-subs" if auto else "--write-subs"
     r = run(["yt-dlp", "--skip-download", flag, "--sub-langs", lang,
-             "--sub-format", "vtt/best", "--convert-subs", "vtt", "--no-warnings",
-             "-o", os.path.join(tmpdir, "%(id)s"), url])
+             "--sub-format", "vtt/best", "--convert-subs", "vtt"] + GENTLE +
+            ["-o", os.path.join(tmpdir, "%(id)s"), url])
     if r.returncode != 0:
+        if not required:
+            return None
+        if rate_limited(r.stderr):
+            die(busy_message())
         die("자막을 내려받지 못했습니다.\n\n" + (r.stderr or "").strip()[:800])
     files = [f for f in os.listdir(tmpdir) if f.endswith(".vtt")]
     if not files:
@@ -403,11 +446,14 @@ def main():
             die("자막 파일을 받지 못했습니다.")
 
         ko_raw = None
-        ko = pick_lang(manual, ["ko"]) or pick_lang(auto, ["ko"])
+        ko, ko_auto = pick_korean(manual, auto)
         if ko:
-            ko_auto = ko not in manual
+            say("한국어 자막도 받는 중…")
             with tempfile.TemporaryDirectory() as tmp:
-                ko_raw = download_subs("https://www.youtube.com/watch?v=" + video_id, ko, ko_auto, tmp)
+                ko_raw = download_subs("https://www.youtube.com/watch?v=" + video_id,
+                                       ko, ko_auto, tmp, required=False)
+            if ko_raw is None:
+                say("한국어 자막은 받지 못했습니다. 영어만으로 등록합니다.")
 
     cues = parse_vtt(en_raw)
     if not cues:

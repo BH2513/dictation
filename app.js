@@ -2,6 +2,7 @@
    빌드 단계가 없으므로 구형 사파리에서 그대로 돌아가야 한다. var 와 함수 선언으로 쓴다. */
 (function () {
   var LEAD_IN = 0.3;        // SPEC 4-1: 시작점 여유 (초)
+  var TAIL = 0.3;           // 끝 여유. 마지막 단어가 잘리지 않게 (초)
   var TICK_MS = 40;         // 끝 지점 감시 주기
   var STOP_MARGIN = 0.04;   // 감시 주기로 인한 정지 지연 보정
 
@@ -313,12 +314,24 @@
   function startWatch(end) {
     stopWatch();
     targetEnd = end;
+    var armed = false;
+    var waited = 0;
     watchTimer = setInterval(function () {
       if (!player || typeof player.getCurrentTime !== 'function') return;
-      if (player.getCurrentTime() >= targetEnd - STOP_MARGIN) {
+      var t = player.getCurrentTime();
+
+      // 자리를 옮기라고 했어도 반영되기까지 시간이 걸린다. 그 사이 재생 위치는
+      // 아직 앞 문장 끝에 머물러 있어서, 바로 끝 판정을 하면 누르자마자 멈춘다.
+      // 실제로 구간 안으로 들어온 것을 본 뒤에 감시를 시작한다.
+      if (!armed) {
+        waited += TICK_MS;
+        if (t < targetEnd - STOP_MARGIN || waited > 3000) armed = true;
+        return;
+      }
+
+      if (t >= targetEnd - STOP_MARGIN) {
         stopWatch();
         player.pauseVideo();
-        player.seekTo(targetEnd, true);
         say('들려드렸습니다. 다시 듣거나 다음 문장으로 넘어가세요.');
       }
     }, TICK_MS);
@@ -344,10 +357,13 @@
         height: '100%',
         videoId: videoId,
         playerVars: {
-          playsinline: 1,   // 아이폰에서 전체화면으로 튀지 않게
+          playsinline: 1,     // 아이폰에서 전체화면으로 튀지 않게
           rel: 0,
           modestbranding: 1,
-          controls: 1
+          controls: 0,        // 재생 눈금과 시간 표시를 감춘다. 조작은 아래 버튼으로 한다
+          disablekb: 1,
+          fs: 0,
+          iv_load_policy: 3
         },
         events: {
           onReady: function () {
@@ -395,7 +411,7 @@
     player.seekTo(from, true);
     player.setPlaybackRate(slow ? 0.75 : 1);
 
-    startWatch(s.end);
+    startWatch(s.end + TAIL);
     nudge(0);
     say('재생 중 — ' + (current + 1) + '번째 문장' + (slow ? ' (0.75배속)' : ''));
   }

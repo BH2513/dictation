@@ -20,6 +20,7 @@ from datetime import date
 
 # SPEC 8 문장 분할 규칙의 기준값
 GAP_SEC = 0.8       # 줄 간 무음이 이 이상이면 경계
+WORD_SEC = 0.28     # 시각이 없는 단어 하나가 차지한다고 보는 시간
 MAX_DUR = 15.0      # 한 문장 최대 길이(초)
 MAX_WORDS = 25      # 한 문장 최대 단어 수
 
@@ -113,9 +114,12 @@ def words_from_cues(cues):
     """자동생성 자막의 단어별 시각을 뽑는다.
 
     유튜브 자동자막은 앞 큐에 나온 줄을 다음 큐 앞부분에 다시 실어 보낸다.
-    시간표시가 붙은 단어는 언제나 새 단어지만, 큐 앞부분의 시간표시 없는 단어는
-    이미 나온 것일 수도 있고 새 줄의 첫 단어일 수도 있다.
-    그래서 이미 내보낸 단어들의 끝과 겹치는 만큼만 잘라내고 나머지를 취한다.
+    이미 내보낸 단어들의 끝과 겹치는 만큼을 잘라내고 나머지를 새 단어로 본다.
+
+    그 새 단어들에는 시각 표시가 붙어 있지 않다. 여기에 큐가 뜬 시각을 주면 안 된다 —
+    자막 한 줄은 그 줄이 다 말해진 뒤에 화면에 뜨므로, 시각 없는 앞부분 단어들은
+    큐가 뜨기 **전에** 말해진 것이다. 그렇게 주면 문장 앞부분이 통째로 잘려 들린다.
+    큐 시작에서 단어 수만큼 거슬러 올라가 놓는다.
     """
     words = []
     for c in cues:
@@ -128,17 +132,45 @@ def words_from_cues(cues):
             new = clean(chunk).split()
             if not new:
                 continue
-            if i == 0 and words:
-                seen = [x["w"] for x in words]
-                overlap = 0
-                for k in range(min(len(new), len(seen)), 0, -1):
-                    if new[:k] == seen[-k:]:
-                        overlap = k
-                        break
-                new = new[overlap:]
+
+            if i == 0:
+                if words:
+                    seen = [x["w"] for x in words]
+                    overlap = 0
+                    for k in range(min(len(new), len(seen)), 0, -1):
+                        if new[:k] == seen[-k:]:
+                            overlap = k
+                            break
+                    new = new[overlap:]
+                if not new:
+                    continue
+                times = lead_times(new, c["start"], words[-1]["t"] if words else None)
+                for j in range(len(new)):
+                    words.append({"t": times[j], "w": new[j], "cue_end": c["end"]})
+                continue
+
             for w in new:
                 words.append({"t": t, "w": w, "cue_end": c["end"]})
     return words
+
+
+def lead_times(new, cue_start, prev_t):
+    """시각 표시가 없는 단어들에 시각을 매긴다.
+
+    맨 처음 큐라면 큐 시작에서부터 앞으로 놓고,
+    그 밖에는 큐 시작 직전에 닿도록 뒤에서부터 거슬러 놓는다.
+    앞 단어보다 앞서지 않도록 막는다.
+    """
+    n = len(new)
+    if prev_t is None:
+        return [round(cue_start + j * WORD_SEC, 3) for j in range(n)]
+    out = []
+    for j in range(n):
+        tm = cue_start - (n - j) * WORD_SEC
+        if tm <= prev_t:
+            tm = prev_t + 0.01 * (j + 1)
+        out.append(round(max(tm, 0.0), 3))
+    return out
 
 
 def units_from_words(words, last_end):

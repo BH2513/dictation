@@ -363,21 +363,30 @@
           controls: 0,        // 재생 눈금과 시간 표시를 감춘다. 조작은 아래 버튼으로 한다
           disablekb: 1,
           fs: 0,
-          iv_load_policy: 3
+          iv_load_policy: 3,
+          cc_load_policy: 0   // 자막이 보이면 받아쓰기가 아니라 베껴쓰기가 된다
         },
         events: {
           onReady: function () {
             playerReady = true;
+            // 자막이 켜져 있으면 답이 화면에 그대로 보인다
+            try { player.unloadModule('captions'); player.unloadModule('cc'); } catch (e) {}
             if (loadTimer) { clearTimeout(loadTimer); loadTimer = null; }
             setControls(true);
             say('준비됐습니다. 문장을 눌러 보세요.');
           },
           onStateChange: function (e) {
-            if (e.data === YT.PlayerState.ENDED) {
+            if (e.data === YT.PlayerState.PLAYING) {
+              setCover(false);
+            } else if (e.data === YT.PlayerState.ENDED) {
               stopWatch();
+              setCover(true);
             } else if (e.data === YT.PlayerState.PAUSED) {
               // 자리를 옮기는 순간에도 잠깐 멈춤으로 잡힌다. 그건 사용자가 멈춘 게 아니다.
-              if ((new Date()).getTime() - startedAt > 800) stopWatch();
+              if ((new Date()).getTime() - startedAt > 800) {
+                stopWatch();
+                setCover(true);
+              }
             }
           },
           onError: function () {
@@ -387,6 +396,11 @@
         }
       });
     }
+  }
+
+  function setCover(on) {
+    var c = $('cover');
+    if (c) c.className = on ? 'cover' : 'cover off';
   }
 
   function setControls(on) {
@@ -452,6 +466,7 @@
     $('next-btn').onclick = function () { select(current + 1, true); };
     $('change-profile').onclick = function () { go('#/'); };
     $('list-btn').onclick = function () { toggleList(); };
+    $('cover').onclick = playCurrent;
 
     if (window.addEventListener) window.addEventListener('hashchange', route, false);
     route();

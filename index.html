@@ -37,7 +37,11 @@
       <h1 id="listen-title">불러오는 중…</h1>
     </div>
 
-    <div class="player-box"><div id="player"></div></div>
+    <div class="player-box">
+      <div id="player"></div>
+      <!-- 멈춰 있을 때 유튜브가 띄우는 공유·로고·관련영상을 가린다 -->
+      <button class="cover" id="cover" aria-label="재생"><span>▶</span></button>
+    </div>
 
     <div class="pos" id="position"></div>
     <div class="now" id="now"></div>

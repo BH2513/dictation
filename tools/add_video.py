@@ -75,8 +75,14 @@ def parse_ts(s):
     return int(h) * 3600 + int(m) * 60 + int(sec) + int(ms or 0) / 1000.0
 
 
+NOISE = re.compile(r"\[[^\]]*\]")          # [applause], [Music] 같은 소리 표시
+
+
 def clean(text):
-    return re.sub(r"\s+", " ", html.unescape(ANY_TAG.sub("", text))).strip()
+    """태그와 소리 표시를 걷어내고 공백을 정리한다."""
+    t = html.unescape(ANY_TAG.sub("", text))
+    t = NOISE.sub(" ", t)
+    return re.sub(r"\s+", " ", t).strip()
 
 
 def parse_vtt(raw):
@@ -158,15 +164,17 @@ CONTINUES = ('，', ',', ':', ';', '-', '—', '–')
 I_WORDS = {"I", "I'm", "I've", "I'll", "I'd", "I."}
 
 
-def starts_new_sentence(prev_text, text):
-    """SPEC 8: 앞줄이 . ? ! 로 끝나거나, 다음 줄이 대문자로 시작하면 경계.
+def ends_sentence(prev_text):
+    """SPEC 8: 앞줄이 . ? ! 로 끝나면 문장 종료."""
+    return bool(ENDS_SENTENCE.search(prev_text.rstrip()))
 
-    대문자 규칙은 그대로 쓰면 문장 중간의 'I'나 쉼표 뒤 줄바꿈에서도 잘린다.
-    그 두 경우만 예외로 둔다.
+
+def starts_capital(prev_text, text):
+    """SPEC 8: 다음 줄이 대문자로 시작하면 경계.
+
+    그대로 쓰면 문장 중간의 'I'나 쉼표 뒤 줄바꿈에서도 잘린다. 그 둘은 예외로 둔다.
     """
     prev = prev_text.rstrip()
-    if ENDS_SENTENCE.search(prev):
-        return True
     first = text.strip().split(" ")[0] if text.strip() else ""
     if not first or not first[0].isupper():
         return False
@@ -177,23 +185,59 @@ def starts_new_sentence(prev_text, text):
     return True
 
 
+def looks_punctuated(text):
+    """자막에 문장부호가 실제로 들어 있는지 본다.
+
+    유튜브 자동자막은 예전엔 구두점이 없었지만 지금은 넣어 준다.
+    있는데도 안 쓰면 무음 간격에만 기대게 되어 문장이 25단어마다 잘린다.
+    """
+    words = len(text.split())
+    if words < 20:
+        return False
+    return len(re.findall(r"[.?!]", text)) / words >= 0.02
+
+
+def mark_speakers(units):
+    """자막의 '>>' 는 말하는 사람이 바뀌었다는 표시다. 경계로 쓰고 표시는 지운다."""
+    out, pending = [], False
+    for u in units:
+        raw = u["text"]
+        text = raw.replace(">>", " ").strip()
+        text = re.sub(r"\s+", " ", text)
+        if not text:
+            if ">>" in raw:
+                pending = True
+            continue
+        item = dict(u, text=text)
+        if ">>" in raw or pending:
+            item["speaker"] = True
+            pending = False
+        out.append(item)
+    return out
+
+
 def count_words(units):
     return sum(len(u["text"].split()) for u in units)
 
 
-def split_sentences(units, auto=False, gap=GAP_SEC, max_dur=MAX_DUR, max_words=MAX_WORDS):
-    """단위 목록을 문장 덩어리로 나눈다.
+def split_sentences(units, use_punct=True, use_capital=True,
+                    gap=GAP_SEC, max_dur=MAX_DUR, max_words=MAX_WORDS):
+    """단위 목록을 문장 덩어리로 나눈다. SPEC 8.
 
-    auto=True(자동생성 자막)면 구두점과 대문자 규칙을 쓰지 않고
-    무음 간격과 강제 분할만으로 나눈다. SPEC 8.
+    무음 간격과 강제 분할은 언제나 적용한다.
+    구두점 규칙은 자막에 문장부호가 있을 때만, 대문자 규칙은 줄 단위 자막에만 쓴다.
+    (단어 단위로 쪼갠 자동자막에 대문자 규칙을 쓰면 이름마다 문장이 끊긴다.)
     """
+    units = mark_speakers(units)
     out, cur = [], []
     for u in units:
         if cur:
             prev = cur[-1]
-            boundary = (u["start"] - prev["end"]) >= gap
-            if not boundary and not auto:
-                boundary = starts_new_sentence(prev["text"], u["text"])
+            boundary = (u["start"] - prev["end"]) >= gap or u.get("speaker", False)
+            if not boundary and use_punct:
+                boundary = ends_sentence(prev["text"])
+            if not boundary and use_capital:
+                boundary = starts_capital(prev["text"], u["text"])
             if not boundary:
                 too_long = (u["end"] - cur[0]["start"]) > max_dur
                 too_many = (count_words(cur) + len(u["text"].split())) > max_words
@@ -459,13 +503,17 @@ def main():
     if not cues:
         die("자막에서 읽을 내용이 없습니다.")
 
+    whole = " ".join(c["text"] for c in cues)
+    punctuated = looks_punctuated(whole)
+
     if source == "auto_captions" and TIME_TAG.search(en_raw):
-        words = words_from_cues(cues)
-        units = units_from_words(words, cues[-1]["end"])
-        groups = split_sentences(units, auto=True)
+        # 자동자막은 같은 줄을 반복하므로 단어 단위로 풀어서 다룬다
+        units = units_from_words(words_from_cues(cues), cues[-1]["end"])
+        groups = split_sentences(units, use_punct=punctuated, use_capital=False)
     else:
         units = [{"start": c["start"], "end": c["end"], "text": c["text"]} for c in cues]
-        groups = split_sentences(units, auto=(source == "auto_captions"))
+        groups = split_sentences(units, use_punct=punctuated,
+                                 use_capital=(source == "manual_captions"))
 
     sentences = to_sentences(groups)
     ko_cues = parse_vtt(ko_raw) if ko_raw else []
@@ -494,7 +542,11 @@ def main():
     say("")
     say("제목      : %s" % title)
     say("문장      : %d개" % len(sentences))
-    say("자막 종류 : %s" % ("자동생성 (경계가 부정확할 수 있음)" if source == "auto_captions" else "직접 단 자막"))
+    if source == "auto_captions":
+        kind = "자동생성 (문장부호 있음)" if punctuated else "자동생성 (경계가 부정확할 수 있음)"
+    else:
+        kind = "직접 단 자막"
+    say("자막 종류 : %s" % kind)
     say("한국어    : %s" % ("있음" if has_ko else "없음"))
     say("목록      : %s" % profile["name"])
 

@@ -176,7 +176,7 @@ print("자동생성 자막 — 무음으로만 나누기")
 check("무음 2.9초에서 두 문장으로", len(s), 2)
 check("1번 문장", s[0]["text"], "hello everyone welcome back to the show")
 check("2번 문장", s[1]["text"], "today we begin")
-check("2번 시작 시각", s[1]["start"], 8.0)
+check("2번 시작 시각 — 큐가 뜨기 조금 전", s[1]["start"], 7.72)
 
 
 # ---------------------------------------------------------------- 한국어 붙이기
@@ -203,6 +203,41 @@ s = attach_korean(sentences_of(MANUAL), [])
 check("ko 필드를 넣지 않음", "ko" in s[0], False)
 check("recording 은 항상 null", [x["recording"] for x in s], [None, None, None])
 check("i 는 0부터 차례로", [x["i"] for x in s], [0, 1, 2])
+
+
+# ---------------------------------------------------------------- 시각 없는 앞 단어
+
+# 실제로 겪은 것: "And we can go into that at another time." 을 재생하면
+# "go into" 부터 들렸다. 시각 없는 앞 단어 셋에 큐가 뜬 시각을 줘서
+# 문장 시작이 통째로 늦게 잡혔기 때문이다.
+LEADING = """WEBVTT
+Kind: captions
+Language: en
+
+00:00:24.480 --> 00:00:27.120 align:start position:0%
+You<00:00:24.800><c> know</c><00:00:25.200><c> him</c><00:00:25.600><c> publicly.</c>
+
+00:00:27.120 --> 00:00:29.190 align:start position:0%
+You know him publicly.
+And we can<00:00:27.900><c> go</c><00:00:28.200><c> into</c><00:00:28.500><c> that.</c>
+"""
+
+print("\n시각 표시가 없는 앞 단어")
+w = words_from_cues(parse_vtt(LEADING))
+byword = {}
+for x in w:
+    byword.setdefault(x["w"], x["t"])
+check("단어 순서", [x["w"] for x in w],
+      ["You", "know", "him", "publicly.", "And", "we", "can", "go", "into", "that."])
+check("앞 단어들이 큐가 뜬 27.12 보다 앞에 놓임",
+      all(byword[x] < 27.12 for x in ["And", "we", "can"]), True)
+check("앞 단어보다 뒤에 놓임", byword["And"] > byword["publicly."], True)
+check("차례를 지킴", byword["And"] < byword["we"] < byword["can"], True)
+
+s2 = sentences_of(LEADING, use_words=True, use_punct=True, use_capital=False)
+check("두 문장으로 나뉨", len(s2), 2)
+check("두 번째 문장", s2[1]["text"], "And we can go into that.")
+check("두 번째 문장이 큐 시각(27.12)보다 일찍 시작", s2[1]["start"] < 27.12, True)
 
 
 # ---------------------------------------------------------------- 구두점 있는 자동자막

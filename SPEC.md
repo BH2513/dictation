@@ -43,7 +43,7 @@ dictation 방식의 문장 단위 받아쓰기 연습을, 사용자가 고른 �
   profiles.json          # [{id, name, color}]
   videos/
     {profileId}/
-      index.json         # 그 사람의 영상 목록 [{videoId, title, addedAt, sentenceCount, hasKorean}]
+      index.json         # 그 사람의 영상 목록 [{videoId, title, addedAt, sentenceCount, hasKorean, source}]
       {videoId}.json     # 문장 데이터
 ```
 
@@ -68,6 +68,7 @@ dictation 방식의 문장 단위 받아쓰기 연습을, 사용자가 고른 �
 ```
 
 - `recording` 필드는 향후 확장용 자리만 확보. Phase 1에서는 항상 null.
+- `index.json` 의 `source` 는 8번의 "경계가 부정확할 수 있음" 뱃지를 라이브러리에서 띄우기 위한 것이다. 없으면 영상 파일을 전부 열어봐야 한다.
 - 구간 재생 시 시작점은 `start - 0.3초` 여유를 둘 것 (유튜브 탐색이 정밀하지 않음). 이 오프셋은 설정으로 조절 가능하게.
 
 ### 4-2. IndexedDB (기기별·프로필별)

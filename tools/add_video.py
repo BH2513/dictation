@@ -537,6 +537,7 @@ def main():
         "addedAt": date.today().isoformat(),
         "sentenceCount": len(sentences),
         "hasKorean": has_ko,
+        "source": source,
     })
 
     say("")

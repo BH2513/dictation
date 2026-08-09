@@ -3,334 +3,63 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>구간 재생 테스트 — 받아쓰기 연습</title>
-<style>
-  :root{
-    --bg:#0f1115;
-    --card:#181b22;
-    --line:#2a2f3a;
-    --text:#e8eaf0;
-    --muted:#9aa3b2;
-    --accent:#3b82f6;
-    --accent-on:#ffffff;
-    --ok:#22c55e;
-  }
-  *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;}
-  body{
-    background:var(--bg);
-    color:var(--text);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
-    line-height:1.5;
-    -webkit-text-size-adjust:100%;
-  }
-  .wrap{
-    max-width:640px;
-    margin:0 auto;
-    padding:16px 16px calc(24px + env(safe-area-inset-bottom));
-  }
-  h1{
-    font-size:18px;
-    margin:8px 0 4px;
-  }
-  .sub{
-    color:var(--muted);
-    font-size:13px;
-    margin:0 0 16px;
-  }
-  .card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:12px;
-    padding:14px;
-    margin-bottom:14px;
-  }
-  label{
-    display:block;
-    font-size:13px;
-    color:var(--muted);
-    margin-bottom:6px;
-  }
-  input[type="text"],input[type="number"]{
-    width:100%;
-    background:#0e1116;
-    color:var(--text);
-    border:1px solid var(--line);
-    border-radius:10px;
-    padding:12px;
-    font-size:16px; /* 16px 미만이면 iOS에서 자동 확대됨 */
-    outline:none;
-  }
-  input:focus{border-color:var(--accent);}
-  .row{
-    display:flex;
-    gap:10px;
-  }
-  .row > div{flex:1;min-width:0;}
-  .field{margin-bottom:12px;}
-  .field:last-child{margin-bottom:0;}
-
-  /* 플레이어 */
-  .player-box{
-    position:relative;
-    width:100%;
-    padding-top:56.25%;
-    background:#000;
-    border-radius:12px;
-    overflow:hidden;
-    border:1px solid var(--line);
-  }
-  .player-box iframe,.player-box > div{
-    position:absolute;
-    top:0;left:0;
-    width:100%;height:100%;
-  }
-
-  /* 버튼 */
-  .buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:14px;
-  }
-  button{
-    flex:1 1 140px;
-    min-height:52px;          /* 손가락으로 누르기 충분한 크기 */
-    font-size:16px;
-    font-weight:600;
-    color:var(--text);
-    background:#232833;
-    border:1px solid var(--line);
-    border-radius:12px;
-    padding:12px 14px;
-    cursor:pointer;
-    touch-action:manipulation;
-    -webkit-tap-highlight-color:transparent;
-  }
-  button:active{transform:translateY(1px);}
-  button:disabled{opacity:.45;cursor:default;}
-  button.primary{
-    background:var(--accent);
-    border-color:var(--accent);
-    color:var(--accent-on);
-  }
-  button.on{
-    background:var(--ok);
-    border-color:var(--ok);
-    color:#08240f;
-  }
-  .status{
-    margin-top:12px;
-    font-size:13px;
-    color:var(--muted);
-    min-height:20px;
-  }
-  .hint{
-    font-size:12px;
-    color:var(--muted);
-    margin-top:8px;
-  }
-  /* 폰 세로 화면 */
-  @media (max-width:420px){
-    .buttons button{flex:1 1 100%;}
-    .row{flex-direction:row;}   /* 시작/끝 초는 좁은 화면에서도 나란히 */
-  }
-</style>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>받아쓰기 연습</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <h1>구간 재생 테스트</h1>
-  <p class="sub">유튜브 영상의 특정 구간만 반복해서 듣습니다.</p>
 
-  <div class="card">
-    <div class="field">
-      <label for="videoId">유튜브 영상 ID 또는 주소</label>
-      <input type="text" id="videoId" value="dQw4w9WgXcQ" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="예: dQw4w9WgXcQ">
-    </div>
-    <div class="row">
-      <div class="field">
-        <label for="startSec">시작 (초)</label>
-        <input type="number" id="startSec" value="10" step="0.1" min="0" inputmode="decimal">
-      </div>
-      <div class="field">
-        <label for="endSec">끝 (초)</label>
-        <input type="number" id="endSec" value="15" step="0.1" min="0" inputmode="decimal">
-      </div>
-    </div>
-    <p class="hint">시작점은 첫 단어가 잘리지 않도록 입력값보다 0.3초 앞에서 재생됩니다.</p>
+<!-- 프로필 선택 -->
+<div class="screen on" id="screen-profiles">
+  <div class="wrap">
+    <div class="top"><h1>누가 연습하나요?</h1></div>
+    <div id="profile-list"></div>
   </div>
-
-  <div class="player-box"><div id="player"></div></div>
-
-  <div class="buttons">
-    <button id="playBtn" class="primary">재생</button>
-    <button id="replayBtn">다시 듣기</button>
-    <button id="slowBtn">0.75배속</button>
-  </div>
-
-  <div class="status" id="status">플레이어를 불러오는 중…</div>
 </div>
 
-<script>
-(function () {
-  var LEAD_IN = 0.3;          // SPEC 4-1: 시작점 여유 (초)
-  var TICK_MS = 40;           // 끝 지점 감시 주기
-  var STOP_MARGIN = 0.04;     // 감시 주기만큼 늦게 멈추는 것을 보정
+<!-- 라이브러리 -->
+<div class="screen" id="screen-library">
+  <div class="wrap">
+    <div class="top">
+      <h1 id="library-title">목록</h1>
+      <button class="small" id="change-profile">사람 바꾸기</button>
+    </div>
+    <div id="video-list"></div>
+  </div>
+</div>
 
-  var player = null;
-  var ready = false;
-  var watchTimer = null;
-  var targetEnd = null;
-  var slow = false;
+<!-- 듣기 -->
+<div class="screen" id="screen-listen">
+  <div class="wrap">
+    <div class="top">
+      <button class="small" id="back-to-library">← 목록</button>
+      <h1 id="listen-title">불러오는 중…</h1>
+    </div>
 
-  var $ = function (id) { return document.getElementById(id); };
-  var elVideo = $('videoId'), elStart = $('startSec'), elEnd = $('endSec');
-  var btnPlay = $('playBtn'), btnReplay = $('replayBtn'), btnSlow = $('slowBtn');
-  var elStatus = $('status');
+    <div class="player-box"><div id="player"></div></div>
 
-  function say(msg) { elStatus.textContent = msg; }
+    <div class="now" id="now"></div>
 
-  function setControlsEnabled(on) {
-    btnPlay.disabled = !on;
-    btnReplay.disabled = !on;
-    btnSlow.disabled = !on;
-  }
+    <div class="buttons">
+      <button class="primary" id="play-btn">재생</button>
+      <button id="replay-btn">다시 듣기</button>
+      <button id="slow-btn">0.75배속</button>
+      <button class="half" id="prev-btn">이전 문장</button>
+      <button class="half" id="next-btn">다음 문장</button>
+    </div>
 
-  // 영상 ID 추출: 순수 ID, watch?v=, youtu.be/, /embed/, /shorts/ 모두 허용
-  function extractVideoId(raw) {
-    var s = (raw || '').trim();
-    if (!s) return '';
-    if (/^[A-Za-z0-9_-]{11}$/.test(s)) return s;
-    var m = s.match(/[?&]v=([A-Za-z0-9_-]{11})/) ||
-            s.match(/youtu\.be\/([A-Za-z0-9_-]{11})/) ||
-            s.match(/\/embed\/([A-Za-z0-9_-]{11})/) ||
-            s.match(/\/shorts\/([A-Za-z0-9_-]{11})/) ||
-            s.match(/\/live\/([A-Za-z0-9_-]{11})/);
-    return m ? m[1] : '';
-  }
+    <div class="status" id="status"></div>
 
-  function readInputs() {
-    var id = extractVideoId(elVideo.value);
-    if (!id) { say('영상 ID를 확인해 주세요. (11자리 ID 또는 유튜브 주소)'); return null; }
+    <div class="notice" id="auto-note" style="display:none;margin-top:16px;">
+      이 영상은 <b>자동 자막</b>으로 만들어졌습니다. 문장이 어중간하게 끊길 수 있습니다.
+    </div>
 
-    var start = parseFloat(elStart.value);
-    var end = parseFloat(elEnd.value);
-    if (isNaN(start) || start < 0) { say('시작 초를 숫자로 입력해 주세요.'); return null; }
-    if (isNaN(end)) { say('끝 초를 숫자로 입력해 주세요.'); return null; }
-    if (end <= start) { say('끝 초는 시작 초보다 커야 합니다.'); return null; }
+    <div class="count" id="sentence-count"></div>
+    <div id="sentence-list"></div>
+  </div>
+</div>
 
-    return { id: id, start: start, end: end };
-  }
-
-  function stopWatch() {
-    if (watchTimer) { clearInterval(watchTimer); watchTimer = null; }
-  }
-
-  function startWatch(end) {
-    stopWatch();
-    targetEnd = end;
-    watchTimer = setInterval(function () {
-      if (!player || typeof player.getCurrentTime !== 'function') return;
-      var t = player.getCurrentTime();
-      if (t >= targetEnd - STOP_MARGIN) {
-        stopWatch();
-        player.pauseVideo();
-        // 멈춘 위치를 끝 지점에 정확히 맞춘다
-        player.seekTo(targetEnd, true);
-        say('구간 재생 완료 — ' + targetEnd.toFixed(1) + '초에서 정지');
-      }
-    }, TICK_MS);
-  }
-
-  function playSegment() {
-    if (!ready) { say('플레이어 준비 중입니다. 잠시 후 다시 눌러 주세요.'); return; }
-    var v = readInputs();
-    if (!v) return;
-
-    stopWatch();
-
-    var seekTo = Math.max(0, v.start - LEAD_IN);
-    var apply = function () {
-      player.setPlaybackRate(slow ? 0.75 : 1);
-      player.seekTo(seekTo, true);
-      player.playVideo();
-      startWatch(v.end);
-      say('재생 중 — ' + seekTo.toFixed(1) + '초 ~ ' + v.end.toFixed(1) + '초' + (slow ? ' (0.75배속)' : ''));
-    };
-
-    // 영상이 바뀌었으면 새로 불러온 뒤 재생
-    var current = '';
-    try { current = (player.getVideoData() || {}).video_id || ''; } catch (e) {}
-    if (current !== v.id) {
-      player.loadVideoById({ videoId: v.id, startSeconds: seekTo });
-      say('영상을 불러오는 중…');
-      var tries = 0;
-      var waitLoad = setInterval(function () {
-        tries++;
-        var loaded = '';
-        try { loaded = (player.getVideoData() || {}).video_id || ''; } catch (e) {}
-        if (loaded === v.id || tries > 100) {   // 최대 4초 대기
-          clearInterval(waitLoad);
-          apply();
-        }
-      }, TICK_MS);
-    } else {
-      apply();
-    }
-  }
-
-  function toggleSlow() {
-    slow = !slow;
-    btnSlow.classList.toggle('on', slow);
-    btnSlow.textContent = slow ? '0.75배속 켜짐' : '0.75배속';
-    if (ready && player && typeof player.setPlaybackRate === 'function') {
-      player.setPlaybackRate(slow ? 0.75 : 1);
-    }
-    say(slow ? '0.75배속으로 재생합니다.' : '보통 속도로 재생합니다.');
-  }
-
-  btnPlay.addEventListener('click', playSegment);
-  btnReplay.addEventListener('click', playSegment);
-  btnSlow.addEventListener('click', toggleSlow);
-
-  setControlsEnabled(false);
-
-  // YouTube IFrame Player API
-  window.onYouTubeIframeAPIReady = function () {
-    player = new YT.Player('player', {
-      width: '100%',
-      height: '100%',
-      videoId: extractVideoId(elVideo.value) || 'dQw4w9WgXcQ',
-      playerVars: {
-        playsinline: 1,      // 아이폰에서 전체화면으로 튀지 않게
-        rel: 0,
-        modestbranding: 1,
-        controls: 1
-      },
-      events: {
-        onReady: function () {
-          ready = true;
-          setControlsEnabled(true);
-          say('준비 완료. 재생 버튼을 눌러 보세요.');
-        },
-        onStateChange: function (e) {
-          // 사용자가 직접 멈추거나 영상이 끝나면 감시를 중단한다
-          if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) {
-            stopWatch();
-          }
-        },
-        onError: function () {
-          stopWatch();
-          say('영상을 재생할 수 없습니다. 영상 ID를 확인하거나, 다른 영상으로 시도해 보세요.');
-        }
-      }
-    });
-  };
-
-  var tag = document.createElement('script');
-  tag.src = 'https://www.youtube.com/iframe_api';
-  document.head.appendChild(tag);
-})();
-</script>
+<script src="app.js"></script>
 </body>
 </html>

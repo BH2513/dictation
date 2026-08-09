@@ -1,0 +1,145 @@
+:root{
+  --bg:#0f1115;
+  --card:#181b22;
+  --card2:#1f232c;
+  --line:#2a2f3a;
+  --text:#e8eaf0;
+  --muted:#9aa3b2;
+  --accent:#3b82f6;
+  --accent-on:#ffffff;
+  --ok:#22c55e;
+  --warn:#f59e0b;
+  --bad:#ef4444;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+  line-height:1.5;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{
+  max-width:640px;
+  margin:0 auto;
+  padding:16px 16px calc(28px + env(safe-area-inset-bottom));
+}
+.screen{display:none;}
+.screen.on{display:block;}
+
+/* 머리말 */
+.top{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:4px 0 16px;
+  min-height:44px;
+}
+.top h1{font-size:18px;margin:0;flex:1;min-width:0;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.sub{color:var(--muted);font-size:13px;margin:-8px 0 16px;}
+
+/* 단추 */
+button{
+  font-family:inherit;
+  min-height:52px;
+  font-size:16px;
+  font-weight:600;
+  color:var(--text);
+  background:#232833;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px 14px;
+  cursor:pointer;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+}
+button:active{transform:translateY(1px);}
+button:disabled{opacity:.45;cursor:default;}
+button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-on);}
+button.on{background:var(--ok);border-color:var(--ok);color:#08240f;}
+button.small{min-height:40px;font-size:14px;padding:8px 12px;flex:0 0 auto;}
+.buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
+.buttons button{flex:1 1 140px;}
+@media (max-width:420px){
+  .buttons button{flex:1 1 100%;}
+  .buttons button.half{flex:1 1 calc(50% - 5px);}
+}
+
+/* 목록 */
+.list{list-style:none;margin:0;padding:0;}
+.list li{margin-bottom:10px;}
+.item{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  width:100%;
+  text-align:left;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+  min-height:64px;
+}
+.item .body{flex:1;min-width:0;}
+.item .name{font-size:16px;font-weight:600;}
+.item .meta{font-size:12px;color:var(--muted);margin-top:3px;font-weight:400;}
+.dot{
+  width:36px;height:36px;border-radius:50%;
+  flex:0 0 36px;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-weight:700;font-size:16px;
+}
+.badge{
+  display:inline-block;
+  font-size:11px;
+  font-weight:600;
+  color:#3a2a06;
+  background:var(--warn);
+  border-radius:999px;
+  padding:2px 8px;
+  margin-top:6px;
+}
+
+/* 알림 */
+.notice{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px;
+  color:var(--muted);
+  font-size:14px;
+}
+.notice.error{border-color:var(--bad);color:#ffd9d9;}
+.notice b{color:var(--text);}
+
+/* 플레이어 */
+.player-box{
+  position:relative;width:100%;padding-top:56.25%;
+  background:#000;border-radius:12px;overflow:hidden;border:1px solid var(--line);
+}
+.player-box iframe,.player-box > div{position:absolute;top:0;left:0;width:100%;height:100%;}
+
+.now{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:16px;
+  margin-top:14px;
+  font-size:18px;
+  line-height:1.6;
+  min-height:80px;
+}
+.now .ko{display:block;margin-top:8px;font-size:14px;color:var(--muted);}
+.status{margin-top:12px;font-size:13px;color:var(--muted);min-height:20px;}
+
+.count{font-size:13px;color:var(--muted);margin:20px 0 8px;}
+.sentence{
+  display:block;width:100%;text-align:left;
+  background:var(--card);border:1px solid var(--line);
+  border-radius:10px;padding:12px 14px;min-height:48px;
+  font-size:15px;font-weight:400;line-height:1.5;
+}
+.sentence .no{color:var(--muted);font-size:12px;margin-right:8px;}
+.sentence.playing{border-color:var(--accent);background:var(--card2);}

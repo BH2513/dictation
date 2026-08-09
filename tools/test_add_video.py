@@ -14,7 +14,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from add_video import (extract_video_id, parse_vtt, words_from_cues,
                        units_from_words, split_sentences, to_sentences,
-                       attach_korean, pick_korean, rate_limited)
+                       attach_korean, pick_korean, rate_limited,
+                       looks_punctuated, clean)
 
 FAILED = []
 
@@ -29,13 +30,13 @@ def check(name, got, want):
         FAILED.append(name)
 
 
-def sentences_of(vtt, auto=False, use_words=False):
+def sentences_of(vtt, use_words=False, use_punct=True, use_capital=True):
     cues = parse_vtt(vtt)
     if use_words:
         units = units_from_words(words_from_cues(cues), cues[-1]["end"])
     else:
         units = [{"start": c["start"], "end": c["end"], "text": c["text"]} for c in cues]
-    return to_sentences(split_sentences(units, auto=auto))
+    return to_sentences(split_sentences(units, use_punct=use_punct, use_capital=use_capital))
 
 
 # ---------------------------------------------------------------- 영상 ID
@@ -170,7 +171,7 @@ check("단어가 중복 없이 뽑힘",
 check("첫 단어 시각", words[0]["t"], 0.03)
 check("둘째 단어 시각", words[1]["t"], 0.719)
 
-s = sentences_of(AUTO, auto=True, use_words=True)
+s = sentences_of(AUTO, use_words=True, use_punct=False, use_capital=False)
 print("자동생성 자막 — 무음으로만 나누기")
 check("무음 2.9초에서 두 문장으로", len(s), 2)
 check("1번 문장", s[0]["text"], "hello everyone welcome back to the show")
@@ -202,6 +203,62 @@ s = attach_korean(sentences_of(MANUAL), [])
 check("ko 필드를 넣지 않음", "ko" in s[0], False)
 check("recording 은 항상 null", [x["recording"] for x in s], [None, None, None])
 check("i 는 0부터 차례로", [x["i"] for x in s], [0, 1, 2])
+
+
+# ---------------------------------------------------------------- 구두점 있는 자동자막
+
+PUNCT_AUTO = """WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.000 align:start position:0%
+I have<00:00:00.500><c> somebody</c><00:00:01.000><c> who</c><00:00:01.500><c> needs</c><00:00:02.000><c> no</c><00:00:02.500><c> introduction.</c><00:00:03.000><c> So,</c><00:00:03.500><c> I&#39;m</c>
+
+00:00:04.000 --> 00:00:08.000 align:start position:0%
+not<00:00:04.300><c> going</c><00:00:04.600><c> to</c><00:00:05.000><c> give</c><00:00:05.400><c> him</c><00:00:05.800><c> one.</c><00:00:06.200><c> I</c><00:00:06.600><c> give</c><00:00:07.000><c> you</c><00:00:07.400><c> Bill.</c>
+"""
+
+print("\n자동자막에 문장부호가 있을 때")
+check("문장부호가 있다고 판정",
+      looks_punctuated(" ".join(c["text"] for c in parse_vtt(PUNCT_AUTO)) * 2), True)
+check("문장부호가 없으면 아니라고 판정",
+      looks_punctuated("hello everyone welcome back to the show today we begin " * 4), False)
+
+s = sentences_of(PUNCT_AUTO, use_words=True, use_punct=True, use_capital=False)
+check("마침표마다 나뉨", len(s), 3)
+check("1번", s[0]["text"], "I have somebody who needs no introduction.")
+check("2번", s[1]["text"], "So, I'm not going to give him one.")
+check("3번", s[2]["text"], "I give you Bill.")
+
+NAMES = """WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:04.000 align:start position:0%
+Brian<00:00:00.500><c> and</c><00:00:01.000><c> Bill</c><00:00:01.500><c> and</c><00:00:02.000><c> Sarah</c><00:00:02.500><c> talked</c><00:00:03.000><c> about</c><00:00:03.500><c> AI</c>
+"""
+print("자동자막 — 이름이 나와도 자르지 않음")
+check("한 문장으로 유지",
+      len(sentences_of(NAMES, use_words=True, use_punct=True, use_capital=False)), 1)
+
+
+# ---------------------------------------------------------------- 소리 표시와 화자 표시
+
+print("\n소리 표시와 화자 표시")
+check("[applause] 는 지운다", clean("thank you [applause] very much"), "thank you very much")
+check("[Music] 만 있는 줄은 빈 줄", clean("[Music]"), "")
+
+SPEAKER = """WEBVTT
+
+00:00:01.000 --> 00:00:03.000
+thanks so much for having me
+
+00:00:03.000 --> 00:00:05.000
+>> Okay, glad to be here
+"""
+s = sentences_of(SPEAKER, use_capital=False)
+check("말하는 사람이 바뀌면 경계", len(s), 2)
+check("표시는 지운다", s[1]["text"], "Okay, glad to be here")
 
 
 # ---------------------------------------------------------------- 한국어 자막 고르기

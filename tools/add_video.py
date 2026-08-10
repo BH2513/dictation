@@ -77,12 +77,17 @@ def parse_ts(s):
 
 
 NOISE = re.compile(r"\[[^\]]*\]")          # [applause], [Music] 같은 소리 표시
+BREAK = "\u2016"                          # 말이 아닌 구간이라는 표시. 문장 경계로 쓰고 글자에서는 뺀다
 
 
 def clean(text):
-    """태그와 소리 표시를 걷어내고 공백을 정리한다."""
+    """태그를 걷어내고 공백을 정리한다.
+
+    소리 표시는 그냥 지우면 안 된다. 박수 구간이 통째로 사라지면 그 앞뒤 문장이
+    맞붙어 버린다. 자리에 경계 표시를 남겨 둔다.
+    """
     t = html.unescape(ANY_TAG.sub("", text))
-    t = NOISE.sub(" ", t)
+    t = NOISE.sub(" " + BREAK + " ", t)
     return re.sub(r"\s+", " ", t).strip()
 
 
@@ -97,7 +102,10 @@ def parse_vtt(raw):
             cues.append(block)
             continue
         if block is not None:
-            if line.strip() == "":
+            # VTT 에서 조각을 끝내는 것은 **완전히 빈 줄**이다.
+            # 공백 한 칸짜리 줄을 끝으로 보면 그 뒤 내용을 통째로 잃는다.
+            # 유튜브 자동자막은 실제로 그런 줄을 넣는다.
+            if line == "":
                 block = None
             else:
                 block["lines"].append(line)
@@ -230,18 +238,21 @@ def looks_punctuated(text):
 
 
 def mark_speakers(units):
-    """자막의 '>>' 는 말하는 사람이 바뀌었다는 표시다. 경계로 쓰고 표시는 지운다."""
+    """'>>' 는 말하는 사람이 바뀌었다는 표시, BREAK 는 말이 아닌 구간.
+
+    둘 다 문장 경계로 쓰고 글자에서는 지운다.
+    """
     out, pending = [], False
     for u in units:
         raw = u["text"]
-        text = raw.replace(">>", " ").strip()
+        text = raw.replace(">>", " ").replace(BREAK, " ").strip()
         text = re.sub(r"\s+", " ", text)
         if not text:
-            if ">>" in raw:
+            if ">>" in raw or BREAK in raw:
                 pending = True
             continue
         item = dict(u, text=text)
-        if ">>" in raw or pending:
+        if ">>" in raw or BREAK in raw or pending:
             item["speaker"] = True
             pending = False
         out.append(item)

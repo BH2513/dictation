@@ -176,6 +176,27 @@ textarea#answer-input:focus{border-color:var(--accent);}
 
 .pos{font-size:13px;color:var(--muted);margin-top:14px;}
 
+/* 문장 이동 막대 — 화면을 움직여도 아래에 붙어 있다 */
+.navbar{
+  position:fixed;
+  left:0;right:0;bottom:0;
+  z-index:20;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  max-width:640px;
+  margin:0 auto;
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(15,17,21,.94);
+  border-top:1px solid var(--line);
+}
+.navbar button{flex:1 1 0;min-height:48px;}
+.navbar .navpos{
+  flex:0 0 auto;font-size:13px;color:var(--muted);
+  min-width:74px;text-align:center;
+}
+#screen-listen .wrap{padding-bottom:calc(96px + env(safe-area-inset-bottom));}
+
 /* Lead-in 조절 */
 .lead{
   margin-top:20px;

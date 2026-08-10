@@ -175,6 +175,12 @@ textarea#answer-input:focus{border-color:var(--accent);}
 .status{margin-top:12px;font-size:13px;color:var(--muted);min-height:20px;}
 
 .pos{font-size:13px;color:var(--muted);margin-top:14px;}
+.pos .done{margin-left:6px;}
+.pos .done:not(:empty)::before{content:"· ";}
+
+/* 해본 문장 표시 */
+.sentence[data-done="ok"]{border-left:3px solid var(--ok);}
+.sentence[data-done="miss"]{border-left:3px solid var(--bad);}
 
 /* 문장 이동 막대 — 화면을 움직여도 아래에 붙어 있다 */
 .navbar{

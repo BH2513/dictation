@@ -43,7 +43,12 @@
       <button class="cover" id="cover" aria-label="Play"><span>▶</span></button>
     </div>
 
-    <div class="pos" id="position"></div>
+    <div class="pos"><span id="position"></span> <span class="done" id="done-count"></span></div>
+
+    <div class="notice error" id="storage-note" style="display:none;margin-bottom:14px;">
+      This browser will not let the app save progress, so nothing is being kept.
+      Private browsing usually causes this.
+    </div>
 
     <div class="buttons">
       <button class="primary" id="play-btn">Play</button>
@@ -93,6 +98,7 @@
   </div>
 </div>
 
+<script src="store.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

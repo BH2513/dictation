@@ -5,7 +5,7 @@
   "sentences": [
     {
       "i": 0,
-      "start": 2.389,
+      "start": 0.08,
       "end": 3.28,
       "text": "I have somebody who needs no introduction.",
       "recording": null
@@ -20,13 +20,13 @@
     {
       "i": 2,
       "start": 5.359,
-      "end": 10.549,
+      "end": 8.515,
       "text": "I give you Bill Aman, the one and only",
       "recording": null
     },
     {
       "i": 3,
-      "start": 12.79,
+      "start": 10.279,
       "end": 14.88,
       "text": "I have no I have no idea what Bill's going to talk about, but great to see you.",
       "recording": null
@@ -41,13 +41,13 @@
     {
       "i": 5,
       "start": 15.839,
-      "end": 16.95,
+      "end": 16.68,
       "text": "I I'll just say this.",
       "recording": null
     },
     {
       "i": 6,
-      "start": 16.96,
+      "start": 16.68,
       "end": 21.92,
       "text": "Brian is Brian uh Bill has been a great support from a distance in all sorts of ways.",
       "recording": null
@@ -76,13 +76,13 @@
     {
       "i": 10,
       "start": 28.8,
-      "end": 29.189,
+      "end": 28.81,
       "text": "Bill,",
       "recording": null
     },
     {
       "i": 11,
-      "start": 29.199,
+      "start": 28.919,
       "end": 30.08,
       "text": "thanks so much.",
       "recording": null
@@ -104,20 +104,20 @@
     {
       "i": 14,
       "start": 37.2,
-      "end": 38.95,
+      "end": 38.4,
       "text": "So, we allowed to do that.",
       "recording": null
     },
     {
       "i": 15,
-      "start": 38.96,
-      "end": 39.43,
+      "start": 38.68,
+      "end": 38.88,
       "text": "Okay.",
       "recording": null
     },
     {
       "i": 16,
-      "start": 39.44,
+      "start": 39.16,
       "end": 40.8,
       "text": "I have no questions for him.",
       "recording": null
@@ -125,27 +125,27 @@
     {
       "i": 17,
       "start": 40.8,
-      "end": 42.63,
+      "end": 42.08,
       "text": "Line up in front of the mic.",
       "recording": null
     },
     {
       "i": 18,
-      "start": 42.64,
-      "end": 43.99,
+      "start": 42.36,
+      "end": 43.45,
       "text": "Who wants to be first question?",
       "recording": null
     },
     {
       "i": 19,
-      "start": 44.0,
-      "end": 45.43,
+      "start": 43.72,
+      "end": 44.97,
       "text": "You can call as well.",
       "recording": null
     },
     {
       "i": 20,
-      "start": 45.44,
+      "start": 45.16,
       "end": 46.8,
       "text": "Ask me anything.",
       "recording": null
@@ -153,20 +153,20 @@
     {
       "i": 21,
       "start": 46.8,
-      "end": 47.59,
+      "end": 47.32,
       "text": "Hearing no questions.",
       "recording": null
     },
     {
       "i": 22,
-      "start": 47.6,
-      "end": 50.31,
+      "start": 47.32,
+      "end": 49.76,
       "text": "I'll No.",
       "recording": null
     },
     {
       "i": 23,
-      "start": 50.32,
+      "start": 50.04,
       "end": 50.64,
       "text": "Hi.",
       "recording": null
@@ -188,13 +188,13 @@
     {
       "i": 26,
       "start": 63.44,
-      "end": 63.99,
+      "end": 63.46,
       "text": "your thoughts",
       "recording": null
     },
     {
       "i": 27,
-      "start": 64.0,
+      "start": 63.72,
       "end": 71.76,
       "text": "so I I think the citadels the millenniums uh I think that AI is going to make a lot of investing strategies more and more",
       "recording": null
@@ -230,13 +230,13 @@
     {
       "i": 32,
       "start": 97.84,
-      "end": 106.63,
+      "end": 106.36,
       "text": "force are this sort of pod shops millennium and others incredibly short-term you they individual teams very high compensation very tight risk limits which basically",
       "recording": null
     },
     {
       "i": 33,
-      "start": 106.64,
+      "start": 106.36,
       "end": 114.159,
       "text": "means stop-loss type uh sort of structures and the effect of those the float shrinking and more and more short-term money and then AI is",
       "recording": null
@@ -342,13 +342,13 @@
     {
       "i": 48,
       "start": 175.68,
-      "end": 183.91,
+      "end": 183.69,
       "text": "that perhaps predicting the future and that relies on you know I I think creativity is basically doing stuff that has never happened before.",
       "recording": null
     },
     {
       "i": 49,
-      "start": 183.92,
+      "start": 183.69,
       "end": 190.4,
       "text": "When I look at Persing Square many of our most successful investments transactions were things that had never happened before.",
       "recording": null
@@ -370,13 +370,13 @@
     {
       "i": 52,
       "start": 198.319,
-      "end": 199.75,
+      "end": 199.529,
       "text": "But it hadn't happened before we did it.",
       "recording": null
     },
     {
       "i": 53,
-      "start": 199.76,
+      "start": 199.529,
       "end": 200.8,
       "text": "Now, we just did an IPO.",
       "recording": null
@@ -412,27 +412,27 @@
     {
       "i": 58,
       "start": 213.92,
-      "end": 217.11,
+      "end": 216.73,
       "text": "Um, but I I think there's still room for us for now.",
       "recording": null
     },
     {
       "i": 59,
-      "start": 217.12,
-      "end": 217.43,
+      "start": 216.84,
+      "end": 217.29,
       "text": "Thank you.",
       "recording": null
     },
     {
       "i": 60,
-      "start": 217.44,
-      "end": 217.75,
+      "start": 217.3,
+      "end": 217.31,
       "text": "Yes.",
       "recording": null
     },
     {
       "i": 61,
-      "start": 217.76,
+      "start": 217.48,
       "end": 219.28,
       "text": "Uh, practical question.",
       "recording": null
@@ -447,13 +447,13 @@
     {
       "i": 63,
       "start": 223.36,
-      "end": 224.789,
+      "end": 224.41,
       "text": "How do you how do you see it now?",
       "recording": null
     },
     {
       "i": 64,
-      "start": 224.799,
+      "start": 224.519,
       "end": 230.319,
       "text": "So, uh the question is I own I own a stake in the Tel Aviv Stock Exchange and you think the the price is high",
       "recording": null
@@ -461,27 +461,27 @@
     {
       "i": 65,
       "start": 230.319,
-      "end": 231.43,
+      "end": 231.13,
       "text": "or the valuation is high?",
       "recording": null
     },
     {
       "i": 66,
-      "start": 231.44,
-      "end": 232.39,
+      "start": 231.16,
+      "end": 231.84,
       "text": "The valuation.",
       "recording": null
     },
     {
       "i": 67,
-      "start": 232.4,
-      "end": 239.509,
+      "start": 232.12,
+      "end": 239.29,
       "text": "So, um a couple months after October 7th, uh the the management team of the Tel Aviv Stock Exchange, I got a call from Rich",
       "recording": null
     },
     {
       "i": 68,
-      "start": 239.519,
+      "start": 239.29,
       "end": 240.239,
       "text": "Handler at Jeffre.",
       "recording": null
@@ -517,13 +517,13 @@
     {
       "i": 73,
       "start": 245.76,
-      "end": 246.789,
+      "end": 246.57,
       "text": "He says, \"You should take a look at this.\"",
       "recording": null
     },
     {
       "i": 74,
-      "start": 246.799,
+      "start": 246.57,
       "end": 248.08,
       "text": "He said, \"Well, how big is the investment?\"",
       "recording": null
@@ -538,13 +538,13 @@
     {
       "i": 76,
       "start": 249.92,
-      "end": 253.509,
+      "end": 253.239,
       "text": "I said it's just hard in the context of Persian Square to make a $25 million investment.",
       "recording": null
     },
     {
       "i": 77,
-      "start": 253.519,
+      "start": 253.239,
       "end": 254.56,
       "text": "He said Bill take the meeting.",
       "recording": null
@@ -622,13 +622,13 @@
     {
       "i": 88,
       "start": 290.0,
-      "end": 297.189,
+      "end": 296.919,
       "text": "stock exchange but part of the theory and is I'm very bullish on Israel from an economic perspective what is Israel it's like Silicon Valley",
       "recording": null
     },
     {
       "i": 89,
-      "start": 297.199,
+      "start": 296.919,
       "end": 306.0,
       "text": "imagine if Silicon Valley was a country that's what Israel is okay you have this incredible density of talent and IP P and IQ in",
       "recording": null
@@ -664,13 +664,13 @@
     {
       "i": 94,
       "start": 321.759,
-      "end": 325.27,
+      "end": 325.0,
       "text": "All the top venture capital firms have opened offices uh in Israel.",
       "recording": null
     },
     {
       "i": 95,
-      "start": 325.28,
+      "start": 325.0,
       "end": 331.6,
       "text": "And um what the mistake the Israeli entrepreneurs used to make was they would sell their companies, you know, when Google showed up and offered",
       "recording": null
@@ -804,13 +804,13 @@
     {
       "i": 114,
       "start": 391.199,
-      "end": 392.87,
+      "end": 392.6,
       "text": "So I I I wouldn't go short.",
       "recording": null
     },
     {
       "i": 115,
-      "start": 392.88,
+      "start": 392.6,
       "end": 393.28,
       "text": "Okay.",
       "recording": null
@@ -818,20 +818,20 @@
     {
       "i": 116,
       "start": 393.28,
-      "end": 394.71,
+      "end": 394.16,
       "text": "Next next in line.",
       "recording": null
     },
     {
       "i": 117,
-      "start": 394.72,
-      "end": 395.67,
+      "start": 394.44,
+      "end": 395.13,
       "text": "Ah the back.",
       "recording": null
     },
     {
       "i": 118,
-      "start": 395.68,
+      "start": 395.4,
       "end": 396.16,
       "text": "Yes.",
       "recording": null
@@ -923,20 +923,20 @@
     {
       "i": 131,
       "start": 453.28,
-      "end": 453.67,
+      "end": 453.29,
       "text": "Um",
       "recording": null
     },
     {
       "i": 132,
-      "start": 453.68,
-      "end": 455.51,
+      "start": 453.4,
+      "end": 454.96,
       "text": "yeah, I think I think Meta is extremely cheap.",
       "recording": null
     },
     {
       "i": 133,
-      "start": 455.52,
+      "start": 455.24,
       "end": 456.08,
       "text": "It's crazy.",
       "recording": null
@@ -944,13 +944,13 @@
     {
       "i": 134,
       "start": 456.08,
-      "end": 457.27,
+      "end": 457.049,
       "text": "Like I'm just curious what you think.",
       "recording": null
     },
     {
       "i": 135,
-      "start": 457.28,
+      "start": 457.059,
       "end": 458.479,
       "text": "Yeah, I think Meta is very cheap.",
       "recording": null
@@ -965,13 +965,13 @@
     {
       "i": 137,
       "start": 464.479,
-      "end": 469.67,
+      "end": 469.609,
       "text": "they worry that he's going to spend a ton of money on something almost like a hobbyist and it's a controlled company and I think",
       "recording": null
     },
     {
       "i": 138,
-      "start": 469.68,
+      "start": 469.609,
       "end": 475.84,
       "text": "that makes that's unsettling for investors but I think the the long-term track record of Mark Zuckerberg shows that he's rational and so I I",
       "recording": null
@@ -993,13 +993,13 @@
     {
       "i": 141,
       "start": 478.4,
-      "end": 478.629,
+      "end": 478.41,
       "text": "Yes,",
       "recording": null
     },
     {
       "i": 142,
-      "start": 478.639,
+      "start": 478.42,
       "end": 483.759,
       "text": "I think um building a permanent capital vehicle has been on your mind for quite a while now.",
       "recording": null
@@ -1014,13 +1014,13 @@
     {
       "i": 144,
       "start": 489.12,
-      "end": 492.629,
+      "end": 492.359,
       "text": "Obviously you've had the IPO uh a couple days ago.",
       "recording": null
     },
     {
       "i": 145,
-      "start": 492.639,
+      "start": 492.359,
       "end": 497.199,
       "text": "Then you have another horse in the race with the Howard Hughes uh story that you're doing.",
       "recording": null
@@ -1028,13 +1028,13 @@
     {
       "i": 146,
       "start": 497.199,
-      "end": 507.749,
+      "end": 507.199,
       "text": "Maybe you can share a little bit of from transitioning from just a fund manager um to towards yeah the goal of having permanent capital.",
       "recording": null
     },
     {
       "i": 147,
-      "start": 507.759,
+      "start": 507.479,
       "end": 510.08,
       "text": "So so there's two reasons why people want permanent capital.",
       "recording": null
@@ -1042,13 +1042,13 @@
     {
       "i": 148,
       "start": 510.08,
-      "end": 511.909,
+      "end": 511.69,
       "text": "One reason is wow people can take their money back.",
       "recording": null
     },
     {
       "i": 149,
-      "start": 511.919,
+      "start": 511.69,
       "end": 512.88,
       "text": "What an amazing business.",
       "recording": null
@@ -1070,13 +1070,13 @@
     {
       "i": 152,
       "start": 518.159,
-      "end": 522.79,
+      "end": 522.52,
       "text": "You can't launch a fund at, you know, 37 years old and say, \"Okay, just hand me your money forever.\"",
       "recording": null
     },
     {
       "i": 153,
-      "start": 522.8,
+      "start": 522.52,
       "end": 524.0,
       "text": "That's not a great pitch.",
       "recording": null
@@ -1098,13 +1098,13 @@
     {
       "i": 156,
       "start": 528.24,
-      "end": 534.23,
+      "end": 533.96,
       "text": "But we knew we had to get to when we got to scale, it becomes dangerous in our strategy not to have very stable money.",
       "recording": null
     },
     {
       "i": 157,
-      "start": 534.24,
+      "start": 533.96,
       "end": 534.56,
       "text": "Why?",
       "recording": null
@@ -1154,13 +1154,13 @@
     {
       "i": 164,
       "start": 544.48,
-      "end": 545.99,
+      "end": 545.77,
       "text": "You can't do that if your money can go away.",
       "recording": null
     },
     {
       "i": 165,
-      "start": 546.0,
+      "start": 545.77,
       "end": 550.48,
       "text": "But we we had to live with what we had and we launched our first permanent capital vehicle October 2014.",
       "recording": null
@@ -1238,13 +1238,13 @@
     {
       "i": 176,
       "start": 569.6,
-      "end": 571.35,
+      "end": 571.08,
       "text": "They went long the one stock we were short.",
       "recording": null
     },
     {
       "i": 177,
-      "start": 571.36,
+      "start": 571.08,
       "end": 572.24,
       "text": "Company called Urbal Life.",
       "recording": null
@@ -1294,13 +1294,13 @@
     {
       "i": 184,
       "start": 586.399,
-      "end": 588.55,
+      "end": 588.28,
       "text": "Let's give back all the open-ended money.",
       "recording": null
     },
     {
       "i": 185,
-      "start": 588.56,
+      "start": 588.28,
       "end": 589.92,
       "text": "Let's focus on permanent capital.",
       "recording": null
@@ -1385,13 +1385,13 @@
     {
       "i": 197,
       "start": 626.8,
-      "end": 635.03,
+      "end": 634.81,
       "text": "last 8 years by 7% peranom right these are not great vehicles but the problem is with the people running them and the strategy not",
       "recording": null
     },
     {
       "i": 198,
-      "start": 635.04,
+      "start": 634.81,
       "end": 641.12,
       "text": "with the entity itself and I actually uh we were trying to figure out a way to take our London listed vehicle and and bring",
       "recording": null
@@ -1427,13 +1427,13 @@
     {
       "i": 203,
       "start": 653.519,
-      "end": 654.389,
+      "end": 654.119,
       "text": "Does it make sense?\"",
       "recording": null
     },
     {
       "i": 204,
-      "start": 654.399,
+      "start": 654.119,
       "end": 655.36,
       "text": "You know, send me the book.",
       "recording": null
@@ -1455,13 +1455,13 @@
     {
       "i": 207,
       "start": 661.44,
-      "end": 662.23,
+      "end": 661.96,
       "text": "It was amazing.",
       "recording": null
     },
     {
       "i": 208,
-      "start": 662.24,
+      "start": 661.96,
       "end": 666.64,
       "text": "And what a 40act investment company is, it's a corporation that has only one layer of tax.",
       "recording": null
@@ -1553,13 +1553,13 @@
     {
       "i": 221,
       "start": 699.68,
-      "end": 702.87,
+      "end": 702.6,
       "text": "What we didn't have um was a Bergkshire Hathway like entity.",
       "recording": null
     },
     {
       "i": 222,
-      "start": 702.88,
+      "start": 702.6,
       "end": 704.48,
       "text": "You what what is Berkshire Hathway?",
       "recording": null
@@ -1630,13 +1630,13 @@
     {
       "i": 232,
       "start": 751.839,
-      "end": 755.43,
+      "end": 755.16,
       "text": "much about, which is it's a business of owning these small cities.",
       "recording": null
     },
     {
       "i": 233,
-      "start": 755.44,
+      "start": 755.16,
       "end": 756.88,
       "text": "We sell lots to home builders.",
       "recording": null
@@ -1644,13 +1644,13 @@
     {
       "i": 234,
       "start": 756.88,
-      "end": 759.35,
+      "end": 759.08,
       "text": "Uh we build apartments and office buildings.",
       "recording": null
     },
     {
       "i": 235,
-      "start": 759.36,
+      "start": 759.08,
       "end": 761.44,
       "text": "Uh we develop condominiums in Hawaii.",
       "recording": null
@@ -1728,20 +1728,20 @@
     {
       "i": 246,
       "start": 789.92,
-      "end": 791.509,
+      "end": 791.239,
       "text": "The transaction will close in two months.",
       "recording": null
     },
     {
       "i": 247,
-      "start": 791.519,
-      "end": 792.87,
+      "start": 791.239,
+      "end": 792.6,
       "text": "Persian is going to manage the assets.",
       "recording": null
     },
     {
       "i": 248,
-      "start": 792.88,
+      "start": 792.6,
       "end": 795.36,
       "text": "We're going to take the float, put the float in short-term US treasuries.",
       "recording": null
@@ -1784,13 +1784,13 @@
     {
       "i": 254,
       "start": 805.839,
-      "end": 807.35,
+      "end": 807.08,
       "text": "We own a total of 47%.",
       "recording": null
     },
     {
       "i": 255,
-      "start": 807.36,
+      "start": 807.08,
       "end": 809.36,
       "text": "So we have the what the attributes we need.",
       "recording": null
@@ -1833,13 +1833,13 @@
     {
       "i": 261,
       "start": 826.16,
-      "end": 831.11,
+      "end": 830.89,
       "text": "And the power of compounding combined with capital that you don't have to worry about leaving is a very powerful thing.",
       "recording": null
     },
     {
       "i": 262,
-      "start": 831.12,
+      "start": 830.89,
       "end": 832.8,
       "text": "So, who's got the best question?",
       "recording": null
@@ -1868,13 +1868,13 @@
     {
       "i": 266,
       "start": 837.839,
-      "end": 838.629,
+      "end": 838.379,
       "text": "How about that?",
       "recording": null
     },
     {
       "i": 267,
-      "start": 838.639,
+      "start": 838.359,
       "end": 839.279,
       "text": "Oh, okay.",
       "recording": null
@@ -1882,13 +1882,13 @@
     {
       "i": 268,
       "start": 839.279,
-      "end": 841.03,
+      "end": 840.48,
       "text": "Let's I'll take one then.",
       "recording": null
     },
     {
       "i": 269,
-      "start": 841.04,
+      "start": 840.76,
       "end": 841.839,
       "text": "I don't want to have a problem.",
       "recording": null
@@ -1896,20 +1896,20 @@
     {
       "i": 270,
       "start": 841.839,
-      "end": 842.629,
+      "end": 842.25,
       "text": "There's a lot of people.",
       "recording": null
     },
     {
       "i": 271,
-      "start": 842.639,
-      "end": 844.15,
+      "start": 842.359,
+      "end": 843.88,
       "text": "Thank you for for taking our questions.",
       "recording": null
     },
     {
       "i": 272,
-      "start": 844.16,
+      "start": 843.88,
       "end": 851.76,
       "text": "My question is, as index funds become increasingly driven by capital flows rather than valuation, as assets in passive investing have surpassed those in active",
       "recording": null
@@ -1924,13 +1924,13 @@
     {
       "i": 274,
       "start": 861.76,
-      "end": 867.829,
+      "end": 867.37,
       "text": "the S&P 500 or they would be better off investing in of course Persian Square or something an active investor?",
       "recording": null
     },
     {
       "i": 275,
-      "start": 867.839,
+      "start": 867.559,
       "end": 870.32,
       "text": "Index funds have proven to be a very good place to invest money.",
       "recording": null
@@ -1994,13 +1994,13 @@
     {
       "i": 284,
       "start": 902.399,
-      "end": 903.03,
+      "end": 902.649,
       "text": "I'll take yours.",
       "recording": null
     },
     {
       "i": 285,
-      "start": 903.04,
+      "start": 902.76,
       "end": 910.959,
       "text": "Yeah, I was I was just wondering if the geopolitical and the Iran war like do you see things coming to a resolution in a",
       "recording": null
@@ -2015,154 +2015,161 @@
     {
       "i": 287,
       "start": 913.36,
-      "end": 914.23,
+      "end": 913.68,
       "text": "And",
       "recording": null
     },
     {
       "i": 288,
-      "start": 914.24,
-      "end": 921.839,
-      "text": "I think the most likely outcome is uh a very successful resolution of Iran in a relatively short period of time.",
+      "start": 913.96,
+      "end": 916.089,
+      "text": "I think the most likely outcome is",
       "recording": null
     },
     {
       "i": 289,
+      "start": 916.8,
+      "end": 921.839,
+      "text": "uh a very successful resolution of Iran in a relatively short period of time.",
+      "recording": null
+    },
+    {
+      "i": 290,
       "start": 921.839,
       "end": 924.72,
       "text": "You know, hopefully a few months or less.",
       "recording": null
     },
     {
-      "i": 290,
+      "i": 291,
       "start": 924.72,
       "end": 928.88,
       "text": "Uh and I think it leads to a a massive sort of peace dividend uh in the world.",
       "recording": null
     },
     {
-      "i": 291,
+      "i": 292,
       "start": 928.88,
-      "end": 931.269,
+      "end": 930.999,
       "text": "Iran has been one of the grave threats to the world.",
       "recording": null
     },
     {
-      "i": 292,
-      "start": 931.279,
-      "end": 933.59,
+      "i": 293,
+      "start": 930.999,
+      "end": 933.32,
       "text": "Uh it's a sponsor of global terrorism.",
       "recording": null
     },
     {
-      "i": 293,
-      "start": 933.6,
+      "i": 294,
+      "start": 933.32,
       "end": 938.16,
       "text": "It's created uh you know massive disruption in the Middle East and and in other parts of the world.",
       "recording": null
     },
     {
-      "i": 294,
+      "i": 295,
       "start": 938.16,
       "end": 942.24,
       "text": "I think the administration's done and the military has done an amazing job quashing the regime.",
       "recording": null
     },
     {
-      "i": 295,
+      "i": 296,
       "start": 942.24,
       "end": 945.519,
       "text": "They're choking them now by effectively shutting off their their resources.",
       "recording": null
     },
     {
-      "i": 296,
+      "i": 297,
       "start": 945.519,
-      "end": 950.55,
+      "end": 950.409,
       "text": "Uh so I think this comes to a head in the relative short term and um and I think the outcome of that is I",
       "recording": null
     },
     {
-      "i": 297,
-      "start": 950.56,
-      "end": 952.389,
+      "i": 298,
+      "start": 950.409,
+      "end": 952.119,
       "text": "think the Abraham Hammer cords expand.",
       "recording": null
     },
     {
-      "i": 298,
-      "start": 952.399,
+      "i": 299,
+      "start": 952.119,
       "end": 954.0,
       "text": "Uh and I think it's very good for the world.",
       "recording": null
     },
     {
-      "i": 299,
+      "i": 300,
       "start": 954.0,
       "end": 955.04,
       "text": "So I'm I'm an optimist.",
       "recording": null
     },
     {
-      "i": 300,
+      "i": 301,
       "start": 955.04,
-      "end": 958.069,
+      "end": 957.621,
       "text": "Anyway, thank you for my brief uh",
       "recording": null
     },
     {
-      "i": 301,
-      "start": 958.079,
+      "i": 302,
+      "start": 957.799,
       "end": 959.44,
       "text": "Thank you so much.",
       "recording": null
     },
     {
-      "i": 302,
+      "i": 303,
       "start": 959.44,
       "end": 962.72,
       "text": "I you have a busy schedule, so you have to go.",
       "recording": null
     },
     {
-      "i": 303,
+      "i": 304,
       "start": 962.72,
       "end": 965.199,
       "text": "But um I am going to ask one thing.",
       "recording": null
     },
     {
-      "i": 304,
+      "i": 305,
       "start": 965.199,
-      "end": 970.79,
+      "end": 970.24,
       "text": "If you if you were invited to be Treasury Secretary right now, would you say us?",
       "recording": null
     },
     {
-      "i": 305,
-      "start": 970.8,
-      "end": 971.43,
+      "i": 306,
+      "start": 970.52,
+      "end": 970.88,
       "text": "No.",
       "recording": null
     },
     {
-      "i": 306,
-      "start": 971.44,
+      "i": 307,
+      "start": 971.16,
       "end": 972.639,
       "text": "Okay, there we go.",
       "recording": null
     },
     {
-      "i": 307,
+      "i": 308,
       "start": 972.639,
-      "end": 973.35,
+      "end": 973.13,
       "text": "There you have it.",
       "recording": null
     },
     {
-      "i": 308,
-      "start": 973.36,
-      "end": 976.671,
+      "i": 309,
+      "start": 973.13,
+      "end": 974.651,
       "text": "Thank you so much, Bill.",
       "recording": null
     }

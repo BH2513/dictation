@@ -451,6 +451,26 @@ def update_index(profile_id, entry):
     write_json(path, items)
 
 
+def rejected(err):
+    """원격에 내가 아직 받지 않은 변경이 있어서 밀린 경우."""
+    e = err or ""
+    return "fetch first" in e or "non-fast-forward" in e or "[rejected]" in e
+
+
+def git_sync():
+    """올리기 전에 원격의 변경을 먼저 받는다.
+
+    앱 쪽 수정이 GitHub 에서 계속 올라오므로 이 저장소는 대개 뒤처져 있다.
+    그대로 push 하면 거절당한다 — 인터넷 문제가 아니다.
+    """
+    r = run(["git", "-C", ROOT, "pull", "--rebase"])
+    if r.returncode != 0:
+        die("저장소를 최신 상태로 맞추지 못했습니다.\n"
+            "아래를 차례로 실행한 뒤 등록을 다시 해 주세요.\n\n"
+            "    git rebase --abort\n"
+            "    git pull\n\n" + ((r.stderr or "") + (r.stdout or "")).strip()[:600])
+
+
 def git_publish(paths, message):
     r = run(["git", "-C", ROOT, "add"] + paths)
     if r.returncode != 0:
@@ -458,15 +478,23 @@ def git_publish(paths, message):
     r = run(["git", "-C", ROOT, "commit", "-m", message])
     if r.returncode != 0 and "nothing to commit" not in (r.stdout + r.stderr):
         die("git commit 에 실패했습니다.\n" + r.stdout + r.stderr)
+
     say("올리는 중…")
+    git_sync()
     for attempt in range(4):
         r = run(["git", "-C", ROOT, "push"])
         if r.returncode == 0:
             return True
+        err = (r.stderr or "") + (r.stdout or "")
+        if rejected(err):
+            # 우리가 올리는 사이에 또 뭔가 올라온 경우. 다시 받아서 시도한다.
+            git_sync()
+            continue
         if attempt < 3:
             import time
             time.sleep(2 ** (attempt + 1))
-    die("git push 에 실패했습니다. 인터넷 연결을 확인하고 다시 실행해 주세요.\n" + r.stderr)
+    die("올리지 못했습니다. 인터넷 연결을 확인하고 등록을 다시 해 주세요.\n\n"
+        + ((r.stderr or "") + (r.stdout or "")).strip()[:600])
 
 
 # ---------------------------------------------------------------- 본체

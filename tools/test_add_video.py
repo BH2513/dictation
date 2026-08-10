@@ -205,6 +205,25 @@ check("recording 은 항상 null", [x["recording"] for x in s], [None, None, Non
 check("i 는 0부터 차례로", [x["i"] for x in s], [0, 1, 2])
 
 
+# ---------------------------------------------------------------- 공백만 있는 줄
+
+# 실제로 겪은 것: 유튜브 자동자막은 자막 조각 안에 공백 한 칸짜리 줄을 넣는다.
+# 그걸 "조각 끝"으로 보면 그 뒤 내용을 통째로 잃고, 그 말은 2초 뒤 조각에서
+# 주워지면서 문장 시작이 그만큼 늦어진다.
+SPACE_LINE = "WEBVTT\nKind: captions\nLanguage: en\n\n" + \
+    "00:00:10.559 --> 00:00:12.790 align:start position:0%\n" + \
+    " \n" + \
+    "I<00:00:10.800><c> have</c><00:00:10.880><c> no</c><00:00:11.360><c> idea.</c>\n"
+
+print("\n공백 한 칸짜리 줄이 있는 자막")
+cues_sp = parse_vtt(SPACE_LINE)
+check("조각을 잃지 않음", len(cues_sp), 1)
+check("내용을 다 읽음", cues_sp[0]["text"], "I have no idea.")
+w_sp = words_from_cues(cues_sp)
+check("단어 수", len(w_sp), 4)
+check("첫 단어가 조각 시각 근처에 놓임", w_sp[0]["t"] < 10.56, True)
+
+
 # ---------------------------------------------------------------- 시각 없는 앞 단어
 
 # 실제로 겪은 것: "And we can go into that at another time." 을 재생하면
@@ -280,8 +299,25 @@ check("한 문장으로 유지",
 # ---------------------------------------------------------------- 소리 표시와 화자 표시
 
 print("\n소리 표시와 화자 표시")
-check("[applause] 는 지운다", clean("thank you [applause] very much"), "thank you very much")
-check("[Music] 만 있는 줄은 빈 줄", clean("[Music]"), "")
+check("[applause] 자리에 경계 표시를 남긴다",
+      clean("thank you [applause] very much"), "thank you \u2016 very much")
+check("[Music] 만 있는 줄은 경계 표시만", clean("[Music]"), "\u2016")
+
+# 실제로 겪은 것: 박수 구간을 그냥 지웠더니 그 앞뒤 문장이 맞붙었다.
+APPLAUSE = """WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.000 --> 00:00:10.500 align:start position:0%
+I<00:00:05.300><c> give</c><00:00:05.700><c> you</c><00:00:06.200><c> Bill</c><00:00:08.500><c> [applause]</c>
+
+00:00:10.550 --> 00:00:13.000 align:start position:0%
+I<00:00:10.800><c> have</c><00:00:11.300><c> no</c><00:00:11.900><c> idea.</c>
+"""
+s_ap = sentences_of(APPLAUSE, use_words=True, use_punct=True, use_capital=False)
+check("박수 구간에서 문장이 나뉨", len(s_ap), 2)
+check("박수는 글자에 남지 않음", "[" not in s_ap[0]["text"] and "\u2016" not in s_ap[0]["text"], True)
+check("앞 문장이 박수 시작에서 끝남", s_ap[0]["end"], 8.5)
 
 SPEAKER = """WEBVTT
 

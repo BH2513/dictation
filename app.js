@@ -1,9 +1,8 @@
 /* 받아쓰기 연습 — 프로필 선택 / 라이브러리 / 듣기.
    빌드 단계가 없으므로 구형 사파리에서 그대로 돌아가야 한다. var 와 함수 선언으로 쓴다. */
 (function () {
-  // SPEC 4-1: 시작점 여유. 자동자막은 문장 시작을 늦게 잡을 때가 있어 조절할 수 있어야 한다
-  var LEADS = [0.3, 0.6, 1.0, 1.5];
-  var leadAt = 1;           // 기본 0.6초
+  // SPEC 4-1: lead-in. 자동자막은 문장 시작을 늦게 잡을 때가 있어 조절할 수 있어야 한다
+  var lead = 0.6;           // 초. 듣기 화면 슬라이더로 바꾼다
   var TAIL = 0.3;           // 끝 여유. 마지막 단어가 잘리지 않게 (초)
   var TICK_MS = 40;         // 끝 지점 감시 주기
   var STOP_MARGIN = 0.04;   // 감시 주기로 인한 정지 지연 보정
@@ -54,17 +53,17 @@
         try {
           data = JSON.parse(req.responseText);
         } catch (e) {
-          fail('파일을 읽을 수 없습니다.');
+          fail("Couldn't read that file.");
           return;
         }
         ok(data);
       } else if (req.status === 404) {
-        fail('없음');
+        fail('missing');
       } else {
-        fail('불러오지 못했습니다. 인터넷 연결을 확인해 주세요.');
+        fail("Couldn't load it. Check your internet connection.");
       }
     };
-    req.onerror = function () { fail('불러오지 못했습니다. 인터넷 연결을 확인해 주세요.'); };
+    req.onerror = function () { fail("Couldn't load it. Check your internet connection."); };
     req.send();
   }
 
@@ -111,13 +110,13 @@
   function showProfiles() {
     show('profiles');
     var box = $('profile-list');
-    notice(box, '불러오는 중…');
+    notice(box, 'Loading\u2026');
 
     getJSON('data/profiles.json', function (data) {
       profiles = data || [];
       clear(box);
       if (!profiles.length) {
-        notice(box, '아직 등록된 사람이 없습니다.\nPC에서 영상을 등록하면 여기에 생깁니다.');
+        notice(box, 'Nobody here yet.\nAdd a video from your PC and a profile appears.');
         return;
       }
       var ul = el('ul', 'list');
@@ -138,9 +137,9 @@
       }
       box.appendChild(ul);
     }, function (why) {
-      notice(box, why === '없음'
-        ? '아직 등록된 사람이 없습니다.\nPC에서 영상을 등록하면 여기에 생깁니다.'
-        : '사람 목록을 ' + why, why !== '없음');
+      notice(box, why === 'missing'
+        ? 'Nobody here yet.\nAdd a video from your PC and a profile appears.'
+        : why, why !== 'missing');
     });
   }
 
@@ -163,17 +162,17 @@
   function showLibrary(profileId) {
     show('library');
     var box = $('video-list');
-    notice(box, '불러오는 중…');
+    notice(box, 'Loading\u2026');
 
     findProfile(profileId, function (p) {
       profile = p;
-      $('library-title').textContent = p ? p.name : '목록';
+      $('library-title').textContent = p ? p.name : 'Library';
 
       getJSON('data/videos/' + profileId + '/index.json', function (data) {
         videos = data || [];
         clear(box);
         if (!videos.length) {
-          notice(box, '아직 등록된 영상이 없습니다.\nPC에서 영상을 등록하면 여기에 생깁니다.');
+          notice(box, 'No videos yet.\nAdd one from your PC and it shows up here.');
           return;
         }
         var ul = el('ul', 'list');
@@ -182,12 +181,12 @@
             var b = el('button', 'item');
             var body = el('div', 'body');
             body.appendChild(el('div', 'name', v.title || v.videoId));
-            var meta = '문장 ' + (v.sentenceCount || 0) + '개';
-            if (v.hasKorean) meta += ' · 한국어 있음';
+            var meta = (v.sentenceCount || 0) + ' sentences';
+            if (v.hasKorean) meta += ' \u00b7 Korean';
             if (v.addedAt) meta += ' · ' + v.addedAt;
             body.appendChild(el('div', 'meta', meta));
             if (v.source === 'auto_captions') {
-              body.appendChild(el('span', 'badge', '자동 자막 — 문장 경계가 부정확할 수 있음'));
+              body.appendChild(el('span', 'badge', 'Auto captions \u2014 sentence breaks may be off'));
             }
             b.appendChild(body);
             b.onclick = function () { go('#/' + profileId + '/' + v.videoId); };
@@ -198,9 +197,9 @@
         }
         box.appendChild(ul);
       }, function (why) {
-        notice(box, why === '없음'
-          ? '아직 등록된 영상이 없습니다.\nPC에서 영상을 등록하면 여기에 생깁니다.'
-          : '영상 목록을 ' + why, why !== '없음');
+        notice(box, why === 'missing'
+          ? 'No videos yet.\nAdd one from your PC and it shows up here.'
+          : why, why !== 'missing');
       });
     });
   }
@@ -211,7 +210,7 @@
     show('listen');
     current = -1;
     video = null;
-    $('listen-title').textContent = '불러오는 중…';
+    $('listen-title').textContent = 'Loading\u2026';
     $('back-to-library').onclick = function () { go('#/' + profileId); };
     clear($('sentence-list'));
     $('now').textContent = '';
@@ -224,12 +223,12 @@
       drawSentences();
       ensurePlayer(videoId);
       if (video.sentences && video.sentences.length) select(0, false);
-      else say('이 영상에는 문장이 없습니다.');
+      else say('This video has no sentences.');
     }, function (why) {
-      notice($('sentence-list'), why === '없음'
-        ? '이 영상의 문장 자료를 찾을 수 없습니다.'
-        : '문장을 ' + why, true);
-      $('listen-title').textContent = '불러오지 못했습니다';
+      notice($('sentence-list'), why === 'missing'
+        ? "Couldn't find the sentences for this video."
+        : why, true);
+      $('listen-title').textContent = "Couldn't load";
     });
   }
 
@@ -237,7 +236,7 @@
     var box = $('sentence-list');
     var on = (open === undefined) ? (box.style.display === 'none') : open;
     box.style.display = on ? 'block' : 'none';
-    $('list-btn').textContent = on ? '문장 목록 닫기' : '문장 목록 (' + listLength() + '개)';
+    $('list-btn').textContent = on ? 'Hide sentences' : 'Sentences (' + listLength() + ')';
     if (on) scrollListTo(current);
   }
 
@@ -260,7 +259,7 @@
     clear(box);
     box.style.display = 'none';
     var list = video.sentences || [];
-    $('list-btn').textContent = '문장 목록 (' + list.length + '개)';
+    $('list-btn').textContent = 'Sentences (' + list.length + ')';
     var frag = document.createDocumentFragment();
     for (var i = 0; i < list.length; i++) {
       (function (s, idx) {
@@ -304,7 +303,7 @@
     $('next-btn').disabled = (idx === list.length - 1);
 
     if (play) playCurrent();
-    else say('문장을 고르고 재생을 눌러 주세요.');
+    else say('Pick a sentence, then press Play.');
   }
 
   /* ---------------------------------------------------------------- 재생 */
@@ -334,7 +333,7 @@
       if (t >= targetEnd - STOP_MARGIN) {
         stopWatch();
         player.pauseVideo();
-        say('들려드렸습니다. 다시 듣거나 다음 문장으로 넘어가세요.');
+        say('Done. Replay it, or go to the next sentence.');
       }
     }, TICK_MS);
   }
@@ -345,7 +344,7 @@
     if (loadTimer) clearTimeout(loadTimer);
     loadTimer = setTimeout(function () {
       if (!playerReady) {
-        say('영상 재생기를 불러오지 못했습니다. 인터넷 연결을 확인하고 새로고침해 주세요.');
+        say("Couldn't load the player. Check your connection and reload.");
       }
     }, 8000);
   }
@@ -375,7 +374,7 @@
             try { player.unloadModule('captions'); player.unloadModule('cc'); } catch (e) {}
             if (loadTimer) { clearTimeout(loadTimer); loadTimer = null; }
             setControls(true);
-            say('준비됐습니다. 문장을 눌러 보세요.');
+            say('Ready. Tap a sentence.');
           },
           onStateChange: function (e) {
             if (e.data === YT.PlayerState.PLAYING) {
@@ -393,7 +392,7 @@
           },
           onError: function () {
             stopWatch();
-            say('영상을 재생할 수 없습니다. 유튜브에서 삭제되었거나 다른 곳에서 볼 수 없는 영상일 수 있습니다.');
+            say("This video can't be played. It may have been removed, or the owner blocked embedding.");
           }
         }
       });
@@ -414,10 +413,10 @@
   function playCurrent() {
     var list = (video && video.sentences) || [];
     if (current < 0 || current >= list.length) return;
-    if (!playerReady) { say('영상을 불러오는 중입니다. 잠시 뒤에 다시 눌러 주세요.'); return; }
+    if (!playerReady) { say('Still loading the video. Try again in a moment.'); return; }
 
     var s = list[current];
-    var from = Math.max(0, s.start - LEADS[leadAt]);
+    var from = Math.max(0, s.start - lead);
     stopWatch();
     startedAt = (new Date()).getTime();
 
@@ -429,7 +428,7 @@
 
     startWatch(s.end + TAIL);
     nudge(0);
-    say('재생 중 — ' + (current + 1) + '번째 문장' + (slow ? ' (0.75배속)' : ''));
+    say('Playing sentence ' + (current + 1) + (slow ? ' at 0.75\u00d7' : ''));
   }
 
   function nudge(tries) {
@@ -444,21 +443,17 @@
     }, 250);
   }
 
-  function cycleLead() {
-    leadAt = (leadAt + 1) % LEADS.length;
-    showLead();
-    say('앞 여유를 ' + LEADS[leadAt] + '초로 맞췄습니다. 다시 들어 보세요.');
-  }
-
-  function showLead() {
-    $('lead-btn').textContent = '앞 여유 ' + LEADS[leadAt] + '초';
+  // lead-in: 자막이 가리키는 시각보다 얼마나 앞에서 재생을 시작할지 (자막·방송의 정식 용어)
+  function setLead(value) {
+    lead = Math.round(value * 10) / 10;
+    $('lead-value').textContent = lead.toFixed(1) + 's';
   }
 
   function toggleSlow() {
     slow = !slow;
     var b = $('slow-btn');
     b.className = slow ? 'on' : '';
-    b.textContent = slow ? '0.75배속 켜짐' : '0.75배속';
+    b.textContent = slow ? '0.75\u00d7 on' : '0.75\u00d7 speed';
     if (playerReady) player.setPlaybackRate(slow ? 0.75 : 1);
   }
 
@@ -479,8 +474,9 @@
     $('change-profile').onclick = function () { go('#/'); };
     $('list-btn').onclick = function () { toggleList(); };
     $('cover').onclick = playCurrent;
-    $('lead-btn').onclick = cycleLead;
-    showLead();
+    $('lead-range').onchange = function () { setLead(parseFloat(this.value)); };
+    $('lead-range').oninput = function () { setLead(parseFloat(this.value)); };
+    setLead(lead);
 
     if (window.addEventListener) window.addEventListener('hashchange', route, false);
     route();

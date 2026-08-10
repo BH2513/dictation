@@ -1,7 +1,9 @@
 /* 받아쓰기 연습 — 프로필 선택 / 라이브러리 / 듣기.
    빌드 단계가 없으므로 구형 사파리에서 그대로 돌아가야 한다. var 와 함수 선언으로 쓴다. */
 (function () {
-  var LEAD_IN = 0.3;        // SPEC 4-1: 시작점 여유 (초)
+  // SPEC 4-1: 시작점 여유. 자동자막은 문장 시작을 늦게 잡을 때가 있어 조절할 수 있어야 한다
+  var LEADS = [0.3, 0.6, 1.0, 1.5];
+  var leadAt = 1;           // 기본 0.6초
   var TAIL = 0.3;           // 끝 여유. 마지막 단어가 잘리지 않게 (초)
   var TICK_MS = 40;         // 끝 지점 감시 주기
   var STOP_MARGIN = 0.04;   // 감시 주기로 인한 정지 지연 보정
@@ -415,7 +417,7 @@
     if (!playerReady) { say('영상을 불러오는 중입니다. 잠시 뒤에 다시 눌러 주세요.'); return; }
 
     var s = list[current];
-    var from = Math.max(0, s.start - LEAD_IN);
+    var from = Math.max(0, s.start - LEADS[leadAt]);
     stopWatch();
     startedAt = (new Date()).getTime();
 
@@ -440,6 +442,16 @@
         nudge(tries + 1);
       }
     }, 250);
+  }
+
+  function cycleLead() {
+    leadAt = (leadAt + 1) % LEADS.length;
+    showLead();
+    say('앞 여유를 ' + LEADS[leadAt] + '초로 맞췄습니다. 다시 들어 보세요.');
+  }
+
+  function showLead() {
+    $('lead-btn').textContent = '앞 여유 ' + LEADS[leadAt] + '초';
   }
 
   function toggleSlow() {
@@ -467,6 +479,8 @@
     $('change-profile').onclick = function () { go('#/'); };
     $('list-btn').onclick = function () { toggleList(); };
     $('cover').onclick = playCurrent;
+    $('lead-btn').onclick = cycleLead;
+    showLead();
 
     if (window.addEventListener) window.addEventListener('hashchange', route, false);
     route();

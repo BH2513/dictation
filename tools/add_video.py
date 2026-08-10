@@ -339,8 +339,39 @@ def attach_korean(sentences, ko_cues, min_overlap=0.4):
 GENTLE = ["--retries", "10", "--sleep-requests", "1", "--no-warnings"]
 
 
+RECOVER = ("\n아래를 차례로 붙여넣어 저장소를 되돌린 뒤 다시 등록해 주세요.\n"
+           "   (등록해 둔 영상은 사이트에 이미 올라가 있으므로 없어지지 않습니다.)\n\n"
+           "    git rebase --abort\n"
+           "    git checkout main\n"
+           "    git fetch origin\n"
+           "    git reset --hard origin/main\n")
+
+
 def run(cmd, **kw):
     return subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", **kw)
+
+
+def check_repo():
+    """작업을 시작하기 전에 저장소가 손댈 수 있는 상태인지 본다.
+
+    rebase 가 충돌로 멈춰 있거나 브랜치를 벗어나 있으면, 그대로 진행해 봐야
+    알아볼 수 없는 오류만 난다. 여기서 멈추고 되돌리는 법을 알려 준다.
+    """
+    git_dir = os.path.join(ROOT, ".git")
+    for mark in ("rebase-merge", "rebase-apply", "MERGE_HEAD", "CHERRY_PICK_HEAD"):
+        if os.path.exists(os.path.join(git_dir, mark)):
+            die("저장소가 이전 작업을 마치지 못한 채 멈춰 있습니다." + RECOVER)
+
+    r = run(["git", "-C", ROOT, "status", "--porcelain"])
+    if r.returncode != 0:
+        die("저장소 상태를 확인하지 못했습니다.\n" + (r.stderr or ""))
+    for line in (r.stdout or "").splitlines():
+        if line[:2] in ("UU", "AA", "DD", "AU", "UA", "DU", "UD"):
+            die("저장소에 충돌이 남아 있습니다." + RECOVER)
+
+    r = run(["git", "-C", ROOT, "symbolic-ref", "-q", "HEAD"])
+    if r.returncode != 0:
+        die("저장소가 어느 가지에도 올라가 있지 않습니다(detached HEAD)." + RECOVER)
 
 
 def rate_limited(err):
@@ -426,7 +457,13 @@ def read_json(path, default):
     if not os.path.exists(path):
         return default
     with open(path, encoding="utf-8") as fh:
-        return json.load(fh)
+        text = fh.read()
+    try:
+        return json.loads(text)
+    except ValueError:
+        if "<<<<<<<" in text:
+            die("저장소가 충돌 상태로 멈춰 있습니다.\n" + RECOVER)
+        die("파일이 깨져 있어 읽을 수 없습니다:\n  " + path + "\n" + RECOVER)
 
 
 def write_json(path, obj):
@@ -476,10 +513,10 @@ def git_sync():
     """
     r = run(["git", "-C", ROOT, "pull", "--rebase"])
     if r.returncode != 0:
-        die("저장소를 최신 상태로 맞추지 못했습니다.\n"
-            "아래를 차례로 실행한 뒤 등록을 다시 해 주세요.\n\n"
-            "    git rebase --abort\n"
-            "    git pull\n\n" + ((r.stderr or "") + (r.stdout or "")).strip()[:600])
+        # 반쯤 진행된 rebase 를 남겨 두면 다음 실행이 알아볼 수 없는 오류로 죽는다
+        run(["git", "-C", ROOT, "rebase", "--abort"])
+        die("저장소를 최신 상태로 맞추지 못했습니다." + RECOVER
+            + "\n" + ((r.stderr or "") + (r.stdout or "")).strip()[:400])
 
 
 def git_publish(paths, message):
@@ -519,6 +556,8 @@ def main():
     ap.add_argument("--ko-subs-file", help="한국어 자막 파일을 직접 지정")
     ap.add_argument("--title", help="영상 제목을 직접 지정")
     args = ap.parse_args()
+
+    check_repo()
 
     video_id = extract_video_id(args.url)
     if not video_id:
@@ -631,4 +670,13 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except SystemExit:
+        raise
+    except KeyboardInterrupt:
+        die("중단했습니다.")
+    except Exception as e:
+        die("예상하지 못한 문제가 생겼습니다.\n"
+            "  " + type(e).__name__ + ": " + str(e)[:300] + "\n\n"
+            "이 화면을 그대로 알려 주시면 고치겠습니다.")

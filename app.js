@@ -9,6 +9,7 @@
 
   var profiles = [];
   var profile = null;
+  var profileId = null;     // 주소로 바로 들어오면 profile 이 아직 없다. 기록에는 이 값을 쓴다
   var videos = [];
   var video = null;
   var current = -1;
@@ -16,6 +17,7 @@
   var strict = false;       // SPEC 6: 기본은 관대 모드
   var audioOnly = false;    // 화면을 덮고 소리만 듣는다
   var checked = false;
+  var progress = null;      // 지금 영상의 진도 (SPEC 4-2)
   var hintAt = 0;           // 0 없음 → 1 낱말 수 → 2 첫 글자 → 3 정답
 
   var player = null;
@@ -165,6 +167,7 @@
   }
 
   function showLibrary(profileId) {
+    setProfileId(profileId);
     show('library');
     var box = $('video-list');
     notice(box, 'Loading\u2026');
@@ -211,7 +214,9 @@
 
   /* ---------------------------------------------------------------- 듣기 */
 
-  function showListen(profileId, videoId) {
+  function showListen(pid, videoId) {
+    var profileId = pid;
+    setProfileId(pid);
     show('listen');
     current = -1;
     video = null;
@@ -227,8 +232,14 @@
       $('auto-note').style.display = (data.source === 'auto_captions') ? 'block' : 'none';
       drawSentences();
       ensurePlayer(videoId);
-      if (video.sentences && video.sentences.length) select(0, false);
-      else say('This video has no sentences.');
+      if (!video.sentences || !video.sentences.length) {
+        say('This video has no sentences.');
+        return;
+      }
+      loadProgress(profileId, videoId, function (at) {
+        select(at, false);
+        if (at > 0) say('Picking up at sentence ' + (at + 1) + '.');
+      });
     }, function (why) {
       notice($('sentence-list'), why === 'missing'
         ? "Couldn't find the sentences for this video."
@@ -281,6 +292,7 @@
     var ul = el('ul', 'list');
     ul.appendChild(frag);
     box.appendChild(ul);
+    markDone();
   }
 
   function select(idx, play) {
@@ -301,6 +313,10 @@
     $('prev-btn').disabled = (idx === 0);
     $('next-btn').disabled = (idx === list.length - 1);
 
+    if (progress && window.Store && Store.available()) {
+      progress.at = current;
+      Store.saveProgress(progress, noteStorage);
+    }
     if (play) playCurrent();
     else say('Press Play, then type what you hear.');
   }
@@ -398,6 +414,75 @@
   }
 
 
+
+  /* ---------------------------------------------------------------- 진도 (SPEC 4-2) */
+
+  function setProfileId(id) { profileId = id; }
+
+  function loadProgress(profileId, videoId, done) {
+    progress = null;
+    if (!window.Store || !Store.available()) {
+      noteStorage();
+      done(0);
+      return;
+    }
+    Store.getProgress(profileId, videoId, function (row) {
+      progress = row;
+      var at = row.at || 0;
+      var list = (video && video.sentences) || [];
+      if (at >= list.length) at = 0;
+      markDone();
+      done(at);
+    }, function () { noteStorage(); done(0); });
+  }
+
+  function noteStorage() {
+    var n = $('storage-note');
+    if (n) n.style.display = 'block';
+  }
+
+  /* 채점 결과를 남긴다. 오답 낱말과 문장카드도 여기서 적재한다 — SPEC 6번 3단계. */
+  function recordResult(r) {
+    if (!progress || !profileId || !video) return;
+    var correct = (r.right === r.total);
+    progress.at = current;
+    progress.sentences[current] = correct ? 'ok' : 'miss';
+    Store.saveProgress(progress, noteStorage);
+
+    if (!correct) {
+      var missed = [];
+      for (var i = 0; i < r.words.length; i++) {
+        if (!r.ok[i]) {
+          var w = r.words[i].replace(/^[^A-Za-z0-9']+/, '').replace(/[^A-Za-z0-9']+$/, '');
+          if (w) missed.push(w);
+        }
+      }
+      Store.addMisses(profileId, video.videoId, current, missed, noteStorage);
+      Store.addCard(profileId, video.videoId, current, 'wrong', noteStorage);
+    }
+    markDone();
+  }
+
+  /* 어디까지 했는지 문장 목록과 위치 표시에 남긴다 */
+  function markDone() {
+    if (!progress) return;
+    var list = (video && video.sentences) || [];
+    var done = 0;
+    for (var k in progress.sentences) {
+      if (progress.sentences.hasOwnProperty(k)) done++;
+    }
+    var el2 = $('done-count');
+    if (el2) {
+      el2.textContent = list.length ? (done + ' of ' + list.length + ' practised') : '';
+    }
+    for (var i = 0; i < list.length; i++) {
+      var b = $('sentence-' + i);
+      if (!b) continue;
+      var mark = progress.sentences[i];
+      b.setAttribute('data-done', mark || '');
+    }
+  }
+
   /* ---------------------------------------------------------------- 받아쓰기 */
 
   function sentenceAt(idx) {
@@ -428,6 +513,7 @@
     var r = grade(s.text, typed, strict);
     showGraded(r, s);
     checked = true;
+    recordResult(r);
     say(r.right + ' of ' + r.total + ' words correct.');
   }
 

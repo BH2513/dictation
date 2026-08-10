@@ -44,12 +44,28 @@
     </div>
 
     <div class="pos" id="position"></div>
-    <div class="now" id="now"></div>
 
     <div class="buttons">
       <button class="primary" id="play-btn">Play</button>
-      <button id="replay-btn">Replay</button>
+      <button class="half" id="replay-btn">Replay</button>
       <button class="half" id="slow-btn">0.75× speed</button>
+    </div>
+
+    <textarea id="answer-input" rows="3" placeholder="Type what you hear"
+      autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"></textarea>
+
+    <div class="buttons">
+      <button class="primary" id="check-btn">Check</button>
+      <button class="half" id="hint-btn">Hint</button>
+      <button class="half" id="reveal-btn">Show answer</button>
+    </div>
+
+    <div class="hintline" id="hint-line"></div>
+    <div class="now empty" id="now">Listen, then type what you hear.</div>
+
+    <div class="keys">Enter check · Shift+Enter replay · Alt+H hint · Alt+S slow</div>
+
+    <div class="buttons">
       <button class="half" id="prev-btn">Previous</button>
       <button class="half" id="next-btn">Next</button>
     </div>
@@ -61,6 +77,8 @@
     </div>
 
     <div class="lead">
+      <div class="row"><span class="rowlabel">Marking</span>
+        <button class="small" id="strict-btn">Lenient</button></div>
       <label for="lead-range">Lead-in <span id="lead-value">0.6s</span></label>
       <input type="range" id="lead-range" min="0" max="2" step="0.1" value="0.6">
       <p class="hint">How far before the sentence playback starts. Raise it if the first words are cut off.</p>

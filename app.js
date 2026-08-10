@@ -13,6 +13,9 @@
   var video = null;
   var current = -1;
   var slow = false;
+  var strict = false;       // SPEC 6: 기본은 관대 모드
+  var checked = false;
+  var hintAt = 0;           // 0 없음 → 1 낱말 수 → 2 첫 글자 → 3 정답
 
   var player = null;
   var apiReady = false;
@@ -290,20 +293,210 @@
     scrollListTo(current);
     $('position').textContent = (idx + 1) + ' / ' + list.length;
 
-    var s = list[idx];
-    var box = $('now');
-    clear(box);
-    box.appendChild(document.createTextNode(s.text));
-    if (s.ko) {
-      var ko = el('span', 'ko', s.ko);
-      box.appendChild(ko);
-    }
+    resetAnswer();
 
     $('prev-btn').disabled = (idx === 0);
     $('next-btn').disabled = (idx === list.length - 1);
 
     if (play) playCurrent();
-    else say('Pick a sentence, then press Play.');
+    else say('Press Play, then type what you hear.');
+  }
+
+
+  /* ---------------------------------------------------------------- 채점 */
+
+  // 관대 모드에서 같은 말로 볼 축약형. 애매한 소유격('Bill's)은 넣지 않는다.
+  var EXPAND = {
+    "i'm": "i am", "i've": "i have", "i'll": "i will", "i'd": "i would",
+    "it's": "it is", "that's": "that is", "there's": "there is", "here's": "here is",
+    "what's": "what is", "who's": "who is", "he's": "he is", "she's": "she is",
+    "let's": "let us", "we're": "we are", "you're": "you are", "they're": "they are",
+    "we'll": "we will", "you'll": "you will", "they'll": "they will",
+    "we've": "we have", "you've": "you have", "they've": "they have",
+    "don't": "do not", "doesn't": "does not", "didn't": "did not",
+    "can't": "cannot", "won't": "will not", "wouldn't": "would not",
+    "couldn't": "could not", "shouldn't": "should not",
+    "isn't": "is not", "aren't": "are not", "wasn't": "was not", "weren't": "were not",
+    "haven't": "have not", "hasn't": "has not", "hadn't": "had not"
+  };
+
+  /* 글을 채점용 낱말로 바꾼다.
+     words 는 화면에 보여 줄 원래 낱말, toks 는 비교용, owner 는 toks 가 어느 낱말에서 나왔는지. */
+  function tokenize(text, strict) {
+    var src = (text || "").replace(/\u2019/g, "'").trim();
+    var words = src.length ? src.split(/\s+/) : [];
+    var toks = [], owner = [];
+    for (var i = 0; i < words.length; i++) {
+      var piece = words[i];
+      if (strict) {
+        toks.push(piece);
+        owner.push(i);
+        continue;
+      }
+      var w = piece.toLowerCase().replace(/-/g, " ");
+      var parts = w.split(/\s+/);
+      for (var p = 0; p < parts.length; p++) {
+        var one = parts[p].replace(/^[^a-z0-9']+/, "").replace(/[^a-z0-9']+$/, "");
+        if (!one) continue;
+        if (EXPAND[one]) {
+          var ex = EXPAND[one].split(" ");
+          for (var e = 0; e < ex.length; e++) { toks.push(ex[e]); owner.push(i); }
+        } else {
+          toks.push(one.replace(/'/g, ""));
+          owner.push(i);
+        }
+      }
+    }
+    return { words: words, toks: toks, owner: owner };
+  }
+
+  /* 정답과 입력을 가장 길게 겹치도록 맞춰 본다.
+     자리를 하나씩 비교하면 낱말 하나를 빠뜨렸을 때 뒤가 전부 틀린 것이 된다. */
+  function align(a, b) {
+    var n = a.length, m = b.length, i, j;
+    var dp = [];
+    for (i = 0; i <= n; i++) {
+      dp.push([]);
+      for (j = 0; j <= m; j++) dp[i].push(0);
+    }
+    for (i = n - 1; i >= 0; i--) {
+      for (j = m - 1; j >= 0; j--) {
+        dp[i][j] = (a[i] === b[j]) ? dp[i + 1][j + 1] + 1
+                                   : Math.max(dp[i + 1][j], dp[i][j + 1]);
+      }
+    }
+    var hit = [], extra = [];
+    for (i = 0; i < n; i++) hit.push(false);
+    i = 0; j = 0;
+    while (i < n && j < m) {
+      if (a[i] === b[j]) { hit[i] = true; i++; j++; }
+      else if (dp[i + 1][j] >= dp[i][j + 1]) { i++; }
+      else { extra.push(b[j]); j++; }
+    }
+    while (j < m) { extra.push(b[j]); j++; }
+    return { hit: hit, extra: extra };
+  }
+
+  /* 낱말 단위로 맞았는지 돌려준다. 한 낱말이 여러 조각이 되면 전부 맞아야 맞은 것. */
+  function grade(answer, typed, strict) {
+    var A = tokenize(answer, strict);
+    var B = tokenize(typed, strict);
+    var r = align(A.toks, B.toks);
+    var ok = [];
+    for (var w = 0; w < A.words.length; w++) ok.push(null);
+    for (var t = 0; t < A.toks.length; t++) {
+      var o = A.owner[t];
+      if (ok[o] === null) ok[o] = r.hit[t];
+      else ok[o] = ok[o] && r.hit[t];
+    }
+    var right = 0;
+    for (w = 0; w < ok.length; w++) if (ok[w]) right++;
+    return { words: A.words, ok: ok, right: right, total: A.words.length, extra: r.extra };
+  }
+
+
+  /* ---------------------------------------------------------------- 받아쓰기 */
+
+  function sentenceAt(idx) {
+    var list = (video && video.sentences) || [];
+    return (idx >= 0 && idx < list.length) ? list[idx] : null;
+  }
+
+  function resetAnswer() {
+    checked = false;
+    hintAt = 0;
+    $('answer-input').value = '';
+    $('answer-input').disabled = false;
+    $('hint-line').textContent = '';
+    clear($('now'));
+    $('now').className = 'now empty';
+    $('now').appendChild(document.createTextNode('Listen, then type what you hear.'));
+    $('check-btn').disabled = false;
+  }
+
+  function checkAnswer() {
+    var s = sentenceAt(current);
+    if (!s) return;
+    var typed = $('answer-input').value;
+    if (!typed.replace(/\s/g, '')) {
+      say('Type something first, or press Show answer.');
+      return;
+    }
+    var r = grade(s.text, typed, strict);
+    showGraded(r, s);
+    checked = true;
+    say(r.right + ' of ' + r.total + ' words correct.');
+  }
+
+  function showGraded(r, s) {
+    var box = $('now');
+    clear(box);
+    box.className = 'now';
+    for (var i = 0; i < r.words.length; i++) {
+      var w = el('span', r.ok[i] ? 'w' : 'w bad', r.words[i]);
+      box.appendChild(w);
+      box.appendChild(document.createTextNode(' '));
+    }
+    if (r.extra.length) {
+      var ex = el('div', 'extra', 'Not in the sentence: ' + r.extra.join(', '));
+      box.appendChild(ex);
+    }
+    if (s && s.ko) box.appendChild(el('span', 'ko', s.ko));
+  }
+
+  function revealAnswer() {
+    var s = sentenceAt(current);
+    if (!s) return;
+    var box = $('now');
+    clear(box);
+    box.className = 'now';
+    box.appendChild(document.createTextNode(s.text));
+    if (s.ko) box.appendChild(el('span', 'ko', s.ko));
+    checked = true;
+    hintAt = 3;
+    say('Answer shown. Try the next sentence.');
+  }
+
+  /* SPEC 6 힌트 단계: 느리게 듣기 → 낱말 수 → 첫 글자 → 정답 */
+  function nextHint() {
+    var s = sentenceAt(current);
+    if (!s) return;
+    hintAt++;
+    if (hintAt === 1) {
+      var n = s.text.split(/\s+/).length;
+      $('hint-line').textContent = n + ' words.';
+      say('Hint: how many words.');
+    } else if (hintAt === 2) {
+      $('hint-line').textContent = firstLetters(s.text);
+      say('Hint: first letter of each word.');
+    } else {
+      $('hint-line').textContent = '';
+      revealAnswer();
+    }
+  }
+
+  function firstLetters(text) {
+    var words = text.split(/\s+/);
+    var out = [];
+    for (var i = 0; i < words.length; i++) {
+      var w = words[i];
+      var shown = w.charAt(0);
+      for (var j = 1; j < w.length; j++) {
+        shown += /[a-zA-Z0-9]/.test(w.charAt(j)) ? '\u2013' : w.charAt(j);
+      }
+      out.push(shown);
+    }
+    return out.join(' ');
+  }
+
+  function toggleStrict() {
+    strict = !strict;
+    $('strict-btn').className = strict ? 'small on' : 'small';
+    $('strict-btn').textContent = strict ? 'Strict' : 'Lenient';
+    say(strict
+      ? 'Strict: capitals and punctuation must match.'
+      : 'Lenient: capitals, punctuation and contractions are forgiven.');
+    if (checked) checkAnswer();
   }
 
   /* ---------------------------------------------------------------- 재생 */
@@ -457,6 +650,36 @@
     if (playerReady) player.setPlaybackRate(slow ? 0.75 : 1);
   }
 
+
+  /* SPEC 6 단축키. 글을 치는 중에도 눌리는 조합으로 골랐다. */
+  function onKey(e) {
+    var ev = e || window.event;
+    var key = ev.key || '';
+    if (key === 'Enter' && !ev.shiftKey && !ev.altKey) {
+      if (ev.preventDefault) ev.preventDefault();
+      if (checked) select(current + 1, true);
+      else checkAnswer();
+      return false;
+    }
+    if (key === 'Enter' && ev.shiftKey) {
+      if (ev.preventDefault) ev.preventDefault();
+      playCurrent();
+      return false;
+    }
+    if (ev.altKey && (key === 'h' || key === 'H')) {
+      if (ev.preventDefault) ev.preventDefault();
+      nextHint();
+      return false;
+    }
+    if (ev.altKey && (key === 's' || key === 'S')) {
+      if (ev.preventDefault) ev.preventDefault();
+      toggleSlow();
+      playCurrent();
+      return false;
+    }
+    return true;
+  }
+
   /* ---------------------------------------------------------------- 시작 */
 
   window.onYouTubeIframeAPIReady = function () {
@@ -474,6 +697,12 @@
     $('change-profile').onclick = function () { go('#/'); };
     $('list-btn').onclick = function () { toggleList(); };
     $('cover').onclick = playCurrent;
+    $('check-btn').onclick = checkAnswer;
+    $('hint-btn').onclick = nextHint;
+    $('reveal-btn').onclick = revealAnswer;
+    $('strict-btn').onclick = toggleStrict;
+    $('answer-input').onkeydown = onKey;
+
     $('lead-range').onchange = function () { setLead(parseFloat(this.value)); };
     $('lead-range').oninput = function () { setLead(parseFloat(this.value)); };
     setLead(lead);

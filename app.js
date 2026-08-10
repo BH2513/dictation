@@ -88,6 +88,7 @@
     for (var i = 0; i < all.length; i++) {
       $('screen-' + all[i]).className = 'screen' + (all[i] === name ? ' on' : '');
     }
+    $('navbar').style.display = (name === 'listen') ? 'flex' : 'none';
     window.scrollTo(0, 0);
   }
 
@@ -292,6 +293,7 @@
     if (now) now.className = 'sentence playing';
     scrollListTo(current);
     $('position').textContent = (idx + 1) + ' / ' + list.length;
+    $('position2').textContent = (idx + 1) + ' / ' + list.length;
 
     resetAnswer();
 
@@ -457,32 +459,41 @@
     say('Answer shown. Try the next sentence.');
   }
 
-  /* SPEC 6 힌트 단계: 느리게 듣기 → 낱말 수 → 첫 글자 → 정답 */
+  /* SPEC 6 힌트 단계: 느리게 듣기 → 첫 글자 → 절반 → 정답 */
   function nextHint() {
     var s = sentenceAt(current);
     if (!s) return;
     hintAt++;
     if (hintAt === 1) {
-      var n = s.text.split(/\s+/).length;
-      $('hint-line').textContent = n + ' words.';
-      say('Hint: how many words.');
-    } else if (hintAt === 2) {
-      $('hint-line').textContent = firstLetters(s.text);
+      $('hint-line').textContent = masked(s.text, 1);
       say('Hint: first letter of each word.');
+    } else if (hintAt === 2) {
+      $('hint-line').textContent = masked(s.text, 0.5);
+      say('Hint: about half of each word.');
     } else {
       $('hint-line').textContent = '';
       revealAnswer();
     }
   }
 
-  function firstLetters(text) {
+  /* 낱말마다 앞에서 몇 글자만 보여 준다.
+     keep 이 1 이면 첫 글자 하나, 0.5 면 길이의 절반쯤. */
+  function masked(text, keep) {
     var words = text.split(/\s+/);
     var out = [];
     for (var i = 0; i < words.length; i++) {
       var w = words[i];
-      var shown = w.charAt(0);
-      for (var j = 1; j < w.length; j++) {
-        shown += /[a-zA-Z0-9]/.test(w.charAt(j)) ? '\u2013' : w.charAt(j);
+      var letters = w.replace(/[^a-zA-Z0-9]/g, '').length;
+      var show = (keep >= 1) ? 1 : Math.max(1, Math.ceil(letters * keep));
+      var seen = 0, shown = '';
+      for (var j = 0; j < w.length; j++) {
+        var ch = w.charAt(j);
+        if (/[a-zA-Z0-9]/.test(ch)) {
+          seen++;
+          shown += (seen <= show) ? ch : '\u2013';
+        } else {
+          shown += ch;
+        }
       }
       out.push(shown);
     }
@@ -542,9 +553,35 @@
     }, 8000);
   }
 
+  function loadedVideoId() {
+    try { return (player.getVideoData() || {}).video_id || ''; } catch (e) { return ''; }
+  }
+
+  /* 유튜브 자막이 켜져 있으면 답이 화면에 그대로 보인다.
+     playerVars 만으로는 확실히 꺼지지 않아서, 준비됐을 때와 재생이 시작될 때마다 끈다. */
+  function killCaptions() {
+    if (!player) return;
+    try { player.unloadModule('captions'); } catch (e) {}
+    try { player.unloadModule('cc'); } catch (e) {}
+    try { player.setOption('captions', 'track', {}); } catch (e) {}
+  }
+
   function ensurePlayer(videoId) {
     watchPlayerLoad();
     if (!apiReady) { wantPlay = videoId; return; }
+
+    if (player) {
+      // 재생기는 한 번만 만든다. 영상이 다르면 갈아 끼운다 —
+      // 안 그러면 다른 영상을 골라도 앞 영상이 그대로 남는다.
+      if (loadedVideoId() !== videoId) {
+        stopWatch();
+        setCover(true);
+        try { player.cueVideoById(videoId); } catch (e) {}
+        setTimeout(killCaptions, 800);
+      }
+      return;
+    }
+
     if (!player) {
       player = new YT.Player('player', {
         width: '100%',
@@ -572,6 +609,7 @@
           onStateChange: function (e) {
             if (e.data === YT.PlayerState.PLAYING) {
               setCover(false);
+              killCaptions();   // 재생이 시작되면 유튜브가 자막을 다시 켜기도 한다
             } else if (e.data === YT.PlayerState.ENDED) {
               stopWatch();
               setCover(true);

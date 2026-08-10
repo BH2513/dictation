@@ -65,11 +65,6 @@
 
     <div class="keys">Enter check · Shift+Enter replay · Alt+H hint · Alt+S slow</div>
 
-    <div class="buttons">
-      <button class="half" id="prev-btn">Previous</button>
-      <button class="half" id="next-btn">Next</button>
-    </div>
-
     <div class="status" id="status"></div>
 
     <div class="notice" id="auto-note" style="display:none;margin-top:16px;">
@@ -86,6 +81,13 @@
 
     <div class="buttons"><button id="list-btn">Sentences</button></div>
     <div class="list-box" id="sentence-list" style="display:none;"></div>
+  </div>
+
+  <!-- 화면을 움직여도 따라오도록 아래에 붙여 둔다 -->
+  <div class="navbar" id="navbar">
+    <button id="prev-btn">‹ Previous</button>
+    <span class="navpos" id="position2"></span>
+    <button id="next-btn">Next ›</button>
   </div>
 </div>
 

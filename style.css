@@ -263,3 +263,25 @@ textarea#answer-input:focus{border-color:var(--accent);}
 }
 .sentence .no{color:var(--muted);font-size:12px;margin-right:8px;}
 .sentence.playing{border-color:var(--accent);background:var(--card2);}
+
+/* 오답 리포트 */
+.item .tally{
+  flex:0 0 auto;
+  min-width:34px;
+  text-align:center;
+  font-size:15px;font-weight:700;
+  color:#fff;background:var(--bad);
+  border-radius:999px;padding:3px 9px;
+}
+.chartlabel{font-size:12px;color:var(--muted);margin-bottom:10px;}
+.chart{
+  display:flex;align-items:flex-end;gap:4px;
+  height:64px;
+}
+.chart .bar{
+  flex:1 1 0;height:100%;
+  display:flex;align-items:flex-end;
+  background:#171b22;border-radius:4px;overflow:hidden;
+}
+.chart .bar .fill{width:100%;background:var(--accent);border-radius:4px;min-height:2px;}
+.chart .bar.zero .fill{background:#242a35;}

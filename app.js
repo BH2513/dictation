@@ -87,7 +87,7 @@
   /* ---------------------------------------------------------------- 화면 이동 */
 
   function show(name) {
-    var all = ['profiles', 'library', 'listen'];
+    var all = ['profiles', 'library', 'listen', 'report'];
     for (var i = 0; i < all.length; i++) {
       $('screen-' + all[i]).className = 'screen' + (all[i] === name ? ' on' : '');
     }
@@ -109,7 +109,8 @@
 
     if (!profileId) { showProfiles(); return; }
     if (!videoId) { showLibrary(profileId); return; }
-    showListen(profileId, videoId);
+    if (videoId === 'report') { showReport(profileId); return; }
+    showListen(profileId, videoId, parts[2] ? parseInt(parts[2], 10) : null);
   }
 
   /* ---------------------------------------------------------------- 프로필 선택 */
@@ -214,7 +215,7 @@
 
   /* ---------------------------------------------------------------- 듣기 */
 
-  function showListen(pid, videoId) {
+  function showListen(pid, videoId, jumpTo) {
     var profileId = pid;
     setProfileId(pid);
     show('listen');
@@ -237,6 +238,7 @@
         return;
       }
       loadProgress(profileId, videoId, function (at) {
+        if (jumpTo !== null && jumpTo >= 0 && jumpTo < video.sentences.length) at = jumpTo;
         select(at, false);
         if (at > 0) say('Picking up at sentence ' + (at + 1) + '.');
       });
@@ -415,6 +417,133 @@
 
 
 
+
+  /* ---------------------------------------------------------------- 오답 리포트 (SPEC 10) */
+
+  function showReport(pid) {
+    setProfileId(pid);
+    show('report');
+    var box = $('report-body');
+    notice(box, 'Loading\u2026');
+
+    if (!window.Store || !Store.available()) {
+      notice(box, 'This browser will not let the app save progress,\nso there is nothing to report yet.', true);
+      return;
+    }
+    Store.listMisses(pid, function (misses) {
+      Store.listDays(pid, function (days) {
+        drawReport(box, pid, misses, days);
+      }, function () { drawReport(box, pid, misses, []); });
+    }, function () {
+      notice(box, 'Could not read your records.', true);
+    });
+  }
+
+  function drawReport(box, pid, misses, days) {
+    clear(box);
+
+    box.appendChild(streakBlock(days));
+    box.appendChild(daysBlock(days));
+
+    var head = el('div', 'count', 'Words you miss most');
+    box.appendChild(head);
+
+    if (!misses.length) {
+      var n = el('div', 'notice', 'Nothing yet. Check a few sentences and the words you miss show up here.');
+      box.appendChild(n);
+      return;
+    }
+
+    // 낱말별로 모으고, 가장 최근에 틀린 자리를 기억해 둔다
+    var byWord = {};
+    for (var i = 0; i < misses.length; i++) {
+      var m = misses[i];
+      var w = m.word;
+      if (!byWord[w]) byWord[w] = { word: w, n: 0, videoId: m.videoId, i: m.i, date: m.date };
+      byWord[w].n++;
+      if (m.date >= byWord[w].date) { byWord[w].date = m.date; byWord[w].videoId = m.videoId; byWord[w].i = m.i; }
+    }
+    var rows = [];
+    for (var k in byWord) { if (byWord.hasOwnProperty(k)) rows.push(byWord[k]); }
+    rows.sort(function (a, b) { return (b.n - a.n) || (a.word < b.word ? -1 : 1); });
+
+    head.textContent = 'Words you miss most \u00b7 ' + rows.length + ' words, '
+      + misses.length + ' misses';
+
+    // 목록이 길어지면 위쪽만 보여 준다. 자주 틀리는 것을 보자는 화면이라 꼬리는 도움이 안 된다.
+    var LIMIT = 50;
+    var shown = rows.slice(0, LIMIT);
+
+    var ul = el('ul', 'list');
+    for (var r = 0; r < shown.length; r++) {
+      (function (row) {
+        var b = el('button', 'item');
+        var body = el('div', 'body');
+        body.appendChild(el('div', 'name', row.word));
+        body.appendChild(el('div', 'meta', 'missed ' + row.n + (row.n === 1 ? ' time' : ' times') + ' \u00b7 last ' + row.date));
+        b.appendChild(body);
+        b.appendChild(el('div', 'tally', String(row.n)));
+        b.onclick = function () { go('#/' + pid + '/' + row.videoId + '/' + row.i); };
+        var li = document.createElement('li');
+        li.appendChild(b);
+        ul.appendChild(li);
+      })(shown[r]);
+    }
+    box.appendChild(ul);
+    if (rows.length > LIMIT) {
+      box.appendChild(el('div', 'count', 'Showing the top ' + LIMIT + '.'));
+    }
+  }
+
+  /* 연속 학습 일수 — 오늘(또는 어제)부터 거꾸로 이어지는 날 수 */
+  function streakBlock(days) {
+    var have = {};
+    for (var i = 0; i < days.length; i++) if (days[i].count > 0) have[days[i].date] = true;
+
+    var n = 0;
+    var d = new Date();
+    if (!have[dateStr(d)]) d.setDate(d.getDate() - 1);   // 오늘 아직 안 했어도 어제까지는 인정
+    while (have[dateStr(d)]) { n++; d.setDate(d.getDate() - 1); }
+
+    var box = el('div', 'notice');
+    var big = el('b', null, n === 0 ? 'No streak yet' : (n + (n === 1 ? ' day' : ' days') + ' in a row'));
+    box.appendChild(big);
+    return box;
+  }
+
+  /* 최근 14일 학습량 */
+  function daysBlock(days) {
+    var byDate = {};
+    for (var i = 0; i < days.length; i++) byDate[days[i].date] = days[i].count;
+
+    var max = 1;
+    for (var k in byDate) if (byDate.hasOwnProperty(k) && byDate[k] > max) max = byDate[k];
+
+    var wrap = el('div', 'chart');
+    var d = new Date();
+    d.setDate(d.getDate() - 13);
+    for (var j = 0; j < 14; j++) {
+      var key = dateStr(d);
+      var c = byDate[key] || 0;
+      var col = el('div', 'bar' + (c ? '' : ' zero'));
+      col.title = key + ': ' + c;
+      var fill = el('div', 'fill');
+      fill.style.height = Math.round((c / max) * 100) + '%';
+      col.appendChild(fill);
+      wrap.appendChild(col);
+      d.setDate(d.getDate() + 1);
+    }
+    var box = el('div', 'notice');
+    box.appendChild(el('div', 'chartlabel', 'Sentences checked, last 14 days'));
+    box.appendChild(wrap);
+    return box;
+  }
+
+  function dateStr(d) {
+    function two(n) { return (n < 10 ? '0' : '') + n; }
+    return d.getFullYear() + '-' + two(d.getMonth() + 1) + '-' + two(d.getDate());
+  }
+
   /* ---------------------------------------------------------------- 진도 (SPEC 4-2) */
 
   function setProfileId(id) { profileId = id; }
@@ -448,6 +577,7 @@
     progress.at = current;
     progress.sentences[current] = correct ? 'ok' : 'miss';
     Store.saveProgress(progress, noteStorage);
+    Store.bumpDay(profileId, noteStorage);
 
     if (!correct) {
       var missed = [];
@@ -845,6 +975,8 @@
     $('prev-btn').onclick = function () { select(current - 1, true); };
     $('next-btn').onclick = function () { select(current + 1, true); };
     $('change-profile').onclick = function () { go('#/'); };
+    $('report-btn').onclick = function () { go('#/' + profileId + '/report'); };
+    $('report-back').onclick = function () { go('#/' + profileId); };
     $('list-btn').onclick = function () { toggleList(); };
     $('cover').onclick = playCurrent;
     $('check-btn').onclick = checkAnswer;

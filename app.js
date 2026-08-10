@@ -14,6 +14,7 @@
   var current = -1;
   var slow = false;
   var strict = false;       // SPEC 6: 기본은 관대 모드
+  var audioOnly = false;    // 화면을 덮고 소리만 듣는다
   var checked = false;
   var hintAt = 0;           // 0 없음 → 1 낱말 수 → 2 첫 글자 → 3 정답
 
@@ -640,7 +641,24 @@
 
   function setCover(on) {
     var c = $('cover');
-    if (c) c.className = on ? 'cover' : 'cover off';
+    if (!c) return;
+    // 소리만 듣기가 켜져 있으면 가림막을 걷지 않는다
+    c.className = (on || audioOnly) ? 'cover' : 'cover off';
+  }
+
+  function toggleAudioOnly() {
+    audioOnly = !audioOnly;
+    $('audio-btn').className = audioOnly ? 'small on' : 'small';
+    $('audio-btn').textContent = audioOnly ? 'Audio only' : 'Video on';
+    setCover(audioOnly ? true : !isPlaying());
+    say(audioOnly
+      ? 'Video hidden. Some videos burn a translation into the picture.'
+      : 'Video shown.');
+  }
+
+  function isPlaying() {
+    if (!player || typeof player.getPlayerState !== 'function') return false;
+    try { return player.getPlayerState() === YT.PlayerState.PLAYING; } catch (e) { return false; }
   }
 
   function setControls(on) {
@@ -747,6 +765,7 @@
     $('hint-btn').onclick = nextHint;
     $('reveal-btn').onclick = revealAnswer;
     $('strict-btn').onclick = toggleStrict;
+    $('audio-btn').onclick = toggleAudioOnly;
     $('answer-input').onkeydown = onKey;
 
     $('lead-range').onchange = function () { setLead(parseFloat(this.value)); };

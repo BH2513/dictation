@@ -6,7 +6,7 @@
    그때는 기록만 포기하고 연습은 그대로 되게 한다. 대신 화면에 그 사실을 남긴다. */
 window.Store = (function () {
   var NAME = 'dictation';
-  var VERSION = 1;
+  var VERSION = 2;
   var db = null;
   var broken = false;
 
@@ -33,6 +33,10 @@ window.Store = (function () {
         var m = d.createObjectStore('misses', { keyPath: 'id', autoIncrement: true });
         m.createIndex('profile', 'profileId', { unique: false });
         m.createIndex('profileWord', ['profileId', 'word'], { unique: false });
+      }
+      // 일별 학습량 — 연속 학습 일수와 그래프의 재료
+      if (!d.objectStoreNames.contains('days')) {
+        d.createObjectStore('days', { keyPath: 'key' });
       }
       // 문장카드
       if (!d.objectStoreNames.contains('cards')) {
@@ -131,6 +135,36 @@ window.Store = (function () {
     listCards: function (profileId, done, fail) {
       allByIndex('cards', 'profile', profileId, done, fail);
     },
+
+    /* 오늘 한 문장 수를 하나 올린다 */
+    bumpDay: function (profileId, fail) {
+      var key = profileId + '|' + today();
+      tx('days', 'readwrite', function (st) {
+        var r = st.get(key);
+        r.onsuccess = function () {
+          var row = r.result || { key: key, profileId: profileId, date: today(), count: 0 };
+          row.count++;
+          st.put(row);
+        };
+        r.onerror = function () { (fail || noop)('day-failed'); };
+      }, fail);
+    },
+
+    listDays: function (profileId, done, fail) {
+      tx('days', 'readonly', function (st) {
+        var out = [];
+        var cur = st.openCursor();
+        cur.onsuccess = function (e) {
+          var c = e.target.result;
+          if (!c) { (done || noop)(out); return; }
+          if (c.value.profileId === profileId) out.push(c.value);
+          c.continue();
+        };
+        cur.onerror = function () { (fail || noop)('cursor-failed'); };
+      }, fail);
+    },
+
+    today: today,
 
     progressKey: progressKey
   };

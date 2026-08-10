@@ -47,9 +47,10 @@ git clone https://github.com/BH2513/dictation.git
 
 ```
 cd %USERPROFILE%\Documents\dictation
-git pull
 tools\add.bat "유튜브주소" 이름
 ```
+
+등록 스크립트가 올리기 전에 알아서 최신 상태로 맞추므로 `git pull` 을 따로 칠 필요는 없다.
 
 예:
 
@@ -101,7 +102,8 @@ tools\add.bat "https://www.youtube.com/watch?v=SW2bVwdr8Zg" 병훈
 | `'git'은(는) ... 인식할 수 없습니다` | Git이 설치되지 않았다. 준비 2번 |
 | `No module named yt_dlp` 또는 `'yt-dlp'...` | 준비 3번을 안 했다 |
 | 유튜브에서 영상 정보를 가져오지 못했습니다 | 인터넷 또는 주소 문제. 주소를 다시 복사해 본다 |
-| git push 에 실패했습니다 | 인터넷 문제일 때가 많다. 잠시 뒤 같은 명령을 다시 실행한다 |
+| 올리지 못했습니다 | 인터넷 문제다. 잠시 뒤 같은 명령을 다시 실행한다 |
+| 저장소를 최신 상태로 맞추지 못했습니다 | 화면에 적힌 두 줄을 그대로 실행한 뒤 등록을 다시 한다 |
 
 유튜브가 바뀌어서 자막을 못 받는 경우가 있다. 그때는 도구를 최신으로 올린다.
 

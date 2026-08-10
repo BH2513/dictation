@@ -14,6 +14,8 @@
 Phase 1 진행 중.
 
 **`tools/add_video.py` — 영상 등록 스크립트 (SPEC 8). 동작 확인됨.**
+올리기 전에 `git pull --rebase` 로 최신 상태를 맞춘다. PR 머지가 계속 일어나므로
+운영자의 PC 저장소는 대개 뒤처져 있고, 그대로 push 하면 거절당한다.
 자막을 받아 문장으로 나눠 `data/` 에 JSON을 만들고 git push까지 한다.
 PC에서만 돌아간다 — 유튜브가 클라우드 IP를 막기 때문에 이 저장소를 다루는
 원격 환경에서는 유튜브에 닿지 않는다. 로직 확인은 `tools/test_add_video.py` 로 한다

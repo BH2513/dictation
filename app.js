@@ -558,12 +558,21 @@
   }
 
   /* 유튜브 자막이 켜져 있으면 답이 화면에 그대로 보인다.
-     playerVars 만으로는 확실히 꺼지지 않아서, 준비됐을 때와 재생이 시작될 때마다 끈다. */
+     playerVars 만으로는 확실히 꺼지지 않아서 모듈을 내린다.
+
+     setOption('captions', ...) 은 부르면 안 된다. 그 함수는 모듈을 먼저 올려야 동작하므로,
+     방금 내린 자막을 도로 올려서 브라우저 언어(한국어) 자막이 붙는다. 실제로 겪었다. */
   function killCaptions() {
     if (!player) return;
     try { player.unloadModule('captions'); } catch (e) {}
     try { player.unloadModule('cc'); } catch (e) {}
-    try { player.setOption('captions', 'track', {}); } catch (e) {}
+  }
+
+  /* 재생이 시작된 직후에 유튜브가 자막을 다시 올리기도 한다. 몇 번 더 내린다. */
+  function killCaptionsSoon() {
+    killCaptions();
+    setTimeout(killCaptions, 400);
+    setTimeout(killCaptions, 1200);
   }
 
   function ensurePlayer(videoId) {
@@ -577,7 +586,7 @@
         stopWatch();
         setCover(true);
         try { player.cueVideoById(videoId); } catch (e) {}
-        setTimeout(killCaptions, 800);
+        killCaptionsSoon();
       }
       return;
     }
@@ -600,8 +609,7 @@
         events: {
           onReady: function () {
             playerReady = true;
-            // 자막이 켜져 있으면 답이 화면에 그대로 보인다
-            try { player.unloadModule('captions'); player.unloadModule('cc'); } catch (e) {}
+            killCaptionsSoon();
             if (loadTimer) { clearTimeout(loadTimer); loadTimer = null; }
             setControls(true);
             say('Ready. Tap a sentence.');
@@ -609,7 +617,7 @@
           onStateChange: function (e) {
             if (e.data === YT.PlayerState.PLAYING) {
               setCover(false);
-              killCaptions();   // 재생이 시작되면 유튜브가 자막을 다시 켜기도 한다
+              killCaptionsSoon();
             } else if (e.data === YT.PlayerState.ENDED) {
               stopWatch();
               setCover(true);

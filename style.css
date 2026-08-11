@@ -323,3 +323,28 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
   border:1px solid var(--line);border-radius:12px;padding:12px;
   font-family:inherit;font-size:16px;resize:vertical;outline:none;
 }
+
+/* 편집 화면 */
+.editrow{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:12px 14px;
+}
+.editrow .meta{font-size:12px;color:var(--muted);margin-bottom:8px;}
+.editrow .words{font-size:15px;line-height:2.1;margin-bottom:10px;}
+.editrow .word{display:inline;}
+.editrow .cut{
+  min-height:0;padding:0 4px;margin:0 2px;
+  font-size:11px;line-height:1.6;
+  background:transparent;border:1px dashed var(--line);color:var(--muted);
+  border-radius:5px;
+}
+.editrow .cut:active{background:var(--accent);color:#fff;}
+.item .edit-link{flex:0 0 auto;margin-left:8px;}
+
+.paste{margin:14px 0 18px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;}
+.paste summary{font-size:14px;font-weight:600;cursor:pointer;}
+#paste-caps{
+  width:100%;margin-top:10px;background:#0e1116;color:var(--text);
+  border:1px solid var(--line);border-radius:10px;padding:10px;
+  font-family:inherit;font-size:16px;resize:vertical;outline:none;
+}

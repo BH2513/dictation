@@ -80,6 +80,16 @@
     <div class="hintline" id="hint-line"></div>
     <div class="now empty" id="now">Listen, then type what you hear.</div>
 
+    <div class="speak" id="speak">
+      <div class="rowlabel">Say it back</div>
+      <div class="buttons">
+        <button class="half" id="rec-btn">Record</button>
+        <button class="half" id="mine-btn" disabled>Play mine</button>
+      </div>
+      <div class="heard" id="heard"></div>
+      <audio id="mine" preload="none"></audio>
+    </div>
+
     <div class="keys">Enter check · Shift+Enter replay · Alt+H hint · Alt+S slow</div>
 
     <div class="status" id="status"></div>
@@ -111,6 +121,7 @@
 </div>
 
 <script src="store.js"></script>
+<script src="record.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

@@ -88,7 +88,7 @@
   /* ---------------------------------------------------------------- 화면 이동 */
 
   function show(name) {
-    var all = ['profiles', 'library', 'listen', 'report'];
+    var all = ['profiles', 'library', 'listen', 'report', 'cards'];
     for (var i = 0; i < all.length; i++) {
       $('screen-' + all[i]).className = 'screen' + (all[i] === name ? ' on' : '');
     }
@@ -111,6 +111,7 @@
     if (!profileId) { showProfiles(); return; }
     if (!videoId) { showLibrary(profileId); return; }
     if (videoId === 'report') { showReport(profileId); return; }
+    if (videoId === 'cards') { showCards(profileId, parts[2] || ''); return; }
     showListen(profileId, videoId, parts[2] ? parseInt(parts[2], 10) : null);
   }
 
@@ -418,6 +419,261 @@
 
 
 
+
+
+  /* ---------------------------------------------------------------- 문장카드 복습 (SPEC 7) */
+
+  var MODES = [
+    { id: 'ko', name: 'Korean → English', hint: 'Read the Korean, say it in English.' },
+    { id: 'listen', name: 'Listen and say', hint: 'Hear it, say it back. Text stays hidden.' },
+    { id: 'blank', name: 'Fill the blanks', hint: 'The words you missed are hidden.' },
+    { id: 'retype', name: 'Type it again', hint: 'Write the whole sentence again.' }
+  ];
+  var cardMode = 'retype';
+  var cardList = [];        // [{card, sentence, videoTitle}]
+  var cardAt = 0;
+  var cardShown = false;
+
+  function showCards(pid, mode) {
+    setProfileId(pid);
+    show('cards');
+    if (mode) cardMode = mode;
+    var box = $('cards-body');
+    notice(box, 'Loading\u2026');
+
+    if (!window.Store || !Store.available()) {
+      notice(box, 'This browser will not let the app save cards.', true);
+      return;
+    }
+    Store.listCards(pid, function (cards) {
+      if (!cards.length) {
+        clear(box);
+        box.appendChild(modeRow(pid));
+        notice2(box, 'No cards yet. Sentences you get wrong are saved here automatically.');
+        return;
+      }
+      // 빈칸 모드는 그 문장에서 틀렸던 낱말을 알아야 한다
+      Store.listMisses(pid, function (misses) {
+        loadCardSentences(pid, cards, function (rows) {
+          attachMisses(rows, misses);
+          cardList = filterForMode(rows, cardMode);
+          cardAt = 0;
+          drawCards(box, pid);
+        });
+      }, function () {
+        loadCardSentences(pid, cards, function (rows) {
+          cardList = filterForMode(rows, cardMode);
+          cardAt = 0;
+          drawCards(box, pid);
+        });
+      });
+    }, function () { notice(box, 'Could not read your cards.', true); });
+  }
+
+  function notice2(box, text) {
+    var n = el('div', 'notice', text);
+    box.appendChild(n);
+  }
+
+  /* 카드가 가리키는 문장을 영상 파일에서 찾아온다. 영상 하나당 한 번만 읽는다. */
+  function loadCardSentences(pid, cards, done) {
+    var need = {}, ids = [];
+    for (var i = 0; i < cards.length; i++) {
+      if (!need[cards[i].videoId]) { need[cards[i].videoId] = true; ids.push(cards[i].videoId); }
+    }
+    var videos = {};
+    var left = ids.length;
+    if (!left) { done([]); return; }
+
+    for (var v = 0; v < ids.length; v++) {
+      (function (vid) {
+        getJSON('data/videos/' + pid + '/' + vid + '.json', function (data) {
+          videos[vid] = data; step();
+        }, function () { videos[vid] = null; step(); });
+      })(ids[v]);
+    }
+
+    function step() {
+      left--;
+      if (left > 0) return;
+      var rows = [];
+      for (var i = 0; i < cards.length; i++) {
+        var c = cards[i];
+        var d = videos[c.videoId];
+        if (!d || !d.sentences || !d.sentences[c.i]) continue;
+        rows.push({ card: c, s: d.sentences[c.i], title: d.title || c.videoId });
+      }
+      rows.sort(function (a, b) { return (a.card.date < b.card.date) ? 1 : -1; });
+      done(rows);
+    }
+  }
+
+  function attachMisses(rows, misses) {
+    var by = {};
+    for (var i = 0; i < misses.length; i++) {
+      var m = misses[i];
+      var k = m.videoId + '|' + m.i;
+      if (!by[k]) by[k] = {};
+      by[k][String(m.word).toLowerCase().replace(/[^a-z0-9']/g, '')] = true;
+    }
+    for (var r = 0; r < rows.length; r++) {
+      rows[r].missed = by[rows[r].card.videoId + '|' + rows[r].card.i] || {};
+    }
+  }
+
+  /* 한→영 모드는 한국어가 있는 문장만 쓸 수 있다 */
+  function filterForMode(rows, mode) {
+    if (mode !== 'ko') return rows;
+    var out = [];
+    for (var i = 0; i < rows.length; i++) if (rows[i].s.ko) out.push(rows[i]);
+    return out;
+  }
+
+  function modeRow(pid) {
+    var wrap = el('div', 'modes');
+    for (var i = 0; i < MODES.length; i++) {
+      (function (m) {
+        var b = el('button', 'small' + (m.id === cardMode ? ' on' : ''), m.name);
+        b.onclick = function () { go('#/' + pid + '/cards/' + m.id); };
+        wrap.appendChild(b);
+      })(MODES[i]);
+    }
+    return wrap;
+  }
+
+  function drawCards(box, pid) {
+    clear(box);
+    box.appendChild(modeRow(pid));
+
+    if (!cardList.length) {
+      notice2(box, cardMode === 'ko'
+        ? 'No cards with a Korean translation yet. Videos need Korean captions for this mode.'
+        : 'No cards yet.');
+      return;
+    }
+    cardShown = false;
+
+    var row = cardList[cardAt];
+    var head = el('div', 'count', (cardAt + 1) + ' of ' + cardList.length + ' \u00b7 ' + row.title);
+    box.appendChild(head);
+
+    var m = modeById(cardMode);
+    box.appendChild(el('div', 'hint', m.hint));
+
+    var face = el('div', 'now', '');
+    face.id = 'card-face';
+    box.appendChild(face);
+    drawCardFace(row);
+
+    var btns = el('div', 'buttons');
+    if (cardMode === 'listen' || cardMode === 'blank' || cardMode === 'retype') {
+      var play = el('button', 'half', 'Play');
+      play.onclick = function () { playCardAudio(row); };
+      btns.appendChild(play);
+    }
+    var showBtn = el('button', 'half', 'Show');
+    showBtn.onclick = function () { cardShown = true; drawCardFace(row); };
+    btns.appendChild(showBtn);
+    box.appendChild(btns);
+
+    if (cardMode === 'retype' || cardMode === 'blank') {
+      var ta = document.createElement('textarea');
+      ta.id = 'card-input';
+      ta.rows = 3;
+      ta.placeholder = 'Type it';
+      ta.setAttribute('autocomplete', 'off');
+      ta.setAttribute('autocapitalize', 'off');
+      ta.setAttribute('spellcheck', 'false');
+      box.appendChild(ta);
+      var check = el('div', 'buttons');
+      var cb = el('button', 'primary', 'Check');
+      cb.onclick = function () { checkCard(row); };
+      check.appendChild(cb);
+      box.appendChild(check);
+    }
+
+    var nav = el('div', 'buttons');
+    var prev = el('button', 'half', '\u2039 Previous');
+    prev.disabled = (cardAt === 0);
+    prev.onclick = function () { cardAt--; drawCards(box, pid); };
+    var next = el('button', 'half', 'Next \u203a');
+    next.disabled = (cardAt >= cardList.length - 1);
+    next.onclick = function () { cardAt++; drawCards(box, pid); };
+    nav.appendChild(prev);
+    nav.appendChild(next);
+    box.appendChild(nav);
+
+    var open = el('div', 'buttons');
+    var ob = el('button', null, 'Open in the video');
+    ob.onclick = function () { go('#/' + pid + '/' + row.card.videoId + '/' + row.card.i); };
+    open.appendChild(ob);
+    box.appendChild(open);
+  }
+
+  function modeById(id) {
+    for (var i = 0; i < MODES.length; i++) if (MODES[i].id === id) return MODES[i];
+    return MODES[3];
+  }
+
+  function drawCardFace(row) {
+    var face = $('card-face');
+    if (!face) return;
+    clear(face);
+    face.className = 'now';
+
+    if (cardShown) {
+      face.appendChild(document.createTextNode(row.s.text));
+      if (row.s.ko) face.appendChild(el('span', 'ko', row.s.ko));
+      return;
+    }
+    if (cardMode === 'ko') {
+      face.appendChild(document.createTextNode(row.s.ko || ''));
+      return;
+    }
+    if (cardMode === 'blank') {
+      face.appendChild(blanked(row));
+      return;
+    }
+    face.className = 'now empty';
+    face.appendChild(document.createTextNode(
+      cardMode === 'listen' ? 'Press Play, then say it back.' : 'Press Play, then type it.'));
+  }
+
+  /* 빈칸 채우기 — 그 문장에서 틀렸던 낱말만 가린다 (SPEC 7) */
+  function blanked(row) {
+    var wrap = el('span', null);
+    var words = row.s.text.split(/\s+/);
+    var missed = row.missed || {};
+    for (var i = 0; i < words.length; i++) {
+      var bare = words[i].toLowerCase().replace(/[^a-z0-9']/g, '');
+      if (missed[bare]) {
+        wrap.appendChild(el('span', 'blank', words[i].replace(/[A-Za-z0-9]/g, '_')));
+      } else {
+        wrap.appendChild(document.createTextNode(words[i]));
+      }
+      wrap.appendChild(document.createTextNode(' '));
+    }
+    return wrap;
+  }
+
+  function playCardAudio(row) {
+    go('#/' + profileId + '/' + row.card.videoId + '/' + row.card.i);
+  }
+
+  function checkCard(row) {
+    var ta = $('card-input');
+    if (!ta || !ta.value.replace(/\s/g, '')) return;
+    var r = grade(row.s.text, ta.value, strict);
+    cardShown = true;
+    var face = $('card-face');
+    clear(face);
+    face.className = 'now';
+    for (var i = 0; i < r.words.length; i++) {
+      face.appendChild(el('span', r.ok[i] ? 'w' : 'w bad', r.words[i]));
+      face.appendChild(document.createTextNode(' '));
+    }
+    face.appendChild(el('span', 'ko', r.right + ' of ' + r.total + ' words correct.'));
+  }
 
   /* ---------------------------------------------------------------- 오답 리포트 (SPEC 10) */
 
@@ -1061,6 +1317,8 @@
     $('change-profile').onclick = function () { go('#/'); };
     $('report-btn').onclick = function () { go('#/' + profileId + '/report'); };
     $('report-back').onclick = function () { go('#/' + profileId); };
+    $('cards-btn').onclick = function () { go('#/' + profileId + '/cards'); };
+    $('cards-back').onclick = function () { go('#/' + profileId); };
     $('list-btn').onclick = function () { toggleList(); };
     $('cover').onclick = playCurrent;
     $('check-btn').onclick = checkAnswer;

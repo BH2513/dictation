@@ -421,6 +421,106 @@
 
 
 
+
+  /* ---------------------------------------------------------------- 백업 (SPEC 10) */
+
+  function setupBackup() {
+    $('export-btn').onclick = function () { withBackup(saveFile); };
+    $('copy-btn').onclick = function () { withBackup(copyText); };
+    $('import-btn').onclick = function () { $('import-file').click(); };
+    $('import-file').onchange = readFile;
+    $('paste-btn').onclick = pasteText;
+  }
+
+  function withBackup(then) {
+    if (!window.Store || !Store.available()) { say2('Nothing is saved in this browser.'); return; }
+    Store.exportAll(profileId, then, function () { say2('Could not read your records.'); });
+  }
+
+  function say2(msg) {
+    var n = $('report-body');
+    if (n) {
+      var line = $('backup-say') || el('div', 'count');
+      line.id = 'backup-say';
+      line.textContent = msg;
+      $('export-btn').parentNode.parentNode.appendChild(line);
+    }
+  }
+
+  function fileName() {
+    return 'dictation-' + (profileId || 'me') + '-' + Store.today() + '.json';
+  }
+
+  function saveFile(data) {
+    var text = JSON.stringify(data);
+    try {
+      var blob = new Blob([text], { type: 'application/json' });
+      var a = document.createElement('a');
+      a.href = window.URL.createObjectURL(blob);
+      a.download = fileName();
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      say2('Saved ' + fileName() + '.');
+    } catch (e) {
+      say2('This browser would not save a file. Use Copy to clipboard instead.');
+    }
+  }
+
+  /* 파일 저장이 막히는 기기가 있어 클립보드 길도 둔다 (SPEC 10) */
+  function copyText(data) {
+    var text = JSON.stringify(data);
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        say2('Copied. Paste it somewhere safe.');
+      }, function () { showForCopy(text); });
+    } else {
+      showForCopy(text);
+    }
+  }
+
+  function showForCopy(text) {
+    var box = $('paste-box');
+    box.style.display = 'block';
+    box.value = text;
+    box.focus();
+    box.select();
+    say2('Could not copy on its own. Select the text above and copy it.');
+  }
+
+  function readFile(e) {
+    var f = e.target.files && e.target.files[0];
+    if (!f) return;
+    var fr = new FileReader();
+    fr.onload = function () { applyBackup(fr.result); };
+    fr.onerror = function () { say2('Could not read that file.'); };
+    fr.readAsText(f);
+  }
+
+  function pasteText() {
+    var box = $('paste-box');
+    if (box.style.display === 'none' || !box.value.replace(/\s/g, '')) {
+      box.style.display = 'block';
+      box.value = '';
+      box.focus();
+      say2('Paste the copied text above, then press Paste a copy again.');
+      return;
+    }
+    applyBackup(box.value);
+  }
+
+  function applyBackup(text) {
+    var data;
+    try { data = JSON.parse(text); }
+    catch (e) { say2('That does not look like a saved copy.'); return; }
+    if (!data || data.app !== 'dictation') { say2('That does not look like a saved copy.'); return; }
+
+    Store.importAll(profileId, data, function () {
+      say2('Loaded. Reopening the report\u2026');
+      setTimeout(function () { showReport(profileId); }, 400);
+    }, function () { say2('Could not load that copy.'); });
+  }
+
   /* ---------------------------------------------------------------- 문장카드 복습 (SPEC 7) */
 
   var MODES = [
@@ -1319,6 +1419,7 @@
     $('report-back').onclick = function () { go('#/' + profileId); };
     $('cards-btn').onclick = function () { go('#/' + profileId + '/cards'); };
     $('cards-back').onclick = function () { go('#/' + profileId); };
+    setupBackup();
     $('list-btn').onclick = function () { toggleList(); };
     $('cover').onclick = playCurrent;
     $('check-btn').onclick = checkAnswer;

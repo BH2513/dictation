@@ -311,3 +311,15 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
   font-family:inherit;font-size:17px;line-height:1.5;resize:vertical;outline:none;
 }
 #card-input:focus{border-color:var(--accent);}
+
+/* 백업 */
+.backup{
+  margin-top:26px;padding:14px 16px 6px;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+}
+.backup .rowlabel{font-size:14px;font-weight:600;margin-bottom:6px;}
+#paste-box{
+  width:100%;margin-top:12px;background:#0e1116;color:var(--text);
+  border:1px solid var(--line);border-radius:12px;padding:12px;
+  font-family:inherit;font-size:16px;resize:vertical;outline:none;
+}

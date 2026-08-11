@@ -50,6 +50,23 @@
       <h1>Report</h1>
     </div>
     <div id="report-body"></div>
+
+    <div class="backup">
+      <div class="rowlabel">Backup</div>
+      <p class="hint">Your records live in this browser only. Save a copy before switching phones,
+        and keep in mind an iPhone clears site data after 7 days unless the app is on the home screen.</p>
+      <div class="buttons">
+        <button class="half" id="export-btn">Save a copy</button>
+        <button class="half" id="copy-btn">Copy to clipboard</button>
+      </div>
+      <div class="buttons">
+        <button class="half" id="import-btn">Load a copy</button>
+        <button class="half" id="paste-btn">Paste a copy</button>
+      </div>
+      <input type="file" id="import-file" accept="application/json,.json" style="display:none">
+      <textarea id="paste-box" rows="4" placeholder="Paste the copied text here, then press Paste a copy"
+        style="display:none"></textarea>
+    </div>
   </div>
 </div>
 

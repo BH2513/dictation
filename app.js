@@ -1288,16 +1288,31 @@
   /* 손으로 카드에 담기 — SPEC 7 의 "수동 저장".
      틀린 문장은 자동으로 담기지만, 맞혔어도 더 보고 싶은 문장이 있다. */
   function saveCard() {
-    if (!video || current < 0) return;
+    if (!video || current < 0) {
+      say('Pick a sentence first.');
+      return;
+    }
     if (!window.Store || !Store.available()) {
       say('This browser will not let the app save cards.');
       return;
     }
-    Store.addCard(profileId, video.videoId, current, 'manual', noteStorage);
-    var b = $('save-card-btn');
-    b.className = 'half on';
-    b.textContent = 'Saved';
-    say('Saved to cards. Review it from the library.');
+    var vid = video.videoId, at = current;
+    Store.addCard(profileId, vid, at, 'manual', function () {
+      say('Could not save the card.');
+    });
+    // 정말 들어갔는지 확인하고 말한다. 넣기만 하고 끝내면 실패를 모른다.
+    setTimeout(function () {
+      Store.listCards(profileId, function (list) {
+        var key = profileId + '|' + vid + '|' + at;
+        var found = false;
+        for (var i = 0; i < list.length; i++) if (list[i].key === key) found = true;
+        if (!found) { say('Could not save the card.'); return; }
+        var b = $('save-card-btn');
+        b.className = 'half on';
+        b.textContent = 'Saved';
+        say('Saved to cards \u2014 ' + list.length + ' saved. Open Cards from the library.');
+      }, function () { say('Saved, but could not read the card list back.'); });
+    }, 150);
   }
 
   function toggleStrict() {

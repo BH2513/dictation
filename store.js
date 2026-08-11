@@ -71,6 +71,20 @@ window.Store = (function () {
     }, fail);
   }
 
+  function allRows(store, done, fail) {
+    tx(store, 'readonly', function (st) {
+      var out = [];
+      var cur = st.openCursor();
+      cur.onsuccess = function (e) {
+        var c = e.target.result;
+        if (!c) { (done || noop)(out); return; }
+        out.push(c.value);
+        c.continue();
+      };
+      cur.onerror = function () { (fail || noop)('cursor-failed'); };
+    }, fail);
+  }
+
   function allByIndex(store, indexName, value, done, fail) {
     tx(store, 'readonly', function (s) {
       var out = [];
@@ -165,6 +179,61 @@ window.Store = (function () {
     },
 
     today: today,
+
+    /* 백업 — 프로필 하나의 기록을 전부 내놓는다 (SPEC 10) */
+    exportAll: function (profileId, done, fail) {
+      var out = { app: 'dictation', version: 1, profileId: profileId,
+                  savedAt: today(), progress: [], misses: [], cards: [], days: [] };
+      allRows('progress', function (rows) {
+        for (var i = 0; i < rows.length; i++) if (rows[i].profileId === profileId) out.progress.push(rows[i]);
+        allRows('misses', function (rows2) {
+          for (var j = 0; j < rows2.length; j++) if (rows2[j].profileId === profileId) out.misses.push(rows2[j]);
+          allRows('cards', function (rows3) {
+            for (var k = 0; k < rows3.length; k++) if (rows3[k].profileId === profileId) out.cards.push(rows3[k]);
+            allRows('days', function (rows4) {
+              for (var m = 0; m < rows4.length; m++) if (rows4[m].profileId === profileId) out.days.push(rows4[m]);
+              done(out);
+            }, fail);
+          }, fail);
+        }, fail);
+      }, fail);
+    },
+
+    /* 되살리기. 같은 열쇠는 덮어쓴다. 오답은 열쇠가 자동이라 그냥 더한다. */
+    importAll: function (profileId, data, done, fail) {
+      if (!data || data.app !== 'dictation') { (fail || noop)('not-ours'); return; }
+      var jobs = [
+        ['progress', data.progress || []],
+        ['cards', data.cards || []],
+        ['days', data.days || []]
+      ];
+      var left = jobs.length + 1;
+      function step() { left--; if (left === 0) done(); }
+
+      for (var j = 0; j < jobs.length; j++) {
+        (function (name, rows) {
+          tx(name, 'readwrite', function (st) {
+            for (var i = 0; i < rows.length; i++) {
+              var row = rows[i];
+              row.profileId = profileId;
+              row.key = String(row.key || '').replace(/^[^|]*\|/, profileId + '|');
+              st.put(row);
+            }
+            step();
+          }, fail);
+        })(jobs[j][0], jobs[j][1]);
+      }
+      tx('misses', 'readwrite', function (st) {
+        var rows = data.misses || [];
+        for (var i = 0; i < rows.length; i++) {
+          var row = rows[i];
+          delete row.id;
+          row.profileId = profileId;
+          st.put(row);
+        }
+        step();
+      }, fail);
+    },
 
     progressKey: progressKey
   };

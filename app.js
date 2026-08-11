@@ -18,6 +18,7 @@
   var audioOnly = false;    // 화면을 덮고 소리만 듣는다
   var checked = false;
   var progress = null;      // 지금 영상의 진도 (SPEC 4-2)
+  var recording = false;
   var hintAt = 0;           // 0 없음 → 1 낱말 수 → 2 첫 글자 → 3 정답
 
   var player = null;
@@ -621,6 +622,7 @@
   }
 
   function resetAnswer() {
+    resetSpeak();
     checked = false;
     hintAt = 0;
     $('answer-input').value = '';
@@ -725,6 +727,88 @@
       ? 'Strict: capitals and punctuation must match.'
       : 'Lenient: capitals, punctuation and contractions are forgiven.');
     if (checked) checkAnswer();
+  }
+
+
+  /* ---------------------------------------------------------------- 따라 말하기 (SPEC 6의 4·5) */
+
+  /* 기기가 못 하면 오류 화면 대신 그 자리를 감춘다 — SPEC 9 */
+  function setupSpeak() {
+    if (!window.Recorder || !Recorder.canRecord()) {
+      $('speak').style.display = 'none';
+      return;
+    }
+    $('rec-btn').onclick = toggleRecord;
+    $('mine-btn').onclick = playMine;
+  }
+
+  function resetSpeak() {
+    if (!window.Recorder || !Recorder.canRecord()) return;
+    Recorder.discard();          // 문장이 넘어가면 녹음은 버린다 (SPEC 2)
+    recording = false;
+    $('rec-btn').className = 'half';
+    $('rec-btn').textContent = 'Record';
+    $('mine-btn').disabled = true;
+    $('heard').textContent = '';
+    var au = $('mine');
+    if (au) { try { au.pause(); } catch (e) {} au.removeAttribute('src'); }
+  }
+
+  function toggleRecord() {
+    if (recording) { stopRecord(); return; }
+    Recorder.start(function () {
+      recording = true;
+      $('rec-btn').className = 'half rec-on';
+      $('rec-btn').textContent = 'Stop';
+      $('heard').textContent = '';
+      say('Recording. Say the sentence, then press Stop.');
+    }, function (why) {
+      if (why === 'denied') say('Microphone permission was refused, so recording is off.');
+      else if (why === 'unsupported') { $('speak').style.display = 'none'; }
+      else say('Could not start recording.');
+    });
+  }
+
+  function stopRecord() {
+    recording = false;
+    $('rec-btn').className = 'half';
+    $('rec-btn').textContent = 'Record';
+    Recorder.stop(function (url, heard) {
+      if (url) {
+        $('mine').src = url;
+        $('mine-btn').disabled = false;
+      }
+      showHeard(heard);
+      say(url ? 'Recorded. Play it back, or record again.' : 'Nothing was recorded.');
+    });
+  }
+
+  function playMine() {
+    var au = $('mine');
+    if (!au || !au.getAttribute('src')) return;
+    try { au.currentTime = 0; au.play(); } catch (e) { say('Could not play the recording.'); }
+  }
+
+  /* 음성인식이 되는 기기에서는 받아적은 것을 정답과 견줘 보여 준다 */
+  function showHeard(heard) {
+    var box = $('heard');
+    clear(box);
+    if (!Recorder.canTranscribe()) return;
+    if (!heard) {
+      box.appendChild(document.createTextNode('Did not catch that.'));
+      return;
+    }
+    var s = sentenceAt(current);
+    if (!s) { box.appendChild(document.createTextNode(heard)); return; }
+    var r = grade(s.text, heard, false);
+    box.appendChild(document.createTextNode('Heard: '));
+    var typed = heard.split(/\s+/);
+    var ok = grade(heard, s.text, false).ok;
+    for (var i = 0; i < typed.length; i++) {
+      box.appendChild(el('span', ok[i] ? 'w' : 'w bad', typed[i]));
+      box.appendChild(document.createTextNode(' '));
+    }
+    box.appendChild(el('span', null, ' (' + r.right + '/' + r.total + ')'));
   }
 
   /* ---------------------------------------------------------------- 재생 */
@@ -984,6 +1068,7 @@
     $('reveal-btn').onclick = revealAnswer;
     $('strict-btn').onclick = toggleStrict;
     $('audio-btn').onclick = toggleAudioOnly;
+    setupSpeak();
     $('answer-input').onkeydown = onKey;
 
     $('lead-range').onchange = function () { setLead(parseFloat(this.value)); };

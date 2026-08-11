@@ -285,3 +285,15 @@ textarea#answer-input:focus{border-color:var(--accent);}
 }
 .chart .bar .fill{width:100%;background:var(--accent);border-radius:4px;min-height:2px;}
 .chart .bar.zero .fill{background:#242a35;}
+
+/* 따라 말하기 */
+.speak{
+  margin-top:18px;padding:14px 16px 6px;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+}
+.speak .rowlabel{font-size:14px;font-weight:600;margin-bottom:10px;}
+.speak .buttons{margin-top:0;}
+button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
+.heard{font-size:14px;color:var(--muted);margin:10px 0 8px;min-height:18px;}
+.heard .w{display:inline-block;}
+.heard .w.bad{color:#fff;background:var(--bad);border-radius:5px;padding:0 5px;}

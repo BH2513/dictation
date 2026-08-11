@@ -88,7 +88,7 @@
   /* ---------------------------------------------------------------- 화면 이동 */
 
   function show(name) {
-    var all = ['profiles', 'library', 'listen', 'report', 'cards'];
+    var all = ['profiles', 'library', 'listen', 'report', 'cards', 'edit'];
     for (var i = 0; i < all.length; i++) {
       $('screen-' + all[i]).className = 'screen' + (all[i] === name ? ' on' : '');
     }
@@ -112,6 +112,7 @@
     if (!videoId) { showLibrary(profileId); return; }
     if (videoId === 'report') { showReport(profileId); return; }
     if (videoId === 'cards') { showCards(profileId, parts[2] || ''); return; }
+    if (videoId === 'edit') { showEdit(profileId, parts[2] || ''); return; }
     showListen(profileId, videoId, parts[2] ? parseInt(parts[2], 10) : null);
   }
 
@@ -201,6 +202,13 @@
             }
             b.appendChild(body);
             b.onclick = function () { go('#/' + profileId + '/' + v.videoId); };
+            var ed = el('button', 'small edit-link', 'Edit');
+            ed.onclick = function (e) {
+              (e || window.event).stopPropagation();
+              go('#/' + profileId + '/edit/' + v.videoId);
+              return false;
+            };
+            b.appendChild(ed);
             var li = document.createElement('li');
             li.appendChild(b);
             ul.appendChild(li);
@@ -421,6 +429,193 @@
 
 
 
+
+
+  /* ---------------------------------------------------------------- 편집 화면 (SPEC 8) */
+
+  var editVideo = null;
+  var editOrig = null;
+
+  function showEdit(pid, videoId) {
+    setProfileId(pid);
+    show('edit');
+    $('edit-back').onclick = function () { go('#/' + pid); };
+    $('edit-save').onclick = saveEdited;
+    $('paste-caps-btn').onclick = usePasted;
+    $('edit-reset').onclick = function () {
+      if (!editOrig) return;
+      editVideo = JSON.parse(JSON.stringify(editOrig));
+      drawEdit();
+    };
+    var box = $('edit-list');
+    notice(box, 'Loading\u2026');
+
+    getJSON('data/videos/' + pid + '/' + videoId + '.json', function (data) {
+      editVideo = data;
+      editOrig = JSON.parse(JSON.stringify(data));
+      $('edit-title').textContent = data.title || videoId;
+      drawEdit();
+    }, function () {
+      notice(box, 'Could not open that video.', true);
+    });
+  }
+
+  function drawEdit() {
+    var box = $('edit-list');
+    clear(box);
+    var list = editVideo.sentences || [];
+    $('edit-count').textContent = list.length + ' sentences';
+
+    var ul = el('ul', 'list');
+    for (var i = 0; i < list.length; i++) {
+      (function (s, idx) {
+        var li = document.createElement('li');
+        var card = el('div', 'editrow');
+        card.appendChild(el('div', 'meta', (idx + 1) + ' \u00b7 ' + s.start.toFixed(1) + 's \u2013 ' + s.end.toFixed(1) + 's'));
+
+        // 낱말마다 그 앞에서 자를 수 있게
+        var line = el('div', 'words');
+        var words = s.text.split(/\s+/);
+        for (var w = 0; w < words.length; w++) {
+          (function (at) {
+            if (at > 0) {
+              var cut = el('button', 'cut', '\u2702');
+              cut.title = 'Split here';
+              cut.onclick = function () { splitAt(idx, at); };
+              line.appendChild(cut);
+            }
+            line.appendChild(el('span', 'word', words[at]));
+          })(w);
+        }
+        card.appendChild(line);
+
+        if (idx < list.length - 1) {
+          var join = el('button', 'small', 'Join with next');
+          join.onclick = function () { joinAt(idx); };
+          card.appendChild(join);
+        }
+        li.appendChild(card);
+        ul.appendChild(li);
+      })(list[i], i);
+    }
+    box.appendChild(ul);
+  }
+
+  /* 다음 문장과 합친다. 시간은 앞 문장의 시작과 뒤 문장의 끝 (SPEC 8). */
+  function joinAt(i) {
+    var list = editVideo.sentences;
+    if (i >= list.length - 1) return;
+    var a = list[i], b = list[i + 1];
+    a.text = (a.text + ' ' + b.text).replace(/\s+/g, ' ').trim();
+    a.end = b.end;
+    if (b.ko) a.ko = (a.ko ? a.ko + ' ' : '') + b.ko;
+    list.splice(i + 1, 1);
+    renumber();
+    drawEdit();
+  }
+
+  /* 낱말 at 앞에서 자른다. 시간은 글자 길이에 비례해 나눈다 — 더 나은 근거가 없다. */
+  function splitAt(i, at) {
+    var list = editVideo.sentences;
+    var s = list[i];
+    var words = s.text.split(/\s+/);
+    if (at <= 0 || at >= words.length) return;
+
+    var left = words.slice(0, at).join(' ');
+    var right = words.slice(at).join(' ');
+    var span = s.end - s.start;
+    var cut = s.start + span * (left.length / (left.length + right.length));
+    cut = Math.round(cut * 100) / 100;
+
+    var second = { i: 0, start: cut, end: s.end, text: right, recording: null };
+    if (s.ko) second.ko = s.ko;
+    s.text = left;
+    s.end = cut;
+    list.splice(i + 1, 0, second);
+    renumber();
+    drawEdit();
+  }
+
+  function renumber() {
+    var list = editVideo.sentences;
+    for (var i = 0; i < list.length; i++) list[i].i = i;
+  }
+
+  /* 붙여넣은 자막으로 문장을 갈아 끼운다 — 등록 스크립트가 실패할 때의 우회로 (SPEC 8).
+     SRT 와 VTT 는 시각 줄 모양이 같다. 쉼표든 마침표든 받는다. */
+  var CUE_LINE = /(\d{1,2}:)?(\d{1,2}):(\d{2})[.,](\d{1,3})\s*--&gt;\s*(\d{1,2}:)?(\d{1,2}):(\d{2})[.,](\d{1,3})/;
+
+  function parsePasted(text) {
+    var lines = String(text || '').replace(/\r\n?/g, '\n').split('\n');
+    var out = [];
+    var cur = null;
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i];
+      var m = line.replace(/&gt;/g, '>').match(/([\d:.,]+)\s*-->\s*([\d:.,]+)/);
+      if (m) {
+        if (cur && cur.text) out.push(cur);
+        cur = { start: toSeconds(m[1]), end: toSeconds(m[2]), text: '' };
+        continue;
+      }
+      if (!cur) continue;
+      var t = line.replace(/<[^>]*>/g, '').trim();
+      if (!t) {
+        if (cur.text) { out.push(cur); cur = null; }
+        continue;
+      }
+      if (/^\d+$/.test(t) && !cur.text) continue;      // SRT 의 번호 줄
+      cur.text = (cur.text ? cur.text + ' ' : '') + t;
+    }
+    if (cur && cur.text) out.push(cur);
+
+    var rows = [];
+    for (var j = 0; j < out.length; j++) {
+      var s = out[j];
+      var text = s.text.replace(/\s+/g, ' ').trim();
+      if (!text) continue;
+      if (rows.length && rows[rows.length - 1].text === text) continue;   // 같은 줄이 이어지면 한 번만
+      rows.push({ i: rows.length, start: Math.round(s.start * 100) / 100,
+                  end: Math.round(s.end * 100) / 100, text: text, recording: null });
+    }
+    return rows;
+  }
+
+  function toSeconds(str) {
+    var parts = String(str).replace(',', '.').split(':');
+    var sec = 0;
+    for (var i = 0; i < parts.length; i++) sec = sec * 60 + parseFloat(parts[i]);
+    return sec || 0;
+  }
+
+  function usePasted() {
+    var note = $('paste-caps-note');
+    var rows = parsePasted($('paste-caps').value);
+    if (!rows.length) {
+      note.textContent = 'No timed lines found in that text.';
+      return;
+    }
+    editVideo.sentences = rows;
+    editVideo.source = 'manual_captions';
+    drawEdit();
+    note.textContent = 'Replaced with ' + rows.length + ' sentences. Save the file when it looks right.';
+  }
+
+  function saveEdited() {
+    var text = JSON.stringify(editVideo, null, 2) + '\n';
+    var name = editVideo.videoId + '.json';
+    try {
+      var blob = new Blob([text], { type: 'application/json' });
+      var a = document.createElement('a');
+      a.href = window.URL.createObjectURL(blob);
+      a.download = name;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      $('edit-count').textContent = 'Saved ' + name + '. Hand it to Claude Code to put back.';
+    } catch (e) {
+      $('edit-count').textContent = 'This browser would not save the file.';
+    }
+  }
 
   /* ---------------------------------------------------------------- 백업 (SPEC 10) */
 

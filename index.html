@@ -31,6 +31,34 @@
   </div>
 </div>
 
+<!-- 편집 화면 (SPEC 8) -->
+<div class="screen" id="screen-edit">
+  <div class="wrap">
+    <div class="top">
+      <button class="small" id="edit-back">← Library</button>
+      <h1 id="edit-title">Edit</h1>
+    </div>
+    <p class="hint">Join a sentence to the next one, or split it where you choose. When it reads
+      right, save the file and hand it to Claude Code to put back in the repository.
+      <b>A split time is an estimate</b> — the captions only time whole lines, so the app guesses
+      the point from the length of the words. Check it by listening.</p>
+    <details class="paste">
+      <summary>Replace the sentences by pasting captions</summary>
+      <p class="hint">For when the registration script cannot get usable captions. Paste an SRT or
+        VTT file, or a Language Reactor export. Lines with times are read; everything else is ignored.</p>
+      <textarea id="paste-caps" rows="5" placeholder="00:00:01,000 --> 00:00:03,000&#10;The first sentence."></textarea>
+      <div class="buttons"><button class="half" id="paste-caps-btn">Use these</button></div>
+      <div class="count" id="paste-caps-note"></div>
+    </details>
+    <div class="buttons">
+      <button class="half" id="edit-save">Save file</button>
+      <button class="half" id="edit-reset">Undo all</button>
+    </div>
+    <div class="count" id="edit-count"></div>
+    <div id="edit-list"></div>
+  </div>
+</div>
+
 <!-- 문장카드 복습 (SPEC 7) -->
 <div class="screen" id="screen-cards">
   <div class="wrap">

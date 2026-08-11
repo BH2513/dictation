@@ -146,6 +146,13 @@ window.Store = (function () {
       }, fail);
     },
 
+    removeCard: function (profileId, videoId, sentenceIndex, done, fail) {
+      tx('cards', 'readwrite', function (st) {
+        st['delete'](profileId + '|' + videoId + '|' + sentenceIndex);
+        (done || noop)();
+      }, fail);
+    },
+
     listCards: function (profileId, done, fail) {
       allByIndex('cards', 'profile', profileId, done, fail);
     },

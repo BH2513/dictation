@@ -744,8 +744,8 @@
       if (!cards.length) {
         clear(box);
         box.appendChild(modeRow(pid));
-        notice2(box, 'No cards yet.\nSentences you get wrong are saved here automatically, '
-          + 'and you can add any sentence with Save card while practising.');
+        notice2(box, 'No cards yet.\nWhile practising, press Save card on any sentence '
+          + 'you want to come back to.');
         return;
       }
       // 빈칸 모드는 그 문장에서 틀렸던 낱말을 알아야 한다
@@ -900,10 +900,21 @@
     box.appendChild(nav);
 
     var open = el('div', 'buttons');
-    var ob = el('button', null, 'Open in the video');
+    var ob = el('button', 'half', 'Open in the video');
     ob.onclick = function () { go('#/' + pid + '/' + row.card.videoId + '/' + row.card.i); };
     open.appendChild(ob);
+    var rm = el('button', 'half', 'Remove card');
+    rm.onclick = function () { removeCurrentCard(pid, row); };
+    open.appendChild(rm);
     box.appendChild(open);
+  }
+
+  function removeCurrentCard(pid, row) {
+    Store.removeCard(pid, row.card.videoId, row.card.i, function () {
+      cardList.splice(cardAt, 1);
+      if (cardAt >= cardList.length) cardAt = Math.max(0, cardList.length - 1);
+      drawCards($('cards-body'), pid);
+    }, function () { say('Could not remove that card.'); });
   }
 
   function modeById(id) {
@@ -1140,8 +1151,9 @@
           if (w) missed.push(w);
         }
       }
+      // 틀렸다고 카드에 자동으로 담지는 않는다. 담을 문장은 사람이 고른다 (SPEC 7).
+      // 틀린 낱말 기록은 그대로 남긴다 — 오답 리포트의 재료다.
       Store.addMisses(profileId, video.videoId, current, missed, noteStorage);
-      Store.addCard(profileId, video.videoId, current, 'wrong', noteStorage);
     }
     markDone();
   }

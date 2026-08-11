@@ -744,7 +744,8 @@
       if (!cards.length) {
         clear(box);
         box.appendChild(modeRow(pid));
-        notice2(box, 'No cards yet. Sentences you get wrong are saved here automatically.');
+        notice2(box, 'No cards yet.\nSentences you get wrong are saved here automatically, '
+          + 'and you can add any sentence with Save card while practising.');
         return;
       }
       // 빈칸 모드는 그 문장에서 틀렸던 낱말을 알아야 한다
@@ -1174,6 +1175,8 @@
 
   function resetAnswer() {
     resetSpeak();
+    var sc = $('save-card-btn');
+    if (sc) { sc.className = 'half'; sc.textContent = 'Save card'; }
     checked = false;
     hintAt = 0;
     $('answer-input').value = '';
@@ -1268,6 +1271,21 @@
       out.push(shown);
     }
     return out.join(' ');
+  }
+
+  /* 손으로 카드에 담기 — SPEC 7 의 "수동 저장".
+     틀린 문장은 자동으로 담기지만, 맞혔어도 더 보고 싶은 문장이 있다. */
+  function saveCard() {
+    if (!video || current < 0) return;
+    if (!window.Store || !Store.available()) {
+      say('This browser will not let the app save cards.');
+      return;
+    }
+    Store.addCard(profileId, video.videoId, current, 'manual', noteStorage);
+    var b = $('save-card-btn');
+    b.className = 'half on';
+    b.textContent = 'Saved';
+    say('Saved to cards. Review it from the library.');
   }
 
   function toggleStrict() {
@@ -1620,6 +1638,7 @@
     $('check-btn').onclick = checkAnswer;
     $('hint-btn').onclick = nextHint;
     $('reveal-btn').onclick = revealAnswer;
+    $('save-card-btn').onclick = saveCard;
     $('strict-btn').onclick = toggleStrict;
     $('audio-btn').onclick = toggleAudioOnly;
     setupSpeak();

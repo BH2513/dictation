@@ -88,7 +88,7 @@
   /* ---------------------------------------------------------------- 화면 이동 */
 
   function show(name) {
-    var all = ['profiles', 'library', 'listen', 'report', 'cards', 'edit'];
+    var all = ['profiles', 'library', 'listen', 'report', 'cards', 'edit', 'daily'];
     for (var i = 0; i < all.length; i++) {
       $('screen-' + all[i]).className = 'screen' + (all[i] === name ? ' on' : '');
     }
@@ -107,10 +107,22 @@
     var videoId = parts[1] || '';
 
     stopWatch();
+    // 녹음은 화면을 옮기는 순간 버린다 (SPEC 2)
+    if (dailyRecording && window.Recorder) { Recorder.discard(); dailyRecording = false; }
+    if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
 
     if (!profileId) { showProfiles(); return; }
     if (!videoId) { showLibrary(profileId); return; }
     if (videoId === 'report') { showReport(profileId); return; }
+    if (videoId === 'daily') {
+      showDaily(profileId, parts[2] || '', parts[3] ? parseInt(parts[3], 10) : null);
+      return;
+    }
+    // 하루 문장은 영상이 아니다. 카드에서 넘어온 주소를 제자리로 보낸다
+    if (isDailyId(videoId)) {
+      go('#/' + profileId + '/daily/' + videoId.slice(6) + (parts[2] ? '/' + parts[2] : ''));
+      return;
+    }
     if (videoId === 'cards') { showCards(profileId, parts[2] || ''); return; }
     if (videoId === 'edit') { showEdit(profileId, parts[2] || ''); return; }
     showListen(profileId, videoId, parts[2] ? parseInt(parts[2], 10) : null);
@@ -420,9 +432,15 @@
       if (ok[o] === null) ok[o] = r.hit[t];
       else ok[o] = ok[o] && r.hit[t];
     }
-    var right = 0;
-    for (w = 0; w < ok.length; w++) if (ok[w]) right++;
-    return { words: A.words, ok: ok, right: right, total: A.words.length, extra: r.extra };
+    // 줄표(—) 처럼 문장부호만으로 된 조각은 비교할 낱말이 없어 ok 가 null 로 남는다.
+    // 이걸 오답으로 세면 아무리 정확히 써도 만점이 안 나온다. 채점에서 뺀다.
+    var right = 0, total = 0;
+    for (w = 0; w < ok.length; w++) {
+      if (ok[w] === null) continue;
+      total++;
+      if (ok[w]) right++;
+    }
+    return { words: A.words, ok: ok, right: right, total: total, extra: r.extra };
   }
 
 
@@ -783,7 +801,7 @@
 
     for (var v = 0; v < ids.length; v++) {
       (function (vid) {
-        getJSON('data/videos/' + pid + '/' + vid + '.json', function (data) {
+        getJSON(sentenceFileFor(pid, vid), function (data) {
           videos[vid] = data; step();
         }, function () { videos[vid] = null; step(); });
       })(ids[v]);
@@ -863,9 +881,12 @@
 
     var btns = el('div', 'buttons');
     if (cardMode === 'listen' || cardMode === 'blank' || cardMode === 'retype') {
-      var play = el('button', 'half', 'Play');
-      play.onclick = function () { playCardAudio(row); };
-      btns.appendChild(play);
+      // 하루 문장은 읽어 줄 수 있어야만 Play 를 만든다 (SPEC 9 — 기능 감지)
+      if (!isDailyId(row.card.videoId) || canSpeak()) {
+        var play = el('button', 'half', 'Play');
+        play.onclick = function () { playCardAudio(row); };
+        btns.appendChild(play);
+      }
     }
     var showBtn = el('button', 'half', 'Show');
     showBtn.onclick = function () { cardShown = true; drawCardFace(row); };
@@ -900,8 +921,13 @@
     box.appendChild(nav);
 
     var open = el('div', 'buttons');
-    var ob = el('button', 'half', 'Open in the video');
-    ob.onclick = function () { go('#/' + pid + '/' + row.card.videoId + '/' + row.card.i); };
+    var daily = isDailyId(row.card.videoId);
+    var ob = el('button', 'half', daily ? 'Open in Daily' : 'Open in the video');
+    ob.onclick = function () {
+      go(daily
+        ? '#/' + pid + '/daily/' + row.card.videoId.slice(6) + '/' + row.card.i
+        : '#/' + pid + '/' + row.card.videoId + '/' + row.card.i);
+    };
     open.appendChild(ob);
     var rm = el('button', 'half', 'Remove card');
     rm.onclick = function () { removeCurrentCard(pid, row); };
@@ -964,6 +990,11 @@
   }
 
   function playCardAudio(row) {
+    // 하루 문장에는 영상이 없다. 폰에 내장된 목소리로 읽어 준다
+    if (isDailyId(row.card.videoId)) {
+      if (!speakText(row.s.text)) say('This browser cannot read it aloud. Press Show instead.');
+      return;
+    }
     go('#/' + profileId + '/' + row.card.videoId + '/' + row.card.i);
   }
 
@@ -980,6 +1011,441 @@
       face.appendChild(document.createTextNode(' '));
     }
     face.appendChild(el('span', 'ko', r.right + ' of ' + r.total + ' words correct.'));
+  }
+
+  /* ---------------------------------------------------------------- 하루 다섯 문장 (ROADMAP 1단계)
+
+     한국어를 보고 영어로 옮겨 말하는 연습. 문장은 매일 아침 GitHub 가 만들어 넣는다.
+     채점기·녹음·문장카드는 받아쓰기 쪽 것을 그대로 쓴다. */
+
+  var dailyIndex = [];      // [{date, count}] — 새 날짜가 앞
+  var dailyDay = null;      // 지금 보고 있는 날의 파일
+  var dailyAt = 0;
+  var dailyTyped = '';
+  var dailyResult = null;   // 채점 결과
+  var dailyShown = false;   // 정답을 봤는지
+  var dailyRecording = false;
+  var dailyProgress = null;
+  var dailyDaysOpen = false;
+
+  function dailyFile(pid, date) { return 'data/daily/' + pid + '/' + date + '.json'; }
+
+  /* 카드가 가리키는 문장이 영상인지 하루 문장인지에 따라 파일 자리가 다르다 */
+  function sentenceFileFor(pid, videoId) {
+    var id = String(videoId || '');
+    if (id.indexOf('daily-') === 0) return dailyFile(pid, id.slice(6));
+    return 'data/videos/' + pid + '/' + id + '.json';
+  }
+
+  function isDailyId(videoId) { return String(videoId || '').indexOf('daily-') === 0; }
+
+  /* 폰에 내장된 목소리로 읽어 준다. 없는 기기에서는 그 버튼을 아예 안 만든다 (SPEC 9) */
+  function canSpeak() {
+    return !!(window.speechSynthesis && window.SpeechSynthesisUtterance);
+  }
+
+  function speakText(text) {
+    if (!canSpeak() || !text) return false;
+    try {
+      window.speechSynthesis.cancel();
+      var u = new window.SpeechSynthesisUtterance(text);
+      u.lang = 'en-US';
+      u.rate = slow ? 0.7 : 0.95;
+      window.speechSynthesis.speak(u);
+      return true;
+    } catch (e) { return false; }
+  }
+
+  function dailySay(msg) {
+    var s = $('daily-status');
+    if (s) s.textContent = msg;
+  }
+
+  /* 날짜 문자열 두 개의 날 수 차이 */
+  function daysApart(a, b) {
+    var x = Date.parse(a + 'T00:00:00'), y = Date.parse(b + 'T00:00:00');
+    if (isNaN(x) || isNaN(y)) return 0;
+    return Math.round((y - x) / 86400000);
+  }
+
+  /* 며칠째 새 문장이 안 들어왔는지. 만드는 쪽이 멈추면 조용히 넘어가면 안 된다 */
+  function dailyStaleDays() {
+    if (!dailyIndex.length || !window.Store) return 0;
+    var gap = daysApart(dailyIndex[0].date, Store.today());
+    return gap > 0 ? gap : 0;
+  }
+
+  var DAILY_EMPTY = 'No sentences yet.\n'
+    + 'A new set of five is made every morning and appears here.\n'
+    + 'If nothing shows up for a few days, the daily maker has stopped.';
+
+  function showDaily(pid, date, idx) {
+    setProfileId(pid);
+    show('daily');
+    dailyDaysOpen = false;
+    var box = $('daily-body');
+    notice(box, 'Loading…');
+
+    getJSON('data/daily/' + pid + '/index.json', function (rows) {
+      dailyIndex = rows || [];
+      if (!dailyIndex.length) { notice(box, DAILY_EMPTY); return; }
+
+      var want = date || dailyIndex[0].date;
+      var found = false;
+      for (var i = 0; i < dailyIndex.length; i++) if (dailyIndex[i].date === want) found = true;
+      if (!found) want = dailyIndex[0].date;
+
+      getJSON(dailyFile(pid, want), function (day) {
+        if (!day || !day.sentences || !day.sentences.length) { notice(box, DAILY_EMPTY); return; }
+        dailyDay = day;
+        dailyAt = 0;
+        if (idx !== null && idx !== undefined && !isNaN(idx)) {
+          dailyAt = Math.max(0, Math.min(day.sentences.length - 1, idx));
+        }
+        resetDailyAnswer();
+        loadDailyProgress(pid, day.videoId, function () { drawDaily(pid); });
+      }, function () {
+        notice(box, 'That day could not be loaded.\nTry another day.', true);
+      });
+    }, function (why) {
+      notice(box, why === 'missing' ? DAILY_EMPTY : why, why !== 'missing');
+    });
+  }
+
+  function loadDailyProgress(pid, videoId, done) {
+    dailyProgress = null;
+    if (!window.Store || !Store.available()) { done(); return; }
+    Store.getProgress(pid, videoId, function (row) {
+      dailyProgress = row;
+      done();
+    }, function () { done(); });
+  }
+
+  function resetDailyAnswer() {
+    dailyTyped = '';
+    dailyResult = null;
+    dailyShown = false;
+    if (window.Recorder && dailyRecording) { Recorder.discard(); }
+    dailyRecording = false;
+    if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
+  }
+
+  /* 정답 하나가 아니라 허용 답안 전부와 견줘 제일 잘 맞은 것을 쓴다.
+     같은 뜻을 다르게 말했다고 틀린 것이 되면 연습이 안 된다. */
+  function gradeDaily(s, typed) {
+    var list = [s.text];
+    var alts = s.alts || [];
+    for (var a = 0; a < alts.length; a++) list.push(alts[a]);
+    var best = null;
+    for (var c = 0; c < list.length; c++) {
+      var r = grade(list[c], typed, strict);
+      r.against = list[c];
+      if (!best || dailyRatio(r) > dailyRatio(best)) best = r;
+    }
+    return best;
+  }
+
+  function dailyRatio(r) { return r.total ? (r.right / r.total) : 0; }
+
+  function drawDaily(pid) {
+    var box = $('daily-body');
+    clear(box);
+    var day = dailyDay;
+    var s = day.sentences[dailyAt];
+
+    var stale = dailyStaleDays();
+    if (stale >= 2) {
+      var warn = el('div', 'notice error');
+      warn.appendChild(document.createTextNode(
+        'No new sentences for ' + stale + ' days — the newest set is from '
+        + dailyIndex[0].date + '. The daily maker may have stopped.'));
+      box.appendChild(warn);
+    }
+
+    var mark = dailyProgress && dailyProgress.sentences ? dailyProgress.sentences[dailyAt] : null;
+    var head = el('div', 'count', (dailyAt + 1) + ' of ' + day.sentences.length + ' · ' + day.date
+      + (mark === 'ok' ? ' · done' : (mark === 'miss' ? ' · tried' : '')));
+    box.appendChild(head);
+
+    if (s.situation) box.appendChild(el('div', 'hint', s.situation));
+
+    box.appendChild(el('div', 'kotask', s.ko || ''));
+
+    /* 말하기 — 못 하는 기기에서는 이 줄을 통째로 안 만든다 (SPEC 9) */
+    if (window.Recorder && Recorder.canRecord()) {
+      var speak = el('div', 'speak on');
+      speak.appendChild(el('div', 'rowlabel', 'Say it in English'));
+      var sbtn = el('div', 'buttons');
+
+      var rec = el('button', dailyRecording ? 'half rec-on' : 'half',
+        dailyRecording ? 'Stop' : 'Record');
+      rec.id = 'daily-rec';
+      rec.onclick = function () { toggleDailyRecord(pid); };
+      sbtn.appendChild(rec);
+
+      var mine = el('button', 'half', 'Play mine');
+      mine.id = 'daily-mine';
+      mine.disabled = !(window.Recorder && Recorder.lastUrl());
+      mine.onclick = function () {
+        var au = $('daily-audio');
+        if (!au || !au.getAttribute('src')) return;
+        try { au.currentTime = 0; au.play(); } catch (e) { dailySay('Could not play the recording.'); }
+      };
+      sbtn.appendChild(mine);
+      speak.appendChild(sbtn);
+
+      var au2 = document.createElement('audio');
+      au2.id = 'daily-audio';
+      au2.preload = 'none';
+      if (window.Recorder && Recorder.lastUrl()) au2.src = Recorder.lastUrl();
+      speak.appendChild(au2);
+
+      if (!Recorder.canTranscribe()) {
+        speak.appendChild(el('div', 'hint',
+          'This browser cannot write down speech, so type what you said below.'));
+      }
+      box.appendChild(speak);
+    }
+
+    var ta = document.createElement('textarea');
+    ta.id = 'daily-input';
+    ta.rows = 3;
+    ta.value = dailyTyped;
+    ta.placeholder = 'Say it or type it in English';
+    ta.setAttribute('autocomplete', 'off');
+    ta.setAttribute('autocapitalize', 'off');
+    ta.setAttribute('autocorrect', 'off');
+    ta.setAttribute('spellcheck', 'false');
+    ta.onkeydown = function (e) {
+      var ev = e || window.event;
+      if ((ev.key || '') === 'Enter' && !ev.shiftKey) {
+        if (ev.preventDefault) ev.preventDefault();
+        if (dailyShown) dailyGo(pid, dailyAt + 1);
+        else checkDaily(pid);
+        return false;
+      }
+      return true;
+    };
+    box.appendChild(ta);
+
+    var row = el('div', 'buttons');
+    var cb = el('button', 'primary', 'Check');
+    cb.onclick = function () { checkDaily(pid); };
+    row.appendChild(cb);
+    var rb = el('button', 'half', 'Show answer');
+    rb.onclick = function () { revealDaily(pid); };
+    row.appendChild(rb);
+    var sc = el('button', 'half', 'Save card');
+    sc.id = 'daily-save';
+    sc.onclick = function () { saveDailyCard(pid); };
+    row.appendChild(sc);
+    box.appendChild(row);
+
+    var out = el('div', dailyResult || dailyShown ? 'now' : 'now empty');
+    if (dailyResult) {
+      for (var w = 0; w < dailyResult.words.length; w++) {
+        out.appendChild(el('span',
+          (dailyResult.ok[w] === null || dailyResult.ok[w]) ? 'w' : 'w bad',
+          dailyResult.words[w]));
+        out.appendChild(document.createTextNode(' '));
+      }
+      out.appendChild(el('span', 'ko',
+        dailyResult.right + ' of ' + dailyResult.total + ' words matched.'
+        + (dailyResult.against !== s.text ? ' (matched against another correct wording)' : '')));
+      if (dailyResult.extra && dailyResult.extra.length) {
+        out.appendChild(el('div', 'extra', 'Not in the answer: ' + dailyResult.extra.join(', ')));
+      }
+    } else if (!dailyShown) {
+      out.appendChild(document.createTextNode('Read the Korean, then say it in English.'));
+    }
+    box.appendChild(out);
+
+    if (dailyShown) box.appendChild(dailyAnswerBlock(s));
+
+    var nav = el('div', 'buttons');
+    var prev = el('button', 'half', '‹ Previous');
+    prev.disabled = (dailyAt === 0);
+    prev.onclick = function () { dailyGo(pid, dailyAt - 1); };
+    nav.appendChild(prev);
+    var next = el('button', 'half', 'Next ›');
+    next.disabled = (dailyAt >= day.sentences.length - 1);
+    next.onclick = function () { dailyGo(pid, dailyAt + 1); };
+    nav.appendChild(next);
+    box.appendChild(nav);
+
+    var st = el('div', 'status', '');
+    st.id = 'daily-status';
+    box.appendChild(st);
+
+    var more = el('div', 'buttons');
+    var mb = el('button', null, dailyDaysOpen ? 'Hide other days' : 'Other days');
+    mb.onclick = function () { dailyDaysOpen = !dailyDaysOpen; drawDaily(pid); };
+    more.appendChild(mb);
+    box.appendChild(more);
+
+    if (dailyDaysOpen) box.appendChild(dailyDayList(pid));
+
+    window.scrollTo(0, 0);
+  }
+
+  /* 정답 · 다른 표현 · 설명. 정답을 보기 전에는 그리지 않는다 */
+  function dailyAnswerBlock(s) {
+    var wrap = el('div', 'answer');
+    wrap.appendChild(el('div', 'rowlabel', 'Answer'));
+    wrap.appendChild(el('div', 'ans', s.text));
+
+    if (canSpeak()) {
+      var b = el('div', 'buttons');
+      var listen = el('button', 'half', 'Listen');
+      listen.onclick = function () {
+        if (!speakText(s.text)) dailySay('This browser could not read it aloud.');
+      };
+      b.appendChild(listen);
+      var slowb = el('button', 'half', 'Listen slowly');
+      slowb.onclick = function () {
+        var was = slow; slow = true;
+        if (!speakText(s.text)) dailySay('This browser could not read it aloud.');
+        slow = was;
+      };
+      b.appendChild(slowb);
+      wrap.appendChild(b);
+    }
+
+    if (s.alts && s.alts.length) {
+      wrap.appendChild(el('div', 'rowlabel', 'Also correct'));
+      for (var a = 0; a < s.alts.length; a++) {
+        wrap.appendChild(el('div', 'alt', s.alts[a]));
+      }
+    }
+    if (s.note) {
+      wrap.appendChild(el('div', 'rowlabel', 'Note'));
+      wrap.appendChild(el('div', 'note', s.note));
+    }
+    return wrap;
+  }
+
+  function dailyDayList(pid) {
+    var ul = el('ul', 'list');
+    for (var i = 0; i < dailyIndex.length; i++) {
+      (function (d) {
+        var b = el('button', 'item' + (dailyDay && d.date === dailyDay.date ? ' on' : ''));
+        var body = el('div', 'body');
+        body.appendChild(el('div', 'name', d.date));
+        body.appendChild(el('div', 'meta', (d.count || 0) + ' sentences'));
+        b.appendChild(body);
+        b.onclick = function () { go('#/' + pid + '/daily/' + d.date); };
+        var li = document.createElement('li');
+        li.appendChild(b);
+        ul.appendChild(li);
+      })(dailyIndex[i]);
+    }
+    return ul;
+  }
+
+  function dailyGo(pid, idx) {
+    if (!dailyDay || idx < 0 || idx >= dailyDay.sentences.length) return;
+    dailyAt = idx;
+    resetDailyAnswer();
+    drawDaily(pid);
+  }
+
+  function checkDaily(pid) {
+    var ta = $('daily-input');
+    if (!ta || !ta.value.replace(/\s/g, '')) {
+      dailySay('Say it or type it first, or press Show answer.');
+      return;
+    }
+    dailyTyped = ta.value;
+    var s = dailyDay.sentences[dailyAt];
+    dailyResult = gradeDaily(s, dailyTyped);
+    dailyShown = true;
+    recordDaily(pid, dailyResult);
+    drawDaily(pid);
+    dailySay(dailyResult.right === dailyResult.total
+      ? 'All matched. Next one.'
+      : 'Compare it with the answer below, then try saying it again.');
+  }
+
+  function revealDaily(pid) {
+    var ta = $('daily-input');
+    if (ta) dailyTyped = ta.value;
+    dailyShown = true;
+    drawDaily(pid);
+    dailySay('Answer shown. Say it out loud once before moving on.');
+  }
+
+  function recordDaily(pid, r) {
+    if (!window.Store || !Store.available() || !dailyProgress || !dailyDay) return;
+    var correct = (r.total > 0 && r.right === r.total);
+    dailyProgress.at = dailyAt;
+    dailyProgress.sentences[dailyAt] = correct ? 'ok' : 'miss';
+    Store.saveProgress(dailyProgress, noteStorage);
+    Store.bumpDay(pid, noteStorage);
+    if (correct) return;
+    var missed = [];
+    for (var i = 0; i < r.words.length; i++) {
+      if (r.ok[i] === false) {
+        var w = r.words[i].replace(/^[^A-Za-z0-9']+/, '').replace(/[^A-Za-z0-9']+$/, '');
+        if (w) missed.push(w);
+      }
+    }
+    Store.addMisses(pid, dailyDay.videoId, dailyAt, missed, noteStorage);
+  }
+
+  function saveDailyCard(pid) {
+    if (!dailyDay) return;
+    if (!window.Store || !Store.available()) {
+      dailySay('This browser will not let the app save cards.');
+      return;
+    }
+    var vid = dailyDay.videoId, at = dailyAt;
+    Store.addCard(pid, vid, at, 'daily', function () { dailySay('Could not save the card.'); });
+    // 정말 들어갔는지 확인하고 말한다. 넣기만 하고 끝내면 실패를 모른다
+    setTimeout(function () {
+      Store.listCards(pid, function (list) {
+        var key = pid + '|' + vid + '|' + at;
+        for (var i = 0; i < list.length; i++) {
+          if (list[i].key === key) {
+            var b = $('daily-save');
+            if (b) { b.className = 'half on'; b.textContent = 'Saved'; }
+            dailySay('Saved to cards — ' + list.length + ' saved. Open Cards from the library.');
+            return;
+          }
+        }
+        dailySay('Could not save the card.');
+      }, function () { dailySay('Saved, but could not read the card list back.'); });
+    }, 150);
+  }
+
+  function toggleDailyRecord(pid) {
+    if (dailyRecording) {
+      dailyRecording = false;
+      Recorder.stop(function (url, heard) {
+        var b = $('daily-rec');
+        if (b) { b.className = 'half'; b.textContent = 'Record'; }
+        var au = $('daily-audio'), mb = $('daily-mine');
+        if (url && au) { au.src = url; if (mb) mb.disabled = false; }
+        var ta = $('daily-input');
+        if (heard) {
+          if (ta) { ta.value = heard; dailyTyped = heard; }
+          dailySay('Heard: ' + heard + ' — press Check.');
+        } else if (!Recorder.canTranscribe()) {
+          dailySay('Recorded. This browser cannot write down speech, so type what you said.');
+        } else {
+          dailySay('Recorded, but nothing was picked up. Try again, or type it.');
+        }
+      });
+      return;
+    }
+    Recorder.start(function () {
+      dailyRecording = true;
+      var b = $('daily-rec');
+      if (b) { b.className = 'half rec-on'; b.textContent = 'Stop'; }
+      dailySay('Recording. Say the English sentence, then press Stop.');
+    }, function (why) {
+      if (why === 'denied') dailySay('Microphone permission was refused, so recording is off.');
+      else dailySay('Could not start recording. Type what you would say instead.');
+    });
   }
 
   /* ---------------------------------------------------------------- 오답 리포트 (SPEC 10) */
@@ -1220,7 +1686,8 @@
     clear(box);
     box.className = 'now';
     for (var i = 0; i < r.words.length; i++) {
-      var w = el('span', r.ok[i] ? 'w' : 'w bad', r.words[i]);
+      // null 은 채점 대상이 아닌 조각이다. 빨갛게 칠하지 않는다
+      var w = el('span', (r.ok[i] === null || r.ok[i]) ? 'w' : 'w bad', r.words[i]);
       box.appendChild(w);
       box.appendChild(document.createTextNode(' '));
     }
@@ -1286,7 +1753,7 @@
   }
 
   /* 손으로 카드에 담기 — SPEC 7 의 "수동 저장".
-     틀린 문장은 자동으로 담기지만, 맞혔어도 더 보고 싶은 문장이 있다. */
+     틀렸다고 자동으로 담지 않는다. 담을 문장은 사람이 고른다 (운영자 결정). */
   function saveCard() {
     if (!video || current < 0) {
       say('Pick a sentence first.');
@@ -1659,6 +2126,8 @@
     $('report-back').onclick = function () { go('#/' + profileId); };
     $('cards-btn').onclick = function () { go('#/' + profileId + '/cards'); };
     $('cards-back').onclick = function () { go('#/' + profileId); };
+    $('daily-btn').onclick = function () { go('#/' + profileId + '/daily'); };
+    $('daily-back').onclick = function () { go('#/' + profileId); };
     setupBackup();
     $('list-btn').onclick = function () { toggleList(); };
     $('cover').onclick = playCurrent;

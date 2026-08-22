@@ -348,3 +348,27 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
   border:1px solid var(--line);border-radius:10px;padding:10px;
   font-family:inherit;font-size:16px;resize:vertical;outline:none;
 }
+
+/* 하루 다섯 문장 (ROADMAP 1단계) */
+.count{font-size:12px;color:var(--muted);margin:0 0 6px;}
+
+/* 옮겨야 할 한국어 문장. 이게 화면의 주인공이라 크게 둔다 */
+.kotask{
+  margin:10px 0 16px;padding:16px;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  font-size:19px;line-height:1.55;font-weight:600;
+}
+
+.answer{
+  margin-top:16px;padding:14px 16px;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+}
+.answer .rowlabel{font-size:12px;font-weight:600;color:var(--muted);margin:12px 0 6px;}
+.answer .rowlabel:first-child{margin-top:0;}
+.answer .ans{font-size:17px;line-height:1.55;}
+.answer .alt{font-size:15px;line-height:1.5;color:var(--muted);margin-bottom:6px;}
+.answer .note{font-size:14px;line-height:1.55;color:var(--muted);}
+.answer .buttons{margin-top:12px;}
+
+/* 다른 날 목록에서 지금 보고 있는 날 */
+.item.on{background:var(--card2);border-color:var(--accent);color:inherit;}

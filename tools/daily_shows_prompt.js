@@ -18,8 +18,10 @@ try {
     throw new Error('등록한 영상에서 쓸 만한 대사가 ' + all.length + '줄뿐입니다. '
       + 'PC 에서 영상을 더 등록해 주세요.');
   }
+  // 규칙으로는 길이와 문장부호밖에 못 본다. 후보를 넉넉히 주고 고르는 것은 AI 가 한다
+  var pool = (cfg.count || 5) * (cfg.showsCandidates || 6);
   var used = shows.recentLines(pid, cfg.avoidRecentDays || 14);
-  var lines = shows.pickLines(all, used, cfg.count);
+  var lines = shows.pickLines(all, used, pool);
 
   var out = process.env.DAILY_LINES || '/tmp/lines.json';
   fs.writeFileSync(out, JSON.stringify(lines, null, 2), 'utf8');

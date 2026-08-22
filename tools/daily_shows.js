@@ -16,7 +16,28 @@ var DAILY = daily.DAILY;
 
 /* 연습에 쓸 만한 줄만 고른다. 자동 자막은 토막이 많아서 그냥 쓰면 안 된다.
    문장부호로 끝나고 길이가 적당한 것만 남긴다. */
+/* 자막에서 뽑아 둔 대사 창고. tools/add_subs.py 가 채운다 (PC 에서 두 달에 한 번쯤) */
+function poolLines(pid) {
+  var pool = daily.readJSON(path.join(ROOT, 'data', 'shows', pid, 'pool.json'), null);
+  if (!pool || !pool.lines) return [];
+  var out = [];
+  for (var i = 0; i < pool.lines.length; i++) {
+    var l = pool.lines[i];
+    if (!l || !l.text) continue;
+    out.push({ text: String(l.text).trim(), title: l.source || 'Subtitles',
+               videoId: null, i: i, start: null, end: null });
+  }
+  return out;
+}
+
+/* 창고가 있으면 그쪽을 쓴다. 없으면 등록한 영상 자막에서 뽑는다 */
 function candidates(pid, cfg) {
+  var pool = poolLines(pid);
+  if (pool.length) return pool;
+  return videoLines(pid, cfg);
+}
+
+function videoLines(pid, cfg) {
   var dir = path.join(ROOT, 'data', 'videos', pid);
   var index = daily.readJSON(path.join(dir, 'index.json'), []);
   var out = [];
@@ -56,8 +77,10 @@ function recentLines(pid, days) {
     var day = daily.readJSON(path.join(DAILY, pid, index[i].date + '-shows.json'), null);
     if (!day || !day.sentences) continue;
     for (var s = 0; s < day.sentences.length; s++) {
-      var f = day.sentences[s].from;
+      var one = day.sentences[s];
+      var f = one.from;
       if (f) used[f.videoId + '|' + f.i] = true;
+      if (one.text) used['t|' + String(one.text).toLowerCase().replace(/[^a-z0-9 ]/g, '')] = true;
     }
   }
   return used;
@@ -66,7 +89,10 @@ function recentLines(pid, days) {
 function pickLines(all, used, count, rand) {
   var fresh = [];
   for (var i = 0; i < all.length; i++) {
-    if (!used[all[i].videoId + '|' + all[i].i]) fresh.push(all[i]);
+    var a = all[i];
+    if (a.videoId && used[a.videoId + '|' + a.i]) continue;
+    if (used['t|' + a.text.toLowerCase().replace(/[^a-z0-9 ]/g, '')]) continue;
+    fresh.push(a);
   }
   var pool = daily.shuffle(fresh.length >= count ? fresh : all, rand);
   return pool.slice(0, count);
@@ -77,30 +103,48 @@ function pickLines(all, used, count, rand) {
 function buildPrompt(lines, cfg) {
   var out = [];
 
-  out.push('아래 영어 문장들은 실제 영상에서 사람이 한 말입니다. 자막에서 그대로 가져온 것입니다.');
-  out.push('한국인 성인 학습자가 이 문장을 보고 연습할 수 있게 재료를 붙여 주세요.');
+  out.push('아래는 드라마·영화 자막에서 규칙으로 뽑아 온 영어 대사 후보입니다.');
+  out.push('실제로 사람이 한 말을 그대로 가져온 것입니다.');
+  out.push('이 중에서 **' + cfg.count + '개만 골라서** 한국인 성인 학습자용 연습 재료로 만들어 주세요.');
   out.push('');
-  out.push('## 절대 지킬 것');
+  out.push('## 고르는 기준 — 이게 이 일의 절반입니다');
   out.push('');
-  out.push('**"text" 는 한 글자도 바꾸지 마세요.** 준 그대로 돌려주세요.');
-  out.push('맞춤법이 이상해 보여도, 문장이 어색해 보여도 그대로 둡니다.');
-  out.push('실제로 그렇게 말한 것이 요점입니다. 고치면 이 연습의 의미가 없어집니다.');
+  out.push('규칙으로는 길이와 문장부호밖에 못 봅니다. 뜻은 사람이 봐야 합니다.');
+  out.push('**아래에 하나라도 걸리면 버리세요. 아까워하지 마세요.**');
   out.push('');
-  out.push('## 붙일 것');
+  out.push('1. **혼자 봐서는 뜻을 모르는 말.** 드라마 대사는 앞뒤가 있어야 통하는 것이 많습니다.');
+  out.push('   "He said he would do it." 처럼 he 가 누군지 모르면 옮길 수가 없습니다');
+  out.push('2. **그 작품 안에서만 통하는 말.** 등장인물 이름, 그 드라마의 사건, 지명');
+  out.push('3. **일상에서 쓸 일이 없는 말.** 총격전, 법정, 수술실, 판타지 세계의 말');
+  out.push('4. **비속어 · 성적인 내용 · 폭력적인 말.** 가족이 함께 쓰는 앱입니다. 반드시 뺍니다');
+  out.push('5. **배울 것이 없는 말.** 너무 뻔하거나("I am going to the store.") 단어가 다 쉬운 것');
+  out.push('6. **말이 안 되는 것.** 자막이 잘못 붙었거나 두 사람 말이 섞인 것');
   out.push('');
-  out.push('1. **"ko"** \u2014 학습자가 읽고 영어로 옮겨 말할 한국어.');
+  out.push('**골라야 할 것:** 혼자 봐도 상황이 그려지고, 일상에서 그대로 쓸 수 있고,');
+  out.push('한국 사람이 그렇게 말할 줄 몰랐을 만한 표현이 들어 있는 것.');
+  out.push('');
+  out.push('' + cfg.count + '개를 채우지 못하겠으면 **채우지 마세요.** 억지로 넣는 것보다 적은 편이 낫습니다.');
+  out.push('');
+  out.push('## 고른 것에 붙일 것');
+  out.push('');
+  out.push('**"text" 는 한 글자도 바꾸지 마세요.** 후보에 있는 그대로 돌려주세요.');
+  out.push('맞춤법이 이상해 보여도 그대로 둡니다. 실제로 그렇게 말한 것이 요점입니다.');
+  out.push('');
+  out.push('1. **"n"** \u2014 몇 번 후보인지 (아래 번호 그대로)');
+  out.push('2. **"ko"** \u2014 학습자가 읽고 영어로 옮겨 말할 한국어.');
   out.push('   직역이 아니라 **한국 사람이 같은 상황에서 할 말**로 쓰세요.');
-  out.push('   자연스러운 구어체여야 하고, 애매하게 쓰지 마세요.');
-  out.push('   영어 문장의 뜻과 느낌이 전해지면 됩니다. 1:1로 안 맞아도 좋습니다.');
-  out.push('2. **"alts"** \u2014 같은 말을 말투만 바꿔 하는 법. 정확히 두 개.');
+  out.push('   자연스러운 구어체여야 하고 애매하면 안 됩니다. 1:1로 안 맞아도 좋습니다');
+  out.push('3. **"alts"** \u2014 같은 말을 말투만 바꿔 하는 법. 정확히 두 개.');
   out.push('   - "casual" \u2014 더 편하게. 짧고 축약된 구어. 관용구는 뜻이 맞을 때만');
   out.push('   - "formal" \u2014 격식 있게. 축약형 없이. **뜻을 바꾸지 마세요**');
-  out.push('   둘 다 원문과 앞부분이 겹치지 않게 하세요.');
-  out.push('3. **"note"** \u2014 배울 만한 표현을 한국어 한두 문장으로.');
+  out.push('   둘 다 원문과 앞부분이 겹치지 않게 하세요');
+  out.push('4. **"note"** \u2014 배울 만한 표현을 한국어 한두 문장으로.');
   out.push('   표현은 **별표 두 개로 감싸세요**. 감싼 것은 위 문장들 안에 실제로 나와야 합니다.');
-  out.push('   문법 설명보다 **"이 말을 어떤 자리에서 쓰는가"** 를 알려 주세요.');
+  out.push('   문법 설명보다 **"이 말을 어떤 자리에서 쓰는가"** 를 알려 주세요');
   out.push('');
-  out.push('## 재료');
+  out.push('버린 후보에 대해서는 "skipped" 에 "3번: 앞뒤를 모르면 뜻이 안 통함" 같이 한 줄씩 적으세요.');
+  out.push('');
+  out.push('## 후보');
   out.push('');
   for (var i = 0; i < lines.length; i++) {
     out.push((i + 1) + '. [' + lines[i].title + '] ' + lines[i].text);
@@ -109,11 +153,10 @@ function buildPrompt(lines, cfg) {
   out.push('## 내놓는 형식');
   out.push('');
   out.push('JSON 객체 하나만. 설명, 인사말, 코드 울타리 없이.');
-  out.push('"sentences" 에 위 순서 그대로 ' + lines.length + '개를 담으세요.');
   out.push('');
-  out.push('{ "sentences": [ { "text": "준 문장 그대로", "ko": "...",');
+  out.push('{ "picked": [ { "n": 3, "text": "후보 3번 그대로", "ko": "...",');
   out.push('  "alts": [ {"style":"casual","text":"..."}, {"style":"formal","text":"..."} ],');
-  out.push('  "note": "..." } ] }');
+  out.push('  "note": "..." } ], "skipped": ["1번: ...", "2번: ..."] }');
 
   return out.join('\n');
 }
@@ -122,11 +165,14 @@ function buildSchema(count) {
   return {
     type: 'object',
     properties: {
-      sentences: {
-        type: 'array', minItems: count, maxItems: count,
+      skipped: { type: 'array', items: { type: 'string' } },
+      picked: {
+        // 다 못 채우면 적게 내놓아도 된다. 억지로 채운 것보다 낫다
+        type: 'array', minItems: 1, maxItems: count,
         items: {
           type: 'object',
           properties: {
+            n: { type: 'integer' },
             text: { type: 'string' },
             ko: { type: 'string' },
             alts: {
@@ -142,11 +188,11 @@ function buildSchema(count) {
             },
             note: { type: 'string' }
           },
-          required: ['text', 'ko', 'alts', 'note']
+          required: ['n', 'text', 'ko', 'alts', 'note']
         }
       }
     },
-    required: ['sentences']
+    required: ['picked', 'skipped']
   };
 }
 
@@ -156,19 +202,29 @@ function same(a, b) {
   return String(a || '').replace(/\s+/g, ' ').trim() === String(b || '').replace(/\s+/g, ' ').trim();
 }
 
-function validate(parsed, lines) {
+function validate(parsed, lines, want) {
   var problems = [];
-  if (!parsed || !Array.isArray(parsed.sentences)) return ['sentences 목록이 없습니다.'];
-  var rows = parsed.sentences;
-  if (rows.length !== lines.length) {
-    problems.push('문장이 ' + lines.length + '개여야 하는데 ' + rows.length + '개입니다.');
+  if (!parsed || !Array.isArray(parsed.picked)) return ['picked 목록이 없습니다.'];
+  var rows = parsed.picked;
+  if (!rows.length) return ['고른 대사가 하나도 없습니다.'];
+  if (want && rows.length > want) {
+    problems.push(want + '개까지인데 ' + rows.length + '개를 골랐습니다.');
   }
-  for (var i = 0; i < rows.length && i < lines.length; i++) {
-    var r = rows[i] || {}, at = '문장 ' + (i + 1) + ': ';
+  var taken = {};
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i] || {}, at = '고른 것 ' + (i + 1) + ': ';
+
+    var n = parseInt(r.n, 10);
+    if (!(n >= 1 && n <= lines.length)) {
+      problems.push(at + '후보 번호 ' + r.n + ' 은(는) 없습니다.');
+      continue;
+    }
+    if (taken[n]) problems.push(at + '후보 ' + n + '번을 두 번 골랐습니다.');
+    taken[n] = true;
 
     // 영어를 손대면 실제로 한 말이 아니게 된다. 이게 이 방식의 전부다
-    if (!same(r.text, lines[i].text)) {
-      problems.push(at + '원래 대사를 바꿨습니다.\n      준 것: ' + lines[i].text
+    if (!same(r.text, lines[n - 1].text)) {
+      problems.push(at + '원래 대사를 바꿨습니다.\n      후보 ' + n + '번: ' + lines[n - 1].text
         + '\n      받은 것: ' + r.text);
     }
     if (!r.ko || !String(r.ko).trim()) problems.push(at + '한국어가 비었습니다.');
@@ -193,6 +249,7 @@ function validate(parsed, lines) {
 /* ------------------------------------------------------------------ 저장 */
 
 function toDayFile(parsed, lines, date) {
+  var picked = parsed.picked;
   var out = {
     videoId: 'shows-' + date,
     title: 'From your videos · ' + date,
@@ -200,8 +257,8 @@ function toDayFile(parsed, lines, date) {
     source: 'shows',
     sentences: []
   };
-  for (var i = 0; i < parsed.sentences.length; i++) {
-    var r = parsed.sentences[i], src = lines[i];
+  for (var i = 0; i < picked.length; i++) {
+    var r = picked[i], src = lines[parseInt(r.n, 10) - 1];
     out.sentences.push({
       i: i,
       ko: String(r.ko).trim(),
@@ -209,7 +266,8 @@ function toDayFile(parsed, lines, date) {
       alts: daily.normalizeAlts(r.alts),
       note: String(r.note).trim(),
       situation: src.title,
-      from: { videoId: src.videoId, i: src.i },
+      // 등록한 영상에서 온 것만 그 대목을 들어 볼 수 있다. 자막 창고에는 영상이 없다
+      from: src.videoId ? { videoId: src.videoId, i: src.i } : null,
       start: src.start,
       end: src.end,
       recording: null
@@ -244,7 +302,7 @@ function markIndex(pid, date, count, generatedAt) {
 }
 
 module.exports = {
-  candidates: candidates, recentLines: recentLines, pickLines: pickLines,
+  candidates: candidates, poolLines: poolLines, videoLines: videoLines, recentLines: recentLines, pickLines: pickLines,
   buildPrompt: buildPrompt, buildSchema: buildSchema,
   validate: validate, toDayFile: toDayFile, save: save, markIndex: markIndex
 };

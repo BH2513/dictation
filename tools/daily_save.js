@@ -34,6 +34,12 @@ read(function (raw) {
 
     process.stdout.write(date + ' 문장 ' + r.day.sentences.length + '개를 저장했습니다 ('
       + r.profiles.join(', ') + ').\n');
+    if (parsed.problems && parsed.problems.length) {
+      process.stdout.write('검수에서 고친 것:\n');
+      for (var q = 0; q < parsed.problems.length; q++) {
+        process.stdout.write('  - ' + parsed.problems[q] + '\n');
+      }
+    }
     for (var s = 0; s < r.day.sentences.length; s++) {
       process.stdout.write('  ' + (s + 1) + '. ' + r.day.sentences[s].text + '\n');
     }

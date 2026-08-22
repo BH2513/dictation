@@ -26,7 +26,7 @@ function row(over) {
       { style: 'casual', text: 'That timeline feels rough to me, honestly.' },
       { style: 'formal', text: 'That timeline appears unrealistic to me.' }
     ],
-    note: '**to be honest** 는 조심스럽게 반대할 때 씁니다.'
+    note: '**deadline** 은 마감일입니다. **honestly** 를 붙이면 조심스러워집니다.'
   };
   for (var k in (over || {})) base[k] = over[k];
   return base;
@@ -132,7 +132,7 @@ check('note 에 강조가 하나도 없으면 잡는다',
   ['문장 1: note 에 **로 감싼 표현이 없습니다.']);
 
 check('강조가 하나라도 있으면 통과',
-  daily.validate({ sentences: [row({ note: '**cave** 는 무너지다.' }), row({
+  daily.validate({ sentences: [row({ note: '**tough** 는 힘들다는 뜻입니다.' }), row({
     text: 'She would have called us if the meeting had ended earlier today.',
     ko: '회의가 일찍 끝났으면 연락했을 겁니다.' })] }, CFG), []);
 
@@ -145,6 +145,62 @@ check('대소문자·문장부호만 다른 중복도 잡는다',
     text: 'I HONESTLY THINK THAT DEADLINE IS GOING TO BE TOUGH FOR US!!'
   })] }, CFG),
   ['문장 2: 앞 문장과 같습니다.']);
+
+console.log('\nnote 의 강조 — 문장에 없는 표현을 가르치면 안 된다');
+check('별표로 감싼 대목을 뽑는다',
+  daily.highlighted('**cave** 는 무너지다. **hold out** 은 버티다.'), ['cave', 'hold out']);
+check('감싼 것이 없으면 빈 목록', daily.highlighted('강조가 없습니다.'), []);
+check('별표 짝이 안 맞으면 무시', daily.highlighted('**cave 는 무너지다.'), []);
+
+check('강조한 표현이 정답에 있으면 통과',
+  daily.keysAppear(['deadline'], { text: 'I think that deadline is tough.', alts: [] }), true);
+check('캐주얼 쪽에 있어도 통과',
+  daily.keysAppear(['rough'], { text: 'I think that deadline is tough.',
+    alts: [{ style: 'casual', text: 'That feels rough.' }] }), true);
+check('낱말 꼴이 달라도 찾는다 (cave / caved)',
+  daily.keysAppear(['cave'], { text: 'I caved after three days.', alts: [] }), true);
+check('물결표는 떼고 찾는다',
+  daily.keysAppear(['tempted to ~'], { text: "I'm tempted to just eat this.", alts: [] }), true);
+check('어디에도 없으면 걸린다',
+  daily.keysAppear(['swamped'], { text: 'I think that deadline is tough.', alts: [] }), false);
+
+check('없는 표현을 강조하면 검사에서 잡는다',
+  daily.validate({ sentences: [row({ note: '**swamped** 는 바쁘다는 뜻입니다.' })] }, CFG).slice(1),
+  ['문장 1: note 에서 강조한 표현이 문장에 하나도 나오지 않습니다.']);
+
+console.log('\ncasual 이 정답과 겹치는지');
+check('앞 네 낱말이 같으면 같은 문장으로 본다',
+  daily.sameOpening('Part of me wants to move now.', 'Part of me wants to stay.'), true);
+check('앞부분이 다르면 통과',
+  daily.sameOpening('Part of me wants to move.', 'I keep thinking about moving.'), false);
+check('대소문자와 문장부호는 무시', daily.sameOpening('I am, honestly, fine.', 'i am honestly fine'), true);
+check('한쪽이 비면 false', daily.sameOpening('', 'anything'), false);
+
+check('겹치면 검사에서 잡는다',
+  daily.validate({ sentences: [row({ alts: [
+    { style: 'casual', text: 'I honestly think that deadline is rough.' },
+    { style: 'formal', text: 'That timeline appears unrealistic to me.' }] })] }, CFG).slice(1),
+  ['문장 1: casual 이 정답과 앞부분이 같습니다.']);
+
+console.log('\n검수 — 만든 것을 한 번 더 읽히는 단계');
+var rev = daily.buildReviewPrompt({ sentences: [row()] }, { count: 5, minWords: 20, maxWords: 35 });
+check('초안이 지시문에 담긴다', rev.indexOf('I honestly think that deadline') >= 0, true);
+check('관용구 오용을 보라고 한다', rev.indexOf('hit the spot') >= 0, true);
+check('지적만 말고 고치라고 한다', rev.indexOf('직접 고쳐서 내놓으세요') >= 0, true);
+check('개수를 바꾸지 말라고 한다', rev.indexOf('문장 개수(5개)') >= 0, true);
+
+var rs = daily.buildReviewSchema({ count: 5 });
+check('고친 것을 적는 칸이 있다', rs.required.sort(), ['problems', 'sentences']);
+check('문장 개수는 그대로 못 박는다',
+  [rs.properties.sentences.minItems, rs.properties.sentences.maxItems], [5, 5]);
+
+check('검수 결과도 같은 검사를 그대로 받는다',
+  daily.validate({ problems: ['고쳤음'], sentences: [row(), row({
+    text: 'She would have called us if the meeting had ended earlier today.',
+    ko: '회의가 일찍 끝났으면 연락했을 겁니다.' })] }, CFG), []);
+check('고친 내용은 파일에 남는다',
+  daily.toDayFile({ problems: ['관용구를 고쳤습니다'], sentences: [row()] }, '2026-08-23').reviewed,
+  ['관용구를 고쳤습니다']);
 
 console.log('\n앱이 읽는 모양으로 바꾸기 — 영상 파일과 같아야 문장카드가 붙는다');
 var day = daily.toDayFile({ sentences: [row()] }, '2026-08-23');

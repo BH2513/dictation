@@ -160,15 +160,149 @@ function buildPrompt(opts) {
   lines.push('  ]');
   lines.push('}');
   lines.push('');
-  lines.push('"alts" 는 **같은 말을 말투를 바꿔 하는 법**을 보여 주는 것입니다. 정확히 두 개.');
-  lines.push('- "casual" — "text" 보다 더 편한 말투. 친한 친구끼리 쓰는 표현');
-  lines.push('- "formal" — 같은 뜻을 격식 있게. 처음 보는 사람이나 윗사람에게 쓸 말투');
+  lines.push('"alts" 는 **같은 말을 말투만 바꿔 하는 법**을 보여 주는 것입니다. 정확히 두 개.');
+  lines.push('');
+  lines.push('- "casual" — 더 편한 말투. **관용구를 억지로 넣는 것이 아닙니다.**');
+  lines.push('  더 짧게, 더 축약해서(I\'m, gonna, kinda), 말하듯이 하는 것이 캐주얼입니다.');
+  lines.push('  관용구는 **뜻이 정확히 맞을 때만** 쓰세요. 어설프게 쓰면 틀린 영어를 가르치게 됩니다.');
+  lines.push('  ("hit the spot" 은 음식이 딱 땡길 때, "call it a day" 는 일을 그만둘 때 —');
+  lines.push('   이런 것을 엉뚱한 자리에 넣으면 안 됩니다.)');
+  lines.push('  **"text" 와 앞부분이 겹치면 안 됩니다.** 나란히 놓고 차이가 보여야 합니다.');
+  lines.push('');
+  lines.push('- "formal" — 같은 뜻을 격식 있게. 처음 보는 사람이나 윗사람에게 쓸 말투.');
+  lines.push('  축약형을 쓰지 않고 낱말을 갖춰 씁니다.');
+  lines.push('  **뜻을 바꾸지 마세요.** 내용을 부드럽게 눅이거나 빼먹으면 안 됩니다 — 말투만 올립니다.');
+  lines.push('');
   lines.push('둘 다 실제로 쓰는 말이어야 하고, 길이는 "text" 와 비슷하면 됩니다.');
   lines.push('');
   lines.push('"note" 에서는 **배울 만한 표현을 별표 두 개로 감싸 주세요** \u2014 예: **swamped** 는 ~.');
   lines.push('그 부분이 화면에 강조돼서 보입니다. 최소 하나는 반드시 감싸야 합니다.');
+  lines.push('감싼 표현은 **위 문장들 안에 실제로 나오는 말**이어야 합니다.');
+  lines.push('문장에 없는 표현을 가르치면 학습자가 어디서 나온 말인지 알 수 없습니다.');
   lines.push('"ko" 는 번역투가 아니어야 합니다. 한국 사람이 친구한테 하듯 쓰세요.');
   lines.push('문장부호는 쉼표와 마침표만 쓰세요. 줄표(\u2014)와 따옴표는 쓰지 마세요.');
+
+  return lines.join('\n');
+}
+
+/* ------------------------------------------------------------------ 결과 받기 */
+
+/* Claude 가 앞뒤에 말을 붙이거나 코드 울타리를 씌워도 JSON 만 꺼낸다. */
+function extractJSON(raw) {
+  var text = String(raw || '');
+  var fence = text.match(/```(?:json)?\s*([\s\S]*?)```/);
+  if (fence) text = fence[1];
+  var start = text.indexOf('{');
+  var end = text.lastIndexOf('}');
+  if (start < 0 || end <= start) throw new Error('결과에서 JSON 을 찾지 못했습니다.');
+  return JSON.parse(text.slice(start, end + 1));
+}
+
+/* Claude Code CLI 는 --output-format json 으로 부르면 겉봉투를 씌워서 준다.
+   봉투째 넘겨도, 알맹이만 넘겨도 되게 한다. */
+function unwrap(parsed) {
+  if (parsed && parsed.structured_output) return parsed.structured_output;
+  if (parsed && typeof parsed.result === 'string') return extractJSON(parsed.result);
+  return parsed;
+}
+
+/* --json-schema 로 넘길 형식. 칸이 비는 것은 이걸로 막고,
+   단어 수처럼 형식으로 못 막는 것은 validate() 가 잡는다. */
+function sentenceListSchema(cfg) {
+  return {
+    type: 'array',
+    minItems: cfg.count,
+    maxItems: cfg.count,
+    items: {
+      type: 'object',
+      properties: {
+        situation: { type: 'string' },
+        ko: { type: 'string' },
+        text: { type: 'string' },
+        alts: {
+          type: 'array', minItems: 2, maxItems: 2,
+          items: {
+            type: 'object',
+            properties: {
+              style: { type: 'string', enum: ['casual', 'formal'] },
+              text: { type: 'string' }
+            },
+            required: ['style', 'text']
+          }
+        },
+        note: { type: 'string' }
+      },
+      required: ['situation', 'ko', 'text', 'alts', 'note']
+    }
+  };
+}
+
+function buildSchema(cfg) {
+  return {
+    type: 'object',
+    properties: { sentences: sentenceListSchema(cfg) },
+    required: ['sentences']
+  };
+}
+
+/* 검사하는 쪽은 고친 문장과 무엇을 고쳤는지를 같이 내놓는다 */
+function buildReviewSchema(cfg) {
+  return {
+    type: 'object',
+    properties: {
+      problems: { type: 'array', items: { type: 'string' } },
+      sentences: sentenceListSchema(cfg)
+    },
+    required: ['problems', 'sentences']
+  };
+}
+
+/* ------------------------------------------------------------------ 다시 보기
+
+   한 번 만든 것을 그대로 내보내면 틀린 관용구가 그대로 나간다. 실제로 겪었다 —
+   "hit the spot"(음식), "call it a day"(일 끝내기)를 엉뚱한 자리에 쓴 채로 올라갔다.
+   그래서 만든 것을 한 번 더 읽히고 고쳐서 내보낸다. 값이 안 드는 일이라 안 할 이유가 없다. */
+
+function buildReviewPrompt(draft, cfg) {
+  var lines = [];
+
+  lines.push('당신은 영어 원어민이자 한국인 학습자용 교재를 검수하는 사람입니다.');
+  lines.push('아래는 오늘 학습자에게 나갈 연습 문장 초안입니다. 그대로 내보내기 전에 검수해 주세요.');
+  lines.push('');
+  lines.push('학습자는 "ko"(한국어)를 보고 "text"(영어)로 옮겨 말하는 연습을 합니다.');
+  lines.push('"alts" 는 같은 말을 말투만 바꿔 하는 법이고, "note" 는 배울 표현 설명입니다.');
+  lines.push('');
+  lines.push('## 반드시 볼 것');
+  lines.push('');
+  lines.push('1. **관용구를 뜻에 맞게 썼는가.** 이게 제일 중요합니다.');
+  lines.push('   원어민이 그 자리에서 그 표현을 쓰지 않으면 틀린 것입니다.');
+  lines.push('   (전에 "hit the spot" 을 음식이 아닌 곳에, "call it a day" 를 일과 무관한 곳에');
+  lines.push('    쓴 채로 나간 적이 있습니다. 이런 것을 잡아 주세요.)');
+  lines.push('2. **소리내어 읽었을 때 어색하지 않은가.** 글로 쓴 문장 같으면 고칩니다.');
+  lines.push('3. **casual 이 text 와 충분히 다른가.** 앞부분이 겹치면 고칩니다.');
+  lines.push('   캐주얼은 관용구를 넣는 것이 아니라 더 짧고 축약된 구어입니다.');
+  lines.push('4. **formal 이 뜻을 바꾸지 않았는가.** 말투만 올려야 하고,');
+  lines.push('   내용을 눅이거나 빼먹으면 안 됩니다.');
+  lines.push('5. **한국어가 번역투가 아닌가.** 한국 사람이 친구에게 하듯 자연스러워야 합니다.');
+  lines.push('6. **note 에서 별표로 감싼 표현이 위 문장들 안에 실제로 나오는가.**');
+  lines.push('   없는 표현을 가르치면 안 됩니다. 감싼 것이 하나도 없어도 안 됩니다.');
+  lines.push('7. **"text" 가 ' + cfg.minWords + '~' + cfg.maxWords + ' 단어인가.**');
+  lines.push('8. 줄표(\u2014)와 따옴표를 쓰지 않았는가. 쉼표와 마침표만 씁니다.');
+  lines.push('');
+  lines.push('## 어떻게 할 것인가');
+  lines.push('');
+  lines.push('**지적만 하지 말고 직접 고쳐서 내놓으세요.** 고친 최종본을 "sentences" 에 담고,');
+  lines.push('무엇을 왜 고쳤는지를 "problems" 에 한국어 한 줄씩 적으세요.');
+  lines.push('고칠 것이 없으면 "problems" 를 빈 목록으로 두고 "sentences" 는 그대로 돌려주세요.');
+  lines.push('문장 개수(' + cfg.count + '개)와 "situation" 은 바꾸지 마세요.');
+  lines.push('');
+  lines.push('**의심스러우면 고치는 쪽으로 하세요.** 어설픈 표현이 나가는 것보다 낫습니다.');
+  lines.push('');
+  lines.push('## 검수할 초안');
+  lines.push('');
+  lines.push(JSON.stringify({ sentences: draft.sentences }, null, 2));
+  lines.push('');
+  lines.push('JSON 객체 하나만 출력하세요. 설명, 인사말, 코드 울타리 없이 JSON 만.');
 
   return lines.join('\n');
 }
@@ -256,6 +390,50 @@ function normalizeAlts(alts) {
   return out;
 }
 
+/* note 에서 **로 감싼 대목들 */
+function highlighted(note) {
+  var out = [], m;
+  var re = /\*\*([^*]+)\*\*/g;
+  while ((m = re.exec(String(note || '')))) {
+    var one = m[1].trim();
+    if (one) out.push(one);
+  }
+  return out;
+}
+
+function bare(text) {
+  return String(text || '').toLowerCase().replace(/[^a-z0-9' ]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+/* 강조한 표현 중 하나라도 문장이나 다른 표현 안에 실제로 나오는지 */
+function keysAppear(keys, row) {
+  var hay = bare(row.text);
+  for (var a = 0; a < (row.alts || []).length; a++) {
+    var alt = row.alts[a];
+    hay += ' ' + bare(typeof alt === 'string' ? alt : (alt && alt.text));
+  }
+  for (var k = 0; k < keys.length; k++) {
+    var key = bare(keys[k]).replace(/ ~$/, '').trim();
+    if (key && hay.indexOf(key) >= 0) return true;
+  }
+  return false;
+}
+
+function altOf(alts, style) {
+  for (var i = 0; i < (alts || []).length; i++) {
+    if (alts[i] && alts[i].style === style) return alts[i].text;
+  }
+  return '';
+}
+
+/* 앞 네 낱말이 같으면 같은 문장으로 본다 */
+function sameOpening(a, b) {
+  if (!a || !b) return false;
+  var x = bare(a).split(' ').slice(0, 4).join(' ');
+  var y = bare(b).split(' ').slice(0, 4).join(' ');
+  return !!x && x === y;
+}
+
 function wordCount(text) {
   var t = String(text || '').trim();
   return t ? t.split(/\s+/).length : 0;
@@ -301,8 +479,17 @@ function validate(parsed, cfg) {
     }
 
     // 강조할 표현이 하나도 없으면 note 가 밋밋해진다
-    if (r.note && !/\*\*[^*]+\*\*/.test(String(r.note))) {
+    var keys = highlighted(r.note);
+    if (r.note && !keys.length) {
       problems.push(at + 'note 에 **로 감싼 표현이 없습니다.');
+    } else if (keys.length && !keysAppear(keys, r)) {
+      // 문장에 없는 표현을 가르치면 어디서 나온 말인지 알 수 없다
+      problems.push(at + 'note 에서 강조한 표현이 문장에 하나도 나오지 않습니다.');
+    }
+
+    // 캐주얼이 정답과 앞부분이 같으면 나란히 놓아도 차이가 안 보인다
+    if (styles && sameOpening(r.text, altOf(r.alts, 'casual'))) {
+      problems.push(at + 'casual 이 정답과 앞부분이 같습니다.');
     }
   }
   return problems;
@@ -317,6 +504,8 @@ function toDayFile(parsed, date) {
     source: 'daily',
     sentences: []
   };
+  // 검수에서 무엇을 고쳤는지 남긴다. 앱은 안 읽는다 — 나중에 왜 이렇게 됐는지 볼 때 쓴다
+  if (parsed.problems && parsed.problems.length) out.reviewed = parsed.problems;
   for (var i = 0; i < parsed.sentences.length; i++) {
     var r = parsed.sentences[i];
     out.sentences.push({
@@ -363,8 +552,11 @@ module.exports = {
   config: config, profileIds: profileIds, todayKST: todayKST,
   recentSituations: recentSituations, pickSituations: pickSituations,
   shuffle: shuffle, vocabulary: vocabulary, buildPrompt: buildPrompt,
-  extractJSON: extractJSON, unwrap: unwrap, buildSchema: buildSchema,
+  extractJSON: extractJSON, unwrap: unwrap,
+  buildSchema: buildSchema, buildReviewSchema: buildReviewSchema,
+  buildReviewPrompt: buildReviewPrompt,
   altStyles: altStyles, normalizeAlts: normalizeAlts,
+  highlighted: highlighted, keysAppear: keysAppear, sameOpening: sameOpening,
   wordCount: wordCount, validate: validate,
   toDayFile: toDayFile, updateIndex: updateIndex, save: save
 };

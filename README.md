@@ -1,14 +1,26 @@
 # dictation
 
-유튜브 영상으로 하는 가족용 영어 받아쓰기 연습 앱.
+유튜브 영상으로 하는 가족용 영어 받아쓰기·말하기 연습 앱.
 
 - 사이트: https://bh2513.github.io/dictation/
+- **앱으로 설치하는 법: [INSTALL.md](INSTALL.md)** (PC 바탕화면 / 아이폰 홈 화면)
 - 만들려는 것: [SPEC.md](SPEC.md)
+- 앞으로의 계획과 비용 계산: [ROADMAP.md](ROADMAP.md)
 - 영상 등록하는 법: [tools/README.md](tools/README.md)
+- 하루 문장 자동 생성 준비: [tools/DAILY_SETUP.md](tools/DAILY_SETUP.md)
 
 ## 지금 되는 것
 
-- 구간 재생 프로토타입 (`index.html`) — 영상 ID와 시작/끝 초를 넣으면 그 구간만 재생하고 멈춘다
-- 영상 등록 스크립트 (`tools/add_video.py`) — 자막을 받아 문장 단위로 잘라 저장한다
+- **받아쓰기** — 영상 구간을 문장 단위로 듣고 받아쓴다. 채점, 힌트, 따라 말하기
+- **하루 다섯 문장** — 한국어를 보고 영어로 옮겨 말한다. 매일 아침 새로 만들어진다
+- **문장카드 복습** — 손으로 담은 문장을 네 가지 방식으로 다시 본다
+- **오답 리포트** — 연속 학습 일수, 최근 14일 학습량, 자주 틀리는 낱말
+- **백업** — 기기를 바꿀 때 기록을 옮긴다
+- **영상 등록 스크립트** (`tools/add_video.py`) — PC에서 자막을 받아 문장으로 자른다
 
-프로필, 라이브러리, 채점, 녹음, 문장카드는 아직 만드는 중이다.
+## 만드는 사람 참고
+
+- 빌드 단계 없음. 정적 파일 그대로 GitHub Pages 에 올라간다
+- 서버 없음, 비용 0원
+- `app.js` / `style.css` 등을 고쳤으면 `index.html` 의 `?v=` 값을 올린다
+- 테스트: `python3 tools/test_add_video.py`, `node tools/test_daily.js`, `node tools/test_grading.js`

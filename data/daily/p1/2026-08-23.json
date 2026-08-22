@@ -6,70 +6,70 @@
   "sentences": [
     {
       "i": 0,
-      "ko": "말씀하신 방향은 이해가 되는데, 지금 인력으로 그 일정을 맞추려다 보면 결국 품질에서 손해를 볼 것 같다는 게 제 걱정입니다.",
-      "text": "I see where you are coming from, but my concern is that if we try to hit that deadline with the people we have, we will end up paying for it in quality.",
+      "ko": "주말에 진짜 아무것도 안 했는데, 이상하게 그게 딱 필요했던 것 같아. 하루 종일 소파에 누워서 폰만 보다가 하루가 다 갔거든.",
+      "text": "I literally did nothing all weekend, but honestly that's exactly what I needed, because I just lay on the couch scrolling on my phone until the day was gone.",
       "alts": [
-        "I understand your point, but I worry that pushing for that timeline with our current headcount would cost us on quality in the end.",
-        "That makes sense in principle, though I am afraid that if we commit to that date with this team, quality is what will suffer."
+        "I did absolutely nothing this weekend and it turned out to be exactly what I needed, since I basically stayed on the couch on my phone all day.",
+        "My whole weekend was doing nothing, which is honestly what I needed, because I spent the entire day lying around on my phone."
       ],
-      "note": "정중한 반대는 상대 말을 먼저 인정하고(I see where you are coming from) 걱정으로 돌려 말합니다. end up -ing 은 '결국 ~하게 되다'.",
-      "situation": "회의에서 상대 의견에 정중하게 반대하기",
+      "note": "literally 는 '진짜, 완전히' 정도로 가볍게 씁니다. scrolling on my phone 은 폰 들여다보는 걸 말할 때 제일 흔한 표현이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 1,
-      "ko": "두 달쯤 전부터 아침에 일어날 때 오른쪽 어깨가 뻣뻣한데, 낮에 움직이다 보면 좀 풀리다가 밤이 되면 다시 아파집니다.",
-      "text": "For about two months now, my right shoulder has been stiff when I wake up, and although it loosens as I move around during the day, the pain comes back at night.",
+      "ko": "시킨 거랑 완전히 다른 게 왔는데, 다시 시키자니 한 시간은 더 걸릴 것 같고 그냥 이거 먹어야 하나 싶어.",
+      "text": "They sent me something completely different from what I ordered, and if I reorder it's going to take another hour, so I'm kind of tempted to just eat this.",
       "alts": [
-        "My right shoulder has been stiff first thing in the morning for a couple of months, and it eases up as I move but hurts again at night.",
-        "For the past two months I have woken up with a stiff right shoulder that loosens during the day, only to start aching again once evening comes."
+        "What showed up is nothing like what I ordered, but reordering would mean waiting another hour, so I might just eat it anyway.",
+        "They got my order completely wrong, and since ordering again means another hour of waiting, I'm honestly thinking about just eating what they sent."
       ],
-      "note": "증상은 '언제부터(for ~), 언제 심한지(when I wake up), 무엇으로 나아지는지(as I move)' 순서로 말하면 알아듣기 쉽습니다. loosen up = 뻣뻣한 것이 풀리다.",
-      "situation": "병원에서 증상을 자세히 설명하기",
+      "note": "kind of tempted to ~ 는 '그냥 ~할까 싶다' 하는 미묘한 느낌입니다. nothing like ~ 는 '~랑 완전히 다르다'.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 2,
-      "ko": "이미 두 번이나 같은 문제로 연락을 드렸는데도 고쳐지지 않았으니, 이번에는 수리 일정만 잡아 주실 게 아니라 그동안 못 쓴 기간에 대한 보상도 해 주셨으면 합니다.",
-      "text": "Since I have already called twice about the same problem and nothing has been fixed, I would like more than another repair appointment and some compensation for the lost time.",
+      "ko": "도와주고는 싶은데 이번 주는 진짜 정신이 없어서, 괜히 맡았다가 제대로 못 해 주면 오히려 너한테 더 민폐일 것 같아.",
+      "text": "I'd really like to help, but this week is honestly insane for me, and if I take it on and do a bad job, that just makes things worse for you.",
       "alts": [
-        "Given that I have reported this twice with no fix, scheduling another repair is not enough, and I would also like to be compensated for the time it was unusable.",
-        "This is the third time I am raising the same issue, so on top of the repair I would expect some compensation for the period I was left without it."
+        "I want to help you out, but I'm swamped this week, and I'd rather say no than take it on and end up letting you down.",
+        "I would help if I could, but things are crazy right now, and me doing it badly would be worse for you than me just saying no."
       ],
-      "note": "화내지 않고 세게 말하는 법: 사실(두 번 연락) → 그래서 부족하다(do more than) → 요구(compensate). do more than ~ 은 '~만으로는 안 된다'.",
-      "situation": "서비스가 잘못됐을 때 항의하고 보상 요구하기",
+      "note": "거절은 '하고 싶은데(I'd like to) → 상황(but) → 오히려 너한테 안 좋다' 순서면 부드럽습니다. swamped = 일에 파묻혀 있다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 3,
-      "ko": "가격을 그 정도까지 맞춰 드릴 수는 있는데, 그러려면 물량을 지금 말씀하신 것의 두 배로 잡아 주시고 대금은 선불로 주셔야 합니다.",
-      "text": "I could bring the price down to that level, but only if you double the volume you just mentioned and pay for the whole order up front.",
+      "ko": "이번엔 진짜 될 줄 알았는데 또 삼일 만에 무너졌어. 저녁까지는 잘 참다가 밤에 배고파지면 도저히 안 되더라고.",
+      "text": "I really thought I'd stick with it this time, but I caved after three days, because I can hold out until dinner and then the late night hunger just wins.",
       "alts": [
-        "That price is possible on the condition that you take twice the quantity you mentioned and settle the full amount in advance.",
-        "I would be willing to go down to that figure, provided that you commit to double the order and pay everything up front."
+        "I was sure I'd last this time, but I gave up after three days, since I'm fine until dinner and then I get hungry at night.",
+        "I thought this time would be different, but three days in I gave in, because holding out until dinner is fine and then night hits."
       ],
-      "note": "조건을 거는 협상은 but only if / on the condition that / provided that 로 붙입니다. up front = 선불로.",
-      "situation": "조건을 걸고 협상하기",
+      "note": "cave 와 give in 둘 다 '참다가 무너지다'입니다. stick with it = 계속 유지하다, hold out = 버티다.",
+      "situation": "다이어트가 또 실패한 얘기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 4,
-      "ko": "그때 제가 답을 늦게 드린 게 무시한 걸로 보였다면 정말 죄송한데, 사실은 확인할 게 남아 있어서 확실해질 때까지 기다렸던 겁니다.",
-      "text": "If my slow reply came across as me ignoring you, I am genuinely sorry, because the truth is that I was waiting until I had something certain to tell you.",
+      "ko": "이사를 갈까 싶다가도, 지금 집이 딱히 나쁜 것도 아닌데 괜히 돈이랑 시간만 버리는 거 아닌가 싶어서 계속 미루고 있어.",
+      "text": "Part of me wants to move, but the place I'm in now isn't actually bad, so I keep wondering if I'd just be wasting money and time, and I put it off.",
       "alts": [
-        "I am sorry if taking so long to get back to you felt dismissive, but I was holding off until I actually had a clear answer.",
-        "If my delay looked like I was brushing you off, that was not my intention at all, and I simply wanted to wait until I knew for sure."
+        "I keep thinking about moving, but there's nothing really wrong with my current place, so I wonder if it's just a waste of money and time.",
+        "I go back and forth on moving, because my place is fine as it is, and I'm not sure it's worth the money and the hassle."
       ],
-      "note": "come across as ~ 는 '~처럼 보이다'. 해명은 사과를 먼저 하고 이유는 the truth is 로 뒤에 붙이는 것이 부드럽습니다.",
-      "situation": "오해가 생겼을 때 해명하고 관계를 수습하기",
+      "note": "Part of me wants to ~ 는 '~하고 싶은 마음도 있다'. go back and forth on ~ 은 결정 못 하고 오락가락한다는 뜻이고, put it off 는 미루다입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
       "start": null,
       "end": null,
       "recording": null

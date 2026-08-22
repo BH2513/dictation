@@ -108,18 +108,27 @@ function buildPrompt(opts) {
   var lines = [];
 
   lines.push('당신은 한국인 성인 학습자의 영어 회화 선생입니다.');
-  lines.push('이 사람은 중급을 넘어선 수준이라 듀오링고 수준의 문장은 도움이 되지 않습니다.');
+  lines.push('이 사람은 중급을 넘어선 수준이라 교과서 문장은 도움이 되지 않습니다.');
   lines.push('오늘 연습할 문장 ' + count + '개를 만들어 주세요.');
   lines.push('');
-  lines.push('학습자는 한국어 문장을 보고 영어로 옮겨 말하는 연습을 합니다.');
-  lines.push('따라서 한국어만 보고도 영어 문장이 자연스럽게 떠오를 수 있어야 하고,');
-  lines.push('동시에 그 영어 문장이 실제로 원어민이 쓰는 표현이어야 합니다.');
+  lines.push('학습자는 한국어 문장을 보고 영어로 옮겨 **말하는** 연습을 합니다.');
+  lines.push('맞히기 시험이 아니라 말해 보는 연습이므로, 정답이 하나일 필요는 없습니다.');
+  lines.push('중요한 것은 그 영어가 **실제로 사람들이 그렇게 말하는가** 입니다.');
   lines.push('');
-  lines.push('## 문장 조건 (반드시 지킬 것)');
+  lines.push('## 말투 — 이게 제일 중요합니다');
+  lines.push('- **친구 · 가족 · 편한 동료에게 하는 일상 대화체**로 쓰세요');
+  lines.push('- 격식체, 비즈니스 영어, 뉴스 문어체는 쓰지 마세요');
+  lines.push('- 축약형(I\'m, don\'t, it\'s, I\'d, that\'s)을 자연스럽게 쓰세요. 안 쓰면 딱딱해집니다');
+  lines.push('- honestly, kind of, basically, actually, I guess 같은 말버릇이 들어가면 좋습니다');
+  lines.push('- 말하다 보니 길어진 문장처럼 and / but / so / because 로 이어 가세요');
+  lines.push('- **소리내어 읽었을 때 어색하면 다시 쓰세요.** 글로 쓴 문장 같으면 안 됩니다');
+  lines.push('');
+  lines.push('## 길이와 난이도');
   lines.push('- 영어 문장은 ' + opts.minWords + '~' + opts.maxWords + ' 단어');
-  lines.push('- 절이 둘 이상. 관계절 / 가정법 / 분사구문 중 최소 하나는 반드시 포함');
-  lines.push('- 교과서 문장이 아니라 실제 대화에서 나올 법한 말투');
-  lines.push('- 쉬운 문장은 만들지 마세요. 이 연습의 목적 자체가 어려운 문장입니다');
+  lines.push('- 절이 둘 이상. 관계절 / 가정법 / 시간·이유를 잇는 절 중 하나 이상은 들어가야 합니다');
+  lines.push('  (예: the thing that ~ / if I had known ~ / which is why ~ / by the time I ~)');
+  lines.push('- 쉬운 문장은 만들지 마세요. 짧고 단순한 문장은 이 연습의 목적에 어긋납니다');
+  lines.push('- 캐주얼한 말투와 긴 문장은 얼마든지 같이 갑니다. 말이 길어지는 것이지 어려워지는 것이 아닙니다');
   lines.push('');
   lines.push('## 오늘 쓸 상황 — 문장 하나에 상황 하나씩, 순서대로');
   for (var i = 0; i < opts.situations.length; i++) {
@@ -129,7 +138,7 @@ function buildPrompt(opts) {
     lines.push('');
     lines.push('## 어휘 참고');
     lines.push('학습자가 지금 받아쓰기로 듣고 있는 영상에 나온 낱말입니다.');
-    lines.push('어울리는 것이 있으면 자연스럽게 섞어 쓰세요. 억지로 다 넣지는 마세요.');
+    lines.push('일상 대화에 자연스럽게 어울리는 것만 골라 쓰세요. 억지로 넣으면 말투가 망가집니다.');
     lines.push(opts.vocab.join(', '));
   }
   lines.push('');
@@ -140,18 +149,18 @@ function buildPrompt(opts) {
   lines.push('  "sentences": [');
   lines.push('    {');
   lines.push('      "situation": "위에 준 상황을 그대로",');
-  lines.push('      "ko": "학습자가 읽을 한국어 문장. 자연스러운 한국어여야 합니다",');
-  lines.push('      "text": "정답 영어 문장",');
-  lines.push('      "alts": ["같은 뜻의 다른 정답 2~3개"],');
-  lines.push('      "note": "핵심 표현이나 문법을 한국어 한두 문장으로"');
+  lines.push('      "ko": "학습자가 읽을 한국어 문장. 실제로 한국 사람이 그렇게 말하는 자연스러운 구어체",');
+  lines.push('      "text": "영어 문장",');
+  lines.push('      "alts": ["같은 뜻을 다르게 말한 것 2~3개"],');
+  lines.push('      "note": "핵심 표현이나 말버릇을 한국어 한두 문장으로"');
   lines.push('    }');
   lines.push('  ]');
   lines.push('}');
   lines.push('');
-  lines.push('"alts" 가 중요합니다. 학습자의 번역이 정답과 글자가 달라도 맞을 수 있는데,');
-  lines.push('채점은 기계가 글자로 비교합니다. 그러니 실제로 통할 만한 다른 표현을 꼭 넣어 주세요.');
-  lines.push('"alts" 는 정답과 비슷한 길이면 됩니다. 길이를 맞추려고 억지로 늘리지 마세요.');
-  lines.push('문장부호는 쉼표와 마침표 위주로 쓰고, 줄표(\u2014)나 따옴표는 쓰지 마세요 \u2014 채점이 글자로 비교합니다.');
+  lines.push('"alts" 는 채점용이 아니라 **다르게 말하는 법을 보여 주려는 것**입니다.');
+  lines.push('같은 상황에서 실제로 쓸 법한 다른 말투를 넣어 주세요. 길이는 비슷하면 됩니다.');
+  lines.push('"ko" 는 번역투가 아니어야 합니다. 한국 사람이 친구한테 하듯 쓰세요.');
+  lines.push('문장부호는 쉼표와 마침표만 쓰세요. 줄표(\u2014)와 따옴표는 쓰지 마세요.');
 
   return lines.join('\n');
 }

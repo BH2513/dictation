@@ -1021,8 +1021,7 @@
   var dailyIndex = [];      // [{date, count}] — 새 날짜가 앞
   var dailyDay = null;      // 지금 보고 있는 날의 파일
   var dailyAt = 0;
-  var dailyTyped = '';
-  var dailyResult = null;   // 채점 결과
+  var dailyHeard = '';      // 음성인식이 받아적은 내 말
   var dailyShown = false;   // 정답을 봤는지
   var dailyRecording = false;
   var dailyProgress = null;
@@ -1122,30 +1121,12 @@
   }
 
   function resetDailyAnswer() {
-    dailyTyped = '';
-    dailyResult = null;
+    dailyHeard = '';
     dailyShown = false;
     if (window.Recorder && dailyRecording) { Recorder.discard(); }
     dailyRecording = false;
     if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
   }
-
-  /* 정답 하나가 아니라 허용 답안 전부와 견줘 제일 잘 맞은 것을 쓴다.
-     같은 뜻을 다르게 말했다고 틀린 것이 되면 연습이 안 된다. */
-  function gradeDaily(s, typed) {
-    var list = [s.text];
-    var alts = s.alts || [];
-    for (var a = 0; a < alts.length; a++) list.push(alts[a]);
-    var best = null;
-    for (var c = 0; c < list.length; c++) {
-      var r = grade(list[c], typed, strict);
-      r.against = list[c];
-      if (!best || dailyRatio(r) > dailyRatio(best)) best = r;
-    }
-    return best;
-  }
-
-  function dailyRatio(r) { return r.total ? (r.right / r.total) : 0; }
 
   function drawDaily(pid) {
     var box = $('daily-body');
@@ -1200,39 +1181,28 @@
       if (window.Recorder && Recorder.lastUrl()) au2.src = Recorder.lastUrl();
       speak.appendChild(au2);
 
+      var heard = el('div', 'heard');
+      heard.id = 'daily-heard';
+      if (dailyHeard) heard.appendChild(document.createTextNode('You said: ' + dailyHeard));
+      speak.appendChild(heard);
+
       if (!Recorder.canTranscribe()) {
         speak.appendChild(el('div', 'hint',
-          'This browser cannot write down speech, so type what you said below.'));
+          'This browser cannot write down what you say, so just say it out loud '
+          + 'and compare with the answer.'));
       }
       box.appendChild(speak);
+    } else {
+      box.appendChild(el('div', 'notice',
+        'This browser cannot use the microphone. Say the sentence out loud anyway, '
+        + 'then press Show answer.'));
     }
 
-    var ta = document.createElement('textarea');
-    ta.id = 'daily-input';
-    ta.rows = 3;
-    ta.value = dailyTyped;
-    ta.placeholder = 'Say it or type it in English';
-    ta.setAttribute('autocomplete', 'off');
-    ta.setAttribute('autocapitalize', 'off');
-    ta.setAttribute('autocorrect', 'off');
-    ta.setAttribute('spellcheck', 'false');
-    ta.onkeydown = function (e) {
-      var ev = e || window.event;
-      if ((ev.key || '') === 'Enter' && !ev.shiftKey) {
-        if (ev.preventDefault) ev.preventDefault();
-        if (dailyShown) dailyGo(pid, dailyAt + 1);
-        else checkDaily(pid);
-        return false;
-      }
-      return true;
-    };
-    box.appendChild(ta);
-
+    /* 채점은 하지 않는다. 이건 옮겨 말하기 연습이라 정답이 하나가 아니고,
+       글자로 맞히는 것은 목적이 아니다 (운영자 결정). 말해 보고 견주기만 한다. */
     var row = el('div', 'buttons');
-    var cb = el('button', 'primary', 'Check');
-    cb.onclick = function () { checkDaily(pid); };
-    row.appendChild(cb);
-    var rb = el('button', 'half', 'Show answer');
+    var rb = el('button', 'primary', dailyShown ? 'Answer shown' : 'Show answer');
+    rb.disabled = dailyShown;
     rb.onclick = function () { revealDaily(pid); };
     row.appendChild(rb);
     var sc = el('button', 'half', 'Save card');
@@ -1241,26 +1211,12 @@
     row.appendChild(sc);
     box.appendChild(row);
 
-    var out = el('div', dailyResult || dailyShown ? 'now' : 'now empty');
-    if (dailyResult) {
-      for (var w = 0; w < dailyResult.words.length; w++) {
-        out.appendChild(el('span',
-          (dailyResult.ok[w] === null || dailyResult.ok[w]) ? 'w' : 'w bad',
-          dailyResult.words[w]));
-        out.appendChild(document.createTextNode(' '));
-      }
-      out.appendChild(el('span', 'ko',
-        dailyResult.right + ' of ' + dailyResult.total + ' words matched.'
-        + (dailyResult.against !== s.text ? ' (matched against another correct wording)' : '')));
-      if (dailyResult.extra && dailyResult.extra.length) {
-        out.appendChild(el('div', 'extra', 'Not in the answer: ' + dailyResult.extra.join(', ')));
-      }
-    } else if (!dailyShown) {
-      out.appendChild(document.createTextNode('Read the Korean, then say it in English.'));
+    if (dailyShown) {
+      box.appendChild(dailyAnswerBlock(s));
+    } else {
+      box.appendChild(el('div', 'now empty',
+        'Read the Korean, say it in English, then press Show answer.'));
     }
-    box.appendChild(out);
-
-    if (dailyShown) box.appendChild(dailyAnswerBlock(s));
 
     var nav = el('div', 'buttons');
     var prev = el('button', 'half', '‹ Previous');
@@ -1312,7 +1268,7 @@
     }
 
     if (s.alts && s.alts.length) {
-      wrap.appendChild(el('div', 'rowlabel', 'Also correct'));
+      wrap.appendChild(el('div', 'rowlabel', 'Another way to say it'));
       for (var a = 0; a < s.alts.length; a++) {
         wrap.appendChild(el('div', 'alt', s.alts[a]));
       }
@@ -1349,47 +1305,23 @@
     drawDaily(pid);
   }
 
-  function checkDaily(pid) {
-    var ta = $('daily-input');
-    if (!ta || !ta.value.replace(/\s/g, '')) {
-      dailySay('Say it or type it first, or press Show answer.');
-      return;
-    }
-    dailyTyped = ta.value;
-    var s = dailyDay.sentences[dailyAt];
-    dailyResult = gradeDaily(s, dailyTyped);
-    dailyShown = true;
-    recordDaily(pid, dailyResult);
-    drawDaily(pid);
-    dailySay(dailyResult.right === dailyResult.total
-      ? 'All matched. Next one.'
-      : 'Compare it with the answer below, then try saying it again.');
-  }
-
   function revealDaily(pid) {
-    var ta = $('daily-input');
-    if (ta) dailyTyped = ta.value;
+    if (dailyShown) return;
     dailyShown = true;
+    markDailyDone(pid);
     drawDaily(pid);
-    dailySay('Answer shown. Say it out loud once before moving on.');
+    dailySay('Compare it with what you said, then say it once more out loud.');
   }
 
-  function recordDaily(pid, r) {
-    if (!window.Store || !Store.available() || !dailyProgress || !dailyDay) return;
-    var correct = (r.total > 0 && r.right === r.total);
+  /* 채점을 하지 않으므로 맞고 틀림은 남기지 않는다. 했다는 것만 남긴다 —
+     연속 학습 일수와 학습량 그래프의 재료다 (SPEC 4-3). */
+  function markDailyDone(pid) {
+    if (!window.Store || !Store.available() || !dailyProgress) return;
+    if (dailyProgress.sentences[dailyAt]) return;   // 같은 문장을 두 번 세지 않는다
     dailyProgress.at = dailyAt;
-    dailyProgress.sentences[dailyAt] = correct ? 'ok' : 'miss';
+    dailyProgress.sentences[dailyAt] = 'ok';
     Store.saveProgress(dailyProgress, noteStorage);
     Store.bumpDay(pid, noteStorage);
-    if (correct) return;
-    var missed = [];
-    for (var i = 0; i < r.words.length; i++) {
-      if (r.ok[i] === false) {
-        var w = r.words[i].replace(/^[^A-Za-z0-9']+/, '').replace(/[^A-Za-z0-9']+$/, '');
-        if (w) missed.push(w);
-      }
-    }
-    Store.addMisses(pid, dailyDay.videoId, dailyAt, missed, noteStorage);
   }
 
   function saveDailyCard(pid) {
@@ -1425,14 +1357,15 @@
         if (b) { b.className = 'half'; b.textContent = 'Record'; }
         var au = $('daily-audio'), mb = $('daily-mine');
         if (url && au) { au.src = url; if (mb) mb.disabled = false; }
-        var ta = $('daily-input');
         if (heard) {
-          if (ta) { ta.value = heard; dailyTyped = heard; }
-          dailySay('Heard: ' + heard + ' — press Check.');
+          dailyHeard = heard;
+          var hb = $('daily-heard');
+          if (hb) { clear(hb); hb.appendChild(document.createTextNode('You said: ' + heard)); }
+          dailySay('Now press Show answer and compare.');
         } else if (!Recorder.canTranscribe()) {
-          dailySay('Recorded. This browser cannot write down speech, so type what you said.');
+          dailySay('Recorded. Play it back, then press Show answer and compare.');
         } else {
-          dailySay('Recorded, but nothing was picked up. Try again, or type it.');
+          dailySay('Recorded, but nothing was picked up. Play it back, or record again.');
         }
       });
       return;
@@ -1444,7 +1377,7 @@
       dailySay('Recording. Say the English sentence, then press Stop.');
     }, function (why) {
       if (why === 'denied') dailySay('Microphone permission was refused, so recording is off.');
-      else dailySay('Could not start recording. Type what you would say instead.');
+      else dailySay('Could not start recording. Say it out loud anyway, then press Show answer.');
     });
   }
 

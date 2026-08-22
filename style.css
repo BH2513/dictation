@@ -372,8 +372,23 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 .answer .rowlabel:first-child{margin-top:0;}
 .answer .ans{font-size:17px;line-height:1.55;}
 .answer .alt{font-size:15px;line-height:1.5;color:var(--muted);margin-bottom:6px;}
-.answer .note{font-size:14px;line-height:1.55;color:var(--muted);}
+.answer .note{font-size:14px;line-height:2;color:var(--muted);}  /* 강조 표시가 줄에 끼지 않게 넓힌다 */
 .answer .buttons{margin-top:12px;}
 
 /* 다른 날 목록에서 지금 보고 있는 날 */
 .item.on{background:var(--card2);border-color:var(--accent);color:inherit;}
+
+/* 하루 문장 — 말투 딱지와 강조 표현 */
+.answer .alt{display:flex;gap:8px;align-items:baseline;}
+.answer .alt .tag{
+  flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:.4px;
+  text-transform:uppercase;padding:2px 7px;border-radius:6px;
+}
+.answer .alt .tag.casual{background:#1e3a2b;color:#7ee2a8;}
+.answer .alt .tag.formal{background:#2b3350;color:#a7bcff;}
+.answer .note .key{
+  color:var(--text);font-weight:700;
+  background:rgba(59,130,246,.18);
+  border-bottom:1px solid var(--accent);
+  border-radius:4px;padding:0 3px;
+}

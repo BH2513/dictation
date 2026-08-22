@@ -151,14 +151,22 @@ function buildPrompt(opts) {
   lines.push('      "situation": "위에 준 상황을 그대로",');
   lines.push('      "ko": "학습자가 읽을 한국어 문장. 실제로 한국 사람이 그렇게 말하는 자연스러운 구어체",');
   lines.push('      "text": "영어 문장",');
-  lines.push('      "alts": ["같은 뜻을 다르게 말한 것 2~3개"],');
-  lines.push('      "note": "핵심 표현이나 말버릇을 한국어 한두 문장으로"');
+  lines.push('      "alts": [');
+  lines.push('        { "style": "casual", "text": "더 편하게 말하면" },');
+  lines.push('        { "style": "formal", "text": "격식을 갖춰 말하면" }');
+  lines.push('      ],');
+  lines.push('      "note": "핵심 표현을 한국어 한두 문장으로. 표현은 **별표 두 개**로 감쌀 것"');
   lines.push('    }');
   lines.push('  ]');
   lines.push('}');
   lines.push('');
-  lines.push('"alts" 는 채점용이 아니라 **다르게 말하는 법을 보여 주려는 것**입니다.');
-  lines.push('같은 상황에서 실제로 쓸 법한 다른 말투를 넣어 주세요. 길이는 비슷하면 됩니다.');
+  lines.push('"alts" 는 **같은 말을 말투를 바꿔 하는 법**을 보여 주는 것입니다. 정확히 두 개.');
+  lines.push('- "casual" — "text" 보다 더 편한 말투. 친한 친구끼리 쓰는 표현');
+  lines.push('- "formal" — 같은 뜻을 격식 있게. 처음 보는 사람이나 윗사람에게 쓸 말투');
+  lines.push('둘 다 실제로 쓰는 말이어야 하고, 길이는 "text" 와 비슷하면 됩니다.');
+  lines.push('');
+  lines.push('"note" 에서는 **배울 만한 표현을 별표 두 개로 감싸 주세요** \u2014 예: **swamped** 는 ~.');
+  lines.push('그 부분이 화면에 강조돼서 보입니다. 최소 하나는 반드시 감싸야 합니다.');
   lines.push('"ko" 는 번역투가 아니어야 합니다. 한국 사람이 친구한테 하듯 쓰세요.');
   lines.push('문장부호는 쉼표와 마침표만 쓰세요. 줄표(\u2014)와 따옴표는 쓰지 마세요.');
 
@@ -202,7 +210,17 @@ function buildSchema(cfg) {
             situation: { type: 'string' },
             ko: { type: 'string' },
             text: { type: 'string' },
-            alts: { type: 'array', minItems: 1, maxItems: 3, items: { type: 'string' } },
+            alts: {
+              type: 'array', minItems: 2, maxItems: 2,
+              items: {
+                type: 'object',
+                properties: {
+                  style: { type: 'string', enum: ['casual', 'formal'] },
+                  text: { type: 'string' }
+                },
+                required: ['style', 'text']
+              }
+            },
             note: { type: 'string' }
           },
           required: ['situation', 'ko', 'text', 'alts', 'note']
@@ -211,6 +229,31 @@ function buildSchema(cfg) {
     },
     required: ['sentences']
   };
+}
+
+/* alts 에 어떤 말투가 들어 있는지. 모양이 틀리면 null */
+function altStyles(alts) {
+  if (!Array.isArray(alts) || alts.length !== 2) return null;
+  var seen = {};
+  for (var i = 0; i < alts.length; i++) {
+    var a = alts[i];
+    if (!a || typeof a !== 'object') return null;
+    if (!a.text || !String(a.text).trim()) return null;
+    if (a.style !== 'casual' && a.style !== 'formal') return null;
+    seen[a.style] = true;
+  }
+  return seen;
+}
+
+/* 옛 파일은 alts 가 그냥 글 목록이었다. 그때 것도 읽히게 둔다 */
+function normalizeAlts(alts) {
+  var out = [];
+  for (var i = 0; i < (alts || []).length; i++) {
+    var a = alts[i];
+    if (typeof a === 'string') out.push({ style: 'casual', text: a.trim() });
+    else if (a && a.text) out.push({ style: a.style || 'casual', text: String(a.text).trim() });
+  }
+  return out;
 }
 
 function wordCount(text) {
@@ -248,12 +291,18 @@ function validate(parsed, cfg) {
     if (key && seen[key]) problems.push(at + '앞 문장과 같습니다.');
     seen[key] = true;
 
-    if (!Array.isArray(r.alts) || !r.alts.length) {
-      problems.push(at + '다른 정답(alts)이 없습니다.');
+    // 말투를 바꾼 표현은 캐주얼·포멀 하나씩 있어야 한다
+    var styles = altStyles(r.alts);
+    if (!styles) {
+      problems.push(at + '다르게 말하는 법(alts)이 없거나 모양이 다릅니다.');
     } else {
-      for (var a = 0; a < r.alts.length; a++) {
-        if (!r.alts[a] || !String(r.alts[a]).trim()) problems.push(at + '다른 정답이 비었습니다.');
-      }
+      if (!styles.casual) problems.push(at + 'casual 표현이 없습니다.');
+      if (!styles.formal) problems.push(at + 'formal 표현이 없습니다.');
+    }
+
+    // 강조할 표현이 하나도 없으면 note 가 밋밋해진다
+    if (r.note && !/\*\*[^*]+\*\*/.test(String(r.note))) {
+      problems.push(at + 'note 에 **로 감싼 표현이 없습니다.');
     }
   }
   return problems;
@@ -274,7 +323,7 @@ function toDayFile(parsed, date) {
       i: i,
       ko: String(r.ko).trim(),
       text: String(r.text).trim(),
-      alts: r.alts.map(function (a) { return String(a).trim(); }),
+      alts: normalizeAlts(r.alts),
       note: String(r.note).trim(),
       situation: String(r.situation).trim(),
       start: null,
@@ -315,6 +364,7 @@ module.exports = {
   recentSituations: recentSituations, pickSituations: pickSituations,
   shuffle: shuffle, vocabulary: vocabulary, buildPrompt: buildPrompt,
   extractJSON: extractJSON, unwrap: unwrap, buildSchema: buildSchema,
+  altStyles: altStyles, normalizeAlts: normalizeAlts,
   wordCount: wordCount, validate: validate,
   toDayFile: toDayFile, updateIndex: updateIndex, save: save
 };

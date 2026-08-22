@@ -149,7 +149,11 @@ var prompt = daily.buildPrompt({
 check('단어 수 조건이 들어간다', prompt.indexOf('20~35 단어') >= 0, true);
 check('상황이 들어간다', prompt.indexOf('병원에서 증상 설명') >= 0, true);
 check('어휘가 들어간다', prompt.indexOf('concentrated') >= 0, true);
-check('다른 정답을 요구한다', prompt.indexOf('"alts"') >= 0, true);
+check('다른 표현을 요구한다', prompt.indexOf('"alts"') >= 0, true);
+check('일상 대화체를 못 박는다', prompt.indexOf('일상 대화체') >= 0, true);
+check('격식체를 금지한다', prompt.indexOf('격식체') >= 0, true);
+check('축약형을 쓰라고 한다', prompt.indexOf('축약형') >= 0, true);
+check('맞히기 시험이 아니라고 못 박는다', prompt.indexOf('맞히기 시험이 아니라') >= 0, true);
 check('어휘가 없으면 그 대목을 아예 안 넣는다',
   daily.buildPrompt({ count: 1, minWords: 20, maxWords: 35, situations: ['가'], vocab: [] })
     .indexOf('어휘 참고') >= 0, false);

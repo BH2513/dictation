@@ -1,0 +1,88 @@
+# 하루 다섯 문장 — ROADMAP 1단계.
+#
+# 매일 새벽에 Claude 를 한 번 돌려 연습 문장을 만들고 저장소에 넣는다.
+# 운영자의 구독 한도로 돌아가므로 비용이 들지 않는다 (유료 API 를 쓰지 않는다).
+#
+# 준비: 저장소 Settings → Secrets → Actions 에 CLAUDE_CODE_OAUTH_TOKEN 을 넣는다.
+#       PC 에서 `claude setup-token` 으로 발급받는다.
+#
+# 참고: 정해진 시각에 도는 워크플로는 기본 브랜치(main)에 있는 것만 돈다.
+#       그리고 claude-code-action 은 일부러 쓰지 않는다 — 예약 실행에서 권한 문제가
+#       보고된 적이 있어(issue #814) CLI 를 직접 부른다.
+
+name: 하루 다섯 문장
+
+on:
+  schedule:
+    - cron: '0 20 * * *'   # UTC 20:00 = 한국 05:00
+  workflow_dispatch:        # 버튼으로 지금 바로 돌릴 수도 있다
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-sentences
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Claude Code 설치
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: 문장 만들기
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          set -u
+          if [ -z "${CLAUDE_CODE_OAUTH_TOKEN}" ]; then
+            echo "CLAUDE_CODE_OAUTH_TOKEN 이 없습니다."
+            echo "저장소 Settings → Secrets and variables → Actions 에 넣어 주세요."
+            exit 1
+          fi
+
+          node tools/daily_prompt.js > /tmp/prompt.txt
+          node tools/daily_schema.js > /tmp/schema.json
+
+          # 단어 수처럼 형식으로 못 막는 조건이 있어서, 걸리면 다시 만들어 본다
+          for try in 1 2 3; do
+            echo "=== ${try}번째 시도 ==="
+            claude -p "$(cat /tmp/prompt.txt)" \
+              --permission-mode dontAsk \
+              --output-format json \
+              --json-schema "$(cat /tmp/schema.json)" \
+              > /tmp/out.json || true
+
+            if node tools/daily_save.js /tmp/out.json; then
+              echo "저장했습니다."
+              exit 0
+            fi
+            echo "조건에 맞지 않아 다시 만듭니다."
+          done
+
+          echo "세 번 시도했지만 조건에 맞는 문장을 얻지 못했습니다."
+          exit 1
+
+      - name: 저장소에 올리기
+        run: |
+          if [ -z "$(git status --porcelain data/daily)" ]; then
+            echo "바뀐 것이 없습니다."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/daily
+          git commit -m "하루 다섯 문장 $(TZ=Asia/Seoul date +%Y-%m-%d)"
+          for wait in 0 2 4 8 16; do
+            [ "$wait" -gt 0 ] && sleep "$wait"
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+          done
+          echo "올리지 못했습니다."
+          exit 1

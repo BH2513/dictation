@@ -23,7 +23,10 @@ body{
 .wrap{
   max-width:640px;
   margin:0 auto;
-  padding:16px 16px calc(28px + env(safe-area-inset-bottom));
+  /* 위쪽도 안전 영역을 피한다. 홈 화면에 추가하면 화면이 상태표시줄 밑까지 차는데,
+     아이폰은 그 자리의 탭을 가로채므로 머리말 단추가 눌리지 않는다. 실제로 겪었다 */
+  padding:16px 16px 28px;                       /* env() 를 모르는 옛 브라우저용 */
+  padding:calc(16px + env(safe-area-inset-top)) 16px calc(28px + env(safe-area-inset-bottom));
 }
 .screen{display:none;}
 .screen.on{display:block;}

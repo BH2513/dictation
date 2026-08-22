@@ -21,7 +21,7 @@ function row(over) {
   var base = {
     situation: '회의에서 반대하기',
     ko: '그 일정은 아무래도 무리라고 봅니다.',
-    text: 'I honestly think that deadline is going to be tough for us.',
+    text: 'That deadline is tough. I think we need more time.',
     alts: [
       { style: 'casual', text: 'That timeline feels rough to me, honestly.' },
       { style: 'formal', text: 'That timeline appears unrealistic to me.' }
@@ -74,7 +74,7 @@ check('줄바꿈·연속공백도 하나로', daily.wordCount('one  two\nthree')
 
 console.log('\n검사 — 조건에 걸리면 그날 파일을 아예 안 쓴다');
 check('멀쩡하면 문제 없음', daily.validate({ sentences: [row(), row({
-  text: 'She would have called us if the meeting had ended earlier today.',
+  text: 'She would have called us. The meeting ran late again.',
   ko: '회의가 일찍 끝났으면 연락했을 겁니다.'
 })] }, CFG), []);
 
@@ -85,12 +85,12 @@ check('개수가 모자라면',
   ['문장이 2개여야 하는데 1개입니다.']);
 
 check('문장이 짧으면 잡는다',
-  daily.validate({ sentences: [row({ text: 'Too short.' })] }, CFG).slice(1),
-  ['문장 1: 영어 문장이 2 단어입니다 (5~12 이어야 합니다).']);
+  daily.validate({ sentences: [row({ text: 'Too short.' })] }, CFG).slice(1)[0],
+  '문장 1: 영어 문장이 2 단어입니다 (5~12 이어야 합니다).');
 
 check('문장이 길면 잡는다',
   daily.validate({ sentences: [row({
-    text: 'one two three four five six seven eight nine ten eleven twelve thirteen'
+    text: 'one two three four five. six seven eight nine ten eleven twelve thirteen.'
   })] }, CFG).slice(1),
   ['문장 1: 영어 문장이 13 단어입니다 (5~12 이어야 합니다).']);
 
@@ -133,8 +133,8 @@ check('note 에 강조가 하나도 없으면 잡는다',
 
 check('강조가 하나라도 있으면 통과',
   daily.validate({ sentences: [row({ note: '**tough** 는 힘들다는 뜻입니다.' }), row({
-    text: 'She would have called us if the meeting had ended earlier today.',
-    ko: '회의가 일찍 끝났으면 연락했을 겁니다.' })] }, CFG), []);
+    text: 'She would have called us. The meeting ran late again.',
+    ko: '연락했을 거야. 회의가 또 늦게 끝났어.' })] }, CFG), []);
 
 check('같은 문장이 두 번 나오면 잡는다',
   daily.validate({ sentences: [row(), row()] }, CFG),
@@ -142,7 +142,7 @@ check('같은 문장이 두 번 나오면 잡는다',
 
 check('대소문자·문장부호만 다른 중복도 잡는다',
   daily.validate({ sentences: [row(), row({
-    text: 'I HONESTLY THINK THAT DEADLINE IS GOING TO BE TOUGH FOR US!!'
+    text: 'THAT DEADLINE IS TOUGH! I THINK WE NEED MORE TIME!!'
   })] }, CFG),
   ['문장 2: 앞 문장과 같습니다.']);
 
@@ -168,6 +168,37 @@ check('없는 표현을 강조하면 검사에서 잡는다',
   daily.validate({ sentences: [row({ note: '**swamped** 는 바쁘다는 뜻입니다.' })] }, CFG).slice(1),
   ['문장 1: note 에서 강조한 표현이 문장에 하나도 나오지 않습니다.']);
 
+console.log('\n번역체의 자국 — 쉼표 더미, 한 문장, 대명사 투성이');
+check('한 문장에 쉼표 셋이면 걸린다',
+  daily.commaHeavy('I went, I saw, I came, and I left.'), true);
+check('쉼표 둘까지는 괜찮다', daily.commaHeavy('I went, I saw, and I left.'), false);
+check('문장을 나누면 괜찮다',
+  daily.commaHeavy('I went, I saw. I came, and I left.'), false);
+
+check('문장 수를 센다',
+  daily.sentencesOf('One thing. Two things! Three?').length, 3);
+check('마침표 뒤 빈 조각은 안 센다', daily.sentencesOf('Only one.').length, 1);
+
+check('대명사를 센다',
+  daily.vagueCount('It was that thing, and this is it.'), 5);
+check('구체적이면 적게 나온다',
+  daily.vagueCount('I ordered chicken and they sent pasta.'), 0);
+
+check('한 문장뿐이면 잡는다',
+  daily.validate({ sentences: [row({ text: 'That deadline is really tough for us.' })] }, CFG).slice(1),
+  ['문장 1: 영어가 한 문장뿐입니다. 2~3 문장으로 나누세요.']);
+
+check('쉼표가 많으면 잡는다',
+  daily.validate({ sentences: [row({
+    text: 'I went, I saw, I came, and I left today.' })] }, CFG).slice(1),
+  ['문장 1: 한 문장에 쉼표가 너무 많습니다. 문장을 나누세요.',
+   '문장 1: 영어가 한 문장뿐입니다. 2~3 문장으로 나누세요.']);
+
+check('대명사가 다섯을 넘으면 잡는다',
+  daily.validate({ sentences: [row({
+    text: 'It was that thing. This is it, and that is this too.' })] }, CFG).slice(1),
+  ['문장 1: it/this/that 이 7번 나옵니다. 구체적인 것을 넣으세요.']);
+
 console.log('\ncasual 이 정답과 겹치는지');
 check('앞 네 낱말이 같으면 같은 문장으로 본다',
   daily.sameOpening('Part of me wants to move now.', 'Part of me wants to stay.'), true);
@@ -178,13 +209,13 @@ check('한쪽이 비면 false', daily.sameOpening('', 'anything'), false);
 
 check('겹치면 검사에서 잡는다',
   daily.validate({ sentences: [row({ alts: [
-    { style: 'casual', text: 'I honestly think that deadline is rough.' },
+    { style: 'casual', text: 'That deadline is tough for me. No way.' },
     { style: 'formal', text: 'That timeline appears unrealistic to me.' }] })] }, CFG).slice(1),
   ['문장 1: casual 이 정답과 앞부분이 같습니다.']);
 
 console.log('\n검수 — 만든 것을 한 번 더 읽히는 단계');
 var rev = daily.buildReviewPrompt({ sentences: [row()] }, { count: 5, minWords: 20, maxWords: 35 });
-check('초안이 지시문에 담긴다', rev.indexOf('I honestly think that deadline') >= 0, true);
+check('초안이 지시문에 담긴다', rev.indexOf('That deadline is tough') >= 0, true);
 check('관용구 오용을 보라고 한다', rev.indexOf('hit the spot') >= 0, true);
 check('지적만 말고 고치라고 한다', rev.indexOf('직접 고쳐서 내놓으세요') >= 0, true);
 check('개수를 바꾸지 말라고 한다', rev.indexOf('문장 개수(5개)') >= 0, true);
@@ -196,8 +227,8 @@ check('문장 개수는 그대로 못 박는다',
 
 check('검수 결과도 같은 검사를 그대로 받는다',
   daily.validate({ problems: ['고쳤음'], sentences: [row(), row({
-    text: 'She would have called us if the meeting had ended earlier today.',
-    ko: '회의가 일찍 끝났으면 연락했을 겁니다.' })] }, CFG), []);
+    text: 'She would have called us. The meeting ran late again.',
+    ko: '연락했을 거야. 회의가 또 늦게 끝났어.' })] }, CFG), []);
 check('고친 내용은 파일에 남는다',
   daily.toDayFile({ problems: ['관용구를 고쳤습니다'], sentences: [row()] }, '2026-08-23').reviewed,
   ['관용구를 고쳤습니다']);
@@ -217,9 +248,9 @@ check('옛 파일의 글 목록도 읽힌다',
   daily.normalizeAlts(['That timeline feels rough.']),
   [{ style: 'casual', text: 'That timeline feels rough.' }]);
 check('앞뒤 공백은 지운다',
-  daily.toDayFile({ sentences: [row({ text: '  I honestly think that deadline is tough.  ' })] },
+  daily.toDayFile({ sentences: [row({ text: '  That deadline is tough. We need time.  ' })] },
     '2026-08-23').sentences[0].text,
-  'I honestly think that deadline is tough.');
+  'That deadline is tough. We need time.');
 
 console.log('\n상황 고르기 — 최근에 쓴 것은 뒤로 미룬다');
 var all = ['가', '나', '다', '라'];
@@ -251,9 +282,15 @@ check('다른 표현을 요구한다', prompt.indexOf('"alts"') >= 0, true);
 check('캐주얼·포멀을 나누라고 한다',
   prompt.indexOf('"casual"') >= 0 && prompt.indexOf('"formal"') >= 0, true);
 check('note 에 강조를 넣으라고 한다', prompt.indexOf('별표 두 개') >= 0, true);
-check('일상 대화체를 못 박는다', prompt.indexOf('일상 대화체') >= 0, true);
+check('편한 말투를 못 박는다', prompt.indexOf('편한 동료에게 하는 말투') >= 0, true);
 check('격식체를 금지한다', prompt.indexOf('격식체') >= 0, true);
 check('축약형을 쓰라고 한다', prompt.indexOf('축약형') >= 0, true);
+check('영어를 먼저 만들라고 한다', prompt.indexOf('영어를 먼저 만듭니다') >= 0, true);
+check('말버릇을 장식으로 넣지 말라고 한다',
+  prompt.indexOf('장식으로 넣지 마세요') >= 0, true);
+check('like 를 채움말로 쓰지 말라고 한다', prompt.indexOf('십대 말투') >= 0, true);
+check('문장을 나누라고 한다', prompt.indexOf('2~3 문장') >= 0, true);
+check('구체적으로 쓰라고 한다', prompt.indexOf('it, that, this 로 얼버무리지') >= 0, true);
 check('맞히기 시험이 아니라고 못 박는다', prompt.indexOf('맞히기 시험이 아니라') >= 0, true);
 check('어휘가 없으면 그 대목을 아예 안 넣는다',
   daily.buildPrompt({ count: 1, minWords: 20, maxWords: 35, situations: ['가'], vocab: [] })

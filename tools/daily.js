@@ -115,20 +115,48 @@ function buildPrompt(opts) {
   lines.push('맞히기 시험이 아니라 말해 보는 연습이므로, 정답이 하나일 필요는 없습니다.');
   lines.push('중요한 것은 그 영어가 **실제로 사람들이 그렇게 말하는가** 입니다.');
   lines.push('');
-  lines.push('## 말투 — 이게 제일 중요합니다');
-  lines.push('- **친구 · 가족 · 편한 동료에게 하는 일상 대화체**로 쓰세요');
-  lines.push('- 격식체, 비즈니스 영어, 뉴스 문어체는 쓰지 마세요');
-  lines.push('- 축약형(I\'m, don\'t, it\'s, I\'d, that\'s)을 자연스럽게 쓰세요. 안 쓰면 딱딱해집니다');
-  lines.push('- honestly, kind of, basically, actually, I guess 같은 말버릇이 들어가면 좋습니다');
-  lines.push('- 말하다 보니 길어진 문장처럼 and / but / so / because 로 이어 가세요');
-  lines.push('- **소리내어 읽었을 때 어색하면 다시 쓰세요.** 글로 쓴 문장 같으면 안 됩니다');
+  lines.push('## 만드는 순서 \u2014 이 순서를 반드시 지키세요');
+  lines.push('');
+  lines.push('**1단계. 영어를 먼저 만듭니다.** 한국어는 아직 생각하지 마세요.');
+  lines.push('그 상황에 놓인 사람이 실제로 뭐라고 말할지를 영어로 그냥 떠올리세요.');
+  lines.push('**2단계.** 그 영어를 소리내어 읽어 봅니다. 조금이라도 어색하면 버리고 다시 만듭니다.');
+  lines.push('**3단계.** 그제서야 한국어를 씁니다. 영어를 옮기는 것이 아니라,');
+  lines.push('**한국 사람이 같은 상황에서 할 말**을 한국어로 씁니다.');
+  lines.push('');
+  lines.push('한국어를 먼저 쓰고 영어로 옮기면 번역체가 됩니다. 실제로 그렇게 나온 적이 있습니다.');
+  lines.push('목표는 번역을 잘하는 것이 아니라 **영어가 자연스러운 것**입니다.');
+  lines.push('한국어와 영어가 1:1로 안 맞아도 됩니다 \u2014 느낌이 같으면 됩니다.');
+  lines.push('');
+  lines.push('## 영어 문장 \u2014 이게 제일 중요합니다');
+  lines.push('');
+  lines.push('- **여러 문장으로 나눠 쓰세요. 2~3 문장이 좋습니다.**');
+  lines.push('  긴 말을 쉼표로 계속 이으면 숨이 차고 글 같아집니다.');
+  lines.push('  영어는 짧게 끊어 말합니다. **한 문장에 쉼표가 세 개를 넘으면 나누세요.**');
+  lines.push('- **구체적으로 쓰세요.** it, that, this 로 얼버무리지 마세요.');
+  lines.push('  무엇을 시켰는지, 몇 시였는지, 무슨 요일이었는지 \u2014 실제 물건과 숫자를 넣으세요.');
+  lines.push('  구체적인 것이 없으면 영어가 대명사 투성이가 되고 어색해집니다.');
+  lines.push('- 친구 · 가족 · 편한 동료에게 하는 말투. 격식체, 비즈니스 영어, 뉴스 문어체는 안 됩니다');
+  lines.push('- 축약형(I\'m, don\'t, it\'s, I\'d, that\'s)을 자연스럽게 쓰세요');
+  lines.push('- **말버릇(honestly, kind of, like, actually)을 장식으로 넣지 마세요.**');
+  lines.push('  뜻이 실제로 맞을 때만 씁니다. 넣으라니까 아무 데나 넣으면 어색해집니다.');
+  lines.push('  ("이상하게"를 honestly 로 옮기면 안 됩니다. 그건 weirdly 입니다.)');
+  lines.push('  특히 **like 를 채움말로 쓰면 십대 말투**가 됩니다. 어른이 하는 말로 쓰세요.');
+  lines.push('- **원어민이 안 쓰는 낱말을 고르지 마세요.** 뜻은 맞아도 그 자리에서 안 쓰는 말이 있습니다');
+  lines.push('  (배달을 다시 시키는 것은 reorder 가 아니라 order again 입니다).');
+  lines.push('- **두 가지로 읽히는 말을 피하세요.** 문법이 맞아도 순간 헷갈리면 안 됩니다');
+  lines.push('  (caved on day three 는 맞지만 cave on ~ 으로도 읽혀서 걸립니다. caved three days in 이 낫습니다).');
+  lines.push('');
+  lines.push('## 한국어 문장');
+  lines.push('');
+  lines.push('- 한국 사람이 친구에게 하듯 자연스럽게. 번역투 금지');
+  lines.push('- **애매하게 쓰지 마세요.** \'그거\', \'그런 것\' 으로 얼버무리면');
+  lines.push('  영어도 따라서 애매해집니다. 무엇을 말하는지 분명히 쓰세요');
+  lines.push('- 영어와 문장 수가 달라도 됩니다. 뜻과 느낌이 맞으면 됩니다');
   lines.push('');
   lines.push('## 길이와 난이도');
-  lines.push('- 영어 문장은 ' + opts.minWords + '~' + opts.maxWords + ' 단어');
-  lines.push('- 절이 둘 이상. 관계절 / 가정법 / 시간·이유를 잇는 절 중 하나 이상은 들어가야 합니다');
-  lines.push('  (예: the thing that ~ / if I had known ~ / which is why ~ / by the time I ~)');
-  lines.push('- 쉬운 문장은 만들지 마세요. 짧고 단순한 문장은 이 연습의 목적에 어긋납니다');
-  lines.push('- 캐주얼한 말투와 긴 문장은 얼마든지 같이 갑니다. 말이 길어지는 것이지 어려워지는 것이 아닙니다');
+  lines.push('- 영어는 **다 합쳐서** ' + opts.minWords + '~' + opts.maxWords + ' 단어. 한 문장이 아니라 전체 기준입니다');
+  lines.push('- 그 안에서 2~3 문장으로 나눕니다. 짧은 문장 하나가 섞이면 오히려 자연스럽습니다');
+  lines.push('- 낱말은 쉽게, 내용은 어렵게. 짧고 단순한 말만 나열하면 연습이 안 됩니다');
   lines.push('');
   lines.push('## 오늘 쓸 상황 — 문장 하나에 상황 하나씩, 순서대로');
   for (var i = 0; i < opts.situations.length; i++) {
@@ -279,6 +307,15 @@ function buildReviewPrompt(draft, cfg) {
   lines.push('   (전에 "hit the spot" 을 음식이 아닌 곳에, "call it a day" 를 일과 무관한 곳에');
   lines.push('    쓴 채로 나간 적이 있습니다. 이런 것을 잡아 주세요.)');
   lines.push('2. **소리내어 읽었을 때 어색하지 않은가.** 글로 쓴 문장 같으면 고칩니다.');
+  lines.push('   특히 **번역체 냄새**를 보세요. 한국어를 그대로 옮긴 티가 나면 영어를 새로 씁니다.');
+  lines.push('   한국어와 1:1로 안 맞아도 됩니다. 영어가 자연스러운 것이 먼저입니다.');
+  lines.push('2-1. **한 문장이 너무 긴가.** 쉼표로 계속 이었으면 2~3 문장으로 나눕니다.');
+  lines.push('2-2. **it / this / that 으로 얼버무렸는가.** 구체적인 물건, 시각, 요일을 넣습니다.');
+  lines.push('     한국어도 애매하면 같이 구체적으로 고칩니다.');
+  lines.push('2-3. **말버릇을 장식으로 넣었는가.** honestly, kind of, like 가 뜻 없이 들어갔으면 뺍니다.');
+  lines.push('     like 를 채움말로 쓰면 십대 말투가 됩니다.');
+  lines.push('2-4. **원어민이 그 자리에서 안 쓰는 낱말이 있는가.** (예: 배달 다시 시키기 = reorder 가 아니라 order again)');
+  lines.push('2-5. **두 가지로 읽히는 대목이 있는가.** 문법이 맞아도 순간 헷갈리면 고칩니다.');
   lines.push('3. **casual 이 text 와 충분히 다른가.** 앞부분이 겹치면 고칩니다.');
   lines.push('   캐주얼은 관용구를 넣는 것이 아니라 더 짧고 축약된 구어입니다.');
   lines.push('4. **formal 이 뜻을 바꾸지 않았는가.** 말투만 올려야 하고,');
@@ -434,6 +471,33 @@ function sameOpening(a, b) {
   return !!x && x === y;
 }
 
+/* 문장을 마침표·물음표·느낌표로 나눈다 */
+function sentencesOf(text) {
+  var parts = String(text || '').split(/[.!?]+/);
+  var out = [];
+  for (var i = 0; i < parts.length; i++) {
+    if (parts[i].replace(/\s/g, '')) out.push(parts[i]);
+  }
+  return out;
+}
+
+/* 한 문장 안에 쉼표가 세 개를 넘으면 숨이 차고 글 같아진다.
+   영어는 짧게 끊어 말한다 \u2014 이게 번역체의 제일 흔한 자국이다. */
+function commaHeavy(text) {
+  var parts = sentencesOf(text);
+  for (var i = 0; i < parts.length; i++) {
+    if ((parts[i].match(/,/g) || []).length > 2) return true;
+  }
+  return false;
+}
+
+/* it / this / that 이 너무 많으면 한국어가 애매했다는 뜻이다.
+   구체적인 것을 말하지 않으니 영어가 대명사로 때운다. */
+function vagueCount(text) {
+  var m = String(text || '').toLowerCase().match(/\b(it|its|this|that|those|these|thing|things|something)\b/g);
+  return m ? m.length : 0;
+}
+
 function wordCount(text) {
   var t = String(text || '').trim();
   return t ? t.split(/\s+/).length : 0;
@@ -490,6 +554,20 @@ function validate(parsed, cfg) {
     // 캐주얼이 정답과 앞부분이 같으면 나란히 놓아도 차이가 안 보인다
     if (styles && sameOpening(r.text, altOf(r.alts, 'casual'))) {
       problems.push(at + 'casual 이 정답과 앞부분이 같습니다.');
+    }
+
+    // 쉼표로 계속 이으면 말이 아니라 글이 된다
+    if (commaHeavy(r.text)) {
+      problems.push(at + '한 문장에 쉼표가 너무 많습니다. 문장을 나누세요.');
+    }
+    if (n && sentencesOf(r.text).length < 2) {
+      problems.push(at + '영어가 한 문장뿐입니다. 2~3 문장으로 나누세요.');
+    }
+
+    // 대명사로 때운 문장은 한국어가 애매했다는 뜻이다
+    if (n && vagueCount(r.text) > 4) {
+      problems.push(at + 'it/this/that 이 ' + vagueCount(r.text)
+        + '번 나옵니다. 구체적인 것을 넣으세요.');
     }
   }
   return problems;
@@ -556,6 +634,7 @@ module.exports = {
   buildSchema: buildSchema, buildReviewSchema: buildReviewSchema,
   buildReviewPrompt: buildReviewPrompt,
   altStyles: altStyles, normalizeAlts: normalizeAlts,
+  sentencesOf: sentencesOf, commaHeavy: commaHeavy, vagueCount: vagueCount,
   highlighted: highlighted, keysAppear: keysAppear, sameOpening: sameOpening,
   wordCount: wordCount, validate: validate,
   toDayFile: toDayFile, updateIndex: updateIndex, save: save

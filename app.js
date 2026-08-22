@@ -114,13 +114,15 @@
     if (!profileId) { showProfiles(); return; }
     if (!videoId) { showLibrary(profileId); return; }
     if (videoId === 'report') { showReport(profileId); return; }
-    if (videoId === 'daily') {
+    if (videoId === 'daily' || videoId === 'shows') {
+      dailyKind = (videoId === 'shows') ? 'shows' : 'made';
       showDaily(profileId, parts[2] || '', parts[3] ? parseInt(parts[3], 10) : null);
       return;
     }
     // 하루 문장은 영상이 아니다. 카드에서 넘어온 주소를 제자리로 보낸다
     if (isDailyId(videoId)) {
-      go('#/' + profileId + '/daily/' + videoId.slice(6) + (parts[2] ? '/' + parts[2] : ''));
+      go('#/' + profileId + '/' + routeOfKind(kindOfId(videoId)) + '/' + videoId.slice(6)
+        + (parts[2] ? '/' + parts[2] : ''));
       return;
     }
     if (videoId === 'cards') { showCards(profileId, parts[2] || ''); return; }
@@ -925,7 +927,8 @@
     var ob = el('button', 'half', daily ? 'Open in Daily' : 'Open in the video');
     ob.onclick = function () {
       go(daily
-        ? '#/' + pid + '/daily/' + row.card.videoId.slice(6) + '/' + row.card.i
+        ? '#/' + pid + '/' + routeOfKind(kindOfId(row.card.videoId)) + '/'
+            + row.card.videoId.slice(6) + '/' + row.card.i
         : '#/' + pid + '/' + row.card.videoId + '/' + row.card.i);
     };
     open.appendChild(ob);
@@ -1026,17 +1029,35 @@
   var dailyRecording = false;
   var dailyProgress = null;
   var dailyDaysOpen = false;
+  var dailyKind = 'made';   // 'made' = AI 가 만든 문장, 'shows' = 등록한 영상의 실제 대사
 
-  function dailyFile(pid, date) { return 'data/daily/' + pid + '/' + date + '.json'; }
+  var DAILY_TABS = [
+    { id: 'made',  route: 'daily', name: 'Made for you' },
+    { id: 'shows', route: 'shows', name: 'From your videos' }
+  ];
+
+  function dailyFile(pid, date, kind) {
+    return 'data/daily/' + pid + '/' + date + ((kind || dailyKind) === 'shows' ? '-shows' : '') + '.json';
+  }
 
   /* 카드가 가리키는 문장이 영상인지 하루 문장인지에 따라 파일 자리가 다르다 */
   function sentenceFileFor(pid, videoId) {
     var id = String(videoId || '');
-    if (id.indexOf('daily-') === 0) return dailyFile(pid, id.slice(6));
+    if (id.indexOf('daily-') === 0) return dailyFile(pid, id.slice(6), 'made');
+    if (id.indexOf('shows-') === 0) return dailyFile(pid, id.slice(6), 'shows');
     return 'data/videos/' + pid + '/' + id + '.json';
   }
 
-  function isDailyId(videoId) { return String(videoId || '').indexOf('daily-') === 0; }
+  function isDailyId(videoId) {
+    var id = String(videoId || '');
+    return id.indexOf('daily-') === 0 || id.indexOf('shows-') === 0;
+  }
+
+  function kindOfId(videoId) {
+    return String(videoId || '').indexOf('shows-') === 0 ? 'shows' : 'made';
+  }
+
+  function routeOfKind(kind) { return kind === 'shows' ? 'shows' : 'daily'; }
 
   /* 폰에 내장된 목소리로 읽어 준다. 없는 기기에서는 그 버튼을 아예 안 만든다 (SPEC 9) */
   function canSpeak() {
@@ -1074,6 +1095,11 @@
     return gap > 0 ? gap : 0;
   }
 
+  var SHOWS_EMPTY = 'No lines from your videos yet.\n'
+    + 'These are real lines taken from the videos you registered, so you need at least one '
+    + 'video with usable captions.\n'
+    + 'Register a drama or film clip from your PC and they appear here the next morning.';
+
   var DAILY_EMPTY = 'No sentences yet.\n'
     + 'A new set of five is made every morning and appears here.\n'
     + 'If nothing shows up for a few days, the daily maker has stopped.';
@@ -1087,14 +1113,33 @@
 
     getJSON('data/daily/' + pid + '/index.json', function (rows) {
       dailyIndex = rows || [];
-      if (!dailyIndex.length) { notice(box, DAILY_EMPTY); return; }
+      if (!dailyIndex.length) {
+        clear(box);
+        box.appendChild(dailyTabs(pid, ''));
+        notice2(box, dailyKind === 'shows' ? SHOWS_EMPTY : DAILY_EMPTY);
+        return;
+      }
 
-      var want = date || dailyIndex[0].date;
+      // 그 갈래가 있는 날만 고른다
+      var have = [];
+      for (var h = 0; h < dailyIndex.length; h++) {
+        if (dailyKind === 'shows' ? dailyIndex[h].hasShows : (dailyIndex[h].count > 0)) {
+          have.push(dailyIndex[h]);
+        }
+      }
+      if (!have.length) {
+        clear(box);
+        box.appendChild(dailyTabs(pid, ''));
+        notice2(box, dailyKind === 'shows' ? SHOWS_EMPTY : DAILY_EMPTY);
+        return;
+      }
+      dailyIndex = have;
+      var want = date || have[0].date;
       var found = false;
-      for (var i = 0; i < dailyIndex.length; i++) if (dailyIndex[i].date === want) found = true;
-      if (!found) want = dailyIndex[0].date;
+      for (var i = 0; i < have.length; i++) if (have[i].date === want) found = true;
+      if (!found) want = have[0].date;
 
-      getJSON(dailyFile(pid, want), function (day) {
+      getJSON(dailyFile(pid, want, dailyKind), function (day) {
         if (!day || !day.sentences || !day.sentences.length) { notice(box, DAILY_EMPTY); return; }
         dailyDay = day;
         dailyAt = 0;
@@ -1104,11 +1149,31 @@
         resetDailyAnswer();
         loadDailyProgress(pid, day.videoId, function () { drawDaily(pid); });
       }, function () {
-        notice(box, 'That day could not be loaded.\nTry another day.', true);
+        clear(box);
+        box.appendChild(dailyTabs(pid, want));
+        notice2(box, dailyKind === 'shows' ? SHOWS_EMPTY : DAILY_EMPTY);
       });
     }, function (why) {
-      notice(box, why === 'missing' ? DAILY_EMPTY : why, why !== 'missing');
+      if (why !== 'missing') { notice(box, why, true); return; }
+      clear(box);
+      box.appendChild(dailyTabs(pid, ''));
+      notice2(box, dailyKind === 'shows' ? SHOWS_EMPTY : DAILY_EMPTY);
     });
+  }
+
+  /* 무엇으로 연습할지 고르는 탭 */
+  function dailyTabs(pid, date) {
+    var wrap = el('div', 'modes');
+    for (var i = 0; i < DAILY_TABS.length; i++) {
+      (function (t) {
+        var b = el('button', 'small' + (t.id === dailyKind ? ' on' : ''), t.name);
+        b.onclick = function () {
+          go('#/' + pid + '/' + t.route + (date ? '/' + date : ''));
+        };
+        wrap.appendChild(b);
+      })(DAILY_TABS[i]);
+    }
+    return wrap;
   }
 
   function loadDailyProgress(pid, videoId, done) {
@@ -1131,6 +1196,7 @@
   function drawDaily(pid) {
     var box = $('daily-body');
     clear(box);
+    box.appendChild(dailyTabs(pid, dailyDay ? dailyDay.date : ''));
     var day = dailyDay;
     var s = day.sentences[dailyAt];
 
@@ -1267,6 +1333,15 @@
       wrap.appendChild(b);
     }
 
+    // 실제 대사는 영상에 그 자리가 있다. 배우 목소리로 들어 볼 수 있게 한다
+    if (s.from && s.from.videoId) {
+      var open = el('div', 'buttons');
+      var ob = el('button', 'half', 'Hear it in the video');
+      ob.onclick = function () { go('#/' + profileId + '/' + s.from.videoId + '/' + s.from.i); };
+      open.appendChild(ob);
+      wrap.appendChild(open);
+    }
+
     if (s.alts && s.alts.length) {
       wrap.appendChild(el('div', 'rowlabel', 'Another way to say it'));
       for (var a = 0; a < s.alts.length; a++) {
@@ -1314,9 +1389,13 @@
         var b = el('button', 'item' + (dailyDay && d.date === dailyDay.date ? ' on' : ''));
         var body = el('div', 'body');
         body.appendChild(el('div', 'name', d.date));
-        body.appendChild(el('div', 'meta', (d.count || 0) + ' sentences'));
+        body.appendChild(el('div', 'meta', dailyKind === 'shows'
+          ? ((d.showsCount || 0) + ' lines')
+          : ((d.count || 0) + ' sentences')));
         b.appendChild(body);
-        b.onclick = function () { go('#/' + pid + '/daily/' + d.date); };
+        b.onclick = function () {
+          go('#/' + pid + '/' + routeOfKind(dailyKind) + '/' + d.date);
+        };
         var li = document.createElement('li');
         li.appendChild(b);
         ul.appendChild(li);

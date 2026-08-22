@@ -1270,12 +1270,39 @@
     if (s.alts && s.alts.length) {
       wrap.appendChild(el('div', 'rowlabel', 'Another way to say it'));
       for (var a = 0; a < s.alts.length; a++) {
-        wrap.appendChild(el('div', 'alt', s.alts[a]));
+        wrap.appendChild(altRow(s.alts[a]));
       }
     }
     if (s.note) {
       wrap.appendChild(el('div', 'rowlabel', 'Note'));
-      wrap.appendChild(el('div', 'note', s.note));
+      var note = el('div', 'note');
+      note.appendChild(withKeys(s.note));
+      wrap.appendChild(note);
+    }
+    return wrap;
+  }
+
+  /* 말투를 바꾼 표현 한 줄. 옛 파일은 alts 가 그냥 글이었으므로 둘 다 읽는다 */
+  function altRow(alt) {
+    var row = el('div', 'alt');
+    var text = alt, style = '';
+    if (alt && typeof alt === 'object') { text = alt.text; style = alt.style || ''; }
+    if (style === 'casual' || style === 'formal') {
+      row.appendChild(el('span', 'tag ' + style, style === 'casual' ? 'Casual' : 'Formal'));
+    }
+    row.appendChild(document.createTextNode(text || ''));
+    return row;
+  }
+
+  /* **이렇게** 감싼 대목을 강조해서 그린다. 배울 표현이 눈에 띄어야 한다.
+     별표가 짝이 안 맞아도 글이 사라지지는 않게 둔다. */
+  function withKeys(text) {
+    var wrap = el('span', null);
+    var parts = String(text || '').split('**');
+    for (var i = 0; i < parts.length; i++) {
+      if (!parts[i]) continue;
+      if (i % 2 === 1) wrap.appendChild(el('b', 'key', parts[i]));
+      else wrap.appendChild(document.createTextNode(parts[i]));
     }
     return wrap;
   }

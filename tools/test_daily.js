@@ -22,8 +22,11 @@ function row(over) {
     situation: '회의에서 반대하기',
     ko: '그 일정은 아무래도 무리라고 봅니다.',
     text: 'I honestly think that deadline is going to be tough for us.',
-    alts: ['That timeline feels unrealistic to me, to be honest with you.'],
-    note: 'to be honest 는 조심스럽게 반대할 때 씁니다.'
+    alts: [
+      { style: 'casual', text: 'That timeline feels rough to me, honestly.' },
+      { style: 'formal', text: 'That timeline appears unrealistic to me.' }
+    ],
+    note: '**to be honest** 는 조심스럽게 반대할 때 씁니다.'
   };
   for (var k in (over || {})) base[k] = over[k];
   return base;
@@ -56,8 +59,12 @@ check('개수를 못 박는다',
 check('다섯 칸 모두 필수',
   schema.properties.sentences.items.required.sort(),
   ['alts', 'ko', 'note', 'situation', 'text']);
-check('다른 정답이 최소 하나는 있어야 한다',
-  schema.properties.sentences.items.properties.alts.minItems, 1);
+check('다르게 말하는 법은 정확히 두 개',
+  [schema.properties.sentences.items.properties.alts.minItems,
+   schema.properties.sentences.items.properties.alts.maxItems], [2, 2]);
+check('말투는 캐주얼 아니면 포멀',
+  schema.properties.sentences.items.properties.alts.items.properties.style['enum'],
+  ['casual', 'formal']);
 
 console.log('\n단어 세기');
 check('보통 문장', daily.wordCount('I think that is fine.'), 5);
@@ -95,9 +102,39 @@ check('설명이 비면 잡는다',
   daily.validate({ sentences: [row({ note: '' })] }, CFG).slice(1),
   ['문장 1: 설명이 비었습니다.']);
 
-check('다른 정답이 없으면 잡는다',
+check('다르게 말하는 법이 없으면 잡는다',
   daily.validate({ sentences: [row({ alts: [] })] }, CFG).slice(1),
-  ['문장 1: 다른 정답(alts)이 없습니다.']);
+  ['문장 1: 다르게 말하는 법(alts)이 없거나 모양이 다릅니다.']);
+
+check('캐주얼만 두 개면 잡는다',
+  daily.validate({ sentences: [row({ alts: [
+    { style: 'casual', text: 'one' }, { style: 'casual', text: 'two' }] })] }, CFG).slice(1),
+  ['문장 1: formal 표현이 없습니다.']);
+
+check('포멀만 두 개면 잡는다',
+  daily.validate({ sentences: [row({ alts: [
+    { style: 'formal', text: 'one' }, { style: 'formal', text: 'two' }] })] }, CFG).slice(1),
+  ['문장 1: casual 표현이 없습니다.']);
+
+check('세 개면 잡는다',
+  daily.validate({ sentences: [row({ alts: [
+    { style: 'casual', text: 'a' }, { style: 'formal', text: 'b' },
+    { style: 'casual', text: 'c' }] })] }, CFG).slice(1),
+  ['문장 1: 다르게 말하는 법(alts)이 없거나 모양이 다릅니다.']);
+
+check('말투 딱지가 이상하면 잡는다',
+  daily.validate({ sentences: [row({ alts: [
+    { style: 'polite', text: 'a' }, { style: 'formal', text: 'b' }] })] }, CFG).slice(1),
+  ['문장 1: 다르게 말하는 법(alts)이 없거나 모양이 다릅니다.']);
+
+check('note 에 강조가 하나도 없으면 잡는다',
+  daily.validate({ sentences: [row({ note: '강조가 없는 설명입니다.' })] }, CFG).slice(1),
+  ['문장 1: note 에 **로 감싼 표현이 없습니다.']);
+
+check('강조가 하나라도 있으면 통과',
+  daily.validate({ sentences: [row({ note: '**cave** 는 무너지다.' }), row({
+    text: 'She would have called us if the meeting had ended earlier today.',
+    ko: '회의가 일찍 끝났으면 연락했을 겁니다.' })] }, CFG), []);
 
 check('같은 문장이 두 번 나오면 잡는다',
   daily.validate({ sentences: [row(), row()] }, CFG),
@@ -118,6 +155,11 @@ check('한국어가 있어야 한→영 카드가 된다', !!day.sentences[0].ko
 check('영상 문장과 같은 칸을 갖춘다',
   Object.keys(day.sentences[0]).sort(),
   ['alts', 'end', 'i', 'ko', 'note', 'recording', 'situation', 'start', 'text']);
+check('말투 딱지가 그대로 넘어간다',
+  day.sentences[0].alts.map(function (a) { return a.style; }), ['casual', 'formal']);
+check('옛 파일의 글 목록도 읽힌다',
+  daily.normalizeAlts(['That timeline feels rough.']),
+  [{ style: 'casual', text: 'That timeline feels rough.' }]);
 check('앞뒤 공백은 지운다',
   daily.toDayFile({ sentences: [row({ text: '  I honestly think that deadline is tough.  ' })] },
     '2026-08-23').sentences[0].text,
@@ -150,6 +192,9 @@ check('단어 수 조건이 들어간다', prompt.indexOf('20~35 단어') >= 0, 
 check('상황이 들어간다', prompt.indexOf('병원에서 증상 설명') >= 0, true);
 check('어휘가 들어간다', prompt.indexOf('concentrated') >= 0, true);
 check('다른 표현을 요구한다', prompt.indexOf('"alts"') >= 0, true);
+check('캐주얼·포멀을 나누라고 한다',
+  prompt.indexOf('"casual"') >= 0 && prompt.indexOf('"formal"') >= 0, true);
+check('note 에 강조를 넣으라고 한다', prompt.indexOf('별표 두 개') >= 0, true);
 check('일상 대화체를 못 박는다', prompt.indexOf('일상 대화체') >= 0, true);
 check('격식체를 금지한다', prompt.indexOf('격식체') >= 0, true);
 check('축약형을 쓰라고 한다', prompt.indexOf('축약형') >= 0, true);

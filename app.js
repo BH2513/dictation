@@ -2074,6 +2074,17 @@
     if (wantPlay) { var v = wantPlay; wantPlay = null; ensurePlayer(v); }
   };
 
+  /* 데스크탑·폰에 앱으로 설치할 수 있게 한다.
+     캐시는 인터넷이 안 될 때만 쓰는 network-first 라서 옛 코드가 남는 덫은 없다 (sw.js 참고).
+     안 되는 기기에서는 조용히 넘어간다 — 설치가 안 될 뿐 연습은 그대로 된다. */
+  function registerWorker() {
+    if (!navigator.serviceWorker) return;
+    if (window.location.protocol !== 'https:' && window.location.hostname !== 'localhost') return;
+    try {
+      navigator.serviceWorker.register('sw.js').catch(function () {});
+    } catch (e) { /* 설치만 못 할 뿐이다 */ }
+  }
+
   function boot() {
     setControls(false);
     $('play-btn').onclick = playCurrent;
@@ -2106,6 +2117,7 @@
 
     if (window.addEventListener) window.addEventListener('hashchange', route, false);
     route();
+    registerWorker();
 
     var tag = document.createElement('script');
     tag.src = 'https://www.youtube.com/iframe_api';

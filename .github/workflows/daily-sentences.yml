@@ -94,6 +94,36 @@ jobs:
           echo "세 번 시도했지만 조건에 맞는 문장을 얻지 못했습니다."
           exit 1
 
+      - name: 영상 대사 고르기
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          DAILY_LINES: /tmp/lines.json
+        # 자막이 없으면 이 단계는 그냥 건너뛴다. 앞 단계 문장은 이미 저장됐다
+        continue-on-error: true
+        run: |
+          set -u
+          if ! node tools/daily_shows_prompt.js > /tmp/shows.txt; then
+            echo "쓸 만한 대사가 없어 건너뜁니다. PC 에서 자막을 등록해 주세요."
+            exit 0
+          fi
+          node tools/daily_shows_schema.js > /tmp/shows_schema.json
+
+          for try in 1 2; do
+            echo "=== 대사 고르기 ${try}번째 ==="
+            claude -p "$(cat /tmp/shows.txt)" \
+              --permission-mode dontAsk \
+              --output-format json \
+              --json-schema "$(cat /tmp/shows_schema.json)" \
+              > /tmp/shows_out.json || true
+
+            if node tools/daily_shows_save.js /tmp/shows_out.json /tmp/lines.json; then
+              echo "대사를 저장했습니다."
+              exit 0
+            fi
+            echo "조건에 맞지 않아 다시 골라 봅니다."
+          done
+          echo "대사를 고르지 못했습니다. 오늘은 만든 문장만 나갑니다."
+
       - name: 저장소에 올리기
         run: |
           if [ -z "$(git status --porcelain data/daily)" ]; then

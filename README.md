@@ -8,11 +8,13 @@
 - 앞으로의 계획과 비용 계산: [ROADMAP.md](ROADMAP.md)
 - 영상 등록하는 법: [tools/README.md](tools/README.md)
 - 하루 문장 자동 생성 준비: [tools/DAILY_SETUP.md](tools/DAILY_SETUP.md)
+- 드라마·영화 대사로 연습하기: [tools/SUBS_SETUP.md](tools/SUBS_SETUP.md)
 
 ## 지금 되는 것
 
 - **받아쓰기** — 영상 구간을 문장 단위로 듣고 받아쓴다. 채점, 힌트, 따라 말하기
-- **하루 다섯 문장** — 한국어를 보고 영어로 옮겨 말한다. 매일 아침 새로 만들어진다
+- **하루 다섯 문장** — 한국어를 보고 영어로 옮겨 말한다. 매일 아침 새로 만들어진다.
+  탭이 둘 — AI 가 만든 문장 / 등록한 자막의 실제 드라마·영화 대사
 - **문장카드 복습** — 손으로 담은 문장을 네 가지 방식으로 다시 본다
 - **오답 리포트** — 연속 학습 일수, 최근 14일 학습량, 자주 틀리는 낱말
 - **백업** — 기기를 바꿀 때 기록을 옮긴다
@@ -23,4 +25,5 @@
 - 빌드 단계 없음. 정적 파일 그대로 GitHub Pages 에 올라간다
 - 서버 없음, 비용 0원
 - `app.js` / `style.css` 등을 고쳤으면 `index.html` 의 `?v=` 값을 올린다
-- 테스트: `python3 tools/test_add_video.py`, `node tools/test_daily.js`, `node tools/test_grading.js`
+- 테스트: `python3 tools/test_add_video.py`, `python3 tools/test_add_subs.py`,
+  `node tools/test_daily.js`, `node tools/test_daily_shows.js`, `node tools/test_grading.js`

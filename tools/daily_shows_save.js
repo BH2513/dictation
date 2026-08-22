@@ -16,7 +16,7 @@ try {
   if (!pids.length) throw new Error('data/profiles.json 에 프로필이 없습니다.');
 
   var parsed = daily.unwrap(daily.extractJSON(fs.readFileSync(process.argv[2], 'utf8')));
-  var problems = shows.validate(parsed, lines);
+  var problems = shows.validate(parsed, lines, daily.config().count);
   if (problems.length) {
     process.stderr.write('재료가 조건에 맞지 않아 저장하지 않았습니다:\n');
     for (var i = 0; i < problems.length; i++) process.stderr.write('  - ' + problems[i] + '\n');
@@ -28,6 +28,12 @@ try {
 
   process.stdout.write(date + ' 영상 대사 ' + day.sentences.length + '줄을 저장했습니다 ('
     + pids.join(', ') + ').\n');
+  if (parsed.skipped && parsed.skipped.length) {
+    process.stdout.write('버린 후보 ' + parsed.skipped.length + '개:\n');
+    for (var k = 0; k < parsed.skipped.length; k++) {
+      process.stdout.write('  - ' + parsed.skipped[k] + '\n');
+    }
+  }
   for (var s = 0; s < day.sentences.length; s++) {
     process.stdout.write('  ' + (s + 1) + '. ' + day.sentences[s].text + '\n');
   }

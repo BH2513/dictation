@@ -6,19 +6,19 @@
   "sentences": [
     {
       "i": 0,
-      "ko": "주말에 진짜 아무것도 안 했는데, 이상하게 그게 딱 필요했던 것 같아. 하루 종일 소파에 누워서 폰만 보다가 하루가 다 갔거든.",
-      "text": "I literally did nothing all weekend, but honestly that's exactly what I needed, because I just lay on the couch scrolling on my phone until the day was gone.",
+      "ko": "이번 주말에 진짜 아무것도 안 했어. 소파에 붙어서 드라마 세 시즌 몰아보고 거의 움직이지도 않았어. 근데 이상하게 그게 딱 필요했던 것 같아.",
+      "text": "I did absolutely nothing this weekend. I stayed on the couch, watched three seasons of something, and barely moved. And weirdly, that's exactly what I needed.",
       "alts": [
         {
           "style": "casual",
-          "text": "I did nothing this weekend, like actually nothing, and I'm not even mad because I just stayed on the couch on my phone all day."
+          "text": "Zero plans this weekend. I parked myself on the couch, binged three seasons of something, and it was the best call I made all week."
         },
         {
           "style": "formal",
-          "text": "I did absolutely nothing all weekend, but it was precisely what I needed, as I spent the entire day on the sofa looking at my phone."
+          "text": "I did absolutely nothing over the weekend. I remained at home, watched a great deal of television, and hardly moved. It was precisely the rest I needed."
         }
       ],
-      "note": "**literally** 는 '진짜, 완전히' 정도로 가볍게 씁니다. 폰 들여다보는 건 **scrolling on my phone** 이 제일 흔하고, 캐주얼한 **I'm not even mad** 는 '그래도 후회는 없다'는 느낌이에요.",
+      "note": "**weirdly** 는 '이상하게도'입니다. 몰아보기는 **binged**, 소파에 눌러앉는 건 **parked myself on the couch** 라고 해요.",
       "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
       "start": null,
       "end": null,
@@ -26,19 +26,19 @@
     },
     {
       "i": 1,
-      "ko": "시킨 거랑 완전히 다른 게 왔는데, 다시 시키자니 한 시간은 더 걸릴 것 같고 그냥 이거 먹어야 하나 싶어.",
-      "text": "They sent me something completely different from what I ordered, and if I reorder it's going to take another hour, so I'm kind of tempted to just eat this.",
+      "ko": "배달이 잘못 왔어. 치킨 시켰는데 웬 파스타가 왔더라고. 다시 시키면 한 시간은 더 걸리니까 그냥 이거 먹으려고.",
+      "text": "They sent the wrong order. I asked for the chicken and got some kind of pasta. Ordering again means another hour, so I'm just going to eat it.",
       "alts": [
         {
           "style": "casual",
-          "text": "They got my order completely wrong, and I'm not waiting another hour for a redo, so I'll probably just eat what showed up."
+          "text": "Wrong order again. I ordered chicken and they sent me pasta, and I'm not sitting here another hour waiting for a redo. So pasta it is."
         },
         {
           "style": "formal",
-          "text": "What arrived is not what I ordered, and placing another order would mean waiting an additional hour, so I am inclined to simply keep this one."
+          "text": "The order was incorrect. I requested the chicken and received pasta instead. As placing another order would mean waiting an additional hour, I have decided to keep this one."
         }
       ],
-      "note": "**kind of tempted to** ~ 는 '그냥 ~할까 싶다' 하는 미묘한 느낌입니다. **showed up** 은 '(생각과 다른 게) 오다'라는 뜻이고, 격식 있게 말할 땐 **I am inclined to** ~ 를 씁니다.",
+      "note": "**some kind of** ~ 는 '웬 ~ 같은 것'. **pasta it is** 처럼 [명사 + it is] 는 '그럼 그걸로 하지' 하는 체념 섞인 말투예요.",
       "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
       "start": null,
       "end": null,
@@ -46,19 +46,19 @@
     },
     {
       "i": 2,
-      "ko": "도와주고는 싶은데 이번 주는 진짜 정신이 없어서, 괜히 맡았다가 제대로 못 해 주면 오히려 너한테 더 민폐일 것 같아.",
-      "text": "I'd really like to help, but this week is honestly insane for me, and if I take it on and do a bad job, that just makes things worse for you.",
+      "ko": "진짜 도와주고 싶은데 이번 주가 너무 빡세. 마감이 두 개인 데다 목요일엔 애 학교 행사도 있어. 지금 맡으면 대충 하게 될 텐데 그럼 서로 손해잖아.",
+      "text": "I really want to help, but this week is brutal. I've got two deadlines and my kid's school thing on Thursday. If I said yes I'd do a rushed job, and that helps nobody.",
       "alts": [
         {
           "style": "casual",
-          "text": "I'd love to help but I'm slammed this week, and honestly you'd be worse off with me doing it badly than with me just saying no."
+          "text": "Man, I want to say yes. But I've got two deadlines and my kid's thing on Thursday, so I'd end up rushing it. You'd rather have it done right."
         },
         {
           "style": "formal",
-          "text": "I would be glad to help, but my schedule this week is extremely tight, and taking it on without doing it properly would not serve you well."
+          "text": "I would like to help, but this week is extremely demanding. I have two deadlines and a school event on Thursday. If I agreed, the work would be rushed and would not serve you well."
         }
       ],
-      "note": "**take it on** 은 '떠맡다'입니다. 바쁘다는 말로는 **slammed** 를 자주 쓰고(swamped 도 같은 뜻), 격식 있게는 **my schedule this week is extremely tight** 처럼 말합니다.",
+      "note": "**brutal** 은 '살인적이다' 정도로 힘들다는 뜻이에요. **end up** -ing 은 '결국 ~하게 되다', **that helps nobody** 는 '그래 봐야 서로 손해다'입니다.",
       "situation": "친구 부탁을 부드럽게 거절하기",
       "start": null,
       "end": null,
@@ -66,19 +66,19 @@
     },
     {
       "i": 3,
-      "ko": "이번엔 진짜 될 줄 알았는데 또 삼일 만에 무너졌어. 저녁까지는 잘 참다가 밤에 배고파지면 도저히 안 되더라고.",
-      "text": "I really thought I'd stick with it this time, but I caved after three days, because I can hold out until dinner and then the late night hunger just wins.",
+      "ko": "삼일 갔어. 낮에는 멀쩡한데 밤 열 시쯤 되면 냉장고 문을 열고 있더라고. 매번 똑같아.",
+      "text": "I lasted three days. I was fine all day, but around ten at night I'd open the fridge and that was that. Same thing every single time.",
       "alts": [
         {
           "style": "casual",
-          "text": "I was so sure I'd last this time but I caved on day three, since I'm fine till dinner and then late night me takes over."
+          "text": "Three days. That's it. I'm fine until about ten, then I'm standing in front of the fridge with no memory of walking there. Every time."
         },
         {
           "style": "formal",
-          "text": "I genuinely expected to keep it up this time, but I gave in after three days, as I manage well until dinner and struggle later in the evening."
+          "text": "I managed three days. I was perfectly fine during the day, but by around ten in the evening I would find myself at the refrigerator. It happened every time."
         }
       ],
-      "note": "**cave** 와 **give in** 둘 다 '참다가 무너지다'입니다. **stick with it** 은 계속 유지하다, **hold out** 은 버티다예요.",
+      "note": "**that was that** 은 '거기서 끝이었다'는 뜻이에요. 버티는 건 **lasted**, 격식 있게는 **managed** 를 씁니다.",
       "situation": "다이어트가 또 실패한 얘기",
       "start": null,
       "end": null,
@@ -86,19 +86,19 @@
     },
     {
       "i": 4,
-      "ko": "이사를 갈까 싶다가도, 지금 집이 딱히 나쁜 것도 아닌데 괜히 돈이랑 시간만 버리는 거 아닌가 싶어서 계속 미루고 있어.",
-      "text": "Part of me wants to move, but the place I'm in now isn't actually bad, so I keep wondering if I'd just be wasting money and time, and I put it off.",
+      "ko": "이사 갈 마음을 먹었다가도, 둘러보면 집도 괜찮고 월세도 괜찮고, 짐 쌀 생각을 하면 또 미루게 돼.",
+      "text": "I keep almost deciding to move. Then I look around and the place is fine, the rent is fine. And I picture packing all of it, so I put it off again.",
       "alts": [
         {
           "style": "casual",
-          "text": "I keep thinking about moving but my place is honestly fine, so I go back and forth and end up putting it off every single time."
+          "text": "Every couple of months I decide I'm moving. Then I remember I'd have to pack all of this, and my rent is not bad. Suddenly next year sounds great."
         },
         {
           "style": "formal",
-          "text": "I have been considering a move, but my current place is perfectly adequate, so I am not convinced it would be worth the cost and the effort."
+          "text": "I have been considering a move for some time. However, my current apartment is perfectly adequate and the rent is reasonable. The prospect of packing is enough to make me postpone it."
         }
       ],
-      "note": "**Part of me wants to** ~ 는 '~하고 싶은 마음도 있다'. **go back and forth** 는 결정 못 하고 오락가락한다는 뜻이고, **put it off** 는 미루다입니다.",
+      "note": "**put it off** 은 미루다입니다. **I keep almost** -ing 은 '~하려다 마는 걸 반복한다', **not bad** 는 '나쁘지 않다 = 괜찮다'예요.",
       "situation": "이사를 갈까 말까 고민 털어놓기",
       "start": null,
       "end": null,

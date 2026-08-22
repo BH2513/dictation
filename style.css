@@ -150,7 +150,9 @@ button.small{min-height:40px;font-size:14px;padding:8px 12px;flex:0 0 auto;}
 .now .w.bad{color:#fff;background:var(--bad);border-radius:5px;padding:0 5px;}
 .now .extra{margin-top:10px;font-size:13px;color:var(--warn);}
 
-textarea#answer-input{
+/* 앱의 모든 입력칸에 걸어 둔다. 예전에는 받아쓰기 화면 것 하나에만 걸려 있어서
+   Daily·카드·편집·백업 입력칸이 브라우저 기본 모양(흰 바탕, 좁은 폭)으로 나왔다 */
+textarea{
   width:100%;
   margin-top:14px;
   background:#0e1116;
@@ -164,7 +166,7 @@ textarea#answer-input{
   resize:vertical;
   outline:none;
 }
-textarea#answer-input:focus{border-color:var(--accent);}
+textarea:focus{border-color:var(--accent);}
 
 .hintline{
   margin-top:12px;font-size:16px;color:var(--accent);

@@ -89,6 +89,7 @@
 
     <!-- 대사가 나온 장면. 저절로 재생하지 않는다 — 눌러야 나온다 -->
     <div id="daily-clip" style="display:none;">
+      <div class="step"><span class="n">1</span>Listen to the scene</div>
       <div class="player-box">
         <div id="daily-player"></div>
         <button class="cover" id="daily-cover" aria-label="Play"><span>▶</span></button>
@@ -96,6 +97,7 @@
       <div class="buttons">
         <button class="primary half" id="clip-scene">Play the scene</button>
         <button class="half" id="clip-one">This line only</button>
+        <button class="half" id="clip-repeat">Repeat</button>
       </div>
       <p class="hint" id="clip-note"></p>
     </div>
@@ -156,6 +158,7 @@
     <div class="buttons">
       <button class="primary" id="play-btn">Play</button>
       <button class="half" id="replay-btn">Replay</button>
+      <button class="half" id="repeat-btn">Repeat</button>
       <button class="half" id="slow-btn">0.75× speed</button>
     </div>
 

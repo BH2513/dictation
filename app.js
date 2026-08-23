@@ -16,6 +16,7 @@
   var playable = [];        // 연습에 쓸 문장의 자리 번호만 모은 것
   var posAt = {};           // 자리 번호 → 몇 번째 연습 문장인지
   var slow = false;
+  var repeat = false;       // 켜 두면 그 문장만 계속 되풀이한다
   var strict = false;       // SPEC 6: 기본은 관대 모드
   var audioOnly = false;    // 화면을 덮고 소리만 듣는다
   var checked = false;
@@ -28,6 +29,7 @@
   var playerReady = false;
   var watchTimer = null;
   var targetEnd = null;
+  var loopFrom = null;      // 되풀이할 때 돌아갈 자리
   var startedAt = 0;
   var wantPlay = null;
 
@@ -109,6 +111,8 @@
     var videoId = parts[1] || '';
 
     stopWatch();
+    // 화면을 옮기면 소리도 멈춘다. 되풀이를 켜 두면 안 그럴 때 계속 들린다
+    if (player && playerReady) { try { player.pauseVideo(); } catch (e) {} }
     clipStopWatch();
     clipCover(true);
     if (clip && clipReady) { try { clip.pauseVideo(); } catch (e) {} }
@@ -1525,6 +1529,8 @@
   var clipStartedAt = 0;
   var clipSource = {};      // 영상 ID → 그 영상의 문장 목록. 한 번만 읽는다
   var clipNow = null;       // 지금 화면에 붙어 있는 장면 {line, scene}
+  var clipRepeat = false;   // 켜 두면 튼 자리를 계속 되풀이한다
+  var clipFrom = null;      // 되풀이할 때 돌아갈 자리
   var clipKey = '';         // 그 장면이 어느 문장의 것인지 (영상ID|자리번호)
 
   function clipStopWatch() {
@@ -1595,6 +1601,7 @@
     clipStopWatch();
     clipStartedAt = (new Date()).getTime();
     clipEnd = to;
+    clipFrom = Math.max(0, from);
     // 순서가 중요하다 — 재생을 먼저 시키고 자리를 옮긴다. 반대로 하면 모바일 사파리가
     // 재생 명령을 씹어서 자리만 옮겨지고 소리가 안 난다
     clip.playVideo();
@@ -1610,6 +1617,16 @@
         return;
       }
       if (t >= clipEnd - STOP_MARGIN) {
+        // 멈췄다 다시 트는 게 아니라 자리만 되돌린다. 멈추면 유튜브가 영상 위에
+        // 공유 단추를 띄우고 가림막이 깜빡여서 흐름이 끊긴다
+        if (clipRepeat && clipFrom !== null) {
+          clipStartedAt = (new Date()).getTime();
+          armed = false;
+          waited = 0;
+          clip.seekTo(clipFrom, true);
+          clip.playVideo();
+          return;
+        }
         clipStopWatch();
         clip.pauseVideo();
       }
@@ -1629,6 +1646,16 @@
     }, 250);
   }
 
+  function toggleClipRepeat() {
+    clipRepeat = !clipRepeat;
+    var b = $('clip-repeat');
+    b.className = clipRepeat ? 'half on' : 'half';
+    b.textContent = clipRepeat ? 'Repeat on' : 'Repeat';
+    dailySay(clipRepeat
+      ? 'Repeat on. What you play goes round and round until you turn this off.'
+      : 'Repeat off. It stops at the end of this round.');
+  }
+
   /* 앞뒤로 한 마디씩 붙여 장면을 만든다. 그 대사만 틀면 무슨 상황인지 알 수 없다.
      "Yeah." 같은 토막은 건너뛰고 말이 되는 줄까지 간다 — 0.3초짜리 앞 줄은 장면이 아니다. */
   function sceneAround(list, i) {
@@ -1638,12 +1665,25 @@
     return { from: from, to: to };
   }
 
+  /* 영상에 그 자리가 있는 문장인지. 지어낸 문장에는 없다 */
+  function hasScene(s) {
+    return !!(s && s.from && s.from.videoId && s.start !== null && s.start !== undefined);
+  }
+
+  /* 몇 번째로 하는 것인지 붙인다. 순서가 보여야 흐름대로 하게 된다 */
+  function stepRow(n, text, cls) {
+    var d = el('div', cls || 'step');
+    d.appendChild(el('span', 'n', String(n)));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+
   /* 이 문장에 붙일 장면을 준비한다. 대사가 아니거나 온 곳을 모르면 통째로 감춘다 */
   function setupClip(pid, s) {
     var box = $('daily-clip');
     if (!box) return;
     var src = s && s.from;
-    var ok = src && src.videoId && s.start !== null && s.start !== undefined;
+    var ok = hasScene(s);
     var key = ok ? (src.videoId + '|' + src.i) : '';
 
     // 같은 문장을 다시 그린 것뿐이면 손대지 않는다. 정답을 펴는 순간
@@ -1725,15 +1765,21 @@
 
     if (s.situation) head.appendChild(el('div', 'hint', s.situation));
 
-    // 장면은 한국어보다 위에 둔다. 보고 나서 옮기는 것이 순서다
+    // 장면은 한국어보다 위에 둔다. 보고 나서 옮기는 것이 순서다.
+    // 장면 칸이 있으면 그것이 1번이다 (번호는 index.html 에 적혀 있다)
     setupClip(pid, s);
+    var step = hasScene(s) ? 1 : 0;
 
+    step++;
+    box.appendChild(stepRow(step, dailyKind === 'shows'
+      ? 'Check the meaning in Korean' : 'Read the Korean'));
     box.appendChild(el('div', 'kotask', s.ko || ''));
 
     /* 말하기 — 못 하는 기기에서는 이 줄을 통째로 안 만든다 (SPEC 9) */
     if (window.Recorder && Recorder.canRecord()) {
       var speak = el('div', 'speak on');
-      speak.appendChild(el('div', 'rowlabel', 'Say it in English'));
+      step++;
+      speak.appendChild(stepRow(step, 'Say it in English', 'rowlabel'));
       var sbtn = el('div', 'buttons');
 
       var rec = el('button', dailyRecording ? 'half rec-on' : 'half',
@@ -1781,8 +1827,10 @@
 
        다만 드라마 대사는 배우가 실제로 한 말이라 정답이 하나다. 그쪽에서는 쳐 보고
        채점까지 한다 (운영자 결정). */
-    if (dailyKind === 'shows') box.appendChild(dailyWriteBlock(pid, s));
+    if (dailyKind === 'shows') { step++; box.appendChild(dailyWriteBlock(pid, s, step)); }
 
+    step++;
+    box.appendChild(stepRow(step, 'Check the answer'));
     var row = el('div', 'buttons');
     var rb = el('button', 'primary', dailyShown ? 'Answer shown' : 'Show answer');
     rb.disabled = dailyShown;
@@ -1824,9 +1872,9 @@
 
   /* 영어로 쳐 보는 칸. 대사 갈래에서만 그린다.
      Check 를 누르면 받아쓰기 화면과 같은 방식으로 정답이 나오고 틀린 낱말만 칠해진다. */
-  function dailyWriteBlock(pid, s) {
+  function dailyWriteBlock(pid, s, step) {
     var write = el('div', 'speak');
-    write.appendChild(el('div', 'rowlabel', 'Write it in English'));
+    write.appendChild(stepRow(step, 'Write it in English', 'rowlabel'));
 
     var ta = document.createElement('textarea');
     ta.id = 'daily-input';
@@ -2790,6 +2838,7 @@
     targetEnd = end;
     var armed = false;
     var waited = 0;
+    var said = false;
     watchTimer = setInterval(function () {
       if (!player || typeof player.getCurrentTime !== 'function') return;
       var t = player.getCurrentTime();
@@ -2804,6 +2853,17 @@
       }
 
       if (t >= targetEnd - STOP_MARGIN) {
+        // 되풀이는 멈췄다 다시 트는 게 아니라 자리만 되돌린다. 멈추면 유튜브가
+        // 영상 위에 공유 단추를 띄우고, 가림막이 깜빡이면서 흐름이 끊긴다.
+        if (repeat && loopFrom !== null) {
+          startedAt = (new Date()).getTime();   // 자리를 옮기는 동안의 멈춤을 무시하게
+          armed = false;
+          waited = 0;
+          player.seekTo(loopFrom, true);
+          player.playVideo();
+          if (!said) { said = true; say('Repeating. Press Repeat again to stop after this round.'); }
+          return;
+        }
         stopWatch();
         player.pauseVideo();
         say('Done. Replay it, or go to the next sentence.');
@@ -2943,6 +3003,7 @@
     var s = list[current];
     var from = Math.max(0, s.start - lead);
     stopWatch();
+    loopFrom = from;
     startedAt = (new Date()).getTime();
 
     // 순서가 중요하다. 모바일 사파리는 화면을 누른 그 흐름에서 재생을 시작해야 받아 준다.
@@ -2953,7 +3014,9 @@
 
     startWatch(s.end + TAIL);
     nudge(0);
-    say('Playing sentence ' + (current + 1) + (slow ? ' at 0.75\u00d7' : ''));
+    var pos = posAt[current];
+    say('Playing sentence ' + ((pos === undefined ? current : pos) + 1)
+      + (slow ? ' at 0.75\u00d7' : '') + (repeat ? ' \u00b7 repeating' : ''));
   }
 
   function nudge(tries) {
@@ -2972,6 +3035,17 @@
   function setLead(value) {
     lead = Math.round(value * 10) / 10;
     $('lead-value').textContent = lead.toFixed(1) + 's';
+  }
+
+  /* 그 문장만 계속 되풀이한다. 귀에 붙을 때까지 듣는 연습이다 */
+  function toggleRepeat() {
+    repeat = !repeat;
+    var b = $('repeat-btn');
+    b.className = repeat ? 'half on' : 'half';
+    b.textContent = repeat ? 'Repeat on' : 'Repeat';
+    say(repeat
+      ? 'Repeat on. Press Play and the sentence goes round and round until you turn this off.'
+      : 'Repeat off. It stops at the end of this round.');
   }
 
   function toggleSlow() {
@@ -3036,6 +3110,8 @@
     $('play-btn').onclick = playCurrent;
     $('replay-btn').onclick = playCurrent;
     $('slow-btn').onclick = toggleSlow;
+    $('repeat-btn').onclick = toggleRepeat;
+    $('clip-repeat').onclick = toggleClipRepeat;
     $('prev-btn').onclick = function () { stepSentence(-1); };
     $('next-btn').onclick = function () { stepSentence(1); };
     $('change-profile').onclick = function () { go('#/'); };

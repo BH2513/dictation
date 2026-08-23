@@ -13,6 +13,14 @@ try {
   if (!pids.length) throw new Error('data/profiles.json 에 프로필이 없습니다.');
   var pid = pids[0];
 
+  // 어느 영상이 얼마나 내놓는지 로그에 남긴다. 0 줄이면 그 자막이 대사 연습에 못 쓰는 것이다
+  var counts = shows.tally(pid, cfg);
+  for (var title in counts) {
+    if (counts.hasOwnProperty(title)) {
+      process.stderr.write('  ' + String(counts[title]).padStart(4) + '줄  ' + title + '\n');
+    }
+  }
+
   var all = shows.candidates(pid, cfg);
   if (all.length < cfg.count) {
     throw new Error('등록한 영상에서 쓸 만한 대사가 ' + all.length + '줄뿐입니다. '

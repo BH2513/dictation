@@ -2129,21 +2129,38 @@
     }, 150);
   }
 
+  /* 녹음이 빈손으로 돌아왔을 때 왜 그런지 사람 말로 적는다 (SPEC 9) */
+  function recordNote(note) {
+    if (note === 'mic-taken') {
+      return 'This phone gives the microphone to one thing at a time, and speech-to-text took it. '
+        + 'Writing down what you say is off now — press Record again and the sound will be kept.';
+    }
+    if (note === 'too-short') {
+      return 'That was too short to keep. Press Record, say the sentence, then press Stop.';
+    }
+    return 'Nothing was recorded. Check that the microphone is allowed, then try again.';
+  }
+
   function toggleDailyRecord(pid) {
     if (dailyRecording) {
       dailyRecording = false;
-      Recorder.stop(function (url, heard) {
-        var b = $('daily-rec');
-        if (b) { b.className = 'half'; b.textContent = 'Record'; }
+      // 단추는 답을 기다리지 않고 **바로** 되돌린다. 기다렸다가 답이 안 오면
+      // 'Stop' 인 채로 굳어서 눌러도 아무 일이 없는 것처럼 보인다 — 실제로 겪었다
+      var stopBtn = $('daily-rec');
+      if (stopBtn) { stopBtn.className = 'half'; stopBtn.textContent = 'Record'; }
+      dailySay('Saving what you said\u2026');
+      Recorder.stop(function (url, heard, note) {
         var au = $('daily-audio'), mb = $('daily-mine');
         if (url && au) { au.src = url; if (mb) mb.disabled = false; }
         if (heard) {
           dailyHeard = heard;
           var hb = $('daily-heard');
           if (hb) { clear(hb); hb.appendChild(document.createTextNode('You said: ' + heard)); }
-          dailySay('Now press Show answer and compare.');
-        } else if (!Recorder.canTranscribe()) {
-          dailySay('Recorded. Play it back, then press Show answer and compare.');
+        }
+        if (!url) { dailySay(recordNote(note)); return; }
+        if (heard) dailySay('Now write it down, or press Show answer and compare.');
+        else if (!Recorder.canTranscribe()) {
+          dailySay('Recorded. Play it back, then compare it with the answer.');
         } else {
           dailySay('Recorded, but nothing was picked up. Play it back, or record again.');
         }
@@ -2789,13 +2806,14 @@
     recording = false;
     $('rec-btn').className = 'half';
     $('rec-btn').textContent = 'Record';
-    Recorder.stop(function (url, heard) {
+    say('Saving what you said\u2026');
+    Recorder.stop(function (url, heard, note) {
       if (url) {
         $('mine').src = url;
         $('mine-btn').disabled = false;
       }
       showHeard(heard);
-      say(url ? 'Recorded. Play it back, or record again.' : 'Nothing was recorded.');
+      say(url ? 'Recorded. Play it back, or record again.' : recordNote(note));
     });
   }
 

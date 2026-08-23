@@ -11,15 +11,33 @@
    fetch 와 Promise 를 쓰지 않는다 — 구형 iOS 사파리에서 그대로 돌아야 한다. */
 window.TalkUI = (function () {
 
-  var ctx = null;          // app.js 가 넘겨 주는 것 (go, speak …)
+  var ctx = null;          // app.js 가 넘겨 주는 것 (go, show)
   var pid = '';
   var view = 'topics';     // topics | chat | summary
   var talk = null;         // 지금 대화 {id, topic, turns, summary}
   var brain = null;        // 지시문 재료 {topic, misses, recent}
   var company = '';
   var key = '';
-  var busy = false;
-  var recording = false;
+
+  /* **말하면 알아서 도는 고리** (2026-08-26 운영자 지적).
+     처음에는 `Say` 단추를 눌러 말하고 `Send` 를 눌러 보냈는데, 그러면 대화가 아니라
+     서식 채우기가 된다. 이제 단추 없이 돈다:
+
+       듣는다 → 말이 멎으면 저절로 보낸다 → 답을 소리로 읽는다 → 다시 듣는다
+
+     **녹음기를 켜지 않는다.** 대화는 소리를 저장하지 않으므로 음성인식만 있으면 되고,
+     그래야 아이폰에서 녹음기와 음성인식이 마이크를 다투는 일이 아예 없다
+     (`record.js` 에 적어 둔 그 문제다). 그래서 여기서는 `Recorder` 를 안 쓴다. */
+  var mode = 'idle';       // idle | listening | thinking | speaking
+  var hear = null;         // 음성인식기
+  var hearGen = 0;         // 늦게 오는 알림을 버리는 표
+  var quiet = null;        // 말이 멎었는지 재는 시계
+  var saidFinal = '';      // 받아적힌 것 (확정)
+  var saidNow = '';        // 받아적히는 중
+  var typing = false;      // 타이핑 칸을 펴 뒀나
+  var micNote = '';        // 마이크가 안 될 때 남기는 말
+
+  var QUIET_MS = 1500;     // 이만큼 조용하면 말이 끝난 것으로 본다
 
   function $(id) { return document.getElementById(id); }
 
@@ -52,6 +70,121 @@ window.TalkUI = (function () {
     };
     x.onerror = function () { fail(); };
     x.send();
+  }
+
+  /* ---------------------------------------------------------------- 듣기와 말하기 */
+
+  function canHear() {
+    return !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+  }
+
+  function canSpeak() {
+    return !!(window.speechSynthesis && window.SpeechSynthesisUtterance);
+  }
+
+  function stopQuiet() { if (quiet) { clearTimeout(quiet); quiet = null; } }
+
+  function stopHearing() {
+    hearGen++;
+    stopQuiet();
+    if (hear) { try { hear.abort(); } catch (e) { try { hear.stop(); } catch (e2) {} } }
+    hear = null;
+  }
+
+  /* 듣기 시작. 사파리는 continuous 를 흘려버리고 저 혼자 끝내는 일이 잦아서,
+     끝났다는 알림이 오면 **아직 듣는 중이면 다시 켠다.** */
+  function startHearing() {
+    if (!canHear()) { micNote = 'no-mic'; return; }
+    stopHearing();
+    var Ctor = window.SpeechRecognition || window.webkitSpeechRecognition;
+    var mine = ++hearGen;
+    var r;
+    try { r = new Ctor(); } catch (e) { micNote = 'no-mic'; paint(); return; }
+
+    r.lang = 'en-US';
+    r.continuous = true;
+    r.interimResults = true;
+    r.maxAlternatives = 1;
+
+    r.onresult = function (e) {
+      if (mine !== hearGen) return;
+      var interim = '';
+      for (var i = e.resultIndex; i < e.results.length; i++) {
+        var t = e.results[i][0].transcript;
+        if (e.results[i].isFinal) saidFinal += (saidFinal ? ' ' : '') + t.replace(/^\s+|\s+$/g, '');
+        else interim += t;
+      }
+      saidNow = interim.replace(/^\s+|\s+$/g, '');
+      paintLive();
+      // 말이 이어지는 동안에는 계속 미룬다. 멎어야 보낸다
+      stopQuiet();
+      quiet = setTimeout(function () { if (mine === hearGen) sendHeard(); }, QUIET_MS);
+    };
+
+    r.onerror = function (e) {
+      if (mine !== hearGen) return;
+      var what = e && e.error;
+      if (what === 'no-speech' || what === 'aborted') return;   // 그냥 조용한 것뿐이다
+      if (what === 'not-allowed' || what === 'service-not-allowed') {
+        micNote = 'denied';
+        mode = 'idle';
+        stopHearing();
+        paint();
+        return;
+      }
+      micNote = 'failed';
+    };
+
+    r.onend = function () {
+      if (mine !== hearGen) return;
+      // 저 혼자 끝났다. 아직 들을 차례면 다시 켠다
+      if (mode === 'listening') { try { r.start(); } catch (e) { stopHearing(); mode = 'idle'; paint(); } }
+    };
+
+    try { r.start(); }
+    catch (e) { micNote = 'failed'; mode = 'idle'; paint(); return; }
+    hear = r;
+    micNote = '';
+  }
+
+  function listen() {
+    if (!canHear()) return;
+    saidFinal = '';
+    saidNow = '';
+    mode = 'listening';
+    startHearing();
+    paint();
+  }
+
+  /* 답을 소리로 읽고, 다 읽으면 다시 듣는다.
+     **읽는 동안에는 마이크를 닫는다** — 안 그러면 제 목소리를 받아적는다. */
+  function speakThenListen(text) {
+    if (!canSpeak()) { if (canHear()) listen(); else { mode = 'idle'; paint(); } return; }
+    mode = 'speaking';
+    paint();
+    var done = false;
+    function after() {
+      if (done) return;
+      done = true;
+      if (mode !== 'speaking') return;      // 사람이 그새 멈췄다
+      if (canHear()) listen(); else { mode = 'idle'; paint(); }
+    }
+    try {
+      window.speechSynthesis.cancel();
+      var u = new window.SpeechSynthesisUtterance(text);
+      u.lang = 'en-US';
+      u.onend = after;
+      u.onerror = after;
+      window.speechSynthesis.speak(u);
+      // 다 읽었다는 알림이 안 오는 기기가 있다. 글자 길이로 어림잡아 한 번 더 받는다
+      setTimeout(after, Math.min(30000, 2000 + text.length * 70));
+    } catch (e) { after(); }
+  }
+
+  function hush() {
+    stopHearing();
+    if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
+    if (mode !== 'thinking') mode = 'idle';
   }
 
   /* ---------------------------------------------------------------- 들어오기 */
@@ -201,68 +334,179 @@ window.TalkUI = (function () {
     });
   }
 
-  /* ---------------------------------------------------------------- 대화 화면 */
+  /* ---------------------------------------------------------------- 대화 화면
+
+     단추로 굴리지 않는다. 말하면 듣고, 멎으면 보내고, 답을 읽고, 다시 듣는다.
+     사람이 누를 것은 **멈추기와 끝내기 둘뿐**이다. */
 
   function drawChat() {
     var box = $('talk-body');
     clear(box);
 
-    box.appendChild(el('div', 'chartlabel', 'Talking about: ' + talk.topic));
+    var head = el('div', 'talkhead');
+    head.appendChild(el('span', 'chartlabel', talk.topic));
+    var n = fixedCount();
+    if (n) head.appendChild(el('span', 'fixcount', n + (n === 1 ? ' fix' : ' fixes')));
+    box.appendChild(head);
 
-    for (var i = 0; i < talk.turns.length; i++) box.appendChild(turnBlock(talk.turns[i], i));
+    var log = el('div', null);
+    log.id = 'talk-log';
+    for (var i = 0; i < talk.turns.length; i++) log.appendChild(turnBlock(talk.turns[i], i));
+    box.appendChild(log);
 
-    if (!talk.turns.length) {
-      box.appendChild(el('div', 'notice',
-        'Say something to start. Your sentence gets fixed first, then it replies.'));
-    }
+    var live = el('div', null);
+    live.id = 'talk-live';
+    box.appendChild(live);
 
-    var wrap = el('div', 'talkinput');
-    var ta = el('textarea', null);
-    ta.id = 'talk-say';
-    ta.rows = 2;
-    ta.placeholder = 'Type what you want to say, or press Say and talk';
-    wrap.appendChild(ta);
-
-    var row = el('div', 'buttons');
-    if (window.Recorder && Recorder.canRecord()) {
-      var rec = el('button', 'half', recording ? 'Stop' : 'Say');
-      rec.id = 'talk-rec';
-      rec.onclick = function () { toggleRecord(); };
-      row.appendChild(rec);
-    }
-    var sendBtn = el('button', 'primary half', busy ? 'Waiting…' : 'Send');
-    sendBtn.disabled = busy;
-    sendBtn.onclick = function () { sendTurn(); };
-    row.appendChild(sendBtn);
-    wrap.appendChild(row);
-
-    var row2 = el('div', 'buttons');
-    var endBtn = el('button', 'half', 'End and get a report');
-    endBtn.disabled = busy || !talk.turns.length;
-    endBtn.onclick = function () { endTalk(); };
-    row2.appendChild(endBtn);
-    wrap.appendChild(row2);
+    box.appendChild(controls());
 
     var msg = el('div', null);
     msg.id = 'talk-msg';
-    wrap.appendChild(msg);
+    box.appendChild(msg);
 
-    box.appendChild(wrap);
-    window.scrollTo(0, document.body.scrollHeight);
+    paintLive();
+    if (micNote) talkMsg(micText(), true);
+    scrollDown();
+  }
+
+  /* 화면을 통째로 다시 그리지 않고 살아 있는 부분만 손본다 —
+     듣는 중에 다시 그리면 글자가 깜빡이고 타이핑 칸의 커서가 튄다 */
+  function paint() {
+    if (view !== 'chat' || !$('talk-body')) return;
+    var c = $('talk-controls');
+    if (!c) { drawChat(); return; }
+    c.parentNode.replaceChild(controls(), c);
+    paintLive();
+  }
+
+  function paintLive() {
+    var n = $('talk-live');
+    if (!n) return;
+    clear(n);
+    var text = (saidFinal + ' ' + saidNow).replace(/^\s+|\s+$/g, '');
+    if (mode === 'thinking') { n.appendChild(el('div', 'live said', text || '…')); scrollDown(); return; }
+    if (mode !== 'listening') return;
+    n.appendChild(el('div', 'live' + (text ? ' said' : ' waiting'),
+      text || 'Listening — just start talking.'));
+    scrollDown();
+  }
+
+  function scrollDown() {
+    try { window.scrollTo(0, document.body.scrollHeight); } catch (e) {}
+  }
+
+  function fixedCount() {
+    var n = 0;
+    for (var i = 0; i < talk.turns.length; i++) if (!nothingToFix(talk.turns[i])) n++;
+    return n;
+  }
+
+  function controls() {
+    var wrap = el('div', 'talkctl');
+    wrap.id = 'talk-controls';
+
+    var row = el('div', 'buttons');
+    var big;
+    if (mode === 'listening') {
+      big = el('button', 'primary listening', 'Listening — tap to pause');
+      big.onclick = function () { hush(); paint(); };
+    } else if (mode === 'thinking') {
+      big = el('button', 'primary', 'Thinking…');
+      big.disabled = true;
+    } else if (mode === 'speaking') {
+      big = el('button', 'primary', 'Speaking — tap to skip');
+      big.onclick = function () {
+        if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
+        if (canHear()) listen(); else { mode = 'idle'; paint(); }
+      };
+    } else {
+      big = el('button', 'primary', canHear()
+        ? (talk.turns.length ? 'Keep talking' : 'Start talking') : 'Type instead');
+      big.onclick = function () { if (canHear()) listen(); else { typing = true; paint(); } };
+    }
+    row.appendChild(big);
+    wrap.appendChild(row);
+
+    // 타이핑은 남겨 둔다 — 조용한 데서 하거나 마이크가 안 될 때 쓴다
+    if (typing || !canHear()) {
+      var ta = el('textarea', null);
+      ta.id = 'talk-say';
+      ta.rows = 2;
+      ta.placeholder = 'Type it instead';
+      wrap.appendChild(ta);
+      var row2 = el('div', 'buttons');
+      var sendBtn = el('button', 'half', 'Send');
+      sendBtn.disabled = (mode === 'thinking');
+      sendBtn.onclick = function () {
+        var v = String(ta.value || '').replace(/^\s+|\s+$/g, '');
+        if (!v) { talkMsg('Type something first.', true); return; }
+        hush();
+        ask(v);
+      };
+      row2.appendChild(sendBtn);
+      var endBtn = el('button', 'half', 'End and get a report');
+      endBtn.disabled = (mode === 'thinking') || !talk.turns.length;
+      endBtn.onclick = function () { endTalk(); };
+      row2.appendChild(endBtn);
+      wrap.appendChild(row2);
+    } else {
+      var row3 = el('div', 'buttons');
+      var typeBtn = el('button', 'half', 'Type instead');
+      typeBtn.onclick = function () { typing = true; hush(); paint(); };
+      row3.appendChild(typeBtn);
+      var endBtn2 = el('button', 'half', 'End and get a report');
+      endBtn2.disabled = (mode === 'thinking') || !talk.turns.length;
+      endBtn2.onclick = function () { endTalk(); };
+      row3.appendChild(endBtn2);
+      wrap.appendChild(row3);
+    }
+    return wrap;
+  }
+
+  function micText() {
+    if (micNote === 'denied') return 'The microphone is blocked for this site. '
+      + 'Allow it in the browser settings, or type instead.';
+    if (micNote === 'no-mic') return 'This browser cannot listen, so type instead.';
+    return 'The microphone stopped. Tap to start again, or type instead.';
+  }
+
+  /* 고칠 것이 없었나. 있으면 크게, 없으면 작게 그린다 —
+     할 말이 없는데 큰 상자가 떠 있으면 기계처럼 느껴진다 (2026-08-26 운영자 지적) */
+  function nothingToFix(turn) {
+    function flat(t) { return String(t || '').replace(/[^a-z0-9 ]/gi, '').replace(/\s+/g, ' ')
+      .toLowerCase().replace(/^ | $/g, ''); }
+    return flat(turn.corrected) === flat(turn.said);
   }
 
   function turnBlock(turn, i) {
     var box = el('div', 'turn');
 
-    box.appendChild(el('div', 'turnlabel', 'You said'));
     box.appendChild(el('div', 'said', turn.said));
 
-    // **교정 칸은 따로 그린다.** 안 채워지면 빈 박스가 보인다 — 화면이 한 번 더 막는 자리다
-    var fix = el('div', 'fixbox');
-    var same = String(turn.corrected || '').replace(/\s+/g, ' ').toLowerCase()
-             === String(turn.said || '').replace(/\s+/g, ' ').toLowerCase();
-    fix.appendChild(el('div', 'turnlabel', same ? 'Nothing to fix' : 'Fixed'));
-    fix.appendChild(el('div', 'fixed', turn.corrected || ''));
+    if (nothingToFix(turn)) {
+      // 고칠 것이 없으면 한 줄로. 눌러야 더 자연스러운 말이 펴진다
+      var ok = el('button', 'okline', '\u2713 nothing to fix');
+      ok.onclick = function () {
+        var open = box.querySelector('.fixbox');
+        if (open) { box.removeChild(open); return; }
+        box.insertBefore(fixBox(turn, i, true), ok.nextSibling);
+      };
+      box.appendChild(ok);
+    } else {
+      box.appendChild(fixBox(turn, i, false));
+    }
+
+    var rep = el('div', 'reply', turn.reply);
+    box.appendChild(rep);
+    return box;
+  }
+
+  function fixBox(turn, i, quietly) {
+    var fix = el('div', 'fixbox' + (quietly ? ' soft' : ''));
+    if (!quietly) {
+      fix.appendChild(el('div', 'turnlabel', 'Fixed'));
+      fix.appendChild(el('div', 'fixed', turn.corrected || ''));
+    }
     if (turn.natural && turn.natural !== turn.corrected) {
       fix.appendChild(el('div', 'turnlabel', 'More natural'));
       var nat = el('div', 'natural');
@@ -277,12 +521,7 @@ window.TalkUI = (function () {
     var save = el('button', 'small', 'Save card');
     save.onclick = function () { saveCard(i, save); };
     fix.appendChild(save);
-    box.appendChild(fix);
-
-    box.appendChild(el('div', 'turnlabel', 'Reply'));
-    var rep = el('div', 'reply', turn.reply);
-    box.appendChild(rep);
-    return box;
+    return fix;
   }
 
   /* ---------------------------------------------------------------- 보내기 */
@@ -295,90 +534,71 @@ window.TalkUI = (function () {
     n.appendChild(el('div', 'notice' + (bad ? ' error' : ''), text));
   }
 
-  function sendTurn() {
-    if (busy) return;
-    var ta = $('talk-say');
-    var said = String(ta && ta.value || '').replace(/^\s+|\s+$/g, '');
-    if (!said) { talkMsg('Type or say something first.', true); return; }
+  /* 말이 멎었다. 받아적힌 것을 보낸다 */
+  function sendHeard() {
+    stopQuiet();
+    var said = (saidFinal + ' ' + saidNow).replace(/\s+/g, ' ').replace(/^ | $/g, '');
+    if (!said) return;                       // 아무 말도 안 했다. 계속 듣는다
+    stopHearing();
+    ask(said);
+  }
 
-    busy = true;
-    drawChat();
-    talkMsg('Thinking…');
+  function ask(said) {
+    if (mode === 'thinking') return;
+    mode = 'thinking';
+    saidFinal = said;
+    saidNow = '';
+    paint();
+    talkMsg('');
+
+    var ta = $('talk-say');
+    if (ta) ta.value = '';
 
     Talk.askTurn(company, key, brain, talk.turns, said, function (turn) {
-      busy = false;
       turn.said = said;
       talk.turns.push(turn);
       Store.saveTalk(talk);
+      saidFinal = '';
       drawChat();
-      if (ctx.speak) ctx.speak(turn.reply);
+      speakThenListen(turn.reply);
     }, function (reason) {
-      busy = false;
-      // 모양이 틀리면 조용히 한 번 다시 청한다. 두 번 틀리면 그 턴만 건너뛰고 남긴다
+      // 모양이 틀리면 조용히 한 번 다시 청한다. 두 번 틀리면 그 턴만 건너뛴다
       if (reason === 'shape') {
-        busy = true;
-        drawChat();
-        talkMsg('That answer came back in the wrong shape. Trying once more…');
+        talkMsg('That came back in the wrong shape. Trying once more\u2026');
         Talk.askTurn(company, key, brain, talk.turns, said, function (turn2) {
-          busy = false;
           turn2.said = said;
           talk.turns.push(turn2);
           Store.saveTalk(talk);
+          saidFinal = '';
           drawChat();
-          if (ctx.speak) ctx.speak(turn2.reply);
-        }, function () {
-          busy = false;
-          drawChat();
-          talkMsg('That answer came back wrong twice. Skipping this one — say it again '
-            + 'or move on.', true);
-          if (ta) ta.value = said;
-        });
+          speakThenListen(turn2.reply);
+        }, function () { stumble(said, 'shape2'); });
         return;
       }
-      drawChat();
-      talkMsg(reasonText(reason), true);
-      var again = $('talk-say');
-      if (again) again.value = said;      // 쓴 것을 지우지 않는다
+      stumble(said, reason);
     });
+  }
+
+  /* 넘어졌다. **말한 것을 지우지 않는다** — 타이핑 칸에 넣어 두고 다시 보낼 수 있게 한다 */
+  function stumble(said, reason) {
+    mode = 'idle';
+    typing = true;
+    drawChat();
+    var ta = $('talk-say');
+    if (ta) ta.value = said;
+    talkMsg(reasonText(reason), true);
   }
 
   /* 조용히 실패하지 않는다 (SPEC 9). ROADMAP 2단계의 실패 표 그대로 */
   function reasonText(reason) {
-    if (reason === 'offline') return 'The connection dropped. Nothing here is lost — '
-      + 'press Send again when you are back.';
+    if (reason === 'offline') return 'The connection dropped. What you said is still here — '
+      + 'press Send when you are back.';
     if (reason === 'key') return 'The key was refused. Put it in again under Settings.';
     if (reason === 'limit') return 'That is all the account will spend for now.';
-    if (reason === 'timeout') return 'No answer came back. Try sending it again.';
+    if (reason === 'timeout') return 'No answer came back. Press Send to try again.';
     if (reason === 'company') return 'The company is having trouble. Try again in a moment.';
-    return 'Something went wrong. Try sending it again.';
-  }
-
-  /* ---------------------------------------------------------------- 녹음 */
-
-  function toggleRecord() {
-    if (!window.Recorder) return;
-    var btn = $('talk-rec');
-    if (recording) {
-      // 화면 쪽은 답을 기다리지 않고 단추를 먼저 되돌린다 (record.js 의 교훈)
-      recording = false;
-      if (btn) btn.textContent = 'Say';
-      Recorder.stop(function () {
-        var heard = Recorder.lastHeard && Recorder.lastHeard();
-        var ta = $('talk-say');
-        if (heard && ta) ta.value = heard;
-        else if (ta && !ta.value) talkMsg('Nothing was picked up. Type it instead.', true);
-      });
-      return;
-    }
-    Recorder.start(function () {
-      recording = true;
-      if (btn) btn.textContent = 'Stop';
-      talkMsg('');
-    }, function () {
-      recording = false;
-      if (btn) btn.textContent = 'Say';
-      talkMsg('The microphone would not start. Type it instead.', true);
-    });
+    if (reason === 'shape2') return 'That came back wrong twice. Send it again, or move on.';
+    return 'Something went wrong. Press Send to try again.';
   }
 
   /* ---------------------------------------------------------------- 문장카드
@@ -395,20 +615,21 @@ window.TalkUI = (function () {
   /* ---------------------------------------------------------------- 끝내기와 요약 */
 
   function endTalk() {
-    if (busy || !talk.turns.length) return;
-    busy = true;
+    if (mode === 'thinking' || !talk.turns.length) return;
+    hush();                                   // 마이크와 목소리를 먼저 끈다
+    mode = 'thinking';
     drawChat();
-    talkMsg('Looking back over the whole thing…');
+    talkMsg('Looking back over the whole thing\u2026');
 
     Talk.askSummary(company, key, brain, talk.turns, function (sum) {
-      busy = false;
+      mode = 'idle';
       talk.summary = sum;
       talk.endedAt = Store.today();
       Store.saveTalk(talk);
       view = 'summary';
       drawSummary();
     }, function (reason) {
-      busy = false;
+      mode = 'idle';
       drawChat();
       talkMsg('Could not make the report. ' + reasonText(reason)
         + ' The conversation is still here.', true);
@@ -472,9 +693,7 @@ window.TalkUI = (function () {
   return {
     attach: function (c) { ctx = c; },
     open: open,
-    /* 화면을 옮기면 녹음은 버린다 (SPEC 2) */
-    leave: function () {
-      if (recording && window.Recorder) { Recorder.discard(); recording = false; }
-    }
+    /* 화면을 옮기면 마이크와 목소리를 끈다. 안 그러면 다른 화면에서 계속 들린다 */
+    leave: function () { hush(); }
   };
 })();

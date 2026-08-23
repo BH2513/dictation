@@ -9,10 +9,10 @@
 <meta name="theme-color" content="#0f1115">
 <title>Dictation</title>
 <!-- 데스크탑·폰에 앱으로 설치하기 위한 것 -->
-<link rel="manifest" href="manifest.json?v=2026-08-25d">
+<link rel="manifest" href="manifest.json?v=2026-08-25e">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=2026-08-25d">
+<link rel="stylesheet" href="style.css?v=2026-08-25e">
 </head>
 <body>
 
@@ -32,6 +32,7 @@
       <button class="small" id="daily-btn">Daily</button>
       <button class="small" id="cards-btn">Cards</button>
       <button class="small" id="report-btn">Report</button>
+      <button class="small" id="talk-btn">Talk</button>
       <button class="small" id="settings-btn">Settings</button>
       <button class="small" id="change-profile">Switch</button>
     </div>
@@ -132,6 +133,17 @@
       <textarea id="paste-box" rows="4" placeholder="Paste the copied text here, then press Paste a copy"
         style="display:none"></textarea>
     </div>
+  </div>
+</div>
+
+<!-- 대화 연습 (ROADMAP 2단계) -->
+<div class="screen" id="screen-talk">
+  <div class="wrap">
+    <div class="top">
+      <button class="small" id="talk-back">← Library</button>
+      <h1>Talk</h1>
+    </div>
+    <div id="talk-body"></div>
   </div>
 </div>
 
@@ -250,9 +262,10 @@
   </div>
 </div>
 
-<script src="store.js?v=2026-08-25d"></script>
-<script src="record.js?v=2026-08-25d"></script>
-<script src="talk.js?v=2026-08-25d"></script>
-<script src="app.js?v=2026-08-25d"></script>
+<script src="store.js?v=2026-08-25e"></script>
+<script src="record.js?v=2026-08-25e"></script>
+<script src="talk.js?v=2026-08-25e"></script>
+<script src="talkui.js?v=2026-08-25e"></script>
+<script src="app.js?v=2026-08-25e"></script>
 </body>
 </html>

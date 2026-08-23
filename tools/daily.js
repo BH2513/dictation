@@ -68,10 +68,10 @@ function recentSituations(pid, days, sets) {
 
   // 묶음 — 지금은 이쪽에 쌓인다. 이걸 안 읽어서 한 번에 만든 세 묶음에
   // 같은 상황이 두 번씩 나왔다. 하루에 여러 묶음을 만들므로 날짜가 아니라 개수로 센다
-  var rows = listSets(pid);
-  var from = Math.max(0, rows.length - (sets || 4));
-  for (var r = from; r < rows.length; r++) {
-    var one = readJSON(path.join(DAILY, pid, 'sets', rows[r].id + '.json'), null);
+  var ids = allSetIds(pid);
+  var from = Math.max(0, ids.length - (sets || 4));
+  for (var r = from; r < ids.length; r++) {
+    var one = readJSON(path.join(DAILY, pid, 'sets', ids[r] + '.json'), null);
     if (!one || !one.sentences) continue;
     for (var t = 0; t < one.sentences.length; t++) {
       if (one.sentences[t].situation) used[one.sentences[t].situation] = true;
@@ -84,11 +84,11 @@ function recentSituations(pid, days, sets) {
 /* 최근 묶음에 나온 영어. 지시문에 넣어 같은 내용을 다시 만들지 않게 한다 —
    상황이 달라도 "팔이 안 올라가서 머리를 못 감았다" 가 두 번 나온 적이 있다. */
 function recentTexts(pid, sets) {
-  var rows = listSets(pid);
+  var ids = allSetIds(pid);
   var out = [];
-  var from = Math.max(0, rows.length - (sets || 4));
-  for (var r = from; r < rows.length; r++) {
-    var one = readJSON(path.join(DAILY, pid, 'sets', rows[r].id + '.json'), null);
+  var from = Math.max(0, ids.length - (sets || 4));
+  for (var r = from; r < ids.length; r++) {
+    var one = readJSON(path.join(DAILY, pid, 'sets', ids[r] + '.json'), null);
     if (!one || !one.sentences) continue;
     for (var t = 0; t < one.sentences.length; t++) {
       if (one.sentences[t].text) out.push(String(one.sentences[t].text));
@@ -910,11 +910,28 @@ function setsFile(pid) { return path.join(DAILY, pid, 'sets.json'); }
 
 function listSets(pid) { return readJSON(setsFile(pid), []); }
 
+/* 저장소에 실제로 있는 묶음 번호. 번호순.
+
+   sets.json 은 **앱이 나눠 줄 목록**이라 손으로 줄일 수 있다 (옛 묶음을 그만 내보낼 때).
+   그런데 번호 매기기와 겹침 피하기가 그 목록을 보면, 목록을 줄이는 순간
+   번호를 다시 쓰거나(파일을 덮어쓴다) 피할 것을 잊는다. 그래서 이쪽은 파일을 본다. */
+function allSetIds(pid) {
+  var dir = path.join(DAILY, pid, 'sets');
+  var names = [];
+  try { names = fs.readdirSync(dir); } catch (e) { return []; }
+  var out = [];
+  for (var i = 0; i < names.length; i++) {
+    if (/^s\d+\.json$/.test(names[i])) out.push(names[i].replace(/\.json$/, ''));
+  }
+  out.sort();
+  return out;
+}
+
 function nextSetId(pid) {
-  var rows = listSets(pid);
+  var ids = allSetIds(pid);
   var max = 0;
-  for (var i = 0; i < rows.length; i++) {
-    var n = parseInt(String(rows[i].id).replace(/^s/, ''), 10);
+  for (var i = 0; i < ids.length; i++) {
+    var n = parseInt(String(ids[i]).replace(/^s/, ''), 10);
     if (n > max) max = n;
   }
   var next = max + 1;
@@ -923,11 +940,11 @@ function nextSetId(pid) {
 
 /* 이미 있는 묶음의 문장과 겹치는지. 같은 문장을 또 내보내면 안 된다 */
 function knownTexts(pid, days) {
-  var rows = listSets(pid);
+  var ids = allSetIds(pid);
   var seen = {};
-  var from = Math.max(0, rows.length - (days || 40));
-  for (var i = from; i < rows.length; i++) {
-    var one = readJSON(path.join(DAILY, pid, 'sets', rows[i].id + '.json'), null);
+  var from = Math.max(0, ids.length - (days || 40));
+  for (var i = from; i < ids.length; i++) {
+    var one = readJSON(path.join(DAILY, pid, 'sets', ids[i] + '.json'), null);
     if (!one || !one.sentences) continue;
     for (var s = 0; s < one.sentences.length; s++) seen[key(one.sentences[s].text)] = true;
   }
@@ -998,6 +1015,6 @@ module.exports = {
   highlighted: highlighted, keysAppear: keysAppear, sameOpening: sameOpening,
   wordCount: wordCount, validate: validate,
   toDayFile: toDayFile, updateIndex: updateIndex,
-  listSets: listSets, nextSetId: nextSetId, knownTexts: knownTexts,
+  listSets: listSets, allSetIds: allSetIds, nextSetId: nextSetId, knownTexts: knownTexts,
   toSetFile: toSetFile, saveSet: saveSet, key: key
 };

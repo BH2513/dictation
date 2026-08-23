@@ -1,0 +1,114 @@
+{
+  "setId": "s022",
+  "videoId": "daily-s022",
+  "title": "Set 22",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그 팟캐스트는 원래 친구 둘이 별것도 아닌 일로 티격태격하는 거였어. 요즘은 매주 책 팔러 나온 사람 인터뷰야.",
+      "text": "That podcast used to be two friends arguing about nothing. Now every week it's an interview with somebody selling a book.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That show was just two friends bickering about nothing. Now it's some guy plugging a book every week."
+        },
+        {
+          "style": "formal",
+          "text": "That podcast was once simply two friends arguing about nothing. Now, each week, it is an interview with someone selling a book."
+        }
+      ],
+      "note": "**used to be** 는 지금은 아니지만 예전에는 그랬다는 뜻입니다. **arguing about nothing** 은 별것도 아닌 일로 다툰다는 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "위층 사는 누군가가 매일 아침 여섯시에 의자를 바닥에 끌어. 이제는 알람이 울리기도 전에 깨.",
+      "text": "Somebody upstairs drags a chair across the floor at six every morning. I'm awake before my alarm now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Whoever's upstairs drags a chair across the floor at six every morning. I'm up before my alarm now."
+        },
+        {
+          "style": "formal",
+          "text": "Someone upstairs drags a chair across the floor at six every morning. I am now awake before my alarm."
+        }
+      ],
+      "note": "**drags a chair across the floor** 는 의자를 바닥에 드르륵 끄는 것을 말합니다. casual 의 **Whoever's upstairs** 는 누군지는 몰라도 위층 사는 사람이라는 뜻입니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "언니가 한 달만 지내게 해 달래. 싫다고 하면 일요일 안에 엄마 귀에 들어가. 좋다고 하면 한 달로 안 끝나.",
+      "text": "My sister asked to stay for a month. If I say no, my mom hears about it by Sunday. If I say yes, it's not a month.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My sister wants to crash at my place for a month. Say no and my mom knows by Sunday. Say yes and it's never just a month."
+        },
+        {
+          "style": "formal",
+          "text": "My sister has asked to stay for a month. If I decline, my mother will hear about it by Sunday. If I agree, it will not be a month."
+        }
+      ],
+      "note": "**my mom hears about it** 은 말이 돌아서 엄마 귀에 들어간다는 뜻입니다. **it's not a month** 는 말만 한 달이지 그보다 길어진다는 뜻입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 개는 내가 볼 때만 다리를 절어. 병원에 두 번이나 갔는데 아무 이상이 없대.",
+      "text": "My dog only limps when I'm watching. Two vet visits, nothing wrong with him.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The dog only limps when I'm looking. Two trips to the vet and there's nothing wrong with him."
+        },
+        {
+          "style": "formal",
+          "text": "My dog limps only when I am watching. After two visits to the veterinarian, there is nothing wrong with him."
+        }
+      ],
+      "note": "**limps** 는 다리를 저는 것입니다. **nothing wrong with him** 은 아무 데도 이상이 없다는 뜻입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그 로봇청소기 300달러였는데 매번 똑같은 의자 밑에 껴. 이제는 의자부터 치우고 버튼을 눌러.",
+      "text": "The robot vacuum was $300 and it gets stuck under the same chair every time. Now I move the chair first, then push the button.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I paid $300 for a robot vacuum that jams under the same chair every single time. Now I move the chair before I hit the button."
+        },
+        {
+          "style": "formal",
+          "text": "The robot vacuum cost $300, and it becomes stuck beneath the same chair every time. Now I move the chair first, and then press the button."
+        }
+      ],
+      "note": "**gets stuck under** 는 밑에 끼여서 빠져나오지 못한다는 뜻입니다. casual 의 **hit the button** 은 버튼을 누른다는 가벼운 말투입니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: \"arguing about nothing on that podcast\" 처럼 뒤에 장소를 붙이는 어순이 어색하고, text 보다 오히려 길어서 캐주얼로 느껴지지 않았습니다. 더 짧고 구어다운 말로 다시 썼습니다.",
+    "3번 casual: 앞의 한 마디만 바뀌고 뒤 두 문장이 text 와 글자까지 똑같았습니다. 또 뜻 없이 붙은 \"So,\" 를 뺐습니다. 조건절을 명령형으로 굴려(Say no and ~) 말투를 확실히 낮췄습니다.",
+    "5번 casual: 가운데 절이 text 와 글자까지 똑같았습니다. 뒷부분도 함께 바꿔 text 와 겹치지 않게 하되, note 가 짚는 hit the button 은 그대로 남겼습니다."
+  ]
+}

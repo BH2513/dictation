@@ -1,0 +1,118 @@
+{
+  "setId": "s021",
+  "videoId": "daily-s021",
+  "title": "Set 21",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "대학 때 이후로 수영을 한 번도 안 하다가 일요일에 마흔 바퀴를 했어. 스무 바퀴에서 멈췄으면 괜찮았을 텐데. 지금은 재채기만 해도 아파.",
+      "text": "I hadn't gone swimming since college and I did forty laps Sunday. If I'd stopped at twenty I'd be fine. Now it hurts to sneeze.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "First time in a pool since college and I went and did forty laps Sunday. Should've stopped at twenty. Now it hurts to sneeze."
+        },
+        {
+          "style": "formal",
+          "text": "I had not been swimming since college, and I completed forty laps on Sunday. Had I stopped at twenty, I would be fine. Now it is painful to sneeze."
+        }
+      ],
+      "note": "**forty laps** 는 수영장을 마흔 번 왕복했다는 뜻입니다. **it hurts to sneeze** 는 재채기하는 것조차 아플 만큼 몸이 결린다는 말입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아홉 시쯤에 나한테 문자 하나 보내 줘. 그러면 내가 베이비시터가 가 봐야 한다고 말할게. 급한 일인 것처럼 들리게 해 줘.",
+      "text": "Text me around nine and I'll say the sitter needs to leave. Make it sound urgent.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Shoot me a text around nine and I'll say the sitter's gotta go. Make it sound urgent."
+        },
+        {
+          "style": "formal",
+          "text": "Please send me a message around nine, and I will say that the sitter needs to leave. Please make it sound urgent."
+        }
+      ],
+      "note": "**Shoot me a text** 는 문자 좀 보내 달라는 캐주얼한 표현입니다. **Make it sound urgent** 는 급한 일처럼 들리게 말해 달라는 뜻입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 색 너한테 정말 잘 어울린다. 근데 어깨가 좀 넓네. 어깨는 수선집에서도 못 고치는 딱 하나야.",
+      "text": "The color's great on you. The shoulders are wide though, and that's the one thing a tailor can't fix.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That color is so good on you. Shoulders are a bit wide though, and no tailor can fix that."
+        },
+        {
+          "style": "formal",
+          "text": "The color looks wonderful on you. The shoulders are wide, however, and that is the one thing a tailor cannot fix."
+        }
+      ],
+      "note": "**great on you** 처럼 on you 를 붙이면 그 사람한테 잘 어울린다는 뜻이 됩니다. **the one thing a tailor can't fix** 는 수선으로는 해결이 안 되는 유일한 부분이라는 말입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그 사람은 회의에서 나한테 묻지도 않고 내 이름을 올려 버려. 어제는 금요일 보고서였는데, 회의실 사람들이 다 나를 쳐다봐서 그제야 알았어.",
+      "text": "She volunteers me for things in meetings without asking. Yesterday it was the Friday report and I found out when the room turned to look at me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "She signs me up for stuff in meetings without asking. Yesterday it was the Friday report, and I found out when the whole room turned to look at me."
+        },
+        {
+          "style": "formal",
+          "text": "She volunteers me for tasks during meetings without asking. Yesterday it was the Friday report, and I learned of it when the room turned to look at me."
+        }
+      ],
+      "note": "**volunteers me for things** 는 본인 동의도 없이 남을 자원자로 만들어 버린다는 뜻입니다. 캐주얼에서는 같은 뜻으로 **signs me up for stuff** 라고 씁니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "집 계약이 십일월에 끝나는데 매물을 아홉 개나 저장해 놓고 한 군데도 전화를 안 했어. 일요일에는 보러 가고 싶다가도 월요일만 되면 마음이 없어져.",
+      "text": "My lease ends in November and I've saved nine listings without calling a single one. On Sundays I want to go see them. By Monday I don't.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Lease is up in November. I've got nine listings saved and haven't called a single one. Sundays I want to go see them. By Monday I don't."
+        },
+        {
+          "style": "formal",
+          "text": "My lease ends in November, and I have saved nine listings without calling a single one. On Sundays I want to go see them. By Monday I do not."
+        }
+      ],
+      "note": "**listings** 는 부동산 매물 광고를 말합니다. **My lease ends in November** 는 임대 계약이 십일월에 끝난다는 뜻으로, 캐주얼에서는 **Lease is up in November** 라고 짧게 말합니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 캐주얼의 'Twenty and I'd have been fine.' 는 소리내어 읽으면 수수께끼처럼 들려서, 실제로 말할 법한 'Should've stopped at twenty.' 로 바꿨습니다.",
+    "2번 격식체의 'Do make it sound urgent.' 는 강조 어법이라 말투만 올린 것이 아니어서 'Please make it sound urgent.' 로 바꿨습니다.",
+    "3번 note 가 별표로 감싼 'The color is great on you' 와 'the one thing a tailor cannot fix' 가 영어 문장 안에 그대로 없었습니다(문장은 color's, can't). 문장에 실제로 나오는 'great on you', 'the one thing a tailor can't fix' 로 고쳤습니다.",
+    "3번 캐주얼이 뒷부분을 text 와 한 글자도 다르지 않게 되풀이해서, 'no tailor can fix that' 으로 더 짧고 구어답게 바꿨습니다.",
+    "3번 한국어의 '그건 ... 딱 하나거든' 은 무엇을 가리키는지 애매해서 '어깨는' 으로 구체적으로 고쳤습니다.",
+    "4번 한국어의 '내 이름을 걸어 버려' 는 잘 안 쓰는 말이라 '내 이름을 올려 버려' 로 고쳤습니다.",
+    "5번 캐주얼이 and 로 두 번 이어져 늘어져서 문장을 끊었습니다."
+  ]
+}

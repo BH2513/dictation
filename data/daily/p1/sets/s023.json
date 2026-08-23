@@ -1,0 +1,115 @@
+{
+  "setId": "s023",
+  "videoId": "daily-s023",
+  "title": "Set 23",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "회사 옆에 샌드위치 가게 있잖아. 거기 샌드위치가 2년 사이에 9달러에서 14달러가 됐어. 크기는 더 작아졌고. 그래서 일주일에 사흘은 도시락 싸 다니기 시작했어.",
+      "text": "The sandwich at the deli by my office went from $9 to $14 in two years, and it's smaller now. I've started packing lunch three days a week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That deli by my office bumped the sandwich from $9 to $14 in two years, and it's smaller now. So I'm packing lunch three days a week."
+        },
+        {
+          "style": "formal",
+          "text": "The sandwich at the delicatessen near my office has risen from $9 to $14 over two years, and it is now smaller. I have begun bringing my own lunch three days a week."
+        }
+      ],
+      "note": "**went from $9 to $14** 는 값이 얼마에서 얼마로 올랐다고 말할 때 쓰는 표현이다. **packing lunch** 는 점심 도시락을 싸는 것을 말한다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "칼 가는 영상 하나만 보려고 앉았는데 벌써 1시 45분이야. 칼은 아직 서랍에 그대로 있고.",
+      "text": "I sat down to watch one video on knife sharpening and it's quarter to two. My knives are still in the drawer.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I put on one video about sharpening knives and now it's quarter to two. Knives are still sitting in the drawer."
+        },
+        {
+          "style": "formal",
+          "text": "I sat down to watch a single video on knife sharpening, and it is now a quarter to two. My knives remain in the drawer."
+        }
+      ],
+      "note": "**quarter to two** 는 2시 15분 전, 그러니까 1시 45분이다. to 는 다음 시각까지 남은 시간을 말한다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "40분째 뭐 볼지 못 고르고 있잖아. 그냥 요리 프로 틀어. 이 시간에 자막까지 읽는 건 못 하겠어.",
+      "text": "We've been trying to pick something for forty minutes. Put on the cooking show. I can't read subtitles this late.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Forty minutes and we still haven't picked anything. Just put on the cooking show. I can't do subtitles this late."
+        },
+        {
+          "style": "formal",
+          "text": "We have been trying to choose something for forty minutes. Please put on the cooking show. I am not able to read subtitles at this hour."
+        }
+      ],
+      "note": "**Put on** 은 영상이나 방송을 튼다는 뜻이다. **I can't do subtitles** 처럼 do 로 받으면 그걸 감당 못 하겠다는 말이 된다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "모니터는 멀쩡한데 위쪽 구석에 픽셀 하나가 죽어 있어. 흰 화면 뜨면 바로 보일 거야. 그래서 60달러인 거야.",
+      "text": "The monitor works fine, but there's a dead pixel in the top corner and you'll see it on anything white. That's why it's $60.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nothing wrong with the monitor except a dead pixel up in the top corner, and you'll spot it on anything white. That's why it's $60."
+        },
+        {
+          "style": "formal",
+          "text": "The monitor functions properly, but there is a dead pixel in the top corner that will be visible against anything white. That is the reason it is priced at $60."
+        }
+      ],
+      "note": "**a dead pixel** 은 화면에서 아예 켜지지 않는 점 하나를 말한다. **That's why** 는 앞에 말한 이유를 받아서 그래서 이렇다고 할 때 쓴다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "온수 때문에 집주인한테 두 번이나 얘기했어. 목요일에 해 준다더니 이번이 세 번째 목요일이야.",
+      "text": "I've asked my landlord twice about the hot water. They said Thursday, and this is the third Thursday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Twice now I've asked the landlord about the hot water. They said Thursday, and this is Thursday number three."
+        },
+        {
+          "style": "formal",
+          "text": "I have contacted my landlord twice regarding the hot water. They told me it would be done Thursday, and this is now the third Thursday."
+        }
+      ],
+      "note": "**landlord** 는 세를 준 집주인이다. 한 사람이라도 성별을 밝히지 않을 때는 **They said Thursday** 처럼 they 로 받는다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 한국어의 \"죽은 화소\"가 번역투라 실제로 쓰는 말인 \"픽셀 하나가 죽어 있어\"로 고쳤다.",
+    "5번 formal 이 text 와 뒷부분이 글자까지 같아 말투를 올려 다시 썼다(contacted / told me it would be done).",
+    "2번 formal 의 quarter to two 에 관사를 넣어 격식 문장에 맞췄다.",
+    "1번 한국어에 샌드위치가 두 번 나와 어색해서 앞부분을 자연스럽게 다듬었다."
+  ]
+}

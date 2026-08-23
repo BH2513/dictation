@@ -53,17 +53,20 @@ check('봉투가 없으면 그대로',
   daily.unwrap({ sentences: [3] }), { sentences: [3] });
 
 console.log('\n답 형식 — 칸이 비는 것은 이걸로 막는다');
+// 만드는 단계는 영어만 낸다. 한국어·말투·설명은 뒤 단계에서 붙는다
 var schema = daily.buildSchema({ count: 5 });
+check('영어만 받는다', schema.required, ['texts']);
 check('개수를 못 박는다',
-  [schema.properties.sentences.minItems, schema.properties.sentences.maxItems], [5, 5]);
-check('다섯 칸 모두 필수',
-  schema.properties.sentences.items.required.sort(),
+  [schema.properties.texts.minItems, schema.properties.texts.maxItems], [5, 5]);
+check('한국어 칸이 없다', schema.properties.ko === undefined, true);
+
+// 검수는 다 붙은 뒤라 문장 전체 모양을 받는다
+var full = daily.buildReviewSchema({ count: 5 });
+check('검수는 다섯 칸 모두 받는다',
+  full.properties.sentences.items.required.sort(),
   ['alts', 'ko', 'note', 'situation', 'text']);
-check('다르게 말하는 법은 정확히 두 개',
-  [schema.properties.sentences.items.properties.alts.minItems,
-   schema.properties.sentences.items.properties.alts.maxItems], [2, 2]);
 check('말투는 캐주얼 아니면 포멀',
-  schema.properties.sentences.items.properties.alts.items.properties.style['enum'],
+  full.properties.sentences.items.properties.alts.items.properties.style['enum'],
   ['casual', 'formal']);
 
 console.log('\n단어 세기');
@@ -299,6 +302,73 @@ check('개수가 어긋나면 손대지 않는다',
 check('빈 문장이 오면 손대지 않는다',
   daily.applyAloud(draft, { texts: ['Fine.', '  '] }), null);
 
+console.log('\n말투 바꾸기 — 확정된 영어에서 casual · formal 만');
+var eng = { sentences: [
+  { situation: '가', text: 'I did nothing all weekend.' },
+  { situation: '나', text: 'The chair still has not shown up.' }] };
+var ap = daily.buildAltsPrompt(eng);
+check('영어가 들어간다', ap.indexOf('I did nothing all weekend.') >= 0, true);
+check('한국어를 만들라고 하지 않는다', ap.indexOf('"ko"') >= 0, false);
+check('뜻을 바꾸지 말라고 한다', ap.indexOf('뜻을 바꾸지 마세요') >= 0, true);
+check('기간을 바꾼 사고를 짚어 준다', ap.indexOf('since winter') >= 0, true);
+check('개수를 못 박는다', ap.indexOf('**2개**') >= 0, true);
+
+var asc = daily.buildAltsSchema({ count: 5 });
+check('말투 둘을 받는다', asc.properties.alts.items.required.sort(), ['casual', 'formal']);
+check('개수를 형식으로도 못 박는다',
+  [asc.properties.alts.minItems, asc.properties.alts.maxItems], [5, 5]);
+
+var withAlts = daily.applyAlts(eng, { alts: [
+  { casual: 'Zero plans. Zero regrets.', formal: 'I rested for the entire weekend.' },
+  { casual: 'Still no chair.', formal: 'The chair has still not arrived.' }] });
+check('말투가 앱이 읽는 모양으로 들어간다',
+  withAlts.sentences[0].alts,
+  [{ style: 'casual', text: 'Zero plans. Zero regrets.' },
+   { style: 'formal', text: 'I rested for the entire weekend.' }]);
+check('영어는 건드리지 않는다', withAlts.sentences[0].text, 'I did nothing all weekend.');
+check('개수가 어긋나면 손대지 않는다',
+  daily.applyAlts(eng, { alts: [{ casual: 'a', formal: 'b' }] }), null);
+check('한쪽이 비면 손대지 않는다',
+  daily.applyAlts(eng, { alts: [
+    { casual: 'a', formal: 'b' }, { casual: ' ', formal: 'd' }] }), null);
+
+console.log('\n한국어 붙이기 — 제일 마지막. 영어는 이미 확정됐다');
+var kp = daily.buildKoreanPrompt(withAlts);
+check('영어가 들어간다', kp.indexOf('I did nothing all weekend.') >= 0, true);
+check('말투도 같이 보여 준다', kp.indexOf('Zero plans. Zero regrets.') >= 0, true);
+check('영어를 고칠 수 없다고 못 박는다',
+  kp.indexOf('영어는 이미 확정됐습니다. 고칠 수 없습니다.') >= 0, true);
+check('영어가 기준이라고 한다', kp.indexOf('**영어가 기준입니다**') >= 0, true);
+check('돈은 달러로 적으라고 한다', kp.indexOf('원으로 바꾸지 마세요') >= 0, true);
+check('별표로 감싸라고 한다', kp.indexOf('별표 두 개로 감싸세요') >= 0, true);
+
+var ksc = daily.buildKoreanSchema({ count: 5 });
+check('한국어와 설명을 받는다', ksc.properties.rows.items.required.sort(), ['ko', 'note']);
+
+var done = daily.applyKorean(withAlts, { rows: [
+  { ko: '주말에 아무것도 안 했어.', note: '**nothing** 은 아무것도 아니라는 뜻입니다.' },
+  { ko: '의자가 아직도 안 왔어.', note: '**shown up** 은 나타났다는 뜻입니다.' }] });
+check('한국어가 들어간다', done.sentences[0].ko, '주말에 아무것도 안 했어.');
+check('영어와 말투는 그대로',
+  [done.sentences[0].text, done.sentences[0].alts.length],
+  ['I did nothing all weekend.', 2]);
+check('빈 칸이 오면 손대지 않는다',
+  daily.applyKorean(withAlts, { rows: [{ ko: '가', note: '' }, { ko: '나', note: '다' }] }), null);
+check('다 붙이면 검사를 통과한다',
+  daily.validate(daily.applyKorean(withAlts, { rows: [
+    { ko: '주말에 아무것도 안 했어.', note: '**nothing** 은 아무것도 아니라는 뜻입니다.' },
+    { ko: '의자가 아직도 안 왔어.', note: '**shown up** 은 나타났다는 뜻입니다.' }] }),
+    { count: 2, minWords: 4, maxWords: 12, shortWords: 8, shortCount: 2 }), []);
+
+console.log('\n영어만 받아 문장을 세운다');
+var started = daily.startFromEnglish(['가', '나'], { texts: ['One thing.', 'Two things.'] });
+check('상황과 짝지어진다',
+  [started.sentences[0].situation, started.sentences[1].text], ['가', 'Two things.']);
+check('개수가 어긋나면 안 세운다',
+  daily.startFromEnglish(['가', '나'], { texts: ['One thing.'] }), null);
+check('빈 영어가 오면 안 세운다',
+  daily.startFromEnglish(['가', '나'], { texts: ['One thing.', '  '] }), null);
+
 console.log('\n어떤 모델이 답했는지 기록에 남기기');
 var model = require('./daily_model').modelOf;
 check('modelUsage 에서 꺼낸다',
@@ -415,14 +485,15 @@ var prompt = daily.buildPrompt({
 check('단어 수 조건이 들어간다', prompt.indexOf('20~35 단어') >= 0, true);
 check('상황이 들어간다', prompt.indexOf('병원에서 증상 설명') >= 0, true);
 check('어휘가 들어간다', prompt.indexOf('concentrated') >= 0, true);
-check('다른 표현을 요구한다', prompt.indexOf('"alts"') >= 0, true);
-check('캐주얼·포멀을 나누라고 한다',
-  prompt.indexOf('"casual"') >= 0 && prompt.indexOf('"formal"') >= 0, true);
-check('note 에 강조를 넣으라고 한다', prompt.indexOf('별표 두 개') >= 0, true);
 check('편한 말투를 못 박는다', prompt.indexOf('편한 동료에게 하는 말투') >= 0, true);
 check('격식체를 금지한다', prompt.indexOf('격식체') >= 0, true);
 check('축약형을 쓰라고 한다', prompt.indexOf('축약형') >= 0, true);
-check('영어를 먼저 만들라고 한다', prompt.indexOf('영어를 먼저 만듭니다') >= 0, true);
+check('여기서는 영어만 만든다고 한다', prompt.indexOf('여기서는 영어만 만듭니다') >= 0, true);
+check('옮기기 좋은 영어를 쓰지 말라고 한다', prompt.indexOf('옮기기 좋은 영어') >= 0, true);
+check('영어만 내놓게 한다', prompt.indexOf('{ "texts": [') >= 0, true);
+check('한국어를 만들라고 하지 않는다', prompt.indexOf('"ko"') >= 0, false);
+check('말투도 여기서 만들라고 하지 않는다', prompt.indexOf('"alts"') >= 0, false);
+check('설명도 여기서 쓰라고 하지 않는다', prompt.indexOf('별표 두 개') >= 0, false);
 check('말버릇을 장식으로 넣지 말라고 한다',
   prompt.indexOf('장식으로 넣지 마세요') >= 0, true);
 check('한 문장으로 끝나도 된다고 한다', prompt.indexOf('한 문장으로 끝나도 됩니다') >= 0, true);
@@ -444,10 +515,6 @@ check('한국에만 있는 것을 옮기지 말라고 한다',
 check('1차 2차를 round 로 옮기지 말라고 한다',
   prompt.indexOf('first round, second round 로 옮기면 안 됩니다') >= 0, true);
 check('돈은 달러로 쓰라고 한다', prompt.indexOf('돈은 달러로 씁니다') >= 0, true);
-check('한국어 숫자도 같아야 한다고 한다',
-  prompt.indexOf('영어와 한국어의 숫자가 같아야 합니다') >= 0, true);
-check('한국어는 그 영어를 옮기는 것이라고 한다',
-  prompt.indexOf('이제는 영어가 기준입니다') >= 0, true);
 
 var withRecent = daily.buildPrompt({
   count: 1, minWords: 12, maxWords: 35, situations: ['가'], vocab: [],
@@ -460,7 +527,7 @@ check('최근 문장이 없으면 그 대목을 아예 안 넣는다',
   daily.buildPrompt({ count: 1, minWords: 12, maxWords: 35, situations: ['가'], vocab: [] })
     .indexOf('최근에 이미 나온 문장') >= 0, false);
 check('구체적으로 쓰라고 한다', prompt.indexOf('it, that, this 로 얼버무리지') >= 0, true);
-check('맞히기 시험이 아니라고 못 박는다', prompt.indexOf('맞히기 시험이 아니라') >= 0, true);
+check('맞히기 시험이 아니라고 못 박는다', prompt.indexOf('맞히기 시험이 아니') >= 0, true);
 check('어휘가 없으면 그 대목을 아예 안 넣는다',
   daily.buildPrompt({ count: 1, minWords: 20, maxWords: 35, situations: ['가'], vocab: [] })
     .indexOf('어휘 참고') >= 0, false);

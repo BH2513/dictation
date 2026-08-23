@@ -1,0 +1,116 @@
+{
+  "setId": "s003",
+  "videoId": "daily-s003",
+  "title": "Set 3",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "나 아홉 시쯤 슬쩍 빠질까 봐. 내일 아침 일곱 시에 콜이 있어서 이번엔 진짜 좀비 상태로 가면 안 되거든.",
+      "text": "I should probably duck out around nine. I've got a 7 AM call tomorrow, and I really can't show up half asleep again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gonna duck out around nine, got a brutal 7 AM call tomorrow."
+        },
+        {
+          "style": "formal",
+          "text": "I'm afraid I'll need to leave around nine. I have an early morning call tomorrow and can't afford to be exhausted for it."
+        }
+      ],
+      "note": "**duck out** 는 자리에서 눈치껏 슬쩍 빠져나온다는 뜻.",
+      "situation": "회식 자리에서 적당히 빠져나올 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "미안, 알람이 안 울렸어. 분명 여섯 시로 맞췄는데 눈 떠 보니 여덟 시라서 완전 멘붕이었어.",
+      "text": "Sorry I'm late, my alarm didn't go off. I swear I set it for six, but I woke up at eight and totally freaked out.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My alarm just didn't go off, I woke up at eight and totally lost it."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for being late. My alarm failed to go off, and I didn't wake up until eight, which left me in quite a panic."
+        }
+      ],
+      "note": "**freaked out** 는 놀라서 당황했다는 뜻.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "우리 팀 사람 하나가 자꾸 내가 한 일을 자기가 한 것처럼 챙겨가. 진짜 열받아서, 언제까지 그냥 넘어가야 하나 싶어.",
+      "text": "This guy on my team keeps taking credit for my work. It's driving me up the wall, and I don't know how much longer I can just let it slide.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, this coworker keeps taking credit for my stuff, I'm so over letting it slide."
+        },
+        {
+          "style": "formal",
+          "text": "One of my colleagues keeps taking credit for my work. It's quite frustrating, and I'm unsure how much longer I can tolerate it."
+        }
+      ],
+      "note": "**driving me up the wall** 는 사람을 미치게 짜증나게 한다는 뜻.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "위층 사람들이 매일 밤 열한 시 넘어서까지 뛰어다녀. 벌써 두 번이나 올라가서 말했는데, 이제 진짜 관리실에 전화할까 싶어.",
+      "text": "The people upstairs run around every night after eleven. I've knocked twice already, and honestly I'm about ready to call the building manager.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Upstairs neighbors won't stop stomping around past eleven, I'm this close to calling the manager."
+        },
+        {
+          "style": "formal",
+          "text": "The residents upstairs continue to run around every night after eleven. I've already spoken with them twice, and I'm considering contacting the building manager."
+        }
+      ],
+      "note": "**about ready to** 는 인내심이 거의 바닥나서 곧 그렇게 하려 한다는 뜻.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "유튜브 딱 십 분만 본다고 켰는데 어느새 새벽 한 시였어. 그 영상들 절반은 뭐였는지 기억도 안 나.",
+      "text": "I opened YouTube for maybe ten minutes, and next thing I knew it was 1 AM. I don't even remember what half those videos were about.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ten minutes on YouTube turned into 1 AM, I have no clue what I even watched."
+        },
+        {
+          "style": "formal",
+          "text": "I intended to watch YouTube for only about ten minutes, but I suddenly found it was 1 AM. I can hardly recall what half those videos were about."
+        }
+      ],
+      "note": "**next thing I knew** 는 정신 차려 보니 어느새 그렇게 되어 있었다는 뜻.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 캐주얼: \"in the morning\"으로 얼버무리면서 원문의 구체적 시각(7 AM)이 사라져서 되살렸다.",
+    "2번: note가 가리키는 표현 \"freaked out\"이 정작 본문(text)엔 없고 캐주얼에만 있어서 원문 뜻(panicked)을 그대로 살리며 본문으로 옮기고, 캐주얼은 겹치지 않게 \"lost it\"으로 바꿨다.",
+    "2번 formal: \"완전 멘붕이었어\"의 강도가 \"caught me off guard\"(그냥 놀랐다 수준)로 눅어져 있어서 \"in quite a panic\"으로 강도를 되살렸다.",
+    "4번 formal: \"continue running around late at night after eleven\"이 밤과 열한 시가 겹쳐 어색해서 \"late at night\"을 뺐다.",
+    "5번 formal: 원문의 \"절반(half)\"이 \"most\"로 바뀌어 수량이 달라져 있었다. \"half\"로 되돌렸다."
+  ]
+}

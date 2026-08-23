@@ -1,0 +1,114 @@
+{
+  "setId": "s004",
+  "videoId": "daily-s004",
+  "title": "Set 4",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "어제 밤에 새라랑 거의 한 시간을 얘기했는데, 결국 어떻게 해야 할지 답이 안 나왔어.",
+      "text": "I talked it through with Sarah for almost an hour last night. We still couldn't figure out what I should do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sarah and I went back and forth for almost an hour last night, but we still didn't land on anything."
+        },
+        {
+          "style": "formal",
+          "text": "I spent nearly an hour discussing the situation with Sarah last night, but we were unable to reach a conclusion."
+        }
+      ],
+      "note": "**talked it through**는 뭔가를 이리저리 짚어가며 얘기했다는 뜻이에요, 결론이 안 났다는 뒷내용이랑 자연스럽게 이어져요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "토요일 오후에 비 온다길래 소풍을 일요일로 미뤘거든. 결국 하루 종일 안 왔는데, 그래도 미리 옮기길 잘했지 뭐.",
+      "text": "Rain was in the forecast for Saturday afternoon, so we pushed the picnic back to Sunday. It ended up staying dry all day, but at least we played it safe.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Saturday's forecast looked rainy, so we just bumped the picnic to Sunday. Turned out it didn't rain at all, but hey, better safe than sorry."
+        },
+        {
+          "style": "formal",
+          "text": "The forecast indicated rain for Saturday afternoon, so we postponed the picnic until Sunday. It turned out to remain dry throughout the day, but we preferred not to take the chance."
+        }
+      ],
+      "note": "**pushed the picnic back**에서 push back은 일정을 뒤로 미룬다는 뜻으로 흔히 쓰는 표현이에요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "두 달 만에 헬스장 갔다 왔더니 계단도 제대로 못 내려가겠어.",
+      "text": "I finally went back to the gym after two months off. Now I can barely walk down the stairs without wincing.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went to the gym for the first time in two months, and now stairs are basically impossible."
+        },
+        {
+          "style": "formal",
+          "text": "I returned to the gym after a two month break, and I am now finding it difficult to manage the stairs."
+        }
+      ],
+      "note": "**barely**는 겨우, 간신히라는 뜻으로 힘든 상태를 강조할 때 자주 써요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "야, 네 생일파티 이후로 진짜 오랜만이다. 요즘 어떻게 지내. 그 카페에서는 아직 일해.",
+      "text": "Hey, it's been ages since your birthday party. What's new with you these days? Are you still working at that coffee shop?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Whoa, it's been way too long since your birthday party. What's up with you lately? Still at that coffee shop?"
+        },
+        {
+          "style": "formal",
+          "text": "It has been quite a while since your birthday party. How have things been going for you lately? Are you still employed at that coffee shop?"
+        }
+      ],
+      "note": "**it's been ages**는 정말 오랜만이라는 뜻으로 반가움을 담아 인사할 때 많이 써요.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "윗집 사람들이 매일 밤 아홉 시쯤부터 쿵쿵거려서 아무것도 집중을 못 하겠어. 벌써 거의 두 주째 이러고 있어.",
+      "text": "The people upstairs stomp around every night starting around nine, and I can't focus on anything. It's been going on for almost two weeks now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Upstairs keeps stomping around every night starting around nine, and I can't get anything done. It's been almost two weeks of this."
+        },
+        {
+          "style": "formal",
+          "text": "The residents in the unit above mine have been walking heavily every night around nine o'clock, and I am unable to concentrate on anything. This has been ongoing for almost two weeks."
+        }
+      ],
+      "note": "**stomp around**는 쿵쿵거리며 걸어다닌다는 뜻이라 층간소음 얘기에 딱 맞는 표현이에요.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 문장 text의 \"what she should do\"를 \"what I should do\"로 고쳤습니다 — 상황이 화자가 새라에게 자기 고민을 상담하는 것이므로, 결론이 안 난 것도 새라가 아니라 화자 자신의 일이어야 맞습니다.",
+    "2번 문장 text의 끝을 \"but at least we didn't get caught out there\"에서 \"but at least we played it safe\"로 고쳤습니다 — 결국 비가 안 왔다고 해놓고 \"안 붙잡혔다\"고 하면 애초에 붙잡힐 위험이 없었던 것과 앞뒤가 안 맞습니다. alts가 담고 있는 \"미리 대비해서 다행이다\"라는 뜻에 맞춰 고쳤습니다.",
+    "5번 문장 text와 casual alt에서 \"every night around nine\"을 \"every night starting around nine\"으로 고쳐 around가 두 번 겹치는 어색함을 없앴습니다."
+  ]
+}

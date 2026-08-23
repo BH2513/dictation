@@ -6,122 +6,122 @@
   "sentences": [
     {
       "i": 0,
-      "ko": "오, 다음 부분이 진짜 최고야.",
-      "text": "Oo, the next part's the best.",
+      "ko": "어디 보자, 나 그 테스트 해봤는데 역시 난 연애보다 일이 먼저더라.",
+      "text": "All right, I took the quiz and it turns out I do put career before men.",
       "alts": [
         {
           "style": "casual",
-          "text": "Ooh, this bit's the best!"
+          "text": "Yeah, took that quiz and yep — career over guys, no surprise there."
         },
         {
           "style": "formal",
-          "text": "Oh, I think the next part is the best one."
+          "text": "I completed the quiz, and the results indicate that I prioritize my career over relationships."
         }
       ],
-      "note": "**the next part's the best**처럼 영상이나 이야기를 보여주며 다음이 더 재밌다고 기대감을 나타낼 때 쓰는 말입니다.",
+      "note": "**put career before men**는 연애보다 일을 우선한다는 뜻이에요. \"put A before B\" 형태로 우선순위를 말할 때 씁니다.",
       "situation": "The Ones with the Whole Gang from Season 3 | Friends",
       "from": {
         "videoId": "6nVAQaiLNkY",
-        "i": 233
+        "i": 753
       },
-      "start": 613.44,
-      "end": 615.36,
+      "start": 1969.919,
+      "end": 1977.879,
       "recording": null
     },
     {
       "i": 1,
-      "ko": "좀 시원해졌으면 좋겠는데, 안타깝게도 더위가 계속된대.",
-      "text": "We'd love to find some relief, but unfortunately that heat continues.",
+      "ko": "음, 아마 둘이 싸웠고 그래서 걔가 술에 취했나 봐.",
+      "text": "Yeah, well, I guess they had a fight and he got drunk.",
       "alts": [
         {
           "style": "casual",
-          "text": "We're dying for some relief, but nope, it's still hot as ever."
+          "text": "So I'm guessing they got into it and he ended up wasted."
         },
         {
           "style": "formal",
-          "text": "We would certainly welcome some relief, however, the heat is expected to persist."
+          "text": "I believe they had an argument, and as a result, he became intoxicated."
         }
       ],
-      "note": "**find some relief**는 더위나 힘든 상황에서 벗어나고 싶을 때 자주 쓰는 표현입니다.",
-      "situation": "Fires grip western U.S., British Columbia: \"It doesn't seem like it's real\"",
+      "note": "확실하지 않은 일을 말할 때 문장 앞에 **I guess**를 붙이면 \"아마 ~인 것 같아\"라는 추측의 뉘앙스가 됩니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
       "from": {
-        "videoId": "hz3Rs6xWReE",
-        "i": 40
+        "videoId": "6nVAQaiLNkY",
+        "i": 512
       },
-      "start": 167.519,
-      "end": 170.8,
+      "start": 1415.72,
+      "end": 1419.36,
       "recording": null
     },
     {
       "i": 2,
-      "ko": "쟤가 내가 피해 다니던 여자애야.",
-      "text": "That's the girl I was hiding from.",
+      "ko": "마지막으로 질문 하나만 더 받을게요, 이분이 아주 참을성 있게 기다리셨으니까요.",
+      "text": "Let me take one last question because this gentleman's waited very patiently.",
       "alts": [
         {
           "style": "casual",
-          "text": "She's the one I was avoiding."
+          "text": "One more question — this guy's been super patient, so go ahead."
         },
         {
           "style": "formal",
-          "text": "She is the woman I have been avoiding."
+          "text": "I will take one final question, as this gentleman has waited quite patiently."
         }
       ],
-      "note": "**hiding from**은 누군가를 피해 숨어 지낼 때 쓰는 표현으로, avoid보다 더 생생한 느낌을 줍니다.",
-      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "note": "질문을 마무리하고 싶을 때 **Let me take one last question**라고 하면 \"마지막으로 질문 하나만 더 받을게요\"라는 뜻이에요. 회의나 강연에서 자주 씁니다.",
+      "situation": "제가 이걸 공짜로 들어도 될까요? (빌 애크먼)",
       "from": {
-        "videoId": "6nVAQaiLNkY",
-        "i": 178
+        "videoId": "SW2bVwdr8Zg",
+        "i": 283
       },
-      "start": 457.84,
-      "end": 460.08,
+      "start": 899.6,
+      "end": 902.399,
       "recording": null
     },
     {
       "i": 3,
-      "ko": "자, 너희들 볼 수 있게 천천히 해볼게.",
-      "text": "Here, I'll slow it down so you guys can see it.",
+      "ko": "어, 걔가 카펫을 다 걷어내서 이제 소리가 다 들려.",
+      "text": "Yeah, he took up the carpets and now you can hear everything.",
       "alts": [
         {
           "style": "casual",
-          "text": "Hang on, let me slow that down for ya."
+          "text": "He ripped out the carpets, so now you can hear every little thing."
         },
         {
           "style": "formal",
-          "text": "Allow me to slow this down so you can see it more clearly."
+          "text": "As it turns out, he removed the carpets, so every sound comes through now."
         }
       ],
-      "note": "**slow it down**은 동작이나 설명을 천천히 다시 보여줄 때 쓰는 표현입니다.",
+      "note": "**took up the carpets**는 바닥에 깔려 있던 카펫을 걷어냈다는 뜻이에요. \"take up\"은 바닥재 등을 뜯어내거나 걷어낼 때 씁니다.",
       "situation": "The Ones with the Whole Gang from Season 3 | Friends",
       "from": {
         "videoId": "6nVAQaiLNkY",
-        "i": 225
+        "i": 207
       },
-      "start": 580.16,
-      "end": 582.08,
+      "start": 540.56,
+      "end": 543.08,
       "recording": null
     },
     {
       "i": 4,
-      "ko": "나 딱 한 가지만 진짜 빨리 하고 올게.",
-      "text": "I just have to do one thing really quickly.",
+      "ko": "지금 언니(여동생)를 통화 대기시켜 놨는데, 이번 주말에 그 집 오두막 빌려서 스키 타러 가도 된대.",
+      "text": "Because I have my sister on hold and she said that we could have her cabin for the weekend and go skiing.",
       "alts": [
         {
           "style": "casual",
-          "text": "Gimme a sec, just gotta do one quick thing."
+          "text": "My sister's on hold right now, and she says we can grab her cabin this weekend and go skiing."
         },
         {
           "style": "formal",
-          "text": "I need to take care of one thing very quickly."
+          "text": "I currently have my sister on hold, and she has informed me that we may use her cabin this weekend to go skiing."
         }
       ],
-      "note": "**really quickly**는 잠깐 뭔가를 처리하고 오겠다고 양해를 구할 때 쓰는 표현입니다.",
+      "note": "전화 통화 중 상대를 잠깐 기다리게 할 때 **on hold**라고 해요. \"have someone on hold\"는 그 사람을 통화 대기시켜 놓았다는 뜻입니다.",
       "situation": "The Ones with the Whole Gang from Season 3 | Friends",
       "from": {
         "videoId": "6nVAQaiLNkY",
-        "i": 772
+        "i": 425
       },
-      "start": 2017.039,
-      "end": 2018.64,
+      "start": 1206.559,
+      "end": 1212.68,
       "recording": null
     }
   ]

@@ -1,0 +1,115 @@
+{
+  "setId": "s005",
+  "videoId": "daily-s005",
+  "title": "Set 5",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이번 주말 내내 비 온다길래 하이킹을 다음 주 토요일로 미뤘거든. 근데 알고 보니 조금밖에 안 왔더라, 뭐 어쩔 수 없지.",
+      "text": "The forecast said rain all weekend, so we moved the hike to next Saturday instead. Turns out it barely drizzled, but oh well.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Weather looked bad so we just pushed the hike to next Saturday. Barely even rained, whatever."
+        },
+        {
+          "style": "formal",
+          "text": "The forecast had predicted rain throughout the weekend, so we postponed the hike until the following Saturday. As it turned out, it only drizzled slightly, but that was just as well."
+        }
+      ],
+      "note": "**turns out** 는 나중에 알고 보니 그랬다는 뜻.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "역 근처에 카페마다 자리가 없어서 거의 이십 분을 헤맸어. 결국 구석 자리 하나 찾았는데 하필 쓰레기통 바로 옆이더라.",
+      "text": "Every cafe near the station was packed, so I ended up wandering around for almost twenty minutes. I finally found one seat in the back, right next to the trash can.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Couldn't find a seat anywhere near the station, so I just walked around for almost twenty minutes. Finally squeezed into one spot in the back, right by the trash can."
+        },
+        {
+          "style": "formal",
+          "text": "None of the cafes near the station had any open seats, so I spent almost twenty minutes walking around before finding a single seat in the back, right next to the trash can."
+        }
+      ],
+      "note": "**ended up** 는 계획과 다르게 결국 그렇게 됐다는 뜻.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "위층 사람들이 요 며칠 자정 넘어서까지 가구를 끌고 다녀. 아직 말은 안 했는데, 진짜 문에 쪽지라도 붙이고 싶은 심정이야.",
+      "text": "The upstairs neighbors have been dragging furniture around past midnight for the last few nights. I haven't said anything yet, but I'm getting close to leaving a note on their door.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Neighbors upstairs are dragging furniture past midnight again, still haven't said a word to them, but I'm this close to leaving a note on their door."
+        },
+        {
+          "style": "formal",
+          "text": "The neighbors upstairs have been moving furniture around after midnight for several nights in a row. I haven't mentioned it yet, but I am close to leaving a note on their door."
+        }
+      ],
+      "note": "**getting close to** 는 거의 그렇게 하려는 참이라는 뜻.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 거의 이십 분을 넷플릭스만 뒤적이면서 서로 고집을 안 꺾었어. 나는 새로 나온 스릴러 보고 싶었는데, 걔는 또 그 베이킹 프로 보자고 우기더라.",
+      "text": "We spent almost twenty minutes scrolling through Netflix, and neither of us would budge. I wanted the new thriller, and she kept pushing for that baking show again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Spent a good twenty minutes scrolling Netflix, neither of us budged. I wanted the thriller, she wanted her baking show, as always."
+        },
+        {
+          "style": "formal",
+          "text": "We spent nearly twenty minutes scrolling through Netflix, and neither of us was willing to compromise. I preferred the new thriller, while she continued to advocate for that baking show."
+        }
+      ],
+      "note": "**budge** 는 고집이나 입장을 안 굽힌다는 뜻.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "삼월에 수채화 도구를 세트로 다 샀는데 겨우 세 번 쓰고 말았어. 그러고는 계속 옷장에 처박혀 있어.",
+      "text": "I bought a whole watercolor set back in March and used it maybe three times. It's just been collecting dust in the closet since then.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got a full watercolor set in March, only used it three times or so, and it's been sitting there ever since."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a full watercolor set in March but only used it a few times. It has been sitting in the closet ever since."
+        }
+      ],
+      "note": "**collecting dust** 는 안 쓰이고 방치돼 있다는 뜻.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal이 '오 well'(그냥 넘긴다는 뜻)을 '결정이 합리적이었다'는 정당화 문장으로 바꿔 내용을 눅였다 — 원래 의미대로 '그래도 상관없다'는 뜻을 살려 고쳤다.",
+    "3번 formal이 note가 설명하는 '거의 그렇게 하려는 참'(getting close to)을 '고려 중이다'(considering)로 약하게 바꿔 뜻이 달라졌다 — 원래 강도를 살려 고쳤다.",
+    "3번 casual이 text와 문장 구조·어휘가 많이 겹쳐서 더 구어체로 다듬었다.",
+    "5번 note가 가르치는 'collecting dust' 표현이 정작 text에는 없고 casual에만 들어 있었다 — text에 그 표현을 넣고, casual은 다른 말로 다시 써서 겹치지 않게 했다."
+  ]
+}

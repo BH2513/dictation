@@ -613,15 +613,53 @@ function updateIndex(pid, date, count, generatedAt) {
   return out;
 }
 
-function save(parsed, date, pids, generatedAt) {
-  var day = toDayFile(parsed, date);
+/* 이미 있는 날에 문장을 더 붙인다.
+
+   하루에 여러 묶음을 만들어 두면, 다섯 개를 다 한 사람이 앱에서 바로 다음 묶음을
+   꺼내 쓸 수 있다. 앱은 서버가 없어서 스스로 만들지는 못한다.
+
+   붙이는 것이지 갈아 끼우는 것이 아니다 — 앞 번호가 밀리면 이미 담아 둔
+   문장카드가 다른 문장을 가리키게 된다. */
+function appendDay(pid, date, day) {
+  var file = path.join(DAILY, pid, date + '.json');
+  var old = readJSON(file, null);
+  if (!old || !old.sentences || !old.sentences.length) return day;
+
+  var seen = {};
+  for (var i = 0; i < old.sentences.length; i++) {
+    seen[key(old.sentences[i].text)] = true;
+  }
+  var merged = old.sentences.slice();
+  for (var j = 0; j < day.sentences.length; j++) {
+    var one = day.sentences[j];
+    if (seen[key(one.text)]) continue;           // 같은 문장이 두 번 나오면 버린다
+    seen[key(one.text)] = true;
+    one.i = merged.length;
+    merged.push(one);
+  }
+  var out = { videoId: day.videoId, title: day.title, date: day.date,
+              source: day.source, sentences: merged };
+  if (old.reviewed || day.reviewed) {
+    out.reviewed = (old.reviewed || []).concat(day.reviewed || []);
+  }
+  return out;
+}
+
+function key(text) {
+  return String(text || '').toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function save(parsed, date, pids, generatedAt, append) {
+  var made = toDayFile(parsed, date);
   var written = [];
+  var day = made;
   for (var p = 0; p < pids.length; p++) {
+    day = append ? appendDay(pids[p], date, toDayFile(parsed, date)) : made;
     writeJSON(path.join(DAILY, pids[p], date + '.json'), day);
     updateIndex(pids[p], date, day.sentences.length, generatedAt);
     written.push(pids[p]);
   }
-  return { day: day, profiles: written };
+  return { day: day, profiles: written, added: made.sentences.length };
 }
 
 module.exports = {
@@ -637,5 +675,5 @@ module.exports = {
   sentencesOf: sentencesOf, commaHeavy: commaHeavy, vagueCount: vagueCount,
   highlighted: highlighted, keysAppear: keysAppear, sameOpening: sameOpening,
   wordCount: wordCount, validate: validate,
-  toDayFile: toDayFile, updateIndex: updateIndex, save: save
+  toDayFile: toDayFile, updateIndex: updateIndex, save: save, appendDay: appendDay
 };

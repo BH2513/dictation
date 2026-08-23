@@ -7,8 +7,14 @@
 var fs = require('fs');
 var daily = require('./daily');
 
+var APPEND = process.argv.indexOf('--append') >= 0;
+
 function read(cb) {
-  if (process.argv[2]) { cb(fs.readFileSync(process.argv[2], 'utf8')); return; }
+  var file = null;
+  for (var i = 2; i < process.argv.length; i++) {
+    if (process.argv[i] !== '--append') { file = process.argv[i]; break; }
+  }
+  if (file) { cb(fs.readFileSync(file, 'utf8')); return; }
   var buf = '';
   process.stdin.setEncoding('utf8');
   process.stdin.on('data', function (d) { buf += d; });
@@ -30,17 +36,19 @@ read(function (raw) {
     }
 
     var date = process.env.DAILY_DATE || daily.todayKST();
-    var r = daily.save(parsed, date, pids, new Date().toISOString());
+    var r = daily.save(parsed, date, pids, new Date().toISOString(), APPEND);
 
-    process.stdout.write(date + ' 문장 ' + r.day.sentences.length + '개를 저장했습니다 ('
-      + r.profiles.join(', ') + ').\n');
+    process.stdout.write(date + ' 문장 ' + (APPEND ? r.added + '개를 더 붙였습니다 (모두 '
+      + r.day.sentences.length + '개)' : r.day.sentences.length + '개를 저장했습니다')
+      + ' (' + r.profiles.join(', ') + ').\n');
     if (parsed.problems && parsed.problems.length) {
       process.stdout.write('검수에서 고친 것:\n');
       for (var q = 0; q < parsed.problems.length; q++) {
         process.stdout.write('  - ' + parsed.problems[q] + '\n');
       }
     }
-    for (var s = 0; s < r.day.sentences.length; s++) {
+    var from = APPEND ? r.day.sentences.length - r.added : 0;
+    for (var s = from; s < r.day.sentences.length; s++) {
       process.stdout.write('  ' + (s + 1) + '. ' + r.day.sentences[s].text + '\n');
     }
   } catch (e) {

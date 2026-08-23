@@ -47,5 +47,6 @@
   ],
   "showsCandidates": 6,
   "showsMinWords": 6,
-  "showsMaxWords": 30
+  "showsMaxWords": 30,
+  "batches": 3
 }

@@ -129,9 +129,15 @@ function buildPrompt(opts) {
   lines.push('');
   lines.push('## 영어 문장 \u2014 이게 제일 중요합니다');
   lines.push('');
-  lines.push('- **여러 문장으로 나눠 쓰세요. 2~3 문장이 좋습니다.**');
-  lines.push('  긴 말을 쉼표로 계속 이으면 숨이 차고 글 같아집니다.');
-  lines.push('  영어는 짧게 끊어 말합니다. **한 문장에 쉼표가 세 개를 넘으면 나누세요.**');
+  lines.push('- **자연스러움이 다른 모든 조건보다 먼저입니다.** 규칙을 채우려고');
+  lines.push('  말을 늘리거나 덧붙이지 마세요. 할 말이 끝났으면 거기서 끝냅니다.');
+  lines.push('  **한 문장으로 끝나도 됩니다.** 두 문장이 자연스러우면 두 문장으로 쓰세요.');
+  lines.push('  다만 **쉼표로 계속 이으면 안 됩니다** \u2014 한 문장에 쉼표가 세 개를 넘으면 나누세요.');
+  lines.push('- **문장을 억지로 이어 붙이지 마세요.** 뒤에 한 마디 더 붙이려고');
+  lines.push('  \'and that ~\' \'so that ~\' 같은 것을 달면 그 자리가 바로 어색해집니다.');
+  lines.push('  ("and that helps nobody", "and that was that" 처럼 나간 적이 있습니다.)');
+  lines.push('- **that, it, this 는 무엇을 가리키는지 낱말 하나로 짚을 수 있어야 합니다.**');
+  lines.push('  앞 문장 전체를 that 하나로 받지 마세요. 무엇을 말하는지 흐려집니다.');
   lines.push('- **구체적으로 쓰세요.** it, that, this 로 얼버무리지 마세요.');
   lines.push('  무엇을 시켰는지, 몇 시였는지, 무슨 요일이었는지 \u2014 실제 물건과 숫자를 넣으세요.');
   lines.push('  구체적인 것이 없으면 영어가 대명사 투성이가 되고 어색해집니다.');
@@ -155,8 +161,12 @@ function buildPrompt(opts) {
   lines.push('');
   lines.push('## 길이와 난이도');
   lines.push('- 영어는 **다 합쳐서** ' + opts.minWords + '~' + opts.maxWords + ' 단어. 한 문장이 아니라 전체 기준입니다');
-  lines.push('- 그 안에서 2~3 문장으로 나눕니다. 짧은 문장 하나가 섞이면 오히려 자연스럽습니다');
-  lines.push('- 낱말은 쉽게, 내용은 어렵게. 짧고 단순한 말만 나열하면 연습이 안 됩니다');
+  lines.push('  **이건 넘지 말라는 울타리지 채워야 하는 양이 아닙니다.** 자연스러운 말이');
+  lines.push('  ' + opts.minWords + ' 단어에서 끝나면 거기서 끝내세요. 늘리면 그 자리가 어색해집니다');
+  lines.push('- **난이도는 길이가 아니라 내용에서 나옵니다.** 짧아도 어려울 수 있습니다');
+  lines.push('  낱말은 쉽게, 내용은 어렵게. 어른이 실제로 겪는 복잡한 사정을 담으세요 \u2014');
+  lines.push('  가정("~했으면 ~했을 텐데"), 조건, 이유, 마음이 반쯤 바뀐 상태 같은 것.');
+  lines.push('  "좋았어요" "힘들어요" 수준으로 단순하면 연습이 안 됩니다');
   lines.push('');
   lines.push('## 오늘 쓸 상황 — 문장 하나에 상황 하나씩, 순서대로');
   for (var i = 0; i < opts.situations.length; i++) {
@@ -309,14 +319,26 @@ function buildReviewPrompt(draft, cfg) {
   lines.push('2. **소리내어 읽었을 때 어색하지 않은가.** 글로 쓴 문장 같으면 고칩니다.');
   lines.push('   특히 **번역체 냄새**를 보세요. 한국어를 그대로 옮긴 티가 나면 영어를 새로 씁니다.');
   lines.push('   한국어와 1:1로 안 맞아도 됩니다. 영어가 자연스러운 것이 먼저입니다.');
-  lines.push('2-1. **한 문장이 너무 긴가.** 쉼표로 계속 이었으면 2~3 문장으로 나눕니다.');
+  lines.push('2-1. **규칙을 채우려고 늘려 쓴 데가 있는가.** 이게 제일 흔한 문제입니다.');
+  lines.push('     할 말이 끝났는데 한 마디를 더 붙였으면 **그 마디를 잘라 내세요.**');
+  lines.push('     문장이 짧아지는 것은 괜찮습니다. 한 문장으로 끝나도 됩니다.');
+  lines.push('     쉼표로 계속 이었으면 그때만 나눕니다.');
+  lines.push('2-1-1. **문장을 억지로 이어 붙인 자리가 있는가.** \'and that ~\' 처럼');
+  lines.push('     앞 문장 전체를 that 하나로 받아 이어 붙였으면 고칩니다.');
+  lines.push('     that 과 it 은 무엇을 가리키는지 낱말 하나로 짚을 수 있어야 합니다.');
+  lines.push('     (전에 "and that helps nobody", "and that was that" 이 그대로 나갔습니다.');
+  lines.push('      앞이 가정법인데 뒤가 현재형이라 시제까지 어긋나 있었습니다.)');
   lines.push('2-2. **it / this / that 으로 얼버무렸는가.** 구체적인 물건, 시각, 요일을 넣습니다.');
   lines.push('     한국어도 애매하면 같이 구체적으로 고칩니다.');
   lines.push('2-3. **말버릇을 장식으로 넣었는가.** honestly, kind of, like 가 뜻 없이 들어갔으면 뺍니다.');
   lines.push('     like 를 채움말로 쓰면 십대 말투가 됩니다.');
   lines.push('2-4. **원어민이 그 자리에서 안 쓰는 낱말이 있는가.** (예: 배달 다시 시키기 = reorder 가 아니라 order again)');
   lines.push('2-5. **두 가지로 읽히는 대목이 있는가.** 문법이 맞아도 순간 헷갈리면 고칩니다.');
-  lines.push('3. **casual 이 text 와 충분히 다른가.** 앞부분이 겹치면 고칩니다.');
+  lines.push('3. **"text" 를 casual 과 나란히 놓고 읽어 보세요.**');
+  lines.push('   **casual 쪽이 더 사람 말 같으면 "text" 를 다시 쓰세요.** 학습자가 보는');
+  lines.push('   정답은 "text" 이므로, 여기가 제일 자연스러워야 합니다.');
+  lines.push('   ("text" 만 길이 조건이 걸려 있어서 늘어지기 쉽습니다. 실제로 그랬습니다.)');
+  lines.push('3-1. **casual 이 text 와 충분히 다른가.** 앞부분이 겹치면 고칩니다.');
   lines.push('   캐주얼은 관용구를 넣는 것이 아니라 더 짧고 축약된 구어입니다.');
   lines.push('4. **formal 이 뜻을 바꾸지 않았는가.** 말투만 올려야 하고,');
   lines.push('   내용을 눅이거나 빼먹으면 안 됩니다.');
@@ -324,6 +346,7 @@ function buildReviewPrompt(draft, cfg) {
   lines.push('6. **note 에서 별표로 감싼 표현이 위 문장들 안에 실제로 나오는가.**');
   lines.push('   없는 표현을 가르치면 안 됩니다. 감싼 것이 하나도 없어도 안 됩니다.');
   lines.push('7. **"text" 가 ' + cfg.minWords + '~' + cfg.maxWords + ' 단어인가.**');
+  lines.push('   범위 안에만 있으면 됩니다. **아래쪽에 붙어 있다고 늘리지 마세요.**');
   lines.push('8. 줄표(\u2014)와 따옴표를 쓰지 않았는가. 쉼표와 마침표만 씁니다.');
   lines.push('');
   lines.push('## 어떻게 할 것인가');
@@ -483,6 +506,14 @@ function sentencesOf(text) {
 
 /* 한 문장 안에 쉼표가 세 개를 넘으면 숨이 차고 글 같아진다.
    영어는 짧게 끊어 말한다 \u2014 이게 번역체의 제일 흔한 자국이다. */
+/* 뒤에 한 마디 더 붙이려고 앞 문장 전체를 that 하나로 받은 자리.
+   'and that helps nobody', 'and that was that' 처럼 나간 적이 있다.
+   목적을 나타내는 'so that I could ~' 는 that 뒤가 대명사라 걸리지 않는다. */
+function gluedOn(text) {
+  return /\b(?:and|but|so)\s+that\s+(?:is|was|were|has|had|would|wo|will|does|did|helps|means|makes|works|isn|wasn|doesn|didn|hasn|won)\b/i
+    .test(String(text || ''));
+}
+
 function commaHeavy(text) {
   var parts = sentencesOf(text);
   for (var i = 0; i < parts.length; i++) {
@@ -560,8 +591,9 @@ function validate(parsed, cfg) {
     if (commaHeavy(r.text)) {
       problems.push(at + '한 문장에 쉼표가 너무 많습니다. 문장을 나누세요.');
     }
-    if (n && sentencesOf(r.text).length < 2) {
-      problems.push(at + '영어가 한 문장뿐입니다. 2~3 문장으로 나누세요.');
+    // 뒤에 한 마디 더 붙이려고 앞 문장 전체를 that 하나로 받은 자리
+    if (gluedOn(r.text)) {
+      problems.push(at + '앞 문장 전체를 that 으로 받아 이어 붙였습니다. 그 부분을 고치세요.');
     }
 
     // 대명사로 때운 문장은 한국어가 애매했다는 뜻이다
@@ -710,6 +742,7 @@ module.exports = {
   buildReviewPrompt: buildReviewPrompt,
   altStyles: altStyles, normalizeAlts: normalizeAlts,
   sentencesOf: sentencesOf, commaHeavy: commaHeavy, vagueCount: vagueCount,
+  gluedOn: gluedOn,
   highlighted: highlighted, keysAppear: keysAppear, sameOpening: sameOpening,
   wordCount: wordCount, validate: validate,
   toDayFile: toDayFile, updateIndex: updateIndex,

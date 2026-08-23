@@ -1,8 +1,9 @@
 {
   "count": 5,
-  "minWords": 20,
+  "minWords": 12,
   "maxWords": 35,
   "level": "advanced",
+  "model": "opus",
   "avoidRecentDays": 14,
   "vocabSample": 30,
   "situations": [

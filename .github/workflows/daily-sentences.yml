@@ -50,6 +50,8 @@ jobs:
 
           node tools/daily_schema.js > /tmp/schema.json
           node tools/daily_aloud_schema.js > /tmp/aloud_schema.json
+          node tools/daily_alts_schema.js > /tmp/alts_schema.json
+          node tools/daily_korean_schema.js > /tmp/korean_schema.json
           node tools/daily_review_schema.js > /tmp/review_schema.json
 
           # 어떤 모델로 돌지는 data/daily/config.json 에서 정한다.
@@ -85,21 +87,25 @@ jobs:
           # (세 묶음 중 두 번). 두 번째는 첫 번째가 봤다는 것을 모르는 새 눈이라
           # "아까 괜찮다고 했으니" 가 생기지 않는다. 회차마다 무엇을 고쳤는지 기록에 남긴다.
           # 읽을 것을 못 만들거나 끼우지 못하면 앞 단계 것을 그대로 쓴다
-          aloud() {
-            echo "-- 소리내어 읽는 중 ($1번째)"
-            if ! node tools/daily_aloud_prompt.js /tmp/polished.json > /tmp/aloud.txt; then
-              echo "   읽을 것을 만들지 못해 건너뜁니다."
+          # 한 단계를 부른다: 지시문 만들기 → claude → 끼우기.
+          # 어느 하나라도 안 되면 앞 단계 것을 그대로 쓴다 —
+          # 반쯤 붙은 것을 내보내느니 앞 단계에서 멈추는 편이 낫다
+          #   step <이름> <prompt 스크립트> <schema 파일> <merge 스크립트>
+          step() {
+            echo "-- $1"
+            if ! node "$2" /tmp/polished.json > /tmp/step.txt; then
+              echo "   지시문을 만들지 못해 건너뜁니다."
               return 0
             fi
-            claude -p "$(cat /tmp/aloud.txt)" \
+            claude -p "$(cat /tmp/step.txt)" \
               $MODEL_ARG \
               --permission-mode dontAsk \
               --output-format json \
-              --json-schema "$(cat /tmp/aloud_schema.json)" \
-              > /tmp/aloud_out.json || true
-            echo "   답한 모델: $(said /tmp/aloud_out.json)"
-            if node tools/daily_aloud_merge.js /tmp/polished.json /tmp/aloud_out.json > /tmp/merged.json; then
-              mv /tmp/merged.json /tmp/polished.json
+              --json-schema "$(cat $3)" \
+              > /tmp/step_out.json || true
+            echo "   답한 모델: $(said /tmp/step_out.json)"
+            if node "$4" /tmp/polished.json /tmp/step_out.json > /tmp/step_merged.json; then
+              mv /tmp/step_merged.json /tmp/polished.json
             fi
             return 0
           }
@@ -111,14 +117,16 @@ jobs:
           MADE=0
 
           for batch in $(seq 1 "$BATCHES"); do
-          # 앞 묶음이 저장된 뒤에 지시문을 만들어야 상황이 겹치지 않는다
-          node tools/daily_prompt.js > /tmp/prompt.txt
+          # 앞 묶음이 저장된 뒤에 지시문을 만들어야 상황이 겹치지 않는다.
+          # 고른 상황은 따로 남긴다 — 만드는 단계는 영어만 내므로 뒤에서 짝지어야 한다
+          node tools/daily_prompt.js /tmp/situations.json > /tmp/prompt.txt
 
           # 단어 수나 표현 오용처럼 형식으로 못 막는 조건이 있어서, 걸리면 다시 만들어 본다
           for try in 1 2 3; do
             echo "=== ${batch}번째 묶음 / ${try}번째 시도 ==="
 
-            echo "-- 만드는 중"
+            # 1) 영어만 만든다. 한국어는 여기 없다 (운영자 결정)
+            echo "-- 영어를 만드는 중"
             claude -p "$(cat /tmp/prompt.txt)" \
               $MODEL_ARG \
               --permission-mode dontAsk \
@@ -127,10 +135,25 @@ jobs:
               > /tmp/draft.json || true
             echo "   답한 모델: $(said /tmp/draft.json)"
 
-            # 영어만 따로 떼어 소리내어 읽힌다 (aloud 함수). 두 번 읽는다
-            cp /tmp/draft.json /tmp/polished.json
-            aloud 1
-            aloud 2
+            if ! node tools/daily_english_start.js /tmp/draft.json /tmp/situations.json \
+                 > /tmp/polished.json; then
+              echo "영어를 받지 못해 다시 만듭니다."
+              continue
+            fi
+
+            # 2·3) 영어만 놓고 소리내어 읽힌다. 두 번 읽는다
+            step "소리내어 읽는 중 (1번째)" tools/daily_aloud_prompt.js \
+              /tmp/aloud_schema.json tools/daily_aloud_merge.js
+            step "소리내어 읽는 중 (2번째)" tools/daily_aloud_prompt.js \
+              /tmp/aloud_schema.json tools/daily_aloud_merge.js
+
+            # 4) 확정된 영어에서 말투만 바꾼다. 여기도 영어만 다룬다
+            step "말투를 바꾸는 중" tools/daily_alts_prompt.js \
+              /tmp/alts_schema.json tools/daily_alts_merge.js
+
+            # 5) 제일 마지막에 한국어를 붙인다. 영어는 이미 확정됐다
+            step "한국어를 붙이는 중" tools/daily_korean_prompt.js \
+              /tmp/korean_schema.json tools/daily_korean_merge.js
 
             # 한 번 만든 것을 그대로 내보내면 틀린 관용구가 그대로 나간다.
             # 다시 읽혀서 고친 것을 내보낸다 (구독 한도로 도므로 값은 안 든다)
@@ -144,7 +167,7 @@ jobs:
                 > /tmp/out.json || true
               echo "   답한 모델: $(said /tmp/out.json)"
             else
-              echo "초안을 읽지 못해 검수를 건너뜁니다."
+              echo "검수 지시문을 만들지 못해 건너뜁니다."
               cp /tmp/polished.json /tmp/out.json
             fi
 
@@ -156,8 +179,8 @@ jobs:
               break
             fi
 
-            # 검수본이 조건에 안 맞으면 소리내어 읽은 것까지라도 되는지 본다
-            echo "-- 검수본이 조건에 맞지 않아 앞 단계 것을 확인합니다"
+            # 검수본이 조건에 안 맞으면 검수 전 것이라도 되는지 본다
+            echo "-- 검수본이 조건에 맞지 않아 검수 전 것을 확인합니다"
             if node tools/daily_save.js /tmp/polished.json $APPEND; then
               MADE=$((MADE + 1))
               break

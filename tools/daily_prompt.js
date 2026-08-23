@@ -19,6 +19,11 @@ try {
   var situations = daily.pickSituations(cfg.situations, recent, cfg.count);
   var vocab = daily.vocabulary(pid, cfg.vocabSample || 30);
 
+  // 고른 상황을 파일로 남긴다. 영어만 받으므로 뒤에서 이 순서로 짝지어야 한다
+  if (process.argv[2]) {
+    require('fs').writeFileSync(process.argv[2], JSON.stringify(situations), 'utf8');
+  }
+
   process.stdout.write(daily.buildPrompt({
     count: cfg.count,
     minWords: cfg.minWords,

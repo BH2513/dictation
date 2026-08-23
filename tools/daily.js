@@ -147,21 +147,18 @@ function buildPrompt(opts) {
   lines.push('이 사람은 중급을 넘어선 수준이라 교과서 문장은 도움이 되지 않습니다.');
   lines.push('오늘 연습할 문장 ' + count + '개를 만들어 주세요.');
   lines.push('');
-  lines.push('학습자는 한국어 문장을 보고 영어로 옮겨 **말하는** 연습을 합니다.');
-  lines.push('맞히기 시험이 아니라 말해 보는 연습이므로, 정답이 하나일 필요는 없습니다.');
-  lines.push('중요한 것은 그 영어가 **실제로 사람들이 그렇게 말하는가** 입니다.');
+  lines.push('학습자는 이 영어를 **소리내어 말하는** 연습을 합니다.');
+  lines.push('맞히기 시험이 아니므로 정답이 하나일 필요는 없습니다.');
+  lines.push('중요한 것은 그 영어가 **실제로 사람들이 그렇게 말하는가** 하나뿐입니다.');
   lines.push('');
-  lines.push('## 만드는 순서 \u2014 이 순서를 반드시 지키세요');
+  lines.push('## 한국어는 생각하지 마세요');
   lines.push('');
-  lines.push('**1단계. 영어를 먼저 만듭니다.** 한국어는 아직 생각하지 마세요.');
-  lines.push('그 상황에 놓인 사람이 실제로 뭐라고 말할지를 영어로 그냥 떠올리세요.');
-  lines.push('**2단계.** 그 영어를 소리내어 읽어 봅니다. 조금이라도 어색하면 버리고 다시 만듭니다.');
-  lines.push('**3단계.** 그제서야 한국어를 씁니다. **이제는 영어가 기준입니다** \u2014');
-  lines.push('그 영어를 한국말로 옮기세요. 영어에 없는 말을 넣거나 있는 말을 빼지 마세요.');
-  lines.push('직역하라는 뜻은 아닙니다. 한국 사람이 그 뜻을 말할 때 쓰는 말로 옮기세요.');
+  lines.push('**여기서는 영어만 만듭니다.** 한국어는 나중에 다른 자리에서 붙입니다.');
+  lines.push('그러니 **옮기기 좋은 영어**를 쓰려고 하지 마세요. 한국어와 짝이 맞는지도 보지 마세요.');
+  lines.push('그런 것을 생각하는 순간 번역체가 됩니다 \u2014 실제로 그렇게 나온 적이 있습니다.');
   lines.push('');
-  lines.push('한국어를 먼저 쓰고 영어로 옮기면 번역체가 됩니다. 실제로 그렇게 나온 적이 있습니다.');
-  lines.push('목표는 번역을 잘하는 것이 아니라 **영어가 자연스러운 것**입니다.');
+  lines.push('그 상황에 놓인 사람이 **실제로 뭐라고 말할지**만 떠올려서 쓰세요.');
+  lines.push('쓴 다음 소리내어 읽어 보고, 조금이라도 어색하면 버리고 다시 만듭니다.');
   lines.push('');
   lines.push('## \uc8fc\uc758 \u2014 \ud55c\uad6d\uc5d0\ub9cc \uc788\ub294 \uac83\uc744 \uc601\uc5b4\ub85c \uc62e\uae30\uc9c0 \ub9c8\uc138\uc694');
   lines.push('');
@@ -175,7 +172,6 @@ function buildPrompt(opts) {
   lines.push('- 수능, 명절 차례, 전세, 학원, 회식처럼 **설명이 필요한 것은 아예 넣지 마세요.**');
   lines.push('  그 자리에 영어권에도 있는 것을 넣으면 됩니다 (저녁 모임, 시험, 월세, 수업).');
   lines.push('- **돈은 달러로 씁니다.** 원 단위를 그대로 쓰지 마세요.');
-  lines.push('  한국어에도 달러로 적습니다 \u2014 영어와 한국어의 숫자가 같아야 합니다.');
   lines.push('');
   lines.push('가늠하는 법: **한국을 모르는 사람이 읽어도 그대로 통하는가.**');
   lines.push('설명이 필요하면 그건 영어 문장이 아니라 한국어를 옮겨 놓은 것입니다.');
@@ -200,13 +196,6 @@ function buildPrompt(opts) {
   lines.push('  (배달을 다시 시키는 것은 reorder 가 아니라 order again 입니다).');
   lines.push('- **두 가지로 읽히는 말을 피하세요.** 문법이 맞아도 순간 헷갈리면 안 됩니다');
   lines.push('  (caved on day three 는 맞지만 cave on ~ 으로도 읽혀서 걸립니다. caved three days in 이 낫습니다).');
-  lines.push('');
-  lines.push('## 한국어 문장');
-  lines.push('');
-  lines.push('- 한국 사람이 친구에게 하듯 자연스럽게. 번역투 금지');
-  lines.push('- **애매하게 쓰지 마세요.** \'그거\', \'그런 것\' 으로 얼버무리면');
-  lines.push('  영어도 따라서 애매해집니다. 무엇을 말하는지 분명히 쓰세요');
-  lines.push('- 영어와 문장 수가 달라도 됩니다. 뜻과 느낌이 맞으면 됩니다');
   lines.push('');
   lines.push('## 길이와 난이도');
   lines.push('- 영어는 **다 합쳐서** ' + opts.minWords + '~' + opts.maxWords + ' 단어. 한 문장이 아니라 전체 기준입니다');
@@ -246,41 +235,9 @@ function buildPrompt(opts) {
   lines.push('## 내놓는 형식');
   lines.push('아래 모양의 JSON 객체 하나만 출력하세요. 설명, 인사말, 코드 울타리 없이 JSON 만.');
   lines.push('');
-  lines.push('{');
-  lines.push('  "sentences": [');
-  lines.push('    {');
-  lines.push('      "situation": "위에 준 상황을 그대로",');
-  lines.push('      "ko": "학습자가 읽을 한국어 문장. 실제로 한국 사람이 그렇게 말하는 자연스러운 구어체",');
-  lines.push('      "text": "영어 문장",');
-  lines.push('      "alts": [');
-  lines.push('        { "style": "casual", "text": "더 편하게 말하면" },');
-  lines.push('        { "style": "formal", "text": "격식을 갖춰 말하면" }');
-  lines.push('      ],');
-  lines.push('      "note": "핵심 표현을 한국어 한두 문장으로. 표현은 **별표 두 개**로 감쌀 것"');
-  lines.push('    }');
-  lines.push('  ]');
-  lines.push('}');
+  lines.push('{ "texts": ["1번 영어", "2번 영어", ...] }');
   lines.push('');
-  lines.push('"alts" 는 **같은 말을 말투만 바꿔 하는 법**을 보여 주는 것입니다. 정확히 두 개.');
-  lines.push('');
-  lines.push('- "casual" — 더 편한 말투. **관용구를 억지로 넣는 것이 아닙니다.**');
-  lines.push('  더 짧게, 더 축약해서(I\'m, gonna, kinda), 말하듯이 하는 것이 캐주얼입니다.');
-  lines.push('  관용구는 **뜻이 정확히 맞을 때만** 쓰세요. 어설프게 쓰면 틀린 영어를 가르치게 됩니다.');
-  lines.push('  ("hit the spot" 은 음식이 딱 땡길 때, "call it a day" 는 일을 그만둘 때 —');
-  lines.push('   이런 것을 엉뚱한 자리에 넣으면 안 됩니다.)');
-  lines.push('  **"text" 와 앞부분이 겹치면 안 됩니다.** 나란히 놓고 차이가 보여야 합니다.');
-  lines.push('');
-  lines.push('- "formal" — 같은 뜻을 격식 있게. 처음 보는 사람이나 윗사람에게 쓸 말투.');
-  lines.push('  축약형을 쓰지 않고 낱말을 갖춰 씁니다.');
-  lines.push('  **뜻을 바꾸지 마세요.** 내용을 부드럽게 눅이거나 빼먹으면 안 됩니다 — 말투만 올립니다.');
-  lines.push('');
-  lines.push('둘 다 실제로 쓰는 말이어야 하고, 길이는 "text" 와 비슷하면 됩니다.');
-  lines.push('');
-  lines.push('"note" 에서는 **배울 만한 표현을 별표 두 개로 감싸 주세요** \u2014 예: **swamped** 는 ~.');
-  lines.push('그 부분이 화면에 강조돼서 보입니다. 최소 하나는 반드시 감싸야 합니다.');
-  lines.push('감싼 표현은 **위 문장들 안에 실제로 나오는 말**이어야 합니다.');
-  lines.push('문장에 없는 표현을 가르치면 학습자가 어디서 나온 말인지 알 수 없습니다.');
-  lines.push('"ko" 는 번역투가 아니어야 합니다. 한국 사람이 친구한테 하듯 쓰세요.');
+  lines.push('**' + count + '개**여야 하고, 위에 준 상황 **순서 그대로**여야 합니다.');
   lines.push('문장부호는 쉼표와 마침표만 쓰세요. 줄표(\u2014)와 따옴표는 쓰지 마세요.');
 
   return lines.join('\n');
@@ -338,11 +295,17 @@ function sentenceListSchema(cfg) {
   };
 }
 
+/* 만드는 단계는 영어만 낸다. 한국어와 말투는 뒤 단계에서 붙인다 (운영자 결정) */
 function buildSchema(cfg) {
   return {
     type: 'object',
-    properties: { sentences: sentenceListSchema(cfg) },
-    required: ['sentences']
+    properties: {
+      texts: {
+        type: 'array', minItems: cfg.count, maxItems: cfg.count,
+        items: { type: 'string' }
+      }
+    },
+    required: ['texts']
   };
 }
 
@@ -358,6 +321,173 @@ function buildReviewSchema(cfg) {
   };
 }
 
+/* ------------------------------------------------------------------ 말투 바꾸기
+
+   확정된 영어에서 casual / formal 을 만든다. **여기도 영어만 다룬다** —
+   한국어는 아직 없다. 한국어를 옆에 두면 말투가 아니라 번역을 보게 된다. */
+
+function buildAltsPrompt(draft) {
+  var rows = (draft && draft.sentences) || [];
+  var lines = [];
+
+  lines.push('당신은 영어가 모국어인 사람입니다. 아래 영어를 **말투만 바꿔** 두 가지로 다시 써 주세요.');
+  lines.push('');
+  lines.push('**뜻을 바꾸지 마세요.** 내용을 더하거나 빼거나 눅이면 안 됩니다.');
+  lines.push('숫자와 기간은 그대로 두세요 \u2014 전에 eight months 를 since winter 로 바꿔 놓은 적이 있습니다.');
+  lines.push('');
+  lines.push('- **casual** \u2014 더 편한 말투. **관용구를 억지로 넣는 것이 아닙니다.**');
+  lines.push('  더 짧게, 더 축약해서(I\'m, gonna, kinda), 말하듯이 하는 것이 캐주얼입니다.');
+  lines.push('  관용구는 **뜻이 정확히 맞을 때만** 쓰세요. 어설프게 쓰면 틀린 영어를 가르치게 됩니다.');
+  lines.push('  ("hit the spot" 은 음식이 딱 땡길 때, "call it a day" 는 일을 그만둘 때 \u2014');
+  lines.push('   이런 것을 엉뚱한 자리에 넣으면 안 됩니다.)');
+  lines.push('  **원문과 앞부분이 겹치면 안 됩니다.** 나란히 놓고 차이가 보여야 합니다.');
+  lines.push('');
+  lines.push('- **formal** \u2014 같은 뜻을 격식 있게. 처음 보는 사람이나 윗사람에게 쓸 말투.');
+  lines.push('  축약형을 쓰지 않고 낱말을 갖춰 씁니다. **말투만 올립니다.**');
+  lines.push('');
+  lines.push('둘 다 실제로 쓰는 말이어야 하고, 길이는 원문과 비슷하면 됩니다.');
+  lines.push('');
+  lines.push('## 말투를 바꿀 영어');
+  lines.push('');
+  for (var i = 0; i < rows.length; i++) {
+    lines.push((i + 1) + '. ' + String((rows[i] || {}).text || ''));
+  }
+  lines.push('');
+  lines.push('## 내놓는 형식');
+  lines.push('');
+  lines.push('JSON 객체 하나만 출력하세요. 설명, 인사말, 코드 울타리 없이 JSON 만.');
+  lines.push('');
+  lines.push('{ "alts": [ { "casual": "...", "formal": "..." }, ... ] }');
+  lines.push('');
+  lines.push('**' + rows.length + '개**여야 하고 **순서가 그대로**여야 합니다.');
+  lines.push('문장부호는 쉼표와 마침표만 쓰세요. 줄표(\u2014)와 따옴표는 쓰지 마세요.');
+
+  return lines.join('\n');
+}
+
+function buildAltsSchema(cfg) {
+  return {
+    type: 'object',
+    properties: {
+      alts: {
+        type: 'array', minItems: cfg.count, maxItems: cfg.count,
+        items: {
+          type: 'object',
+          properties: { casual: { type: 'string' }, formal: { type: 'string' } },
+          required: ['casual', 'formal']
+        }
+      }
+    },
+    required: ['alts']
+  };
+}
+
+function applyAlts(draft, out) {
+  var rows = (draft && draft.sentences) || [];
+  var got = (out && out.alts) || [];
+  if (!rows.length || got.length !== rows.length) return null;
+
+  var res = { sentences: [] };
+  for (var i = 0; i < rows.length; i++) {
+    var c = String((got[i] || {}).casual || '').trim();
+    var f = String((got[i] || {}).formal || '').trim();
+    if (!c || !f) return null;
+    var row = copyRow(rows[i]);
+    row.alts = [{ style: 'casual', text: c }, { style: 'formal', text: f }];
+    res.sentences.push(row);
+  }
+  return res;
+}
+
+/* ------------------------------------------------------------------ 한국어 붙이기
+
+   **제일 마지막이다.** 영어는 이미 확정됐고 여기서는 손댈 수 없다.
+   운영자 결정 \u2014 "영어가 제일 자연스러운 문장을 만들고 그 다음에 한국어로 번역해서 보여 주면 된다.
+   한국어를 계속 영어랑 비교하면서 하면 이상해진다." */
+
+function buildKoreanPrompt(draft) {
+  var rows = (draft && draft.sentences) || [];
+  var lines = [];
+
+  lines.push('아래 영어를 한국어로 옮기고, 배울 표현을 짧게 설명해 주세요.');
+  lines.push('');
+  lines.push('**영어는 이미 확정됐습니다. 고칠 수 없습니다.** 어색해 보여도 그대로 둡니다.');
+  lines.push('여기서 할 일은 옮기는 것뿐입니다.');
+  lines.push('');
+  lines.push('## 한국어');
+  lines.push('');
+  lines.push('- 학습자는 이 한국어를 보고 영어로 말해 봅니다. **영어가 기준입니다** \u2014');
+  lines.push('  영어에 없는 말을 넣거나 영어에 있는 말을 빼지 마세요.');
+  lines.push('- 직역하라는 뜻은 아닙니다. **한국 사람이 그 뜻을 말할 때 쓰는 말**로 옮기세요.');
+  lines.push('  번역투가 나면 실패입니다.');
+  lines.push('- **애매하게 쓰지 마세요.** \'그거\', \'그런 것\' 으로 얼버무리면 무엇을 말하는지 알 수 없습니다.');
+  lines.push('- 문장 수는 영어와 달라도 됩니다.');
+  lines.push('- **돈은 영어와 같은 숫자로 달러로 적습니다.** 원으로 바꾸지 마세요.');
+  lines.push('');
+  lines.push('## 설명');
+  lines.push('');
+  lines.push('- 배울 만한 표현을 한국어 한두 문장으로. **별표 두 개로 감싸세요** \u2014 예: **swamped** 는 ~.');
+  lines.push('  그 부분이 화면에 강조돼서 보입니다. 최소 하나는 반드시 감싸야 합니다.');
+  lines.push('- 감싼 표현은 **그 문장 안에 실제로 나오는 말**이어야 합니다 (casual, formal 포함).');
+  lines.push('  문장에 없는 표현을 가르치면 학습자가 어디서 나온 말인지 알 수 없습니다.');
+  lines.push('');
+  lines.push('## 옮길 문장');
+  lines.push('');
+  for (var i = 0; i < rows.length; i++) {
+    var r = rows[i] || {};
+    lines.push((i + 1) + '. ' + String(r.text || ''));
+    var c = altOf(r.alts, 'casual'), f = altOf(r.alts, 'formal');
+    if (c) lines.push('   casual: ' + c);
+    if (f) lines.push('   formal: ' + f);
+  }
+  lines.push('');
+  lines.push('## 내놓는 형식');
+  lines.push('');
+  lines.push('JSON 객체 하나만 출력하세요. 설명, 인사말, 코드 울타리 없이 JSON 만.');
+  lines.push('');
+  lines.push('{ "rows": [ { "ko": "...", "note": "..." }, ... ] }');
+  lines.push('');
+  lines.push('**' + rows.length + '개**여야 하고 **순서가 그대로**여야 합니다.');
+  lines.push('문장부호는 쉼표와 마침표만 쓰세요. 줄표(\u2014)와 따옴표는 쓰지 마세요.');
+
+  return lines.join('\n');
+}
+
+function buildKoreanSchema(cfg) {
+  return {
+    type: 'object',
+    properties: {
+      rows: {
+        type: 'array', minItems: cfg.count, maxItems: cfg.count,
+        items: {
+          type: 'object',
+          properties: { ko: { type: 'string' }, note: { type: 'string' } },
+          required: ['ko', 'note']
+        }
+      }
+    },
+    required: ['rows']
+  };
+}
+
+function applyKorean(draft, out) {
+  var rows = (draft && draft.sentences) || [];
+  var got = (out && out.rows) || [];
+  if (!rows.length || got.length !== rows.length) return null;
+
+  var res = { sentences: [] };
+  for (var i = 0; i < rows.length; i++) {
+    var ko = String((got[i] || {}).ko || '').trim();
+    var note = String((got[i] || {}).note || '').trim();
+    if (!ko || !note) return null;
+    var row = copyRow(rows[i]);
+    row.ko = ko;
+    row.note = note;
+    res.sentences.push(row);
+  }
+  return res;
+}
+
 /* ------------------------------------------------------------------ 소리내어 읽기
 
    검수 단계는 볼 것이 열 가지쯤 된다 — 관용구, 한국어, alts, note, 단어 수.
@@ -367,6 +497,25 @@ function buildReviewSchema(cfg) {
    **영어만 보여 준다.** 한국어와 상황을 같이 주면 "번역이 맞느냐" 를 보게 되고,
    그러면 어색한 영어도 "한국어를 잘 옮겼으니 괜찮다" 로 넘어간다.
    견줄 것을 아예 없애야 남는 질문이 하나가 된다 — 사람이 이렇게 말하나. */
+
+/* 만드는 단계는 영어만 낸다. 상황과 짝지어 문장 모양으로 세운다. */
+function startFromEnglish(situations, out) {
+  var texts = (out && out.texts) || [];
+  if (!texts.length || texts.length !== situations.length) return null;
+  var res = { sentences: [] };
+  for (var i = 0; i < texts.length; i++) {
+    var one = String(texts[i] || '').trim();
+    if (!one) return null;
+    res.sentences.push({ situation: situations[i], text: one });
+  }
+  return res;
+}
+
+function copyRow(row) {
+  var out = {};
+  for (var k in row) if (Object.prototype.hasOwnProperty.call(row, k)) out[k] = row[k];
+  return out;
+}
 
 function buildAloudPrompt(draft) {
   var rows = (draft && draft.sentences) || [];
@@ -444,8 +593,7 @@ function applyAloud(draft, aloud) {
   for (var i = 0; i < rows.length; i++) {
     var one = String(texts[i] || '').trim();
     if (!one) return null;
-    var row = {};
-    for (var k in rows[i]) if (Object.prototype.hasOwnProperty.call(rows[i], k)) row[k] = rows[i][k];
+    var row = copyRow(rows[i]);
     if (one !== String(row.text || '').trim()) changed++;
     row.text = one;
     out.sentences.push(row);
@@ -526,63 +674,6 @@ function buildReviewPrompt(draft, cfg) {
   return lines.join('\n');
 }
 
-/* ------------------------------------------------------------------ 결과 받기 */
-
-/* Claude 가 앞뒤에 말을 붙이거나 코드 울타리를 씌워도 JSON 만 꺼낸다. */
-function extractJSON(raw) {
-  var text = String(raw || '');
-  var fence = text.match(/```(?:json)?\s*([\s\S]*?)```/);
-  if (fence) text = fence[1];
-  var start = text.indexOf('{');
-  var end = text.lastIndexOf('}');
-  if (start < 0 || end <= start) throw new Error('결과에서 JSON 을 찾지 못했습니다.');
-  return JSON.parse(text.slice(start, end + 1));
-}
-
-/* Claude Code CLI 는 --output-format json 으로 부르면 겉봉투를 씌워서 준다.
-   봉투째 넘겨도, 알맹이만 넘겨도 되게 한다. */
-function unwrap(parsed) {
-  if (parsed && parsed.structured_output) return parsed.structured_output;
-  if (parsed && typeof parsed.result === 'string') return extractJSON(parsed.result);
-  return parsed;
-}
-
-/* --json-schema 로 넘길 형식. 칸이 비는 것은 이걸로 막고,
-   단어 수처럼 형식으로 못 막는 것은 validate() 가 잡는다. */
-function buildSchema(cfg) {
-  return {
-    type: 'object',
-    properties: {
-      sentences: {
-        type: 'array',
-        minItems: cfg.count,
-        maxItems: cfg.count,
-        items: {
-          type: 'object',
-          properties: {
-            situation: { type: 'string' },
-            ko: { type: 'string' },
-            text: { type: 'string' },
-            alts: {
-              type: 'array', minItems: 2, maxItems: 2,
-              items: {
-                type: 'object',
-                properties: {
-                  style: { type: 'string', enum: ['casual', 'formal'] },
-                  text: { type: 'string' }
-                },
-                required: ['style', 'text']
-              }
-            },
-            note: { type: 'string' }
-          },
-          required: ['situation', 'ko', 'text', 'alts', 'note']
-        }
-      }
-    },
-    required: ['sentences']
-  };
-}
 
 /* alts 에 어떤 말투가 들어 있는지. 모양이 틀리면 null */
 function altStyles(alts) {
@@ -898,7 +989,10 @@ module.exports = {
   buildSchema: buildSchema, buildReviewSchema: buildReviewSchema,
   buildReviewPrompt: buildReviewPrompt,
   buildAloudPrompt: buildAloudPrompt, buildAloudSchema: buildAloudSchema,
-  applyAloud: applyAloud,
+  applyAloud: applyAloud, startFromEnglish: startFromEnglish,
+  buildAltsPrompt: buildAltsPrompt, buildAltsSchema: buildAltsSchema, applyAlts: applyAlts,
+  buildKoreanPrompt: buildKoreanPrompt, buildKoreanSchema: buildKoreanSchema,
+  applyKorean: applyKorean,
   altStyles: altStyles, normalizeAlts: normalizeAlts,
   sentencesOf: sentencesOf, commaHeavy: commaHeavy, vagueCount: vagueCount,
   highlighted: highlighted, keysAppear: keysAppear, sameOpening: sameOpening,

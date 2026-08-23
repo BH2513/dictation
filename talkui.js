@@ -142,10 +142,13 @@ window.TalkUI = (function () {
 
   function stopQuiet() { if (quiet) { clearTimeout(quiet); quiet = null; } }
 
-  function stopHearing() {
+  /* 듣기를 끝낸다. **이미 저 혼자 끝난 것을 또 끄지 않는다** —
+     끄는 동작이 아이폰에서 소리를 내므로, 끝난 것에 대고 한 번 더 부르면 소리만 더 난다.
+     `ended` 는 "이미 끝났다고 알림을 받았다" 는 뜻이다. */
+  function stopHearing(ended) {
     hearGen++;
     stopQuiet();
-    if (hear) { try { hear.abort(); } catch (e) { try { hear.stop(); } catch (e2) {} } }
+    if (hear && !ended) { try { hear.abort(); } catch (e) { try { hear.stop(); } catch (e2) {} } }
     hear = null;
   }
 
@@ -207,9 +210,9 @@ window.TalkUI = (function () {
       if (mine !== hearGen) return;
       if (mode !== 'listening') return;
       // 저 혼자 끝났다. 오래 조용했으면 여기서 놓아 준다 — 안 그러면 마이크 소리가 되풀이된다
-      if (!keepListening(Date.now() - heardAt)) { stopHearing(); mode = 'idle'; paint(); return; }
-      // 아직 들을 차례다. 다시 켠다
-      try { r.start(); } catch (e) { stopHearing(); mode = 'idle'; paint(); }
+      if (!keepListening(Date.now() - heardAt)) { stopHearing(true); mode = 'idle'; paint(); return; }
+      // 아직 들을 차례다. 다시 켠다. 못 켰으면 그것도 안 켜진 것이니 또 끄지 않는다
+      try { r.start(); } catch (e) { stopHearing(true); mode = 'idle'; paint(); }
     };
 
     try { r.start(); }

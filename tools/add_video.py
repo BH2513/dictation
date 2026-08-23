@@ -658,6 +658,20 @@ def main():
     else:
         kind = "직접 단 자막"
     say("자막 종류 : %s" % kind)
+
+    # 대사 갈래(Daily 의 Shows 탭)는 문장부호로 문장 끝을 찾는다.
+    # 문장부호가 없으면 받아쓰기에는 써도 대사 연습에는 못 쓴다 — 지금 알려 준다.
+    ends = sum(1 for one in sentences
+               if re.search(r'[.!?]"?$', str(one.get("text", "")).strip()))
+    ratio = (ends / len(sentences)) if sentences else 0
+    if ratio >= 0.5:
+        say("대사 연습   : 쓸 수 있습니다 (문장부호가 붙어 있습니다)")
+    else:
+        say("대사 연습   : 쓸 수 없습니다")
+        say("            이 자막에는 문장부호가 거의 없어 문장 끝을 알 수 없습니다.")
+        say("            받아쓰기에는 그대로 쓸 수 있습니다.")
+        say("            Daily 의 Shows 탭에 쓰려면, 영상을 틀고 CC 를 켜서")
+        say("            자막에 마침표가 찍히는 클립으로 골라 주세요.")
     say("한국어    : %s" % ("있음" if has_ko else "없음"))
     say("목록      : %s" % profile["name"])
 

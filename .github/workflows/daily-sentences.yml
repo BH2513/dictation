@@ -49,6 +49,7 @@ jobs:
           fi
 
           node tools/daily_schema.js > /tmp/schema.json
+          node tools/daily_aloud_schema.js > /tmp/aloud_schema.json
           node tools/daily_review_schema.js > /tmp/review_schema.json
 
           # 어떤 모델로 돌지는 data/daily/config.json 에서 정한다.
@@ -99,10 +100,30 @@ jobs:
               > /tmp/draft.json || true
             echo "   답한 모델: $(said /tmp/draft.json)"
 
+            # 영어만 따로 떼어 소리내어 읽힌다. 한국어도 상황도 안 보여 준다 —
+            # 같이 주면 "번역이 맞느냐" 를 보게 되어 어색한 영어가 그대로 통과한다.
+            # 검수는 볼 것이 열 가지쯤 되어 자연스러움이 그 안에 묻힌다
+            echo "-- 소리내어 읽는 중"
+            cp /tmp/draft.json /tmp/polished.json
+            if node tools/daily_aloud_prompt.js /tmp/draft.json > /tmp/aloud.txt; then
+              claude -p "$(cat /tmp/aloud.txt)" \
+                $MODEL_ARG \
+                --permission-mode dontAsk \
+                --output-format json \
+                --json-schema "$(cat /tmp/aloud_schema.json)" \
+                > /tmp/aloud_out.json || true
+              echo "   답한 모델: $(said /tmp/aloud_out.json)"
+              # 끼우지 못하면 초안을 그대로 쓴다. 엉뚱한 문장에 엉뚱한 영어가 붙는 것보다 낫다
+              node tools/daily_aloud_merge.js /tmp/draft.json /tmp/aloud_out.json > /tmp/merged.json \
+                && mv /tmp/merged.json /tmp/polished.json
+            else
+              echo "   초안을 읽지 못해 건너뜁니다."
+            fi
+
             # 한 번 만든 것을 그대로 내보내면 틀린 관용구가 그대로 나간다.
             # 다시 읽혀서 고친 것을 내보낸다 (구독 한도로 도므로 값은 안 든다)
             echo "-- 검수 중"
-            if node tools/daily_review_prompt.js /tmp/draft.json > /tmp/review.txt; then
+            if node tools/daily_review_prompt.js /tmp/polished.json > /tmp/review.txt; then
               claude -p "$(cat /tmp/review.txt)" \
                 $MODEL_ARG \
                 --permission-mode dontAsk \
@@ -112,7 +133,7 @@ jobs:
               echo "   답한 모델: $(said /tmp/out.json)"
             else
               echo "초안을 읽지 못해 검수를 건너뜁니다."
-              cp /tmp/draft.json /tmp/out.json
+              cp /tmp/polished.json /tmp/out.json
             fi
 
             APPEND=""
@@ -123,9 +144,9 @@ jobs:
               break
             fi
 
-            # 검수본이 조건에 안 맞으면 초안이라도 되는지 본다
-            echo "-- 검수본이 조건에 맞지 않아 초안을 확인합니다"
-            if node tools/daily_save.js /tmp/draft.json $APPEND; then
+            # 검수본이 조건에 안 맞으면 소리내어 읽은 것까지라도 되는지 본다
+            echo "-- 검수본이 조건에 맞지 않아 앞 단계 것을 확인합니다"
+            if node tools/daily_save.js /tmp/polished.json $APPEND; then
               MADE=$((MADE + 1))
               break
             fi

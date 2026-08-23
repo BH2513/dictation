@@ -77,6 +77,33 @@ jobs:
             printf '%s' "$m"
           }
 
+          # 영어만 떼어 소리내어 읽힌다. 한국어도 상황도 안 보여 준다 —
+          # 같이 주면 "번역이 맞느냐" 를 보게 되어 어색한 영어가 그대로 통과한다.
+          # 검수는 볼 것이 열 가지쯤 되어 자연스러움이 그 안에 묻힌다.
+          #
+          # 두 번 부른다. 한 번만 부르면 "걸리는 데 없음" 으로 그냥 넘어가는 일이 잦았다
+          # (세 묶음 중 두 번). 두 번째는 첫 번째가 봤다는 것을 모르는 새 눈이라
+          # "아까 괜찮다고 했으니" 가 생기지 않는다. 회차마다 무엇을 고쳤는지 기록에 남긴다.
+          # 읽을 것을 못 만들거나 끼우지 못하면 앞 단계 것을 그대로 쓴다
+          aloud() {
+            echo "-- 소리내어 읽는 중 ($1번째)"
+            if ! node tools/daily_aloud_prompt.js /tmp/polished.json > /tmp/aloud.txt; then
+              echo "   읽을 것을 만들지 못해 건너뜁니다."
+              return 0
+            fi
+            claude -p "$(cat /tmp/aloud.txt)" \
+              $MODEL_ARG \
+              --permission-mode dontAsk \
+              --output-format json \
+              --json-schema "$(cat /tmp/aloud_schema.json)" \
+              > /tmp/aloud_out.json || true
+            echo "   답한 모델: $(said /tmp/aloud_out.json)"
+            if node tools/daily_aloud_merge.js /tmp/polished.json /tmp/aloud_out.json > /tmp/merged.json; then
+              mv /tmp/merged.json /tmp/polished.json
+            fi
+            return 0
+          }
+
           # 하루에 여러 묶음을 만들어 둔다. 다섯 개를 다 한 사람이 앱에서 바로
           # 다음 묶음을 꺼내 쓸 수 있게 — 앱은 서버가 없어 스스로 만들지 못한다.
           BATCHES=$(node -e "process.stdout.write(String(require('./tools/daily').config().batches||1))")
@@ -100,25 +127,10 @@ jobs:
               > /tmp/draft.json || true
             echo "   답한 모델: $(said /tmp/draft.json)"
 
-            # 영어만 따로 떼어 소리내어 읽힌다. 한국어도 상황도 안 보여 준다 —
-            # 같이 주면 "번역이 맞느냐" 를 보게 되어 어색한 영어가 그대로 통과한다.
-            # 검수는 볼 것이 열 가지쯤 되어 자연스러움이 그 안에 묻힌다
-            echo "-- 소리내어 읽는 중"
+            # 영어만 따로 떼어 소리내어 읽힌다 (aloud 함수). 두 번 읽는다
             cp /tmp/draft.json /tmp/polished.json
-            if node tools/daily_aloud_prompt.js /tmp/draft.json > /tmp/aloud.txt; then
-              claude -p "$(cat /tmp/aloud.txt)" \
-                $MODEL_ARG \
-                --permission-mode dontAsk \
-                --output-format json \
-                --json-schema "$(cat /tmp/aloud_schema.json)" \
-                > /tmp/aloud_out.json || true
-              echo "   답한 모델: $(said /tmp/aloud_out.json)"
-              # 끼우지 못하면 초안을 그대로 쓴다. 엉뚱한 문장에 엉뚱한 영어가 붙는 것보다 낫다
-              node tools/daily_aloud_merge.js /tmp/draft.json /tmp/aloud_out.json > /tmp/merged.json \
-                && mv /tmp/merged.json /tmp/polished.json
-            else
-              echo "   초안을 읽지 못해 건너뜁니다."
-            fi
+            aloud 1
+            aloud 2
 
             # 한 번 만든 것을 그대로 내보내면 틀린 관용구가 그대로 나간다.
             # 다시 읽혀서 고친 것을 내보낸다 (구독 한도로 도므로 값은 안 든다)

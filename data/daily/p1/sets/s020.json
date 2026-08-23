@@ -1,0 +1,115 @@
+{
+  "setId": "s020",
+  "videoId": "daily-s020",
+  "title": "Set 20",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 호수로 놀러 가기로 했는데 주말 내내 폭풍이 온다고 하더라고. 10월로 미뤘고 예약금 50달러는 날렸어.",
+      "text": "We were driving up to the lake Saturday and they're calling for storms all weekend. We pushed the trip to October and lost the $50 deposit.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Lake trip was set for Saturday, but they're calling for storms the whole weekend. We bumped it to October and ate the $50 deposit."
+        },
+        {
+          "style": "formal",
+          "text": "We were scheduled to drive up to the lake on Saturday, but storms are forecast for the entire weekend. We have postponed the trip until October and forfeited the $50 deposit."
+        }
+      ],
+      "note": "**they're calling for storms** 는 일기예보에서 폭풍이 온다고 한다는 말이다. 캐주얼의 **ate the $50 deposit** 은 예약금을 못 돌려받고 손해를 그냥 떠안았다는 뜻이다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아홉 시 다 되도록 알람 다시 알림 버튼만 계속 누르다가, 고속도로에 사고가 났다고 둘러댔어. 이제 상사가 다들 안 다쳤냐고 물어보네.",
+      "text": "I hit snooze until almost nine and blamed it on a wreck on the highway. Now my boss wants to know if everyone was okay.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Snoozed my alarm till almost nine and said there was a wreck on the highway. Now my boss is asking if everyone was okay."
+        },
+        {
+          "style": "formal",
+          "text": "I continued pressing snooze until nearly nine and attributed my lateness to an accident on the highway. My supervisor is now asking whether everyone was all right."
+        }
+      ],
+      "note": "**hit snooze** 는 알람의 다시 알림 단추를 누르는 것이다. **blamed it on** 은 늦은 이유를 다른 것 탓으로 돌린다는 뜻이다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "앱에는 배달을 세 번 시도했다고 떠 있어. 나는 이번 주 내내 집에 있었는데 문을 두드린 사람이 한 명도 없었어.",
+      "text": "The app says they tried to deliver three times. I've been home all week and nobody has knocked once.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "App's saying they came by three times. I've been home all week and nobody's knocked, not once."
+        },
+        {
+          "style": "formal",
+          "text": "The application indicates that three delivery attempts were made. I have been at home all week, and no one has knocked once."
+        }
+      ],
+      "note": "**nobody has knocked once** 처럼 부정문에 once 가 붙으면 단 한 번도 없었다는 강조가 된다. 격식체의 **delivery attempts were made** 는 배달을 시도했다는 말을 딱딱하게 쓴 것이다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "3월에 기타를 사서 코드 네 개를 배웠어. 4월부터 책상에 기대 세워만 놨는데 아직도 사람들한테 기타 친다고 말하고 다녀.",
+      "text": "I bought a guitar in March and learned four chords. It's been leaning against my desk since April and I still tell people I play.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got a guitar back in March and picked up four chords. It's been propped against my desk since April and I still go around telling people I play."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar in March and learned four chords. It has been leaning against my desk since April, and I continue to tell people that I play."
+        }
+      ],
+      "note": "**It's been leaning against my desk since April** 는 4월부터 지금까지 계속 그대로라는 현재완료진행이다. 캐주얼의 **picked up four chords** 는 코드 네 개를 익혔다를 가볍게 말한 것이다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "야간 근무 아직도 하냐고 물어봐야지 하면서 계속 못 물어봤네. 5월에 봤을 때 너 완전 지쳐 보이더라.",
+      "text": "I keep meaning to ask if you're still on the night shift. You looked wrecked back in May.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Been meaning to ask if you're still working nights. You looked totally beat back in May."
+        },
+        {
+          "style": "formal",
+          "text": "I have been intending to ask whether you are still working the night shift. You appeared quite exhausted in May."
+        }
+      ],
+      "note": "**keep meaning to ask** 는 물어봐야지 생각만 하고 계속 미뤘다는 뜻이다. **looked wrecked** 는 몹시 지쳐 보였다는 구어 표현이고, 캐주얼에서는 **looked totally beat** 로 바뀌었다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 캐주얼이 격식체와 같은 delivery attempts 라는 딱딱한 말을 써서 말투가 안 맞았다. App's saying they came by 로 구어답게 다시 썼다.",
+    "3번 캐주얼의 I'm home all week 는 이번 주 내내 있었다는 뜻이 안 나와서 I've been home all week 로 고쳤다. 앞부분도 text 와 겹쳐서 같이 바꿨다.",
+    "4번 캐주얼의 sitting against my desk 는 원어민이 잘 안 쓰는 짝이라 propped against my desk 로 고쳤다.",
+    "2번 한국어의 알람을 껐다 켰다 하다가 는 hit snooze(다시 알림 누르기)와 다른 행동이라 note 와 어긋나서 고쳤다."
+  ]
+}

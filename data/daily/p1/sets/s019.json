@@ -1,0 +1,116 @@
+{
+  "setId": "s019",
+  "videoId": "daily-s019",
+  "title": "Set 19",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그럼 네가 골라. 대신 처음부터 끝까지 다 봐야 돼. 지난주 금요일에도 시작하고 이십 분 만에 휴대폰만 보고 있다가 나한테 영화 어떻게 끝났냐고 물었잖아.",
+      "text": "You pick then. But you're watching the whole thing. Last Friday you were on your phone twenty minutes in and you asked me how the movie ended.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, your pick. But you're sitting through all of it. Last Friday you were on your phone twenty minutes in and then asked me how the movie ended."
+        },
+        {
+          "style": "formal",
+          "text": "Then you may choose, but you will be watching the entire film. Last Friday you were on your phone twenty minutes in, and you asked me how the movie ended."
+        }
+      ],
+      "note": "**twenty minutes in** 은 시작하고 이십 분쯤 지난 시점을 가리킵니다. casual 의 **sitting through all of it** 은 지루해도 끝까지 앉아서 다 본다는 뜻입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "사촌이 나한테 왜 아직도 세 들어 사냐고 물었는데, 내가 대답하기도 전에 엄마가 대신 답해 버렸어. 나는 밥 빨리 먹고 일어났어.",
+      "text": "My cousin asked why I'm still renting, and my mom answered for me before I could. I ate fast and left.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my cousin starts in on why I'm still renting, and my mom answers for me before I can get a word out. I ate fast and left."
+        },
+        {
+          "style": "formal",
+          "text": "My cousin asked why I am still renting, and my mother answered on my behalf before I had the chance. I finished my meal quickly and left."
+        }
+      ],
+      "note": "**answered for me** 는 내가 말하기 전에 남이 나 대신 답해 버렸다는 뜻입니다. casual 의 **before I can get a word out** 은 한마디 꺼내기도 전에라는 말입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이제는 장 봐서 두 봉지에 90달러야. 예전에 쿠폰 쓰는 거 비웃던 게 나였는데.",
+      "text": "My grocery bill is $90 for two bags now, and I'm the one who used to laugh at coupons.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Two bags of groceries runs me $90 now, and I used to be the one laughing at coupons."
+        },
+        {
+          "style": "formal",
+          "text": "My grocery bill is now $90 for two bags, and I am the person who once laughed at coupons."
+        }
+      ],
+      "note": "**used to laugh at** 은 예전에는 비웃었지만 지금은 아니라는 뜻입니다. casual 의 **runs me $90** 은 값이 90달러나 든다는 구어 표현입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "집주인은 내가 집 안에서 빨래를 널어서 천장 얼룩이 내 탓이라고 해. 그 얼룩은 사 년 전에 내가 이사 들어올 때 이미 있었어.",
+      "text": "My landlord says the ceiling stain is my fault because I hang laundry inside. It was there when I moved in four years ago.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Landlord's telling me the ceiling stain is my fault because I dry my laundry inside. It was already there when I moved in four years ago."
+        },
+        {
+          "style": "formal",
+          "text": "My landlord claims the stain on the ceiling is my fault because I hang laundry indoors. It was already there when I moved in four years ago."
+        }
+      ],
+      "note": "**hang laundry inside** 는 집 안에 빨래를 넌다는 뜻입니다. **moved in** 은 그 집에 이사해 들어왔다는 말입니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "애가 잠들 때까지 옆에 누워 있어 주지 않으면 안 자려고 해. 그런데 요즘은 내가 먼저 잠들어 버려.",
+      "text": "She won't go down unless I lie there until she's out, and I've started falling asleep first.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "She's not going down unless I lie there till she's out, and lately I'm the one falling asleep first."
+        },
+        {
+          "style": "formal",
+          "text": "She will not settle unless I lie beside her until she is asleep, and I have begun falling asleep first."
+        }
+      ],
+      "note": "**go down** 은 아이가 잠자리에 들어 잠든다는 뜻입니다. **she's out** 의 out 은 푹 잠들었다는 말입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 앞부분(You pick)이 겹쳐서 시작을 Okay, your pick 으로 바꿨습니다.",
+    "2번 casual 의 goes why am I still renting 은 사촌이 자기 얘기를 하는 것처럼도 읽혀서(따옴표 없이는 누가 한 말인지 갈립니다) starts in on why I'm still renting 으로 고쳤습니다.",
+    "3번 한국어의 '쿠폰 챙기는 사람들 비웃던' 은 영어의 laugh at coupons(쿠폰 쓰는 것 자체를 우습게 봄)와 조금 달라 '쿠폰 쓰는 거 비웃던' 으로 맞췄습니다.",
+    "5번 formal 이 asleep 을 세 번 반복해 읽기 나빠서 앞을 settle 로 바꿨습니다. 뜻은 그대로입니다.",
+    "5번 note 가 **she is out** 을 짚었는데 문장에 실제로 나오는 것은 she's out 이라 표기를 맞췄습니다."
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "setId": "s018",
+  "videoId": "daily-s018",
+  "title": "Set 18",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "자전거는 잘 나가요. 다만 뒷브레이크가 닳아서, 수리점에서 고치는 데 30달러 든다고 하더라고요. 그래서 150달러 말고 120달러에 내놓는 거예요.",
+      "text": "The bike rides fine. The back brake is worn though, and a shop quoted me $30 to fix it, so I'm asking $120 instead of $150.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Bike rides fine, but the back brake's worn and a shop said $30 to fix it, so I'm asking $120 instead of $150."
+        },
+        {
+          "style": "formal",
+          "text": "The bicycle rides well. However, the rear brake is worn, and a repair shop quoted me $30 to fix it, so I am asking $120 rather than $150."
+        }
+      ],
+      "note": "**rides fine** 은 타 보니 굴러가는 데 문제가 없다는 뜻입니다. **quoted me $30** 은 가게가 얼마 들겠다고 값을 불러 준 것을 말합니다. 캐주얼에서는 같은 말을 **a shop said $30** 처럼 가볍게 합니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "수도꼭지 고치려고 아홉 시에 유튜브를 열었어요. 지금 열두 시인데 터널을 어떻게 뚫는지까지 알게 됐네요.",
+      "text": "I opened YouTube at nine to fix my faucet. It's midnight and now I know how tunnels get dug.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Pulled up YouTube at nine to fix my faucet. Now it's midnight and I know how tunnels get dug."
+        },
+        {
+          "style": "formal",
+          "text": "I opened YouTube at nine in order to repair my faucet. It is now midnight, and I have learned how tunnels are dug."
+        }
+      ],
+      "note": "**how tunnels get dug** 처럼 회화에서는 수동을 be 대신 get 으로 자주 만듭니다. 캐주얼의 **Pulled up YouTube** 는 화면에 띄웠다는 뜻입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "고양이가 매일 밤 제 가슴 위에서 자는데, 이제는 안 옮겨요. 새벽 네 시에 팔이 저린 채로 깨서 고양이가 움직일 때까지 기다립니다.",
+      "text": "My cat sleeps on my chest every night and I've stopped moving her. I wake up at four with my arm asleep and wait until she moves.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every night my cat crashes on my chest and I've quit moving her. I wake up at four with my arm asleep and just wait for her to move."
+        },
+        {
+          "style": "formal",
+          "text": "My cat sleeps on my chest every night, and I have stopped moving her. I wake at four with my arm asleep and wait until she moves."
+        }
+      ],
+      "note": "**my arm asleep** 은 팔이 눌려서 저리고 감각이 없는 상태입니다. 사람이 잠든 것과 같은 말을 씁니다. 캐주얼의 **crashes on my chest** 는 털썩 드러누워 잔다는 느낌입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "헬스장에 갔더니 러닝머신이 전부 차 있었어요. 기다릴 수도 있었죠. 그냥 차 몰고 집에 왔어요.",
+      "text": "I got to the gym and every treadmill was taken. I could have waited. I drove home.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Showed up at the gym and every treadmill was taken. I could've waited. I drove home."
+        },
+        {
+          "style": "formal",
+          "text": "I arrived at the gym and found that every treadmill was occupied. I could have waited. I drove home."
+        }
+      ],
+      "note": "**was taken** 은 이미 다른 사람이 쓰고 있어 빈자리가 없다는 뜻입니다. **I could have waited** 는 기다릴 수 있었는데 안 했다는, 후회가 살짝 묻은 말입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "자리 나기를 기다리며 십 분을 서 있었어요. 드디어 어떤 여자분이 짐을 챙겨 일어났는데, 제가 냅킨 가지러 간 사이에 다른 사람이 그 자리를 차지했어요.",
+      "text": "I stood there ten minutes waiting for a table. A woman finally packed up, and someone took the table while I was grabbing a napkin.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Stood around ten minutes waiting for a table. A woman finally cleared out, and somebody grabbed the table while I was getting a napkin."
+        },
+        {
+          "style": "formal",
+          "text": "I stood there for ten minutes waiting for a table. A woman finally gathered her things, and another person took the table while I was retrieving a napkin."
+        }
+      ],
+      "note": "**packed up** 은 짐을 챙겨 자리를 뜨는 것입니다. **grabbing a napkin** 의 grab 은 잠깐 가서 집어 오는 가벼운 동작을 말합니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 캐주얼: 본문은 브레이크가 닳았다(worn)인데 캐주얼만 is shot(완전히 못 쓰게 됨)으로 뜻이 세졌습니다. 말투만 바꿔야 하므로 the back brake's worn 으로 되돌리고, 노트의 is shot 설명도 실제 캐주얼에 있는 a shop said $30 설명으로 바꿨습니다."
+  ]
+}

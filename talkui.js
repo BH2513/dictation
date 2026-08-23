@@ -37,6 +37,7 @@ window.TalkUI = (function () {
   var typing = false;      // 타이핑 칸을 펴 뒀나
   var micNote = '';        // 마이크가 안 될 때 남기는 말
   var hadWords = false;    // 큰 단추가 지금 "보내기" 모양인가
+  var heardAt = 0;         // 마지막으로 말이 잡힌 때 (마이크를 언제 놓아 줄지 잰다)
 
   /* **얼마나 기다렸다 보낼까** (2026-08-26 운영자 지적).
      1.5초로 뒀더니 **생각하는 사이에 잘라 보냈다.** 영어를 짜맞추는 사람은 문장 한가운데서
@@ -67,6 +68,24 @@ window.TalkUI = (function () {
     + ' i you he she it we they there here'
     + ' very really just kind sort going want need try like about'
     + ' more most much many some any every not').split(' ');
+
+  /* **아이폰의 마이크 소리는 우리가 못 없앤다** (2026-08-26 확인).
+     듣기를 켤 때와 끌 때 나는 그 "띠롱" 은 아이폰이 내는 소리다. 웹페이지에는 그걸 끄거나
+     다른 소리로 바꾸는 길이 없다 — 우리가 소리를 하나 더 얹을 수는 있어도 그건 더 시끄럽다.
+     **줄일 수 있는 것은 횟수뿐이다.**
+
+     사파리는 조용하면 저 혼자 듣기를 끝낸다. 아직 들을 차례면 다시 켜는데, 그때마다 소리가
+     또 난다. 생각하느라 오래 말이 없으면 그 소리가 끝없이 되풀이된다 —
+     자리를 비우면 영영 그런다. 그래서 **마지막 말로부터 이만큼 조용하면 다시 켜지 않는다.**
+     단추는 도로 `Talk` 이 되고, 다시 누르면 그때부터 듣는다.
+
+     짧게 잡으면 생각하는 사이에 마이크가 꺼져 하던 말이 끊긴다 —
+     **여기서도 헷갈리면 기다리는 쪽이다.** */
+  var IDLE_GIVEUP_MS = 60000;
+
+  function keepListening(silentMs) {
+    return !(silentMs >= IDLE_GIVEUP_MS);
+  }
 
   function stillGoing(text) {
     var t = String(text || '').replace(/\s+$/, '');
@@ -147,6 +166,7 @@ window.TalkUI = (function () {
 
     r.onresult = function (e) {
       if (mine !== hearGen) return;
+      heardAt = Date.now();
       var interim = '';
       for (var i = e.resultIndex; i < e.results.length; i++) {
         var t = e.results[i][0].transcript;
@@ -185,8 +205,11 @@ window.TalkUI = (function () {
 
     r.onend = function () {
       if (mine !== hearGen) return;
-      // 저 혼자 끝났다. 아직 들을 차례면 다시 켠다
-      if (mode === 'listening') { try { r.start(); } catch (e) { stopHearing(); mode = 'idle'; paint(); } }
+      if (mode !== 'listening') return;
+      // 저 혼자 끝났다. 오래 조용했으면 여기서 놓아 준다 — 안 그러면 마이크 소리가 되풀이된다
+      if (!keepListening(Date.now() - heardAt)) { stopHearing(); mode = 'idle'; paint(); return; }
+      // 아직 들을 차례다. 다시 켠다
+      try { r.start(); } catch (e) { stopHearing(); mode = 'idle'; paint(); }
     };
 
     try { r.start(); }
@@ -199,6 +222,7 @@ window.TalkUI = (function () {
      지우면 하던 말이 없어진다. 지우는 자리는 보내고 난 뒤 한 곳뿐이다. */
   function listen() {
     if (!canHear()) return;
+    heardAt = Date.now();          // 켠 때부터 다시 잰다
     hadWords = !!(saidFinal + saidNow).replace(/^\s+|\s+$/g, '');
     mode = 'listening';
     startHearing();
@@ -227,6 +251,9 @@ window.TalkUI = (function () {
       window.speechSynthesis.cancel();
       var u = new window.SpeechSynthesisUtterance(text);
       u.lang = 'en-US';
+      // 고른 목소리가 있으면 그것으로. 없어졌으면 폰이 고른 대로 둔다
+      var pick = window.Prefs && Prefs.voice && Prefs.voice();
+      if (pick) { u.voice = pick; if (pick.lang) u.lang = pick.lang; }
       u.onend = after;
       u.onerror = after;
       window.speechSynthesis.speak(u);
@@ -628,26 +655,31 @@ window.TalkUI = (function () {
     return flat(turn.corrected) === flat(turn.said);
   }
 
+  /* **차례는 내 말 → 답 → 고친 것이다** (2026-08-26 운영자 결정).
+     처음에는 내 말과 답 사이에 교정을 끼워 놓았는데, 그러면 **대화가 끊겨 보인다** —
+     내가 한 말과 그에 대한 답이 서로 멀어져서 어느 것이 짝인지 알기 어려웠다.
+
+     대화는 위에서 아래로 이어지고, 교정은 **그 뒤에 붙는 공부거리**다. */
   function turnBlock(turn, i) {
     var box = el('div', 'turn');
 
     box.appendChild(el('div', 'said', turn.said));
+    box.appendChild(el('div', 'reply', turn.reply));
 
+    var slot = el('div', 'fixslot');
     if (nothingToFix(turn)) {
       // 고칠 것이 없으면 한 줄로. 눌러야 더 자연스러운 말이 펴진다
       var ok = el('button', 'okline', '\u2713 nothing to fix');
       ok.onclick = function () {
-        var open = box.querySelector('.fixbox');
-        if (open) { box.removeChild(open); return; }
-        box.insertBefore(fixBox(turn, i, true), ok.nextSibling);
+        var open = slot.querySelector('.fixbox');
+        if (open) { slot.removeChild(open); return; }
+        slot.appendChild(fixBox(turn, i, true));
       };
-      box.appendChild(ok);
+      slot.appendChild(ok);
     } else {
-      box.appendChild(fixBox(turn, i, false));
+      slot.appendChild(fixBox(turn, i, false));
     }
-
-    var rep = el('div', 'reply', turn.reply);
-    box.appendChild(rep);
+    box.appendChild(slot);
     return box;
   }
 

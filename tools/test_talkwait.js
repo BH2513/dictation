@@ -60,6 +60,21 @@ check('이어질 것 같을 때가 더 오래', waitFor('I went to the') > waitF
 check('대문자로 써도 같게 본다', stillGoing('I WENT TO THE'), true);
 check('마침표가 붙은 관사도 잡는다', stillGoing('I went to the.'), true);
 
+console.log('\n마이크를 언제 놓아 줄까 — 아이폰 마이크 소리를 줄이는 유일한 길이다');
+// 아이폰이 내는 "띠롱" 은 우리가 못 없앤다. 사파리가 저 혼자 끝낼 때마다 다시 켜면
+// 그 소리가 되풀이되므로, 오래 조용하면 다시 안 켠다.
+check('막 켰으면 계속 듣는다', keepListening(0), true);
+check('잠깐 조용한 것은 그냥 생각하는 중이다', keepListening(3000), true);
+check('한참 뜸을 들여도 아직 듣는다', keepListening(30000), true);
+check('그래도 이만큼 조용하면 놓아 준다', keepListening(IDLE_GIVEUP_MS), false);
+check('그보다 더 조용해도 놓아 준다', keepListening(IDLE_GIVEUP_MS + 5000), false);
+check('놓아 주기 직전까지는 듣는다', keepListening(IDLE_GIVEUP_MS - 1), true);
+
+console.log('\n놓아 주는 시각 — 여기서도 헷갈리면 기다리는 쪽이다');
+check('제일 오래 기다리는 것보다 훨씬 길다', IDLE_GIVEUP_MS > QUIET_MS + CARRY_MS, true);
+check('생각할 시간으로 30초는 넘게 준다', IDLE_GIVEUP_MS >= 30000, true);
+check('그래도 몇 분씩 켜 두지는 않는다', IDLE_GIVEUP_MS <= 180000, true);
+
 console.log('');
 if (failed) { console.log('실패 ' + failed + '개'); process.exit(1); }
 console.log('전부 통과했습니다.');

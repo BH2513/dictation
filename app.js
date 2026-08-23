@@ -2484,14 +2484,29 @@
 
      고르는 순간 저장되고 화면에 바로 먹는다. **저장 단추를 두지 않는다** —
      눌러야 되는 줄 모르고 나가면 안 바뀐 채로 남는다. */
+  var voicesHooked = false;
+
   function drawPrefs(pid) {
     var box = $('prefs-box');
     if (!box || !window.Prefs) return;
     clear(box);
 
+    // 목소리 목록은 브라우저가 늦게 채운다. 채워지면 한 번 다시 그린다 —
+    // 안 그러면 설정을 열 때마다 목소리 줄이 없다
+    if (!voicesHooked && window.speechSynthesis) {
+      voicesHooked = true;
+      try {
+        window.speechSynthesis.onvoiceschanged = function () {
+          if ($('prefs-box')) drawPrefs(pid);
+        };
+      } catch (e) {}
+    }
+
     box.appendChild(el('div', 'rowlabel', 'How it looks'));
     box.appendChild(pickRow(pid, 'theme', 'Colours'));
     box.appendChild(pickRow(pid, 'textSize', 'Text size'));
+
+    box.appendChild(voiceRow(pid));
 
     box.appendChild(el('div', 'rowlabel', 'Talk practice'));
     box.appendChild(pickRow(pid, 'turnTaking', 'Taking turns'));
@@ -2550,6 +2565,57 @@
         + 'It waits longer anyway when your sentence sounds unfinished.'
       : 'Only used when it sends on its own. Right now you tap to send.'));
     return wrap;
+  }
+
+  /* 답을 읽어 줄 목소리. **폰마다 목록이 다르다** — 없는 기기에서는 이 줄을 안 그린다.
+     마이크와 스피커 자체는 브라우저에서 못 고른다 (prefs.js 의 설명). 고를 수 있는 건 이것뿐이다. */
+  function voiceRow(pid) {
+    var wrap = el('div', 'pick');
+    var list = (window.Prefs && Prefs.voices) ? Prefs.voices() : [];
+    if (!list.length) return wrap;                 // 아직 안 읽혔거나 없는 기기다
+
+    wrap.appendChild(el('div', 'picktitle', 'Voice that reads the answer'));
+
+    var sel = el('select', null);
+    var none = document.createElement('option');
+    none.value = '';
+    none.appendChild(document.createTextNode('Whatever the phone picks'));
+    sel.appendChild(none);
+    for (var i = 0; i < list.length; i++) {
+      var o = document.createElement('option');
+      o.value = list[i].value;
+      o.appendChild(document.createTextNode(list[i].name + ' (' + list[i].desc + ')'));
+      sel.appendChild(o);
+    }
+    sel.value = Prefs.get().voice || '';
+    sel.onchange = function () {
+      Prefs.set(pid, 'voice', sel.value, function () { sayVoiceSample(); });
+    };
+    wrap.appendChild(sel);
+
+    var row = el('div', 'buttons');
+    var test = el('button', 'half', 'Hear it');
+    test.onclick = function () { sayVoiceSample(); };
+    row.appendChild(test);
+    wrap.appendChild(row);
+
+    wrap.appendChild(el('div', 'hint',
+      'The microphone and speaker themselves are chosen by the phone, not by this app \u2014 '
+      + 'change those in the phone\'s own controls.'));
+    return wrap;
+  }
+
+  /* 고르면 바로 들려 준다 — 이름만 보고는 어떤 목소리인지 알 수 없다 */
+  function sayVoiceSample() {
+    if (!canSpeak()) return;
+    try {
+      window.speechSynthesis.cancel();
+      var u = new window.SpeechSynthesisUtterance('Hey, how was your weekend?');
+      u.lang = 'en-US';
+      var pick = window.Prefs && Prefs.voice && Prefs.voice();
+      if (pick) { u.voice = pick; if (pick.lang) u.lang = pick.lang; }
+      window.speechSynthesis.speak(u);
+    } catch (e) {}
   }
 
   var KEY_NAME = 'aiKey';

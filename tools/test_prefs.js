@@ -26,6 +26,7 @@ check('누르는 쪽이 기본이다 (2026-08-26 운영자 결정)', DEFAULTS.tu
 check('기다리는 시간은 2.5초', DEFAULTS.waitSec, 2.5);
 check('고를 것이 다 목록에 있다',
   Object.keys(CHOICES).every(k => DEFAULTS.hasOwnProperty(k)), true);
+check('답을 읽어 줄 목소리도 있다', DEFAULTS.hasOwnProperty('voice'), true);
 check('목록의 값이 기본값에 실제로 있다',
   Object.keys(CHOICES).every(k => CHOICES[k].some(o => o.value === DEFAULTS[k])), true);
 
@@ -51,13 +52,20 @@ check('아래 끝은 받는다', clean({ waitSec: WAIT_MIN }).waitSec, WAIT_MIN)
 check('위 끝도 받는다', clean({ waitSec: WAIT_MAX }).waitSec, WAIT_MAX);
 check('소수점 한 자리까지', clean({ waitSec: 3.333 }).waitSec, 3.3);
 
+console.log('\n목소리 — 폰마다 목록이 달라서 값을 미리 정해 둘 수 없다');
+check('처음에는 폰이 고른 대로', DEFAULTS.voice, '');
+check('글자면 그대로 받는다', clean({ voice: 'Samantha' }).voice, 'Samantha');
+check('빈 값도 받는다 (폰이 고른 대로로 되돌리는 것)', clean({ voice: '' }).voice, '');
+check('글자가 아니면 안 받는다', clean({ voice: 42 }).voice, '');
+check('고를 목록에 넣지 않는다 — 폰이 알려 줘야 안다', CHOICES.voice, undefined);
+
 console.log('\n제대로 된 값은 그대로 통과');
 {
-  const mine = { theme: 'light', textSize: 'larger', turnTaking: 'auto', waitSec: 5 };
-  check('넷 다 그대로', clean(mine), mine);
+  const mine = { theme: 'light', textSize: 'larger', turnTaking: 'auto', waitSec: 5, voice: 'Daniel' };
+  check('다섯 다 그대로', clean(mine), mine);
   check('하나만 이상해도 나머지는 산다',
-    clean({ theme: 'light', textSize: 'nope', turnTaking: 'auto', waitSec: 5 }),
-    { theme: 'light', textSize: 'normal', turnTaking: 'auto', waitSec: 5 });
+    clean({ theme: 'light', textSize: 'nope', turnTaking: 'auto', waitSec: 5, voice: 'Daniel' }),
+    { theme: 'light', textSize: 'normal', turnTaking: 'auto', waitSec: 5, voice: 'Daniel' });
 }
 
 console.log('\n손댄 값이 기본값을 더럽히면 안 된다');

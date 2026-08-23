@@ -551,6 +551,22 @@ if (sets0.length) {
 check('상황 목록에 회식이 남아 있지 않다',
   daily.config().situations.join(' ').indexOf('회식') >= 0, false);
 
+console.log('\n앱이 나눠 줄 목록과, 만드는 쪽이 보는 파일은 다르다');
+var pid1 = daily.profileIds()[0];
+var onDisk = daily.allSetIds(pid1);
+var served = daily.listSets(pid1);
+check('파일이 목록보다 많거나 같다', onDisk.length >= served.length, true);
+check('번호는 파일 기준으로 매긴다',
+  daily.nextSetId(pid1),
+  's' + ('00' + (parseInt(onDisk[onDisk.length - 1].slice(1), 10) + 1)).slice(-3));
+check('목록에서 뺀 묶음도 파일에는 남아 있다',
+  served.length < onDisk.length ? onDisk.indexOf('s001') >= 0 : true, true);
+check('목록을 줄여도 겹침 방지 창은 그대로',
+  daily.recentTexts(pid1, 8).length,
+  Math.min(8, onDisk.length) * daily.config().count);
+check('묶음 번호만 센다 (다른 파일은 안 센다)',
+  onDisk.filter(function (x) { return !/^s\d+$/.test(x); }), []);
+
 console.log('\n저장소에 실제로 들어 있는 설정으로도 되는지');
 var cfg = daily.config();
 check('상황이 요청 개수보다 많다', cfg.situations.length > cfg.count, true);

@@ -598,6 +598,33 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 .fixslot{margin-top:10px;padding-left:12px;border-left:2px solid var(--line);}
 .fixslot .fixbox{margin-top:6px;}
 
+/* 잘못 알아들은 낱말을 고치러 가는 자리. 글 바로 밑에 둔다 — 숨겨 두면 못 찾는다 */
+.fixword{
+  display:inline-block;
+  width:auto;
+  min-height:0;
+  margin-top:8px;
+  padding:6px 12px;
+  background:transparent;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--muted);
+  font-size:var(--f-tiny);
+}
+.talkctl textarea{
+  width:100%;
+  margin-top:10px;
+  padding:12px 14px;
+  box-sizing:border-box;
+  background:var(--card);
+  border:1px solid var(--accent);
+  border-radius:12px;
+  color:var(--text);
+  font-size:var(--f-body);
+  line-height:1.55;
+  font-family:inherit;
+}
+
 /* 지금 받아적히는 중인 말 + 얼마나 기다리는지 보여 주는 바 */
 .livebox{
   display:block;width:100%;text-align:left;

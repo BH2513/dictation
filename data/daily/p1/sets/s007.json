@@ -1,0 +1,116 @@
+{
+  "setId": "s007",
+  "videoId": "daily-s007",
+  "title": "Set 7",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "위층에서 어젯밤 새벽 한 시까지 쿵쿵거리고 난리도 아니었어. 빗자루로 천장을 두드려 봤는데, 소용없더라.",
+      "text": "The people upstairs were stomping around until like 1 AM last night. I banged on the ceiling with a broom, but it didn't do anything.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, upstairs was stomping around till 1 AM. Banged on the ceiling, didn't do squat."
+        },
+        {
+          "style": "formal",
+          "text": "The upstairs neighbors were stomping around until around one in the morning, and it was extremely disruptive. I knocked on the ceiling with a broom, but it made no difference."
+        }
+      ],
+      "note": "**stomping around** 은 쿵쿵거리며 시끄럽게 돌아다닌다는 뜻이에요. 층간소음 얘기할 때 딱 맞는 표현이에요.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "미안, 늦었어. 다리 위에서 차가 완전 막혔거든. 문자라도 하려고 했는데, 나오기 직전에 폰이 꺼져버렸어.",
+      "text": "Sorry I'm late, traffic was insane on the bridge. I would've texted, but my phone died right before I left.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, traffic was crazy on the bridge. Would've texted you but my phone died right before I left."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for being late. Traffic was terrible on the bridge, and I would have texted you, but my phone battery died right before I left."
+        }
+      ],
+      "note": "**traffic was insane** 은 차가 말도 안 되게 막혔다는 뜻이에요. insane 은 놀랄 정도로 심하다는 강조 표현이에요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "계란이 지금 한 판에 칠 달러나 해, 진짜 말이 안 돼. 예전엔 사십 달러면 카트가 꽉 찼는데, 이제는 칠십 달러는 있어야 돼.",
+      "text": "Eggs are like seven bucks a dozen now, it's insane. I used to fill up my cart for forty dollars, now it's more like seventy.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Seven bucks for a dozen eggs now, it's wild. Forty bucks used to fill my whole cart, now it's like seventy."
+        },
+        {
+          "style": "formal",
+          "text": "Egg prices have gone up to about seven dollars a dozen, which is quite excessive. Groceries that used to cost forty dollars now cost closer to seventy."
+        }
+      ],
+      "note": "**bucks** 는 dollar 를 편하게 부르는 말이에요. seven bucks 는 칠 달러라는 뜻이죠.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "역 근처 카페 세 군데를 가봤는데, 다 사람이 꽉 찼더라. 결국 네 번째 집에서 이십 분 기다려서 겨우 자리 잡았어.",
+      "text": "I tried three cafes near the station, and they were all packed. I finally got a seat at the fourth one, after waiting twenty minutes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tried like three cafes by the station and they were all slammed. Ended up waiting twenty minutes at the fourth place just to sit down."
+        },
+        {
+          "style": "formal",
+          "text": "I visited three different cafes near the station, and all of them were completely full. I eventually found a seat at the fourth cafe after waiting twenty minutes."
+        }
+      ],
+      "note": "**packed** 는 사람이 꽉 차서 자리가 없다는 뜻이에요. 카페나 식당이 붐빌 때 딱 맞는 표현이에요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "지난주에 150달러짜리 블렌더 샀는데, 딱 한 번밖에 안 썼나 봐. 영수증 있을 때 그냥 환불할 걸 그랬어.",
+      "text": "I bought this $150 blender last week and I've used it like once. I should've just returned it while I still had the receipt.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Dropped $150 on a blender last week and only used it once. Guess I should've returned it while I had the receipt."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a $150 blender last week, but I have only used it once. I probably should have returned it while I still had the receipt."
+        }
+      ],
+      "note": "**should've just returned it** 은 그냥 환불할 걸 그랬다는 후회를 나타내는 표현이에요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual에 원문에 없던 \"again\"을 넣어 실제로는 없는 '재발' 뉘앙스가 생겨서 뺐다.",
+    "1번 formal이 핵심 내용인 \"stomping around\"(쿵쿵거림)를 \"making a lot of noise\"로 뭉뚱그려 뜻을 눅였다 — formal에도 stomping을 살려 고쳤다.",
+    "3번 casual이 본문과 문두가 거의 겹치고(마지막 형용사 한 단어만 다름) 구별이 안 돼서 어순과 표현을 바꿔 충분히 다르게 고쳤다.",
+    "5번 casual이 본문에서 대명사만 뺀 수준으로 거의 그대로라 표현을 바꿔 구별되게 고쳤다.",
+    "5번은 ko가 \"십오만 원\"(원화)인데 text/alts는 \"$150\"(달러)라 서로 다른 통화·금액을 말하고 있어서, ko를 \"150달러\"로 바꿔 통일했다."
+  ]
+}

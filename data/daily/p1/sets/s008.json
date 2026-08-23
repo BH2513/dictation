@@ -1,0 +1,112 @@
+{
+  "setId": "s008",
+  "videoId": "daily-s008",
+  "title": "Set 8",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "혹시 몰라서 말씀드리는데, 지퍼가 좀 뻑뻑해요. 그래도 쓰는 데는 문제없어서 미리 말씀드리는 거예요.",
+      "text": "Just so you know, the zipper sticks a little. It still works fine, I just wanted to be upfront about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Heads up, zipper's a little sticky, but it still works fine."
+        },
+        {
+          "style": "formal",
+          "text": "I wanted to let you know the zipper sticks slightly, although it remains fully functional."
+        }
+      ],
+      "note": "**upfront about it** 는 뭔가를 숨기지 않고 미리 솔직하게 말해 둘 때 씁니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "솔직히 말하면, 그 색은 너한테 별로 안 어울려. 근데 핏은 진짜 예쁘니까 검정으로 사보는 게 어때.",
+      "text": "Honestly, that color's not really doing it for you. The cut's great though, so maybe grab it in black instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Yeah, not really your color, but the cut's amazing, so just get it in black."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, that color does not suit you particularly well, though the cut is quite flattering. You might consider it in black."
+        }
+      ],
+      "note": "**doing it for you** 는 뭔가 그 사람한테 안 어울리거나 안 맞을 때 쓰는 표현입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "진짜 신발 신으려는 순간에 갑자기 비가 쏟아지기 시작했어. 내일 아침에 꼭 갈게, 약속해.",
+      "text": "I was literally putting my shoes on when it just started pouring outside. I'll go tomorrow morning instead, I promise.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was seriously about to leave when it started pouring, so I'm going tomorrow instead."
+        },
+        {
+          "style": "formal",
+          "text": "I was just about to leave for my workout when it began raining heavily outside. I will go tomorrow morning instead."
+        }
+      ],
+      "note": "**literally** 는 여기서 진짜로, 정말로 라는 뜻으로 강조할 때 씁니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 이십 분째 넘기고 있는데 넌 아직도 못 정했잖아. 아무거나 골라, 나 진짜 뭐든 상관없어.",
+      "text": "We've been scrolling for twenty minutes and you still can't decide. Just pick something, I don't care what it is.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Been at this for ages and you still can't decide, so just pick anything."
+        },
+        {
+          "style": "formal",
+          "text": "We have been browsing for twenty minutes and you still have not decided. Please just select something, as I have no particular preference."
+        }
+      ],
+      "note": "**I don't care what it is** 는 정말 아무거나 상관없다는 뜻으로 짜증 섞인 상황에 자주 씁니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "제가 내일 아침에 회의가 있어서 슬슬 일어나야 할 것 같아요. 오늘 즐거웠습니다, 감사해요.",
+      "text": "I've got an early meeting tomorrow, so I should probably head out soon. Thanks for tonight, I had a great time.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I gotta get up early tomorrow, so I'm gonna take off. Tonight was fun, thanks."
+        },
+        {
+          "style": "formal",
+          "text": "I have an early meeting tomorrow morning, so I should be heading out now. Thank you for tonight, I had a wonderful time."
+        }
+      ],
+      "note": "**head out** 은 자리에서 일어나 나간다는 뜻의 편한 표현입니다.",
+      "situation": "회식 자리에서 적당히 빠져나올 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 문장(넷플릭스) formal 문장에서 'nearly twenty minutes'라고 써서 원문 'twenty minutes'와 시간이 어긋나 뜻이 살짝 바뀌었습니다. 'nearly'를 빼서 원문과 맞췄습니다."
+  ]
+}

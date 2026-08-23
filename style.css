@@ -426,3 +426,27 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 .gateline.ok{color:var(--ok);}
 .gateline.no{color:var(--bad);font-weight:400;}
 .gatefoot{margin-top:5px;font-size:12px;color:var(--muted);line-height:1.5;}
+
+/* 설정 화면 — AI 열쇠 넣는 칸 (ROADMAP 2단계) */
+#screen-settings input[type="password"],
+#screen-settings select{
+  width:100%;
+  margin-top:6px;
+  background:#0e1116;
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:12px;
+  font-family:inherit;
+  font-size:17px;          /* 16px 미만이면 iOS 가 포커스할 때 화면을 확대한다 */
+  line-height:1.4;
+  outline:none;
+  min-height:52px;
+  -webkit-appearance:none;
+  appearance:none;
+}
+#screen-settings input[type="password"]:focus,
+#screen-settings select:focus{border-color:var(--accent);}
+#screen-settings .rowlabel{margin-top:16px;}
+#screen-settings #key-msg{margin-top:12px;}
+#screen-settings button[disabled]{opacity:.5;}

@@ -6,7 +6,7 @@
    그때는 기록만 포기하고 연습은 그대로 되게 한다. 대신 화면에 그 사실을 남긴다. */
 window.Store = (function () {
   var NAME = 'dictation';
-  var VERSION = 3;
+  var VERSION = 4;
   var db = null;
   var broken = false;
 
@@ -43,6 +43,13 @@ window.Store = (function () {
       if (!d.objectStoreNames.contains('plan')) {
         var pl = d.createObjectStore('plan', { keyPath: 'key' });
         pl.createIndex('profile', 'profileId', { unique: false });
+      }
+      // 기기 설정 — AI 열쇠 같은 것.
+      // **여기만 프로필 ID 를 안 넣는다.** 열쇠는 기기에 하나를 넣고 온 가족이 같이 쓴다
+      // (ROADMAP 2단계). 사람마다 발급받게 하면 감당이 안 된다.
+      // 백업(SPEC 10)에는 넣지 않는다 — 백업 파일은 사람이 주고받는 물건이다.
+      if (!d.objectStoreNames.contains('settings')) {
+        d.createObjectStore('settings', { keyPath: 'key' });
       }
       // 문장카드
       if (!d.objectStoreNames.contains('cards')) {
@@ -210,6 +217,23 @@ window.Store = (function () {
           c.continue();
         };
         cur.onerror = function () { (fail || noop)('cursor-failed'); };
+      }, fail);
+    },
+
+    /* 기기 설정. 프로필별이 아니다 — 위 onupgradeneeded 의 설명을 볼 것 */
+    getSetting: function (name, done, fail) {
+      get('settings', name, function (row) { done(row ? row.value : null); }, fail);
+    },
+
+    saveSetting: function (name, value, done, fail) {
+      put('settings', { key: name, value: value }, fail);
+      if (done) setTimeout(done, 60);
+    },
+
+    clearSetting: function (name, done, fail) {
+      tx('settings', 'readwrite', function (st) {
+        st['delete'](name);
+        if (done) setTimeout(done, 60);
       }, fail);
     },
 

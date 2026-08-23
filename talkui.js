@@ -37,7 +37,37 @@ window.TalkUI = (function () {
   var typing = false;      // 타이핑 칸을 펴 뒀나
   var micNote = '';        // 마이크가 안 될 때 남기는 말
 
-  var QUIET_MS = 1500;     // 이만큼 조용하면 말이 끝난 것으로 본다
+  /* **얼마나 기다렸다 보낼까** (2026-08-26 운영자 지적).
+     1.5초로 뒀더니 **생각하는 사이에 잘라 보냈다.** 영어를 짜맞추는 사람은 문장 한가운데서
+     멈춘다 — 원어민 기준으로 재면 안 된다.
+
+     그리고 **기다리는 값을 하나로 두면 안 된다.** 말이 끝난 것 같으면 짧게, 아직 이어질
+     것 같으면 길게 기다린다. 어느 쪽으로 틀릴지도 정해 두었다 —
+     **너무 오래 기다리는 것은 조금 답답할 뿐이지만, 잘라 버리면 대화가 깨진다.**
+     그래서 헷갈리면 기다리는 쪽으로 기운다. */
+  var QUIET_MS = 2500;     // 말이 끝난 것 같을 때
+  var CARRY_MS = 2500;     // 아직 이어질 것 같으면 이만큼 더
+
+  /* 이런 낱말로 끝나면 아직 말하는 중이다. 실제로 "It's kind of a" 에서 잘린 적이 있다 —
+     `a` 로 끝났으니 뒤에 말이 더 있는 게 뻔했다. */
+  var CARRY_ON = (' a an the my your his her its our their this that these those'
+    + ' and but or so because if when while although though since than'
+    + ' to of in on at for with about from by into over under after before'
+    + ' is are was were am be been being have has had do does did'
+    + ' will would can could should might must shall may'
+    + ' i you he she it we they there here'
+    + ' very really just kind sort going want need try like about'
+    + ' more most much many some any every not').split(' ');
+
+  function stillGoing(text) {
+    var t = String(text || '').replace(/\s+$/, '');
+    if (!t) return true;
+    if (/[,;:\-]$/.test(t)) return true;              // 쉼표로 끝나면 이어진다
+    var m = t.toLowerCase().match(/([a-z']+)[^a-z']*$/);
+    if (!m) return false;
+    for (var i = 0; i < CARRY_ON.length; i++) if (CARRY_ON[i] === m[1]) return true;
+    return false;
+  }
 
   function $(id) { return document.getElementById(id); }
 
@@ -118,7 +148,10 @@ window.TalkUI = (function () {
       paintLive();
       // 말이 이어지는 동안에는 계속 미룬다. 멎어야 보낸다
       stopQuiet();
-      quiet = setTimeout(function () { if (mine === hearGen) sendHeard(); }, QUIET_MS);
+      var heardSoFar = (saidFinal + ' ' + saidNow).replace(/\s+/g, ' ');
+      var wait = stillGoing(heardSoFar) ? QUIET_MS + CARRY_MS : QUIET_MS;
+      armBar(wait);
+      quiet = setTimeout(function () { if (mine === hearGen) sendHeard(); }, wait);
     };
 
     r.onerror = function (e) {
@@ -379,16 +412,53 @@ window.TalkUI = (function () {
     paintLive();
   }
 
+  /* 살아 있는 칸. **통째로 다시 그리지 않는다** — 말하는 중에 다시 그리면 글자가 깜빡이고
+     차오르던 바가 처음으로 돌아간다. 글자와 옷만 갈아 끼운다. */
   function paintLive() {
     var n = $('talk-live');
     if (!n) return;
-    clear(n);
+    if (mode !== 'listening' && mode !== 'thinking') { clear(n); return; }
+
+    var body = n.querySelector('.live');
+    if (!body) {
+      clear(n);
+      var hold = el('button', 'livebox');
+      body = el('div', 'live');
+      hold.appendChild(body);
+      var track = el('div', 'bar');
+      var fill = el('div', 'fill');
+      fill.id = 'talk-bar';
+      track.appendChild(fill);
+      hold.appendChild(track);
+      hold.appendChild(el('div', 'barhint', 'Take your time. Tap here when you are done.'));
+      // 다 말했으면 기다릴 것 없이 바로 보낸다
+      hold.onclick = function () { if (mode === 'listening') sendHeard(); };
+      n.appendChild(hold);
+    }
+
     var text = (saidFinal + ' ' + saidNow).replace(/^\s+|\s+$/g, '');
-    if (mode === 'thinking') { n.appendChild(el('div', 'live said', text || '…')); scrollDown(); return; }
-    if (mode !== 'listening') return;
-    n.appendChild(el('div', 'live' + (text ? ' said' : ' waiting'),
-      text || 'Listening — just start talking.'));
+    if (mode === 'thinking') {
+      body.className = 'live said';
+      body.textContent = text || '\u2026';
+      var b0 = $('talk-bar');
+      if (b0) { b0.style.transition = 'none'; b0.style.width = '0%'; }
+      scrollDown();
+      return;
+    }
+    body.className = 'live' + (text ? ' said' : ' waiting');
+    body.textContent = text || 'Listening \u2014 just start talking.';
     scrollDown();
+  }
+
+  /* 조용해진 순간부터 바가 차오른다. 차오르는 동안 말을 이으면 처음으로 돌아간다 */
+  function armBar(ms) {
+    var bar = $('talk-bar');
+    if (!bar) return;
+    bar.style.transition = 'none';
+    bar.style.width = '0%';
+    void bar.offsetWidth;          // 이 줄이 없으면 브라우저가 두 값을 합쳐 버려 바가 안 움직인다
+    bar.style.transition = 'width ' + ms + 'ms linear';
+    bar.style.width = '100%';
   }
 
   function scrollDown() {

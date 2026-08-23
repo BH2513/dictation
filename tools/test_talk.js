@@ -77,6 +77,42 @@ console.log('\n지시문이 캐싱 최소 크기를 넘길 만한가');
   check('실을 것을 다 실으면 눈에 띄게 길어진다', full.length - bare.length > 300, true);
 }
 
+console.log('\n말하기로 다루게 하되, 낱말 목록으로 막지 않는다 (2026-08-26 운영자 결정)');
+{
+  // 원칙: **틀은 규칙으로, 무엇이 좋은 영어인가는 상황으로.**
+  // 예외를 낱말로 적기 시작하면 끝이 없고, 모델이 문제가 아니라 그 글자를 피하게 된다.
+  // 이 저장소가 하루 문장에서 이미 겪은 것이다 (CLAUDE.md "규칙은 울타리로만 쓴다").
+  const p = systemPrompt({ topic: '', misses: [], recent: [] });
+
+  check('받아적은 글이라는 것을 알려 준다', /speech-to-text|transcript/i.test(p), true);
+  check('배우는 중인 사람이라는 것도', /still learning/i.test(p), true);
+  check('말하면서 문장을 짜고 있다는 것도', /working the sentence out|while they say it/i.test(p), true);
+  check('더듬고 되풀이하는 것이 말의 성질임을 알려 준다',
+    /restarts\s+and repeated words/i.test(p), true);
+
+  check('원인을 못 가린다는 것을 인정한다', /cannot\s+tell which/i.test(p), true);
+  check('그래도 가릴 필요 없다고 못 박는다', /do not need to tell which/i.test(p), true);
+  check('판단 기준은 하나다 — 입으로 나오면 이상한가',
+    /sound wrong coming out of someone/i.test(p), true);
+  check('지나갈 만하면 두라고 한다', /go by unnoticed, leave it alone/i.test(p), true);
+
+  // 여기부터가 이 절의 핵심이다. 낱말을 적기 시작하면 다시 규칙 목록이 된다
+  ['wanna', 'gonna', 'kinda', 'gotta', 'lemme'].forEach(w => {
+    check('"' + w + '" 를 콕 집어 적지 않는다', p.indexOf(w) >= 0, false);
+  });
+  check('원인을 단정하지 않는다 ("보통 폰이 잘못 들은 것")',
+    /usually the phone/i.test(p), false);
+  check('격식 있는 글 얘기를 꺼내지 않는다', /formal writing/i.test(p), false);
+}
+
+console.log('\n다만 틀은 규칙으로 남는다 — 여기는 상황에 맡기지 않는다');
+{
+  const p = systemPrompt(null);
+  check('네 칸을 반드시 채우라고 못 박는다', /MUST fill all four fields/.test(p), true);
+  check('몇 턴 지나도 그대로라고 못 박는다', /does not stop applying/.test(p), true);
+  check('모양 자체도 스키마가 막는다', TURN_SCHEMA.required.length, 4);
+}
+
 console.log('');
 if (failed) { console.log('실패 ' + failed + '개'); process.exit(1); }
 console.log('전부 통과했습니다.');

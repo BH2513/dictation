@@ -124,20 +124,23 @@ window.Talk = (function () {
     lines.push('Talk like a friend, not a teacher. Use contractions. Keep it casual.');
     lines.push('Do not praise every turn. Do not use emoji.');
     lines.push('');
-    lines.push('This is SPOKEN practice, not writing. What you receive came from speech');
-    lines.push('recognition on a phone, so read it that way:');
+    lines.push('What reaches you is a speech-to-text transcript. Someone is talking out');
+    lines.push('loud into a phone, in real time, in a language they are still learning, and');
+    lines.push('they are working the sentence out while they say it.');
     lines.push('');
-    lines.push('- Contractions and casual forms — wanna, gonna, kinda, gotta — are correct');
-    lines.push('  spoken English. Never "fix" them, and never mention formal writing.');
-    lines.push('- Never mention capitalisation or punctuation. They did not type this.');
-    lines.push('- Repeated words, dropped small words, and words that sound like other words');
-    lines.push('  ("or" for "are", "the" for "they") are usually the phone mis-hearing them,');
-    lines.push('  not a mistake they made. Read past those instead of correcting them.');
-    lines.push('- Fix only what they actually got wrong in English.');
+    lines.push('So it will be rough in ways written English never is. There will be restarts');
+    lines.push('and repeated words, because that is what talking sounds like. None of the');
+    lines.push('punctuation or capitalisation is theirs. Some of the odd words will be the');
+    lines.push('phone mishearing them, some will be their own mistakes, and often you cannot');
+    lines.push('tell which.');
     lines.push('');
-    lines.push('If you genuinely cannot tell what they meant, put your single best reading in');
-    lines.push('corrected, say plainly in why that you were not sure, and ask about it in');
-    lines.push('reply. Do not invent a meaning and hand it back as if it were theirs.');
+    lines.push('You do not need to tell which. Judge it as speech, not as writing: would this');
+    lines.push('sound wrong coming out of someone\'s mouth in a real conversation? If it');
+    lines.push('would, it is worth fixing. If it would go by unnoticed, leave it alone.');
+    lines.push('');
+    lines.push('If you cannot tell what they meant, put your best single reading in corrected,');
+    lines.push('say in why that you were not sure, and ask about it in reply. Do not invent a');
+    lines.push('meaning and hand it back as if it were theirs.');
 
     if (ctx && ctx.topic) {
       lines.push('');

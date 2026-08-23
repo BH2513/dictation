@@ -226,6 +226,7 @@ check('초안이 지시문에 담긴다', rev.indexOf('That deadline is tough') 
 check('관용구 오용을 보라고 한다', rev.indexOf('hit the spot') >= 0, true);
 check('지적만 말고 고치라고 한다', rev.indexOf('직접 고쳐서 내놓으세요') >= 0, true);
 check('개수를 바꾸지 말라고 한다', rev.indexOf('문장 개수(5개)') >= 0, true);
+check('돈을 달러로 보라고 한다', rev.indexOf('돈이 달러로 적혀 있는가') >= 0, true);
 check('늘려 쓴 데를 잘라 내라고 한다', rev.indexOf('그 마디를 잘라 내세요') >= 0, true);
 check('아래쪽에 붙었다고 늘리지 말라고 한다',
   rev.indexOf('늘리지 마세요') >= 0, true);
@@ -252,6 +253,10 @@ check('묻는 것이 하나뿐이라고 한다',
   al.indexOf('사람이 실제로 이렇게 말합니까') >= 0, true);
 check('걸릴 데가 없으면 두라고 한다', al.indexOf('그대로 두세요') >= 0, true);
 check('개수를 못 박는다', al.indexOf('**2개**') >= 0, true);
+check('다른 나라 것을 옮겨 놓았는지 보라고 한다',
+  al.indexOf('다른 나라 것을 영어 낱말로 옮겨 놓았다') >= 0, true);
+check('이 영어만 읽는 사람 기준으로 가늠하라고 한다',
+  al.indexOf('이 영어만 읽는 사람이 무슨 말인지 바로 아는가') >= 0, true);
 
 var alSchema = daily.buildAloudSchema({ count: 5 });
 check('영어만 돌려받는다', alSchema.required, ['texts']);
@@ -406,11 +411,50 @@ check('that 이 무엇을 가리키는지 못 박는다',
   prompt.indexOf('무엇을 가리키는지 낱말 하나로 짚을 수 있어야') >= 0, true);
 check('난이도는 내용에서 나온다고 한다',
   prompt.indexOf('난이도는 길이가 아니라 내용에서') >= 0, true);
+check('한국에만 있는 것을 옮기지 말라고 한다',
+  prompt.indexOf('한국에만 있는 것을 영어로 옮기지 마세요') >= 0, true);
+check('1차 2차를 round 로 옮기지 말라고 한다',
+  prompt.indexOf('first round, second round 로 옮기면 안 됩니다') >= 0, true);
+check('돈은 달러로 쓰라고 한다', prompt.indexOf('돈은 달러로 씁니다') >= 0, true);
+check('한국어 숫자도 같아야 한다고 한다',
+  prompt.indexOf('영어와 한국어의 숫자가 같아야 합니다') >= 0, true);
+check('한국어는 그 영어를 옮기는 것이라고 한다',
+  prompt.indexOf('이제는 영어가 기준입니다') >= 0, true);
+
+var withRecent = daily.buildPrompt({
+  count: 1, minWords: 12, maxWords: 35, situations: ['가'], vocab: [],
+  recent: ['I could not lift my arms to wash my hair.']
+});
+check('최근 문장을 보여 준다',
+  withRecent.indexOf('I could not lift my arms to wash my hair.') >= 0, true);
+check('겹치지 말라고 한다', withRecent.indexOf('같은 이야기를 다시 만들면 안 됩니다') >= 0, true);
+check('최근 문장이 없으면 그 대목을 아예 안 넣는다',
+  daily.buildPrompt({ count: 1, minWords: 12, maxWords: 35, situations: ['가'], vocab: [] })
+    .indexOf('최근에 이미 나온 문장') >= 0, false);
 check('구체적으로 쓰라고 한다', prompt.indexOf('it, that, this 로 얼버무리지') >= 0, true);
 check('맞히기 시험이 아니라고 못 박는다', prompt.indexOf('맞히기 시험이 아니라') >= 0, true);
 check('어휘가 없으면 그 대목을 아예 안 넣는다',
   daily.buildPrompt({ count: 1, minWords: 20, maxWords: 35, situations: ['가'], vocab: [] })
     .indexOf('어휘 참고') >= 0, false);
+
+console.log('\n최근 상황과 최근 문장 — 묶음을 읽는지');
+var pid0 = daily.profileIds()[0];
+var sets0 = daily.listSets(pid0);
+if (sets0.length) {
+  var lastId = sets0[sets0.length - 1].id;
+  var lastSet = require('../data/daily/' + pid0 + '/sets/' + lastId + '.json');
+  var avoided = daily.recentSituations(pid0, 14, 3);
+  check('마지막 묶음의 상황이 피할 목록에 든다',
+    avoided.indexOf(lastSet.sentences[0].situation) >= 0, true);
+  var texts = daily.recentTexts(pid0, 3);
+  check('마지막 묶음의 영어가 겹침 방지 목록에 든다',
+    texts.indexOf(lastSet.sentences[0].text) >= 0, true);
+  check('묶음 개수만큼만 본다', texts.length <= 3 * daily.config().count, true);
+  check('0 을 주면 기본값(4묶음)으로 떨어진다', daily.recentTexts(pid0, 0).length,
+    daily.recentTexts(pid0, 4).length);
+}
+check('상황 목록에 회식이 남아 있지 않다',
+  daily.config().situations.join(' ').indexOf('회식') >= 0, false);
 
 console.log('\n저장소에 실제로 들어 있는 설정으로도 되는지');
 var cfg = daily.config();

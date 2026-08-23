@@ -12,7 +12,8 @@ try {
 
   // 상황과 어휘는 첫 프로필 기준으로 고른다. 문장은 모든 프로필이 함께 쓴다
   var pid = pids[0];
-  var recent = daily.recentSituations(pid, cfg.avoidRecentDays || 14);
+  var sets = cfg.avoidRecentSets || 4;
+  var recent = daily.recentSituations(pid, cfg.avoidRecentDays || 14, sets);
   var situations = daily.pickSituations(cfg.situations, recent, cfg.count);
   var vocab = daily.vocabulary(pid, cfg.vocabSample || 30);
 
@@ -21,6 +22,7 @@ try {
     minWords: cfg.minWords,
     maxWords: cfg.maxWords,
     situations: situations,
+    recent: daily.recentTexts(pid, sets),
     vocab: vocab
   }));
 } catch (e) {

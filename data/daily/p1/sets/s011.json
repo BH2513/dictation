@@ -67,19 +67,19 @@
     },
     {
       "i": 3,
-      "ko": "회사 앞 커피가 이제 6천 원이야. 봄에는 4천5백 원이었는데. 그래서 요즘은 집에서 내려다가 보온병에 담아 다녀.",
-      "text": "A coffee near my office is 6,000 won now. It was 4,500 in the spring, so I've started making mine at home and bringing it in a thermos.",
+      "ko": "회사 앞 커피가 이제 4달러 50센트야. 봄에는 3달러 25센트였는데. 그래서 요즘은 집에서 내려다가 보온병에 담아 다녀.",
+      "text": "A coffee near my office is $4.50 now. It was $3.25 in the spring, so I've started making mine at home and bringing it in a thermos.",
       "alts": [
         {
           "style": "casual",
-          "text": "Coffee by my office went up to 6,000 won. It was 4,500 in the spring, so now I just make it at home and bring a thermos."
+          "text": "Coffee by my office went up to $4.50. It was $3.25 in the spring, so now I just make it at home and bring a thermos."
         },
         {
           "style": "formal",
-          "text": "A cup of coffee near my office now costs 6,000 won. It was 4,500 in the spring, so I have begun brewing my own at home and carrying it in a thermos."
+          "text": "A cup of coffee near my office now costs $4.50. It was $3.25 in the spring, so I have begun brewing my own at home and carrying it in a thermos."
         }
       ],
-      "note": "값이 올랐다고 할 때 **went up to** 뒤에 지금 가격을 붙인다. 예전 값은 **It was 4,500 in the spring** 처럼 그냥 과거형으로 이어 말하면 된다.",
+      "note": "값이 올랐다고 할 때 **went up to** 뒤에 지금 가격을 붙인다. 예전 값은 **It was $3.25 in the spring** 처럼 그냥 과거형으로 이어 말하면 된다.",
       "situation": "물가 오른 거 투덜대기",
       "start": null,
       "end": null,

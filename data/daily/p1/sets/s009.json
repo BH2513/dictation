@@ -27,20 +27,20 @@
     },
     {
       "i": 1,
-      "ko": "동생이 막차로 온다고 둘러대고 1차만 하고 빠지려고. 2차까지 가면 자정까지 잡혀 있어야 돼.",
-      "text": "I'm going to say my sister's coming in on the last train and slip out after the first round. If I stay for the second round, I'll be there till midnight.",
+      "ko": "동생 기차가 늦게 도착한다고 하고 저녁만 먹고 일어나려고. 그러고 나서 술자리까지 남으면 자정까지 잡혀 있어야 돼.",
+      "text": "I'm going to tell them my sister's train gets in late and head out after dinner. If I stick around for drinks after, I'll be there till midnight.",
       "alts": [
         {
           "style": "casual",
-          "text": "Gonna tell them my sister's train gets in late and duck out after the first round. Otherwise I'm stuck there till midnight."
+          "text": "Gonna say my sister's train is late and take off after dinner. Otherwise I'm stuck there till midnight."
         },
         {
           "style": "formal",
-          "text": "I plan to tell them that my sister is arriving on the last train, so I can leave after the first round. If I stay for the second round, I will be there until midnight."
+          "text": "I plan to tell them my sister's train arrives late, so I will leave after dinner. If I stay for drinks afterward, I will be there until midnight."
         }
       ],
-      "note": "**slip out** 은 티 안 나게 조용히 빠져나오는 것이고 **duck out** 도 같은 뜻인데 더 편한 말투다. 영어의 round 는 술을 한 차례 돌리는 것을 뜻해서, 1차 2차를 the first round, the second round 로 옮긴다.",
-      "situation": "회식 자리에서 적당히 빠져나올 구실 만들기",
+      "note": "**head out** 은 자리에서 일어나 나간다는 뜻이고, **stick around** 는 안 가고 계속 남아 있는 것입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
       "start": null,
       "end": null,
       "recording": null

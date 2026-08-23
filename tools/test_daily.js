@@ -283,6 +283,21 @@ check('앞 번호는 그대로 (담아 둔 카드가 어긋나면 안 된다)',
 check('붙은 것은 다음 번호를 받는다', merged[2].i, 2);
 check('같은 문장은 두 번 안 붙는다', merge(A, A).length, 2);
 
+console.log('\n묶음 — 날짜에 묶여 있지 않다 (공부한 날은 앱이 따로 기억한다)');
+var setFile = daily.toSetFile({ sentences: [row(), row({
+  text: 'She would have called us. The meeting ran late again.',
+  ko: '연락했을 거야. 회의가 또 늦게 끝났어.' })] }, 's007', '2026-08-23');
+check('videoId 는 묶음 번호를 가리킨다', setFile.videoId, 'daily-s007');
+check('만든 날은 남긴다 (날짜에 묶는 것이 아니다)', setFile.madeAt, '2026-08-23');
+check('번호는 0 부터', [setFile.sentences[0].i, setFile.sentences[1].i], [0, 1]);
+check('제목은 사람이 읽을 수 있게', setFile.title, 'Set 7');
+check('영상 문장과 같은 칸을 갖춘다',
+  Object.keys(setFile.sentences[0]).sort(),
+  ['alts', 'end', 'i', 'ko', 'note', 'recording', 'situation', 'start', 'text']);
+
+check('같은 글로 보는 열쇠 — 대소문자·문장부호 무시',
+  daily.key('  That Deadline, is tough!  '), 'that deadline is tough');
+
 console.log('\n상황 고르기 — 최근에 쓴 것은 뒤로 미룬다');
 var all = ['가', '나', '다', '라'];
 var first = function () { return 0; };   // 섞기를 고정해서 결과를 볼 수 있게 한다

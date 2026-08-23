@@ -79,6 +79,14 @@ check('note 강조가 문장에 없으면 잡는다',
   shows.validate({ picked: [pick({ note: '**swamped** 는 바쁘다는 뜻입니다.' })] }, LINES, 5),
   ['고른 것 1: note 에서 강조한 표현이 문장에 하나도 나오지 않습니다.']);
 
+console.log('\n고르는 기준이 지시문에 담기는지');
+var pr = shows.buildPrompt([{ title: 'Show A', text: 'x' }], { count: 5 });
+check('화면을 봐야 아는 말을 버리라고 한다', pr.indexOf('화면을 봐야 아는 말') >= 0, true);
+check('실제로 새어 나간 예를 든다', pr.indexOf('the next part is the best') >= 0, true);
+check('뉴스·강연 말투를 버리라고 한다', pr.indexOf('뉴스·강연 말투') >= 0, true);
+check('비속어를 빼라고 한다', pr.indexOf('비속어') >= 0, true);
+check('못 채우면 채우지 말라고 한다', pr.indexOf('채우지 마세요') >= 0, true);
+
 console.log('\n앱이 읽는 모양으로');
 var day = shows.toDayFile({ picked: [pick(), pick({ n: 2,
   text: 'You have to hear me out on this one.',

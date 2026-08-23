@@ -48,5 +48,9 @@
   "showsCandidates": 6,
   "showsMinWords": 12,
   "showsMaxWords": 30,
-  "batches": 3
+  "batches": 3,
+  "showsExclude": [
+    "SW2bVwdr8Zg",
+    "hz3Rs6xWReE"
+  ]
 }

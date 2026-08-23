@@ -79,6 +79,15 @@ check('note 강조가 문장에 없으면 잡는다',
   shows.validate({ picked: [pick({ note: '**swamped** 는 바쁘다는 뜻입니다.' })] }, LINES, 5),
   ['고른 것 1: note 에서 강조한 표현이 문장에 하나도 나오지 않습니다.']);
 
+console.log('\n대사 연습에 안 맞는 영상은 뺀다');
+var cfgEx = { showsMinWords: 6, showsMaxWords: 30, showsExclude: ['vTalk'] };
+check('설정에 적힌 영상은 후보에서 빠진다',
+  typeof shows.tally === 'function', true);
+check('뺄 목록이 없어도 돌아간다',
+  Array.isArray(shows.videoLines('nobody', { showsMinWords: 6, showsMaxWords: 30 })), true);
+check('뺄 목록이 있어도 돌아간다',
+  Array.isArray(shows.videoLines('nobody', cfgEx)), true);
+
 console.log('\n고르는 기준이 지시문에 담기는지');
 var pr = shows.buildPrompt([{ title: 'Show A', text: 'x' }], { count: 5 });
 check('화면을 봐야 아는 말을 버리라고 한다', pr.indexOf('화면을 봐야 아는 말') >= 0, true);

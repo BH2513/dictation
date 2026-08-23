@@ -15,7 +15,11 @@ var ROOT = daily.ROOT;
 var DAILY = daily.DAILY;
 
 /* 연습에 쓸 만한 줄만 고른다. 자동 자막은 토막이 많아서 그냥 쓰면 안 된다.
-   문장부호로 끝나고 길이가 적당한 것만 남긴다. */
+   문장부호로 끝나고 길이가 적당한 것만 남긴다.
+
+   **문장부호가 아예 없는 자막은 여기서 통째로 걸러진다.** 유튜브 자동 자막 중에
+   그런 것이 있는데(받아쓰기에는 써도 대사 연습에는 못 쓴다), 어느 영상이 몇 줄을
+   내놓는지는 tally() 로 볼 수 있다 — 워크플로 로그에 남긴다. */
 /* 자막에서 뽑아 둔 대사 창고. tools/add_subs.py 가 채운다 (PC 에서 두 달에 한 번쯤) */
 function poolLines(pid) {
   var pool = daily.readJSON(path.join(ROOT, 'data', 'shows', pid, 'pool.json'), null);
@@ -44,7 +48,13 @@ function videoLines(pid, cfg) {
   var min = (cfg && cfg.showsMinWords) || 6;
   var max = (cfg && cfg.showsMaxWords) || 30;
 
+  // 대사 연습에 안 맞는 영상은 뺀다 (강연, 뉴스 등). config 의 showsExclude
+  var skip = {};
+  var ex = (cfg && cfg.showsExclude) || [];
+  for (var e = 0; e < ex.length; e++) skip[ex[e]] = true;
+
   for (var v = 0; v < index.length; v++) {
+    if (skip[index[v].videoId]) continue;
     var data = daily.readJSON(path.join(dir, index[v].videoId + '.json'), null);
     if (!data || !data.sentences) continue;
     for (var s = 0; s < data.sentences.length; s++) {
@@ -307,8 +317,18 @@ function markIndex(pid, date, count, generatedAt) {
   return rows;
 }
 
+/* 어느 영상이 후보를 몇 줄 내놓는지. 0 줄이면 그 자막은 대사 연습에 못 쓴다 */
+function tally(pid, cfg) {
+  var out = {};
+  var all = videoLines(pid, cfg);
+  for (var i = 0; i < all.length; i++) {
+    out[all[i].title] = (out[all[i].title] || 0) + 1;
+  }
+  return out;
+}
+
 module.exports = {
-  candidates: candidates, poolLines: poolLines, videoLines: videoLines, recentLines: recentLines, pickLines: pickLines,
+  candidates: candidates, poolLines: poolLines, videoLines: videoLines, tally: tally, recentLines: recentLines, pickLines: pickLines,
   buildPrompt: buildPrompt, buildSchema: buildSchema,
   validate: validate, toDayFile: toDayFile, save: save, markIndex: markIndex
 };

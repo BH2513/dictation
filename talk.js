@@ -20,8 +20,13 @@ window.Talk = (function () {
   var COMPANIES = {
     anthropic: {
       name: 'Anthropic (Claude)',
-      keyHint: 'Starts with sk-ant-. Make one at console.anthropic.com.',
+      keyHint: 'Starts with sk-ant-. Make one at platform.claude.com.',
       model: 'claude-haiku-4-5',
+      /* **달러다.** 콘솔(platform.claude.com → Usage)이 달러로 보여 주므로
+         같은 단위여야 대조가 된다. 100만 토큰당 값이다.
+         캐싱은 다시 읽을 때 0.1배, 처음 넣어 둘 때 1.25배 (5분 유지).
+         **값이 바뀌면 여기만 고친다.** */
+      price: { input: 1.00, output: 5.00, cacheWrite: 1.25, cacheRead: 0.10 },
       url: 'https://api.anthropic.com/v1/messages',
       headers: function (key) {
         return {
@@ -231,6 +236,36 @@ window.Talk = (function () {
 
   /* ------------------------------------------------------------------ 바깥에서 쓰는 것 */
 
+  /* ------------------------------------------------------------------ 얼마 들었나
+
+     답에 사용량이 같이 온다. 그걸로 그 자리에서 값을 낸다 —
+     **막연한 돈 걱정을 숫자로 바꾸는 것이 이 셈의 목적이다** (2026-08-26 운영자 요청).
+
+     `input_tokens` 는 **캐시에 안 걸린 나머지**다. 캐시에 넣어 둔 것과 다시 읽은 것은
+     따로 온다. 그래서 셋을 더해야 실제로 보낸 양이 되고, 겹쳐 세지 않는다. */
+
+  function costOf(companyId, usage) {
+    var c = company(companyId);
+    if (!c || !c.price || !usage) return 0;
+    var p = c.price;
+    var n = function (v) { return (typeof v === 'number' && v > 0) ? v : 0; };
+    return (
+      n(usage.input_tokens) * p.input +
+      n(usage.cache_creation_input_tokens) * p.input * p.cacheWrite +
+      n(usage.cache_read_input_tokens) * p.input * p.cacheRead +
+      n(usage.output_tokens) * p.output
+    ) / 1000000;
+  }
+
+  /* 달러로 적는다. 아주 작은 값이 0 으로 보이면 안 된다 */
+  function money(usd) {
+    var v = (typeof usd === 'number' && usd > 0) ? usd : 0;
+    if (v === 0) return '$0';
+    if (v < 0.001) return '<$0.001';
+    if (v < 1) return '$' + v.toFixed(3);
+    return '$' + v.toFixed(2);
+  }
+
   /* ------------------------------------------------------------------ 한 턴 주고받기 */
 
   function askTurn(companyId, key, ctx, history, said, done, fail) {
@@ -258,6 +293,7 @@ window.Talk = (function () {
     }, function (res) {
       var turn = readJSON(res);
       if (!turn) { fail('shape'); return; }
+      turn.costUsd = costOf(companyId, res && res.usage);
       done(turn);
     }, fail);
   }
@@ -281,6 +317,7 @@ window.Talk = (function () {
     }, function (res) {
       var sum = readJSON(res);
       if (!sum) { fail('shape'); return; }
+      sum.costUsd = costOf(companyId, res && res.usage);
       done(sum);
     }, fail);
   }
@@ -300,6 +337,8 @@ window.Talk = (function () {
     company: company,
     askTurn: askTurn,
     askSummary: askSummary,
+    costOf: costOf,
+    money: money,
     systemPrompt: systemPrompt,
     TURN_SCHEMA: TURN_SCHEMA,
     SUMMARY_SCHEMA: SUMMARY_SCHEMA,

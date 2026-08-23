@@ -9,10 +9,10 @@
 <meta name="theme-color" content="#0f1115">
 <title>Dictation</title>
 <!-- 데스크탑·폰에 앱으로 설치하기 위한 것 -->
-<link rel="manifest" href="manifest.json?v=2026-08-25e">
+<link rel="manifest" href="manifest.json?v=2026-08-26a">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=2026-08-25e">
+<link rel="stylesheet" href="style.css?v=2026-08-26a">
 </head>
 <body>
 
@@ -24,17 +24,25 @@
   </div>
 </div>
 
-<!-- 라이브러리 -->
+<!-- 홈 — 오늘 무엇을 할지 고른다 (SPEC 5) -->
+<div class="screen" id="screen-home">
+  <div class="wrap">
+    <div class="top">
+      <div class="dot" id="home-dot"></div>
+      <h1 id="home-title">Library</h1>
+      <button class="small" id="home-switch">Switch</button>
+    </div>
+    <div class="streakline" id="home-streak"></div>
+    <div id="home-menu"></div>
+  </div>
+</div>
+
+<!-- 받아쓰기 — 등록한 영상 목록 -->
 <div class="screen" id="screen-library">
   <div class="wrap">
     <div class="top">
-      <h1 id="library-title">Library</h1>
-      <button class="small" id="daily-btn">Daily</button>
-      <button class="small" id="cards-btn">Cards</button>
-      <button class="small" id="report-btn">Report</button>
-      <button class="small" id="talk-btn">Talk</button>
-      <button class="small" id="settings-btn">Settings</button>
-      <button class="small" id="change-profile">Switch</button>
+      <button class="small" id="library-back">← Home</button>
+      <h1 id="library-title">Dictation</h1>
     </div>
     <div id="video-list"></div>
   </div>
@@ -44,7 +52,7 @@
 <div class="screen" id="screen-edit">
   <div class="wrap">
     <div class="top">
-      <button class="small" id="edit-back">← Library</button>
+      <button class="small" id="edit-back">← Dictation</button>
       <h1 id="edit-title">Edit</h1>
     </div>
     <p class="hint">Join a sentence to the next one, or split it where you choose. When it reads
@@ -72,7 +80,7 @@
 <div class="screen" id="screen-cards">
   <div class="wrap">
     <div class="top">
-      <button class="small" id="cards-back">← Library</button>
+      <button class="small" id="cards-back">← Home</button>
       <h1>Cards</h1>
     </div>
     <div id="cards-body"></div>
@@ -83,8 +91,8 @@
 <div class="screen" id="screen-daily">
   <div class="wrap">
     <div class="top">
-      <button class="small" id="daily-back">← Library</button>
-      <h1>Daily sentences</h1>
+      <button class="small" id="daily-back">← Home</button>
+      <h1 id="daily-title">Daily sentences</h1>
     </div>
     <!-- 탭·날짜·장면 제목. 아래 재생기가 다시 그려지지 않도록 본문과 나눠 둔다 -->
     <div id="daily-head"></div>
@@ -112,7 +120,7 @@
 <div class="screen" id="screen-report">
   <div class="wrap">
     <div class="top">
-      <button class="small" id="report-back">← Library</button>
+      <button class="small" id="report-back">← Home</button>
       <h1>Report</h1>
     </div>
     <div id="report-body"></div>
@@ -140,7 +148,7 @@
 <div class="screen" id="screen-talk">
   <div class="wrap">
     <div class="top">
-      <button class="small" id="talk-back">← Library</button>
+      <button class="small" id="talk-back">← Home</button>
       <h1>Talk</h1>
     </div>
     <div id="talk-body"></div>
@@ -151,7 +159,7 @@
 <div class="screen" id="screen-settings">
   <div class="wrap">
     <div class="top">
-      <button class="small" id="settings-back">← Library</button>
+      <button class="small" id="settings-back">← Home</button>
       <h1>Settings</h1>
     </div>
 
@@ -185,7 +193,7 @@
 <div class="screen" id="screen-listen">
   <div class="wrap">
     <div class="top">
-      <button class="small" id="back-to-library">← Library</button>
+      <button class="small" id="back-to-library">← Dictation</button>
       <h1 id="listen-title">Loading…</h1>
     </div>
 
@@ -262,10 +270,10 @@
   </div>
 </div>
 
-<script src="store.js?v=2026-08-25e"></script>
-<script src="record.js?v=2026-08-25e"></script>
-<script src="talk.js?v=2026-08-25e"></script>
-<script src="talkui.js?v=2026-08-25e"></script>
-<script src="app.js?v=2026-08-25e"></script>
+<script src="store.js?v=2026-08-26a"></script>
+<script src="record.js?v=2026-08-26a"></script>
+<script src="talk.js?v=2026-08-26a"></script>
+<script src="talkui.js?v=2026-08-26a"></script>
+<script src="app.js?v=2026-08-26a"></script>
 </body>
 </html>

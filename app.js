@@ -92,7 +92,7 @@
   /* ---------------------------------------------------------------- 화면 이동 */
 
   function show(name) {
-    var all = ['profiles', 'library', 'listen', 'report', 'cards', 'edit', 'daily',
+    var all = ['profiles', 'home', 'library', 'listen', 'report', 'cards', 'edit', 'daily',
                'settings', 'talk'];
     for (var i = 0; i < all.length; i++) {
       $('screen-' + all[i]).className = 'screen' + (all[i] === name ? ' on' : '');
@@ -123,7 +123,8 @@
     if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
 
     if (!profileId) { showProfiles(); return; }
-    if (!videoId) { showLibrary(profileId); return; }
+    if (!videoId) { showHome(profileId); return; }
+    if (videoId === 'videos') { showLibrary(profileId); return; }
     if (videoId === 'report') { showReport(profileId); return; }
     if (videoId === 'settings') { showSettings(profileId); return; }
     if (videoId === 'talk') { openTalk(profileId); return; }
@@ -197,15 +198,241 @@
     }, function () { done(null); });
   }
 
+  /* ---------------------------------------------------------------- 홈 (SPEC 5) */
+
+  /* 프로필을 고르면 곧바로 영상 목록이 나오던 자리다. 받아쓰기 말고도 갈래가 셋이 되면서
+     목록 하나가 첫 화면을 다 먹고, 나머지는 머리말의 작은 단추 다섯 개로 밀려나 있었다
+     (운영자 지적). 이제 갈래를 먼저 고르고, 영상 목록은 받아쓰기 안으로 들어간다.
+
+     칸에 들어갈 숫자(오늘 몇 개 했는지, 영상이 몇 개인지)는 **나중에 채운다.**
+     자료를 기다렸다가 그리면 단추가 늦게 뜬다. 자리를 먼저 만들고 값만 뒤에 넣는다.
+     그래서 `.meta` 는 비어 있어도 높이를 차지한다 — 값이 들어올 때 화면이 흔들리지 않게. */
+
+  function homeTile(o) {
+    var b = el('button', 'tile');
+    var ic = el('div', 'ic', o.icon);
+    ic.style.background = o.tint;
+    b.appendChild(ic);
+
+    var body = el('div', 'body');
+    body.appendChild(el('div', 'name', o.name));
+    body.appendChild(el('div', 'desc', o.desc));
+    o.meta = el('div', 'meta off', '\u00a0');
+    body.appendChild(o.meta);
+    b.appendChild(body);
+
+    b.appendChild(el('div', 'go', '\u203a'));
+    b.onclick = o.go;
+
+    var li = document.createElement('li');
+    li.appendChild(b);
+    o.li = li;
+    return o;
+  }
+
+  /* 값이 늦게 오면 여기로 넣는다. dim 은 "오늘 한 것"이 아니라 그냥 안내라는 뜻 */
+  function setMeta(tile, text, dim) {
+    if (!tile || !tile.meta) return;
+    clear(tile.meta);
+    tile.meta.className = 'meta' + (dim ? ' off' : '');
+    tile.meta.appendChild(document.createTextNode(text || '\u00a0'));
+  }
+
+  /* 오늘 배정된 묶음 번호. 기록을 못 쓰는 기기에서는 없는 것으로 본다 */
+  function homePlanToday(pid, key, done) {
+    if (!window.Store || !Store.available()) { done(null); return; }
+    Store.getPlan(pid, Store.today(), function (row) {
+      var ids = (row && row[key]) || [];
+      done(ids.length ? ids[ids.length - 1] : null);
+    }, function () { done(null); });
+  }
+
+  /* 오늘 꺼낸 묶음을 어디까지 했는지. 건너뛴 것도 한 것으로 센다 — 지나간 자리다 */
+  function homeDone(pid, videoId, total, tile) {
+    Store.getProgress(pid, videoId, function (row) {
+      var marks = (row && row.sentences) || {};
+      var n = 0;
+      for (var k in marks) if (marks.hasOwnProperty(k) && marks[k]) n++;
+      if (total && n >= total) setMeta(tile, 'Today \u00b7 all ' + total + ' done');
+      else setMeta(tile, 'Today \u00b7 ' + n + ' of ' + total);
+    }, function () { setMeta(tile, 'Open for today'); });
+  }
+
+  function homeVideos(pid, tile) {
+    getJSON('data/videos/' + pid + '/index.json', function (rows) {
+      videos = rows || [];
+      if (!videos.length) { setMeta(tile, 'No videos yet \u2014 add one from your PC', true); return; }
+      setMeta(tile, videos.length + (videos.length === 1 ? ' video' : ' videos'), true);
+    }, function (why) {
+      setMeta(tile, why === 'missing'
+        ? 'No videos yet \u2014 add one from your PC'
+        : 'Could not load the list', true);
+    });
+  }
+
+  function homeDaily(pid, tile) {
+    getJSON('data/daily/' + pid + '/sets.json', function (rows) {
+      var sets = rows || [];
+      if (!sets.length) { setMeta(tile, 'No sentences yet', true); return; }
+      homePlanToday(pid, 'setIds', function (id) {
+        if (!id) { setMeta(tile, 'A new set is ready'); return; }
+        var total = 5;
+        for (var i = 0; i < sets.length; i++) if (sets[i].id === id) total = sets[i].count || 5;
+        homeDone(pid, 'daily-' + id, total, tile);
+      });
+    }, function (why) {
+      setMeta(tile, why === 'missing' ? 'No sentences yet' : 'Could not load it', true);
+    });
+  }
+
+  function homeShows(pid, tile) {
+    getJSON('data/daily/' + pid + '/index.json', function (rows) {
+      var list = rows || [];
+      var any = false;
+      for (var i = 0; i < list.length; i++) if (list[i].hasShows) any = true;
+      if (!any) { setMeta(tile, 'No lines yet \u2014 needs a video with punctuation', true); return; }
+      homePlanToday(pid, 'showIds', function (id) {
+        if (!id) { setMeta(tile, 'A new set is ready'); return; }
+        var total = 5;
+        for (var j = 0; j < list.length; j++) if (list[j].date === id) total = list[j].showsCount || 5;
+        homeDone(pid, 'shows-' + id, total, tile);
+      });
+    }, function (why) {
+      setMeta(tile, why === 'missing' ? 'No lines yet' : 'Could not load it', true);
+    });
+  }
+
+  /* 대화 연습. 열쇠가 없으면 눌러도 못 하므로 그 사실을 칸에 미리 적는다 */
+  function homeTalk(pid, tile) {
+    if (!window.Store || !Store.available()) { setMeta(tile, 'This browser saves nothing', true); return; }
+    Store.getSetting('aiKey', function (key) {
+      if (!key) { setMeta(tile, 'Add the AI key in Settings first', true); return; }
+      Store.listTalks(pid, function (rows) {
+        rows = rows || [];
+        var today = Store.today(), n = 0;
+        for (var i = 0; i < rows.length; i++) if (rows[i].date === today) n++;
+        if (n) setMeta(tile, 'Today \u00b7 ' + n + (n === 1 ? ' talk' : ' talks'));
+        else setMeta(tile, 'Ready when you are', true);
+      }, function () { setMeta(tile, 'Ready when you are', true); });
+    }, function () { setMeta(tile, 'Add the AI key in Settings first', true); });
+  }
+
+  function homeCards(pid, tile) {
+    if (!window.Store || !Store.available()) { setMeta(tile, 'This browser saves nothing', true); return; }
+    Store.listCards(pid, function (rows) {
+      var n = (rows || []).length;
+      setMeta(tile, n ? (n + (n === 1 ? ' card' : ' cards')) : 'No cards yet', !n);
+    }, function () { setMeta(tile, 'Could not read your cards', true); });
+  }
+
+  /* 머리말 밑의 한 줄. 연속 일수와 오늘 한 개수. 둘 다 없으면 줄을 비운다 */
+  function homeStreak(pid) {
+    var line = $('home-streak');
+    clear(line);
+    if (!window.Store || !Store.available()) return;
+    Store.listDays(pid, function (days) {
+      days = days || [];
+      var n = streakCount(days);
+      var todayN = 0, today = Store.today();
+      for (var i = 0; i < days.length; i++) if (days[i].date === today) todayN = days[i].count || 0;
+
+      var parts = [];
+      if (n) parts.push(n + (n === 1 ? ' day' : ' days') + ' in a row');
+      if (todayN) parts.push(todayN + (todayN === 1 ? ' sentence' : ' sentences') + ' today');
+
+      clear(line);
+      for (var j = 0; j < parts.length; j++) {
+        if (j) line.appendChild(document.createTextNode(' \u00b7 '));
+        line.appendChild(el('b', null, parts[j]));
+      }
+    }, function () {});
+  }
+
+  function homeGroup(box, label) {
+    box.appendChild(el('div', 'grouplabel', label));
+    var ul = el('ul', 'tiles');
+    box.appendChild(ul);
+    return ul;
+  }
+
+  function showHome(pid) {
+    setProfileId(pid);
+    show('home');
+
+    var dot = $('home-dot');
+    findProfile(pid, function (p) {
+      profile = p;
+      $('home-title').textContent = p ? p.name : 'Home';
+      dot.textContent = String((p && p.name) || '?').charAt(0);
+      dot.style.background = (p && p.color) || '#3b82f6';
+    });
+
+    var box = $('home-menu');
+    clear(box);
+
+    var practice = homeGroup(box, 'Practice');
+
+    var tVideos = homeTile({
+      icon: '\ud83c\udfa7', tint: 'rgba(59,130,246,.18)',
+      name: 'Dictation', desc: 'Listen to a video and type what you hear.',
+      go: function () { go('#/' + pid + '/videos'); }
+    });
+    var tDaily = homeTile({
+      icon: '\ud83d\udde3\ufe0f', tint: 'rgba(34,197,94,.18)',
+      name: 'Daily', desc: 'Say a Korean sentence in English.',
+      go: function () { go('#/' + pid + '/daily'); }
+    });
+    var tShows = homeTile({
+      icon: '\ud83d\udcfa', tint: 'rgba(168,85,247,.18)',
+      name: 'Shows', desc: 'Real lines from the videos you added.',
+      go: function () { go('#/' + pid + '/shows'); }
+    });
+    var tTalk = homeTile({
+      icon: '\ud83e\udd16', tint: 'rgba(245,158,11,.16)',
+      name: 'Talk', desc: 'Talk with the AI and get corrected.',
+      go: function () { go('#/' + pid + '/talk'); }
+    });
+
+    practice.appendChild(tVideos.li);
+    practice.appendChild(tDaily.li);
+    practice.appendChild(tShows.li);
+    practice.appendChild(tTalk.li);
+
+    var review = homeGroup(box, 'Review');
+    var tCards = homeTile({
+      icon: '\ud83d\udcc7', tint: 'rgba(148,163,184,.18)',
+      name: 'Cards', desc: 'The sentences you saved, four ways.',
+      go: function () { go('#/' + pid + '/cards'); }
+    });
+    review.appendChild(tCards.li);
+
+    box.appendChild(el('div', 'grouplabel', 'More'));
+    var tools = el('div', 'tools');
+    var rep = el('button', null, 'Report');
+    rep.onclick = function () { go('#/' + pid + '/report'); };
+    var set = el('button', null, 'Settings');
+    set.onclick = function () { go('#/' + pid + '/settings'); };
+    tools.appendChild(rep);
+    tools.appendChild(set);
+    box.appendChild(tools);
+
+    homeStreak(pid);
+    homeVideos(pid, tVideos);
+    homeDaily(pid, tDaily);
+    homeShows(pid, tShows);
+    homeTalk(pid, tTalk);
+    homeCards(pid, tCards);
+  }
+
   function showLibrary(profileId) {
     setProfileId(profileId);
     show('library');
     var box = $('video-list');
     notice(box, 'Loading\u2026');
+    $('library-back').onclick = function () { go('#/' + profileId); };
 
     findProfile(profileId, function (p) {
       profile = p;
-      $('library-title').textContent = p ? p.name : 'Library';
 
       getJSON('data/videos/' + profileId + '/index.json', function (data) {
         videos = data || [];
@@ -222,11 +449,13 @@
             body.appendChild(el('div', 'name', v.title || v.videoId));
             var meta = (v.sentenceCount || 0) + ' sentences';
             if (v.hasKorean) meta += ' \u00b7 Korean';
-            if (v.addedAt) meta += ' · ' + v.addedAt;
-            body.appendChild(el('div', 'meta', meta));
-            if (v.source === 'auto_captions') {
-              body.appendChild(el('span', 'badge', 'Auto captions \u2014 sentence breaks may be off'));
-            }
+            // 자동 자막이라는 말은 줄 끝에 붙인다. 무엇이 문제인지는 연습 화면에서 다시
+            // 설명하므로 여기서는 짧게만 둔다 — 영상마다 주황색 딱지가 한 줄씩 붙으면
+            // 목록 전체가 경고처럼 보인다
+            var tail = (v.source === 'auto_captions') ? ' \u00b7 auto captions' : '';
+            var metaBox = el('div', 'meta', meta + tail);
+            body.appendChild(metaBox);
+            videoDoneLine(profileId, v, metaBox, meta, tail);
             b.appendChild(body);
             b.onclick = function () { go('#/' + profileId + '/' + v.videoId); };
             var ed = el('button', 'small edit-link', 'Edit');
@@ -248,6 +477,20 @@
           : why, why !== 'missing');
       });
     });
+  }
+
+  /* 영상마다 어디까지 했는지 한 줄에 덧붙인다. 기록은 기기 안(IndexedDB)에 있어서
+     목록보다 늦게 온다 — 먼저 그리고, 값이 오면 그 줄만 다시 쓴다 */
+  function videoDoneLine(pid, v, node, head, tail) {
+    if (!window.Store || !Store.available()) return;
+    Store.getProgress(pid, v.videoId, function (row) {
+      var marks = (row && row.sentences) || {};
+      var n = 0;
+      for (var k in marks) if (marks.hasOwnProperty(k) && marks[k]) n++;
+      if (!n) return;
+      clear(node);
+      node.appendChild(document.createTextNode(head + ' \u00b7 ' + n + ' done' + tail));
+    }, function () {});
   }
 
   /* ------------------------------------------------ 연습에 못 쓰는 줄 (SPEC 8) */
@@ -305,7 +548,7 @@
     current = -1;
     video = null;
     $('listen-title').textContent = 'Loading\u2026';
-    $('back-to-library').onclick = function () { go('#/' + profileId); };
+    $('back-to-library').onclick = function () { go('#/' + profileId + '/videos'); };
     clear($('sentence-list'));
     $('now').textContent = '';
     say('');
@@ -556,7 +799,7 @@
   function showEdit(pid, videoId) {
     setProfileId(pid);
     show('edit');
-    $('edit-back').onclick = function () { go('#/' + pid); };
+    $('edit-back').onclick = function () { go('#/' + pid + '/videos'); };
     $('edit-save').onclick = saveEdited;
     $('paste-caps-btn').onclick = usePasted;
     $('edit-reset').onclick = function () {
@@ -1166,7 +1409,7 @@
   var dailyKind = 'made';   // 'made' = AI 가 만든 문장, 'shows' = 등록한 영상의 실제 대사
 
   var DAILY_TABS = [
-    { id: 'made',  route: 'daily', name: 'Written' },
+    { id: 'made',  route: 'daily', name: 'Daily' },
     { id: 'shows', route: 'shows', name: 'Shows' }
   ];
 
@@ -1248,6 +1491,7 @@
   function showDaily(pid, date, idx) {
     setProfileId(pid);
     show('daily');
+    $('daily-title').textContent = (dailyKind === 'shows') ? 'Show lines' : 'Daily sentences';
     var box = $('daily-body');
     notice(box, 'Loading…');
 
@@ -2160,7 +2404,7 @@
           if (list[i].key === key) {
             var b = $('daily-save');
             if (b) { b.className = 'half on'; b.textContent = 'Saved'; }
-            dailySay('Saved to cards — ' + list.length + ' saved. Open Cards from the library.');
+            dailySay('Saved to cards — ' + list.length + ' saved. Open Cards from the home screen.');
             return;
           }
         }
@@ -2649,15 +2893,21 @@
     })();
   }
 
-  function streakBlock(days) {
+  /* 며칠 연달아 했는지. 오늘 아직 안 했어도 어제까지는 인정한다.
+     홈 머리말과 리포트가 같은 셈을 쓴다 */
+  function streakCount(days) {
     var have = {};
     for (var i = 0; i < days.length; i++) if (days[i].count > 0) have[days[i].date] = true;
 
     var n = 0;
     var d = new Date();
-    if (!have[dateStr(d)]) d.setDate(d.getDate() - 1);   // 오늘 아직 안 했어도 어제까지는 인정
+    if (!have[dateStr(d)]) d.setDate(d.getDate() - 1);
     while (have[dateStr(d)]) { n++; d.setDate(d.getDate() - 1); }
+    return n;
+  }
 
+  function streakBlock(days) {
+    var n = streakCount(days);
     var box = el('div', 'notice');
     var big = el('b', null, n === 0 ? 'No streak yet' : (n + (n === 1 ? ' day' : ' days') + ' in a row'));
     box.appendChild(big);
@@ -2901,7 +3151,7 @@
         var b = $('save-card-btn');
         b.className = 'half on';
         b.textContent = 'Saved';
-        say('Saved to cards \u2014 ' + list.length + ' saved. Open Cards from the library.');
+        say('Saved to cards \u2014 ' + list.length + ' saved. Open Cards from the home screen.');
       }, function () { say('Saved, but could not read the card list back.'); });
     }, 150);
   }
@@ -3286,19 +3536,14 @@
     $('clip-repeat').onclick = toggleClipRepeat;
     $('prev-btn').onclick = function () { stepSentence(-1); };
     $('next-btn').onclick = function () { stepSentence(1); };
-    $('change-profile').onclick = function () { go('#/'); };
-    $('report-btn').onclick = function () { go('#/' + profileId + '/report'); };
+    $('home-switch').onclick = function () { go('#/'); };
     $('report-back').onclick = function () { go('#/' + profileId); };
-    $('settings-btn').onclick = function () { go('#/' + profileId + '/settings'); };
-    $('talk-btn').onclick = function () { go('#/' + profileId + '/talk'); };
     $('talk-back').onclick = function () { go('#/' + profileId); };
     $('settings-back').onclick = function () { go('#/' + profileId); };
     $('key-company').onchange = function () { drawKeyHint(); };
     $('key-save').onclick = function () { saveKey(); };
     $('key-clear').onclick = function () { clearKey(); };
-    $('cards-btn').onclick = function () { go('#/' + profileId + '/cards'); };
     $('cards-back').onclick = function () { go('#/' + profileId); };
-    $('daily-btn').onclick = function () { go('#/' + profileId + '/daily'); };
     $('daily-back').onclick = function () { go('#/' + profileId); };
     setupBackup();
     $('list-btn').onclick = function () { toggleList(); };

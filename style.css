@@ -598,48 +598,38 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 .fixslot{margin-top:10px;padding-left:12px;border-left:2px solid var(--line);}
 .fixslot .fixbox{margin-top:6px;}
 
-/* 잘못 알아들은 낱말을 고치러 가는 자리. 글 바로 밑에 둔다 — 숨겨 두면 못 찾는다 */
-.fixword{
-  display:inline-block;
-  width:auto;
-  min-height:0;
-  margin-top:8px;
-  padding:6px 12px;
-  background:transparent;
-  border:1px solid var(--line);
-  border-radius:999px;
-  color:var(--muted);
-  font-size:var(--f-tiny);
-}
-.talkctl textarea{
+/* 받아적힌 글 — **보이는 자리에서 바로 고친다.** 상자처럼 보이되 칠 수 있는 칸이다 */
+.livesaid{
+  display:block;
   width:100%;
-  margin-top:10px;
-  padding:12px 14px;
   box-sizing:border-box;
-  background:var(--card);
-  border:1px solid var(--accent);
-  border-radius:12px;
+  min-height:56px;
+  padding:0;
+  background:transparent;
+  border:0;
+  resize:none;
+  overflow:hidden;
   color:var(--text);
+  font-family:inherit;
   font-size:var(--f-body);
   line-height:1.55;
-  font-family:inherit;
 }
+.livesaid:focus{outline:none;}
+.livesaid::placeholder{color:var(--muted);}
 
-/* 지금 받아적히는 중인 말 + 얼마나 기다리는지 보여 주는 바 */
+/* 지금 받아적히는 중인 말 + 얼마나 기다리는지 보여 주는 바.
+   **손대면 테두리가 또렷해진다** — 고칠 수 있는 자리라는 걸 그때 알게 된다 */
 .livebox{
   display:block;width:100%;text-align:left;
   background:none;border:1px dashed var(--line);
   border-radius:12px;padding:12px 14px;margin:14px 0;min-height:0;
 }
-.live{font-size:var(--f-body);line-height:1.5;min-height:24px;}
-.live.waiting{color:var(--muted);font-size:var(--f-small);}
-.live.said{color:var(--text);}
+.livebox:focus-within{border-style:solid;border-color:var(--accent);background:var(--card);}
 .livebox .bar{height:3px;background:var(--line);border-radius:2px;margin-top:10px;overflow:hidden;}
 .livebox .bar .fill{height:100%;width:0;background:var(--accent);border-radius:2px;}
 .barhint{font-size:var(--f-tiny);color:var(--muted);margin-top:6px;font-weight:400;}
 
 .talkctl{margin-top:16px;}
-.talkctl textarea{margin-top:10px;}
 button.listening{
   background:var(--ok);border-color:var(--ok);color:var(--on-ok);
   animation:pulse 1.6s ease-in-out infinite;

@@ -34,7 +34,6 @@ window.TalkUI = (function () {
   var quiet = null;        // 말이 멎었는지 재는 시계
   var saidFinal = '';      // 받아적힌 것 (확정)
   var saidNow = '';        // 받아적히는 중
-  var typing = false;      // 고쳐 쓰는 칸을 펴 뒀나 (받아적힌 것을 손보거나, 그냥 쳐 넣거나)
   var micNote = '';        // 마이크가 안 될 때 남기는 말
   var hadWords = false;    // 큰 단추가 지금 "보내기" 모양인가
   var heardAt = 0;         // 마지막으로 말이 잡힌 때 (마이크를 언제 놓아 줄지 잰다)
@@ -472,69 +471,79 @@ window.TalkUI = (function () {
 
   /* 살아 있는 칸. **통째로 다시 그리지 않는다** — 말하는 중에 다시 그리면 글자가 깜빡이고
      차오르던 바가 처음으로 돌아간다. 글자와 옷만 갈아 끼운다. */
+  /* 받아적힌 글. **글자 그대로 고칠 수 있는 칸이다** (2026-08-26 운영자 지적).
+
+     처음에는 보기만 하는 상자였고, 고치려면 `Fix a word` 를 눌러 딴 칸을 열어야 했다.
+     운영자가 되물었다 — **"그냥 바로 수정하면 안 되고 그 과정을 겪어야 되냐."**
+     맞는 말이다. **보이는 글과 고치는 글이 같은 자리여야 한다** —
+     한 낱말 고치자고 단추를 거치게 하면 그건 고치는 게 아니라 옮겨 쓰는 것이다.
+
+     **손대는 순간 마이크를 끈다.** 안 끄면 고치는 사이에 들어온 말이 덮어쓴다.
+     하던 말은 그대로 남으므로, 고치고 나서 `Keep talking` 으로 이어 말할 수 있다.
+
+     **친 것은 곧바로 담아 두는 자리(`saidFinal`)로 간다.** 칸 안에만 두면
+     화면을 다시 그릴 때 사라진다. 담아 두는 자리는 하나여야 한다. */
+  function grow(ta) {
+    try { ta.style.height = 'auto'; ta.style.height = (ta.scrollHeight + 2) + 'px'; } catch (e) {}
+  }
+
   function paintLive() {
     var n = $('talk-live');
     if (!n) return;
-    var waiting = (saidFinal + ' ' + saidNow).replace(/^\s+|\s+$/g, '');
-    // 고쳐 쓰는 중에는 안 그린다 — 같은 글이 두 군데 있으면 어느 쪽이 나갈지 알 수 없다
-    if (typing && mode !== 'thinking') { clear(n); return; }
-    // 멈춰 있어도 하던 말이 있으면 남겨 둔다. 그래야 이어서 하거나 그대로 보낼 수 있다
-    if (mode !== 'listening' && mode !== 'thinking' && !waiting) { clear(n); return; }
+    var text = (saidFinal + ' ' + saidNow).replace(/^\s+|\s+$/g, '');
+    // 멈춰 있어도 하던 말이 있으면 남겨 둔다. 마이크가 없는 기기는 칠 자리가 늘 있어야 한다
+    if (mode !== 'listening' && mode !== 'thinking' && !text && canHear()) { clear(n); return; }
 
-    var body = n.querySelector('.live');
-    if (!body) {
+    var ta = n.querySelector('.livesaid');
+    if (!ta) {
       clear(n);
-      var hold = el('button', 'livebox');
-      body = el('div', 'live');
-      hold.appendChild(body);
+      var hold = el('div', 'livebox');
+      ta = el('textarea', 'livesaid');
+      ta.id = 'talk-said';
+      ta.rows = 2;
+      // 손대는 순간 마이크를 끈다. 하던 말은 saidFinal 에 합쳐지므로 안 없어진다
+      ta.onfocus = function () {
+        if (mode !== 'listening') return;
+        hush();
+        paint();                                   // 큰 단추가 Send 로 바뀐다
+        try { ta.focus(); } catch (e) {}           // 다시 그려도 여기 그대로 있다
+      };
+      ta.oninput = function () {
+        saidFinal = ta.value;
+        saidNow = '';
+        grow(ta);
+        var has = !!ta.value.replace(/^\s+|\s+$/g, '');
+        if (has !== hadWords) { hadWords = has; paint(); }   // Talk ↔ Send
+      };
+      hold.appendChild(ta);
       var track = el('div', 'bar');
       var fill = el('div', 'fill');
       fill.id = 'talk-bar';
       track.appendChild(fill);
       hold.appendChild(track);
-      var hint = el('div', 'barhint', 'Take your time. Tap here when you are done.');
+      var hint = el('div', 'barhint', '');
       hint.id = 'talk-hint';
       hold.appendChild(hint);
-      /* **잘못 알아들은 낱말을 여기서 고친다** (2026-08-26 운영자 요청).
-         글이 있는 자리에 두어야 눈에 띈다 — 설정 어딘가에 숨겨 두면 못 찾는다.
-         상자 자체를 누르면 보내지므로, 이 단추는 **누름이 위로 안 새게 막는다.** */
-      var fix = el('button', 'fixword', 'Fix a word');
-      fix.id = 'talk-fix';
-      fix.onclick = function (ev) {
-        if (ev && ev.stopPropagation) ev.stopPropagation();
-        openEdit();
-      };
-      hold.appendChild(fix);
-      // 다 말했으면 기다릴 것 없이 바로 보낸다. 멈춰 둔 상태에서도 그대로 보낼 수 있다
-      hold.onclick = function () {
-        if (mode === 'listening') sendHeard();          // 듣는 중이면 그만 듣고 보낸다
-        else if (mode === 'idle' && canHear()) listen(); // 멈춰 있으면 이어서 말한다
-      };
       n.appendChild(hold);
     }
 
-    var text = (saidFinal + ' ' + saidNow).replace(/^\s+|\s+$/g, '');
-    if (mode === 'thinking') {
-      body.className = 'live said';
-      body.textContent = text || '\u2026';
-      var fx0 = $('talk-fix');
-      if (fx0) fx0.style.display = 'none';           // 이미 나갔다. 이제 못 고친다
-      var b0 = $('talk-bar');
-      if (b0) { b0.style.transition = 'none'; b0.style.width = '0%'; }
-      scrollDown();
-      return;
-    }
-    body.className = 'live' + (text ? ' said' : ' waiting');
-    body.textContent = text || 'Listening \u2014 just start talking.';
+    // **고치는 중에는 덮어쓰지 않는다.** 손대고 있는데 글이 바뀌면 커서가 튄다
+    var busy = false;
+    try { busy = (document.activeElement === ta); } catch (e) {}
+    if (!busy && ta.value !== text) { ta.value = text; grow(ta); }
 
-    var fx = $('talk-fix');
-    if (fx) fx.style.display = text ? '' : 'none';   // 고칠 글이 있을 때만
+    ta.readOnly = (mode === 'thinking');
+    ta.placeholder = canHear() ? 'Listening \u2014 just start talking.' : 'Type what you want to say.';
 
     var hint = $('talk-hint');
     if (hint) {
-      if (mode !== 'listening') hint.textContent = 'Tap here to keep talking, or Send below.';
-      else if (handsFree()) hint.textContent = 'Take your time. Tap here when you are done.';
-      else hint.textContent = 'Take your time. Nothing is sent until you tap Send.';
+      if (mode === 'thinking') hint.textContent = '';
+      else if (mode !== 'listening') hint.textContent = text
+        ? 'Tap the words to fix them, then Send.'
+        : '';
+      else if (handsFree()) hint.textContent = 'Take your time. Tap the words to fix them.';
+      else hint.textContent = 'Nothing is sent until you tap Send. '
+        + 'Tap the words to fix them.';
     }
     if (mode !== 'listening') {
       var b1 = $('talk-bar');
@@ -594,18 +603,6 @@ window.TalkUI = (function () {
         if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
         if (canHear() && handsFree()) listen(); else { mode = 'idle'; paint(); }
       };
-    } else if (typing) {
-      // 고쳐 쓰는 칸이 펴져 있다. 마이크는 꺼져 있고, 그 칸에 친 것이 곧 할 말이다
-      big.className = 'mic send';
-      label.textContent = 'Send';
-      sub.textContent = 'after you fix it';
-      big.onclick = function () {
-        if (!(saidFinal + saidNow).replace(/^\s+|\s+$/g, '')) {
-          talkMsg('Type something first.', true); return;
-        }
-        typing = false;
-        sendHeard();
-      };
     } else if (mode === 'listening') {
       if (said) {
         // 할 말을 했다. 이제 누를 것은 "보내기" 다
@@ -620,18 +617,23 @@ window.TalkUI = (function () {
         big.onclick = function () { hush(); paint(); };
       }
     } else if (said) {
-      // 멈춰 뒀는데 하던 말이 있다
+      // 멈춰 뒀는데 하던 말이 있다. 고치고 보내거나, 아래 작은 글씨로 이어 말한다
       big.className = 'mic send';
       label.textContent = 'Send';
-      sub.textContent = 'or tap the box to keep talking';
+      sub.textContent = '';
       big.onclick = function () { sendHeard(); };
     } else {
       big.className = 'mic';
       label.textContent = canHear()
         ? (talk.turns.length ? 'Talk' : 'Start talking')
-        : 'Type instead';
+        : 'Type your line';
       sub.textContent = canHear() ? 'Tap and speak' : '';
-      big.onclick = function () { if (canHear()) listen(); else { typing = true; paint(); } };
+      // 마이크가 없는 기기에서는 위 칸이 늘 열려 있으므로 거기로 보낸다
+      big.onclick = function () {
+        if (canHear()) { listen(); return; }
+        var ta = $('talk-said');
+        if (ta) { try { ta.focus(); } catch (e) {} }
+      };
     }
 
     big.appendChild(label);
@@ -640,12 +642,12 @@ window.TalkUI = (function () {
 
     // 나머지는 작은 글씨로. 크기가 같으면 무엇이 중요한지 알 수 없다
     var side = el('div', 'sidebar2');
-    if (canHear()) {
-      // 받아적힌 것이 있으면 **고치는 것**이고, 없으면 쳐 넣는 것이다. 같은 칸이다
-      var t = el('button', 'link',
-        typing ? 'Back to talking' : (said ? 'Fix a word' : 'Type instead'));
-      t.onclick = function () { if (typing) closeEdit(); else openEdit(); };
-      side.appendChild(t);
+    // 멈춰 뒀는데 하던 말이 있으면, 고친 뒤에 이어서 더 말할 수 있어야 한다.
+    // 큰 단추는 보내기 하나뿐이므로 이건 작은 글씨로 둔다
+    if (canHear() && mode === 'idle' && said) {
+      var k = el('button', 'link', 'Keep talking');
+      k.onclick = function () { listen(); };
+      side.appendChild(k);
     }
     var e = el('button', 'link', 'End and get a report');
     e.disabled = (mode === 'thinking') || !talk.turns.length;
@@ -653,17 +655,7 @@ window.TalkUI = (function () {
     side.appendChild(e);
     wrap.appendChild(side);
 
-    if (typing || !canHear()) {
-      var ta = el('textarea', null);
-      ta.id = 'talk-say';
-      ta.rows = 3;
-      ta.placeholder = canHear() ? 'Fix a word, then send' : 'Type it instead';
-      // **받아적힌 것을 담아 준다.** 빈 칸을 주면 고치는 게 아니라 다시 쓰는 것이다
-      ta.value = said;
-      // 친 것은 곧바로 담아 두는 자리로. 화면이 다시 그려져도 안 없어진다
-      ta.oninput = function () { saidFinal = ta.value; saidNow = ''; };
-      wrap.appendChild(ta);
-    }
+
     return wrap;
   }
 
@@ -755,28 +747,6 @@ window.TalkUI = (function () {
   /* 보내고 난 뒤에만 지운다 — 여기가 유일한 자리다 */
   function forgetHeard() { saidFinal = ''; saidNow = ''; hadWords = false; }
 
-  /* **받아적힌 것을 손볼 수 있게 한다** (2026-08-26 운영자 요청).
-     낱말 하나를 잘못 알아들었는데 그대로 보내면 답이 엉뚱해진다 —
-     한 글자 고치자고 전부 다시 말할 수는 없다.
-
-     칸을 펴면 **마이크를 끄고** 받아적힌 것을 그대로 담아 준다. 빈 칸을 주면
-     처음부터 다시 쳐야 하니 그건 고치는 게 아니다.
-
-     **친 것은 곧바로 `saidFinal` 로 간다.** 화면은 아무 때나 다시 그려지는데
-     (답이 오거나, 단추 모양이 바뀌거나) 그때 칸이 새로 만들어지므로,
-     칸 안에만 두면 고친 것이 사라진다. 담아 두는 자리는 하나여야 한다. */
-  function openEdit() {
-    typing = true;
-    hush();                   // 마이크를 끈다. 하던 말은 saidFinal 에 합쳐진다
-    paint();
-    var ta = $('talk-say');
-    if (ta) { try { ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); } catch (e) {} }
-  }
-
-  function closeEdit() {
-    typing = false;
-    paint();
-  }
 
   function ask(said) {
     if (mode === 'thinking') return;
@@ -821,7 +791,6 @@ window.TalkUI = (function () {
     saidFinal = said;
     saidNow = '';
     hadWords = !!said;
-    typing = true;
     drawChat();
     talkMsg(reasonText(reason), true);
   }

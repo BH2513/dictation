@@ -48,6 +48,18 @@ jobs:
             exit 1
           fi
 
+          # 줄 서 있던 실행은 대기를 시작한 시점의 상태를 체크아웃한다.
+          # 그대로 두면 앞 실행이 이미 올린 묶음 번호를 또 만들어 올릴 때 부딪힌다 —
+          # 실제로 겪었다 (s015~s017 이 두 번 만들어졌다). 최신 상태로 맞추고 시작한다
+          if git fetch origin "${GITHUB_REF_NAME}"; then
+            git reset --hard "origin/${GITHUB_REF_NAME}"
+            echo "최신 상태에서 시작합니다: $(git log --oneline -1)"
+          else
+            # 못 받아 와도 만드는 것은 계속한다. 올릴 때 다시 맞춘다
+            echo "최신 상태를 받아 오지 못했습니다. 체크아웃된 상태로 만듭니다."
+          fi
+          mkdir -p /tmp/saved
+
           node tools/daily_schema.js > /tmp/schema.json
           node tools/daily_aloud_schema.js > /tmp/aloud_schema.json
           node tools/daily_alts_schema.js > /tmp/alts_schema.json
@@ -175,6 +187,7 @@ jobs:
             [ "$MADE" -gt 0 ] && APPEND="--append"
 
             if node tools/daily_save.js /tmp/out.json $APPEND; then
+              cp /tmp/out.json "/tmp/saved/${batch}.json"
               MADE=$((MADE + 1))
               break
             fi
@@ -182,6 +195,7 @@ jobs:
             # 검수본이 조건에 안 맞으면 검수 전 것이라도 되는지 본다
             echo "-- 검수본이 조건에 맞지 않아 검수 전 것을 확인합니다"
             if node tools/daily_save.js /tmp/polished.json $APPEND; then
+              cp /tmp/polished.json "/tmp/saved/${batch}.json"
               MADE=$((MADE + 1))
               break
             fi
@@ -226,6 +240,7 @@ jobs:
               > /tmp/shows_out.json || true
 
             if node tools/daily_shows_save.js /tmp/shows_out.json /tmp/lines.json; then
+              cp /tmp/shows_out.json /tmp/saved_shows.json
               echo "대사를 저장했습니다."
               exit 0
             fi
@@ -234,6 +249,8 @@ jobs:
           echo "대사를 고르지 못했습니다. 오늘은 만든 문장만 나갑니다."
 
       - name: 저장소에 올리기
+        env:
+          DAILY_LINES: /tmp/lines.json
         run: |
           if [ -z "$(git status --porcelain data/daily)" ]; then
             echo "바뀐 것이 없습니다."
@@ -241,11 +258,34 @@ jobs:
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily
-          git commit -m "하루 다섯 문장 $(TZ=Asia/Seoul date +%Y-%m-%d)"
+
           for wait in 0 2 4 8 16; do
             [ "$wait" -gt 0 ] && sleep "$wait"
-            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+
+            git add data/daily
+            git commit -q -m "하루 다섯 문장 $(TZ=Asia/Seoul date +%Y-%m-%d)" || true
+
+            if git pull --rebase origin "${GITHUB_REF_NAME}"; then
+              git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+              continue
+            fi
+
+            # 그 사이 다른 실행이 같은 묶음 번호를 올렸다. 되감고 새 번호로 다시 붙인다.
+            # 아직 올라가지 않은 묶음이므로 번호를 바꿔도 문장카드가 가리키는 것이 없다.
+            # 되감기를 안 하면 남은 재시도가 전부 "unmerged files" 로 헛돈다 — 실제로 겪었다
+            echo "다른 실행과 묶음 번호가 부딪혔습니다. 새 번호로 다시 붙입니다."
+            git rebase --abort || true
+            git reset --hard "origin/${GITHUB_REF_NAME}"
+
+            for one in /tmp/saved/*.json; do
+              [ -e "$one" ] || continue
+              node tools/daily_save.js "$one" || echo "  다시 저장하지 못한 묶음이 있습니다."
+            done
+            if [ -f /tmp/saved_shows.json ]; then
+              node tools/daily_shows_save.js /tmp/saved_shows.json "$DAILY_LINES" || true
+            fi
           done
-          echo "올리지 못했습니다."
+
+          echo "올리지 못했습니다. 만든 문장은 이번 실행에서 사라집니다."
+          echo "워크플로를 한 번 더 돌려 주세요."
           exit 1

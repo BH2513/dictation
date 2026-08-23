@@ -1,0 +1,117 @@
+{
+  "setId": "s012",
+  "videoId": "daily-s012",
+  "title": "Set 12",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이모가 내가 앉기도 전에 언제 결혼하냐고 물어봤어. 그다음엔 삼촌이 지금 얼마 버냐고 하더라. 한 시간쯤 버티다 나왔어.",
+      "text": "My aunt asked when I'm getting married before I even sat down. Then my uncle wanted to know how much I make now. I lasted about an hour.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I hadn't even sat down before my aunt started in on the marriage thing. Then my uncle's asking how much I pull in. I made it an hour."
+        },
+        {
+          "style": "formal",
+          "text": "My aunt asked when I intend to get married before I had even taken a seat. Then my uncle wanted to know what I currently earn. I stayed for about an hour."
+        }
+      ],
+      "note": "**before I even sat down** 은 앉기도 전에, 즉 들어가자마자 당했다는 뜻입니다. **I lasted about an hour** 는 버티다 나왔다는 느낌을 살려 줍니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "배송조회에는 목요일에 도착했다고 뜨는데 문 앞에 아무것도 없었어. 옆집에 물어보라길래 60달러짜리 신발 하나 때문에 지금 이 집 저 집 문 두드리고 있어.",
+      "text": "The tracking said my package was delivered Thursday and there was nothing at my door. They told me to ask my neighbors, so now I'm knocking on doors over a $60 pair of shoes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Says delivered Thursday. Nothing at my door. They just told me to go ask the neighbors, so here I am banging on doors over some $60 shoes."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking indicates my package was delivered on Thursday, but there was nothing at my door. They advised me to ask my neighbors, so I am now knocking on doors over a $60 pair of shoes."
+        }
+      ],
+      "note": "**The tracking said** 는 배송조회에 뜬 내용을 전할 때 씁니다. **over a $60 pair of shoes** 의 over 는 그것 때문에라는 뜻이고, 별것 아닌 일로 고생한다는 느낌이 붙습니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "토요일에 소풍 가기로 했는데 오후 내내 비 온대. 언니가 샌드위치를 벌써 다 만들어 놔서 그냥 언니네 집에서 먹기로 했어.",
+      "text": "We had a picnic planned for Saturday and now they're saying it'll rain all afternoon. My sister already made the sandwiches, so we're just eating at her place instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Picnic Saturday's off. Supposed to rain all afternoon. My sister already made the sandwiches so we're just doing it at her place."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned a picnic for Saturday, but the forecast now calls for rain all afternoon. My sister has already made the sandwiches, so we will eat at her home instead."
+        }
+      ],
+      "note": "**they're saying** 은 일기예보나 들은 소식을 전할 때 쓰는 말입니다. **at her place** 는 언니네 집이라는 뜻으로, house 나 home 보다 이 자리에서 훨씬 자연스럽습니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "색은 너한테 진짜 잘 어울려. 근데 어깨가 너무 넓어서 남의 옷 빌려 입은 것처럼 보여. 아직 바꿀 수 있으면 한 치수 작은 걸로 바꿔.",
+      "text": "The color's great on you. The shoulders are way too wide though, so the whole thing looks like you borrowed it from someone. Take it back for a smaller size if you still can.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Color's perfect. Shoulders are huge on you though. Looks like it's not even yours. Go swap it for a smaller one while you still can."
+        },
+        {
+          "style": "formal",
+          "text": "The color suits you very well. The shoulders are far too wide, however, so it looks as though you borrowed it. If you are still able to, exchange it for a smaller size."
+        }
+      ],
+      "note": "**great on you** 는 옷이 그 사람한테 어울린다고 할 때 쓰는 말입니다. **looks like you borrowed it** 는 옷이 몸에 안 맞아 겉돌 때 쓰는 표현입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그 첩보물 대학교 때 세 번은 정주행했어. 지난달에 다시 틀었는데 이십 분 보다 껐어. 작품이 변한 건지 내가 변한 건지 모르겠어.",
+      "text": "I watched that spy show three times through in college. I put it on again last month and made it about twenty minutes in. I don't know if the show changed or I did.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That spy show, I got through the whole thing like three times back in college. Tried it again last month and lasted twenty minutes. Maybe it's me, maybe it's the show."
+        },
+        {
+          "style": "formal",
+          "text": "I watched that spy show all the way through three times in college. When I put it on again last month, I only lasted about twenty minutes. I am not sure whether the show changed or I did."
+        }
+      ],
+      "note": "**three times through** 는 처음부터 끝까지 세 번 다 봤다는 뜻입니다. **made it about twenty minutes** 는 그만큼만 버티고 껐다는 말이고, **I don't know if the show changed or I did** 는 예전 같지 않을 때 쓰는 흔한 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 캐주얼: \"my aunt was on the marriage thing\" 은 원어민이 쓰는 꼴이 아니라 \"started in on the marriage thing\" 으로 고쳤고, \"what I pull in\" 도 \"how much I pull in\" 으로 바로잡았습니다.",
+    "2번 캐주얼: \"60 bucks worth of shoes\" 는 신발 여러 켤레를 60달러어치 샀다는 말로 읽힙니다. 한 켤레 값이라는 뜻이 살도록 \"some $60 shoes\" 로 고쳤습니다.",
+    "3번 캐주얼: \"Picnic's off\" 만으로는 언제 얘긴지가 사라져서 Saturday 를 넣고, 붙어 있던 문장을 끊었습니다.",
+    "3번 격식체: \"her apartment\" 는 영어 원문에 없는 정보(아파트에 산다)를 넣은 것이라 \"her home\" 으로 되돌렸습니다.",
+    "4번 캐주얼: \"kinda\" 가 뜻 없이 붙어 있어 빼고, 문장을 끊어 말맛을 살렸습니다.",
+    "5번 캐주얼: \"in college\" 가 빠져 언제 봤다는 얘긴지가 사라졌습니다. \"back in college\" 를 넣고, 시작이 text 와 겹치지 않게 어순을 바꿨습니다."
+  ]
+}

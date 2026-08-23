@@ -6,122 +6,122 @@
   "sentences": [
     {
       "i": 0,
-      "ko": "설마 공룡 옷 입고 갈 생각은 아니지?",
-      "text": "Please tell me you're not going to dress up like a dinosaur.",
+      "ko": "그리고 이제부터 내 결정은 다 네가 해 줘.",
+      "text": "And from now on, you make all of my decisions for me.",
       "alts": [
         {
           "style": "casual",
-          "text": "Don't tell me you're dressing up as a dinosaur."
+          "text": "Just decide everything for me from now on."
         },
         {
           "style": "formal",
-          "text": "I hope you are not planning to dress up as a dinosaur."
+          "text": "Please make every decision for me from this point forward."
         }
       ],
-      "note": "**Please tell me you're not** 은 상대가 하려는 일이 믿기지 않을 때 \"제발 아니라고 해\" 하며 앞에 붙이는 말이다. 같은 자리에 **Don't tell me** 도 그대로 쓸 수 있다.",
-      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
+      "note": "**from now on** 은 \"지금부터 쭉\"이라는 뜻으로, 앞으로의 규칙을 정할 때 문장 앞이나 뒤에 붙인다. 남에게 결정을 맡길 때는 **make all of my decisions for me** 처럼 for me 를 꼭 붙인다.",
+      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
       "from": {
-        "videoId": "cWheLYR8moU",
-        "i": 237
+        "videoId": "RSLnwpSfe-4",
+        "i": 556
       },
-      "start": 647.8,
-      "end": 651.64,
+      "start": 1377.039,
+      "end": 1380.32,
       "recording": null
     },
     {
       "i": 1,
-      "ko": "난 그냥 빠질래. 지난번에 스키 타러 갔을 때 리프트에서 못 내리겠더라고.",
-      "text": "I'm going to stay cuz the last time I went skiing, I was too afraid to jump off the chairlift.",
+      "ko": "나 딱히 할 것도 없을 때 회사 그만두라고 한 사람이 너 아니었어?",
+      "text": "Weren't you the guy that told me to quit my job when I had absolutely nothing else to do?",
       "alts": [
         {
           "style": "casual",
-          "text": "You guys go ahead — last time I went skiing I was too scared to get off the lift."
+          "text": "Wait, you're the one who told me to quit my job when I had nothing else going on."
         },
         {
           "style": "formal",
-          "text": "I would rather stay behind, because the last time I went skiing, I was too afraid to get off the chairlift."
+          "text": "If I recall correctly, you were the person who advised me to quit my job when I had nothing else to do."
         }
       ],
-      "note": "**too afraid to** 는 무서워서 결국 못 했다고 털어놓을 때 쓴다. **the last time I** 는 '지난번에 ~했을 때'로, 안 하겠다는 이유를 지난 경험 하나로 대는 자리에 자주 온다.",
+      "note": "상대가 예전에 한 말을 되짚으며 따질 때 **Weren't you the guy that** 처럼 부정 의문으로 연다 — \"그거 너 아니었어?\". **absolutely nothing** 은 nothing 을 한 번 더 세게 만드는 말이다.",
       "situation": "The Ones with the Whole Gang from Season 3 | Friends",
       "from": {
         "videoId": "6nVAQaiLNkY",
-        "i": 615
+        "i": 449
       },
-      "start": 1628.559,
-      "end": 1632.799,
+      "start": 1253.6,
+      "end": 1262.04,
       "recording": null
     },
     {
       "i": 2,
-      "ko": "그래, 그냥 할 말 할게.",
-      "text": "Okay, I better just say what it is I'm going to say.",
+      "ko": "그래서 그냥 운명에 맡기려고.",
+      "text": "So, I am just going to leave it entirely up to the gods of fate.",
       "alts": [
         {
           "style": "casual",
-          "text": "Fine, let me just get it out."
+          "text": "I'll just let fate decide."
         },
         {
           "style": "formal",
-          "text": "Let me simply say what I came here to say."
+          "text": "I have decided to leave the matter entirely to fate."
         }
       ],
-      "note": "**I better just** 는 뜸 들이다가 마음먹고 꺼낼 때 쓰는 말이다. 담아 둔 말을 꺼낸다는 뜻으로 **get it out** 도 같은 자리에서 쓴다.",
-      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "note": "고르기를 포기하고 넘길 때 **leave it entirely up to** 뒤에 맡길 대상을 붙인다. 사람에게도 그대로 쓴다(leave it up to you). 짧게는 **let fate decide** 라고 한다.",
+      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
       "from": {
-        "videoId": "FlrWUyB_j90",
-        "i": 717
+        "videoId": "RSLnwpSfe-4",
+        "i": 432
       },
-      "start": 1755.399,
-      "end": 1763.96,
+      "start": 1064.48,
+      "end": 1070.04,
       "recording": null
     },
     {
       "i": 3,
-      "ko": "내가 저번에 그건 너 혼자 알아서 하라고 했잖아?",
-      "text": "You know when I said that I want you to deal with this relationship stuff all on your own?",
+      "ko": "나는 하루 종일 목욕가운 입고 땅콩 과자나 먹고 싶었어.",
+      "text": "I wanted to wear my bathrobe and eat peanut clusters all day.",
       "alts": [
         {
           "style": "casual",
-          "text": "Remember I told you to handle all this relationship stuff yourself?"
+          "text": "All I wanted was to stay in my bathrobe and munch on peanut clusters all day."
         },
         {
           "style": "formal",
-          "text": "Do you recall my saying that you should handle these relationship matters by yourself?"
+          "text": "My plan for the day was to remain in my bathrobe and eat peanut clusters."
         }
       ],
-      "note": "**You know when I said** 는 전에 한 말을 다시 꺼내며 뒤집거나 조건을 붙이려 할 때 쓰는 시작말이다. 뒤에는 대개 \"그거 취소\" 같은 말이 온다. **on your own** 은 '혼자 힘으로'.",
-      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
+      "note": "아무 데도 안 나가고 뭉개는 하루를 영어는 옷차림으로 말한다 — **wear my bathrobe**. 시간 범위인 **all day** 는 문장 맨 뒤에 붙이는 자리가 가장 자연스럽다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
       "from": {
-        "videoId": "RSLnwpSfe-4",
-        "i": 156
+        "videoId": "6nVAQaiLNkY",
+        "i": 314
       },
-      "start": 334,
-      "end": 339,
+      "start": 823.68,
+      "end": 827.6,
       "recording": null
     },
     {
       "i": 4,
-      "ko": "남의 카드를 훔칠 정도면 이미 조심할 마음 같은 건 없는 거 아니야?",
-      "text": "I think when somebody steals your credit card, they've kind of already thrown caution to the wind.",
+      "ko": "그러다 도로 턱에 머리를 부딪혔고, 호루라기에 입술이 찢어졌어.",
+      "text": "AND I HIT MY HEAD ON THE CURB and I cut my lip ON MY WHISTLE.",
       "alts": [
         {
           "style": "casual",
-          "text": "Anyone who'd steal your card has already stopped playing it safe."
+          "text": "Then I banged my head on the curb and split my lip on my whistle."
         },
         {
           "style": "formal",
-          "text": "Someone who steals a credit card has already abandoned all caution."
+          "text": "My head hit the curb, and my whistle cut my lip."
         }
       ],
-      "note": "**thrown caution to the wind** 은 조심성을 다 내던지고 겁 없이 구는 것을 말한다. 반대로 몸 사리는 쪽은 **playing it safe** 라고 한다.",
+      "note": "다친 이야기를 할 때 영어는 **cut my lip** 처럼 내가 한 것으로 말한다 — \"입술이 찢어졌다\"를 수동으로 옮기지 않는다. 더 편하게는 **split my lip** 이라고 한다.",
       "situation": "The Ones with the Whole Gang from Season 1 | Friends",
       "from": {
         "videoId": "QdQ58BbGRsA",
-        "i": 699
+        "i": 612
       },
-      "start": 1960.48,
-      "end": 1966.052,
+      "start": 1647.84,
+      "end": 1652.958,
       "recording": null
     }
   ]

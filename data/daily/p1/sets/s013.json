@@ -1,0 +1,117 @@
+{
+  "setId": "s013",
+  "videoId": "daily-s013",
+  "title": "Set 13",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저녁 뭐 해 먹을지 레시피 하나만 보려고 유튜브 켰거든. 두 시간 뒤에 웬 아저씨가 오토바이 엔진 뜯는 거 보고 있더라. 결국 또 피자 시켰어.",
+      "text": "I opened YouTube to look up one recipe for dinner. Two hours later I was watching a guy rebuild a motorcycle engine, and we ended up ordering pizza again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went on YouTube for one recipe. Somehow I'm two hours into some guy rebuilding a motorcycle engine and we're ordering pizza again."
+        },
+        {
+          "style": "formal",
+          "text": "I opened YouTube intending to find a single recipe for dinner. Two hours later I found myself watching a man rebuild a motorcycle engine, and we ended up ordering pizza again."
+        }
+      ],
+      "note": "**Two hours later** 는 시간이 통째로 날아간 걸 담담하게 던지는 말이에요. **ended up ordering pizza** 는 하려던 것과 다르게 끝나 버렸다는 뜻입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "금요일부터 온수가 안 나오는데 집주인은 계속 내일 사람 보낸다고만 해. 월요일까지도 아무도 안 오면 그냥 내가 기사 불러서 그 돈 월세에서 뺄 거야.",
+      "text": "I haven't had hot water since Friday and my landlord keeps promising someone will come tomorrow. If nobody shows up by Monday I'm hiring a plumber and taking the bill out of the rent.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No hot water since Friday. My landlord says tomorrow every single time. If I'm still taking cold showers Monday, I'm calling a plumber myself and taking it off the rent."
+        },
+        {
+          "style": "formal",
+          "text": "I have been without hot water since Friday, and my landlord continues to say that someone will come tomorrow. If no one arrives by Monday, I will hire a plumber and deduct the cost from my rent."
+        }
+      ],
+      "note": "**keeps promising** 은 약속만 계속 하고 안 지킨다는 뜻이에요. 수리비를 월세에서 빼겠다는 말은 **taking the bill out of the rent** 라고 합니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그만둔다고 말한 지 여섯 달째인데 아직도 결정을 못 하겠어. 돈은 괜찮아. 근데 월요일마다 차 안에 10분씩 앉아 있다가 겨우 들어가.",
+      "text": "I've been saying I'll quit for six months and I still can't decide. The money's fine. But every Monday I sit in my car for ten minutes before I can make myself walk in.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Six months of saying I'll quit and I'm still there. Pay's fine. But Mondays I sit in my car for ten minutes before I can drag myself inside."
+        },
+        {
+          "style": "formal",
+          "text": "I have been saying I will resign for six months, and I still cannot decide. The salary is fine. But every Monday I sit in my car for ten minutes before I can bring myself to walk inside."
+        }
+      ],
+      "note": "**I still can't decide** 는 마음이 반쯤 기운 채로 못 정하고 있을 때 씁니다. **make myself walk in** 은 억지로 몸을 움직여 들어간다는 뜻이에요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 개가 간식 봉지 소리를 외웠어. 이제 바스락거리는 거 아무거나 뜯어도 2초 만에 부엌에 와서, 하루 종일 착했던 척 앉아 있어.",
+      "text": "My dog figured out the sound the treat bag makes. Now if I open anything that crinkles he's in the kitchen in two seconds, sitting like he's been perfect all day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My dog knows that treat bag by sound now. Crinkle anything and he's in the kitchen in two seconds, acting like a total angel."
+        },
+        {
+          "style": "formal",
+          "text": "My dog has learned the sound the treat bag makes. Now whenever I open anything that crinkles, he appears in the kitchen within two seconds and sits as though he has behaved perfectly all day."
+        }
+      ],
+      "note": "**crinkles** 는 비닐이 바스락거리는 소리를 말해요. **like he's been perfect all day** 는 안 그랬으면서 착한 척한다는 느낌입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "옆자리 사람이 메일 보내 놓고 굳이 와서 그 메일에 뭐라고 썼는지 말로 또 해. 이제 메일은 읽지도 않아. 매일 아침 20분이 그 사람한테 날아가.",
+      "text": "The guy next to me sends an email and then walks over to tell me what the email said. I've stopped reading them. Twenty minutes of my morning goes to him every day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "He sits right next to me and still emails, then comes over and says the whole thing out loud. I don't even open them anymore. There goes twenty minutes of every morning."
+        },
+        {
+          "style": "formal",
+          "text": "The colleague beside me sends an email and then comes over to explain what the email said. I have stopped reading them. He takes twenty minutes of my morning every day."
+        }
+      ],
+      "note": "**goes to him** 은 내 시간이 그 사람한테 그냥 날아간다는 뜻이에요. 짜증을 직접 말하지 않고 **Twenty minutes of my morning** 처럼 숫자로 보여 주면 더 세게 들립니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 이 text 와 앞부분이 거의 똑같고 ended up 의 뜻(하려던 것과 다르게 끝남)이 빠져서, intending to / found myself / ended up 을 살려 다시 썼습니다.",
+    "2번 casual 의 knocking it off the rent 는 값을 깎을 때 쓰는 말이라 월세에서 수리비를 빼는 자리에 어색해서 taking it off the rent 로 고쳤습니다.",
+    "2번 casual 의 If it's still like this 가 무엇을 가리키는지 흐려서 cold showers 로 구체적으로 바꿨습니다.",
+    "3번 한국어의 돈은 나쁘지 않고 는 The money's fine 보다 눅은 말이라 돈은 괜찮아 로 맞췄습니다.",
+    "4번 formal 의 within seconds 가 text 의 in two seconds 보다 뜻이 흐려져서 within two seconds 로 되돌렸습니다.",
+    "5번 casual 의 desk neighbor 는 원어민이 잘 쓰지 않는 말이고 앞부분도 text 와 겹쳐서, 자리에서 하는 말투로 다시 썼습니다."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "setId": "s014",
+  "videoId": "daily-s014",
+  "title": "Set 14",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아홉 시쯤에 아침에 기차 타야 된다고 하고 나왔어. 그런 기차는 없었고. 맞은편에 앉은 사람이 새로 뽑은 차 얘기를 사십 분째 하고 있었거든.",
+      "text": "I said I had an early train and left around nine. There was no train. The guy across from me had been talking about his new car for forty minutes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Told them I had a train in the morning and took off at nine. Total lie. That guy across from me had been going on about his new car for forty minutes."
+        },
+        {
+          "style": "formal",
+          "text": "I excused myself around nine by saying I had an early train, which was not true. The man across from me had been discussing his new car for forty minutes."
+        }
+      ],
+      "note": "핑계는 **an early train** 처럼 구체적으로 대야 통합니다. **took off** 는 그냥 자리를 떴다는 뜻이고, **going on about** 은 한 가지 얘기를 지겹게 계속한다는 말이라 듣기 힘들었다는 느낌까지 실립니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "재우는 데 한 시간 사십 분 걸렸어. 물 달라 그러고, 이불 바꿔 달라 그러고, 노래 한 번만 더 하자 그러고. 나는 애 방바닥에서 잠들었다가 열두 시에 청바지 입은 채로 깼어.",
+      "text": "Bedtime took an hour and forty minutes. He needed water, then a different blanket, then one more song. I fell asleep on his floor and woke up at midnight still in my jeans.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Took me an hour and forty just to get him down. Water, another blanket, one more song. I passed out on his floor and woke up at midnight in my jeans."
+        },
+        {
+          "style": "formal",
+          "text": "It took an hour and forty minutes to put him to bed. He asked for water, then a different blanket, then another song. I fell asleep on his floor and woke at midnight still dressed."
+        }
+      ],
+      "note": "**get him down** 은 아이를 재운다는 뜻이에요. 눕힌다는 말이 아니라 잠들게 한다는 말입니다. **passed out** 은 뻗어서 그대로 잠들었다는 뜻이고요.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "화요일부터 가방 싸서 현관에 놔뒀거든. 근데 비 오고, 무릎도 좀 이상하고, 그러다 보니 금요일이야. 가방은 아직 현관에 그대로 있어.",
+      "text": "My bag has been packed by the door since Tuesday. Then it started raining and my knee felt weird, and now it's Friday. The bag's still by the door.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Packed my gym bag Tuesday and it's been sitting by the door ever since. It rained, my knee was acting up, and somehow it's Friday. Haven't touched the bag."
+        },
+        {
+          "style": "formal",
+          "text": "My bag has been packed by the door since Tuesday. It began raining, my knee was bothering me, and now it is Friday. The bag has not moved."
+        }
+      ],
+      "note": "**acting up** 은 무릎이나 기계가 말썽을 부린다는 뜻이에요. **somehow it's Friday** 는 어영부영하다 보니 벌써 금요일이라는 말입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 카페 세 군데 갔는데 다 자리가 없었어. 마지막 데는 빈 의자에 누가 노트북만 올려놓고 사람은 안 보이더라. 그냥 길에 서서 커피 마셨어.",
+      "text": "We tried three cafes and every table was taken. At the last one somebody's laptop was sitting on an empty chair with nobody around. We drank our coffee standing on the sidewalk.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Three cafes, not one open table. Last place had a laptop parked on an empty chair and no owner in sight. So we just stood outside with our coffee."
+        },
+        {
+          "style": "formal",
+          "text": "We tried three cafes and could not find a single open table. At the last one, a laptop had been left on an empty chair with no one nearby. We drank our coffee standing on the sidewalk."
+        }
+      ],
+      "note": "자리가 다 찼다는 말은 **every table was taken** 이 제일 흔해요. 임자 없이 물건만 놓여 있을 때는 **no owner in sight** 라고 합니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "쓰는 데는 문제없는데 뒷면에 긁힌 자국이 하나 있어요. 밝은 데서 보면 보여요. 충전기는 처음 딸려 온 게 아니고요. 이번 주에 가지러 오실 수 있으면 40달러에 드릴게요.",
+      "text": "It works fine, but there's a scratch on the back you'll see in daylight. The charger isn't the original one. I'd take $40 if you can pick it up this week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nothing wrong with it, just a scratch on the back that shows up in the sun. Charger's a replacement. Forty bucks if you grab it this week."
+        },
+        {
+          "style": "formal",
+          "text": "It is in working order, though there is a scratch on the back that becomes visible in daylight. The charger is a replacement rather than the original. I could accept $40 if you are able to collect it this week."
+        }
+      ],
+      "note": "**the original one** 은 처음 물건에 딸려 온 정품이라는 뜻이에요. **pick it up** 은 직접 가지러 온다는 말이고, 값을 부를 때는 **I'd take $40** 처럼 말하면 흥정 여지를 남기면서 부드럽습니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어의 '앞자리 사람'을 '맞은편에 앉은 사람'으로 고쳤습니다. 영어의 across from me 는 식탁 맞은편이지 앞줄 자리가 아닙니다.",
+    "1번 캐주얼의 'forty minutes into his new car' 는 차 안에 사십 분 있었다는 뜻으로도 읽혀서 'had been going on about his new car for forty minutes' 로 바꿨습니다. 오래 떠들었다는 뜻은 going on about 이 짚어 줍니다.",
+    "1번 note 도 캐주얼을 따라 going on about 을 가르치게 고쳤습니다.",
+    "2번 캐주얼의 'almost two hours' 가 본문의 한 시간 사십 분과 어긋나서 'an hour and forty' 로 맞췄습니다.",
+    "3번 캐주얼이 본문과 앞부분이 거의 같아서(My bag/gym bag's been ... by the door since Tuesday) 순서를 바꿔 새로 썼습니다.",
+    "4번 한국어에 '우리'를 넣었습니다. 영어가 We 로 시작하는데 한국어만 보면 혼자 간 얘기로 읽힙니다.",
+    "5번 캐주얼의 'Works great' 는 상태를 솔직히 말하는 자리에서 과장이고 본문 첫머리와도 겹쳐서 'Nothing wrong with it' 으로 바꿨습니다."
+  ]
+}

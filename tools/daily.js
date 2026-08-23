@@ -143,7 +143,6 @@ function buildPrompt(opts) {
   lines.push('- **말버릇(honestly, kind of, like, actually)을 장식으로 넣지 마세요.**');
   lines.push('  뜻이 실제로 맞을 때만 씁니다. 넣으라니까 아무 데나 넣으면 어색해집니다.');
   lines.push('  ("이상하게"를 honestly 로 옮기면 안 됩니다. 그건 weirdly 입니다.)');
-  lines.push('  특히 **like 를 채움말로 쓰면 십대 말투**가 됩니다. 어른이 하는 말로 쓰세요.');
   lines.push('- **원어민이 안 쓰는 낱말을 고르지 마세요.** 뜻은 맞아도 그 자리에서 안 쓰는 말이 있습니다');
   lines.push('  (배달을 다시 시키는 것은 reorder 가 아니라 order again 입니다).');
   lines.push('- **두 가지로 읽히는 말을 피하세요.** 문법이 맞아도 순간 헷갈리면 안 됩니다');
@@ -419,7 +418,6 @@ function buildReviewPrompt(draft, cfg) {
   lines.push('2-2. **it / this / that 으로 얼버무렸는가.** 구체적인 물건, 시각, 요일을 넣습니다.');
   lines.push('     한국어도 애매하면 같이 구체적으로 고칩니다.');
   lines.push('2-3. **말버릇을 장식으로 넣었는가.** honestly, kind of, like 가 뜻 없이 들어갔으면 뺍니다.');
-  lines.push('     like 를 채움말로 쓰면 십대 말투가 됩니다.');
   lines.push('2-4. **원어민이 그 자리에서 안 쓰는 낱말이 있는가.** (예: 배달 다시 시키기 = reorder 가 아니라 order again)');
   lines.push('2-5. **두 가지로 읽히는 대목이 있는가.** 문법이 맞아도 순간 헷갈리면 고칩니다.');
   lines.push('3. **casual 이 text 와 충분히 다른가.** 앞부분이 겹치면 고칩니다.');

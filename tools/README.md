@@ -55,7 +55,7 @@ tools\add.bat "유튜브주소" 이름
 예:
 
 ```
-tools\add.bat "https://www.youtube.com/watch?v=SW2bVwdr8Zg" 병훈
+tools\add.bat "https://www.youtube.com/watch?v=SW2bVwdr8Zg" bh
 ```
 
 주소는 유튜브에서 복사한 것을 그대로 붙여넣으면 된다. **따옴표는 꼭 붙인다.**
@@ -71,7 +71,7 @@ tools\add.bat "https://www.youtube.com/watch?v=SW2bVwdr8Zg" 병훈
 문장      : 84개
 자막 종류 : 직접 단 자막
 한국어    : 없음
-목록      : 병훈
+목록      : bh
 
 올리는 중…
 

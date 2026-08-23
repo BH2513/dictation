@@ -17,7 +17,8 @@ window.Prefs = (function () {
     theme: 'dark',        // dark | light
     textSize: 'normal',   // normal | large | larger
     turnTaking: 'manual', // manual | auto — 아래 설명
-    waitSec: 2.5          // auto 일 때 이만큼 조용하면 보낸다
+    waitSec: 2.5,         // auto 일 때 이만큼 조용하면 보낸다
+    voice: ''             // 답을 읽어 줄 목소리. 빈 값이면 폰이 고른 대로
   };
 
   /* 고를 수 있는 것. 설정 화면이 이걸 보고 그린다 —
@@ -42,6 +43,36 @@ window.Prefs = (function () {
 
   var WAIT_MIN = 1.5, WAIT_MAX = 8;
 
+  /* **마이크와 스피커는 브라우저에서 못 고른다** (2026-08-26 확인).
+     음성인식(Web Speech)은 어느 마이크를 쓸지 고르는 길이 없고, 소리를 어느 스피커로
+     낼지 고르는 것(`setSinkId`)은 아이폰 사파리에 아예 없다. 그건 폰 쪽에서 바꿔야 한다.
+
+     **고를 수 있는 것은 목소리다.** 폰에 들어 있는 영어 목소리 중에서 고른다 —
+     남자·여자, 미국·영국·호주가 갈린다. 그것만으로도 느낌이 꽤 달라진다. */
+  function voices() {
+    if (!window.speechSynthesis || !window.speechSynthesis.getVoices) return [];
+    var all = [];
+    try { all = window.speechSynthesis.getVoices() || []; } catch (e) { return []; }
+    var out = [];
+    for (var i = 0; i < all.length; i++) {
+      var v = all[i];
+      if (!v || !v.lang) continue;
+      if (String(v.lang).toLowerCase().indexOf('en') !== 0) continue;   // 영어만
+      out.push({ value: v.name, name: v.name, desc: v.lang });
+    }
+    out.sort(function (a, b) { return a.name < b.name ? -1 : 1; });
+    return out;
+  }
+
+  /* 고른 목소리를 실제 목소리로 바꿔 준다. 없어졌으면 폰이 고른 대로 둔다 */
+  function voiceFor(name) {
+    if (!name || !window.speechSynthesis || !window.speechSynthesis.getVoices) return null;
+    var all = [];
+    try { all = window.speechSynthesis.getVoices() || []; } catch (e) { return null; }
+    for (var i = 0; i < all.length; i++) if (all[i] && all[i].name === name) return all[i];
+    return null;
+  }
+
   var current = clone(DEFAULTS);
   var loadedFor = '';
 
@@ -64,6 +95,7 @@ window.Prefs = (function () {
         out[k] = Math.round(v * 10) / 10;
         continue;
       }
+      if (k === 'voice') { if (typeof v === 'string') out[k] = v; continue; }
       var ok = CHOICES[k];
       if (!ok) continue;
       for (var i = 0; i < ok.length; i++) if (ok[i].value === v) { out[k] = v; break; }
@@ -117,6 +149,8 @@ window.Prefs = (function () {
 
     /* 대화 화면이 쓰는 값 */
     waitMs: function () { return Math.round(current.waitSec * 1000); },
-    handsFree: function () { return current.turnTaking === 'auto'; }
+    handsFree: function () { return current.turnTaking === 'auto'; },
+    voices: voices,
+    voice: function () { return voiceFor(current.voice); }
   };
 })();

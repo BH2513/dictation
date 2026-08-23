@@ -166,8 +166,10 @@ window.Store = (function () {
     /* 공부한 날 ↔ 그날 한 묶음. 하루에 여러 묶음을 할 수 있다 */
     getPlan: function (profileId, date, done, fail) {
       get('plan', profileId + '|' + date, function (row) {
-        done(row || { key: profileId + '|' + date, profileId: profileId,
-                      date: date, setIds: [] });
+        row = row || { key: profileId + '|' + date, profileId: profileId, date: date };
+        if (!row.setIds) row.setIds = [];      // 만든 문장 묶음
+        if (!row.showIds) row.showIds = [];    // 영상 대사 묶음
+        done(row);
       }, fail);
     },
 

@@ -352,6 +352,26 @@ check("429", rate_limited("ERROR: HTTP Error 429: Too Many Requests"), True)
 check("다른 오류", rate_limited("ERROR: Video unavailable"), False)
 
 
+print("\n대사 연습에 쓸 수 있는 자막인지 — Shows 탭은 문장부호로 문장 끝을 찾는다")
+
+
+def ends_ratio(texts):
+    import re
+    ends = sum(1 for t in texts if re.search(r'[.!?]"?$', t.strip()))
+    return ends / len(texts) if texts else 0
+
+
+check("문장부호가 있으면 쓸 수 있다",
+      ends_ratio(["I told him it was fine.", "She left early.", "What time?"]) >= 0.5, True)
+check("문장부호가 없으면 못 쓴다 (유튜브 자동 자막에 이런 것이 있다)",
+      ends_ratio(["look maybe we should go no you guys",
+                  "you really don't have to go we're done"]) >= 0.5, False)
+check("절반쯤 있으면 쓸 수 있다고 본다",
+      ends_ratio(["One done.", "two not", "Three done."]) >= 0.5, True)
+check("따옴표로 끝나도 문장부호로 본다",
+      ends_ratio(['He said "no."']) >= 0.5, True)
+
+
 # ---------------------------------------------------------------- 결과
 
 print("")

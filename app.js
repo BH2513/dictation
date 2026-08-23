@@ -92,7 +92,8 @@
   /* ---------------------------------------------------------------- 화면 이동 */
 
   function show(name) {
-    var all = ['profiles', 'library', 'listen', 'report', 'cards', 'edit', 'daily', 'settings'];
+    var all = ['profiles', 'library', 'listen', 'report', 'cards', 'edit', 'daily',
+               'settings', 'talk'];
     for (var i = 0; i < all.length; i++) {
       $('screen-' + all[i]).className = 'screen' + (all[i] === name ? ' on' : '');
     }
@@ -118,12 +119,14 @@
     if (clip && clipReady) { try { clip.pauseVideo(); } catch (e) {} }
     // 녹음은 화면을 옮기는 순간 버린다 (SPEC 2)
     if (dailyRecording && window.Recorder) { Recorder.discard(); dailyRecording = false; }
+    if (window.TalkUI) TalkUI.leave();
     if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
 
     if (!profileId) { showProfiles(); return; }
     if (!videoId) { showLibrary(profileId); return; }
     if (videoId === 'report') { showReport(profileId); return; }
     if (videoId === 'settings') { showSettings(profileId); return; }
+    if (videoId === 'talk') { openTalk(profileId); return; }
     if (videoId === 'daily' || videoId === 'shows') {
       dailyKind = (videoId === 'shows') ? 'shows' : 'made';
       showDaily(profileId, parts[2] || '', parts[3] ? parseInt(parts[3], 10) : null);
@@ -880,6 +883,35 @@
     }, function () { notice(box, 'Could not read your cards.', true); });
   }
 
+  /* 대화 카드를 영상 파일과 같은 모양으로 만들어 준다.
+     `talk-3` 은 그 대화의 턴, `talk-3-w` 는 그 대화 요약의 "배울 표현" 이다.
+     **한국어(ko)를 넣지 않는다** — 대화에는 한국어가 없다. 그래서 한→영 모드에는
+     안 나오고 듣고 말하기·받아쓰기 재시험에만 나온다. */
+  function talkSentences(pid, vid, done) {
+    if (!window.Store || !Store.available()) { done(null); return; }
+    var body = vid.slice(5);
+    var words = /-w$/.test(body);
+    var id = parseInt(words ? body.slice(0, -2) : body, 10);
+    if (!id) { done(null); return; }
+
+    Store.getTalk(pid, id, function (row) {
+      if (!row) { done(null); return; }
+      var out = { videoId: vid, title: 'Talk ' + id, sentences: [] };
+      if (words) {
+        var list = (row.summary && row.summary.words) || [];
+        for (var i = 0; i < list.length; i++) {
+          out.sentences.push({ i: i, text: String(list[i]).replace(/\*\*/g, '') });
+        }
+      } else {
+        for (var t = 0; t < row.turns.length; t++) {
+          var turn = row.turns[t];
+          out.sentences.push({ i: t, text: turn.natural || turn.corrected, note: turn.why });
+        }
+      }
+      done(out.sentences.length ? out : null);
+    }, function () { done(null); });
+  }
+
   function notice2(box, text) {
     var n = el('div', 'notice', text);
     box.appendChild(n);
@@ -897,6 +929,13 @@
 
     for (var v = 0; v < ids.length; v++) {
       (function (vid) {
+        // 대화에서 담은 카드는 **저장소에 파일이 없다** — 대화는 기기 안에만 두기 때문이다
+        // (ROADMAP 2단계). 그래서 기기에서 찾는 갈래를 따로 탄다.
+        // 이걸 빼먹으면 카드는 담기는데 열면 빈 화면이 나온다.
+        if (vid.indexOf('talk-') === 0) {
+          talkSentences(pid, vid, function (data) { videos[vid] = data; step(); });
+          return;
+        }
         getJSON(sentenceFileFor(pid, vid), function (data) {
           videos[vid] = data; step();
         }, function () { videos[vid] = null; step(); });
@@ -2187,6 +2226,15 @@
      **저장하기 전에 실제로 한 번 불러 본다.** 안 되는 열쇠를 넣어 두면 대화 도중에야
      알게 되고, 그때는 무엇이 잘못됐는지 알기가 더 어렵다. */
 
+  /* 대화 연습 화면은 talkui.js 가 그린다 — app.js 는 이미 크고, 그쪽은 통째로 새 기능이다.
+     여기서는 화면 옮기기와 폰 목소리만 넘겨 준다. */
+  function openTalk(profileId) {
+    setProfileId(profileId);
+    if (!window.TalkUI) { show('library'); return; }
+    TalkUI.attach({ go: go, show: show, speak: function (t) { if (canSpeak()) speakText(t); } });
+    TalkUI.open(profileId);
+  }
+
   var KEY_NAME = 'aiKey';
   var KEY_COMPANY = 'aiCompany';
 
@@ -3242,6 +3290,8 @@
     $('report-btn').onclick = function () { go('#/' + profileId + '/report'); };
     $('report-back').onclick = function () { go('#/' + profileId); };
     $('settings-btn').onclick = function () { go('#/' + profileId + '/settings'); };
+    $('talk-btn').onclick = function () { go('#/' + profileId + '/talk'); };
+    $('talk-back').onclick = function () { go('#/' + profileId); };
     $('settings-back').onclick = function () { go('#/' + profileId); };
     $('key-company').onchange = function () { drawKeyHint(); };
     $('key-save').onclick = function () { saveKey(); };

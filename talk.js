@@ -54,6 +54,101 @@ window.Talk = (function () {
     return out;
   }
 
+  /* ------------------------------------------------------------------ 답의 모양을 강제한다
+
+     **이 단계의 존재 이유다** (ROADMAP 2단계). 답을 자유롭게 쓰게 두면 "내 문장 먼저
+     고쳐 줘" 를 한 번 하고 안 한다. 칸을 미리 정해 두면 **비우는 것이 형식에 안 맞아서**
+     까먹는 것이 구조적으로 불가능해진다.
+
+     보장되는 것은 "칸이 채워진다" 이지 "교정이 항상 훌륭하다" 가 아니다.
+     내 문장이 멀쩡하면 corrected 에 그대로 들어오고 why 가 "고칠 것 없음" 이 된다. */
+
+  var TURN_SCHEMA = {
+    type: 'object',
+    properties: {
+      corrected: { type: 'string' },
+      natural: { type: 'string' },
+      why: { type: 'string' },
+      reply: { type: 'string' }
+    },
+    required: ['corrected', 'natural', 'why', 'reply'],
+    additionalProperties: false
+  };
+
+  var SUMMARY_SCHEMA = {
+    type: 'object',
+    properties: {
+      summary: { type: 'string' },
+      did_well: { type: 'array', items: { type: 'string' } },
+      to_fix: { type: 'array', items: { type: 'string' } },
+      culture: { type: 'array', items: { type: 'string' } },
+      words: { type: 'array', items: { type: 'string' } }
+    },
+    required: ['summary', 'did_well', 'to_fix', 'culture', 'words'],
+    additionalProperties: false
+  };
+
+  /* ------------------------------------------------------------------ 지시문
+
+     **대화 안에 넣지 않는다.** 매 요청마다 맨 앞에 다시 붙는 자리에 둔다 —
+     대화가 100턴이 돼도 묻힐 자리가 없다.
+
+     **하루에 한 번만 새로 만든다.** 이 부분이 바뀌면 캐싱이 처음부터 다시 걸린다
+     (ROADMAP 비용 절). 그리고 **길수록 싸다** — Haiku 4.5 는 앞부분이 4,096 토큰을
+     넘어야 캐싱이 걸리므로, 약점과 최근 표현을 실어 보내는 것이 비용을 맞추는 장치다. */
+
+  function systemPrompt(ctx) {
+    var lines = [];
+    lines.push('You are an English conversation partner for a Korean learner.');
+    lines.push('');
+    lines.push('Every single turn, you MUST fill all four fields. This is not optional and it');
+    lines.push('does not stop applying after a few turns.');
+    lines.push('');
+    lines.push('- corrected: the learner\'s sentence with grammar fixed. If nothing is wrong,');
+    lines.push('  repeat their sentence exactly as they wrote it.');
+    lines.push('- natural: how someone would actually say it in everyday speech. Shorter and');
+    lines.push('  more contracted than textbook English. Never formal or businesslike.');
+    lines.push('- why: one or two short sentences. If nothing needed fixing, say so plainly.');
+    lines.push('  Wrap any phrase worth learning in **double asterisks**.');
+    lines.push('- reply: your own reply, continuing the conversation. About 40 to 60 words.');
+    lines.push('  Ask something back so the conversation keeps going.');
+    lines.push('');
+    lines.push('Talk like a friend, not a teacher. Use contractions. Keep it casual.');
+    lines.push('Do not praise every turn. Do not use emoji.');
+
+    if (ctx && ctx.topic) {
+      lines.push('');
+      lines.push('Today you are talking about: ' + ctx.topic);
+    }
+    if (ctx && ctx.misses && ctx.misses.length) {
+      lines.push('');
+      lines.push('This learner often gets these words wrong, so watch for them:');
+      lines.push(ctx.misses.join(', '));
+    }
+    if (ctx && ctx.recent && ctx.recent.length) {
+      lines.push('');
+      lines.push('They recently studied these sentences. Reuse this vocabulary when it fits:');
+      for (var i = 0; i < ctx.recent.length; i++) lines.push('- ' + ctx.recent[i]);
+    }
+    return lines.join('\n');
+  }
+
+  function summaryPrompt() {
+    return [
+      'The conversation is over. Look back at the whole thing and fill in every field.',
+      '',
+      '- summary: two or three lines on what was talked about.',
+      '- did_well: 2 to 3 concrete things. Name the actual sentence or phrase.',
+      '  "Good job" on its own is useless.',
+      '- to_fix: 2 to 3 things. Prefer mistakes that came up more than once over one-offs.',
+      '- culture: places where the English was grammatical but not what someone would',
+      '  actually say in that situation. Empty array if there were none.',
+      '- words: 3 to 5 expressions worth keeping. Wrap the expression in **double asterisks**.',
+      '',
+      'Write for a Korean learner. Be specific, not encouraging.'
+    ].join('\n');
+  }
+
   /* ------------------------------------------------------------------ 실패를 갈라 놓는다
 
      조용히 실패하지 않는다 (SPEC 9). 무엇 때문에 안 됐는지를 갈라 두어야
@@ -110,9 +205,78 @@ window.Talk = (function () {
 
   /* ------------------------------------------------------------------ 바깥에서 쓰는 것 */
 
+  /* ------------------------------------------------------------------ 한 턴 주고받기 */
+
+  function askTurn(companyId, key, ctx, history, said, done, fail) {
+    var c = company(companyId);
+    if (!c) { fail('unknown'); return; }
+
+    var messages = [];
+    for (var i = 0; i < history.length; i++) {
+      messages.push({ role: 'user', content: history[i].said });
+      messages.push({ role: 'assistant', content: JSON.stringify({
+        corrected: history[i].corrected, natural: history[i].natural,
+        why: history[i].why, reply: history[i].reply
+      }) });
+    }
+    messages.push({ role: 'user', content: said });
+
+    send(companyId, key, {
+      model: c.model,
+      max_tokens: 1000,
+      system: [{ type: 'text', text: systemPrompt(ctx),
+                 // 앞부분을 회사가 갖고 있어 준다. 다시 읽을 때 값이 1/10 이 된다
+                 cache_control: { type: 'ephemeral' } }],
+      output_config: { format: { type: 'json_schema', schema: TURN_SCHEMA } },
+      messages: messages
+    }, function (res) {
+      var turn = readJSON(res);
+      if (!turn) { fail('shape'); return; }
+      done(turn);
+    }, fail);
+  }
+
+  function askSummary(companyId, key, ctx, history, done, fail) {
+    var c = company(companyId);
+    if (!c) { fail('unknown'); return; }
+
+    var talk = [];
+    for (var i = 0; i < history.length; i++) {
+      talk.push('Learner: ' + history[i].said);
+      talk.push('You: ' + history[i].reply);
+    }
+
+    send(companyId, key, {
+      model: c.model,
+      max_tokens: 2000,
+      system: [{ type: 'text', text: systemPrompt(ctx) }],
+      output_config: { format: { type: 'json_schema', schema: SUMMARY_SCHEMA } },
+      messages: [{ role: 'user', content: talk.join('\n') + '\n\n' + summaryPrompt() }]
+    }, function (res) {
+      var sum = readJSON(res);
+      if (!sum) { fail('shape'); return; }
+      done(sum);
+    }, fail);
+  }
+
+  /* 답의 모양을 강제했으므로 첫 글 조각이 통째로 JSON 이다 */
+  function readJSON(res) {
+    if (!res || !res.content) return null;
+    for (var i = 0; i < res.content.length; i++) {
+      if (res.content[i].type !== 'text') continue;
+      try { return JSON.parse(res.content[i].text); } catch (e) { return null; }
+    }
+    return null;
+  }
+
   return {
     companies: companyList,
     company: company,
+    askTurn: askTurn,
+    askSummary: askSummary,
+    systemPrompt: systemPrompt,
+    TURN_SCHEMA: TURN_SCHEMA,
+    SUMMARY_SCHEMA: SUMMARY_SCHEMA,
 
     /* 열쇠를 저장하기 전에 실제로 한 번 불러 본다 (ROADMAP "넣을 때 확인한다").
        안 되면 저장하지 않는다 — 안 되는 열쇠를 넣어 두면 대화 도중에야 알게 된다. */

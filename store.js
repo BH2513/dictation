@@ -6,7 +6,7 @@
    그때는 기록만 포기하고 연습은 그대로 되게 한다. 대신 화면에 그 사실을 남긴다. */
 window.Store = (function () {
   var NAME = 'dictation';
-  var VERSION = 4;
+  var VERSION = 5;
   var db = null;
   var broken = false;
 
@@ -43,6 +43,12 @@ window.Store = (function () {
       if (!d.objectStoreNames.contains('plan')) {
         var pl = d.createObjectStore('plan', { keyPath: 'key' });
         pl.createIndex('profile', 'profileId', { unique: false });
+      }
+      // 대화 연습 기록 (ROADMAP 2단계). **기기 안에만 둔다** — 개인 대화라
+      // 저장소에 올리지 않는다. 백업(SPEC 10)에는 요약만 들어가고 대화 원문은 안 들어간다.
+      if (!d.objectStoreNames.contains('talks')) {
+        var tk = d.createObjectStore('talks', { keyPath: 'key' });
+        tk.createIndex('profile', 'profileId', { unique: false });
       }
       // 기기 설정 — AI 열쇠 같은 것.
       // **여기만 프로필 ID 를 안 넣는다.** 열쇠는 기기에 하나를 넣고 온 가족이 같이 쓴다
@@ -220,6 +226,23 @@ window.Store = (function () {
       }, fail);
     },
 
+    /* 대화 연습 (ROADMAP 2단계). 번호는 절대 바뀌면 안 된다 — 문장카드가 가리킨다 */
+    getTalk: function (profileId, id, done, fail) {
+      get('talks', profileId + '|' + id, function (row) { done(row || null); }, fail);
+    },
+
+    saveTalk: function (row, done, fail) {
+      put('talks', row, fail);
+      if (done) setTimeout(done, 60);
+    },
+
+    listTalks: function (profileId, done, fail) {
+      allByIndex('talks', 'profile', profileId, function (rows) {
+        rows.sort(function (a, b) { return (a.id < b.id) ? 1 : -1; });
+        done(rows);
+      }, fail);
+    },
+
     /* 기기 설정. 프로필별이 아니다 — 위 onupgradeneeded 의 설명을 볼 것 */
     getSetting: function (name, done, fail) {
       get('settings', name, function (row) { done(row ? row.value : null); }, fail);
@@ -242,7 +265,8 @@ window.Store = (function () {
     /* 백업 — 프로필 하나의 기록을 전부 내놓는다 (SPEC 10) */
     exportAll: function (profileId, done, fail) {
       var out = { app: 'dictation', version: 1, profileId: profileId,
-                  savedAt: today(), progress: [], misses: [], cards: [], days: [], plan: [] };
+                  savedAt: today(), progress: [], misses: [], cards: [], days: [], plan: [],
+                  talkSummaries: [] };
       allRows('progress', function (rows) {
         for (var i = 0; i < rows.length; i++) if (rows[i].profileId === profileId) out.progress.push(rows[i]);
         allRows('misses', function (rows2) {
@@ -253,7 +277,17 @@ window.Store = (function () {
               for (var m = 0; m < rows4.length; m++) if (rows4[m].profileId === profileId) out.days.push(rows4[m]);
               allRows('plan', function (rows5) {
                 for (var q = 0; q < rows5.length; q++) if (rows5[q].profileId === profileId) out.plan.push(rows5[q]);
-                done(out);
+                // 대화는 **요약만** 옮긴다. 원문은 넣지 않는다 (ROADMAP) —
+                // 백업 파일은 사람이 손으로 주고받는 물건이고, 다시 읽을 값어치는 요약 쪽에 있다
+                allRows('talks', function (rows6) {
+                  for (var t = 0; t < rows6.length; t++) {
+                    var r = rows6[t];
+                    if (r.profileId !== profileId || !r.summary) continue;
+                    out.talkSummaries.push({ key: r.key, profileId: r.profileId, id: r.id,
+                                             date: r.date, topic: r.topic, summary: r.summary });
+                  }
+                  done(out);
+                }, function () { done(out); });
               }, function () { done(out); });
             }, fail);
           }, fail);
@@ -265,6 +299,7 @@ window.Store = (function () {
     importAll: function (profileId, data, done, fail) {
       if (!data || data.app !== 'dictation') { (fail || noop)('not-ours'); return; }
       var jobs = [
+        ['talks', data.talkSummaries || []],
         ['progress', data.progress || []],
         ['cards', data.cards || []],
         ['days', data.days || []],

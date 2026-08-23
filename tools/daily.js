@@ -48,17 +48,53 @@ function todayKST(now) {
 /* ------------------------------------------------------------------ 지시문 만들기 */
 
 /* 최근 며칠에 이미 쓴 상황. 같은 상황이 계속 나오면 연습이 지겨워진다. */
-function recentSituations(pid, days) {
-  var index = readJSON(path.join(DAILY, pid, 'index.json'), []);
+function recentSituations(pid, days, sets) {
   var used = {};
-  for (var i = 0; i < index.length && i < days; i++) {
+
+  // 옛 날짜 파일 — 묶음으로 옮기기 전에 만든 것들.
+  // 날짜를 실제로 견준다. 앞에서 몇 개를 세기만 하면 옛 파일이 영영 남아
+  // 피할 상황이 줄지 않는다 (그 파일은 더 늘지도 않는다)
+  var index = readJSON(path.join(DAILY, pid, 'index.json'), []);
+  var cutoff = new Date(new Date(todayKST() + 'T00:00:00Z').getTime()
+    - (days || 14) * 86400000).toISOString().slice(0, 10);
+  for (var i = 0; i < index.length; i++) {
+    if (!index[i] || String(index[i].date) < cutoff) continue;
     var day = readJSON(path.join(DAILY, pid, index[i].date + '.json'), null);
     if (!day || !day.sentences) continue;
     for (var s = 0; s < day.sentences.length; s++) {
       if (day.sentences[s].situation) used[day.sentences[s].situation] = true;
     }
   }
+
+  // 묶음 — 지금은 이쪽에 쌓인다. 이걸 안 읽어서 한 번에 만든 세 묶음에
+  // 같은 상황이 두 번씩 나왔다. 하루에 여러 묶음을 만들므로 날짜가 아니라 개수로 센다
+  var rows = listSets(pid);
+  var from = Math.max(0, rows.length - (sets || 4));
+  for (var r = from; r < rows.length; r++) {
+    var one = readJSON(path.join(DAILY, pid, 'sets', rows[r].id + '.json'), null);
+    if (!one || !one.sentences) continue;
+    for (var t = 0; t < one.sentences.length; t++) {
+      if (one.sentences[t].situation) used[one.sentences[t].situation] = true;
+    }
+  }
+
   return Object.keys(used);
+}
+
+/* 최근 묶음에 나온 영어. 지시문에 넣어 같은 내용을 다시 만들지 않게 한다 —
+   상황이 달라도 "팔이 안 올라가서 머리를 못 감았다" 가 두 번 나온 적이 있다. */
+function recentTexts(pid, sets) {
+  var rows = listSets(pid);
+  var out = [];
+  var from = Math.max(0, rows.length - (sets || 4));
+  for (var r = from; r < rows.length; r++) {
+    var one = readJSON(path.join(DAILY, pid, 'sets', rows[r].id + '.json'), null);
+    if (!one || !one.sentences) continue;
+    for (var t = 0; t < one.sentences.length; t++) {
+      if (one.sentences[t].text) out.push(String(one.sentences[t].text));
+    }
+  }
+  return out;
 }
 
 function shuffle(list, rand) {
@@ -120,12 +156,29 @@ function buildPrompt(opts) {
   lines.push('**1단계. 영어를 먼저 만듭니다.** 한국어는 아직 생각하지 마세요.');
   lines.push('그 상황에 놓인 사람이 실제로 뭐라고 말할지를 영어로 그냥 떠올리세요.');
   lines.push('**2단계.** 그 영어를 소리내어 읽어 봅니다. 조금이라도 어색하면 버리고 다시 만듭니다.');
-  lines.push('**3단계.** 그제서야 한국어를 씁니다. 영어를 옮기는 것이 아니라,');
-  lines.push('**한국 사람이 같은 상황에서 할 말**을 한국어로 씁니다.');
+  lines.push('**3단계.** 그제서야 한국어를 씁니다. **이제는 영어가 기준입니다** \u2014');
+  lines.push('그 영어를 한국말로 옮기세요. 영어에 없는 말을 넣거나 있는 말을 빼지 마세요.');
+  lines.push('직역하라는 뜻은 아닙니다. 한국 사람이 그 뜻을 말할 때 쓰는 말로 옮기세요.');
   lines.push('');
   lines.push('한국어를 먼저 쓰고 영어로 옮기면 번역체가 됩니다. 실제로 그렇게 나온 적이 있습니다.');
   lines.push('목표는 번역을 잘하는 것이 아니라 **영어가 자연스러운 것**입니다.');
-  lines.push('한국어와 영어가 1:1로 안 맞아도 됩니다 \u2014 느낌이 같으면 됩니다.');
+  lines.push('');
+  lines.push('## \uc8fc\uc758 \u2014 \ud55c\uad6d\uc5d0\ub9cc \uc788\ub294 \uac83\uc744 \uc601\uc5b4\ub85c \uc62e\uae30\uc9c0 \ub9c8\uc138\uc694');
+  lines.push('');
+  lines.push('아래 상황은 **어떤 이야기를 할지 정해 주는 것**일 뿐입니다.');
+  lines.push('한국어로 적혀 있다고 해서 한국 제도나 관습을 영어 낱말로 바꿔 놓으면 안 됩니다.');
+  lines.push('영어권에 없는 것은 **영어권 사람이 같은 처지에서 실제로 하는 말**로 씁니다.');
+  lines.push('');
+  lines.push('- 회식의 1차 · 2차를 first round, second round 로 옮기면 안 됩니다.');
+  lines.push('  영어의 round 는 술을 한 차례 돌리는 것이지 자리를 옮기는 것이 아닙니다.');
+  lines.push('  실제로 그렇게 나간 적이 있습니다 \u2014 원어민은 그냥 늦게까지 붙잡혀 있다고 말합니다.');
+  lines.push('- 수능, 명절 차례, 전세, 학원, 회식처럼 **설명이 필요한 것은 아예 넣지 마세요.**');
+  lines.push('  그 자리에 영어권에도 있는 것을 넣으면 됩니다 (저녁 모임, 시험, 월세, 수업).');
+  lines.push('- **돈은 달러로 씁니다.** 원 단위를 그대로 쓰지 마세요.');
+  lines.push('  한국어에도 달러로 적습니다 \u2014 영어와 한국어의 숫자가 같아야 합니다.');
+  lines.push('');
+  lines.push('가늠하는 법: **한국을 모르는 사람이 읽어도 그대로 통하는가.**');
+  lines.push('설명이 필요하면 그건 영어 문장이 아니라 한국어를 옮겨 놓은 것입니다.');
   lines.push('');
   lines.push('## 영어 문장 \u2014 이게 제일 중요합니다');
   lines.push('');
@@ -168,6 +221,13 @@ function buildPrompt(opts) {
   lines.push('## 오늘 쓸 상황 — 문장 하나에 상황 하나씩, 순서대로');
   for (var i = 0; i < opts.situations.length; i++) {
     lines.push((i + 1) + '. ' + opts.situations[i]);
+  }
+  if (opts.recent && opts.recent.length) {
+    lines.push('');
+    lines.push('## 최근에 이미 나온 문장 \u2014 겹치지 마세요');
+    lines.push('상황이 달라도 **같은 이야기를 다시 만들면 안 됩니다.**');
+    lines.push('("팔이 안 올라가서 머리를 못 감았다" 가 두 묶음에 그대로 나온 적이 있습니다.)');
+    for (var v = 0; v < opts.recent.length; v++) lines.push('- ' + opts.recent[v]);
   }
   if (opts.vocab && opts.vocab.length) {
     lines.push('');
@@ -321,6 +381,11 @@ function buildAloudPrompt(draft) {
   lines.push('- 무엇을 가리키는지 흐린 낱말이 있다');
   lines.push('- 글로 쓰면 되는데 입으로는 안 하는 말이다');
   lines.push('- 뜻은 맞지만 그 자리에서 원어민이 고르지 않을 낱말이다');
+  lines.push('- **다른 나라 것을 영어 낱말로 옮겨 놓았다.** 이건 특히 잘 보세요.');
+  lines.push('  뜻은 통하는데 영어권에 그런 것이 없어서 어리둥절해지는 대목입니다.');
+  lines.push('  (한국의 회식 1차 · 2차를 first round, second round 로 옮겨 놓은 적이 있습니다.');
+  lines.push('   영어의 round 는 술을 한 차례 돌리는 것이지 자리를 옮기는 것이 아닙니다.)');
+  lines.push('  **이 영어만 읽는 사람이 무슨 말인지 바로 아는가**로 가늠하세요.');
   lines.push('');
   lines.push('**걸리는 데가 없으면 그대로 두세요.** 고칠 것이 없는데 고치면 더 나빠집니다.');
   lines.push('고칠 때는 **뜻을 바꾸지 말고**, 길이도 비슷하게 두세요.');
@@ -421,6 +486,8 @@ function buildReviewPrompt(draft, cfg) {
   lines.push('2-3. **말버릇을 장식으로 넣었는가.** honestly, kind of, like 가 뜻 없이 들어갔으면 뺍니다.');
   lines.push('     like 를 채움말로 쓰면 십대 말투가 됩니다.');
   lines.push('2-4. **원어민이 그 자리에서 안 쓰는 낱말이 있는가.** (예: 배달 다시 시키기 = reorder 가 아니라 order again)');
+  lines.push('2-6. **돈이 달러로 적혀 있는가.** 원 단위는 달러로 바꿉니다.');
+  lines.push('     **한국어의 숫자도 영어와 같아야 합니다** \u2014 한쪽만 바꾸면 안 됩니다.');
   lines.push('2-5. **두 가지로 읽히는 대목이 있는가.** 문법이 맞아도 순간 헷갈리면 고칩니다.');
   lines.push('3. **casual 이 text 와 충분히 다른가.** 앞부분이 겹치면 고칩니다.');
   lines.push('   캐주얼은 관용구를 넣는 것이 아니라 더 짧고 축약된 구어입니다.');
@@ -809,6 +876,7 @@ module.exports = {
   config: config, profileIds: profileIds, todayKST: todayKST,
   recentSituations: recentSituations, pickSituations: pickSituations,
   shuffle: shuffle, vocabulary: vocabulary, buildPrompt: buildPrompt,
+  recentTexts: recentTexts,
   extractJSON: extractJSON, unwrap: unwrap,
   buildSchema: buildSchema, buildReviewSchema: buildReviewSchema,
   buildReviewPrompt: buildReviewPrompt,

@@ -26,4 +26,5 @@
 - 서버 없음, 비용 0원
 - `app.js` / `style.css` 등을 고쳤으면 `index.html` 의 `?v=` 값을 올린다
 - 테스트: `python3 tools/test_add_video.py`, `python3 tools/test_add_subs.py`,
-  `node tools/test_daily.js`, `node tools/test_daily_shows.js`, `node tools/test_grading.js`
+  `node tools/test_daily.js`, `node tools/test_daily_shows.js`, `node tools/test_grading.js`,
+  `node tools/test_gate.js`

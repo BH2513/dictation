@@ -2113,6 +2113,126 @@
     });
   }
 
+  /* ---------------------------------------------------------------- 1단계 판정 셈 (ROADMAP)
+     운영자가 주마다 리뷰한다. 기록에서 **셀 수 있는 셋**만 센다 —
+     나머지 둘(대사가 맥락 없이 쓸 만한가, 챗보다 나은가)은 사람이 보고 판단하는 것이라
+     화면에 적어만 두고 세지 않는다.
+
+     주는 오늘부터 거꾸로 7일씩 끊는다. 달력 주(월~일)로 끊으면 화요일에는
+     "4일 이상"이 아직 될 수가 없어서 매번 미달로 보인다.
+
+     아직 시작도 안 한 주를 미달로 세면 안 된다. 첫 기록보다 앞선 주는 'na' 로 둔다 —
+     안 그러면 첫 주에 바로 "멈춰라"가 뜬다. */
+  var GATE_WEEKS = 4;        // 몇 주를 보나. 넘어가려면 이만큼 연속 통과
+  var GATE_OPEN_DAYS = 4;    // 그 주에 Daily 를 연 날
+  var GATE_SKIP_MAX = 0.3;   // 건너뛴 비율 상한
+  var GATE_CARDS = 3;        // 그 주에 담은 문장카드
+
+  function gateRange(base, w) {
+    var end = new Date(base.getTime());
+    end.setDate(end.getDate() - 7 * w);
+    var start = new Date(end.getTime());
+    start.setDate(start.getDate() - 6);
+    return { from: dateStr(start), to: dateStr(end) };
+  }
+
+  /* 기록이 처음 생긴 날. 이보다 앞선 주는 판정하지 않는다 */
+  function gateFirstDate(all) {
+    var best = null;
+    function see(d) { if (d && (!best || d < best)) best = d; }
+    var lists = [all.plan || [], all.cards || [], all.days || []];
+    for (var i = 0; i < lists.length; i++) {
+      for (var j = 0; j < lists[i].length; j++) see(lists[i][j].date);
+    }
+    return best;
+  }
+
+  /* 한 주의 숫자. all 은 Store.exportAll 이 준 것 */
+  function gateWeek(all, from, to) {
+    // 1) Daily 를 연 날 — 묶음이 배정된 날이 그 날이다
+    var openDays = 0, used = {};
+    var plan = all.plan || [];
+    for (var i = 0; i < plan.length; i++) {
+      var p = plan[i];
+      if (!p.date || p.date < from || p.date > to) continue;
+      var ids = (p.setIds || []).concat(p.showIds || []);
+      if (!ids.length) continue;
+      openDays++;
+      for (var j = 0; j < ids.length; j++) used[ids[j]] = true;
+    }
+
+    // 2) 건너뛴 비율 — 문장마다 날짜가 없으므로 **그 주에 배정된 묶음**으로 센다
+    var seen = 0, skipped = 0;
+    var prog = all.progress || [];
+    for (var k = 0; k < prog.length; k++) {
+      var vid = String(prog[k].videoId || '');
+      if (vid.indexOf('daily-') !== 0 && vid.indexOf('shows-') !== 0) continue;
+      if (!used[vid.slice(6)]) continue;
+      var st = prog[k].sentences || {};
+      for (var q in st) {
+        if (!st.hasOwnProperty(q)) continue;
+        seen++;
+        if (st[q] === 'skip') skipped++;
+      }
+    }
+
+    // 3) 그 주에 담은 문장카드
+    var cards = 0;
+    var cs = all.cards || [];
+    for (var c = 0; c < cs.length; c++) {
+      var d = cs[c].date;
+      if (d && d >= from && d <= to) cards++;
+    }
+
+    return { from: from, to: to, openDays: openDays, seen: seen, skipped: skipped,
+             skipRate: seen ? skipped / seen : 0, cards: cards, na: false };
+  }
+
+  function gateWeeks(all, base) {
+    var first = gateFirstDate(all);
+    var out = [];
+    for (var w = 0; w < GATE_WEEKS; w++) {
+      var r = gateRange(base, w);
+      var one = gateWeek(all, r.from, r.to);
+      one.na = !first || r.to < first;      // 시작 전이라 판정할 것이 없는 주
+      out.push(one);
+    }
+    return out;
+  }
+
+  /* 아무것도 안 한 주는 건너뛴 비율이 0 이라 그냥 두면 통과로 보인다. seen 을 같이 본다 */
+  function gateChecks(w) {
+    return {
+      days: w.openDays >= GATE_OPEN_DAYS,
+      skip: w.seen > 0 && w.skipRate < GATE_SKIP_MAX,
+      cards: w.cards >= GATE_CARDS
+    };
+  }
+
+  function gatePassed(w) {
+    var c = gateChecks(w);
+    return c.days && c.skip && c.cards;
+  }
+
+  /* 넘어가는 조건과 멈추는 조건. weeks[0] 이 최근 주다 */
+  function gateVerdict(weeks) {
+    var streak = 0, low = 0, judged = 0;
+    for (var i = 0; i < weeks.length; i++) {
+      if (weeks[i].na || !gatePassed(weeks[i])) break;
+      streak++;
+    }
+    for (var j = 0; j < weeks.length; j++) {
+      if (weeks[j].na) continue;
+      judged++;
+      var c = gateChecks(weeks[j]);
+      var n = (c.days ? 1 : 0) + (c.skip ? 1 : 0) + (c.cards ? 1 : 0);
+      if (n < 2) low++;                     // 절반을 못 채운 주
+    }
+    return { streak: streak, ready: streak >= GATE_WEEKS,
+             judged: judged, low: low, stop: low >= 2 };
+  }
+  /* -------------------------------------------------------------- 1단계 판정 셈 끝 */
+
   /* ---------------------------------------------------------------- 오답 리포트 (SPEC 10) */
 
   function showReport(pid) {
@@ -2139,7 +2259,7 @@
 
     box.appendChild(streakBlock(days));
     box.appendChild(daysBlock(days));
-    drawSkipped(box, pid);
+    drawRecordBlocks(box, pid);
 
     var head = el('div', 'count', 'Words you miss most');
     box.appendChild(head);
@@ -2193,11 +2313,87 @@
 
   /* 연속 학습 일수 — 오늘(또는 어제)부터 거꾸로 이어지는 날 수 */
   /* 건너뛴 문장을 모아 보여 준다. 건너뛴 것은 없어지는 게 아니라 미뤄 둔 것이다 */
-  function drawSkipped(box, pid) {
+  /* 기록 전체를 한 번만 읽어 판정표와 건너뛴 목록을 같이 그린다.
+     자리를 먼저 잡아 두어야 늦게 채워도 차례가 안 흐트러진다 */
+  function drawRecordBlocks(box, pid) {
     if (!window.Store || !Store.available()) return;
-    var slot = el('div', null);
-    box.appendChild(slot);
+    var gateSlot = el('div', null);
+    var skipSlot = el('div', null);
+    box.appendChild(gateSlot);
+    box.appendChild(skipSlot);
     Store.exportAll(pid, function (all) {
+      fillGate(gateSlot, all);
+      fillSkipped(skipSlot, pid, all);
+    }, function () {});
+  }
+
+  /* 1단계 판정표 — ROADMAP "매주 보는 것". 셈은 위 gate* 함수들이 한다 */
+  function fillGate(slot, all) {
+    // 기록이 아예 없으면 그리지 않는다. 갓 깐 기기에서 "not started yet" 네 줄은 군더더기다
+    if (!gateFirstDate(all)) return;
+    var weeks = gateWeeks(all, new Date());
+    var v = gateVerdict(weeks);
+
+    var box = el('div', 'notice');
+    box.appendChild(el('div', 'chartlabel', 'Weekly check \u2014 ready for step 2?'));
+
+    var t = el('table', 'gate');
+    var tb = el('tbody', null);
+    t.appendChild(tb);
+    var head = el('tr');
+    head.appendChild(el('th', null, ''));
+    head.appendChild(el('th', null, 'Days'));
+    head.appendChild(el('th', null, 'Skipped'));
+    head.appendChild(el('th', null, 'Cards'));
+    tb.appendChild(head);
+
+    for (var i = 0; i < weeks.length; i++) {
+      var w = weeks[i];
+      var tr = el('tr', w.na ? 'na' : (gatePassed(w) ? 'pass' : null));
+      tr.appendChild(el('td', 'wk', i === 0 ? 'This week' : (i + ' wk ago')));
+      if (w.na) {
+        var none = el('td', 'none', 'not started yet');
+        none.colSpan = 3;
+        tr.appendChild(none);
+      } else {
+        var c = gateChecks(w);
+        tr.appendChild(gateCell(String(w.openDays), c.days));
+        tr.appendChild(gateCell(w.seen ? (Math.round(w.skipRate * 100) + '%') : '\u2014', c.skip));
+        tr.appendChild(gateCell(String(w.cards), c.cards));
+      }
+      tb.appendChild(tr);
+    }
+    box.appendChild(t);
+
+    box.appendChild(el('div', 'gatefoot', 'A week passes with ' + GATE_OPEN_DAYS
+      + '+ days opened, under ' + Math.round(GATE_SKIP_MAX * 100) + '% skipped, and '
+      + GATE_CARDS + '+ cards saved.'));
+
+    var msg;
+    if (v.ready) msg = 'Passed ' + v.streak + ' weeks in a row \u2014 ready for step 2.';
+    else if (v.streak) msg = 'Passed ' + v.streak + (v.streak === 1 ? ' week' : ' weeks')
+      + ' in a row. Need ' + GATE_WEEKS + '.';
+    else msg = 'No passing week yet. Need ' + GATE_WEEKS + ' in a row.';
+    box.appendChild(el('div', 'gateline' + (v.ready ? ' ok' : ''), msg));
+
+    if (v.stop) {
+      box.appendChild(el('div', 'gateline no', v.low + ' of the last ' + v.judged
+        + ' weeks came in under half. Worth fixing the sentences before paying for step 2.'));
+    }
+
+    box.appendChild(el('div', 'gatefoot',
+      'Two more to judge by eye: are the show lines usable out of context (1 in 5 or fewer bad), '
+      + 'and is this better than doing it in chat?'));
+
+    slot.appendChild(box);
+  }
+
+  function gateCell(text, ok) {
+    return el('td', ok ? 'ok' : 'no', text + (ok ? ' \u2713' : ' \u2717'));
+  }
+
+  function fillSkipped(slot, pid, all) {
+    (function () {
       var rows = [];
       for (var i = 0; i < all.progress.length; i++) {
         var pr = all.progress[i];
@@ -2231,7 +2427,7 @@
         })(rows[r]);
       }
       slot.appendChild(ul);
-    }, function () {});
+    })();
   }
 
   function streakBlock(days) {

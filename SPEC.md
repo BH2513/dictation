@@ -243,7 +243,7 @@ Thank you so much for joining us on this Sunday.
 한국어가 애매하면 영어도 따라서 애매해지므로 한국어부터 구체적으로 쓴다.
 
 **말버릇을 장식으로 넣지 않는다.** 뜻이 맞을 때만 쓴다.
-(`이상하게`는 `honestly` 가 아니라 `weirdly` 다. `like` 를 채움말로 쓰면 십대 말투가 된다.)
+(`이상하게`는 `honestly` 가 아니라 `weirdly` 다.)
 
 격식체와 비즈니스 영어는 쓰지 않는다. 축약형을 쓴다.
 

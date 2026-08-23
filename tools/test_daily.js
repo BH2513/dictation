@@ -398,7 +398,6 @@ check('축약형을 쓰라고 한다', prompt.indexOf('축약형') >= 0, true);
 check('영어를 먼저 만들라고 한다', prompt.indexOf('영어를 먼저 만듭니다') >= 0, true);
 check('말버릇을 장식으로 넣지 말라고 한다',
   prompt.indexOf('장식으로 넣지 마세요') >= 0, true);
-check('like 를 채움말로 쓰지 말라고 한다', prompt.indexOf('십대 말투') >= 0, true);
 check('한 문장으로 끝나도 된다고 한다', prompt.indexOf('한 문장으로 끝나도 됩니다') >= 0, true);
 check('쉼표로 잇지 말라고 한다', prompt.indexOf('쉼표로 계속 이으면 안 됩니다') >= 0, true);
 check('규칙을 채우려고 늘리지 말라고 한다',

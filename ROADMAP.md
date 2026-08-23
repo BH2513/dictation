@@ -122,7 +122,7 @@ Phase 1(받아쓰기)이 끝난 뒤 무엇을 왜 만들지 정리한 문서다.
 - 20~35 단어를 **한 문장**으로 쓰라고 해서 쉼표가 쌓였다. 영어는 짧게 끊어 말한다
 - 내가 지시문에 `honestly, kind of, like 같은 말버릇이 들어가면 좋습니다` 라고 써 놓아서,
   뜻과 상관없이 장식으로 박혔다. `이상하게`가 `weirdly` 가 아니라 `honestly` 로 나간 것,
-  `like actually nothing` 이 십대 말투가 된 것이 전부 여기서 나왔다
+  `like actually nothing` 이 어색했던 것이 전부 여기서 나왔다
 - `reorder` 처럼 뜻은 맞지만 그 자리에서 원어민이 안 쓰는 낱말
 - `caved on day three` 처럼 두 가지로 읽히는 대목
 

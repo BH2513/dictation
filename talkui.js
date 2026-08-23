@@ -488,6 +488,12 @@ window.TalkUI = (function () {
     try { window.scrollTo(0, document.body.scrollHeight); } catch (e) {}
   }
 
+  /* **달러로 쌓는다.** 콘솔이 달러로 보여 주므로 같은 단위여야 대조가 된다 */
+  function addCost(usd) {
+    if (typeof usd !== 'number' || !(usd > 0)) return;
+    talk.costUsd = (talk.costUsd || 0) + usd;
+  }
+
   function fixedCount() {
     var n = 0;
     for (var i = 0; i < talk.turns.length; i++) if (!nothingToFix(talk.turns[i])) n++;
@@ -653,6 +659,7 @@ window.TalkUI = (function () {
     Talk.askTurn(company, key, brain, talk.turns, said, function (turn) {
       turn.said = said;
       talk.turns.push(turn);
+      addCost(turn.costUsd);
       Store.saveTalk(talk);
       forgetHeard();
       drawChat();
@@ -664,6 +671,7 @@ window.TalkUI = (function () {
         Talk.askTurn(company, key, brain, talk.turns, said, function (turn2) {
           turn2.said = said;
           talk.turns.push(turn2);
+          addCost(turn2.costUsd);
           Store.saveTalk(talk);
           forgetHeard();
           drawChat();
@@ -720,6 +728,7 @@ window.TalkUI = (function () {
     Talk.askSummary(company, key, brain, talk.turns, function (sum) {
       mode = 'idle';
       talk.summary = sum;
+      addCost(sum.costUsd);
       talk.endedAt = Store.today();
       Store.saveTalk(talk);
       view = 'summary';
@@ -737,7 +746,10 @@ window.TalkUI = (function () {
     clear(box);
     var s = talk.summary || {};
 
-    box.appendChild(el('div', 'chartlabel', 'Report — ' + talk.turns.length + ' turns'));
+    var rhead = el('div', 'talkhead');
+    rhead.appendChild(el('span', 'chartlabel', 'Report — ' + talk.turns.length + ' turns'));
+    if (talk.costUsd) rhead.appendChild(el('span', 'fixcount', Talk.money(talk.costUsd)));
+    box.appendChild(rhead);
 
     var sum = el('div', 'notice');
     sum.appendChild(el('b', null, 'What you talked about'));
@@ -758,6 +770,12 @@ window.TalkUI = (function () {
       };
       w.appendChild(all);
       box.appendChild(w);
+    }
+
+    if (talk.costUsd) {
+      box.appendChild(el('div', 'gatefoot', 'This conversation cost about '
+        + Talk.money(talk.costUsd) + '. That is worked out from what each reply said it '
+        + 'used — the real number is on your Usage page at platform.claude.com.'));
     }
 
     var row = el('div', 'buttons');

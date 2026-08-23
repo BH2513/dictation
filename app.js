@@ -2784,10 +2784,59 @@
     var skipSlot = el('div', null);
     box.appendChild(gateSlot);
     box.appendChild(skipSlot);
+    var costSlot = el('div', null);
+    box.appendChild(costSlot);
+    fillCost(costSlot, pid);
     Store.exportAll(pid, function (all) {
       fillGate(gateSlot, all);
       fillSkipped(skipSlot, pid, all);
     }, function () {});
+  }
+
+  /* 대화 연습에 실제로 얼마 썼나 (2026-08-26 운영자 요청).
+     **달러로 적는다** — 콘솔(platform.claude.com → Usage)이 달러로 보여 주므로
+     같은 단위여야 대조가 된다. 대화를 한 적이 없으면 그리지 않는다.
+
+     이 값은 답이 알려 준 사용량으로 **우리가 셈한 것**이지 청구서가 아니다.
+     화면에도 그렇게 적어 둔다 — 안 그러면 이 숫자를 청구서로 오해한다. */
+  function fillCost(slot, pid) {
+    if (!window.Store || !Store.available() || !window.Talk) return;
+    Store.listTalks(pid, function (rows) {
+      var all = 0, month = 0, talks = 0;
+      var now = Store.today().slice(0, 7);          // YYYY-MM
+      for (var i = 0; i < rows.length; i++) {
+        var c = rows[i].costUsd;
+        if (typeof c !== 'number' || !(c > 0)) continue;
+        all += c;
+        talks++;
+        if (String(rows[i].date || '').slice(0, 7) === now) month += c;
+      }
+      if (!talks) return;
+
+      var box = el('div', 'notice');
+      box.appendChild(el('div', 'chartlabel', 'What talk practice has cost'));
+
+      var t = el('table', 'gate');
+      var tb = el('tbody', null);
+      t.appendChild(tb);
+      tb.appendChild(costRow('This month', Talk.money(month)));
+      tb.appendChild(costRow('All time', Talk.money(all)));
+      tb.appendChild(costRow(talks + (talks === 1 ? ' conversation' : ' conversations'),
+        talks ? Talk.money(all / talks) + ' each' : ''));
+      box.appendChild(t);
+
+      box.appendChild(el('div', 'gatefoot', 'Worked out from what each reply said it used. '
+        + 'The bill itself is on your Usage page at platform.claude.com — '
+        + 'worth checking once that these two agree.'));
+      slot.appendChild(box);
+    }, function () {});
+  }
+
+  function costRow(name, value) {
+    var tr = el('tr');
+    tr.appendChild(el('td', 'wk', name));
+    tr.appendChild(el('td', null, value));
+    return tr;
   }
 
   /* 1단계 판정표 — ROADMAP "매주 보는 것". 셈은 위 gate* 함수들이 한다 */

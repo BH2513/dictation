@@ -14,6 +14,7 @@ var SHELL = [
   './app.js',
   './store.js',
   './record.js',
+  './talk.js',
   './icon-192.png',
   './icon-512.png',
   './manifest.json'

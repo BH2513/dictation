@@ -92,7 +92,7 @@
   /* ---------------------------------------------------------------- 화면 이동 */
 
   function show(name) {
-    var all = ['profiles', 'library', 'listen', 'report', 'cards', 'edit', 'daily'];
+    var all = ['profiles', 'library', 'listen', 'report', 'cards', 'edit', 'daily', 'settings'];
     for (var i = 0; i < all.length; i++) {
       $('screen-' + all[i]).className = 'screen' + (all[i] === name ? ' on' : '');
     }
@@ -123,6 +123,7 @@
     if (!profileId) { showProfiles(); return; }
     if (!videoId) { showLibrary(profileId); return; }
     if (videoId === 'report') { showReport(profileId); return; }
+    if (videoId === 'settings') { showSettings(profileId); return; }
     if (videoId === 'daily' || videoId === 'shows') {
       dailyKind = (videoId === 'shows') ? 'shows' : 'made';
       showDaily(profileId, parts[2] || '', parts[3] ? parseInt(parts[3], 10) : null);
@@ -2178,6 +2179,111 @@
     });
   }
 
+  /* ---------------------------------------------------------------- 설정 — AI 열쇠 (ROADMAP 2단계)
+
+     열쇠는 **기기에 하나**다. 프로필별이 아니다 — 사람마다 발급받게 하면 감당이 안 된다.
+     저장소에도 백업에도 안 올라간다. 백업 파일은 사람이 주고받는 물건이라서다.
+
+     **저장하기 전에 실제로 한 번 불러 본다.** 안 되는 열쇠를 넣어 두면 대화 도중에야
+     알게 되고, 그때는 무엇이 잘못됐는지 알기가 더 어렵다. */
+
+  var KEY_NAME = 'aiKey';
+  var KEY_COMPANY = 'aiCompany';
+
+  function showSettings(pid) {
+    setProfileId(pid);
+    show('settings');
+
+    var sel = $('key-company');
+    if (!sel.options.length && window.Talk) {
+      var list = Talk.companies();
+      for (var i = 0; i < list.length; i++) {
+        var o = document.createElement('option');
+        o.value = list[i].id;
+        o.appendChild(document.createTextNode(list[i].name));
+        sel.appendChild(o);
+      }
+    }
+
+    $('key-input').value = '';
+    keyMsg('');
+
+    if (!window.Store || !Store.available()) {
+      keyState('This browser will not let the app remember a key, so talk practice cannot run here.', true);
+      return;
+    }
+    Store.getSetting(KEY_COMPANY, function (saved) {
+      if (saved && sel.querySelector('option[value="' + saved + '"]')) sel.value = saved;
+      drawKeyHint();
+      Store.getSetting(KEY_NAME, function (key) {
+        if (key) keyState('A key is saved on this device. Everyone using this phone shares it.');
+        else keyState('No key yet. Talk practice stays off until one is saved.');
+      }, function () { keyState('Could not read the saved key.', true); });
+    }, function () { keyState('Could not read the saved key.', true); });
+  }
+
+  function drawKeyHint() {
+    var c = window.Talk && Talk.company($('key-company').value);
+    $('key-hint').textContent = c ? c.keyHint : '';
+  }
+
+  function keyState(text, bad) {
+    var n = $('key-state');
+    n.className = 'notice' + (bad ? ' error' : '');
+    n.textContent = text;
+  }
+
+  function keyMsg(text, bad) {
+    var n = $('key-msg');
+    clear(n);
+    if (!text) return;
+    n.appendChild(el('div', 'notice' + (bad ? ' error' : ''), text));
+  }
+
+  /* 실패한 까닭을 사람 말로 바꾼다. 조용히 실패하지 않는다 (SPEC 9) */
+  function keyReasonText(reason) {
+    if (reason === 'key') return 'That key was refused. Check you copied all of it.';
+    if (reason === 'limit') return 'The key works, but the account is out of credit or over its limit.';
+    if (reason === 'offline') return 'Could not reach the company. Check the connection and try again.';
+    if (reason === 'timeout') return 'No answer within ' + Math.round(Talk.TIMEOUT_MS / 1000)
+      + ' seconds. Try again.';
+    if (reason === 'company') return 'The company is having trouble right now. Try again later.';
+    return 'Could not check the key.';
+  }
+
+  function saveKey() {
+    var companyId = $('key-company').value;
+    var key = String($('key-input').value || '').replace(/^\s+|\s+$/g, '');
+    if (!key) { keyMsg('Paste the key first.', true); return; }
+    if (!window.Talk) { keyMsg('Talk practice is not loaded on this page.', true); return; }
+
+    $('key-save').disabled = true;
+    keyMsg('Checking the key with the company\u2026');
+
+    Talk.checkKey(companyId, key, function () {
+      Store.saveSetting(KEY_COMPANY, companyId, function () {
+        Store.saveSetting(KEY_NAME, key, function () {
+          $('key-save').disabled = false;
+          $('key-input').value = '';
+          keyMsg('The key works and is saved on this device.');
+          keyState('A key is saved on this device. Everyone using this phone shares it.');
+        }, function () { $('key-save').disabled = false; keyMsg('Could not save the key.', true); });
+      }, function () { $('key-save').disabled = false; keyMsg('Could not save the key.', true); });
+    }, function (reason) {
+      // 안 되는 열쇠는 저장하지 않는다
+      $('key-save').disabled = false;
+      keyMsg(keyReasonText(reason), true);
+    });
+  }
+
+  function clearKey() {
+    if (!window.Store || !Store.available()) return;
+    Store.clearSetting(KEY_NAME, function () {
+      keyMsg('The key is gone from this device.');
+      keyState('No key yet. Talk practice stays off until one is saved.');
+    }, function () { keyMsg('Could not remove the key.', true); });
+  }
+
   /* ---------------------------------------------------------------- 1단계 판정 셈 (ROADMAP)
      운영자가 주마다 리뷰한다. 기록에서 **셀 수 있는 셋**만 센다 —
      나머지 둘(대사가 맥락 없이 쓸 만한가, 챗보다 나은가)은 사람이 보고 판단하는 것이라
@@ -3135,6 +3241,11 @@
     $('change-profile').onclick = function () { go('#/'); };
     $('report-btn').onclick = function () { go('#/' + profileId + '/report'); };
     $('report-back').onclick = function () { go('#/' + profileId); };
+    $('settings-btn').onclick = function () { go('#/' + profileId + '/settings'); };
+    $('settings-back').onclick = function () { go('#/' + profileId); };
+    $('key-company').onchange = function () { drawKeyHint(); };
+    $('key-save').onclick = function () { saveKey(); };
+    $('key-clear').onclick = function () { clearKey(); };
     $('cards-btn').onclick = function () { go('#/' + profileId + '/cards'); };
     $('cards-back').onclick = function () { go('#/' + profileId); };
     $('daily-btn').onclick = function () { go('#/' + profileId + '/daily'); };

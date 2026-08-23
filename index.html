@@ -9,10 +9,10 @@
 <meta name="theme-color" content="#0f1115">
 <title>Dictation</title>
 <!-- 데스크탑·폰에 앱으로 설치하기 위한 것 -->
-<link rel="manifest" href="manifest.json?v=2026-08-25c">
+<link rel="manifest" href="manifest.json?v=2026-08-25d">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=2026-08-25c">
+<link rel="stylesheet" href="style.css?v=2026-08-25d">
 </head>
 <body>
 
@@ -32,6 +32,7 @@
       <button class="small" id="daily-btn">Daily</button>
       <button class="small" id="cards-btn">Cards</button>
       <button class="small" id="report-btn">Report</button>
+      <button class="small" id="settings-btn">Settings</button>
       <button class="small" id="change-profile">Switch</button>
     </div>
     <div id="video-list"></div>
@@ -134,6 +135,40 @@
   </div>
 </div>
 
+<!-- 설정 — AI 열쇠 (ROADMAP 2단계) -->
+<div class="screen" id="screen-settings">
+  <div class="wrap">
+    <div class="top">
+      <button class="small" id="settings-back">← Library</button>
+      <h1>Settings</h1>
+    </div>
+
+    <div class="backup">
+      <div class="rowlabel">AI key</div>
+      <p class="hint">Talk practice sends what you say straight from this phone to the AI company.
+        There is no server in between, so the key has to live here.
+        <b>One key per device — everyone using this phone shares it, and the bill goes to whoever owns the key.</b>
+        It is never uploaded and never goes into a backup copy.</p>
+
+      <div id="key-state" class="notice">Loading…</div>
+
+      <div class="rowlabel">Company</div>
+      <select id="key-company"></select>
+
+      <div class="rowlabel">Key</div>
+      <input type="password" id="key-input" autocomplete="off" autocapitalize="off"
+        autocorrect="off" spellcheck="false" placeholder="Paste the key here">
+      <p class="hint" id="key-hint"></p>
+
+      <div class="buttons">
+        <button class="primary half" id="key-save">Check and save</button>
+        <button class="half" id="key-clear">Remove key</button>
+      </div>
+      <div id="key-msg"></div>
+    </div>
+  </div>
+</div>
+
 <!-- 연습 -->
 <div class="screen" id="screen-listen">
   <div class="wrap">
@@ -215,8 +250,9 @@
   </div>
 </div>
 
-<script src="store.js?v=2026-08-25c"></script>
-<script src="record.js?v=2026-08-25c"></script>
-<script src="app.js?v=2026-08-25c"></script>
+<script src="store.js?v=2026-08-25d"></script>
+<script src="record.js?v=2026-08-25d"></script>
+<script src="talk.js?v=2026-08-25d"></script>
+<script src="app.js?v=2026-08-25d"></script>
 </body>
 </html>

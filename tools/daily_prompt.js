@@ -14,6 +14,8 @@ try {
   var pid = pids[0];
   var sets = cfg.avoidRecentSets || 4;
   var recent = daily.recentSituations(pid, cfg.avoidRecentDays || 14, sets);
+  // 내용은 상황보다 더 멀리 본다 — 상황이 돌아와도 같은 이야기를 다시 하면 안 된다
+  var textSets = cfg.avoidRecentTexts || sets;
   var situations = daily.pickSituations(cfg.situations, recent, cfg.count);
   var vocab = daily.vocabulary(pid, cfg.vocabSample || 30);
 
@@ -22,7 +24,9 @@ try {
     minWords: cfg.minWords,
     maxWords: cfg.maxWords,
     situations: situations,
-    recent: daily.recentTexts(pid, sets),
+    shortWords: cfg.shortWords,
+    shortCount: cfg.shortCount,
+    recent: daily.recentTexts(pid, textSets),
     vocab: vocab
   }));
 } catch (e) {

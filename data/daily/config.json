@@ -1,11 +1,14 @@
 {
   "count": 5,
   "minWords": 12,
-  "maxWords": 35,
+  "maxWords": 28,
+  "shortWords": 20,
+  "shortCount": 2,
   "level": "advanced",
   "model": "opus",
   "avoidRecentDays": 14,
   "avoidRecentSets": 3,
+  "avoidRecentTexts": 8,
   "vocabSample": 30,
   "situations": [
     "친구한테 주말에 뭐 했는지 얘기하기",

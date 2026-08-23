@@ -6,203 +6,312 @@
   "sentences": [
     {
       "i": 0,
-      "ko": "이번 주말에 진짜 아무것도 안 했어. 소파에 붙어서 드라마 세 시즌 몰아보고 거의 움직이지도 않았어. 근데 이상하게 그게 딱 필요했던 것 같아.",
-      "text": "I did absolutely nothing this weekend. I stayed on the couch, watched three seasons of something, and barely moved. And weirdly, that's exactly what I needed.",
+      "ko": "그 사람 성격 되게 편한데, 처음엔 좀 조용해. 한 십 분만 주면 금방 풀려. 등산도 엄청 좋아해.",
+      "text": "He's easygoing, but he's kind of quiet at first. Give him ten minutes and he'll open up. He's really into hiking too.",
       "alts": [
         {
           "style": "casual",
-          "text": "Zero plans this weekend. I parked myself on the couch, binged three seasons of something, and it was the best call I made all week."
+          "text": "He's a laid-back guy, a little shy at first, but he loosens up fast. Big into hiking too."
         },
         {
           "style": "formal",
-          "text": "I did absolutely nothing over the weekend. I remained at home, watched a great deal of television, and hardly moved. It was precisely the rest I needed."
+          "text": "He has an easygoing personality, though he tends to be a bit reserved initially. He becomes more comfortable after a short while. He also has a strong interest in hiking."
         }
       ],
-      "note": "**weirdly** 는 '이상하게도'입니다. 몰아보기는 **binged**, 소파에 눌러앉는 건 **parked myself on the couch** 라고 해요.",
-      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "note": "**open up** 은 낯을 풀고 편해진다는 뜻입니다. 처음엔 어색해도 시간이 지나면 마음을 여는 사람을 얘기할 때 씁니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 1,
-      "ko": "배달이 잘못 왔어. 치킨 시켰는데 웬 파스타가 왔더라고. 다시 시키면 한 시간은 더 걸리니까 그냥 이거 먹으려고.",
-      "text": "They sent the wrong order. I asked for the chicken and got some kind of pasta. Ordering again means another hour, so I'm just going to eat it.",
+      "ko": "10월 첫째 주 괜찮아? 수요일부터 일요일까지, 사박오일로 생각하고 있어. 빡빡하면 다음 주로 미뤄도 되고.",
+      "text": "Can you do the first week of October? I'm thinking Wednesday to Sunday, four nights. If that's tight, we could push it to the following week instead.",
       "alts": [
         {
           "style": "casual",
-          "text": "Wrong order again. I ordered chicken and they sent me pasta, and I'm not sitting here another hour waiting for a redo. So pasta it is."
+          "text": "Free the first week of October? Wed to Sun, four nights. We can bump it to next week if not."
         },
         {
           "style": "formal",
-          "text": "The order was incorrect. I requested the chicken and received pasta instead. As placing another order would mean waiting an additional hour, I have decided to keep this one."
+          "text": "Would the first week of October work for you? I was thinking Wednesday through Sunday, four nights. If that doesn't work, we could move it to the following week instead."
         }
       ],
-      "note": "**some kind of** ~ 는 '웬 ~ 같은 것'. **pasta it is** 처럼 [명사 + it is] 는 '그럼 그걸로 하지' 하는 체념 섞인 말투예요.",
-      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "note": "**push it to** 는 일정을 뒤로 미룬다는 뜻입니다. 날짜나 약속을 조정할 때 자주 씁니다.",
+      "situation": "친구랑 여행 일정 맞추기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 2,
-      "ko": "진짜 도와주고 싶은데 이번 주가 너무 빡세. 마감이 두 개인 데다 목요일엔 애 학교 행사도 있어. 지금 맡으면 대충 하게 될 텐데 그럼 서로 손해잖아.",
-      "text": "I really want to help, but this week is brutal. I've got two deadlines and my kid's school thing on Thursday. If I said yes I'd do a rushed job, and that helps nobody.",
+      "ko": "요즘 새벽 세 시쯤 깨서는 천장만 보고 있어. 알람 울릴 때쯤엔 완전히 뻗어 있다니까.",
+      "text": "I've been waking up around three every night and just staring at the ceiling. I'm wrecked by the time my alarm goes off.",
       "alts": [
         {
           "style": "casual",
-          "text": "Man, I want to say yes. But I've got two deadlines and my kid's thing on Thursday, so I'd end up rushing it. You'd rather have it done right."
+          "text": "I keep waking up around 3am and just zoning out. I'm dead by the time my alarm goes off."
         },
         {
           "style": "formal",
-          "text": "I would like to help, but this week is extremely demanding. I have two deadlines and a school event on Thursday. If I agreed, the work would be rushed and would not serve you well."
+          "text": "I've been waking up around three every night and lying there unable to fall back asleep. I'm exhausted by the time my alarm goes off."
         }
       ],
-      "note": "**brutal** 은 '살인적이다' 정도로 힘들다는 뜻이에요. **end up** -ing 은 '결국 ~하게 되다', **that helps nobody** 는 '그래 봐야 서로 손해다'입니다.",
-      "situation": "친구 부탁을 부드럽게 거절하기",
+      "note": "**wrecked** 는 완전히 지쳤다는 뜻입니다. 잠을 못 자거나 무리해서 녹초가 됐을 때 씁니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 3,
-      "ko": "삼일 갔어. 낮에는 멀쩡한데 밤 열 시쯤 되면 냉장고 문을 열고 있더라고. 매번 똑같아.",
-      "text": "I lasted three days. I was fine all day, but around ten at night I'd open the fridge and that was that. Same thing every single time.",
+      "ko": "응, 일은 그냥 바쁘긴 한데 할 만해. 이번 주에 야근 좀 있었는데 그거 빼면 괜찮아. 걱정하지 마.",
+      "text": "Yeah, work's been busy, nothing I can't handle. I've had a few late nights this week, but I'm doing fine. Don't worry about me.",
       "alts": [
         {
           "style": "casual",
-          "text": "Three days. That's it. I'm fine until about ten, then I'm standing in front of the fridge with no memory of walking there. Every time."
+          "text": "Work's just really busy, nothing major. Had a late night or two this week, but I'm good. Don't stress."
         },
         {
           "style": "formal",
-          "text": "I managed three days. I was perfectly fine during the day, but by around ten in the evening I would find myself at the refrigerator. It happened every time."
+          "text": "Work has been quite busy, but nothing I'm unable to manage. I've had a few late nights this week, but I'm doing well. Please don't worry about me."
         }
       ],
-      "note": "**that was that** 은 '거기서 끝이었다'는 뜻이에요. 버티는 건 **lasted**, 격식 있게는 **managed** 를 씁니다.",
-      "situation": "다이어트가 또 실패한 얘기",
+      "note": "**nothing I can't handle** 는 힘들어도 감당할 만하다는 뜻입니다. 부모님을 안심시킬 때 자주 씁니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 4,
-      "ko": "이사 갈 마음을 먹었다가도, 둘러보면 집도 괜찮고 월세도 괜찮고, 짐 쌀 생각을 하면 또 미루게 돼.",
-      "text": "I keep almost deciding to move. Then I look around and the place is fine, the rent is fine. And I picture packing all of it, so I put it off again.",
+      "ko": "우리 딸이 이번 학기에 과학 수업을 진짜 좋아해. 현미경 사달라고 계속 졸라. 선생님 말로는 질문을 엄청 많이 한대.",
+      "text": "My daughter's really into her science class this semester. She's been begging me to buy her a microscope. Her teacher says she asks a ton of questions.",
       "alts": [
         {
           "style": "casual",
-          "text": "Every couple of months I decide I'm moving. Then I remember I'd have to pack all of this, and my rent is not bad. Suddenly next year sounds great."
+          "text": "My daughter's totally hooked on science class this semester. She keeps bugging me for a microscope. Her teacher says she never stops asking questions."
         },
         {
           "style": "formal",
-          "text": "I have been considering a move for some time. However, my current apartment is perfectly adequate and the rent is reasonable. The prospect of packing is enough to make me postpone it."
+          "text": "My daughter has developed a strong interest in her science class this semester. She has been asking me to purchase a microscope for her. Her teacher mentions that she asks a great number of questions."
         }
       ],
-      "note": "**put it off** 은 미루다입니다. **I keep almost** -ing 은 '~하려다 마는 걸 반복한다', **not bad** 는 '나쁘지 않다 = 괜찮다'예요.",
-      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "note": "**begging me to** 는 계속 조르며 부탁한다는 뜻입니다. 아이가 뭔가를 사달라고 매달릴 때 자연스럽게 씁니다.",
+      "situation": "애들 학교 얘기 나누기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 5,
-      "ko": "목요일에 온다던 의자가 아직도 안 왔어. 배송 조회를 해 봐도 사흘째 같은 도시에 멈춰 있고. 고객센터는 전화를 안 받아.",
-      "text": "The chair I ordered was supposed to come Thursday. I keep checking the tracking and it has been stuck in the same city for three days. Nobody picks up the phone.",
+      "ko": "폰이 갑자기 자꾸 멈춰. 벌써 두 번이나 재시작했는데도 계속 그래.",
+      "text": "My phone keeps freezing out of nowhere these days. I've already restarted it twice, but it's still doing the exact same thing.",
       "alts": [
         {
           "style": "casual",
-          "text": "Still waiting on that chair. Tracking has not moved in three days, and customer service just lets it ring every single time."
+          "text": "My phone's been freezing randomly. Restarted it twice already, still doing the same thing."
         },
         {
           "style": "formal",
-          "text": "The chair I ordered was due on Thursday and has not arrived. The tracking has not updated in three days, and I have been unable to reach anyone."
+          "text": "My phone has been freezing unexpectedly. I have already restarted it twice, but the issue persists."
         }
       ],
-      "note": "**stuck in the same city** 는 배송이 안 움직인다는 뜻이에요. **lets it ring** 은 전화를 안 받고 그냥 울리게 둔다는 말입니다.",
-      "situation": "택배가 안 와서 답답한 얘기",
+      "note": "폰이 버벅거리며 멈출 때 **freezing** 이라고 해요.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 6,
-      "ko": "요즘 장 한 번 보면 십만 원이 그냥 나가는데 봉투는 두 개야. 딱히 비싼 걸 산 것도 아니고. 예전엔 이 돈이면 일주일 치였는데.",
-      "text": "I spend a hundred bucks at the grocery store now and walk out with two bags. I did not even buy anything special. That used to be a whole week of food.",
+      "ko": "팟타이 시켰는데 팟씨유가 왔어. 항의 전화하기도 귀찮아서 그냥 내일 다시 시키려고.",
+      "text": "I ordered pad thai, but this pad see ew showed up instead. I don't feel like calling to complain, so I'll just order again tomorrow.",
       "alts": [
         {
           "style": "casual",
-          "text": "A hundred bucks at the store gets you two bags now. Nothing fancy in there either. That was a week of groceries a few years ago."
+          "text": "Ordered pad thai, got pad see ew instead. Can't be bothered calling to complain, gonna just order again tomorrow."
         },
         {
           "style": "formal",
-          "text": "I now spend a hundred dollars at the supermarket and leave with two bags. I purchased nothing unusual. That amount once covered an entire week."
+          "text": "I had ordered pad thai, but I received pad see ew instead. I do not wish to call and complain, so I will simply place the order again tomorrow."
         }
       ],
-      "note": "**bucks** 는 dollars 를 편하게 부르는 말이에요. **walk out with two bags** 처럼 결과를 그림으로 말하면 훨씬 자연스럽습니다.",
-      "situation": "물가 오른 거 투덜대기",
+      "note": "배달을 다시 시킬 때는 reorder 가 아니라 **order again** 이라고 해요.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 7,
-      "ko": "토요일에 일 년 만에 헬스장에 갔거든. 사십 분쯤 했나. 그 뒤로 제대로 앉지를 못하고 있어.",
-      "text": "I went to the gym for the first time in a year on Saturday. I did maybe forty minutes. I have not been able to sit down properly since.",
+      "ko": "주말 내내 집 밖에 안 나갔어. 그냥 침대에서 뒹굴며 드라마 보는데 딱 필요했던 거더라.",
+      "text": "I didn't leave the house all weekend. I just stayed in bed watching shows, and it was exactly what I needed.",
       "alts": [
         {
           "style": "casual",
-          "text": "First gym session in a year on Saturday. Forty minutes, tops. I still cannot sit down like a normal person."
+          "text": "Didn't leave the house all weekend, just stayed in bed binge watching. Exactly what I needed."
         },
         {
           "style": "formal",
-          "text": "I visited the gym on Saturday for the first time in a year. I exercised for roughly forty minutes. I have had difficulty sitting down ever since."
+          "text": "I did not leave the house at all this weekend. I stayed in bed watching shows, and it was precisely what I needed."
         }
       ],
-      "note": "**tops** 는 '기껏해야'라는 뜻으로 숫자 뒤에 붙여요. **like a normal person** 은 '남들처럼'이라는 농담 섞인 표현입니다.",
-      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "note": "몸도 마음도 쉬고 싶을 때 딱 그거였다는 뜻으로 **exactly what I needed** 라고 해요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 8,
-      "ko": "윗집이 밤 열한 시에 가구를 끌기 시작해. 두 번이나 올라가서 얘기했고 그때는 엄청 친절했거든. 근데 달라진 게 하나도 없어.",
-      "text": "The people upstairs start moving furniture around at eleven at night. I have knocked on their door twice and they were perfectly nice about it. Nothing has changed.",
+      "ko": "지난 금요일에 네가 말해준 라멘집 드디어 가봤어. 국물이 진짜 진했는데 기다린 보람이 있더라.",
+      "text": "We finally tried that ramen place you told us about last Friday. The broth was so rich, and the wait was actually worth it.",
       "alts": [
         {
           "style": "casual",
-          "text": "Upstairs starts dragging furniture at eleven at night. I have gone up twice and they could not have been nicer. Same thing the next night."
+          "text": "Finally tried that ramen place you mentioned last Friday. Broth was so rich, totally worth the wait."
         },
         {
           "style": "formal",
-          "text": "The residents above me begin moving furniture at eleven in the evening. I have spoken with them twice and they were entirely polite. The noise continues."
+          "text": "We finally visited the ramen restaurant you recommended last Friday. The broth was very rich, and the wait was genuinely worthwhile."
         }
       ],
-      "note": "**the people upstairs** 가 윗집을 부르는 가장 흔한 말이에요. **could not have been nicer** 는 '더할 나위 없이 친절했다'는 뜻입니다.",
-      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "note": "고생하거나 기다린 값어치가 있을 때 **worth it** 이라고 해요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
       "start": null,
       "end": null,
       "recording": null
     },
     {
       "i": 9,
-      "ko": "색은 진짜 잘 어울려. 근데 기장이 좀 애매한 것 같아. 아까 그게 더 낫다고 하면 기분 나쁠까?",
-      "text": "Honestly the color is great on you. I am not sure about the length though. Would you be annoyed if I said the other one suited you better?",
+      "ko": "요즘 회사를 그만둘까 계속 생각하게 돼. 번아웃까진 아닌데 그냥 갇힌 느낌이고, 어떻게 해야 할지 모르겠어.",
+      "text": "I've been thinking about quitting my job lately. I'm not burned out exactly. I just feel stuck, and I don't know what to do about it.",
       "alts": [
         {
           "style": "casual",
-          "text": "Color is perfect on you. The length is the part I am not sold on. Would you hate me if I said the first one was better?"
+          "text": "Been thinking about quitting my job lately. Not burned out exactly, just feel stuck and don't know what to do."
         },
         {
           "style": "formal",
-          "text": "The color suits you very well. I am less certain about the length. Would you mind if I said the other one was more flattering?"
+          "text": "I have been considering resigning from my job recently. I am not exactly burned out, but I feel stuck and unsure of what to do."
         }
       ],
-      "note": "**great on you** 는 옷이 잘 어울린다는 말이에요. **not sold on** 은 '아직 확신이 안 선다', **Would you hate me if** 는 솔직한 말을 꺼낼 때 쓰는 완충 표현입니다.",
-      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "note": "완전히 지쳐서 나가떨어진 상태를 **burned out** 이라고 해요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 10,
+      "ko": "어제 밤에 또 못 참고 피자 시켰어. 맨날 월요일마다 다이어트 다시 시작한다고 해놓고 수요일이면 관둬.",
+      "text": "I caved and ordered pizza again last night. I swear I restart this diet every Monday and quit by Wednesday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Yeah, caved again and got pizza last night. I'm serious, every Monday I restart and by Wednesday I'm out."
+        },
+        {
+          "style": "formal",
+          "text": "I gave in and ordered pizza again last night. I attempt to restart this diet every Monday, but I abandon it by Wednesday."
+        }
+      ],
+      "note": "**caved** 는 참으려던 걸 못 참고 무너졌다는 뜻이에요. 다이어트나 결심이 깨질 때 자주 씁니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 11,
+      "ko": "들어가자마자 이모가 월급 얼마냐고 물고 늘어졌어. 그다음엔 삼촌이 끼어들어서 결혼은 언제 하냐고 물어보고.",
+      "text": "My aunt cornered me about my salary the second I walked in. Then my uncle jumped in asking when I'm getting married.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My aunt grilled me about my salary right off the bat, then my uncle piled on with the marriage question."
+        },
+        {
+          "style": "formal",
+          "text": "My aunt pressed me about my salary as soon as I arrived, and then my uncle followed up by asking when I plan to get married."
+        }
+      ],
+      "note": "**cornered** 는 궁지에 몰듯 캐물었다는 뜻이에요. 누가 다그치듯 물어볼 때 씁니다.",
+      "situation": "명절에 친척들 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 12,
+      "ko": "토요일엔 그냥 하루 종일 침대에서 드라마만 몰아보고 집 밖에 안 나갔어. 일요일에야 겨우 일어나서 장 보러 나갔고.",
+      "text": "I pretty much binged a show in bed all day Saturday and didn't leave the house. Sunday I finally dragged myself out for groceries.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Saturday I just vegged out in bed watching a show all day, didn't budge. Sunday I finally made myself go get groceries."
+        },
+        {
+          "style": "formal",
+          "text": "I spent all of Saturday in bed watching a show and did not leave the house. On Sunday I finally made myself go out to buy groceries."
+        }
+      ],
+      "note": "**binged** 는 드라마 같은 걸 여러 편 몰아볼 때 쓰는 말이에요. **dragged myself out** 은 억지로 몸을 일으켜 나갔다는 뜻입니다.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 13,
+      "ko": "이번 주말 이사 진짜 도와주고 싶은데, 언니한테 조카들 봐주기로 벌써 약속해놔서. 다음에 하면 안 될까?",
+      "text": "I really want to help you move this weekend, but I already promised my sister I'd watch her kids. Rain check?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'd love to help you move this weekend, but I'm babysitting for my sister already. Next time, okay?"
+        },
+        {
+          "style": "formal",
+          "text": "I would really like to help you move this weekend, but I have already committed to watching my sister's children. Could we arrange another time?"
+        }
+      ],
+      "note": "**Rain check** 는 지금은 못 하지만 다음에 하자고 청할 때 쓰는 표현이에요.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 14,
+      "ko": "어깨가 이상하게 아파서 병원 갔다 왔어. 그냥 자다가 자세가 안 좋아서 그런 거래, 별건 아니고.",
+      "text": "I went to the doctor about this weird pain in my shoulder. Turns out I just slept in a bad position, so it's nothing serious.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went to the doctor because my shoulder was killing me. Turns out I just slept funny, nothing to worry about."
+        },
+        {
+          "style": "formal",
+          "text": "I went to see a doctor about some unusual pain in my shoulder. It turns out I simply slept in an awkward position, so it is nothing serious."
+        }
+      ],
+      "note": "**Turns out** 은 알고 보니라는 뜻으로, 결과를 가볍게 전할 때 자주 씁니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
       "start": null,
       "end": null,
       "recording": null
     }
+  ],
+  "reviewed": [
+    "문장 3: \"at like three\" 의 like 를 장식으로 쓴 채움말이라 십대 말투처럼 들려 around three 로 고쳤습니다.",
+    "문장 4: 야근을 extra shifts 로 옮기면 뜻이 달라져(교대근무 느낌) late nights 로 고쳤습니다 (text·formal 모두, casual 문구도 살짝 다르게 조정).",
+    "1번 문장의 text 가 19단어로 최소 기준(20단어)에 못 미쳐 자연스러운 표현 \"these days\" 를 넣어 22단어로 늘렸습니다.",
+    "2번 문장의 formal alt 에 축약형 \"don't\" 가 남아 있어 격식체 기준에 맞게 \"do not\" 으로 고쳤습니다.",
+    "5번 문장의 text 뒷부분이 쉼표로 세 절을 잇는 콤마 스플라이스(comma splice)였는데, 첫 두 절 사이에 마침표를 넣어 문장을 나눴습니다.",
+    "2번 문장 formal 에서 cornered 의 다그치는 뉘앙스를 없애고 그냥 asked 로 눅여서 뜻이 순해졌다 — pressed me about 으로 고쳐 압박하는 느낌을 살렸고, note 도 그에 맞게 정리했다.",
+    "4번 문장 casual 의 'I'm on kid duty for my sister already' 는 원어민이 잘 안 쓰는 어색한 조합이라 자연스러운 'I'm babysitting for my sister already' 로 고쳤다."
   ]
 }

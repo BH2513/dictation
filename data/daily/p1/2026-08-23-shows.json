@@ -1,0 +1,128 @@
+{
+  "videoId": "shows-2026-08-23",
+  "title": "From your videos · 2026-08-23",
+  "date": "2026-08-23",
+  "source": "shows",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "오, 다음 부분이 진짜 최고야.",
+      "text": "Oo, the next part's the best.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ooh, this bit's the best!"
+        },
+        {
+          "style": "formal",
+          "text": "Oh, I think the next part is the best one."
+        }
+      ],
+      "note": "**the next part's the best**처럼 영상이나 이야기를 보여주며 다음이 더 재밌다고 기대감을 나타낼 때 쓰는 말입니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 233
+      },
+      "start": 613.44,
+      "end": 615.36,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "좀 시원해졌으면 좋겠는데, 안타깝게도 더위가 계속된대.",
+      "text": "We'd love to find some relief, but unfortunately that heat continues.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We're dying for some relief, but nope, it's still hot as ever."
+        },
+        {
+          "style": "formal",
+          "text": "We would certainly welcome some relief, however, the heat is expected to persist."
+        }
+      ],
+      "note": "**find some relief**는 더위나 힘든 상황에서 벗어나고 싶을 때 자주 쓰는 표현입니다.",
+      "situation": "Fires grip western U.S., British Columbia: \"It doesn't seem like it's real\"",
+      "from": {
+        "videoId": "hz3Rs6xWReE",
+        "i": 40
+      },
+      "start": 167.519,
+      "end": 170.8,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "쟤가 내가 피해 다니던 여자애야.",
+      "text": "That's the girl I was hiding from.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "She's the one I was avoiding."
+        },
+        {
+          "style": "formal",
+          "text": "She is the woman I have been avoiding."
+        }
+      ],
+      "note": "**hiding from**은 누군가를 피해 숨어 지낼 때 쓰는 표현으로, avoid보다 더 생생한 느낌을 줍니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 178
+      },
+      "start": 457.84,
+      "end": 460.08,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "자, 너희들 볼 수 있게 천천히 해볼게.",
+      "text": "Here, I'll slow it down so you guys can see it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hang on, let me slow that down for ya."
+        },
+        {
+          "style": "formal",
+          "text": "Allow me to slow this down so you can see it more clearly."
+        }
+      ],
+      "note": "**slow it down**은 동작이나 설명을 천천히 다시 보여줄 때 쓰는 표현입니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 225
+      },
+      "start": 580.16,
+      "end": 582.08,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "나 딱 한 가지만 진짜 빨리 하고 올게.",
+      "text": "I just have to do one thing really quickly.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gimme a sec, just gotta do one quick thing."
+        },
+        {
+          "style": "formal",
+          "text": "I need to take care of one thing very quickly."
+        }
+      ],
+      "note": "**really quickly**는 잠깐 뭔가를 처리하고 오겠다고 양해를 구할 때 쓰는 표현입니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 772
+      },
+      "start": 2017.039,
+      "end": 2018.64,
+      "recording": null
+    }
+  ]
+}

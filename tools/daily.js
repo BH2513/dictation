@@ -212,6 +212,13 @@ function buildPrompt(opts) {
   lines.push('- 영어는 **다 합쳐서** ' + opts.minWords + '~' + opts.maxWords + ' 단어. 한 문장이 아니라 전체 기준입니다');
   lines.push('  **이건 넘지 말라는 울타리지 채워야 하는 양이 아닙니다.** 자연스러운 말이');
   lines.push('  ' + opts.minWords + ' 단어에서 끝나면 거기서 끝내세요. 늘리면 그 자리가 어색해집니다');
+  if (opts.shortCount) {
+    lines.push('- **' + opts.count + '개의 길이를 서로 다르게 하세요.**');
+    lines.push('  그중 **' + opts.shortCount + '개는 ' + opts.shortWords + ' 단어 이하**여야 합니다.');
+    lines.push('  전에 만든 45개를 세어 보니 길이가 다 비슷했고 한 문장으로 끝난 것이 없었습니다.');
+    lines.push('  사람은 늘 같은 길이로 말하지 않습니다 \u2014 한 마디로 끝낼 때도 있습니다.');
+    lines.push('  **짧은 것을 쉬운 것으로 만들지 마세요.** 짧아도 내용은 어려워야 합니다.');
+  }
   lines.push('- **난이도는 길이가 아니라 내용에서 나옵니다.** 짧아도 어려울 수 있습니다');
   lines.push('  낱말은 쉽게, 내용은 어렵게. 어른이 실제로 겪는 복잡한 사정을 담으세요 \u2014');
   lines.push('  가정("~했으면 ~했을 텐데"), 조건, 이유, 마음이 반쯤 바뀐 상태 같은 것.');
@@ -496,6 +503,9 @@ function buildReviewPrompt(draft, cfg) {
   lines.push('   없는 표현을 가르치면 안 됩니다. 감싼 것이 하나도 없어도 안 됩니다.');
   lines.push('7. **"text" 가 ' + cfg.minWords + '~' + cfg.maxWords + ' 단어인가.**');
   lines.push('   범위 안에만 있으면 됩니다. **아래쪽에 붙어 있다고 늘리지 마세요.**');
+  lines.push('7-1. **길이가 서로 다른가.** ' + cfg.count + '개 중 '
+    + (cfg.shortCount || 2) + '개는 ' + (cfg.shortWords || 20) + ' 단어 이하여야 합니다.');
+  lines.push('     짧은 것을 늘리지 마세요. 늘리면 다섯 개가 다 비슷해집니다.');
   lines.push('8. 줄표(\u2014)와 따옴표를 쓰지 않았는가. 쉼표와 마침표만 씁니다.');
   lines.push('');
   lines.push('## 어떻게 할 것인가');
@@ -686,6 +696,7 @@ function validate(parsed, cfg) {
     problems.push('문장이 ' + cfg.count + '개여야 하는데 ' + rows.length + '개입니다.');
   }
   var seen = {};
+  var shortEnough = 0;
   for (var i = 0; i < rows.length; i++) {
     var r = rows[i] || {};
     var at = '문장 ' + (i + 1) + ': ';
@@ -694,6 +705,7 @@ function validate(parsed, cfg) {
     if (!r.note || !String(r.note).trim()) problems.push(at + '설명이 비었습니다.');
 
     var n = wordCount(r.text);
+    if (n && cfg.shortWords && n <= cfg.shortWords) shortEnough++;
     if (!n) {
       problems.push(at + '영어 문장이 비었습니다.');
     } else if (n < cfg.minWords || n > cfg.maxWords) {
@@ -739,6 +751,13 @@ function validate(parsed, cfg) {
         + '번 나옵니다. 구체적인 것을 넣으세요.');
     }
   }
+
+  // 길이가 다 같으면 읽기가 지겹다. 세 번 돌려 보니 45개가 전부 위쪽 한계에 붙어 있었다
+  if (cfg.shortCount && rows.length && shortEnough < cfg.shortCount) {
+    problems.push(cfg.shortWords + ' 단어 이하인 문장이 ' + shortEnough + '개뿐입니다 ('
+      + cfg.shortCount + '개 이상이어야 합니다). 길이를 서로 다르게 하세요.');
+  }
+
   return problems;
 }
 

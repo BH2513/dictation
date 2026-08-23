@@ -220,6 +220,26 @@ check('겹치면 검사에서 잡는다',
     { style: 'formal', text: 'That timeline appears unrealistic to me.' }] })] }, CFG).slice(1),
   ['문장 1: casual 이 정답과 앞부분이 같습니다.']);
 
+console.log('\n길이가 다 비슷하면 잡는다');
+var SPREAD = { count: 3, minWords: 5, maxWords: 12, shortWords: 8, shortCount: 2 };
+function len(words) {   // 지정한 낱말 수로 두 문장짜리를 만든다
+  var out = [];
+  for (var i = 0; i < words - 1; i++) out.push('word');
+  return 'Yes. ' + out.join(' ') + '.';
+}
+check('둘이 짧으면 통과',
+  daily.validate({ sentences: [
+    row({ text: len(7) }), row({ text: len(8) }), row({ text: len(12) })] }, SPREAD)
+    .filter(function (p) { return p.indexOf('단어 이하') >= 0; }), []);
+check('하나만 짧으면 잡는다',
+  daily.validate({ sentences: [
+    row({ text: len(7) }), row({ text: len(11) }), row({ text: len(12) })] }, SPREAD)
+    .filter(function (p) { return p.indexOf('단어 이하') >= 0; }),
+  ['8 단어 이하인 문장이 1개뿐입니다 (2개 이상이어야 합니다). 길이를 서로 다르게 하세요.']);
+check('설정에 없으면 이 검사를 안 한다',
+  daily.validate({ sentences: [row({ text: len(7) })] }, { count: 1, minWords: 5, maxWords: 12 })
+    .filter(function (p) { return p.indexOf('단어 이하') >= 0; }), []);
+
 console.log('\n검수 — 만든 것을 한 번 더 읽히는 단계');
 var rev = daily.buildReviewPrompt({ sentences: [row()] }, { count: 5, minWords: 20, maxWords: 35 });
 check('초안이 지시문에 담긴다', rev.indexOf('That deadline is tough') >= 0, true);
@@ -227,6 +247,7 @@ check('관용구 오용을 보라고 한다', rev.indexOf('hit the spot') >= 0, 
 check('지적만 말고 고치라고 한다', rev.indexOf('직접 고쳐서 내놓으세요') >= 0, true);
 check('개수를 바꾸지 말라고 한다', rev.indexOf('문장 개수(5개)') >= 0, true);
 check('돈을 달러로 보라고 한다', rev.indexOf('돈이 달러로 적혀 있는가') >= 0, true);
+check('짧은 것을 늘리지 말라고 한다', rev.indexOf('짧은 것을 늘리지 마세요') >= 0, true);
 check('늘려 쓴 데를 잘라 내라고 한다', rev.indexOf('그 마디를 잘라 내세요') >= 0, true);
 check('아래쪽에 붙었다고 늘리지 말라고 한다',
   rev.indexOf('늘리지 마세요') >= 0, true);
@@ -387,6 +408,7 @@ check('UTC 로 같은 날 낮이면 그대로',
 console.log('\n지시문 — 조건이 실제로 담기는지');
 var prompt = daily.buildPrompt({
   count: 2, minWords: 20, maxWords: 35,
+  shortWords: 20, shortCount: 2,
   situations: ['회의에서 반대하기', '병원에서 증상 설명'],
   vocab: ['concentrated', 'threatened']
 });
@@ -411,6 +433,12 @@ check('that 이 무엇을 가리키는지 못 박는다',
   prompt.indexOf('무엇을 가리키는지 낱말 하나로 짚을 수 있어야') >= 0, true);
 check('난이도는 내용에서 나온다고 한다',
   prompt.indexOf('난이도는 길이가 아니라 내용에서') >= 0, true);
+check('길이를 서로 다르게 하라고 한다', prompt.indexOf('길이를 서로 다르게 하세요') >= 0, true);
+check('짧은 것을 쉽게 만들지 말라고 한다',
+  prompt.indexOf('짧은 것을 쉬운 것으로 만들지 마세요') >= 0, true);
+check('짧은 것 개수를 안 주면 그 대목을 아예 안 넣는다',
+  daily.buildPrompt({ count: 5, minWords: 12, maxWords: 28, situations: ['가'], vocab: [] })
+    .indexOf('길이를 서로 다르게') >= 0, false);
 check('한국에만 있는 것을 옮기지 말라고 한다',
   prompt.indexOf('한국에만 있는 것을 영어로 옮기지 마세요') >= 0, true);
 check('1차 2차를 round 로 옮기지 말라고 한다',

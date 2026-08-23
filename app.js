@@ -13,6 +13,8 @@
   var videos = [];
   var video = null;
   var current = -1;
+  var playable = [];        // 연습에 쓸 문장의 자리 번호만 모은 것
+  var posAt = {};           // 자리 번호 → 몇 번째 연습 문장인지
   var slow = false;
   var strict = false;       // SPEC 6: 기본은 관대 모드
   var audioOnly = false;    // 화면을 덮고 소리만 듣는다
@@ -107,6 +109,9 @@
     var videoId = parts[1] || '';
 
     stopWatch();
+    clipStopWatch();
+    clipCover(true);
+    if (clip && clipReady) { try { clip.pauseVideo(); } catch (e) {} }
     // 녹음은 화면을 옮기는 순간 버린다 (SPEC 2)
     if (dailyRecording && window.Recorder) { Recorder.discard(); dailyRecording = false; }
     if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
@@ -237,6 +242,52 @@
     });
   }
 
+  /* ------------------------------------------------ 연습에 못 쓰는 줄 (SPEC 8) */
+
+  /* 자막을 문장으로 자르면 "Hi." "Yeah." "Me too." 같은 토막이 잔뜩 나온다.
+     받아쓰기가 되지 않는데 목록의 네 개 중 하나를 차지해서 뒤 문장으로 가는 길만 막는다.
+     낱말 두 개 이하이거나 감탄사뿐인 줄은 연습에서 뺀다 (운영자 결정).
+
+     빼되 **자리 번호는 건드리지 않는다.** 문장카드와 진도가 자리 번호를 가리키고 있어서
+     번호가 밀리면 예전에 담아 둔 카드가 엉뚱한 문장을 가리키게 된다. 감추기만 한다. */
+
+  var FILLER = {};
+  (function () {
+    var list = ('oh ah aw ha haha hah heh hehe uh uhh um umm hm hmm mm mmm mhm huh eh er '
+      + 'wow whoa woo yay ooh oops yeah yea yep yes yup no nope nah okay ok alright '
+      + 'hey hi hello bye well right sure ow ouch shh ugh wait what').split(' ');
+    for (var i = 0; i < list.length; i++) FILLER[list[i]] = true;
+  })();
+
+  /* 글자나 숫자가 든 덩어리만 낱말로 센다. 줄표 하나짜리 조각은 낱말이 아니다 */
+  function lineWords(text) {
+    var raw = String(text || '').split(/\s+/);
+    var out = [];
+    for (var i = 0; i < raw.length; i++) {
+      if (/[A-Za-z0-9]/.test(raw[i])) out.push(raw[i]);
+    }
+    return out;
+  }
+
+  /* 줄 전체가 감탄사뿐인지. "No, no, no." 나 "Wait, wait, wait." 같은 것 */
+  function fillerOnly(words) {
+    for (var i = 0; i < words.length; i++) {
+      var parts = String(words[i]).toLowerCase().replace(/\u2019/g, "'").split(/[^a-z']+/);
+      for (var p = 0; p < parts.length; p++) {
+        var one = parts[p].replace(/'/g, '');
+        if (one && !FILLER[one]) return false;
+      }
+    }
+    return true;
+  }
+
+  function usableLine(s) {
+    if (!s) return false;
+    var w = lineWords(s.text);
+    if (w.length < 3) return false;
+    return !fillerOnly(w);
+  }
+
   /* ---------------------------------------------------------------- 듣기 */
 
   function showListen(pid, videoId, jumpTo) {
@@ -255,6 +306,7 @@
       video = data;
       $('listen-title').textContent = data.title || videoId;
       $('auto-note').style.display = (data.source === 'auto_captions') ? 'block' : 'none';
+      buildPlayable();
       drawSentences();
       ensurePlayer(videoId);
       if (!video.sentences || !video.sentences.length) {
@@ -263,8 +315,10 @@
       }
       loadProgress(profileId, videoId, function (at) {
         if (jumpTo !== null && jumpTo >= 0 && jumpTo < video.sentences.length) at = jumpTo;
+        at = snapPlayable(at);
+        if (at < 0) return;
         select(at, false);
-        if (at > 0) say('Picking up at sentence ' + (at + 1) + '.');
+        if (posAt[at]) say('Picking up at sentence ' + (posAt[at] + 1) + '.');
       });
     }, function (why) {
       notice($('sentence-list'), why === 'missing'
@@ -282,8 +336,40 @@
     if (on) scrollListTo(current);
   }
 
+  /* 연습에 쓸 문장만 골라 자리 번호를 모아 둔다. 원래 배열은 그대로 둔다 */
+  function buildPlayable() {
+    playable = [];
+    posAt = {};
+    var list = (video && video.sentences) || [];
+    for (var i = 0; i < list.length; i++) {
+      if (!usableLine(list[i])) continue;
+      posAt[i] = playable.length;
+      playable.push(i);
+    }
+    // 전부 걸러졌다면 원래대로 다 보여 준다. 빈 화면보다는 낫다
+    if (!playable.length) {
+      for (var k = 0; k < list.length; k++) { posAt[k] = playable.length; playable.push(k); }
+    }
+  }
+
+  /* 감춘 줄을 가리키는 자리 번호가 들어오면 (옛 진도나 카드) 다음 문장으로 옮긴다 */
+  function snapPlayable(idx) {
+    if (posAt[idx] !== undefined) return idx;
+    for (var i = 0; i < playable.length; i++) if (playable[i] > idx) return playable[i];
+    return playable.length ? playable[playable.length - 1] : -1;
+  }
+
+  /* 앞뒤로 옮기기. 감춘 줄은 건너뛴다 */
+  function stepSentence(delta) {
+    var pos = posAt[current];
+    if (pos === undefined) { select(snapPlayable(current), true); return; }
+    var to = pos + delta;
+    if (to < 0 || to >= playable.length) return;
+    select(playable[to], true);
+  }
+
   function listLength() {
-    return ((video && video.sentences) || []).length;
+    return playable.length;
   }
 
   function scrollListTo(idx) {
@@ -301,19 +387,19 @@
     clear(box);
     box.style.display = 'none';
     var list = video.sentences || [];
-    $('list-btn').textContent = 'Sentences (' + list.length + ')';
+    $('list-btn').textContent = 'Sentences (' + playable.length + ')';
     var frag = document.createDocumentFragment();
-    for (var i = 0; i < list.length; i++) {
-      (function (s, idx) {
+    for (var n = 0; n < playable.length; n++) {
+      (function (idx, pos) {
         var b = el('button', 'sentence');
         b.id = 'sentence-' + idx;
-        b.appendChild(el('span', 'no', (idx + 1) + '.'));
-        b.appendChild(document.createTextNode(s.text));
+        b.appendChild(el('span', 'no', (pos + 1) + '.'));
+        b.appendChild(document.createTextNode(list[idx].text));
         b.onclick = function () { toggleList(false); select(idx, true); };
         var li = document.createElement('li');
         li.appendChild(b);
         frag.appendChild(li);
-      })(list[i], i);
+      })(playable[n], n);
     }
     var ul = el('ul', 'list');
     ul.appendChild(frag);
@@ -324,6 +410,9 @@
   function select(idx, play) {
     var list = (video && video.sentences) || [];
     if (idx < 0 || idx >= list.length) return;
+    idx = snapPlayable(idx);
+    if (idx < 0) return;
+    var pos = posAt[idx];
 
     var old = $('sentence-' + current);
     if (old) old.className = 'sentence';
@@ -331,13 +420,13 @@
     var now = $('sentence-' + current);
     if (now) now.className = 'sentence playing';
     scrollListTo(current);
-    $('position').textContent = (idx + 1) + ' / ' + list.length;
-    $('position2').textContent = (idx + 1) + ' / ' + list.length;
+    $('position').textContent = (pos + 1) + ' / ' + playable.length;
+    $('position2').textContent = (pos + 1) + ' / ' + playable.length;
 
     resetAnswer();
 
-    $('prev-btn').disabled = (idx === 0);
-    $('next-btn').disabled = (idx === list.length - 1);
+    $('prev-btn').disabled = (pos === 0);
+    $('next-btn').disabled = (pos === playable.length - 1);
 
     if (progress && window.Store && Store.available()) {
       progress.at = current;
@@ -1025,6 +1114,8 @@
   var dailyDay = null;      // 지금 보고 있는 날의 파일
   var dailyAt = 0;
   var dailyHeard = '';      // 음성인식이 받아적은 내 말
+  var dailyTyped = '';      // 대사 갈래에서 영어로 쳐 본 것
+  var dailyResult = null;   // 그 채점 결과. 다시 그려도 지워지지 않게 남긴다
   var dailyShown = false;   // 정답을 봤는지
   var dailyRecording = false;
   var dailyProgress = null;
@@ -1146,27 +1237,41 @@
   }
 
   function emptyDaily(pid, box) {
+    justTabs(pid);
     clear(box);
-    box.appendChild(dailyTabs(pid, ''));
     notice2(box, DAILY_EMPTY);
+  }
+
+  /* 보여 줄 문장이 없을 때. 탭만 남기고 장면 재생기는 접는다 */
+  function justTabs(pid) {
+    var head = $('daily-head');
+    clear(head);
+    head.appendChild(dailyTabs(pid, ''));
+    setupClip(pid, null);
+  }
+
+  function emptyShows(pid) {
+    var box = $('daily-body');
+    justTabs(pid);
+    clear(box);
+    notice2(box, SHOWS_EMPTY);
   }
 
   /* 그 날에 하던 묶음이 있으면 그것을, 없으면 아직 안 쓴 묶음을 하나 꺼내 준다.
      날짜는 "공부한 날" 이다 — 문장을 만든 날이 아니다 (운영자 결정). */
   function showShows(pid, date, idx) {
-    var box = $('daily-body');
     getJSON('data/daily/' + pid + '/index.json', function (rows) {
       dailyIndex = rows || [];
       var any = false;
       for (var h = 0; h < dailyIndex.length; h++) if (dailyIndex[h].hasShows) any = true;
       if (!any) {
-        clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY); return;
+        emptyShows(pid); return;
       }
       if (!window.Store || !Store.available()) {
         dailyPlans = [];
         var one = unusedShow();
         if (one) openShow(pid, one, '', idx);
-        else { clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY); }
+        else emptyShows(pid);
         return;
       }
       Store.listPlans(pid, function (plans) {
@@ -1176,10 +1281,10 @@
         dailyPlans = [];
         var two = unusedShow();
         if (two) openShow(pid, two, '', idx);
-        else { clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY); }
+        else emptyShows(pid);
       });
     }, function () {
-      clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY);
+      emptyShows(pid);
     });
   }
 
@@ -1221,9 +1326,7 @@
   function openShow(pid, showId, date, idx) {
     dailyDate = date;
     getJSON(dailyFile(pid, showId, 'shows'), function (day) {
-      if (!day || !day.sentences || !day.sentences.length) {
-        clear($('daily-body')); $('daily-body').appendChild(dailyTabs(pid, '')); notice2($('daily-body'), SHOWS_EMPTY); return;
-      }
+      if (!day || !day.sentences || !day.sentences.length) { emptyShows(pid); return; }
       dailyDay = day;
       dailyAt = 0;
       if (idx !== null && idx !== undefined && !isNaN(idx)) {
@@ -1284,10 +1387,13 @@
   }
 
   function noMoreSets(pid, date) {
+    var head = $('daily-head');
     var box = $('daily-body');
+    clear(head);
     clear(box);
-    box.appendChild(dailyTabs(pid, ''));
-    box.appendChild(dateRow(pid));
+    head.appendChild(dailyTabs(pid, ''));
+    head.appendChild(dateRow(pid));
+    setupClip(pid, null);
     var n = el('div', 'notice');
     n.appendChild(document.createTextNode(
       'Every set has been used. A new one is made every morning — or open the maker page '
@@ -1393,20 +1499,220 @@
 
   function resetDailyAnswer() {
     dailyHeard = '';
+    dailyTyped = '';
+    dailyResult = null;
     dailyShown = false;
     if (window.Recorder && dailyRecording) { Recorder.discard(); }
     dailyRecording = false;
     if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
   }
 
+  /* ------------------------------------------------- 대사가 나온 장면 (SPEC 6-2)
+
+     드라마 대사는 배우가 실제로 한 말이라 그 자리가 영상에 있다. 정답을 펴기 전에
+     그 장면을 그대로 틀어 준다 — 상황을 보고 나서 옮기는 것이 훨씬 낫기 때문이다.
+     **저절로 재생하지는 않는다.** 한국어만 보고 하고 싶은 날에는 그냥 지나칠 수 있어야 한다.
+
+     연습 화면 재생기와 따로 만든다. iframe 은 화면 사이를 옮기면 다시 읽히기 때문에
+     하나를 두 화면이 나눠 쓸 수가 없다. 대신 여기서도 재생기는 한 번만 만들고
+     영상은 cueVideoById 로 갈아 끼운다. */
+
+  var clip = null;          // 장면 재생기
+  var clipReady = false;
+  var clipWant = null;      // 유튜브 API 가 아직 안 왔을 때 기다리는 영상
+  var clipTimer = null;     // 끝 지점 감시
+  var clipEnd = 0;
+  var clipStartedAt = 0;
+  var clipSource = {};      // 영상 ID → 그 영상의 문장 목록. 한 번만 읽는다
+  var clipNow = null;       // 지금 화면에 붙어 있는 장면 {line, scene}
+  var clipKey = '';         // 그 장면이 어느 문장의 것인지 (영상ID|자리번호)
+
+  function clipStopWatch() {
+    if (clipTimer) { clearInterval(clipTimer); clipTimer = null; }
+  }
+
+  function clipCover(on) {
+    var c = $('daily-cover');
+    if (c) c.className = on ? 'cover' : 'cover off';
+  }
+
+  /* 자막이 켜지면 정답이 화면에 그대로 나온다. setOption 은 부르면 안 된다 — 도로 올라온다 */
+  function clipKillCaptions() {
+    if (!clip) return;
+    try { clip.unloadModule('captions'); } catch (e) {}
+    try { clip.unloadModule('cc'); } catch (e) {}
+  }
+
+  function clipKillSoon() {
+    clipKillCaptions();
+    setTimeout(clipKillCaptions, 400);
+    setTimeout(clipKillCaptions, 1200);
+  }
+
+  function clipLoadedId() {
+    try { return (clip.getVideoData() || {}).video_id || ''; } catch (e) { return ''; }
+  }
+
+  function clipEnsure(videoId) {
+    if (!apiReady) { clipWant = videoId; return; }
+    if (clip) {
+      if (clipLoadedId() !== videoId) {
+        clipStopWatch();
+        clipCover(true);
+        try { clip.cueVideoById(videoId); } catch (e) {}
+        clipKillSoon();
+      }
+      return;
+    }
+    clip = new YT.Player('daily-player', {
+      width: '100%',
+      height: '100%',
+      videoId: videoId,
+      playerVars: {
+        playsinline: 1, rel: 0, modestbranding: 1, controls: 0,
+        disablekb: 1, fs: 0, iv_load_policy: 3, cc_load_policy: 0
+      },
+      events: {
+        onReady: function () { clipReady = true; clipKillSoon(); },
+        onStateChange: function (e) {
+          if (e.data === YT.PlayerState.PLAYING) { clipCover(false); clipKillSoon(); }
+          else if (e.data === YT.PlayerState.ENDED) { clipStopWatch(); clipCover(true); }
+          else if (e.data === YT.PlayerState.PAUSED) {
+            // 자리를 옮기는 순간에도 잠깐 멈춤으로 잡힌다. 사용자가 멈춘 것이 아니다
+            if ((new Date()).getTime() - clipStartedAt > 800) { clipStopWatch(); clipCover(true); }
+          }
+        },
+        onError: function () {
+          clipStopWatch();
+          dailySay('This scene could not be played.');
+        }
+      }
+    });
+  }
+
+  function clipPlay(from, to) {
+    if (!clipReady) { dailySay('The scene is still loading. Try again in a moment.'); return; }
+    clipStopWatch();
+    clipStartedAt = (new Date()).getTime();
+    clipEnd = to;
+    // 순서가 중요하다 — 재생을 먼저 시키고 자리를 옮긴다. 반대로 하면 모바일 사파리가
+    // 재생 명령을 씹어서 자리만 옮겨지고 소리가 안 난다
+    clip.playVideo();
+    clip.seekTo(Math.max(0, from), true);
+    clip.setPlaybackRate(slow ? 0.75 : 1);
+    var armed = false, waited = 0;
+    clipTimer = setInterval(function () {
+      if (!clip || typeof clip.getCurrentTime !== 'function') return;
+      var t = clip.getCurrentTime();
+      if (!armed) {
+        waited += TICK_MS;
+        if (t < clipEnd - STOP_MARGIN || waited > 3000) armed = true;
+        return;
+      }
+      if (t >= clipEnd - STOP_MARGIN) {
+        clipStopWatch();
+        clip.pauseVideo();
+      }
+    }, TICK_MS);
+    clipNudge(0);
+  }
+
+  function clipNudge(tries) {
+    if (tries > 6) return;
+    setTimeout(function () {
+      if (!clipTimer || !clip || typeof clip.getPlayerState !== 'function') return;
+      var st = clip.getPlayerState();
+      if (st !== YT.PlayerState.PLAYING && st !== YT.PlayerState.BUFFERING) {
+        clip.playVideo();
+        clipNudge(tries + 1);
+      }
+    }, 250);
+  }
+
+  /* 앞뒤로 한 마디씩 붙여 장면을 만든다. 그 대사만 틀면 무슨 상황인지 알 수 없다.
+     "Yeah." 같은 토막은 건너뛰고 말이 되는 줄까지 간다 — 0.3초짜리 앞 줄은 장면이 아니다. */
+  function sceneAround(list, i) {
+    var from = i, to = i;
+    for (var a = i - 1; a >= 0; a--) { if (usableLine(list[a])) { from = a; break; } }
+    for (var b = i + 1; b < list.length; b++) { if (usableLine(list[b])) { to = b; break; } }
+    return { from: from, to: to };
+  }
+
+  /* 이 문장에 붙일 장면을 준비한다. 대사가 아니거나 온 곳을 모르면 통째로 감춘다 */
+  function setupClip(pid, s) {
+    var box = $('daily-clip');
+    if (!box) return;
+    var src = s && s.from;
+    var ok = src && src.videoId && s.start !== null && s.start !== undefined;
+    var key = ok ? (src.videoId + '|' + src.i) : '';
+
+    // 같은 문장을 다시 그린 것뿐이면 손대지 않는다. 정답을 펴는 순간
+    // 보고 있던 장면이 멈춰 버리면 안 된다
+    if (key && key === clipKey && clipNow) return;
+    clipKey = key;
+
+    clipStopWatch();
+    clipCover(true);
+    if (clip && clipReady) { try { clip.pauseVideo(); } catch (e) {} }
+    clipNow = null;
+    $('clip-scene').disabled = true;
+    $('clip-one').disabled = true;
+
+    if (!ok) {
+      box.style.display = 'none';
+      return;
+    }
+    box.style.display = 'block';
+    $('clip-note').textContent = 'Loading the scene\u2026';
+    clipEnsure(src.videoId);
+
+    if (clipSource[src.videoId]) { clipArm(s); return; }
+    getJSON('data/videos/' + pid + '/' + src.videoId + '.json', function (data) {
+      clipSource[src.videoId] = (data && data.sentences) || [];
+      if (dailyDay && dailyDay.sentences[dailyAt] === s) clipArm(s);
+    }, function () {
+      clipSource[src.videoId] = [];
+      if (dailyDay && dailyDay.sentences[dailyAt] === s) clipArm(s);
+    });
+  }
+
+  function clipArm(s) {
+    var list = clipSource[s.from.videoId] || [];
+    var one = list[s.from.i];
+    // 영상 파일을 못 읽었거나 문장이 옮겨졌으면 그 대사만 틀어 준다
+    var same = one && String(one.text || '').replace(/\s+/g, ' ') === String(s.text).replace(/\s+/g, ' ');
+    clipNow = { line: { start: s.start, end: s.end }, scene: null };
+    if (same) {
+      var r = sceneAround(list, s.from.i);
+      if (r.from !== s.from.i || r.to !== s.from.i) {
+        clipNow.scene = { start: list[r.from].start, end: list[r.to].end };
+      }
+    }
+    $('clip-note').textContent = clipNow.scene
+      ? 'The line you are practising is the middle one.'
+      : 'Only this line — the lines around it could not be found.';
+    $('clip-scene').disabled = false;
+    $('clip-one').disabled = false;
+    $('clip-scene').onclick = function () {
+      var r = clipNow.scene || clipNow.line;
+      clipPlay(r.start - lead, r.end + TAIL);
+    };
+    $('clip-one').onclick = function () {
+      clipPlay(clipNow.line.start - lead, clipNow.line.end + TAIL);
+    };
+    $('daily-cover').onclick = $('clip-scene').onclick;
+  }
+
   function drawDaily(pid) {
+    var head = $('daily-head');
     var box = $('daily-body');
+    clear(head);
     clear(box);
-    box.appendChild(dailyTabs(pid, ''));
+    head.appendChild(dailyTabs(pid, ''));
     var day = dailyDay;
     var s = day.sentences[dailyAt];
 
-    box.appendChild(dateRow(pid));
+    head.appendChild(dateRow(pid));
 
     var mark = dailyProgress && dailyProgress.sentences ? dailyProgress.sentences[dailyAt] : null;
     var where = (dailyAt + 1) + ' of ' + day.sentences.length;
@@ -1415,9 +1721,12 @@
     }
     if (mark === 'ok') where += ' · done';
     else if (mark === 'miss') where += ' · tried';
-    box.appendChild(el('div', 'count', where));
+    head.appendChild(el('div', 'count', where));
 
-    if (s.situation) box.appendChild(el('div', 'hint', s.situation));
+    if (s.situation) head.appendChild(el('div', 'hint', s.situation));
+
+    // 장면은 한국어보다 위에 둔다. 보고 나서 옮기는 것이 순서다
+    setupClip(pid, s);
 
     box.appendChild(el('div', 'kotask', s.ko || ''));
 
@@ -1468,7 +1777,12 @@
     }
 
     /* 채점은 하지 않는다. 이건 옮겨 말하기 연습이라 정답이 하나가 아니고,
-       글자로 맞히는 것은 목적이 아니다 (운영자 결정). 말해 보고 견주기만 한다. */
+       글자로 맞히는 것은 목적이 아니다 (운영자 결정). 말해 보고 견주기만 한다.
+
+       다만 드라마 대사는 배우가 실제로 한 말이라 정답이 하나다. 그쪽에서는 쳐 보고
+       채점까지 한다 (운영자 결정). */
+    if (dailyKind === 'shows') box.appendChild(dailyWriteBlock(pid, s));
+
     var row = el('div', 'buttons');
     var rb = el('button', 'primary', dailyShown ? 'Answer shown' : 'Show answer');
     rb.disabled = dailyShown;
@@ -1508,6 +1822,87 @@
     window.scrollTo(0, 0);
   }
 
+  /* 영어로 쳐 보는 칸. 대사 갈래에서만 그린다.
+     Check 를 누르면 받아쓰기 화면과 같은 방식으로 정답이 나오고 틀린 낱말만 칠해진다. */
+  function dailyWriteBlock(pid, s) {
+    var write = el('div', 'speak');
+    write.appendChild(el('div', 'rowlabel', 'Write it in English'));
+
+    var ta = document.createElement('textarea');
+    ta.id = 'daily-input';
+    ta.rows = 2;
+    ta.value = dailyTyped;
+    ta.setAttribute('placeholder', 'Type the line');
+    ta.setAttribute('autocomplete', 'off');
+    ta.setAttribute('autocapitalize', 'off');
+    ta.setAttribute('autocorrect', 'off');
+    ta.setAttribute('spellcheck', 'false');
+    write.appendChild(ta);
+
+    var b = el('div', 'buttons');
+    var check = el('button', 'half', 'Check');
+    check.onclick = function () { checkDaily(pid); };
+    b.appendChild(check);
+    write.appendChild(b);
+
+    var now = el('div', 'now empty');
+    now.id = 'daily-now';
+    now.appendChild(document.createTextNode('Write what you think the line was, then press Check.'));
+    write.appendChild(now);
+
+    // 다시 그려도 방금 본 채점 결과가 사라지지 않게 한다
+    if (dailyResult) drawDailyGraded(dailyResult, now);
+    return write;
+  }
+
+  function checkDaily(pid) {
+    var s = dailyDay && dailyDay.sentences[dailyAt];
+    if (!s) return;
+    var ta = $('daily-input');
+    dailyTyped = ta ? ta.value : '';
+    if (!dailyTyped.replace(/\s/g, '')) {
+      dailySay('Write something first, or press Show answer.');
+      return;
+    }
+    dailyResult = grade(s.text, dailyTyped, strict);
+    drawDailyGraded(dailyResult);
+    recordDailyResult(pid, dailyResult);
+    dailySay(dailyResult.right + ' of ' + dailyResult.total + ' words correct.');
+  }
+
+  function drawDailyGraded(r, where) {
+    var box = where || $('daily-now');
+    if (!box) return;
+    clear(box);
+    box.className = 'now';
+    for (var i = 0; i < r.words.length; i++) {
+      box.appendChild(el('span', (r.ok[i] === null || r.ok[i]) ? 'w' : 'w bad', r.words[i]));
+      box.appendChild(document.createTextNode(' '));
+    }
+    if (r.extra.length) {
+      box.appendChild(el('div', 'extra', 'Not in the line: ' + r.extra.join(', ')));
+    }
+  }
+
+  /* 대사는 정답이 하나라 맞고 틀림을 남긴다. 틀린 낱말은 오답 리포트의 재료다 (SPEC 4-3) */
+  function recordDailyResult(pid, r) {
+    if (!window.Store || !Store.available() || !dailyProgress || !dailyDay) return;
+    var correct = (r.right === r.total);
+    dailyProgress.at = dailyAt;
+    var was = dailyProgress.sentences[dailyAt];
+    if (!was || was === 'skip') dailyProgress.sentences[dailyAt] = correct ? 'ok' : 'miss';
+    Store.saveProgress(dailyProgress, noteStorage);
+    Store.bumpDay(pid, noteStorage);
+    if (correct) return;
+    var missed = [];
+    for (var i = 0; i < r.words.length; i++) {
+      if (r.ok[i]) continue;
+      var w = r.words[i].replace(/^[^A-Za-z0-9']+/, '').replace(/[^A-Za-z0-9']+$/, '');
+      if (w) missed.push(w);
+    }
+    Store.addMisses(pid, dailyDay.videoId, dailyAt, missed, noteStorage);
+  }
+
   /* 정답 · 다른 표현 · 설명. 정답을 보기 전에는 그리지 않는다 */
   function dailyAnswerBlock(s) {
     var wrap = el('div', 'answer');
@@ -1531,10 +1926,10 @@
       wrap.appendChild(b);
     }
 
-    // 실제 대사는 영상에 그 자리가 있다. 배우 목소리로 들어 볼 수 있게 한다
+    // 장면은 위에서 이미 들을 수 있다. 여기서는 그 영상 전체로 건너간다
     if (s.from && s.from.videoId) {
       var open = el('div', 'buttons');
-      var ob = el('button', 'half', 'Hear it in the video');
+      var ob = el('button', 'half', 'Practise this video');
       ob.onclick = function () { go('#/' + profileId + '/' + s.from.videoId + '/' + s.from.i); };
       open.appendChild(ob);
       wrap.appendChild(open);
@@ -1940,20 +2335,21 @@
   /* 어디까지 했는지 문장 목록과 위치 표시에 남긴다 */
   function markDone() {
     if (!progress) return;
-    var list = (video && video.sentences) || [];
     var done = 0;
     for (var k in progress.sentences) {
-      if (progress.sentences.hasOwnProperty(k)) done++;
+      if (!progress.sentences.hasOwnProperty(k)) continue;
+      if (posAt[k] === undefined) continue;   // 감춘 줄에 남은 옛 기록은 세지 않는다
+      done++;
     }
     var el2 = $('done-count');
     if (el2) {
-      el2.textContent = list.length ? (done + ' of ' + list.length + ' practised') : '';
+      el2.textContent = playable.length ? (done + ' of ' + playable.length + ' practised') : '';
     }
-    for (var i = 0; i < list.length; i++) {
-      var b = $('sentence-' + i);
+    for (var i = 0; i < playable.length; i++) {
+      var at = playable[i];
+      var b = $('sentence-' + at);
       if (!b) continue;
-      var mark = progress.sentences[i];
-      b.setAttribute('data-done', mark || '');
+      b.setAttribute('data-done', progress.sentences[at] || '');
     }
   }
 
@@ -2397,7 +2793,7 @@
     var key = ev.key || '';
     if (key === 'Enter' && !ev.shiftKey && !ev.altKey) {
       if (ev.preventDefault) ev.preventDefault();
-      if (checked) select(current + 1, true);
+      if (checked) stepSentence(1);
       else checkAnswer();
       return false;
     }
@@ -2425,6 +2821,7 @@
   window.onYouTubeIframeAPIReady = function () {
     apiReady = true;
     if (wantPlay) { var v = wantPlay; wantPlay = null; ensurePlayer(v); }
+    if (clipWant) { var c = clipWant; clipWant = null; clipEnsure(c); }
   };
 
   /* 데스크탑·폰에 앱으로 설치할 수 있게 한다.
@@ -2443,8 +2840,8 @@
     $('play-btn').onclick = playCurrent;
     $('replay-btn').onclick = playCurrent;
     $('slow-btn').onclick = toggleSlow;
-    $('prev-btn').onclick = function () { select(current - 1, true); };
-    $('next-btn').onclick = function () { select(current + 1, true); };
+    $('prev-btn').onclick = function () { stepSentence(-1); };
+    $('next-btn').onclick = function () { stepSentence(1); };
     $('change-profile').onclick = function () { go('#/'); };
     $('report-btn').onclick = function () { go('#/' + profileId + '/report'); };
     $('report-back').onclick = function () { go('#/' + profileId); };

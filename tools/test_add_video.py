@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from add_video import (extract_video_id, parse_vtt, words_from_cues,
                        units_from_words, split_sentences, to_sentences,
                        attach_korean, pick_korean, rate_limited,
-                       looks_punctuated, clean)
+                       looks_punctuated, clean, usable_line, drop_unusable)
 
 FAILED = []
 
@@ -370,6 +370,39 @@ check("절반쯤 있으면 쓸 수 있다고 본다",
       ends_ratio(["One done.", "two not", "Three done."]) >= 0.5, True)
 check("따옴표로 끝나도 문장부호로 본다",
       ends_ratio(['He said "no."']) >= 0.5, True)
+
+
+# ------------------------------------------------- 연습에 못 쓰는 줄 (app.js 와 같은 규칙)
+
+print("\n너무 짧은 줄은 연습에서 뺀다")
+for one in ["Hi.", "Yeah.", "Me too.", "Oh, hey.", "It's mine.", "What?", "Thieves."]:
+    check("빼기: %s" % one, usable_line(one), False)
+for one in ["Oh, I know.", "I love you.", "Are you okay?", "Oh, my god."]:
+    check("쓰기: %s" % one, usable_line(one), True)
+
+print("\n감탄사뿐인 줄은 길어도 뺀다")
+for one in ["No, no, no.", "Whoa, whoa, whoa.", "Wait, wait, wait.", "Okay, bye-bye."]:
+    check("빼기: %s" % one, usable_line(one), False)
+check("알맹이가 있으면 쓴다", usable_line("Oh, no, you did not."), True)
+
+print("\n뺀 뒤에는 번호를 다시 매긴다")
+kept, dropped = drop_unusable([
+    {"i": 0, "text": "Hi."},
+    {"i": 1, "text": "I have something to tell you."},
+    {"i": 2, "text": "Yeah."},
+    {"i": 3, "text": "It can wait until tomorrow."},
+])
+check("남은 개수", len(kept), 2)
+check("뺀 개수", dropped, 2)
+check("번호", [k["i"] for k in kept], [0, 1])
+
+print("\n웃음소리와 노래는 글자에 남지 않는다")
+check("(laughs) 는 경계 표시로", clean("Sure. (laughs) I will."), "Sure. \u2016 I will.")
+check("(LAUGHTER) 도 마찬가지", clean("(LAUGHTER)"), "\u2016")
+check("음표로 감싼 가사", clean("\u266a all the lonely people \u266a"), "\u2016")
+check("음표 하나만 있어도 지운다", clean("\u266a la la la"), "\u2016")
+check("괄호 안 소리 표시가 사라지면 문장은 남는다",
+      usable_line(clean("(sighs) I really need a break.")), True)
 
 
 # ---------------------------------------------------------------- 결과

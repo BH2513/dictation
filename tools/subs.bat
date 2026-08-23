@@ -3,7 +3,7 @@ rem 윈도우에서 자막 등록: subs "C:\자막폴더" 이름
 setlocal
 if "%~2"=="" (
   echo 사용법: subs "자막폴더" 이름
-  echo 예:     subs "C:\Users\bh\Desktop\자막" 병훈
+  echo 예:     subs "C:\Users\bh\Desktop\자막" bh
   exit /b 1
 )
 where python >nul 2>nul

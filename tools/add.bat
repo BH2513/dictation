@@ -3,7 +3,7 @@ rem 윈도우에서 영상 등록: add "유튜브주소" 이름
 setlocal
 if "%~2"=="" (
   echo 사용법: add "유튜브주소" 이름
-  echo 예:     add "https://www.youtube.com/watch?v=SW2bVwdr8Zg" 병훈
+  echo 예:     add "https://www.youtube.com/watch?v=SW2bVwdr8Zg" bh
   exit /b 1
 )
 where python >nul 2>nul

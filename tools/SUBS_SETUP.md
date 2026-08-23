@@ -103,10 +103,10 @@ python tools\add_subs.py "C:\Users\bh\Desktop\자막" --dry-run
 ### 진짜 올리기
 
 ```
-subs "C:\Users\bh\Desktop\자막" 병훈
+subs "C:\Users\bh\Desktop\자막" bh
 ```
 
-(`병훈` 은 앱에서 쓰는 프로필 이름입니다.)
+(`bh` 은 앱에서 쓰는 프로필 이름입니다.)
 
 ---
 

@@ -199,19 +199,12 @@ check('대명사가 다섯을 넘으면 잡는다',
     text: 'It was that thing. This is it, with that among these too.' })] }, CFG).slice(1),
   ['문장 1: it/this/that 이 7번 나옵니다. 구체적인 것을 넣으세요.']);
 
-console.log('\n앞 문장 전체를 that 으로 받아 이어 붙인 자리');
-check('and that 뒤에 동사가 오면 잡는다',
-  daily.gluedOn('If I said yes I would do a rushed job, and that helps nobody.'), true);
-check('and that was that 도 잡는다',
-  daily.gluedOn('I would open the fridge and that was that.'), true);
-check('목적을 나타내는 so that 은 통과',
-  daily.gluedOn('I left early so that I could get some sleep.'), false);
-check('it 으로 자연스럽게 이은 것은 통과',
-  daily.gluedOn('I banged on the ceiling, but it did not do anything.'), false);
-check('검사에서도 잡는다',
+// 자연스러움은 글자 모양으로 못 잡는다. 'and that was that' 은 제자리에 쓰면 멀쩡한 말이고
+// 'and that helps nobody' 가 나쁜 것은 시제가 안 맞아서지 그 글자 때문이 아니다.
+// 기계는 그 둘을 구별하지 못하므로 이 검사는 두지 않는다 — 소리내어 읽는 단계가 맡는다
+check('and that 이 들어갔다고 걸리지 않는다',
   daily.validate({ sentences: [row({
-    text: 'I said yes to them, and that helps nobody at all.' })] }, CFG).slice(1),
-  ['문장 1: 앞 문장 전체를 that 으로 받아 이어 붙였습니다. 그 부분을 고치세요.']);
+    text: 'We left the party early, and that was that.' })] }, CFG).slice(1), []);
 
 console.log('\ncasual 이 정답과 겹치는지');
 check('앞 네 낱말이 같으면 같은 문장으로 본다',
@@ -234,11 +227,51 @@ check('관용구 오용을 보라고 한다', rev.indexOf('hit the spot') >= 0, 
 check('지적만 말고 고치라고 한다', rev.indexOf('직접 고쳐서 내놓으세요') >= 0, true);
 check('개수를 바꾸지 말라고 한다', rev.indexOf('문장 개수(5개)') >= 0, true);
 check('늘려 쓴 데를 잘라 내라고 한다', rev.indexOf('그 마디를 잘라 내세요') >= 0, true);
-check('이어 붙인 that 을 보라고 한다', rev.indexOf('that 하나로 받아 이어 붙였으면') >= 0, true);
-check('casual 이 더 나으면 정답을 다시 쓰라고 한다',
-  rev.indexOf('casual 쪽이 더 사람 말 같으면') >= 0, true);
 check('아래쪽에 붙었다고 늘리지 말라고 한다',
   rev.indexOf('늘리지 마세요') >= 0, true);
+// 영어는 앞 단계에서 이미 읽혔다. 여기서는 나머지를 영어에 맞추는 것이 일이다
+check('영어를 다시 손보지 말라고 한다',
+  rev.indexOf('"text" 를 다시 손보려 하지 말고') >= 0, true);
+check('casual 과 견주라고 하지 않는다',
+  rev.indexOf('casual 쪽이 더 사람 말 같으면') >= 0, false);
+
+console.log('\n소리내어 읽기 — 영어만 따로 떼어 읽히는 단계');
+var draft = { sentences: [
+  { text: 'I did nothing all weekend.', ko: '주말에 아무것도 안 했어.', situation: '가',
+    note: '**nothing** 은 아무것도 아니라는 뜻입니다.',
+    alts: [{ style: 'casual', text: 'Zero plans. Zero regrets.' },
+           { style: 'formal', text: 'I rested for the entire weekend.' }] },
+  { text: 'The chair still has not shown up.', ko: '의자가 아직도 안 왔어.', situation: '나',
+    note: '**shown up** 은 나타났다는 뜻입니다.', alts: [] }] };
+var al = daily.buildAloudPrompt(draft);
+check('영어가 들어간다', al.indexOf('I did nothing all weekend.') >= 0, true);
+check('한국어는 안 보여 준다', al.indexOf('주말에 아무것도 안 했어') >= 0, false);
+check('상황도 안 보여 준다', al.indexOf('situation') >= 0, false);
+check('alts 도 안 보여 준다', al.indexOf('Zero regrets') >= 0, false);
+check('묻는 것이 하나뿐이라고 한다',
+  al.indexOf('사람이 실제로 이렇게 말합니까') >= 0, true);
+check('걸릴 데가 없으면 두라고 한다', al.indexOf('그대로 두세요') >= 0, true);
+check('개수를 못 박는다', al.indexOf('**2개**') >= 0, true);
+
+var alSchema = daily.buildAloudSchema({ count: 5 });
+check('영어만 돌려받는다', alSchema.required, ['texts']);
+check('개수를 형식으로도 못 박는다',
+  [alSchema.properties.texts.minItems, alSchema.properties.texts.maxItems], [5, 5]);
+
+var merged = daily.applyAloud(draft, { texts: [
+  'I did absolutely nothing all weekend.', 'The chair still has not shown up.'] });
+check('고친 영어가 들어간다', merged.sentences[0].text,
+  'I did absolutely nothing all weekend.');
+check('안 고친 것은 그대로', merged.sentences[1].text, 'The chair still has not shown up.');
+check('한국어와 note 는 건드리지 않는다',
+  [merged.sentences[0].ko, merged.sentences[0].situation], ['주말에 아무것도 안 했어.', '가']);
+check('몇 개를 고쳤는지 센다', merged.aloudChanged, 1);
+check('안 고쳤으면 0', daily.applyAloud(draft, { texts: [
+  'I did nothing all weekend.', 'The chair still has not shown up.'] }).aloudChanged, 0);
+check('개수가 어긋나면 손대지 않는다',
+  daily.applyAloud(draft, { texts: ['One only.'] }), null);
+check('빈 문장이 오면 손대지 않는다',
+  daily.applyAloud(draft, { texts: ['Fine.', '  '] }), null);
 
 console.log('\n어떤 모델이 답했는지 기록에 남기기');
 var model = require('./daily_model').modelOf;
@@ -371,7 +404,7 @@ check('쉼표로 잇지 말라고 한다', prompt.indexOf('쉼표로 계속 이�
 check('규칙을 채우려고 늘리지 말라고 한다',
   prompt.indexOf('채워야 하는 양이 아닙니다') >= 0, true);
 check('that 이 무엇을 가리키는지 못 박는다',
-  prompt.indexOf('앞 문장 전체를 that 하나로 받지 마세요') >= 0, true);
+  prompt.indexOf('무엇을 가리키는지 낱말 하나로 짚을 수 있어야') >= 0, true);
 check('난이도는 내용에서 나온다고 한다',
   prompt.indexOf('난이도는 길이가 아니라 내용에서') >= 0, true);
 check('구체적으로 쓰라고 한다', prompt.indexOf('it, that, this 로 얼버무리지') >= 0, true);

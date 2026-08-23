@@ -133,11 +133,8 @@ function buildPrompt(opts) {
   lines.push('  말을 늘리거나 덧붙이지 마세요. 할 말이 끝났으면 거기서 끝냅니다.');
   lines.push('  **한 문장으로 끝나도 됩니다.** 두 문장이 자연스러우면 두 문장으로 쓰세요.');
   lines.push('  다만 **쉼표로 계속 이으면 안 됩니다** \u2014 한 문장에 쉼표가 세 개를 넘으면 나누세요.');
-  lines.push('- **문장을 억지로 이어 붙이지 마세요.** 뒤에 한 마디 더 붙이려고');
-  lines.push('  \'and that ~\' \'so that ~\' 같은 것을 달면 그 자리가 바로 어색해집니다.');
-  lines.push('  ("and that helps nobody", "and that was that" 처럼 나간 적이 있습니다.)');
   lines.push('- **that, it, this 는 무엇을 가리키는지 낱말 하나로 짚을 수 있어야 합니다.**');
-  lines.push('  앞 문장 전체를 that 하나로 받지 마세요. 무엇을 말하는지 흐려집니다.');
+  lines.push('  앞 문장 전체를 that 하나로 받으면 무엇을 말하는지 흐려집니다.');
   lines.push('- **구체적으로 쓰세요.** it, that, this 로 얼버무리지 마세요.');
   lines.push('  무엇을 시켰는지, 몇 시였는지, 무슨 요일이었는지 \u2014 실제 물건과 숫자를 넣으세요.');
   lines.push('  구체적인 것이 없으면 영어가 대명사 투성이가 되고 어색해집니다.');
@@ -295,6 +292,97 @@ function buildReviewSchema(cfg) {
   };
 }
 
+/* ------------------------------------------------------------------ 소리내어 읽기
+
+   검수 단계는 볼 것이 열 가지쯤 된다 — 관용구, 한국어, alts, note, 단어 수.
+   그 목록 안에서는 "이 영어를 사람이 실제로 그렇게 말하나" 가 아홉 가지 중 하나가 되어
+   묻히다. 그래서 그것만 묻는 자리를 따로 둔다.
+
+   **영어만 보여 준다.** 한국어와 상황을 같이 주면 "번역이 맞느냐" 를 보게 되고,
+   그러면 어색한 영어도 "한국어를 잘 옮겼으니 괜찮다" 로 넘어간다.
+   견줄 것을 아예 없애야 남는 질문이 하나가 된다 — 사람이 이렇게 말하나. */
+
+function buildAloudPrompt(draft) {
+  var rows = (draft && draft.sentences) || [];
+  var lines = [];
+
+  lines.push('당신은 영어가 모국어인 사람입니다. 아래 영어를 하나씩 소리내어 읽어 주세요.');
+  lines.push('');
+  lines.push('묻는 것은 하나뿐입니다 \u2014 **사람이 실제로 이렇게 말합니까?**');
+  lines.push('');
+  lines.push('문법을 보는 것이 아닙니다. 문법은 이미 맞습니다.');
+  lines.push('뜻을 보는 것도 아닙니다. 뜻도 이미 맞습니다.');
+  lines.push('**입으로 소리내어 읽었을 때 걸리는 데가 있는지**만 보세요.');
+  lines.push('');
+  lines.push('이런 것이 걸립니다.');
+  lines.push('');
+  lines.push('- 할 말이 끝났는데 한 마디가 더 붙어 있다');
+  lines.push('- 뒷부분이 앞부분에 억지로 매달려 있다');
+  lines.push('- 무엇을 가리키는지 흐린 낱말이 있다');
+  lines.push('- 글로 쓰면 되는데 입으로는 안 하는 말이다');
+  lines.push('- 뜻은 맞지만 그 자리에서 원어민이 고르지 않을 낱말이다');
+  lines.push('');
+  lines.push('**걸리는 데가 없으면 그대로 두세요.** 고칠 것이 없는데 고치면 더 나빠집니다.');
+  lines.push('고칠 때는 **뜻을 바꾸지 말고**, 길이도 비슷하게 두세요.');
+  lines.push('더 낫게 만드는 자리가 아니라 **걸리는 데를 없애는 자리**입니다.');
+  lines.push('');
+  lines.push('## 읽을 영어');
+  lines.push('');
+  for (var i = 0; i < rows.length; i++) {
+    lines.push((i + 1) + '. ' + String((rows[i] || {}).text || ''));
+  }
+  lines.push('');
+  lines.push('## 내놓는 형식');
+  lines.push('');
+  lines.push('JSON 객체 하나만 출력하세요. 설명, 인사말, 코드 울타리 없이 JSON 만.');
+  lines.push('');
+  lines.push('{');
+  lines.push('  "texts": ["1번 영어", "2번 영어", ...],');
+  lines.push('  "changed": ["몇 번을 왜 고쳤는지 한국어로 한 줄씩. 안 고쳤으면 빈 목록"]');
+  lines.push('}');
+  lines.push('');
+  lines.push('"texts" 는 **' + rows.length + '개**여야 하고 **순서가 그대로**여야 합니다.');
+  lines.push('안 고친 것은 받은 그대로 넣으세요.');
+  lines.push('문장부호는 쉼표와 마침표만 쓰세요. 줄표(\u2014)와 따옴표는 쓰지 마세요.');
+
+  return lines.join('\n');
+}
+
+function buildAloudSchema(cfg) {
+  return {
+    type: 'object',
+    properties: {
+      texts: {
+        type: 'array', minItems: cfg.count, maxItems: cfg.count,
+        items: { type: 'string' }
+      },
+      changed: { type: 'array', items: { type: 'string' } }
+    },
+    required: ['texts']
+  };
+}
+
+/* 읽고 고친 영어를 초안에 도로 끼운다. 개수나 순서가 어긋나면 손대지 않는다 \u2014
+   엉뚱한 문장에 엉뚱한 영어가 붙는 것보다 초안 그대로 나가는 편이 낫다. */
+function applyAloud(draft, aloud) {
+  var rows = (draft && draft.sentences) || [];
+  var texts = (aloud && aloud.texts) || [];
+  if (!rows.length || texts.length !== rows.length) return null;
+
+  var out = { sentences: [] }, changed = 0;
+  for (var i = 0; i < rows.length; i++) {
+    var one = String(texts[i] || '').trim();
+    if (!one) return null;
+    var row = {};
+    for (var k in rows[i]) if (Object.prototype.hasOwnProperty.call(rows[i], k)) row[k] = rows[i][k];
+    if (one !== String(row.text || '').trim()) changed++;
+    row.text = one;
+    out.sentences.push(row);
+  }
+  out.aloudChanged = changed;
+  return out;
+}
+
 /* ------------------------------------------------------------------ 다시 보기
 
    한 번 만든 것을 그대로 내보내면 틀린 관용구가 그대로 나간다. 실제로 겪었다 —
@@ -310,6 +398,11 @@ function buildReviewPrompt(draft, cfg) {
   lines.push('학습자는 "ko"(한국어)를 보고 "text"(영어)로 옮겨 말하는 연습을 합니다.');
   lines.push('"alts" 는 같은 말을 말투만 바꿔 하는 법이고, "note" 는 배울 표현 설명입니다.');
   lines.push('');
+  lines.push('**"text" 는 이미 원어민이 소리내어 읽고 고친 것입니다.** 걸리는 데는 그때 없앴습니다.');
+  lines.push('그러니 "text" 를 다시 손보려 하지 말고, **나머지가 "text" 와 맞는지**를 보세요 \u2014');
+  lines.push('한국어가 그 영어의 뜻인지, alts 가 그 영어의 말투를 바꾼 것인지,');
+  lines.push('note 가 그 영어에 실제로 나오는 표현을 짚는지. 영어가 고쳐졌으면 나머지도 따라 고칩니다.');
+  lines.push('');
   lines.push('## 반드시 볼 것');
   lines.push('');
   lines.push('1. **관용구를 뜻에 맞게 썼는가.** 이게 제일 중요합니다.');
@@ -323,22 +416,13 @@ function buildReviewPrompt(draft, cfg) {
   lines.push('     할 말이 끝났는데 한 마디를 더 붙였으면 **그 마디를 잘라 내세요.**');
   lines.push('     문장이 짧아지는 것은 괜찮습니다. 한 문장으로 끝나도 됩니다.');
   lines.push('     쉼표로 계속 이었으면 그때만 나눕니다.');
-  lines.push('2-1-1. **문장을 억지로 이어 붙인 자리가 있는가.** \'and that ~\' 처럼');
-  lines.push('     앞 문장 전체를 that 하나로 받아 이어 붙였으면 고칩니다.');
-  lines.push('     that 과 it 은 무엇을 가리키는지 낱말 하나로 짚을 수 있어야 합니다.');
-  lines.push('     (전에 "and that helps nobody", "and that was that" 이 그대로 나갔습니다.');
-  lines.push('      앞이 가정법인데 뒤가 현재형이라 시제까지 어긋나 있었습니다.)');
   lines.push('2-2. **it / this / that 으로 얼버무렸는가.** 구체적인 물건, 시각, 요일을 넣습니다.');
   lines.push('     한국어도 애매하면 같이 구체적으로 고칩니다.');
   lines.push('2-3. **말버릇을 장식으로 넣었는가.** honestly, kind of, like 가 뜻 없이 들어갔으면 뺍니다.');
   lines.push('     like 를 채움말로 쓰면 십대 말투가 됩니다.');
   lines.push('2-4. **원어민이 그 자리에서 안 쓰는 낱말이 있는가.** (예: 배달 다시 시키기 = reorder 가 아니라 order again)');
   lines.push('2-5. **두 가지로 읽히는 대목이 있는가.** 문법이 맞아도 순간 헷갈리면 고칩니다.');
-  lines.push('3. **"text" 를 casual 과 나란히 놓고 읽어 보세요.**');
-  lines.push('   **casual 쪽이 더 사람 말 같으면 "text" 를 다시 쓰세요.** 학습자가 보는');
-  lines.push('   정답은 "text" 이므로, 여기가 제일 자연스러워야 합니다.');
-  lines.push('   ("text" 만 길이 조건이 걸려 있어서 늘어지기 쉽습니다. 실제로 그랬습니다.)');
-  lines.push('3-1. **casual 이 text 와 충분히 다른가.** 앞부분이 겹치면 고칩니다.');
+  lines.push('3. **casual 이 text 와 충분히 다른가.** 앞부분이 겹치면 고칩니다.');
   lines.push('   캐주얼은 관용구를 넣는 것이 아니라 더 짧고 축약된 구어입니다.');
   lines.push('4. **formal 이 뜻을 바꾸지 않았는가.** 말투만 올려야 하고,');
   lines.push('   내용을 눅이거나 빼먹으면 안 됩니다.');
@@ -506,14 +590,6 @@ function sentencesOf(text) {
 
 /* 한 문장 안에 쉼표가 세 개를 넘으면 숨이 차고 글 같아진다.
    영어는 짧게 끊어 말한다 \u2014 이게 번역체의 제일 흔한 자국이다. */
-/* 뒤에 한 마디 더 붙이려고 앞 문장 전체를 that 하나로 받은 자리.
-   'and that helps nobody', 'and that was that' 처럼 나간 적이 있다.
-   목적을 나타내는 'so that I could ~' 는 that 뒤가 대명사라 걸리지 않는다. */
-function gluedOn(text) {
-  return /\b(?:and|but|so)\s+that\s+(?:is|was|were|has|had|would|wo|will|does|did|helps|means|makes|works|isn|wasn|doesn|didn|hasn|won)\b/i
-    .test(String(text || ''));
-}
-
 function commaHeavy(text) {
   var parts = sentencesOf(text);
   for (var i = 0; i < parts.length; i++) {
@@ -590,10 +666,6 @@ function validate(parsed, cfg) {
     // 쉼표로 계속 이으면 말이 아니라 글이 된다
     if (commaHeavy(r.text)) {
       problems.push(at + '한 문장에 쉼표가 너무 많습니다. 문장을 나누세요.');
-    }
-    // 뒤에 한 마디 더 붙이려고 앞 문장 전체를 that 하나로 받은 자리
-    if (gluedOn(r.text)) {
-      problems.push(at + '앞 문장 전체를 that 으로 받아 이어 붙였습니다. 그 부분을 고치세요.');
     }
 
     // 대명사로 때운 문장은 한국어가 애매했다는 뜻이다
@@ -740,9 +812,10 @@ module.exports = {
   extractJSON: extractJSON, unwrap: unwrap,
   buildSchema: buildSchema, buildReviewSchema: buildReviewSchema,
   buildReviewPrompt: buildReviewPrompt,
+  buildAloudPrompt: buildAloudPrompt, buildAloudSchema: buildAloudSchema,
+  applyAloud: applyAloud,
   altStyles: altStyles, normalizeAlts: normalizeAlts,
   sentencesOf: sentencesOf, commaHeavy: commaHeavy, vagueCount: vagueCount,
-  gluedOn: gluedOn,
   highlighted: highlighted, keysAppear: keysAppear, sameOpening: sameOpening,
   wordCount: wordCount, validate: validate,
   toDayFile: toDayFile, updateIndex: updateIndex,

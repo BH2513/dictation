@@ -1,0 +1,116 @@
+{
+  "setId": "s009",
+  "videoId": "daily-s009",
+  "title": "Set 9",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "역 앞 카페 갔는데 빈자리가 하나도 없더라고. 십 분쯤 서성이다가 그냥 테이크아웃 했어.",
+      "text": "I walked into the cafe by the station and there wasn't a single open table. I hung around for ten minutes and then just took my coffee to go.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Cafe by the station was packed. Not one open table. I gave it ten minutes and grabbed my coffee to go."
+        },
+        {
+          "style": "formal",
+          "text": "When I arrived at the cafe near the station, there was not a single table available. I waited for about ten minutes and then decided to take my coffee to go."
+        }
+      ],
+      "note": "**hung around** 은 딱히 뭘 하지 않고 어정쩡하게 기다리며 서성이는 것. 테이크아웃은 takeout 보다 **took my coffee to go** 처럼 말하는 게 자연스럽다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "동생이 막차로 온다고 둘러대고 1차만 하고 빠지려고. 2차까지 가면 자정까지 잡혀 있어야 돼.",
+      "text": "I'm going to say my sister's coming in on the last train and slip out after the first round. If I stay for the second round, I'll be there till midnight.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gonna tell them my sister's train gets in late and duck out after the first round. Otherwise I'm stuck there till midnight."
+        },
+        {
+          "style": "formal",
+          "text": "I plan to tell them that my sister is arriving on the last train, so I can leave after the first round. If I stay for the second round, I will be there until midnight."
+        }
+      ],
+      "note": "**slip out** 은 티 안 나게 조용히 빠져나오는 것이고 **duck out** 도 같은 뜻인데 더 편한 말투다. 영어의 round 는 술을 한 차례 돌리는 것을 뜻해서, 1차 2차를 the first round, the second round 로 옮긴다.",
+      "situation": "회식 자리에서 적당히 빠져나올 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "운동 가방까지 싸서 현관에 놔뒀는데 갑자기 비가 쏟아지더라고. 내일 가야지 했어. 월요일에도 똑같이 말했지만.",
+      "text": "I had my gym bag packed by the door and then it started pouring. I told myself I'd go tomorrow. I said the same thing on Monday too.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gym bag was sitting by the door and then it just started pouring. Told myself tomorrow. Same thing I said Monday."
+        },
+        {
+          "style": "formal",
+          "text": "My gym bag was packed and waiting by the door, and then it began to rain heavily. I told myself I would go tomorrow, but I said the same thing on Monday."
+        }
+      ],
+      "note": "비가 억수같이 쏟아지는 것은 **pouring** 이다. rain a lot 이라고 하지 않는다. **I told myself** 는 스스로에게 핑계 대듯 다짐할 때 쓴다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "요즘 어떻게 지내? 부산 내려갈까 한다는 얘기까지 듣고는 반년을 소식이 없더라.",
+      "text": "So what's new with you? Last I heard you were thinking about moving to Busan and then you went quiet on me for six months.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, catch me up. You were talking about moving to Busan and then I didn't hear from you for six months."
+        },
+        {
+          "style": "formal",
+          "text": "How have you been? The last I heard, you were considering a move to Busan, and then I did not hear from you for six months."
+        }
+      ],
+      "note": "**Last I heard** 는 내가 마지막으로 들었을 때는 이라는 뜻으로 근황을 물을 때 자주 붙는다. **went quiet on me** 는 연락이 뚝 끊겼다는 말이다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그냥 때려치우고 여름 한 철 쉬고 싶다가도, 월세 생각하면 또 계산기를 두드리게 돼. 몇 주째 왔다 갔다 하는데 아직도 모르겠어.",
+      "text": "Part of me wants to just quit and take the summer off. The other part keeps doing the math on rent. I've been going back and forth for weeks and I still don't know.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I keep thinking I should just quit and take the summer off. Then I look at my rent. I've been chewing on it for weeks and I'm no closer."
+        },
+        {
+          "style": "formal",
+          "text": "One part of me would like to resign and take the summer off, while another part keeps calculating whether I could cover my rent. I have been weighing it for several weeks and I still have not decided."
+        }
+      ],
+      "note": "**going back and forth** 는 마음이 이쪽저쪽으로 왔다 갔다 하며 결정을 못 내리는 것. **doing the math** 는 숫자를 따져 본다는 말이고, 현실적으로 계산이 서느냐를 볼 때 쓴다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "두 번째 문장 formal 의 끝을 고쳤다. 영어 원문은 자정까지 그 자리에 붙잡혀 있다는 말인데 formal 만 집에 못 들어간다로 바뀌어 있었다. 말투만 올리고 뜻은 그대로 두게 I will be there until midnight 으로 맞췄다.",
+    "두 번째 note 를 손봤다. 1차, 2차가 곧 first round, second round 라고 단정해 두었는데 영어의 round 는 술을 한 차례 돌리는 것을 가리킨다. 왜 그렇게 옮기는지가 드러나게 설명을 고쳤다.",
+    "세 번째 한국어에 운동 을 넣었다. 그냥 가방 이라고만 하면 학습자가 gym bag 을 떠올릴 수 없다. 영어가 gym bag 이므로 한국어도 운동 가방 으로 맞췄다.",
+    "네 번째 formal 첫머리를 How have you been 으로 바꿨다. So, what have you been up to 는 말투가 casual 과 겹쳐 격식체 구실을 못 했다.",
+    "다섯 번째 casual 의 I'm nowhere 를 I'm no closer 로 고쳤다. 원어민이 그 자리에서 쓰는 말이 아니라 어색하게 끊긴다."
+  ]
+}

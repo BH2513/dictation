@@ -1,0 +1,115 @@
+{
+  "setId": "s011",
+  "videoId": "daily-s011",
+  "title": "Set 11",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "알람을 세 개나 맞춰 놨는데 하나도 못 들었어. 마지막 건 자다가 그냥 껐나 봐. 눈 떠 보니까 벌써 8시 40분이더라고.",
+      "text": "I set three alarms and slept through every one of them. I think I turned the last one off in my sleep, because it was already 8:40 when I woke up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Slept through all three alarms. Pretty sure I killed the last one in my sleep, because next thing I knew it was 8:40."
+        },
+        {
+          "style": "formal",
+          "text": "I set three alarms and slept through all of them. I believe I turned the last one off in my sleep, as it was already 8:40 when I woke up."
+        }
+      ],
+      "note": "**slept through** 는 소리가 났는데도 못 듣고 계속 잤다는 뜻이다. **in my sleep** 은 자면서 무의식중에 한 행동을 말할 때 쓴다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "넷플릭스만 사십 분을 뒤지다가 결국 아무것도 못 봤잖아. 아무거나 괜찮다며. 그래 놓고 내가 고르는 건 다 싫다고 하고.",
+      "text": "We spent forty minutes scrolling and ended up watching nothing. You said you were fine with anything, and then you shot down every single thing I picked.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Forty minutes of scrolling and nothing to show for it. You were the one who said anything works, then you shot down everything I picked."
+        },
+        {
+          "style": "formal",
+          "text": "We spent forty minutes browsing and never chose anything. You said you would be happy with any option, and then you rejected every one of my suggestions."
+        }
+      ],
+      "note": "**shot down** 은 남이 낸 의견을 딱 잘라 거절하는 것이다. **ended up watching nothing** 처럼 ended up 은 이러다 저러다 결국 그렇게 됐다는 뜻이다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "3월에 기타 사 놓고 네 번인가 쳐 봤나. 4월부터 방구석에 그냥 세워져만 있는데 아직도 사람들한테는 기타 친다고 하고 다녀.",
+      "text": "I bought a guitar in March and played it maybe four times. It's been sitting in the corner of my room since April, and I still tell people I play.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got a guitar in March and touched it maybe four times. It's been collecting dust since April, but I still tell people I play."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar in March and have since played it perhaps four times. It has been sitting in the corner of my room since April, and I still tell people that I play."
+        }
+      ],
+      "note": "**collecting dust** 는 안 쓰고 처박혀 먼지만 쌓인다는 뜻이다. 물건이 어디 놓인 채 방치돼 있을 때 **sitting in the corner** 라고 한다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "회사 앞 커피가 이제 6천 원이야. 봄에는 4천5백 원이었는데. 그래서 요즘은 집에서 내려다가 보온병에 담아 다녀.",
+      "text": "A coffee near my office is 6,000 won now. It was 4,500 in the spring, so I've started making mine at home and bringing it in a thermos.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Coffee by my office went up to 6,000 won. It was 4,500 in the spring, so now I just make it at home and bring a thermos."
+        },
+        {
+          "style": "formal",
+          "text": "A cup of coffee near my office now costs 6,000 won. It was 4,500 in the spring, so I have begun brewing my own at home and carrying it in a thermos."
+        }
+      ],
+      "note": "값이 올랐다고 할 때 **went up to** 뒤에 지금 가격을 붙인다. 예전 값은 **It was 4,500 in the spring** 처럼 그냥 과거형으로 이어 말하면 된다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "1월 이후로 처음 헬스장에 갔는데 예전에 하던 대로 다 해 버렸거든. 이틀 뒤에는 팔이 안 올라가서 머리도 못 감았어.",
+      "text": "I went back to the gym for the first time since January and did everything I used to do. Two days later I couldn't lift my arms to wash my hair.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "First gym day since January and I jumped straight back into my old routine. Couldn't even wash my hair two days later."
+        },
+        {
+          "style": "formal",
+          "text": "I returned to the gym for the first time since January and performed my entire former routine. Two days later I could not raise my arms to wash my hair."
+        }
+      ],
+      "note": "얼마 만인지는 **for the first time since January** 처럼 since 뒤에 시점을 붙여 말한다. 예전에 늘 하던 것은 **I used to do** 라고 한다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 캐주얼이 지난 일을 현재 습관(You keep saying you don't care)으로 바꿔 놓아 본문의 과거 시제와 어긋났다. 과거로 되돌리고 앞부분은 겹치지 않게 다시 썼다.",
+    "3번 격식체의 in March ... have played 는 시점이 못 박힌 과거와 현재완료가 부딪힌다. have since played 로 다듬었다.",
+    "4번 캐주얼의 make a thermos 는 원어민이 쓰지 않는 말이다(보온병을 만드는 게 아니다). make it at home and bring a thermos 로 고쳤다.",
+    "5번 격식체의 attempted 는 해 보려다 만 느낌이 섞여 본문의 다 해 버렸다와 뜻이 달라진다. performed 로 바꿨다."
+  ]
+}

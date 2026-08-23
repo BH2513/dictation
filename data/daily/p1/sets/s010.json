@@ -1,0 +1,116 @@
+{
+  "setId": "s010",
+  "videoId": "daily-s010",
+  "title": "Set 10",
+  "madeAt": "2026-08-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "3월에 스탠딩 책상 샀는데 네 번 썼나 그래. 지금은 그냥 비싼 빨래걸이야.",
+      "text": "I bought a standing desk in March and I've used it maybe four times. It's basically an expensive laundry rack now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That standing desk was a waste. I just hang my laundry on it now."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a standing desk in March and have used it perhaps four times. At this point it functions as an expensive laundry rack."
+        }
+      ],
+      "note": "안 쓰는 물건이 됐다는 말은 그 물건이 대신 뭐가 됐는지로 합니다. **basically** 는 따지고 보면 사실상 그렇다는 뜻이고, **an expensive laundry rack** 처럼 구체적인 물건으로 받아야 말이 삽니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "어제 달걀 한 판이 만 이천 원이더라. 잘못 본 줄 알고 가격표를 두 번 봤잖아.",
+      "text": "Nine bucks for a dozen eggs yesterday. I checked the tag twice because I was sure I'd misread it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Eggs are nine bucks now. I had to look twice."
+        },
+        {
+          "style": "formal",
+          "text": "A dozen eggs cost nine dollars yesterday. I checked the price tag twice because I was certain I had misread it."
+        }
+      ],
+      "note": "**bucks** 는 dollars 를 편하게 부르는 말이라 값 얘기할 때 거의 이걸 씁니다. **I'd misread it** 은 잘못 봤겠거니 했다는 뜻으로, 놀란 값을 말할 때 자주 붙습니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "운동 가방까지 다 싸놨었거든. 근데 여섯 시부터 비가 오길래, 화요일에 삐끗한 무릎이 아직 아픈 걸로 하기로 했어.",
+      "text": "I had my gym bag packed and everything. Then it started raining at six and I decided my knee still hurt from Tuesday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was all set to go. Then it rained and I decided my knee still hurt."
+        },
+        {
+          "style": "formal",
+          "text": "My gym bag was packed and ready. Then it began raining at six, and I concluded that my knee had not recovered from Tuesday."
+        }
+      ],
+      "note": "**and everything** 은 준비를 거기까지 다 해뒀다는 걸 얹는 말입니다. **I decided my knee still hurt** 는 아팠다가 아니라 아픈 걸로 치기로 했다는 뜻이라, 스스로 핑계 만든 걸 인정하는 말이 됩니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "여덟 달 만에 운동 갔는데 몸도 안 풀고 바로 무거운 것부터 들었거든. 다음 날 아침에 팔이 안 올라가서 머리를 못 감았어.",
+      "text": "First workout in eight months and I went straight to the squat rack. I couldn't lift my arms high enough to wash my hair the next morning.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hadn't worked out in eight months and I went way too hard. Next morning I couldn't even wash my hair."
+        },
+        {
+          "style": "formal",
+          "text": "It was my first workout in eight months and I began with the heaviest weights. The following morning I could not raise my arms enough to wash my hair."
+        }
+      ],
+      "note": "**went straight to** 는 준비 단계를 건너뛰고 바로 그리로 갔다는 말입니다. 몸살은 아프다고 하기보다 **couldn't lift my arms high enough to wash my hair** 처럼 못 하게 된 일로 말하는 쪽이 훨씬 자연스럽습니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "1월에 기타 학원 등록했다가 네 번 나가고 그만뒀어. 손가락은 아프지, 선생님은 연습했냐고 계속 물어보지.",
+      "text": "I signed up for guitar lessons in January and quit after four. My fingers hurt and the teacher kept asking if I'd practiced.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Guitar lasted four lessons. Sore fingers, plus the teacher kept asking if I'd practiced."
+        },
+        {
+          "style": "formal",
+          "text": "I enrolled in guitar lessons in January and stopped after the fourth one. My fingers were sore and the instructor kept asking whether I had practiced."
+        }
+      ],
+      "note": "학원이나 수업 등록은 **signed up for** 가 제일 흔합니다. **kept asking** 처럼 keep 뒤에 ing 를 붙이면 계속 그러더라는 뜻이 되고, 은근히 부담스러웠다는 느낌까지 같이 갑니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 casual 이 eight months 를 since winter 로 바꿔 기간이 달라져 있었습니다. 말투만 바꾸는 자리라 여덟 달로 되돌렸습니다.",
+    "4번 한국어 \"처음부터 무거운 걸 들었거든\" 은 went straight to (준비 단계를 건너뛰고 바로) 를 못 살려서 \"몸도 안 풀고 바로 무거운 것부터\" 로 고쳤습니다.",
+    "3번 casual \"my knee suddenly hurt again\" 은 정말 아팠던 것처럼 읽혀서, 핑계를 스스로 지어냈다는 영어의 I decided 를 살렸습니다.",
+    "3번 한국어에 그냥 \"가방\" 이라고만 되어 있어 운동 가방인 걸 밝히고, 뒷문장을 말하듯이 다듬었습니다.",
+    "5번 casual 의 \"I never practiced anyway\" 는 영어 본문에 없는 내용이라, 선생님이 계속 물어봤다는 원래 뜻으로 되돌렸습니다."
+  ]
+}

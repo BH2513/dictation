@@ -32,4 +32,4 @@
 - 테스트: `python3 tools/test_add_video.py`, `python3 tools/test_add_subs.py`,
   `node tools/test_daily.js`, `node tools/test_daily_shows.js`, `node tools/test_grading.js`,
   `node tools/test_gate.js`, `node tools/test_talk.js`, `node tools/test_talkwait.js`,
-  `node tools/test_talkcost.js`
+  `node tools/test_talkcost.js`, `node tools/test_prefs.js`

@@ -36,6 +36,7 @@ window.TalkUI = (function () {
   var saidNow = '';        // 받아적히는 중
   var typing = false;      // 타이핑 칸을 펴 뒀나
   var micNote = '';        // 마이크가 안 될 때 남기는 말
+  var hadWords = false;    // 큰 단추가 지금 "보내기" 모양인가
 
   /* **얼마나 기다렸다 보낼까** (2026-08-26 운영자 지적).
      1.5초로 뒀더니 **생각하는 사이에 잘라 보냈다.** 영어를 짜맞추는 사람은 문장 한가운데서
@@ -45,8 +46,16 @@ window.TalkUI = (function () {
      것 같으면 길게 기다린다. 어느 쪽으로 틀릴지도 정해 두었다 —
      **너무 오래 기다리는 것은 조금 답답할 뿐이지만, 잘라 버리면 대화가 깨진다.**
      그래서 헷갈리면 기다리는 쪽으로 기운다. */
-  var QUIET_MS = 2500;     // 말이 끝난 것 같을 때
+  var QUIET_MS = 2500;     // 말이 끝난 것 같을 때 (설정에서 바꾼다)
   var CARRY_MS = 2500;     // 아직 이어질 것 같으면 이만큼 더
+
+  /* **저절로 보낼까, 눌러서 보낼까는 사람이 고른다** (SPEC 10-d, 2026-08-26 운영자 결정).
+     저절로 보내는 쪽을 먼저 만들었는데, 써 보니 생각하는 사이에 잘리고 답이 끝나자마자
+     마이크가 열려 쫓기는 느낌이 든다고 했다. 그래서 **누르는 쪽이 기본**이고
+     저절로 보내는 쪽은 고르는 것으로 남겼다. 둘 다 지운 적이 없다 —
+     한쪽만 두면 다른 쪽이 맞는 사람이 못 쓴다. */
+  function handsFree() { return !!(window.Prefs && Prefs.handsFree()); }
+  function quietMs() { return (window.Prefs ? Prefs.waitMs() : QUIET_MS); }
 
   /* 이런 낱말로 끝나면 아직 말하는 중이다. 실제로 "It's kind of a" 에서 잘린 적이 있다 —
      `a` 로 끝났으니 뒤에 말이 더 있는 게 뻔했다. */
@@ -146,10 +155,16 @@ window.TalkUI = (function () {
       }
       saidNow = interim.replace(/^\s+|\s+$/g, '');
       paintLive();
+      // 말이 처음 잡히는 순간 큰 단추가 "듣는 중" 에서 "보내기" 로 바뀌어야 한다.
+      // 안 그러면 눌러도 멈추기만 하고, 한 번 더 눌러야 나간다 — 실제로 그랬다.
+      // **글자가 바뀔 때만 다시 그린다** (매번 그리면 깜빡인다)
+      var has = !!(saidFinal + saidNow).replace(/^\s+|\s+$/g, '');
+      if (has !== hadWords) { hadWords = has; paint(); }
       // 말이 이어지는 동안에는 계속 미룬다. 멎어야 보낸다
       stopQuiet();
+      if (!handsFree()) { armBar(0); return; }   // 누를 때까지 기다린다
       var heardSoFar = (saidFinal + ' ' + saidNow).replace(/\s+/g, ' ');
-      var wait = stillGoing(heardSoFar) ? QUIET_MS + CARRY_MS : QUIET_MS;
+      var wait = stillGoing(heardSoFar) ? quietMs() + CARRY_MS : quietMs();
       armBar(wait);
       quiet = setTimeout(function () { if (mine === hearGen) sendHeard(); }, wait);
     };
@@ -184,6 +199,7 @@ window.TalkUI = (function () {
      지우면 하던 말이 없어진다. 지우는 자리는 보내고 난 뒤 한 곳뿐이다. */
   function listen() {
     if (!canHear()) return;
+    hadWords = !!(saidFinal + saidNow).replace(/^\s+|\s+$/g, '');
     mode = 'listening';
     startHearing();
     paint();
@@ -192,7 +208,10 @@ window.TalkUI = (function () {
   /* 답을 소리로 읽고, 다 읽으면 다시 듣는다.
      **읽는 동안에는 마이크를 닫는다** — 안 그러면 제 목소리를 받아적는다. */
   function speakThenListen(text) {
-    if (!canSpeak()) { if (canHear()) listen(); else { mode = 'idle'; paint(); } return; }
+    if (!canSpeak()) {
+      if (canHear() && handsFree()) listen(); else { mode = 'idle'; paint(); }
+      return;
+    }
     mode = 'speaking';
     paint();
     var done = false;
@@ -200,7 +219,9 @@ window.TalkUI = (function () {
       if (done) return;
       done = true;
       if (mode !== 'speaking') return;      // 사람이 그새 멈췄다
-      if (canHear()) listen(); else { mode = 'idle'; paint(); }
+      // 누르는 쪽을 골랐으면 여기서 멈춘다. 답이 끝나자마자 마이크가 열리면 쫓기는 느낌이 든다
+      if (canHear() && handsFree()) listen();
+      else { mode = 'idle'; paint(); }
     }
     try {
       window.speechSynthesis.cancel();
@@ -444,7 +465,8 @@ window.TalkUI = (function () {
       hold.appendChild(hint);
       // 다 말했으면 기다릴 것 없이 바로 보낸다. 멈춰 둔 상태에서도 그대로 보낼 수 있다
       hold.onclick = function () {
-        if (mode === 'listening' || mode === 'idle') sendHeard();
+        if (mode === 'listening') sendHeard();          // 듣는 중이면 그만 듣고 보낸다
+        else if (mode === 'idle' && canHear()) listen(); // 멈춰 있으면 이어서 말한다
       };
       n.appendChild(hold);
     }
@@ -463,8 +485,9 @@ window.TalkUI = (function () {
 
     var hint = $('talk-hint');
     if (hint) {
-      if (mode === 'listening') hint.textContent = 'Take your time. Tap here when you are done.';
-      else hint.textContent = 'Paused. Keep talking to add to this, or tap here to send it.';
+      if (mode !== 'listening') hint.textContent = 'Tap here to keep talking, or Send below.';
+      else if (handsFree()) hint.textContent = 'Take your time. Tap here when you are done.';
+      else hint.textContent = 'Take your time. Nothing is sent until you tap Send.';
     }
     if (mode !== 'listening') {
       var b1 = $('talk-bar');
@@ -500,33 +523,75 @@ window.TalkUI = (function () {
     return n;
   }
 
+  /* **누를 것이 하나여야 한다.** 전에는 크기가 같은 단추 셋이 나란히 있어서
+     무엇을 눌러야 할지 알 수 없었다 ("지금 너무 어렵다" — 2026-08-26 운영자 지적).
+     이제 큰 것 하나 + 아래 작은 글씨 둘이다. */
   function controls() {
     var wrap = el('div', 'talkctl');
     wrap.id = 'talk-controls';
 
-    var row = el('div', 'buttons');
-    var big;
-    if (mode === 'listening') {
-      big = el('button', 'primary listening', 'Listening — tap to pause');
-      big.onclick = function () { hush(); paint(); };
-    } else if (mode === 'thinking') {
-      big = el('button', 'primary', 'Thinking…');
+    var said = (saidFinal + ' ' + saidNow).replace(/^\s+|\s+$/g, '');
+    var big = el('button', 'mic');
+    var label = el('div', 'miclabel');
+    var sub = el('div', 'micsub');
+
+    if (mode === 'thinking') {
+      big.className = 'mic busy';
       big.disabled = true;
+      label.textContent = 'Thinking\u2026';
     } else if (mode === 'speaking') {
-      big = el('button', 'primary', 'Speaking — tap to skip');
+      big.className = 'mic speaking';
+      label.textContent = 'Speaking';
+      sub.textContent = 'Tap to skip';
       big.onclick = function () {
         if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
-        if (canHear()) listen(); else { mode = 'idle'; paint(); }
+        if (canHear() && handsFree()) listen(); else { mode = 'idle'; paint(); }
       };
+    } else if (mode === 'listening') {
+      if (said) {
+        // 할 말을 했다. 이제 누를 것은 "보내기" 다
+        big.className = 'mic send';
+        label.textContent = 'Send';
+        sub.textContent = handsFree() ? 'or just wait' : 'when you are done';
+        big.onclick = function () { sendHeard(); };
+      } else {
+        big.className = 'mic on';
+        label.textContent = 'Listening';
+        sub.textContent = 'Just start talking';
+        big.onclick = function () { hush(); paint(); };
+      }
+    } else if (said) {
+      // 멈춰 뒀는데 하던 말이 있다
+      big.className = 'mic send';
+      label.textContent = 'Send';
+      sub.textContent = 'or tap the box to keep talking';
+      big.onclick = function () { sendHeard(); };
     } else {
-      big = el('button', 'primary', canHear()
-        ? (talk.turns.length ? 'Keep talking' : 'Start talking') : 'Type instead');
+      big.className = 'mic';
+      label.textContent = canHear()
+        ? (talk.turns.length ? 'Talk' : 'Start talking')
+        : 'Type instead';
+      sub.textContent = canHear() ? 'Tap and speak' : '';
       big.onclick = function () { if (canHear()) listen(); else { typing = true; paint(); } };
     }
-    row.appendChild(big);
-    wrap.appendChild(row);
 
-    // 타이핑은 남겨 둔다 — 조용한 데서 하거나 마이크가 안 될 때 쓴다
+    big.appendChild(label);
+    if (sub.textContent) big.appendChild(sub);
+    wrap.appendChild(big);
+
+    // 나머지는 작은 글씨로. 크기가 같으면 무엇이 중요한지 알 수 없다
+    var side = el('div', 'sidebar2');
+    if (canHear()) {
+      var t = el('button', 'link', typing ? 'Hide typing' : 'Type instead');
+      t.onclick = function () { typing = !typing; if (typing) hush(); paint(); };
+      side.appendChild(t);
+    }
+    var e = el('button', 'link', 'End and get a report');
+    e.disabled = (mode === 'thinking') || !talk.turns.length;
+    e.onclick = function () { endTalk(); };
+    side.appendChild(e);
+    wrap.appendChild(side);
+
     if (typing || !canHear()) {
       var ta = el('textarea', null);
       ta.id = 'talk-say';
@@ -534,7 +599,7 @@ window.TalkUI = (function () {
       ta.placeholder = 'Type it instead';
       wrap.appendChild(ta);
       var row2 = el('div', 'buttons');
-      var sendBtn = el('button', 'half', 'Send');
+      var sendBtn = el('button', 'primary', 'Send');
       sendBtn.disabled = (mode === 'thinking');
       sendBtn.onclick = function () {
         var v = String(ta.value || '').replace(/^\s+|\s+$/g, '');
@@ -543,21 +608,7 @@ window.TalkUI = (function () {
         ask(v);
       };
       row2.appendChild(sendBtn);
-      var endBtn = el('button', 'half', 'End and get a report');
-      endBtn.disabled = (mode === 'thinking') || !talk.turns.length;
-      endBtn.onclick = function () { endTalk(); };
-      row2.appendChild(endBtn);
       wrap.appendChild(row2);
-    } else {
-      var row3 = el('div', 'buttons');
-      var typeBtn = el('button', 'half', 'Type instead');
-      typeBtn.onclick = function () { typing = true; hush(); paint(); };
-      row3.appendChild(typeBtn);
-      var endBtn2 = el('button', 'half', 'End and get a report');
-      endBtn2.disabled = (mode === 'thinking') || !talk.turns.length;
-      endBtn2.onclick = function () { endTalk(); };
-      row3.appendChild(endBtn2);
-      wrap.appendChild(row3);
     }
     return wrap;
   }
@@ -643,7 +694,7 @@ window.TalkUI = (function () {
   }
 
   /* 보내고 난 뒤에만 지운다 — 여기가 유일한 자리다 */
-  function forgetHeard() { saidFinal = ''; saidNow = ''; }
+  function forgetHeard() { saidFinal = ''; saidNow = ''; hadWords = false; }
 
   function ask(said) {
     if (mode === 'thinking') return;

@@ -9,10 +9,10 @@
 <meta name="theme-color" content="#0f1115">
 <title>Dictation</title>
 <!-- 데스크탑·폰에 앱으로 설치하기 위한 것 -->
-<link rel="manifest" href="manifest.json?v=2026-08-25a">
+<link rel="manifest" href="manifest.json?v=2026-08-25b">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=2026-08-25a">
+<link rel="stylesheet" href="style.css?v=2026-08-25b">
 </head>
 <body>
 
@@ -89,6 +89,7 @@
 
     <!-- 대사가 나온 장면. 저절로 재생하지 않는다 — 눌러야 나온다 -->
     <div id="daily-clip" style="display:none;">
+      <div class="step"><span class="n">1</span>Listen to the scene</div>
       <div class="player-box">
         <div id="daily-player"></div>
         <button class="cover" id="daily-cover" aria-label="Play"><span>▶</span></button>
@@ -96,6 +97,7 @@
       <div class="buttons">
         <button class="primary half" id="clip-scene">Play the scene</button>
         <button class="half" id="clip-one">This line only</button>
+        <button class="half" id="clip-repeat">Repeat</button>
       </div>
       <p class="hint" id="clip-note"></p>
     </div>
@@ -156,6 +158,7 @@
     <div class="buttons">
       <button class="primary" id="play-btn">Play</button>
       <button class="half" id="replay-btn">Replay</button>
+      <button class="half" id="repeat-btn">Repeat</button>
       <button class="half" id="slow-btn">0.75× speed</button>
     </div>
 
@@ -212,8 +215,8 @@
   </div>
 </div>
 
-<script src="store.js?v=2026-08-25a"></script>
-<script src="record.js?v=2026-08-25a"></script>
-<script src="app.js?v=2026-08-25a"></script>
+<script src="store.js?v=2026-08-25b"></script>
+<script src="record.js?v=2026-08-25b"></script>
+<script src="app.js?v=2026-08-25b"></script>
 </body>
 </html>

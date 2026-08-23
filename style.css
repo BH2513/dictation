@@ -357,6 +357,17 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 /* 하루 다섯 문장 (ROADMAP 1단계) */
 .count{font-size:12px;color:var(--muted);margin:0 0 6px;}
 
+/* 몇 번째로 하는 것인지. 순서가 보여야 흐름대로 하게 된다 */
+.step{font-size:13px;font-weight:600;color:var(--text);margin:18px 0 8px;}
+.n{
+  display:inline-block;
+  min-width:20px;height:20px;line-height:20px;
+  margin-right:7px;
+  border-radius:50%;
+  background:var(--accent);color:var(--accent-on);
+  text-align:center;font-size:11px;font-weight:700;
+}
+
 /* 옮겨야 할 한국어 문장. 이게 화면의 주인공이라 크게 둔다 */
 .kotask{
   margin:10px 0 16px;padding:16px;

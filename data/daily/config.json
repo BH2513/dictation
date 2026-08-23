@@ -46,7 +46,7 @@
     "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기"
   ],
   "showsCandidates": 6,
-  "showsMinWords": 6,
+  "showsMinWords": 12,
   "showsMaxWords": 30,
   "batches": 3
 }

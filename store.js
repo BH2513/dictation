@@ -6,7 +6,7 @@
    그때는 기록만 포기하고 연습은 그대로 되게 한다. 대신 화면에 그 사실을 남긴다. */
 window.Store = (function () {
   var NAME = 'dictation';
-  var VERSION = 2;
+  var VERSION = 3;
   var db = null;
   var broken = false;
 
@@ -37,6 +37,12 @@ window.Store = (function () {
       // 일별 학습량 — 연속 학습 일수와 그래프의 재료
       if (!d.objectStoreNames.contains('days')) {
         d.createObjectStore('days', { keyPath: 'key' });
+      }
+      // 공부한 날에 어떤 문장 묶음을 했는지. 묶음은 날짜에 묶여 있지 않다 —
+      // 며칠 안 해도 버려지지 않게, 사람이 온 날에 하나씩 꺼내 쓴다 (SPEC 6-2)
+      if (!d.objectStoreNames.contains('plan')) {
+        var pl = d.createObjectStore('plan', { keyPath: 'key' });
+        pl.createIndex('profile', 'profileId', { unique: false });
       }
       // 문장카드
       if (!d.objectStoreNames.contains('cards')) {
@@ -157,6 +163,26 @@ window.Store = (function () {
       allByIndex('cards', 'profile', profileId, done, fail);
     },
 
+    /* 공부한 날 ↔ 그날 한 묶음. 하루에 여러 묶음을 할 수 있다 */
+    getPlan: function (profileId, date, done, fail) {
+      get('plan', profileId + '|' + date, function (row) {
+        done(row || { key: profileId + '|' + date, profileId: profileId,
+                      date: date, setIds: [] });
+      }, fail);
+    },
+
+    savePlan: function (row, done, fail) {
+      put('plan', row, fail);
+      if (done) setTimeout(done, 60);
+    },
+
+    listPlans: function (profileId, done, fail) {
+      allByIndex('plan', 'profile', profileId, function (rows) {
+        rows.sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+        done(rows);
+      }, fail);
+    },
+
     /* 오늘 한 문장 수를 하나 올린다 */
     bumpDay: function (profileId, fail) {
       var key = profileId + '|' + today();
@@ -190,7 +216,7 @@ window.Store = (function () {
     /* 백업 — 프로필 하나의 기록을 전부 내놓는다 (SPEC 10) */
     exportAll: function (profileId, done, fail) {
       var out = { app: 'dictation', version: 1, profileId: profileId,
-                  savedAt: today(), progress: [], misses: [], cards: [], days: [] };
+                  savedAt: today(), progress: [], misses: [], cards: [], days: [], plan: [] };
       allRows('progress', function (rows) {
         for (var i = 0; i < rows.length; i++) if (rows[i].profileId === profileId) out.progress.push(rows[i]);
         allRows('misses', function (rows2) {
@@ -199,7 +225,10 @@ window.Store = (function () {
             for (var k = 0; k < rows3.length; k++) if (rows3[k].profileId === profileId) out.cards.push(rows3[k]);
             allRows('days', function (rows4) {
               for (var m = 0; m < rows4.length; m++) if (rows4[m].profileId === profileId) out.days.push(rows4[m]);
-              done(out);
+              allRows('plan', function (rows5) {
+                for (var q = 0; q < rows5.length; q++) if (rows5[q].profileId === profileId) out.plan.push(rows5[q]);
+                done(out);
+              }, function () { done(out); });
             }, fail);
           }, fail);
         }, fail);
@@ -212,7 +241,8 @@ window.Store = (function () {
       var jobs = [
         ['progress', data.progress || []],
         ['cards', data.cards || []],
-        ['days', data.days || []]
+        ['days', data.days || []],
+        ['plan', data.plan || []]
       ];
       var left = jobs.length + 1;
       function step() { left--; if (left === 0) done(); }

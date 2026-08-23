@@ -114,6 +114,12 @@ function buildPrompt(lines, cfg) {
   out.push('');
   out.push('1. **혼자 봐서는 뜻을 모르는 말.** 드라마 대사는 앞뒤가 있어야 통하는 것이 많습니다.');
   out.push('   "He said he would do it." 처럼 he 가 누군지 모르면 옮길 수가 없습니다');
+  out.push('1-1. **화면을 봐야 아는 말.** 이게 특히 많이 새어 나갑니다. 꼭 잡아 주세요.');
+  out.push('   "Oo, the next part is the best." / "Here, I will slow it down so you guys can see it."');
+  out.push('   \u2014 무엇을 가리키는지 화면이 없으면 알 수 없습니다. this, that, here, the next part 가');
+  out.push('   눈앞의 무언가를 가리키고 있으면 버리세요.');
+  out.push('1-2. **뉴스·강연 말투.** 앵커나 발표자가 하는 말은 일상 대화가 아닙니다.');
+  out.push('   "unfortunately that heat continues" 같은 것은 친구에게 쓰지 않습니다');
   out.push('2. **그 작품 안에서만 통하는 말.** 등장인물 이름, 그 드라마의 사건, 지명');
   out.push('3. **일상에서 쓸 일이 없는 말.** 총격전, 법정, 수술실, 판타지 세계의 말');
   out.push('4. **비속어 · 성적인 내용 · 폭력적인 말.** 가족이 함께 쓰는 앱입니다. 반드시 뺍니다');

@@ -613,53 +613,90 @@ function updateIndex(pid, date, count, generatedAt) {
   return out;
 }
 
-/* 이미 있는 날에 문장을 더 붙인다.
+/* ------------------------------------------------------------------ 묶음 (set)
 
-   하루에 여러 묶음을 만들어 두면, 다섯 개를 다 한 사람이 앱에서 바로 다음 묶음을
-   꺼내 쓸 수 있다. 앱은 서버가 없어서 스스로 만들지는 못한다.
+   문장 묶음은 **날짜에 묶여 있지 않다.** 만든 날이 언제든 창고에 쌓아 두고,
+   앱이 사람이 공부하러 온 날에 하나씩 꺼내 쓴다.
 
-   붙이는 것이지 갈아 끼우는 것이 아니다 — 앞 번호가 밀리면 이미 담아 둔
-   문장카드가 다른 문장을 가리키게 된다. */
-function appendDay(pid, date, day) {
-  var file = path.join(DAILY, pid, date + '.json');
-  var old = readJSON(file, null);
-  if (!old || !old.sentences || !old.sentences.length) return day;
+   그래야 며칠 안 해도 묶음이 버려지지 않고, "내가 언제 공부했는지" 가
+   만든 날이 아니라 실제로 한 날로 남는다 (운영자 결정).
 
-  var seen = {};
-  for (var i = 0; i < old.sentences.length; i++) {
-    seen[key(old.sentences[i].text)] = true;
-  }
-  var merged = old.sentences.slice();
-  for (var j = 0; j < day.sentences.length; j++) {
-    var one = day.sentences[j];
-    if (seen[key(one.text)]) continue;           // 같은 문장이 두 번 나오면 버린다
-    seen[key(one.text)] = true;
-    one.i = merged.length;
-    merged.push(one);
-  }
-  var out = { videoId: day.videoId, title: day.title, date: day.date,
-              source: day.source, sentences: merged };
-  if (old.reviewed || day.reviewed) {
-    out.reviewed = (old.reviewed || []).concat(day.reviewed || []);
-  }
-  return out;
-}
+   묶음 번호는 한번 매기면 바뀌지 않는다 — 문장카드가 이 번호를 가리킨다. */
 
 function key(text) {
   return String(text || '').toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, ' ').trim();
 }
 
-function save(parsed, date, pids, generatedAt, append) {
-  var made = toDayFile(parsed, date);
+function setsFile(pid) { return path.join(DAILY, pid, 'sets.json'); }
+
+function listSets(pid) { return readJSON(setsFile(pid), []); }
+
+function nextSetId(pid) {
+  var rows = listSets(pid);
+  var max = 0;
+  for (var i = 0; i < rows.length; i++) {
+    var n = parseInt(String(rows[i].id).replace(/^s/, ''), 10);
+    if (n > max) max = n;
+  }
+  var next = max + 1;
+  return 's' + (next < 100 ? ('00' + next).slice(-3) : String(next));
+}
+
+/* 이미 있는 묶음의 문장과 겹치는지. 같은 문장을 또 내보내면 안 된다 */
+function knownTexts(pid, days) {
+  var rows = listSets(pid);
+  var seen = {};
+  var from = Math.max(0, rows.length - (days || 40));
+  for (var i = from; i < rows.length; i++) {
+    var one = readJSON(path.join(DAILY, pid, 'sets', rows[i].id + '.json'), null);
+    if (!one || !one.sentences) continue;
+    for (var s = 0; s < one.sentences.length; s++) seen[key(one.sentences[s].text)] = true;
+  }
+  return seen;
+}
+
+function toSetFile(parsed, id, madeAt) {
+  var out = {
+    setId: id,
+    videoId: 'daily-' + id,
+    title: 'Set ' + String(id).replace(/^s0*/, ''),
+    madeAt: madeAt,
+    source: 'daily',
+    sentences: []
+  };
+  for (var i = 0; i < parsed.sentences.length; i++) {
+    var r = parsed.sentences[i];
+    out.sentences.push({
+      i: i,
+      ko: String(r.ko).trim(),
+      text: String(r.text).trim(),
+      alts: normalizeAlts(r.alts),
+      note: String(r.note).trim(),
+      situation: String(r.situation).trim(),
+      start: null, end: null, recording: null
+    });
+  }
+  if (parsed.problems && parsed.problems.length) out.reviewed = parsed.problems;
+  return out;
+}
+
+function saveSet(parsed, pids, madeAt) {
   var written = [];
-  var day = made;
+  var id = null;
   for (var p = 0; p < pids.length; p++) {
-    day = append ? appendDay(pids[p], date, toDayFile(parsed, date)) : made;
-    writeJSON(path.join(DAILY, pids[p], date + '.json'), day);
-    updateIndex(pids[p], date, day.sentences.length, generatedAt);
+    id = id || nextSetId(pids[p]);
+    var set = toSetFile(parsed, id, madeAt);
+    writeJSON(path.join(DAILY, pids[p], 'sets', id + '.json'), set);
+
+    var rows = listSets(pids[p]);
+    var keep = [];
+    for (var i = 0; i < rows.length; i++) if (rows[i].id !== id) keep.push(rows[i]);
+    keep.push({ id: id, count: set.sentences.length, madeAt: madeAt });
+    keep.sort(function (a, b) { return a.id < b.id ? -1 : 1; });
+    writeJSON(setsFile(pids[p]), keep);
     written.push(pids[p]);
   }
-  return { day: day, profiles: written, added: made.sentences.length };
+  return { id: id, profiles: written, count: parsed.sentences.length };
 }
 
 module.exports = {
@@ -675,5 +712,7 @@ module.exports = {
   sentencesOf: sentencesOf, commaHeavy: commaHeavy, vagueCount: vagueCount,
   highlighted: highlighted, keysAppear: keysAppear, sameOpening: sameOpening,
   wordCount: wordCount, validate: validate,
-  toDayFile: toDayFile, updateIndex: updateIndex, save: save, appendDay: appendDay
+  toDayFile: toDayFile, updateIndex: updateIndex,
+  listSets: listSets, nextSetId: nextSetId, knownTexts: knownTexts,
+  toSetFile: toSetFile, saveSet: saveSet, key: key
 };

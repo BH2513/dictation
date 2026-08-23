@@ -7,12 +7,10 @@
 var fs = require('fs');
 var daily = require('./daily');
 
-var APPEND = process.argv.indexOf('--append') >= 0;
-
 function read(cb) {
   var file = null;
   for (var i = 2; i < process.argv.length; i++) {
-    if (process.argv[i] !== '--append') { file = process.argv[i]; break; }
+    if (process.argv[i].charAt(0) !== '-') { file = process.argv[i]; break; }
   }
   if (file) { cb(fs.readFileSync(file, 'utf8')); return; }
   var buf = '';
@@ -35,21 +33,19 @@ read(function (raw) {
       process.exit(1);
     }
 
-    var date = process.env.DAILY_DATE || daily.todayKST();
-    var r = daily.save(parsed, date, pids, new Date().toISOString(), APPEND);
+    // 묶음은 날짜에 묶지 않는다. 창고에 쌓아 두고 앱이 공부하는 날 꺼내 쓴다
+    var r = daily.saveSet(parsed, pids, daily.todayKST());
 
-    process.stdout.write(date + ' 문장 ' + (APPEND ? r.added + '개를 더 붙였습니다 (모두 '
-      + r.day.sentences.length + '개)' : r.day.sentences.length + '개를 저장했습니다')
-      + ' (' + r.profiles.join(', ') + ').\n');
+    process.stdout.write('묶음 ' + r.id + ' \u2014 문장 ' + r.count + '개를 저장했습니다 ('
+      + r.profiles.join(', ') + ').\n');
     if (parsed.problems && parsed.problems.length) {
       process.stdout.write('검수에서 고친 것:\n');
       for (var q = 0; q < parsed.problems.length; q++) {
         process.stdout.write('  - ' + parsed.problems[q] + '\n');
       }
     }
-    var from = APPEND ? r.day.sentences.length - r.added : 0;
-    for (var s = from; s < r.day.sentences.length; s++) {
-      process.stdout.write('  ' + (s + 1) + '. ' + r.day.sentences[s].text + '\n');
+    for (var s2 = 0; s2 < parsed.sentences.length; s2++) {
+      process.stdout.write('  ' + (s2 + 1) + '. ' + parsed.sentences[s2].text + '\n');
     }
   } catch (e) {
     process.stderr.write('저장하지 못했습니다: ' + e.message + '\n');

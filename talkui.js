@@ -180,10 +180,10 @@ window.TalkUI = (function () {
     micNote = '';
   }
 
+  /* **여기서 받아적힌 것을 지우지 않는다.** 멈췄다 다시 켜는 경우가 있어서다 —
+     지우면 하던 말이 없어진다. 지우는 자리는 보내고 난 뒤 한 곳뿐이다. */
   function listen() {
     if (!canHear()) return;
-    saidFinal = '';
-    saidNow = '';
     mode = 'listening';
     startHearing();
     paint();
@@ -214,7 +214,14 @@ window.TalkUI = (function () {
     } catch (e) { after(); }
   }
 
+  /* 멈추기. **하던 말은 그대로 둔다** — 멈췄다고 말이 없어지면 다시 해야 한다
+     (2026-08-26 운영자 지적). 받아적히는 중이던 것은 확정된 쪽에 합쳐 둔다,
+     마이크를 끄면 그 조각은 다시 안 오기 때문이다. */
   function hush() {
+    if (saidNow) {
+      saidFinal = (saidFinal + ' ' + saidNow).replace(/\s+/g, ' ').replace(/^ | $/g, '');
+      saidNow = '';
+    }
     stopHearing();
     if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
     if (mode !== 'thinking') mode = 'idle';
@@ -417,7 +424,9 @@ window.TalkUI = (function () {
   function paintLive() {
     var n = $('talk-live');
     if (!n) return;
-    if (mode !== 'listening' && mode !== 'thinking') { clear(n); return; }
+    var waiting = (saidFinal + ' ' + saidNow).replace(/^\s+|\s+$/g, '');
+    // 멈춰 있어도 하던 말이 있으면 남겨 둔다. 그래야 이어서 하거나 그대로 보낼 수 있다
+    if (mode !== 'listening' && mode !== 'thinking' && !waiting) { clear(n); return; }
 
     var body = n.querySelector('.live');
     if (!body) {
@@ -430,9 +439,13 @@ window.TalkUI = (function () {
       fill.id = 'talk-bar';
       track.appendChild(fill);
       hold.appendChild(track);
-      hold.appendChild(el('div', 'barhint', 'Take your time. Tap here when you are done.'));
-      // 다 말했으면 기다릴 것 없이 바로 보낸다
-      hold.onclick = function () { if (mode === 'listening') sendHeard(); };
+      var hint = el('div', 'barhint', 'Take your time. Tap here when you are done.');
+      hint.id = 'talk-hint';
+      hold.appendChild(hint);
+      // 다 말했으면 기다릴 것 없이 바로 보낸다. 멈춰 둔 상태에서도 그대로 보낼 수 있다
+      hold.onclick = function () {
+        if (mode === 'listening' || mode === 'idle') sendHeard();
+      };
       n.appendChild(hold);
     }
 
@@ -447,6 +460,16 @@ window.TalkUI = (function () {
     }
     body.className = 'live' + (text ? ' said' : ' waiting');
     body.textContent = text || 'Listening \u2014 just start talking.';
+
+    var hint = $('talk-hint');
+    if (hint) {
+      if (mode === 'listening') hint.textContent = 'Take your time. Tap here when you are done.';
+      else hint.textContent = 'Paused. Keep talking to add to this, or tap here to send it.';
+    }
+    if (mode !== 'listening') {
+      var b1 = $('talk-bar');
+      if (b1) { b1.style.transition = 'none'; b1.style.width = '0%'; }
+    }
     scrollDown();
   }
 
@@ -613,6 +636,9 @@ window.TalkUI = (function () {
     ask(said);
   }
 
+  /* 보내고 난 뒤에만 지운다 — 여기가 유일한 자리다 */
+  function forgetHeard() { saidFinal = ''; saidNow = ''; }
+
   function ask(said) {
     if (mode === 'thinking') return;
     mode = 'thinking';
@@ -628,7 +654,7 @@ window.TalkUI = (function () {
       turn.said = said;
       talk.turns.push(turn);
       Store.saveTalk(talk);
-      saidFinal = '';
+      forgetHeard();
       drawChat();
       speakThenListen(turn.reply);
     }, function (reason) {
@@ -639,7 +665,7 @@ window.TalkUI = (function () {
           turn2.said = said;
           talk.turns.push(turn2);
           Store.saveTalk(talk);
-          saidFinal = '';
+          forgetHeard();
           drawChat();
           speakThenListen(turn2.reply);
         }, function () { stumble(said, 'shape2'); });

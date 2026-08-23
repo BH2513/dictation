@@ -252,6 +252,37 @@ check('앞뒤 공백은 지운다',
     '2026-08-23').sentences[0].text,
   'That deadline is tough. We need time.');
 
+console.log('\n하루에 여러 묶음 — 붙이되 앞 번호를 밀지 않는다');
+var A = daily.toDayFile({ sentences: [row(), row({
+  text: 'She would have called us. The meeting ran late again.',
+  ko: '연락했을 거야. 회의가 또 늦게 끝났어.' })] }, '2026-08-23');
+var B = daily.toDayFile({ sentences: [row({
+  text: 'That budget is tight. We should talk before Friday.',
+  ko: '예산이 빠듯해. 금요일 전에 얘기하자.' })] }, '2026-08-23');
+
+// appendDay 는 파일을 읽으므로 여기서는 붙이는 규칙만 따로 확인한다
+function merge(oldDay, newDay) {
+  var seen = {}, out = oldDay.sentences.slice();
+  for (var i = 0; i < out.length; i++) {
+    seen[out[i].text.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim()] = true;
+  }
+  for (var j = 0; j < newDay.sentences.length; j++) {
+    var one = newDay.sentences[j];
+    var k = one.text.toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
+    if (seen[k]) continue;
+    seen[k] = true;
+    one.i = out.length;
+    out.push(one);
+  }
+  return out;
+}
+var merged = merge(A, B);
+check('뒤에 붙는다', merged.length, 3);
+check('앞 번호는 그대로 (담아 둔 카드가 어긋나면 안 된다)',
+  [merged[0].i, merged[1].i], [0, 1]);
+check('붙은 것은 다음 번호를 받는다', merged[2].i, 2);
+check('같은 문장은 두 번 안 붙는다', merge(A, A).length, 2);
+
 console.log('\n상황 고르기 — 최근에 쓴 것은 뒤로 미룬다');
 var all = ['가', '나', '다', '라'];
 var first = function () { return 0; };   // 섞기를 고정해서 결과를 볼 수 있게 한다

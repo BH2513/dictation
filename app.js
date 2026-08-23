@@ -1277,6 +1277,18 @@
     row.appendChild(sc);
     box.appendChild(row);
 
+    // 다 한 사람이 더 하고 싶을 때. 남은 것이 있으면 바로 넘어간다
+    if (dailyKind === 'made') {
+      var more = el('div', 'buttons');
+      var left = unseenCount();
+      var mb = el('button', 'half',
+        left ? ('New sentences (' + left + ' left)') : 'New sentences');
+      mb.id = 'daily-more';
+      mb.onclick = function () { moreDaily(pid); };
+      more.appendChild(mb);
+      box.appendChild(more);
+    }
+
     if (dailyShown) {
       box.appendChild(dailyAnswerBlock(s));
     } else {
@@ -1404,11 +1416,63 @@
     return ul;
   }
 
+  /* 아직 안 해 본 문장 중 다음 것. 없으면 -1.
+     앱은 서버가 없어 문장을 만들지 못한다. 대신 하루치를 여러 묶음 만들어 두고
+     여기서 다음 것을 꺼내 준다 (tools/daily.js 의 appendDay 참고). */
+  function nextUnseen(from) {
+    if (!dailyDay) return -1;
+    var done = (dailyProgress && dailyProgress.sentences) || {};
+    var n = dailyDay.sentences.length;
+    for (var i = 0; i < n; i++) {
+      var at = (from + 1 + i) % n;
+      if (!done[at]) return at;
+    }
+    return -1;
+  }
+
+  function unseenCount() {
+    if (!dailyDay) return 0;
+    var done = (dailyProgress && dailyProgress.sentences) || {};
+    var left = 0;
+    for (var i = 0; i < dailyDay.sentences.length; i++) if (!done[i]) left++;
+    return left;
+  }
+
+  /* 새로 만들라고 시키는 곳. 앱에서 직접 못 하므로 그 화면을 열어 준다 */
+  var MAKE_URL = 'https://github.com/BH2513/dictation/actions/workflows/daily-sentences.yml';
+
   function dailyGo(pid, idx) {
     if (!dailyDay || idx < 0 || idx >= dailyDay.sentences.length) return;
     dailyAt = idx;
     resetDailyAnswer();
     drawDaily(pid);
+  }
+
+  function moreDaily(pid) {
+    var next = nextUnseen(dailyAt);
+    if (next >= 0) {
+      dailyGo(pid, next);
+      var left = unseenCount();
+      dailySay(left > 1 ? (left - 1) + ' more after this one.' : 'This is the last one for today.');
+      return;
+    }
+    // 남은 것이 없다. 앱은 서버가 없어 문장을 만들 수 없으니 만드는 곳을 열어 준다
+    var box = $('daily-body');
+    var note = el('div', 'notice');
+    note.appendChild(document.createTextNode(
+      'You have done every sentence for ' + dailyDay.date + '. '
+      + 'A new set is made every morning. To make one right now, open the maker page '
+      + 'and press Run workflow, then come back in a minute or two.'));
+    var b = el('div', 'buttons');
+    var open = el('button', 'half', 'Open the maker page');
+    open.onclick = function () { window.open(MAKE_URL, '_blank'); };
+    b.appendChild(open);
+    var older = el('button', 'half', 'Older days');
+    older.onclick = function () { dailyDaysOpen = true; drawDaily(pid); };
+    b.appendChild(older);
+    note.appendChild(b);
+    box.appendChild(note);
+    dailySay('Nothing left for today.');
   }
 
   function revealDaily(pid) {

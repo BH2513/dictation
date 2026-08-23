@@ -9,10 +9,10 @@
 <meta name="theme-color" content="#0f1115">
 <title>Dictation</title>
 <!-- 데스크탑·폰에 앱으로 설치하기 위한 것 -->
-<link rel="manifest" href="manifest.json?v=2026-08-24a">
+<link rel="manifest" href="manifest.json?v=2026-08-25a">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=2026-08-24a">
+<link rel="stylesheet" href="style.css?v=2026-08-25a">
 </head>
 <body>
 
@@ -84,6 +84,22 @@
       <button class="small" id="daily-back">← Library</button>
       <h1>Daily sentences</h1>
     </div>
+    <!-- 탭·날짜·장면 제목. 아래 재생기가 다시 그려지지 않도록 본문과 나눠 둔다 -->
+    <div id="daily-head"></div>
+
+    <!-- 대사가 나온 장면. 저절로 재생하지 않는다 — 눌러야 나온다 -->
+    <div id="daily-clip" style="display:none;">
+      <div class="player-box">
+        <div id="daily-player"></div>
+        <button class="cover" id="daily-cover" aria-label="Play"><span>▶</span></button>
+      </div>
+      <div class="buttons">
+        <button class="primary half" id="clip-scene">Play the scene</button>
+        <button class="half" id="clip-one">This line only</button>
+      </div>
+      <p class="hint" id="clip-note"></p>
+    </div>
+
     <div id="daily-body"></div>
   </div>
 </div>
@@ -196,8 +212,8 @@
   </div>
 </div>
 
-<script src="store.js?v=2026-08-24a"></script>
-<script src="record.js?v=2026-08-24a"></script>
-<script src="app.js?v=2026-08-24a"></script>
+<script src="store.js?v=2026-08-25a"></script>
+<script src="record.js?v=2026-08-25a"></script>
+<script src="app.js?v=2026-08-25a"></script>
 </body>
 </html>

@@ -76,7 +76,9 @@ def parse_ts(s):
     return int(h) * 3600 + int(m) * 60 + int(sec) + int(ms or 0) / 1000.0
 
 
-NOISE = re.compile(r"\[[^\]]*\]")          # [applause], [Music] 같은 소리 표시
+# 말이 아닌 구간 표시. 자막마다 쓰는 모양이 달라 세 가지를 모두 본다.
+# [applause] [Music] / (laughs) (LAUGHTER) / 노래 가사를 감싼 음표
+NOISE = re.compile(r"\[[^\]]*\]|\([^)]*\)|[\u266a\u266b][^\u266a\u266b]*[\u266a\u266b]?")
 BREAK = "\u2016"                          # 말이 아닌 구간이라는 표시. 문장 경계로 쓰고 글자에서는 뺀다
 
 
@@ -292,6 +294,54 @@ def split_sentences(units, use_punct=True, use_capital=True,
     if cur:
         out.append(cur)
     return out
+
+
+# 감탄사. 줄 전체가 이것뿐이면 받아쓰기가 되지 않는다
+FILLER = set("""
+oh ah aw ha haha hah heh hehe uh uhh um umm hm hmm mm mmm mhm huh eh er
+wow whoa woo yay ooh oops yeah yea yep yes yup no nope nah okay ok alright
+hey hi hello bye well right sure ow ouch shh ugh wait what
+""".split())
+
+WORDISH = re.compile(r"[A-Za-z0-9]")
+
+
+def line_words(text):
+    """글자나 숫자가 든 덩어리만 낱말로 센다. 줄표 하나짜리 조각은 낱말이 아니다."""
+    return [w for w in str(text or "").split() if WORDISH.search(w)]
+
+
+def filler_only(words):
+    for w in words:
+        for part in re.split(r"[^a-z']+", w.lower().replace("\u2019", "'")):
+            one = part.replace("'", "")
+            if one and one not in FILLER:
+                return False
+    return True
+
+
+def usable_line(text):
+    """받아쓰기에 쓸 만한 줄인지. app.js 의 usableLine 과 같은 규칙이다.
+
+    자막을 문장으로 자르면 "Hi." "Yeah." "Me too." 같은 토막이 네 개 중 하나꼴로 나온다.
+    연습이 되지 않는데 목록만 채워서 뒤 문장으로 가는 길을 막는다 (운영자 결정).
+    """
+    words = line_words(text)
+    if len(words) < 3:
+        return False
+    return not filler_only(words)
+
+
+def drop_unusable(sentences):
+    """연습이 안 되는 토막을 빼고 번호를 다시 매긴다. 뺀 개수도 함께 돌려준다."""
+    kept = []
+    for s in sentences:
+        if not usable_line(s.get("text", "")):
+            continue
+        one = dict(s)
+        one["i"] = len(kept)
+        kept.append(one)
+    return kept, len(sentences) - len(kept)
 
 
 def to_sentences(groups):
@@ -626,6 +676,9 @@ def main():
                                  use_capital=(source == "manual_captions"))
 
     sentences = to_sentences(groups)
+    sentences, dropped = drop_unusable(sentences)
+    if not sentences:
+        die("연습에 쓸 만한 문장이 없습니다. 이 영상은 등록하지 않았습니다.")
     ko_cues = parse_vtt(ko_raw) if ko_raw else []
     sentences = attach_korean(sentences, ko_cues)
     has_ko = any("ko" in s for s in sentences)
@@ -653,6 +706,8 @@ def main():
     say("")
     say("제목      : %s" % title)
     say("문장      : %d개" % len(sentences))
+    if dropped:
+        say("            (\"Hi.\" \"Yeah.\" 처럼 너무 짧은 줄 %d개는 뺐습니다)" % dropped)
     if source == "auto_captions":
         kind = "자동생성 (문장부호 있음)" if punctuated else "자동생성 (경계가 부정확할 수 있음)"
     else:

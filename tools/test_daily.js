@@ -184,20 +184,34 @@ check('대명사를 센다',
 check('구체적이면 적게 나온다',
   daily.vagueCount('I ordered chicken and they sent pasta.'), 0);
 
-check('한 문장뿐이면 잡는다',
+// 한 문장으로 끝나는 것은 이제 통과다 — 짧게 끝나는 것이 자연스러울 때가 있다
+check('한 문장뿐이어도 통과한다',
   daily.validate({ sentences: [row({ text: 'That deadline is really tough for us.' })] }, CFG).slice(1),
-  ['문장 1: 영어가 한 문장뿐입니다. 2~3 문장으로 나누세요.']);
+  []);
 
 check('쉼표가 많으면 잡는다',
   daily.validate({ sentences: [row({
     text: 'I went, I saw, I came, and I left today.' })] }, CFG).slice(1),
-  ['문장 1: 한 문장에 쉼표가 너무 많습니다. 문장을 나누세요.',
-   '문장 1: 영어가 한 문장뿐입니다. 2~3 문장으로 나누세요.']);
+  ['문장 1: 한 문장에 쉼표가 너무 많습니다. 문장을 나누세요.']);
 
 check('대명사가 다섯을 넘으면 잡는다',
   daily.validate({ sentences: [row({
-    text: 'It was that thing. This is it, and that is this too.' })] }, CFG).slice(1),
+    text: 'It was that thing. This is it, with that among these too.' })] }, CFG).slice(1),
   ['문장 1: it/this/that 이 7번 나옵니다. 구체적인 것을 넣으세요.']);
+
+console.log('\n앞 문장 전체를 that 으로 받아 이어 붙인 자리');
+check('and that 뒤에 동사가 오면 잡는다',
+  daily.gluedOn('If I said yes I would do a rushed job, and that helps nobody.'), true);
+check('and that was that 도 잡는다',
+  daily.gluedOn('I would open the fridge and that was that.'), true);
+check('목적을 나타내는 so that 은 통과',
+  daily.gluedOn('I left early so that I could get some sleep.'), false);
+check('it 으로 자연스럽게 이은 것은 통과',
+  daily.gluedOn('I banged on the ceiling, but it did not do anything.'), false);
+check('검사에서도 잡는다',
+  daily.validate({ sentences: [row({
+    text: 'I said yes to them, and that helps nobody at all.' })] }, CFG).slice(1),
+  ['문장 1: 앞 문장 전체를 that 으로 받아 이어 붙였습니다. 그 부분을 고치세요.']);
 
 console.log('\ncasual 이 정답과 겹치는지');
 check('앞 네 낱말이 같으면 같은 문장으로 본다',
@@ -219,6 +233,23 @@ check('초안이 지시문에 담긴다', rev.indexOf('That deadline is tough') 
 check('관용구 오용을 보라고 한다', rev.indexOf('hit the spot') >= 0, true);
 check('지적만 말고 고치라고 한다', rev.indexOf('직접 고쳐서 내놓으세요') >= 0, true);
 check('개수를 바꾸지 말라고 한다', rev.indexOf('문장 개수(5개)') >= 0, true);
+check('늘려 쓴 데를 잘라 내라고 한다', rev.indexOf('그 마디를 잘라 내세요') >= 0, true);
+check('이어 붙인 that 을 보라고 한다', rev.indexOf('that 하나로 받아 이어 붙였으면') >= 0, true);
+check('casual 이 더 나으면 정답을 다시 쓰라고 한다',
+  rev.indexOf('casual 쪽이 더 사람 말 같으면') >= 0, true);
+check('아래쪽에 붙었다고 늘리지 말라고 한다',
+  rev.indexOf('늘리지 마세요') >= 0, true);
+
+console.log('\n어떤 모델이 답했는지 기록에 남기기');
+var model = require('./daily_model').modelOf;
+check('modelUsage 에서 꺼낸다',
+  model(JSON.stringify({ modelUsage: { 'claude-opus-4-5-20251101': {} } })),
+  'claude-opus-4-5-20251101');
+check('model 칸에서도 꺼낸다',
+  model(JSON.stringify({ model: 'claude-sonnet-4-5' })), 'claude-sonnet-4-5');
+check('모양이 달라도 글에서 찾아낸다',
+  model('알 수 없는 모양 claude-opus-4-5-20251101 끝'), 'claude-opus-4-5-20251101');
+check('없으면 빈 값을 돌려준다', model('{}'), '');
 
 var rs = daily.buildReviewSchema({ count: 5 });
 check('고친 것을 적는 칸이 있다', rs.required.sort(), ['problems', 'sentences']);
@@ -335,7 +366,14 @@ check('영어를 먼저 만들라고 한다', prompt.indexOf('영어를 먼저 �
 check('말버릇을 장식으로 넣지 말라고 한다',
   prompt.indexOf('장식으로 넣지 마세요') >= 0, true);
 check('like 를 채움말로 쓰지 말라고 한다', prompt.indexOf('십대 말투') >= 0, true);
-check('문장을 나누라고 한다', prompt.indexOf('2~3 문장') >= 0, true);
+check('한 문장으로 끝나도 된다고 한다', prompt.indexOf('한 문장으로 끝나도 됩니다') >= 0, true);
+check('쉼표로 잇지 말라고 한다', prompt.indexOf('쉼표로 계속 이으면 안 됩니다') >= 0, true);
+check('규칙을 채우려고 늘리지 말라고 한다',
+  prompt.indexOf('채워야 하는 양이 아닙니다') >= 0, true);
+check('that 이 무엇을 가리키는지 못 박는다',
+  prompt.indexOf('앞 문장 전체를 that 하나로 받지 마세요') >= 0, true);
+check('난이도는 내용에서 나온다고 한다',
+  prompt.indexOf('난이도는 길이가 아니라 내용에서') >= 0, true);
 check('구체적으로 쓰라고 한다', prompt.indexOf('it, that, this 로 얼버무리지') >= 0, true);
 check('맞히기 시험이 아니라고 못 박는다', prompt.indexOf('맞히기 시험이 아니라') >= 0, true);
 check('어휘가 없으면 그 대목을 아예 안 넣는다',

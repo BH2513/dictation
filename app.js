@@ -1028,12 +1028,11 @@
   var dailyShown = false;   // 정답을 봤는지
   var dailyRecording = false;
   var dailyProgress = null;
-  var dailyDaysOpen = false;
   var dailyKind = 'made';   // 'made' = AI 가 만든 문장, 'shows' = 등록한 영상의 실제 대사
 
   var DAILY_TABS = [
-    { id: 'made',  route: 'daily', name: 'Made for you' },
-    { id: 'shows', route: 'shows', name: 'From your videos' }
+    { id: 'made',  route: 'daily', name: 'Written' },
+    { id: 'shows', route: 'shows', name: 'Shows' }
   ];
 
   function dailyFile(pid, date, kind) {
@@ -1114,7 +1113,6 @@
   function showDaily(pid, date, idx) {
     setProfileId(pid);
     show('daily');
-    dailyDaysOpen = false;
     var box = $('daily-body');
     notice(box, 'Loading…');
 
@@ -1131,8 +1129,12 @@
       }
       Store.listPlans(pid, function (plans) {
         dailyPlans = plans || [];
-        var want = date || (window.Store ? Store.today() : '');
-        planFor(pid, want, idx);
+        // 날짜 자리에 묶음 번호가 오면 그 묶음을 바로 연다 (카드나 건너뛴 것에서 올 때)
+        if (/^s\d+$/.test(date || '')) {
+          openSet(pid, date, window.Store ? Store.today() : '', idx);
+          return;
+        }
+        planFor(pid, date || (window.Store ? Store.today() : ''), idx);
       }, function () {
         dailyPlans = [];
         openSet(pid, dailySets[0].id, '', idx);
@@ -1151,15 +1153,87 @@
 
   /* 그 날에 하던 묶음이 있으면 그것을, 없으면 아직 안 쓴 묶음을 하나 꺼내 준다.
      날짜는 "공부한 날" 이다 — 문장을 만든 날이 아니다 (운영자 결정). */
+  function showShows(pid, date, idx) {
+    var box = $('daily-body');
+    getJSON('data/daily/' + pid + '/index.json', function (rows) {
+      dailyIndex = rows || [];
+      var any = false;
+      for (var h = 0; h < dailyIndex.length; h++) if (dailyIndex[h].hasShows) any = true;
+      if (!any) {
+        clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY); return;
+      }
+      if (!window.Store || !Store.available()) {
+        dailyPlans = [];
+        var one = unusedShow();
+        if (one) openShow(pid, one, '', idx);
+        else { clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY); }
+        return;
+      }
+      Store.listPlans(pid, function (plans) {
+        dailyPlans = plans || [];
+        planFor(pid, date || Store.today(), idx);
+      }, function () {
+        dailyPlans = [];
+        var two = unusedShow();
+        if (two) openShow(pid, two, '', idx);
+        else { clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY); }
+      });
+    }, function () {
+      clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY);
+    });
+  }
+
+  function planKey() { return dailyKind === 'shows' ? 'showIds' : 'setIds'; }
+
   function planFor(pid, date, idx) {
+    var k = planKey();
     var mine = null;
     for (var i = 0; i < dailyPlans.length; i++) if (dailyPlans[i].date === date) mine = dailyPlans[i];
 
-    if (mine && mine.setIds.length) { openSet(pid, mine.setIds[mine.setIds.length - 1], date, idx); return; }
+    var got = mine && mine[k] && mine[k].length ? mine[k][mine[k].length - 1] : null;
+    if (got) {
+      if (dailyKind === 'shows') openShow(pid, got, date, idx);
+      else openSet(pid, got, date, idx);
+      return;
+    }
 
-    var fresh = unusedSet();
+    var fresh = dailyKind === 'shows' ? unusedShow() : unusedSet();
     if (!fresh) { noMoreSets(pid, date); return; }
-    assignSet(pid, date, fresh, function () { openSet(pid, fresh, date, idx); });
+    assignSet(pid, date, fresh, function () {
+      if (dailyKind === 'shows') openShow(pid, fresh, date, idx);
+      else openSet(pid, fresh, date, idx);
+    });
+  }
+
+  /* 아직 어느 날에도 안 쓴 영상 대사 묶음 (파일 이름이 곧 번호다) */
+  function unusedShow() {
+    var used = {};
+    for (var p = 0; p < dailyPlans.length; p++) {
+      var ids = dailyPlans[p].showIds || [];
+      for (var q = 0; q < ids.length; q++) used[ids[q]] = true;
+    }
+    for (var i = dailyIndex.length - 1; i >= 0; i--) {
+      if (dailyIndex[i].hasShows && !used[dailyIndex[i].date]) return dailyIndex[i].date;
+    }
+    return null;
+  }
+
+  function openShow(pid, showId, date, idx) {
+    dailyDate = date;
+    getJSON(dailyFile(pid, showId, 'shows'), function (day) {
+      if (!day || !day.sentences || !day.sentences.length) {
+        clear($('daily-body')); $('daily-body').appendChild(dailyTabs(pid, '')); notice2($('daily-body'), SHOWS_EMPTY); return;
+      }
+      dailyDay = day;
+      dailyAt = 0;
+      if (idx !== null && idx !== undefined && !isNaN(idx)) {
+        dailyAt = Math.max(0, Math.min(day.sentences.length - 1, idx));
+      }
+      resetDailyAnswer();
+      loadDailyProgress(pid, day.videoId, function () { drawDaily(pid); });
+    }, function () {
+      notice($('daily-body'), 'That set could not be loaded.', true);
+    });
   }
 
   /* 아직 어느 날에도 안 쓴 묶음 중 제일 오래된 것 */
@@ -1176,9 +1250,11 @@
 
   function assignSet(pid, date, setId, done) {
     if (!window.Store || !Store.available()) { done(); return; }
+    var k = planKey();
     Store.getPlan(pid, date, function (row) {
-      for (var i = 0; i < row.setIds.length; i++) if (row.setIds[i] === setId) { done(); return; }
-      row.setIds.push(setId);
+      if (!row[k]) row[k] = [];
+      for (var i = 0; i < row[k].length; i++) if (row[k][i] === setId) { done(); return; }
+      row[k].push(setId);
       Store.savePlan(row, function () {
         var found = false;
         for (var p = 0; p < dailyPlans.length; p++) {
@@ -1242,66 +1318,68 @@
     return wrap;
   }
 
-  /* 공부한 날 고르기. 오늘이 맨 앞에 오고, 그 뒤로 지난 날들 */
+  /* 공부한 날 고르기.
+
+     최근 며칠은 단추로 바로 누르고, 그보다 오래된 것은 목록에서 고른다.
+     달력을 띄우는 것도 생각해 봤지만 이 앱에는 안 맞는다 — 공부한 날은 드문드문
+     있어서 달력을 열면 대부분이 빈 칸이고, 폰에서 자리도 많이 먹는다.
+     목록은 공부한 날만 나오고 몇 백 개가 되어도 그대로 돌아간다. */
+  var DATE_CHIPS = 5;
+
+  function studyDays() {
+    var k = planKey();
+    var out = [], seen = {};
+    for (var i = 0; i < dailyPlans.length; i++) {
+      var one = dailyPlans[i];
+      if (!one[k] || !one[k].length) continue;      // 그 갈래를 안 한 날은 뺀다
+      if (seen[one.date]) continue;
+      seen[one.date] = true;
+      out.push(one.date);
+    }
+    out.sort(function (x, y) { return x < y ? 1 : -1; });
+    return out;
+  }
+
+  function shortDate(d) { return String(d).slice(5).replace('-', '/'); }
+
   function dateRow(pid) {
     var wrap = el('div', 'dates');
     var today = window.Store ? Store.today() : '';
-    var seen = {};
-    var days = [];
-    if (today) { days.push({ date: today, today: true }); seen[today] = true; }
-    for (var i = 0; i < dailyPlans.length; i++) {
-      if (seen[dailyPlans[i].date]) continue;
-      seen[dailyPlans[i].date] = true;
-      days.push({ date: dailyPlans[i].date, sets: dailyPlans[i].setIds.length });
-    }
-    for (var d = 0; d < days.length && d < 14; d++) {
-      (function (one) {
-        var b = el('button', 'small' + (one.date === dailyDate ? ' on' : ''),
-          one.today ? 'Today' : one.date.slice(5).replace('-', '/'));
-        b.onclick = function () { go('#/' + pid + '/daily/' + one.date); };
+    var days = studyDays();
+    var route = routeOfKind(dailyKind);
+
+    // 오늘은 늘 맨 앞. 아직 안 한 날이어도 눌러서 시작할 수 있어야 한다
+    var list = [];
+    if (today) list.push(today);
+    for (var i = 0; i < days.length; i++) if (days[i] !== today) list.push(days[i]);
+
+    for (var c = 0; c < list.length && c < DATE_CHIPS; c++) {
+      (function (d) {
+        var b = el('button', 'small' + (d === dailyDate ? ' on' : ''),
+          d === today ? 'Today' : shortDate(d));
+        b.onclick = function () { go('#/' + pid + '/' + route + '/' + d); };
         wrap.appendChild(b);
-      })(days[d]);
+      })(list[c]);
+    }
+
+    if (list.length > DATE_CHIPS) {
+      var sel = document.createElement('select');
+      sel.className = 'datepick';
+      var head = document.createElement('option');
+      head.value = '';
+      head.appendChild(document.createTextNode('Earlier\u2026 (' + (list.length - DATE_CHIPS) + ')'));
+      sel.appendChild(head);
+      for (var j = DATE_CHIPS; j < list.length; j++) {
+        var o = document.createElement('option');
+        o.value = list[j];
+        o.appendChild(document.createTextNode(list[j]));
+        if (list[j] === dailyDate) o.selected = true;
+        sel.appendChild(o);
+      }
+      sel.onchange = function () { if (this.value) go('#/' + pid + '/' + route + '/' + this.value); };
+      wrap.appendChild(sel);
     }
     return wrap;
-  }
-
-  /* --- 영상 대사 갈래는 예전처럼 날짜 파일을 쓴다 --- */
-  function showShows(pid, date, idx) {
-    var box = $('daily-body');
-    getJSON('data/daily/' + pid + '/index.json', function (rows) {
-      dailyIndex = rows || [];
-      var have = [];
-      for (var h = 0; h < dailyIndex.length; h++) if (dailyIndex[h].hasShows) have.push(dailyIndex[h]);
-      if (!have.length) {
-        clear(box);
-        box.appendChild(dailyTabs(pid, ''));
-        notice2(box, SHOWS_EMPTY);
-        return;
-      }
-      dailyIndex = have;
-      var want = date || have[0].date;
-      var found = false;
-      for (var i = 0; i < have.length; i++) if (have[i].date === want) found = true;
-      if (!found) want = have[0].date;
-
-      getJSON(dailyFile(pid, want, 'shows'), function (day) {
-        if (!day || !day.sentences || !day.sentences.length) {
-          clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY); return;
-        }
-        dailyDay = day;
-        dailyDate = want;
-        dailyAt = 0;
-        if (idx !== null && idx !== undefined && !isNaN(idx)) {
-          dailyAt = Math.max(0, Math.min(day.sentences.length - 1, idx));
-        }
-        resetDailyAnswer();
-        loadDailyProgress(pid, day.videoId, function () { drawDaily(pid); });
-      }, function () {
-        clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY);
-      });
-    }, function () {
-      clear(box); box.appendChild(dailyTabs(pid, '')); notice2(box, SHOWS_EMPTY);
-    });
   }
 
   function loadDailyProgress(pid, videoId, done) {
@@ -1324,19 +1402,16 @@
   function drawDaily(pid) {
     var box = $('daily-body');
     clear(box);
-    box.appendChild(dailyTabs(pid, dailyKind === 'shows' ? (dailyDay ? dailyDay.date : '') : ''));
+    box.appendChild(dailyTabs(pid, ''));
     var day = dailyDay;
     var s = day.sentences[dailyAt];
 
-    if (dailyKind === 'made') box.appendChild(dateRow(pid));
+    box.appendChild(dateRow(pid));
 
     var mark = dailyProgress && dailyProgress.sentences ? dailyProgress.sentences[dailyAt] : null;
     var where = (dailyAt + 1) + ' of ' + day.sentences.length;
     if (dailyKind === 'made') {
       where += ' · ' + (day.title || 'Set');
-      if (day.madeAt) where += ' · made ' + day.madeAt;
-    } else {
-      where += ' · ' + day.date;
     }
     if (mark === 'ok') where += ' · done';
     else if (mark === 'miss') where += ' · tried';
@@ -1405,24 +1480,15 @@
     row.appendChild(sc);
     box.appendChild(row);
 
-    // 다 한 사람이 더 하고 싶을 때. 남은 것이 있으면 바로 넘어간다
-    if (dailyKind === 'made') {
-      var more = el('div', 'buttons');
-      var left = unseenCount();
-      var mb = el('button', 'half',
-        left ? ('New sentences (' + left + ' left)') : 'New sentences');
-      mb.id = 'daily-more';
-      mb.onclick = function () { moreDaily(pid); };
-      more.appendChild(mb);
-      box.appendChild(more);
-    }
+    // 하기 싫은 문장에 붙잡혀 있을 이유가 없다. 건너뛴 것은 따로 모아 둔다
+    var more = el('div', 'buttons');
+    var mb = el('button', 'half', 'Skip');
+    mb.id = 'daily-more';
+    mb.onclick = function () { skipDaily(pid); };
+    more.appendChild(mb);
+    box.appendChild(more);
 
-    if (dailyShown) {
-      box.appendChild(dailyAnswerBlock(s));
-    } else {
-      box.appendChild(el('div', 'now empty',
-        'Read the Korean, say it in English, then press Show answer.'));
-    }
+    if (dailyShown) box.appendChild(dailyAnswerBlock(s));
 
     var nav = el('div', 'buttons');
     var prev = el('button', 'half', '‹ Previous');
@@ -1438,15 +1504,6 @@
     var st = el('div', 'status', '');
     st.id = 'daily-status';
     box.appendChild(st);
-
-    if (dailyKind === 'shows') {
-      var more = el('div', 'buttons');
-      var mb = el('button', null, dailyDaysOpen ? 'Hide other days' : 'Other days');
-      mb.onclick = function () { dailyDaysOpen = !dailyDaysOpen; drawDaily(pid); };
-      more.appendChild(mb);
-      box.appendChild(more);
-      if (dailyDaysOpen) box.appendChild(dailyDayList(pid));
-    }
 
     window.scrollTo(0, 0);
   }
@@ -1523,31 +1580,6 @@
     return wrap;
   }
 
-  function dailyDayList(pid) {
-    var ul = el('ul', 'list');
-    for (var i = 0; i < dailyIndex.length; i++) {
-      (function (d) {
-        var b = el('button', 'item' + (dailyDay && d.date === dailyDay.date ? ' on' : ''));
-        var body = el('div', 'body');
-        body.appendChild(el('div', 'name', d.date));
-        body.appendChild(el('div', 'meta', dailyKind === 'shows'
-          ? ((d.showsCount || 0) + ' lines')
-          : ((d.count || 0) + ' sentences')));
-        b.appendChild(body);
-        b.onclick = function () {
-          go('#/' + pid + '/' + routeOfKind(dailyKind) + '/' + d.date);
-        };
-        var li = document.createElement('li');
-        li.appendChild(b);
-        ul.appendChild(li);
-      })(dailyIndex[i]);
-    }
-    return ul;
-  }
-
-  /* 아직 안 해 본 문장 중 다음 것. 없으면 -1.
-     앱은 서버가 없어 문장을 만들지 못한다. 대신 하루치를 여러 묶음 만들어 두고
-     여기서 다음 것을 꺼내 준다 (tools/daily.js 의 appendDay 참고). */
   function nextUnseen(from) {
     if (!dailyDay) return -1;
     var done = (dailyProgress && dailyProgress.sentences) || {};
@@ -1577,40 +1609,37 @@
     drawDaily(pid);
   }
 
+  /* 건너뛰기. 하기 싫은 문장에 붙잡혀 있을 이유가 없다.
+     건너뛴 것은 'skip' 으로 남겨 두고 리포트에서 따로 볼 수 있다 (운영자 결정).
+     다섯 개 단위에 묶이지 않는다 — 이 묶음이 떨어지면 다음 묶음을 그 날에 배정한다. */
+  function skipDaily(pid) {
+    markDailySkipped(pid, function () { moreDaily(pid); });
+  }
+
+  function markDailySkipped(pid, done) {
+    if (!window.Store || !Store.available() || !dailyProgress) { done(); return; }
+    if (dailyProgress.sentences[dailyAt]) { done(); return; }   // 이미 한 것은 건드리지 않는다
+    dailyProgress.sentences[dailyAt] = 'skip';
+    dailyProgress.at = dailyAt;
+    Store.saveProgress(dailyProgress, noteStorage);
+    setTimeout(done, 60);
+  }
+
   function moreDaily(pid) {
     var next = nextUnseen(dailyAt);
-    if (next >= 0) {
-      dailyGo(pid, next);
-      var left = unseenCount();
-      dailySay(left > 1 ? (left - 1) + ' more in this set.' : 'This is the last one in this set.');
-      return;
-    }
-    // 이 묶음을 다 했다. 안 쓴 묶음이 있으면 오늘 것으로 하나 더 꺼낸다
-    var fresh = unusedSet();
+    if (next >= 0) { dailyGo(pid, next); return; }
+
+    // 이 묶음을 다 봤다. 안 쓴 것이 있으면 그 날에 하나 더 배정한다
+    var fresh = dailyKind === 'shows' ? unusedShow() : unusedSet();
     if (fresh && dailyDate) {
       assignSet(pid, dailyDate, fresh, function () {
-        openSet(pid, fresh, dailyDate, 0);
-        setTimeout(function () { dailySay('New set \u2014 five more sentences.'); }, 200);
+        if (dailyKind === 'shows') openShow(pid, fresh, dailyDate, 0);
+        else openSet(pid, fresh, dailyDate, 0);
+        setTimeout(function () { dailySay('Next set.'); }, 200);
       });
       return;
     }
-    // 남은 것이 없다. 앱은 서버가 없어 문장을 만들 수 없으니 만드는 곳을 열어 준다
-    var box = $('daily-body');
-    var note = el('div', 'notice');
-    note.appendChild(document.createTextNode(
-      'You have finished every set. A new one is made every morning. '
-      + 'To make one right now, open the maker page and press Run workflow, '
-      + 'then come back in a minute or two.'));
-    var b = el('div', 'buttons');
-    var open = el('button', 'half', 'Open the maker page');
-    open.onclick = function () { window.open(MAKE_URL, '_blank'); };
-    b.appendChild(open);
-    var older = el('button', 'half', 'Older days');
-    older.onclick = function () { dailyDaysOpen = true; drawDaily(pid); };
-    b.appendChild(older);
-    note.appendChild(b);
-    box.appendChild(note);
-    dailySay('Nothing left for today.');
+    noMoreSets(pid, dailyDate);
   }
 
   function revealDaily(pid) {
@@ -1715,6 +1744,7 @@
 
     box.appendChild(streakBlock(days));
     box.appendChild(daysBlock(days));
+    drawSkipped(box, pid);
 
     var head = el('div', 'count', 'Words you miss most');
     box.appendChild(head);
@@ -1767,6 +1797,48 @@
   }
 
   /* 연속 학습 일수 — 오늘(또는 어제)부터 거꾸로 이어지는 날 수 */
+  /* 건너뛴 문장을 모아 보여 준다. 건너뛴 것은 없어지는 게 아니라 미뤄 둔 것이다 */
+  function drawSkipped(box, pid) {
+    if (!window.Store || !Store.available()) return;
+    var slot = el('div', null);
+    box.appendChild(slot);
+    Store.exportAll(pid, function (all) {
+      var rows = [];
+      for (var i = 0; i < all.progress.length; i++) {
+        var pr = all.progress[i];
+        if (!pr.sentences) continue;
+        for (var k in pr.sentences) {
+          if (pr.sentences[k] === 'skip') rows.push({ videoId: pr.videoId, i: parseInt(k, 10) });
+        }
+      }
+      if (!rows.length) return;
+      slot.appendChild(el('div', 'count', 'Skipped \u2014 ' + rows.length));
+      var ul = el('ul', 'list');
+      for (var r = 0; r < rows.length && r < 20; r++) {
+        (function (one) {
+          var b = el('button', 'item');
+          var body = el('div', 'body');
+          body.appendChild(el('div', 'name', 'Go back to it'));
+          body.appendChild(el('div', 'meta', String(one.videoId).replace(/^daily-/, 'Set ')
+            .replace(/^shows-/, 'Shows ') + ' \u00b7 #' + (one.i + 1)));
+          b.appendChild(body);
+          b.onclick = function () {
+            var v = String(one.videoId);
+            if (v.indexOf('daily-s') === 0 || v.indexOf('shows-') === 0) {
+              go('#/' + pid + '/' + routeOfKind(kindOfId(v)) + '/' + v.slice(6) + '/' + one.i);
+            } else {
+              go('#/' + pid + '/' + v + '/' + one.i);
+            }
+          };
+          var li = document.createElement('li');
+          li.appendChild(b);
+          ul.appendChild(li);
+        })(rows[r]);
+      }
+      slot.appendChild(ul);
+    }, function () {});
+  }
+
   function streakBlock(days) {
     var have = {};
     for (var i = 0; i < days.length; i++) if (days[i].count > 0) have[days[i].date] = true;

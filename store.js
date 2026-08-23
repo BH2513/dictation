@@ -6,7 +6,7 @@
    그때는 기록만 포기하고 연습은 그대로 되게 한다. 대신 화면에 그 사실을 남긴다. */
 window.Store = (function () {
   var NAME = 'dictation';
-  var VERSION = 5;
+  var VERSION = 6;
   var db = null;
   var broken = false;
 
@@ -49,6 +49,12 @@ window.Store = (function () {
       if (!d.objectStoreNames.contains('talks')) {
         var tk = d.createObjectStore('talks', { keyPath: 'key' });
         tk.createIndex('profile', 'profileId', { unique: false });
+      }
+      // 사람마다 고르는 것 — 글자 크기, 색, 대화를 어떻게 굴릴지.
+      // **여기는 프로필 ID 를 쓴다.** 같은 기기를 가족이 나눠 쓰고 취향이 다르다.
+      // (열쇠만 기기별이고 그건 아래 settings 다 — 둘을 헷갈리면 안 된다)
+      if (!d.objectStoreNames.contains('prefs')) {
+        d.createObjectStore('prefs', { keyPath: 'key' });
       }
       // 기기 설정 — AI 열쇠 같은 것.
       // **여기만 프로필 ID 를 안 넣는다.** 열쇠는 기기에 하나를 넣고 온 가족이 같이 쓴다
@@ -243,6 +249,17 @@ window.Store = (function () {
       }, fail);
     },
 
+    /* 사람마다 고르는 것. **프로필별이다** — 아래 settings 와 헷갈리면 안 된다 */
+    getPrefs: function (profileId, done, fail) {
+      get('prefs', profileId, function (row) { done((row && row.value) || {}); },
+          function () { done({}); });
+    },
+
+    savePrefs: function (profileId, value, done, fail) {
+      put('prefs', { key: profileId, value: value }, fail);
+      if (done) setTimeout(done, 60);
+    },
+
     /* 기기 설정. 프로필별이 아니다 — 위 onupgradeneeded 의 설명을 볼 것 */
     getSetting: function (name, done, fail) {
       get('settings', name, function (row) { done(row ? row.value : null); }, fail);
@@ -266,7 +283,7 @@ window.Store = (function () {
     exportAll: function (profileId, done, fail) {
       var out = { app: 'dictation', version: 1, profileId: profileId,
                   savedAt: today(), progress: [], misses: [], cards: [], days: [], plan: [],
-                  talkSummaries: [] };
+                  talkSummaries: [], prefs: null };
       allRows('progress', function (rows) {
         for (var i = 0; i < rows.length; i++) if (rows[i].profileId === profileId) out.progress.push(rows[i]);
         allRows('misses', function (rows2) {
@@ -279,6 +296,9 @@ window.Store = (function () {
                 for (var q = 0; q < rows5.length; q++) if (rows5[q].profileId === profileId) out.plan.push(rows5[q]);
                 // 대화는 **요약만** 옮긴다. 원문은 넣지 않는다 (ROADMAP) —
                 // 백업 파일은 사람이 손으로 주고받는 물건이고, 다시 읽을 값어치는 요약 쪽에 있다
+                get('prefs', profileId, function (pf) {
+                  if (pf && pf.value) out.prefs = pf.value;
+                }, function () {});
                 allRows('talks', function (rows6) {
                   for (var t = 0; t < rows6.length; t++) {
                     var r = rows6[t];
@@ -320,6 +340,11 @@ window.Store = (function () {
             step();
           }, fail);
         })(jobs[j][0], jobs[j][1]);
+      }
+      if (data.prefs) {
+        tx('prefs', 'readwrite', function (st) {
+          st.put({ key: profileId, value: data.prefs });
+        }, function () {});
       }
       tx('misses', 'readwrite', function (st) {
         var rows = data.misses || [];

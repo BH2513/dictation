@@ -9,10 +9,10 @@
 <meta name="theme-color" content="#0f1115">
 <title>Dictation</title>
 <!-- 데스크탑·폰에 앱으로 설치하기 위한 것 -->
-<link rel="manifest" href="manifest.json?v=2026-08-26f">
+<link rel="manifest" href="manifest.json?v=2026-08-26g">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="stylesheet" href="style.css?v=2026-08-26f">
+<link rel="stylesheet" href="style.css?v=2026-08-26g">
 </head>
 <body>
 
@@ -163,6 +163,9 @@
       <h1>Settings</h1>
     </div>
 
+    <!-- 사람마다 고르는 것 (SPEC 10-d). 목록은 prefs.js 가 갖고 있고 app.js 가 그린다 -->
+    <div class="backup" id="prefs-box"></div>
+
     <div class="backup">
       <div class="rowlabel">AI key</div>
       <p class="hint">Talk practice sends what you say straight from this phone to the AI company.
@@ -270,10 +273,11 @@
   </div>
 </div>
 
-<script src="store.js?v=2026-08-26f"></script>
-<script src="record.js?v=2026-08-26f"></script>
-<script src="talk.js?v=2026-08-26f"></script>
-<script src="talkui.js?v=2026-08-26f"></script>
-<script src="app.js?v=2026-08-26f"></script>
+<script src="store.js?v=2026-08-26g"></script>
+<script src="record.js?v=2026-08-26g"></script>
+<script src="prefs.js?v=2026-08-26g"></script>
+<script src="talk.js?v=2026-08-26g"></script>
+<script src="talkui.js?v=2026-08-26g"></script>
+<script src="app.js?v=2026-08-26g"></script>
 </body>
 </html>

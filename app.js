@@ -2479,12 +2479,86 @@
     TalkUI.open(profileId);
   }
 
+  /* 사람마다 고르는 것 (SPEC 10-d). **목록은 prefs.js 가 갖고 있다** —
+     여기에 또 적으면 둘이 어긋난다. 여기서는 그리기만 한다.
+
+     고르는 순간 저장되고 화면에 바로 먹는다. **저장 단추를 두지 않는다** —
+     눌러야 되는 줄 모르고 나가면 안 바뀐 채로 남는다. */
+  function drawPrefs(pid) {
+    var box = $('prefs-box');
+    if (!box || !window.Prefs) return;
+    clear(box);
+
+    box.appendChild(el('div', 'rowlabel', 'How it looks'));
+    box.appendChild(pickRow(pid, 'theme', 'Colours'));
+    box.appendChild(pickRow(pid, 'textSize', 'Text size'));
+
+    box.appendChild(el('div', 'rowlabel', 'Talk practice'));
+    box.appendChild(pickRow(pid, 'turnTaking', 'Taking turns'));
+    box.appendChild(waitRow(pid));
+
+    if (!window.Store || !Store.available()) {
+      notice(box, 'This browser will not remember these, so they go back to normal '
+        + 'when you close the app.', true);
+    }
+  }
+
+  /* 고르는 줄. 칸을 눌러 고른다 — 폰에서 드롭다운은 누르기 어렵다 */
+  function pickRow(pid, name, title) {
+    var wrap = el('div', 'pick');
+    wrap.appendChild(el('div', 'picktitle', title));
+    var list = Prefs.CHOICES[name] || [];
+    for (var i = 0; i < list.length; i++) {
+      (function (opt) {
+        var on = Prefs.get()[name] === opt.value;
+        var b = el('button', 'pickone' + (on ? ' on' : ''));
+        var body = el('div', 'body');
+        body.appendChild(el('div', 'name', opt.name));
+        if (opt.desc) body.appendChild(el('div', 'desc', opt.desc));
+        b.appendChild(body);
+        b.appendChild(el('div', 'tick', on ? '\u2713' : ''));
+        b.onclick = function () {
+          Prefs.set(pid, name, opt.value, function () { drawPrefs(pid); });
+        };
+        wrap.appendChild(b);
+      })(list[i]);
+    }
+    return wrap;
+  }
+
+  /* 마이크가 얼마나 기다릴지. 저절로 보내는 쪽을 골랐을 때만 쓸모가 있다 */
+  function waitRow(pid) {
+    var wrap = el('div', 'pick');
+    var auto = Prefs.get().turnTaking === 'auto';
+    wrap.appendChild(el('div', 'picktitle', 'How long it waits before sending'));
+
+    var val = el('div', 'waitval', Prefs.get().waitSec.toFixed(1) + ' seconds');
+    wrap.appendChild(val);
+
+    var r = el('input', null);
+    r.type = 'range';
+    r.min = String(Prefs.WAIT_MIN);
+    r.max = String(Prefs.WAIT_MAX);
+    r.step = '0.5';
+    r.value = String(Prefs.get().waitSec);
+    r.oninput = function () { val.textContent = parseFloat(r.value).toFixed(1) + ' seconds'; };
+    r.onchange = function () { Prefs.set(pid, 'waitSec', parseFloat(r.value)); };
+    wrap.appendChild(r);
+
+    wrap.appendChild(el('div', 'hint', auto
+      ? 'If it cuts you off while you are thinking, make this longer. '
+        + 'It waits longer anyway when your sentence sounds unfinished.'
+      : 'Only used when it sends on its own. Right now you tap to send.'));
+    return wrap;
+  }
+
   var KEY_NAME = 'aiKey';
   var KEY_COMPANY = 'aiCompany';
 
   function showSettings(pid) {
     setProfileId(pid);
     show('settings');
+    drawPrefs(pid);
 
     var sel = $('key-company');
     if (!sel.options.length && window.Talk) {
@@ -2998,7 +3072,8 @@
 
   /* ---------------------------------------------------------------- 진도 (SPEC 4-2) */
 
-  function setProfileId(id) { profileId = id; }
+  function setProfileId(id) {
+    if (window.Prefs) Prefs.load(id); profileId = id; }
 
   function loadProgress(profileId, videoId, done) {
     progress = null;

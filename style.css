@@ -1,16 +1,60 @@
+/* 색과 글자 크기는 사람마다 고른다 (SPEC 10-d). `prefs.js` 가 <html> 에 표시를 붙이고
+   여기가 그 표시를 보고 값을 바꾼다. **색 이름은 한 벌뿐이다** — 화면마다 색을 직접 쓰면
+   테마를 바꿀 때 거기만 안 바뀐다. 반드시 var(--…) 로만 쓴다.
+
+   흐린 글씨(--muted)를 눈에 띄게 밝혔다. 12~13px 흐린 글씨가 많아서
+   "글자가 잘 안 보인다" 는 말이 나왔다 (2026-08-26 운영자 지적). */
 :root{
   --bg:#0f1115;
   --card:#181b22;
   --card2:#1f232c;
-  --line:#2a2f3a;
-  --text:#e8eaf0;
-  --muted:#9aa3b2;
-  --accent:#3b82f6;
+  --line:#333a48;
+  --text:#f2f4f8;
+  --muted:#b9c2d0;
+  --accent:#4c8dff;
   --accent-on:#ffffff;
-  --ok:#22c55e;
-  --warn:#f59e0b;
-  --bad:#ef4444;
+  --ok:#34d17a;
+  --warn:#f5a623;
+  --bad:#ff6b6b;
+
+  /* 글자 크기. 아래 모든 크기가 이걸 곱해서 나온다 */
+  --scale:1;
+  --f-body:calc(17px * var(--scale));
+  --f-big:calc(19px * var(--scale));
+  --f-small:calc(15px * var(--scale));
+  --f-tiny:calc(13.5px * var(--scale));
+  --field:#0b0e13;
+  --on-ok:#08240f;
+  --on-warn:#3a2a06;
+  --bad-text:#ffd9d9;
+  --video:#000000;
+  --tag-ok-bg:#1e3a2b; --tag-ok:#7ee2a8;
+  --tag-in-bg:#2b3350; --tag-in:#a7bcff;
 }
+
+html[data-theme="light"]{
+  --bg:#f6f7fa;
+  --card:#ffffff;
+  --card2:#eef1f6;
+  --line:#d3d9e3;
+  --text:#12151b;
+  --muted:#525c6b;
+  --accent:#1f6bdc;
+  --accent-on:#ffffff;
+  --ok:#12813f;
+  --warn:#9a6100;
+  --bad:#c02626;
+  --field:#ffffff;
+  --on-ok:#ffffff;
+  --on-warn:#3a2a06;
+  --bad-text:#8f1b1b;
+  --video:#000000;
+  --tag-ok-bg:#dcf5e6; --tag-ok:#0d6b34;
+  --tag-in-bg:#dde6fb; --tag-in:#1a4aa8;
+}
+
+html[data-text="large"]{ --scale:1.13; }
+html[data-text="larger"]{ --scale:1.28; }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
 body{
@@ -39,18 +83,18 @@ body{
   margin:4px 0 16px;
   min-height:44px;
 }
-.top h1{font-size:18px;margin:0;flex:1;min-width:0;
+.top h1{font-size:var(--f-big);margin:0;flex:1;min-width:0;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.sub{color:var(--muted);font-size:13px;margin:-8px 0 16px;}
+.sub{color:var(--muted);font-size:var(--f-tiny);margin:-8px 0 16px;}
 
 /* 단추 */
 button{
   font-family:inherit;
   min-height:52px;
-  font-size:16px;
+  font-size:var(--f-body);
   font-weight:600;
   color:var(--text);
-  background:#232833;
+  background:var(--card2);
   border:1px solid var(--line);
   border-radius:12px;
   padding:12px 14px;
@@ -61,8 +105,8 @@ button{
 button:active{transform:translateY(1px);}
 button:disabled{opacity:.45;cursor:default;}
 button.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-on);}
-button.on{background:var(--ok);border-color:var(--ok);color:#08240f;}
-button.small{min-height:40px;font-size:14px;padding:8px 12px;flex:0 0 auto;}
+button.on{background:var(--ok);border-color:var(--ok);color:var(--on-ok);}
+button.small{min-height:40px;font-size:var(--f-small);padding:8px 12px;flex:0 0 auto;}
 .buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
 .buttons button{flex:1 1 140px;}
 @media (max-width:420px){
@@ -86,19 +130,19 @@ button.small{min-height:40px;font-size:14px;padding:8px 12px;flex:0 0 auto;}
   min-height:64px;
 }
 .item .body{flex:1;min-width:0;}
-.item .name{font-size:16px;font-weight:600;}
-.item .meta{font-size:12px;color:var(--muted);margin-top:3px;font-weight:400;}
+.item .name{font-size:var(--f-body);font-weight:600;}
+.item .meta{font-size:var(--f-tiny);color:var(--muted);margin-top:3px;font-weight:400;}
 .dot{
   width:36px;height:36px;border-radius:50%;
   flex:0 0 36px;
   display:flex;align-items:center;justify-content:center;
-  color:#fff;font-weight:700;font-size:16px;
+  color:#fff;font-weight:700;font-size:var(--f-body);
 }
 .badge{
   display:inline-block;
-  font-size:11px;
+  font-size:var(--f-tiny);
   font-weight:600;
-  color:#3a2a06;
+  color:var(--on-warn);
   background:var(--warn);
   border-radius:999px;
   padding:2px 8px;
@@ -110,12 +154,12 @@ button.small{min-height:40px;font-size:14px;padding:8px 12px;flex:0 0 auto;}
    예전에는 프로필을 고르면 곧바로 영상 목록이 나왔다. 받아쓰기 말고도 갈래가 셋이 되면서
    목록 하나가 첫 화면을 다 먹고 나머지는 머리말의 작은 단추 다섯 개로 밀려나 있었다.
    갈래를 먼저 고르고, 영상 목록은 받아쓰기 안으로 들어간다. */
-.streakline{font-size:13px;color:var(--muted);margin:-8px 0 18px;}
+.streakline{font-size:var(--f-tiny);color:var(--muted);margin:-8px 0 18px;}
 .streakline:empty{display:none;}
 .streakline b{color:var(--text);font-weight:600;}
 
 .grouplabel{
-  font-size:12px;font-weight:700;color:var(--muted);
+  font-size:var(--f-tiny);font-weight:700;color:var(--muted);
   letter-spacing:.6px;text-transform:uppercase;
   margin:22px 0 10px;
 }
@@ -139,19 +183,19 @@ button.small{min-height:40px;font-size:14px;padding:8px 12px;flex:0 0 auto;}
   flex:0 0 46px;width:46px;height:46px;
   border-radius:14px;
   display:flex;align-items:center;justify-content:center;
-  font-size:23px;line-height:1;
+  font-size:calc(23px * var(--scale));line-height:1;
 }
 .tile .body{flex:1;min-width:0;}
-.tile .name{font-size:17px;font-weight:700;}
-.tile .desc{font-size:13px;font-weight:400;color:var(--muted);margin-top:2px;}
+.tile .name{font-size:var(--f-body);font-weight:700;}
+.tile .desc{font-size:var(--f-tiny);font-weight:400;color:var(--muted);margin-top:2px;}
 /* 오늘 어디까지 했는지. 자리를 미리 잡아 두어야 값이 늦게 와도 화면이 안 흔들린다 */
-.tile .meta{font-size:12px;font-weight:600;color:var(--accent);margin-top:6px;min-height:18px;}
+.tile .meta{font-size:var(--f-tiny);font-weight:600;color:var(--accent);margin-top:6px;min-height:18px;}
 .tile .meta.off{color:var(--muted);font-weight:400;}
-.tile .go{flex:0 0 auto;color:var(--muted);font-size:22px;line-height:1;}
+.tile .go{flex:0 0 auto;color:var(--muted);font-size:calc(22px * var(--scale));line-height:1;}
 
 /* 기록 쪽 단추. 연습 갈래가 아니므로 작게 한 줄로 둔다 */
 .tools{display:flex;gap:8px;}
-.tools button{flex:1 1 0;min-height:48px;font-size:14px;padding:10px 6px;}
+.tools button{flex:1 1 0;min-height:48px;font-size:var(--f-small);padding:10px 6px;}
 
 /* 알림 */
 .notice{
@@ -160,24 +204,24 @@ button.small{min-height:40px;font-size:14px;padding:8px 12px;flex:0 0 auto;}
   border-radius:12px;
   padding:14px;
   color:var(--muted);
-  font-size:14px;
+  font-size:var(--f-small);
 }
-.notice.error{border-color:var(--bad);color:#ffd9d9;}
+.notice.error{border-color:var(--bad);color:var(--bad-text);}
 .notice b{color:var(--text);}
 
 /* 플레이어 */
 .player-box{
   position:relative;width:100%;padding-top:56.25%;
-  background:#000;border-radius:12px;overflow:hidden;border:1px solid var(--line);
+  background:var(--video);border-radius:12px;overflow:hidden;border:1px solid var(--line);
 }
 .player-box iframe,.player-box > div{position:absolute;top:0;left:0;width:100%;height:100%;}
 .cover{
   position:absolute;top:0;left:0;width:100%;height:100%;
   margin:0;padding:0;border:0;border-radius:0;
-  background:#11141a;
+  background:var(--field);
   color:var(--muted);
   display:flex;align-items:center;justify-content:center;
-  font-size:34px;font-weight:400;
+  font-size:calc(34px * var(--scale));font-weight:400;
   min-height:0;
 }
 .cover.off{display:none;}
@@ -188,28 +232,28 @@ button.small{min-height:40px;font-size:14px;padding:8px 12px;flex:0 0 auto;}
   border-radius:12px;
   padding:16px;
   margin-top:14px;
-  font-size:18px;
+  font-size:var(--f-big);
   line-height:1.6;
   min-height:80px;
 }
-.now.empty{color:var(--muted);font-size:15px;}
-.now .ko{display:block;margin-top:10px;font-size:14px;color:var(--muted);}
+.now.empty{color:var(--muted);font-size:var(--f-small);}
+.now .ko{display:block;margin-top:10px;font-size:var(--f-small);color:var(--muted);}
 .now .w{display:inline-block;}
 .now .w.bad{color:#fff;background:var(--bad);border-radius:5px;padding:0 5px;}
-.now .extra{margin-top:10px;font-size:13px;color:var(--warn);}
+.now .extra{margin-top:10px;font-size:var(--f-tiny);color:var(--warn);}
 
 /* 앱의 모든 입력칸에 걸어 둔다. 예전에는 받아쓰기 화면 것 하나에만 걸려 있어서
    Daily·카드·편집·백업 입력칸이 브라우저 기본 모양(흰 바탕, 좁은 폭)으로 나왔다 */
 textarea{
   width:100%;
   margin-top:14px;
-  background:#0e1116;
+  background:var(--field);
   color:var(--text);
   border:1px solid var(--line);
   border-radius:12px;
   padding:12px;
   font-family:inherit;
-  font-size:17px;          /* 16px 미만이면 iOS 가 포커스할 때 화면을 확대한다 */
+  font-size:var(--f-body);          /* 16px 미만이면 iOS 가 포커스할 때 화면을 확대한다 */
   line-height:1.5;
   resize:vertical;
   outline:none;
@@ -217,17 +261,17 @@ textarea{
 textarea:focus{border-color:var(--accent);}
 
 .hintline{
-  margin-top:12px;font-size:16px;color:var(--accent);
+  margin-top:12px;font-size:var(--f-body);color:var(--accent);
   letter-spacing:1px;min-height:20px;word-break:break-word;
 }
-.keys{display:none;margin-top:10px;font-size:12px;color:var(--muted);}
+.keys{display:none;margin-top:10px;font-size:var(--f-tiny);color:var(--muted);}
 @media (min-width:700px){ .keys{display:block;} }
 
 .lead .row{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
-.lead .rowlabel{flex:1;font-size:14px;font-weight:600;}
-.status{margin-top:12px;font-size:13px;color:var(--muted);min-height:20px;}
+.lead .rowlabel{flex:1;font-size:var(--f-small);font-weight:600;}
+.status{margin-top:12px;font-size:var(--f-tiny);color:var(--muted);min-height:20px;}
 
-.pos{font-size:13px;color:var(--muted);margin-top:14px;}
+.pos{font-size:var(--f-tiny);color:var(--muted);margin-top:14px;}
 .pos .done{margin-left:6px;}
 .pos .done:not(:empty)::before{content:"· ";}
 
@@ -251,7 +295,7 @@ textarea:focus{border-color:var(--accent);}
 }
 .navbar button{flex:1 1 0;min-height:48px;}
 .navbar .navpos{
-  flex:0 0 auto;font-size:13px;color:var(--muted);
+  flex:0 0 auto;font-size:var(--f-tiny);color:var(--muted);
   min-width:74px;text-align:center;
 }
 #screen-listen .wrap{padding-bottom:calc(96px + env(safe-area-inset-bottom));}
@@ -266,7 +310,7 @@ textarea:focus{border-color:var(--accent);}
 }
 .lead label{
   display:block;
-  font-size:14px;
+  font-size:var(--f-small);
   font-weight:600;
   color:var(--text);
   margin-bottom:10px;
@@ -281,7 +325,7 @@ textarea:focus{border-color:var(--accent);}
   margin:0;
 }
 .lead input[type="range"]::-webkit-slider-runnable-track{
-  height:6px;border-radius:3px;background:#2f3542;
+  height:6px;border-radius:3px;background:var(--line);
 }
 .lead input[type="range"]::-webkit-slider-thumb{
   -webkit-appearance:none;appearance:none;
@@ -290,13 +334,13 @@ textarea:focus{border-color:var(--accent);}
   margin-top:-11px;
 }
 .lead input[type="range"]::-moz-range-track{
-  height:6px;border-radius:3px;background:#2f3542;
+  height:6px;border-radius:3px;background:var(--line);
 }
 .lead input[type="range"]::-moz-range-thumb{
   width:28px;height:28px;border-radius:50%;
   background:var(--accent);border:0;
 }
-.hint{font-size:12px;color:var(--muted);margin:4px 0 8px;}
+.hint{font-size:var(--f-tiny);color:var(--muted);margin:4px 0 8px;}
 .list-box{
   position:relative;
   max-height:45vh;
@@ -306,15 +350,15 @@ textarea:focus{border-color:var(--accent);}
   border:1px solid var(--line);
   border-radius:12px;
   padding:10px;
-  background:#12151b;
+  background:var(--field);
 }
 .sentence{
   display:block;width:100%;text-align:left;
   background:var(--card);border:1px solid var(--line);
   border-radius:10px;padding:12px 14px;min-height:48px;
-  font-size:15px;font-weight:400;line-height:1.5;
+  font-size:var(--f-small);font-weight:400;line-height:1.5;
 }
-.sentence .no{color:var(--muted);font-size:12px;margin-right:8px;}
+.sentence .no{color:var(--muted);font-size:var(--f-tiny);margin-right:8px;}
 .sentence.playing{border-color:var(--accent);background:var(--card2);}
 
 /* 오답 리포트 */
@@ -322,11 +366,11 @@ textarea:focus{border-color:var(--accent);}
   flex:0 0 auto;
   min-width:34px;
   text-align:center;
-  font-size:15px;font-weight:700;
+  font-size:var(--f-small);font-weight:700;
   color:#fff;background:var(--bad);
   border-radius:999px;padding:3px 9px;
 }
-.chartlabel{font-size:12px;color:var(--muted);margin-bottom:10px;}
+.chartlabel{font-size:var(--f-tiny);color:var(--muted);margin-bottom:10px;}
 .chart{
   display:flex;align-items:flex-end;gap:4px;
   height:64px;
@@ -334,20 +378,20 @@ textarea:focus{border-color:var(--accent);}
 .chart .bar{
   flex:1 1 0;height:100%;
   display:flex;align-items:flex-end;
-  background:#171b22;border-radius:4px;overflow:hidden;
+  background:var(--card2);border-radius:4px;overflow:hidden;
 }
 .chart .bar .fill{width:100%;background:var(--accent);border-radius:4px;min-height:2px;}
-.chart .bar.zero .fill{background:#242a35;}
+.chart .bar.zero .fill{background:var(--line);}
 
 /* 따라 말하기 */
 .speak{
   margin-top:18px;padding:14px 16px 6px;
   background:var(--card);border:1px solid var(--line);border-radius:12px;
 }
-.speak .rowlabel{font-size:14px;font-weight:600;margin-bottom:10px;}
+.speak .rowlabel{font-size:var(--f-small);font-weight:600;margin-bottom:10px;}
 .speak .buttons{margin-top:0;}
 button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
-.heard{font-size:14px;color:var(--muted);margin:10px 0 8px;min-height:18px;}
+.heard{font-size:var(--f-small);color:var(--muted);margin:10px 0 8px;min-height:18px;}
 .heard .w{display:inline-block;}
 .heard .w.bad{color:#fff;background:var(--bad);border-radius:5px;padding:0 5px;}
 
@@ -359,9 +403,9 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
   border-bottom:1px solid var(--warn);
 }
 #card-input{
-  width:100%;margin-top:14px;background:#0e1116;color:var(--text);
+  width:100%;margin-top:14px;background:var(--field);color:var(--text);
   border:1px solid var(--line);border-radius:12px;padding:12px;
-  font-family:inherit;font-size:17px;line-height:1.5;resize:vertical;outline:none;
+  font-family:inherit;font-size:var(--f-body);line-height:1.5;resize:vertical;outline:none;
 }
 #card-input:focus{border-color:var(--accent);}
 
@@ -370,11 +414,11 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
   margin-top:26px;padding:14px 16px 6px;
   background:var(--card);border:1px solid var(--line);border-radius:12px;
 }
-.backup .rowlabel{font-size:14px;font-weight:600;margin-bottom:6px;}
+.backup .rowlabel{font-size:var(--f-small);font-weight:600;margin-bottom:6px;}
 #paste-box{
-  width:100%;margin-top:12px;background:#0e1116;color:var(--text);
+  width:100%;margin-top:12px;background:var(--field);color:var(--text);
   border:1px solid var(--line);border-radius:12px;padding:12px;
-  font-family:inherit;font-size:16px;resize:vertical;outline:none;
+  font-family:inherit;font-size:var(--f-body);resize:vertical;outline:none;
 }
 
 /* 편집 화면 */
@@ -382,12 +426,12 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
   background:var(--card);border:1px solid var(--line);border-radius:12px;
   padding:12px 14px;
 }
-.editrow .meta{font-size:12px;color:var(--muted);margin-bottom:8px;}
-.editrow .words{font-size:15px;line-height:2.1;margin-bottom:10px;}
+.editrow .meta{font-size:var(--f-tiny);color:var(--muted);margin-bottom:8px;}
+.editrow .words{font-size:var(--f-small);line-height:2.1;margin-bottom:10px;}
 .editrow .word{display:inline;}
 .editrow .cut{
   min-height:0;padding:0 4px;margin:0 2px;
-  font-size:11px;line-height:1.6;
+  font-size:var(--f-tiny);line-height:1.6;
   background:transparent;border:1px dashed var(--line);color:var(--muted);
   border-radius:5px;
 }
@@ -395,48 +439,48 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 .item .edit-link{
   flex:0 0 auto;margin-left:8px;
   min-height:36px;padding:6px 10px;
-  font-size:13px;font-weight:400;color:var(--muted);
+  font-size:var(--f-tiny);font-weight:400;color:var(--muted);
   background:transparent;border-color:var(--line);
 }
 
 .paste{margin:14px 0 18px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;}
-.paste summary{font-size:14px;font-weight:600;cursor:pointer;}
+.paste summary{font-size:var(--f-small);font-weight:600;cursor:pointer;}
 #paste-caps{
-  width:100%;margin-top:10px;background:#0e1116;color:var(--text);
+  width:100%;margin-top:10px;background:var(--field);color:var(--text);
   border:1px solid var(--line);border-radius:10px;padding:10px;
-  font-family:inherit;font-size:16px;resize:vertical;outline:none;
+  font-family:inherit;font-size:var(--f-body);resize:vertical;outline:none;
 }
 
 /* 하루 다섯 문장 (ROADMAP 1단계) */
-.count{font-size:12px;color:var(--muted);margin:0 0 6px;}
+.count{font-size:var(--f-tiny);color:var(--muted);margin:0 0 6px;}
 
 /* 몇 번째로 하는 것인지. 순서가 보여야 흐름대로 하게 된다 */
-.step{font-size:13px;font-weight:600;color:var(--text);margin:18px 0 8px;}
+.step{font-size:var(--f-tiny);font-weight:600;color:var(--text);margin:18px 0 8px;}
 .n{
   display:inline-block;
   min-width:20px;height:20px;line-height:20px;
   margin-right:7px;
   border-radius:50%;
   background:var(--accent);color:var(--accent-on);
-  text-align:center;font-size:11px;font-weight:700;
+  text-align:center;font-size:var(--f-tiny);font-weight:700;
 }
 
 /* 옮겨야 할 한국어 문장. 이게 화면의 주인공이라 크게 둔다 */
 .kotask{
   margin:10px 0 16px;padding:16px;
   background:var(--card);border:1px solid var(--line);border-radius:12px;
-  font-size:19px;line-height:1.55;font-weight:600;
+  font-size:var(--f-big);line-height:1.55;font-weight:600;
 }
 
 .answer{
   margin-top:16px;padding:14px 16px;
   background:var(--card);border:1px solid var(--line);border-radius:12px;
 }
-.answer .rowlabel{font-size:12px;font-weight:600;color:var(--muted);margin:12px 0 6px;}
+.answer .rowlabel{font-size:var(--f-tiny);font-weight:600;color:var(--muted);margin:12px 0 6px;}
 .answer .rowlabel:first-child{margin-top:0;}
-.answer .ans{font-size:17px;line-height:1.55;}
-.answer .alt{font-size:15px;line-height:1.5;color:var(--muted);margin-bottom:6px;}
-.answer .note{font-size:14px;line-height:2;color:var(--muted);}  /* 강조 표시가 줄에 끼지 않게 넓힌다 */
+.answer .ans{font-size:var(--f-body);line-height:1.55;}
+.answer .alt{font-size:var(--f-small);line-height:1.5;color:var(--muted);margin-bottom:6px;}
+.answer .note{font-size:var(--f-small);line-height:2;color:var(--muted);}  /* 강조 표시가 줄에 끼지 않게 넓힌다 */
 .answer .buttons{margin-top:12px;}
 
 /* 다른 날 목록에서 지금 보고 있는 날 */
@@ -445,11 +489,11 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 /* 하루 문장 — 말투 딱지와 강조 표현 */
 .answer .alt{display:flex;gap:8px;align-items:baseline;}
 .answer .alt .tag{
-  flex:0 0 auto;font-size:11px;font-weight:700;letter-spacing:.4px;
+  flex:0 0 auto;font-size:var(--f-tiny);font-weight:700;letter-spacing:.4px;
   text-transform:uppercase;padding:2px 7px;border-radius:6px;
 }
-.answer .alt .tag.casual{background:#1e3a2b;color:#7ee2a8;}
-.answer .alt .tag.formal{background:#2b3350;color:#a7bcff;}
+.answer .alt .tag.casual{background:var(--tag-ok-bg);color:var(--tag-ok);}
+.answer .alt .tag.formal{background:var(--tag-in-bg);color:var(--tag-in);}
 .answer .note .key{
   color:var(--text);font-weight:700;
   background:rgba(59,130,246,.18);
@@ -459,39 +503,39 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 
 /* 공부한 날 고르기 */
 .dates{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;}
-.dates button{flex:0 0 auto;min-height:36px;padding:0 12px;font-size:13px;}
+.dates button{flex:0 0 auto;min-height:36px;padding:0 12px;font-size:var(--f-tiny);}
 .dates .datepick{
-  flex:0 0 auto;min-height:36px;padding:0 10px;font-size:13px;
-  background:#232833;color:var(--text);border:1px solid var(--line);border-radius:10px;
+  flex:0 0 auto;min-height:36px;padding:0 10px;font-size:var(--f-tiny);
+  background:var(--card2);color:var(--text);border:1px solid var(--line);border-radius:10px;
 }
 
 /* 1단계 판정표 — 리포트 화면 (ROADMAP "매주 보는 것") */
 .gate{width:100%;border-collapse:collapse;margin:10px 0 2px;}
-.gate th{font-size:12px;font-weight:600;color:var(--muted);text-align:right;padding:2px 4px;}
+.gate th{font-size:var(--f-tiny);font-weight:600;color:var(--muted);text-align:right;padding:2px 4px;}
 .gate th:first-child{text-align:left;}
-.gate td{padding:4px;text-align:right;font-size:15px;color:var(--text);}
-.gate td.wk{text-align:left;color:var(--muted);font-size:13px;}
+.gate td{padding:4px;text-align:right;font-size:var(--f-small);color:var(--text);}
+.gate td.wk{text-align:left;color:var(--muted);font-size:var(--f-tiny);}
 .gate td.ok{color:var(--ok);}
 .gate td.no{color:var(--bad);}
-.gate td.none{text-align:left;color:var(--muted);font-size:13px;}
+.gate td.none{text-align:left;color:var(--muted);font-size:var(--f-tiny);}
 .gate tr.na td{opacity:.5;}
-.gateline{margin-top:8px;font-size:14px;font-weight:600;color:var(--text);}
+.gateline{margin-top:8px;font-size:var(--f-small);font-weight:600;color:var(--text);}
 .gateline.ok{color:var(--ok);}
 .gateline.no{color:var(--bad);font-weight:400;}
-.gatefoot{margin-top:5px;font-size:12px;color:var(--muted);line-height:1.5;}
+.gatefoot{margin-top:5px;font-size:var(--f-tiny);color:var(--muted);line-height:1.5;}
 
 /* 설정 화면 — AI 열쇠 넣는 칸 (ROADMAP 2단계) */
 #screen-settings input[type="password"],
 #screen-settings select{
   width:100%;
   margin-top:6px;
-  background:#0e1116;
+  background:var(--field);
   color:var(--text);
   border:1px solid var(--line);
   border-radius:12px;
   padding:12px;
   font-family:inherit;
-  font-size:17px;          /* 16px 미만이면 iOS 가 포커스할 때 화면을 확대한다 */
+  font-size:var(--f-body);          /* 16px 미만이면 iOS 가 포커스할 때 화면을 확대한다 */
   line-height:1.4;
   outline:none;
   min-height:52px;
@@ -507,16 +551,16 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 /* 대화 연습 화면 (ROADMAP 2단계) */
 .talkhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:6px;}
 .talkhead .chartlabel{margin:0;}
-.fixcount{font-size:12px;color:var(--accent);font-weight:600;white-space:nowrap;}
+.fixcount{font-size:var(--f-tiny);color:var(--accent);font-weight:600;white-space:nowrap;}
 
 .turn{margin:18px 0;}
-.turnlabel{font-size:12px;color:var(--muted);margin:10px 0 4px;}
-.turn .said{font-size:16px;color:var(--muted);line-height:1.5;margin-bottom:6px;}
+.turnlabel{font-size:var(--f-tiny);color:var(--muted);margin:10px 0 4px;}
+.turn .said{font-size:var(--f-body);color:var(--muted);line-height:1.5;margin-bottom:6px;}
 
 /* 고칠 것이 없으면 한 줄. 있을 때만 크게 — 할 말 없는데 큰 상자가 뜨면 기계처럼 느껴진다 */
 .okline{
   background:none;border:none;padding:2px 0;min-height:0;
-  font-size:13px;color:var(--ok);font-weight:600;
+  font-size:var(--f-tiny);color:var(--ok);font-weight:600;
 }
 .fixbox{
   background:var(--card);
@@ -528,8 +572,8 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 .fixbox.soft{border-color:var(--line);}
 .fixbox .turnlabel{margin-top:8px;}
 .fixbox .turnlabel:first-child{margin-top:0;}
-.fixbox .fixed,.fixbox .natural{font-size:17px;line-height:1.5;color:var(--text);}
-.fixbox .why{font-size:14px;line-height:1.6;color:var(--muted);margin-top:8px;}
+.fixbox .fixed,.fixbox .natural{font-size:var(--f-body);line-height:1.5;color:var(--text);}
+.fixbox .why{font-size:var(--f-small);line-height:1.6;color:var(--muted);margin-top:8px;}
 .fixbox .why b,.fixbox .natural b{color:var(--text);}
 .fixbox button{margin-top:10px;}
 
@@ -537,7 +581,7 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
   background:var(--card2);
   border-radius:12px;
   padding:12px 14px;
-  font-size:17px;
+  font-size:var(--f-body);
   line-height:1.6;
   margin-top:8px;
 }
@@ -548,22 +592,66 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
   background:none;border:1px dashed var(--line);
   border-radius:12px;padding:12px 14px;margin:14px 0;min-height:0;
 }
-.live{font-size:17px;line-height:1.5;min-height:24px;}
-.live.waiting{color:var(--muted);font-size:15px;}
+.live{font-size:var(--f-body);line-height:1.5;min-height:24px;}
+.live.waiting{color:var(--muted);font-size:var(--f-small);}
 .live.said{color:var(--text);}
 .livebox .bar{height:3px;background:var(--line);border-radius:2px;margin-top:10px;overflow:hidden;}
 .livebox .bar .fill{height:100%;width:0;background:var(--accent);border-radius:2px;}
-.barhint{font-size:12px;color:var(--muted);margin-top:6px;font-weight:400;}
+.barhint{font-size:var(--f-tiny);color:var(--muted);margin-top:6px;font-weight:400;}
 
 .talkctl{margin-top:16px;}
 .talkctl textarea{margin-top:10px;}
 button.listening{
-  background:var(--ok);border-color:var(--ok);color:#08240f;
+  background:var(--ok);border-color:var(--ok);color:var(--on-ok);
   animation:pulse 1.6s ease-in-out infinite;
 }
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:.72;}}
 @media (prefers-reduced-motion:reduce){button.listening{animation:none;}}
 
-.bullets{margin:8px 0 0;padding-left:20px;line-height:1.7;font-size:15px;color:var(--muted);}
+.bullets{margin:8px 0 0;padding-left:20px;line-height:1.7;font-size:var(--f-small);color:var(--muted);}
 .bullets b{color:var(--text);}
 .notice .bullets li{margin-bottom:4px;}
+
+/* 대화 화면의 누르는 자리 — 큰 것 하나, 나머지는 작은 글씨 (2026-08-26) */
+button.mic{
+  width:100%;
+  min-height:76px;
+  padding:14px 18px;
+  border-radius:18px;
+  background:var(--card2);
+  border:1px solid var(--line);
+  color:var(--text);
+}
+button.mic .miclabel{font-size:var(--f-big);font-weight:700;line-height:1.2;}
+button.mic .micsub{font-size:var(--f-tiny);font-weight:400;opacity:.8;margin-top:4px;}
+button.mic.on{
+  background:var(--ok);border-color:var(--ok);color:var(--on-ok);
+  animation:pulse 1.6s ease-in-out infinite;
+}
+button.mic.send{background:var(--accent);border-color:var(--accent);color:var(--accent-on);}
+button.mic.speaking{background:var(--card2);border-color:var(--accent);}
+button.mic.busy{opacity:.6;}
+@media (prefers-reduced-motion:reduce){button.mic.on{animation:none;}}
+
+.sidebar2{display:flex;gap:18px;justify-content:center;margin-top:12px;flex-wrap:wrap;}
+button.link{
+  background:none;border:none;padding:6px 2px;min-height:0;
+  color:var(--muted);font-size:var(--f-small);text-decoration:underline;
+}
+button.link[disabled]{opacity:.4;text-decoration:none;}
+
+/* 설정 — 눌러서 고르는 줄 */
+.pick{margin:14px 0 22px;}
+.picktitle{font-size:var(--f-small);color:var(--muted);margin-bottom:8px;}
+button.pickone{
+  display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:12px 14px;margin-bottom:8px;min-height:56px;color:var(--text);
+}
+button.pickone.on{border-color:var(--accent);background:var(--card2);}
+button.pickone .body{flex:1;}
+button.pickone .name{font-size:var(--f-body);font-weight:600;}
+button.pickone .desc{font-size:var(--f-tiny);color:var(--muted);margin-top:3px;font-weight:400;line-height:1.45;}
+button.pickone .tick{color:var(--accent);font-size:var(--f-big);font-weight:700;width:20px;text-align:center;}
+.waitval{font-size:var(--f-body);font-weight:600;margin-bottom:6px;}
+#prefs-box input[type="range"]{width:100%;}

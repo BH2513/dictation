@@ -1,0 +1,116 @@
+{
+  "setId": "s015",
+  "videoId": "daily-s015",
+  "title": "Set 15",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "다섯 주 동안 밤마다 스페인어 앱 꼬박꼬박 했거든. 화요일에 한 번 건너뛰고 나서는 다시는 안 열었어.",
+      "text": "I did the Spanish app every night for five weeks. Missed one Tuesday and never opened it again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Five weeks straight on the Spanish app, every night. Skipped one Tuesday and that was it."
+        },
+        {
+          "style": "formal",
+          "text": "I used the Spanish app every evening for five weeks. After I missed a single Tuesday, I never opened it again."
+        }
+      ],
+      "note": "**Missed one Tuesday**처럼 주어 I 를 빼고 말하는 건 편한 대화에서 아주 흔해요. **never opened it again**은 그날 이후로 손도 안 댔다는 뜻입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "시내 반대편 집이 200달러 더 싸고 회사에서 10분 거리야. 근데 우리 언니가 여기서 다섯 블록 거리에 사는데, 옮기면 주말에나 보겠지.",
+      "text": "The apartment across town is $200 cheaper and ten minutes from work. But my sister lives five blocks from here, and I'd only see her on weekends.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "There's a place across town, 200 bucks cheaper, ten minutes to work. Thing is my sister's five blocks from here, and I'd only see her weekends."
+        },
+        {
+          "style": "formal",
+          "text": "The apartment across town costs $200 less and is ten minutes from my office. However, my sister lives five blocks away, and I would only see her on weekends."
+        }
+      ],
+      "note": "거리를 **ten minutes from work**처럼 시간으로 말하는 게 자연스럽습니다. **I'd only see her on weekends**는 이사 갔을 때를 가정한 말이라 would 를 씁니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "머리 깎는 값이 1년 만에 25달러에서 40달러가 됐어. 같은 사람한테 같은 자리에서 자르는데 말이야. 이제는 6주에 한 번 가던 걸 10주로 늘렸어.",
+      "text": "My haircut went from $25 to $40 in a year and it's the same guy, same chair. Now I go every ten weeks instead of six.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Same barber, same chair, and he's gone from 25 bucks to 40 in a year. I just stretch it out now, ten weeks between cuts."
+        },
+        {
+          "style": "formal",
+          "text": "My haircut has gone from $25 to $40 in a single year, with the same barber in the same chair. I now go every ten weeks rather than every six."
+        }
+      ],
+      "note": "**the same guy, same chair**는 달라진 건 하나도 없는데 값만 올랐다고 꼬집는 말투예요. **every ten weeks instead of six**처럼 주기를 숫자로 말하면 불평이 구체적으로 들립니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "또 여덟 시즌짜리 드라마 시작하지는 말자. 수요일이고 나 여섯 시에 일어나야 되니까 오늘 안에 끝나는 걸로 골라.",
+      "text": "Can we not start another eight season show. It's Wednesday and I have to be up at six, so pick something that ends tonight.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Not another eight seasons, please. It's a school night and I'm up at six, so find us a movie."
+        },
+        {
+          "style": "formal",
+          "text": "I would rather we not begin another eight season series. It is Wednesday and I have to be up at six, so please choose something that finishes this evening."
+        }
+      ],
+      "note": "**Can we not start**는 짜증 섞어 부드럽게 말리는 말이에요. **something that ends tonight**은 오늘 밤에 끝나는 것, 즉 영화 한 편을 뜻합니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "결국 위층에 올라가서 문을 두드렸어. 좋게 받아 주더라. 그러고는 일요일 일곱 시에 또 피아노야.",
+      "text": "I finally went up and knocked. They were nice about it, and Sunday at seven the piano was back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I actually went up there and said something. They couldn't have been nicer, and then Sunday at seven, piano again."
+        },
+        {
+          "style": "formal",
+          "text": "I finally went upstairs and knocked on their door. They were quite gracious about it, but the piano resumed on Sunday at seven."
+        }
+      ],
+      "note": "**went up and knocked**는 윗집에 직접 올라가 말했다는 뜻이에요. **were nice about it**은 좋게 받아 줬다는 말인데, 뒤에 and 를 붙이면 그래 놓고 안 바뀌었다는 뜻이 됩니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어의 '동네 건너편'은 across town(시내 반대편)과 뜻이 다릅니다. 걸어서 건너가는 이웃 블록처럼 읽혀서 '200달러 더 싸다'는 대목과 어긋납니다. '시내 반대편'으로 고쳤습니다.",
+    "2번 casual 의 'I'd be down to seeing her on weekends'는 'be down to(~밖에 안 남다)'와 'be down to(~하고 싶다)'로 두 가지로 읽혀서 순간 헷갈립니다. 'I'd only see her weekends'로 바꿨습니다.",
+    "2번 casual 은 'my sister's right here'로 다섯 블록이라는 구체적인 거리가 빠져 있었습니다. text 와 같게 'five blocks from here'를 넣었습니다.",
+    "1번 formal 의 'the Spanish application'은 원어민이 쓰지 않는 말입니다. app 은 격식체에서도 그대로 app 이라 'the Spanish app'으로 고쳤습니다.",
+    "1번 casual 의 'One Tuesday off'는 '하루 쉬었다'로 읽혀서 '한 번 건너뛰었다'는 뜻이 흐려집니다. 'Skipped one Tuesday and that was it'으로 바꿨습니다."
+  ]
+}

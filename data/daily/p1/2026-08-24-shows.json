@@ -1,0 +1,128 @@
+{
+  "videoId": "shows-2026-08-24",
+  "title": "From your videos · 2026-08-24",
+  "date": "2026-08-24",
+  "source": "shows",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저녁은 나보고 차리라고 해 놓고, 한 시간이나 늦게 와서는, 딱 하나 부탁한 것마저 잊어버렸네.",
+      "text": "You forced me to make dinner, then you're an hour late and you forget the one little thing that I asked you to do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Made me cook, showed up an hour late, and forgot the one thing I asked."
+        },
+        {
+          "style": "formal",
+          "text": "I was made to cook dinner, you arrived an hour late, and you forgot the single thing I had asked of you."
+        }
+      ],
+      "note": "**the one little thing that I asked you to do** 는 '내가 부탁한 건 딱 그거 하나뿐이었는데 그것마저'라는 원망을 담을 때 쓴다. 시간은 'one hour late' 가 아니라 **an hour late** 라고 말한다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 58
+      },
+      "start": 145.68,
+      "end": 150.96,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "두 분이 좀 더 같이 계셨으면 좋았을 텐데, 참 아쉬워요.",
+      "text": "It's a shame you two didn't get to spend more time together.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Too bad you guys couldn't hang out longer."
+        },
+        {
+          "style": "formal",
+          "text": "I regret that the two of you had so little time together."
+        }
+      ],
+      "note": "**It's a shame** 은 남의 일이 안타깝고 아쉬울 때 가볍게 꺼내는 말이라 무거운 위로와는 다르다. **didn't get to** 는 '안 했다'가 아니라 '기회가 없어서 못 했다'는 뜻이다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 828
+      },
+      "start": 2108.48,
+      "end": 2111.089,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "난 그냥 남을래. 저번에 스키장 갔을 때 무서워서 리프트에서 못 내렸거든.",
+      "text": "I'm going to stay cuz the last time I went skiing, I was too afraid to jump off the chairlift.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Count me out — last time I skied I couldn't even get off the lift."
+        },
+        {
+          "style": "formal",
+          "text": "I would prefer to remain here; on my previous skiing trip I was too frightened to get off the chairlift."
+        }
+      ],
+      "note": "빠지겠다고 할 때 이유를 **the last time I went skiing** 처럼 '지난번에 ~했을 때'로 앞세우면 변명이 자연스러워진다. 겁나서 못 한 일은 **too afraid to** 뒤에 붙인다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 615
+      },
+      "start": 1628.559,
+      "end": 1632.799,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그래, 그냥 하려던 말 해 버릴게.",
+      "text": "Okay, I better just say what it is I'm going to say.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Fine, let me just get it out."
+        },
+        {
+          "style": "formal",
+          "text": "Let me simply state what I came here to say."
+        }
+      ],
+      "note": "**I better just** 는 'I'd better' 의 회화체로, 망설이다 마음먹고 말을 꺼낼 때 쓴다. **what it is I'm going to say** 처럼 what 뒤에 it is 를 끼우면 '내가 하려던 바로 그 말'로 힘이 실린다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 717
+      },
+      "start": 1755.399,
+      "end": 1763.96,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이제 우리 다 예전 같지는 않을 것 같아.",
+      "text": "I don't think any of our lives are ever going to be the same ever again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nothing's going back to how it was for any of us."
+        },
+        {
+          "style": "formal",
+          "text": "It seems to me that none of our lives will ever be the same."
+        }
+      ],
+      "note": "큰일을 겪은 뒤 '예전으로 못 돌아간다'고 할 때 **ever going to be the same** 을 부정과 함께 쓴다. 한국어는 '~ 아닐 것 같아'로 뒤에서 부정하지만 영어는 **I don't think** 처럼 부정을 앞으로 빼는 것이 자연스럽다.",
+      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
+      "from": {
+        "videoId": "QdQ58BbGRsA",
+        "i": 865
+      },
+      "start": 2397.08,
+      "end": 2402.2,
+      "recording": null
+    }
+  ]
+}

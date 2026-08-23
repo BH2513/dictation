@@ -1,0 +1,114 @@
+{
+  "setId": "s016",
+  "videoId": "daily-s016",
+  "title": "Set 16",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "택배가 일요일부터 물류센터에 묶여서 안 움직여. 화요일에 온다더니 아무도 아무 말을 안 해 줘.",
+      "text": "My package has been stuck at a sorting center since Sunday. It was supposed to be here Tuesday and nobody can tell me anything.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Same sorting center since Sunday, hasn't moved once. They said Tuesday and now nobody knows anything."
+        },
+        {
+          "style": "formal",
+          "text": "My parcel has remained at a sorting facility since Sunday. It was scheduled to arrive on Tuesday, and no one has been able to give me an explanation."
+        }
+      ],
+      "note": "**stuck at** 은 한자리에서 꼼짝 안 하는 상태예요. 배송 추적에 나오는 물류센터는 **sorting center** 라고 합니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "지난봄에 주인이 바뀌고 나서 국수 맛이 예전 같지가 않아. 그래도 계속 가게 되더라.",
+      "text": "The place changed owners last spring and the noodles aren't the same. I keep going anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Different owner since spring and the noodles are just okay now. Still go there anyway."
+        },
+        {
+          "style": "formal",
+          "text": "The restaurant changed hands last spring, and the noodles have not been the same since. I continue to go regardless."
+        }
+      ],
+      "note": "가게 주인이 바뀐 건 **changed owners**, 격식 있게는 **changed hands** 라고 해요. 맛이 예전만 못하다는 말은 **aren't the same** 이면 충분합니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "엘리베이터가 또 고장 났다고 둘러댔어. 사실은 알람 소리도 못 듣고 자다가 10시 10분에 들어갔어.",
+      "text": "I told them the elevator was broken again. Really, I slept through my alarm and walked in at ten past ten.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Blamed the elevator again. Truth is I slept right through my alarm and got in at ten past ten."
+        },
+        {
+          "style": "formal",
+          "text": "I informed them that the elevator was out of order again. In fact, I slept through my alarm and did not arrive until ten past ten."
+        }
+      ],
+      "note": "알람을 못 듣고 계속 잔 건 **slept through my alarm** 입니다. 시각은 **ten past ten** 처럼 말해요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그 아파트 결국 샀어? 내가 마지막으로 들었을 땐 아직 대출 기다리고 있었잖아.",
+      "text": "Did you ever end up buying that apartment? Last I knew you were still waiting on the loan.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So did you get that apartment or what? Thought you were still stuck waiting on the bank."
+        },
+        {
+          "style": "formal",
+          "text": "Did you end up purchasing that apartment? The last I heard, you were still waiting for the loan to come through."
+        }
+      ],
+      "note": "**Last I knew** 는 내가 마지막으로 알기로는 그랬다는 뜻이에요. 대출을 기다린다고 할 때는 **waiting on the loan** 처럼 on 을 씁니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "일요일이 올해 제일 더운 날이라고 해서 등산을 아침 여섯 시로 옮겼어. 언니는 벌써 안 가겠다고 했고.",
+      "text": "Sunday's going to be the hottest day of the year, so we moved the hike to six in the morning. My sister already backed out.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's supposed to be crazy hot Sunday, so we bumped the hike to six a.m. My sister's not coming."
+        },
+        {
+          "style": "formal",
+          "text": "Sunday is expected to be the hottest day of the year, so we moved the hike to six in the morning. My sister has already decided not to join us."
+        }
+      ],
+      "note": "약속 시간을 옮길 때는 **moved the hike to six** 처럼 move 를 씁니다. 하기로 한 걸 무르는 건 **backed out** 이에요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 물류센터를 warehouse 라고 해서 text 와 note 가 가르치는 sorting center 와 어긋났습니다. 같은 말로 맞췄습니다.",
+    "2번 casual 의 every week 는 text 에 없는 내용을 더한 것이라 뺐습니다. 말투만 바꾸고 내용은 그대로 두었습니다.",
+    "4번 note 의 한국어 설명이 문장으로 끝나지 않아 읽기 어색해서 다듬었습니다."
+  ]
+}

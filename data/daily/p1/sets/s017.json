@@ -1,0 +1,115 @@
+{
+  "setId": "s017",
+  "videoId": "daily-s017",
+  "title": "Set 17",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "어젯밤에 동생이 2,000달러만 빌려달라더라. 10월에도 똑같은 소리 했는데 그 돈은 아직도 못 받았어. 아직 대답을 못 하고 있어.",
+      "text": "My brother asked me for $2,000 last night. He asked me the same thing in October and I never saw that money. I still haven't answered him.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my brother hit me up for $2,000 last night. Same deal back in October and I never got that money back. Still haven't told him anything."
+        },
+        {
+          "style": "formal",
+          "text": "My brother asked to borrow $2,000 from me last night. He made the same request in October and that money was never returned. I have not given him an answer yet."
+        }
+      ],
+      "note": "**I never saw that money** 는 빌려주고 끝내 못 받았다는 말이에요. 캐주얼의 **hit me up for** 는 돈이나 부탁을 편하게 들이대는 말입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "네가 입은 것보다 옷걸이에 걸려 있을 때가 더 나은 것 같은데. 기장이 문제야, 딱 골반에서 끊겨.",
+      "text": "I like it on the hanger more than on you. It's the length, it stops right at your hips.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Looked better on the hanger than on you. The length is the problem, it cuts you off right at the hips."
+        },
+        {
+          "style": "formal",
+          "text": "I preferred it on the hanger. The length is the issue, since it ends right at your hips."
+        }
+      ],
+      "note": "**It's the length** 처럼 무엇이 문제인지 딱 짚어 주면 솔직해도 덜 무례하게 들려요. 옷이 어디서 끊기는지는 **stops right at your hips** 로 말합니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "일요일에 조카랑 농구했거든. 딱 40분. 월요일엔 계단을 옆으로 돌아서 내려가야 했어. 난간을 두 손으로 붙잡고.",
+      "text": "I played basketball with my nephew on Sunday. Forty minutes. Monday I had to go down the stairs sideways, holding the rail with both hands.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Forty minutes of basketball with my nephew on Sunday. By Monday I was going down the stairs sideways, both hands on the rail."
+        },
+        {
+          "style": "formal",
+          "text": "I played basketball with my nephew for forty minutes on Sunday. On Monday I had to descend the stairs sideways, holding the railing with both hands."
+        }
+      ],
+      "note": "**go down the stairs sideways** 는 다리가 아파 몸을 옆으로 돌려 내려간다는 뜻이에요. 몸살은 아프다는 말 대신 이렇게 못 하는 동작으로 보여 줍니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "에스프레소 머신 400달러였는데 청소하는 데 15분 걸려. 요즘은 다시 인스턴트 커피 마셔.",
+      "text": "The espresso machine was $400 and takes fifteen minutes to clean. I've gone back to instant coffee.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Four hundred bucks for the espresso machine and fifteen minutes of cleaning every time. I'm back on instant."
+        },
+        {
+          "style": "formal",
+          "text": "The espresso machine cost $400 and requires fifteen minutes of cleaning. I have returned to instant coffee."
+        }
+      ],
+      "note": "**I've gone back to instant coffee** 는 비싼 것을 접고 예전 것으로 돌아갔다는 뜻이에요. 후회한다는 말을 안 해도 후회가 다 드러납니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "걔는 회의 딱 한 번 들어왔거든. 근데 이제 팀 사람들한테 그 아이디어가 자기 거였다고 하고 다녀. 내가 3월에 주말 두 번 갈아 넣어서 만든 건데.",
+      "text": "He sat in on one call and now he's telling the team the idea was his. I built it over two weekends in March.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "He showed up for one call and now it's his idea in front of the whole team. I spent two weekends on it in March."
+        },
+        {
+          "style": "formal",
+          "text": "He attended a single call, and he is now telling the team that the idea was his. I developed it over two weekends in March."
+        }
+      ],
+      "note": "**sat in on one call** 은 회의에 잠깐 끼어 앉아 있었다는 뜻이에요. 빼앗겼다고 하지 않고 **the idea was his** 라고 그 사람 말을 그대로 옮기면 더 얄밉게 들립니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어에 영어의 \"than on you\"(너한테 입혀진 것보다)가 빠져 있어 핵심인 비교가 사라졌다. 영어에 맞춰 한국어를 고쳤다.",
+    "2번 캐주얼의 \"on the rack\"은 가게 진열대라는 뜻이라 본문의 옷걸이(hanger)와 상황이 달라진다. hanger 로 되돌리고 말투만 더 구어체로 줄였다.",
+    "2번 캐주얼 뒷부분 \"It's the length, it hits you right at the hips\"가 본문과 거의 같아서 말투 차이가 안 났다. \"The length is the problem, it cuts you off right at the hips\"로 바꿨다.",
+    "3번 한국어가 \"내려갔어\"로 되어 있어 영어의 had to(그렇게 내려갈 수밖에 없었다)가 빠졌다. \"내려가야 했어\"로 맞췄다."
+  ]
+}

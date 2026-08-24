@@ -395,19 +395,24 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
 .heard .w{display:inline-block;}
 .heard .w.bad{color:#fff;background:var(--bad);border-radius:5px;padding:0 5px;}
 
-/* 문장카드 */
-.modes{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px;}
-.modes button{flex:1 1 45%;}
-.blank{
-  display:inline-block;color:var(--warn);letter-spacing:2px;
-  border-bottom:1px solid var(--warn);
+/* 문장카드 — 앞면 한국어, 누르면 뒤집혀 영어 (SPEC 7).
+   카드 전체가 단추다. 어디를 눌러도 뒤집히게 크게 잡는다 */
+.card{
+  display:flex;flex-direction:column;justify-content:center;
+  width:100%;min-height:180px;
+  margin:6px 0 4px;padding:24px 20px;
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  text-align:center;
 }
-#card-input{
-  width:100%;margin-top:14px;background:var(--field);color:var(--text);
-  border:1px solid var(--line);border-radius:12px;padding:12px;
-  font-family:inherit;font-size:var(--f-body);line-height:1.5;resize:vertical;outline:none;
+.card.back{background:var(--card2);border-color:var(--accent);}
+.card .ko,.card .en{
+  display:block;
+  font-size:var(--f-big);line-height:1.5;font-weight:600;color:var(--text);
 }
-#card-input:focus{border-color:var(--accent);}
+.card .ko.dim{color:var(--muted);font-weight:400;font-size:var(--f-body);}
+.card .flip{display:block;margin-top:14px;font-size:var(--f-tiny);font-weight:400;color:var(--muted);}
+/* 카드에서 빼기. 드문 일이라 작게 둔다 — 큰 단추에는 그때 할 일만 (SPEC 10-d) */
+.cardtools{margin-top:16px;}
 
 /* 백업 */
 .backup{

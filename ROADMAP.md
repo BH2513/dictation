@@ -550,7 +550,7 @@ AI 대답     : Sure — which meeting are you thinking of?
 
 - 아래에 `Say` (녹음) / `Send` (타이핑) / `Save card` / `End`
 - **`Save card` 는 "고친 문장"을 담는다** — 내가 한 말이 아니라 고쳐진 쪽이다.
-  담긴 카드는 기존 문장카드 네 모드에 들어간다.
+  담긴 카드는 기존 문장카드에 그대로 들어간다.
   `videoId` 는 `talk-{대화번호}`, 번호는 바뀌지 않는다 (Daily 묶음과 같은 규칙)
 - **다만 "그대로"는 아니다 — 읽는 길을 새로 내야 한다.** 지금 카드 화면은 문장을
   저장소의 `data/` 파일에서 찾아온다(`loadCardSentences`). 그런데 대화는 저장소에

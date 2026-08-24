@@ -15,7 +15,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from add_video import (extract_video_id, parse_vtt, words_from_cues,
                        units_from_words, split_sentences, to_sentences,
                        attach_korean, pick_korean, rate_limited,
-                       looks_punctuated, clean, usable_line, drop_unusable)
+                       looks_punctuated, clean, usable_line, drop_unusable,
+                       forced_ratio, FORCED_LIMIT, MAX_WORDS)
 
 FAILED = []
 
@@ -403,6 +404,49 @@ check("음표로 감싼 가사", clean("\u266a all the lonely people \u266a"), "
 check("음표 하나만 있어도 지운다", clean("\u266a la la la"), "\u2016")
 check("괄호 안 소리 표시가 사라지면 문장은 남는다",
       usable_line(clean("(sighs) I really need a break.")), True)
+
+
+# ------------------------------------------- 말 한가운데서 잘리는 자막은 등록하지 않는다
+
+print("\n말 한가운데서 잘린 줄이 얼마나 되나 — 30%가 넘으면 등록을 막는다")
+
+# 문장부호가 있는 자막은 문장 끝에서 잘리므로 짧다 (저장소의 실제 영상 평균 5낱말)
+GOOD = [{"text": t} for t in [
+    "We wanted to kiss at midnight, but nobody else is going to, so you know.",
+    "All right.", "I'll take care of you.", "Who are you kissing at midnight?",
+    "Rachel or Phoebe.", "Well, you got to kiss someone.",
+]]
+check("문장부호가 있으면 한도에 걸리는 줄이 없다", forced_ratio(GOOD), 0.0)
+check("그래서 등록된다", forced_ratio(GOOD) < FORCED_LIMIT, True)
+
+# 문장부호가 없으면 25낱말마다 그냥 잘린다 (실제로 등록됐던 영상에서 가져온 줄)
+ROUGH = [{"text": t} for t in [
+    "look maybe we should go no you guys you really don't have to go we're done "
+    "talking come on look I know how you must",
+    "no you don't Ross imagine the worst things you think about yourself now how "
+    "would you feel if the one person that you trusted the",
+    "most in the world not only thinks them too but actually uses them as reasons "
+    "not to be with you no but but so I",
+    "want to be with you in spite of all those things oh well that's That's mighty "
+    "big of You Were Us I said don't go",
+]]
+check("한도에 걸린 줄만 세는지", all(len(x["text"].split()) >= MAX_WORDS - 1 for x in ROUGH), True)
+check("문장부호가 없으면 전부 한도에 걸린다", forced_ratio(ROUGH), 1.0)
+check("그래서 등록되지 않는다", forced_ratio(ROUGH) >= FORCED_LIMIT, True)
+
+# 말이 느린 영상은 문장부호가 없어도 무음으로 나뉜다 — 자막 종류가 아니라 결과로 가른다
+SLOW = [{"text": "so today we are going to look at three things"},
+        {"text": "the first one is quite simple"},
+        {"text": "it comes up more often than you would think"},
+        {"text": "the second one takes a bit longer to explain"},
+        {"text": "we will come back to that in a moment"},
+        {"text": "and I think you will find it useful"},
+        {"text": "let me show you what I mean"},
+        {"text": "here is the part that trips people up " + "word " * 24}]
+check("느린 영상은 문장부호가 없어도 통과한다", forced_ratio(SLOW) < FORCED_LIMIT, True)
+check("여덟 줄 중 한 줄만 한도에 걸림", round(forced_ratio(SLOW), 3), 0.125)
+
+check("문장이 없으면 0", forced_ratio([]), 0.0)
 
 
 # ---------------------------------------------------------------- 결과

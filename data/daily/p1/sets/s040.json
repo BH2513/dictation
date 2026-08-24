@@ -1,0 +1,117 @@
+{
+  "setId": "s040",
+  "videoId": "daily-s040",
+  "title": "Set 40",
+  "madeAt": "2026-08-25",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "드디어 에스프레소 머신 샀어. 커피는 맛있는데 청소하는 게 마시는 시간보다 더 오래 걸려. 그래서 일주일 내내 인스턴트만 타 마시고 기계는 그냥 쳐다도 안 봤어.",
+      "text": "I finally got the espresso machine, and the coffee's great, but cleaning it takes longer than drinking it, so I've been making instant all week and just not looking at it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I've got the espresso machine now, and yeah the coffee's great, but cleaning it takes way longer than drinking it, so I've been doing instant all week and just kinda pretending it's not there."
+        },
+        {
+          "style": "formal",
+          "text": "I have finally purchased the espresso machine, and the coffee is excellent, but cleaning it takes longer than drinking it, so I have been making instant all week and simply avoiding looking at it."
+        }
+      ],
+      "note": "**takes longer than drinking it** 는 두 가지 일을 나란히 놓고 비교하는 말투입니다. **making instant** 는 인스턴트 커피를 타 마신다는 뜻으로, coffee 를 붙이지 않아도 통합니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나 슬슬 가 봐야 할 것 같아. 차를 세워 둔 자리가 열 시부터 견인 구역으로 바뀌는데 그거 또 겪기는 정말 싫거든. 너희는 더 있어.",
+      "text": "I should probably take off soon, because I'm parked in a spot that turns into a tow zone at ten and I really don't want to deal with that again. You guys stay though.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I gotta head out pretty soon, my car's in a spot that turns into a tow zone at ten and I really don't wanna go through that again. You guys stay though."
+        },
+        {
+          "style": "formal",
+          "text": "I should probably depart shortly, as I am parked in a space that becomes a tow zone at ten, and I would very much prefer not to deal with that again. Please do stay."
+        }
+      ],
+      "note": "**take off** 는 자리에서 일어나 먼저 간다는 뜻의 편한 표현입니다. **tow zone** 은 주차하면 차를 끌어가는 견인 구역이고, **deal with that** 은 그 성가신 일을 감당한다는 뜻입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "우리 팀에 나한테 온 질문에 대신 답하는 사람이 있어. 근데 그 사람 답이 대체로 맞아서 그게 제일 별로야. 나는 아직 반밖에 못 쳤는데 그 사람은 벌써 보내 버렸더라.",
+      "text": "There's a guy on my team who answers questions that were meant for me, and he's usually right, which is the worst part. I'll be halfway through typing and he's already hit send.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "This guy on my team keeps answering questions that were meant for me, and he's usually right, which is the worst part of it. I'll be halfway through typing and he's already sent his."
+        },
+        {
+          "style": "formal",
+          "text": "There is a colleague on my team who answers questions that were directed at me, and he is usually correct, which is the worst part. I will be halfway through typing and he has already sent his response."
+        }
+      ],
+      "note": "**which is the worst part** 는 앞에서 말한 것 중에 바로 그 점이 가장 짜증난다고 콕 집는 표현입니다. **halfway through typing** 은 타이핑을 하다 만 상태를 가리킵니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "배송 조회에 화요일부터 배송 출발이라고 떠 있는데 밤만 되면 다시 배송 중으로 바뀌어. 그래서 아예 배송 차에 실리지도 않은 것 같아. 그냥 계속 기다려야 할까, 아니면 다시 보내 달라고 할까?",
+      "text": "The tracking's been saying out for delivery since Tuesday, and then every night it flips back to in transit, so I don't think it's on a truck at all. Do I just keep waiting, or ask them to send another one?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking's said out for delivery since Tuesday, and then every night it flips back to in transit, so I really don't think it's on a truck at all. Should I just keep waiting, or ask them to send another one?"
+        },
+        {
+          "style": "formal",
+          "text": "The tracking has indicated out for delivery since Tuesday, and then every evening it reverts to in transit, so I do not believe it is on a truck at all. Should I simply continue waiting, or request that they send another one?"
+        }
+      ],
+      "note": "**out for delivery** 는 물건이 배송 기사에게 넘어가 오늘 배달된다는 단계이고, **in transit** 은 아직 오는 중이라는 단계입니다. 택배 조회에서 늘 보는 두 표현입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "아무거나 괜찮다며. 근데 내가 세 개나 틀었는데 다 싫다고 했잖아. 그러니까 네가 골라. 나는 한마디도 안 할게. 그걸로 정한 거야.",
+      "text": "You said you were fine with whatever, but I've put on three shows now and you said no to all of them. So you pick, and I won't say a word about it. That's the deal.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You said you didn't care what we watched, but I've put on three shows now and you've said no to every single one. So you pick, and I'm not saying a word about it. That's the deal."
+        },
+        {
+          "style": "formal",
+          "text": "You said that you were fine with anything, but I have put on three shows now and you have said no to all of them. So you choose, and I will not say a word about it. That is the arrangement."
+        }
+      ],
+      "note": "**fine with whatever** 는 뭐든 상관없다고 할 때 쓰는 말이고, **that's the deal** 은 이걸로 정한 거다 하고 못 박는 표현입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "5번: 상황은 넷플릭스인데 한국어와 casual 이 \"세 벌 입어 봤다\"로 옷 얘기가 되어 있었다. 영어와 뜻이 어긋나서 한국어를 \"세 개 틀었다\"로, casual 도 보는 것 얘기로 고쳤다.",
+    "5번: \"put on three things\" 가 옷을 입어 본 것으로도 읽혀서 (실제로 한국어가 그쪽으로 잘못 갔다) \"three shows\" 로 한 낱말만 바꿔 뜻을 하나로 만들었다.",
+    "5번: \"...about it, that's the deal.\" 처럼 쉼표로 두 문장을 이어 붙여 놓아서 마침표로 나눴다.",
+    "5번 formal: \"three items\" 는 옷 가게 말투이고 \"Therefore you may choose\" 는 어색해서 shows / So you choose 로 고쳤다.",
+    "1번 formal: 커피 머신에 \"acquired\" 는 지나치게 딱딱해서 purchased 로 바꿨다.",
+    "3번 formal: \"questions directed to me\" 보다 \"directed at me\" 가 원어민이 쓰는 짝이라 고쳤다."
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "setId": "s039",
+  "videoId": "daily-s039",
+  "title": "Set 39",
+  "madeAt": "2026-08-25",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "노트북까지 다 챙겨 갔는데 자리마다 헤드폰 쓴 사람이 앉아 있더라고. 그래서 결국 차 안에서 폰으로 다 했어. 다음엔 그냥 너희 집에서 만나면 안 될까?",
+      "text": "I had my laptop and everything, but every table had somebody sitting there with headphones on, so I ended up doing the whole thing on my phone in the car. Can we just meet at your place next time?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Brought my laptop and all, but every table had somebody parked there with headphones on, so I wound up doing the whole thing on my phone in the car. Can we just do your place next time?"
+        },
+        {
+          "style": "formal",
+          "text": "I had brought my laptop and everything, but every table was occupied by someone wearing headphones, so I ended up completing the entire thing on my phone in the car. Could we meet at your home next time?"
+        }
+      ],
+      "note": "**and everything** 은 필요한 걸 다 챙겼다는 뜻으로 문장 끝에 툭 붙이는 말입니다. **ended up doing** 은 그럴 생각은 아니었는데 결국 그렇게 됐다는 뜻입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "목요일에 초급반 수업 딱 한 번 들었는데 나올 때는 진짜 멀쩡했거든. 근데 토요일에 오더라. 계단도 올라갈 때보다 내려갈 때가 왜인지 훨씬 더 힘들어.",
+      "text": "I did one beginner class Thursday and I felt totally fine walking out, but it hit me Saturday, and going down the stairs is somehow way worse than going up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Took one beginner class Thursday, felt totally fine walking out, then Saturday it hit me. Going down the stairs is way worse than going up, somehow."
+        },
+        {
+          "style": "formal",
+          "text": "I attended one beginner class on Thursday and felt perfectly fine as I left, but it caught up with me on Saturday, and descending the stairs is somehow considerably worse than climbing them."
+        }
+      ],
+      "note": "**it hit me Saturday** 는 근육통 같은 게 하루이틀 지나서 몰려왔다는 뜻입니다. **way worse** 는 훨씬 더 심하다는 구어 표현입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "주말 내내 비 온다고 하길래 캠핑 대신 한 시간쯤 나가서 통나무집을 잡았어. 솔직히 아무도 아쉬워하지 않았고. 뭐, 그래도 그냥 버텨 보자고 한 건 우리 형뿐이었지.",
+      "text": "They started saying rain all weekend, so instead of camping we found a cabin about an hour out, and honestly nobody was upset about it. Well, my brother's the only one who still wanted to tough it out.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Forecast started saying rain all weekend, so we skipped camping and grabbed a cabin about an hour out, and honestly nobody was bummed about it. Well, my brother's the only one who still wanted to rough it."
+        },
+        {
+          "style": "formal",
+          "text": "The forecast began calling for rain all weekend, so instead of camping we found a cabin approximately an hour away, and honestly no one was disappointed. My brother was the only one who still wanted to camp in spite of it."
+        }
+      ],
+      "note": "**tough it out** 은 힘든 상황을 그만두지 않고 그대로 버텨 낸다는 뜻입니다. **about an hour out** 은 여기서 한 시간쯤 떨어진 거리를 말합니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "야, 내가 마지막으로 들었을 때 너 그 프로그램 막 시작하려던 참이었잖아. 그래서 진짜 했어? 나는 사람들한테 너 했다고 하고 다녔는데 이제 그게 맞는지도 모르겠네.",
+      "text": "Okay, last I heard you were about to start that program, so did you actually go through with it? Because I've been telling people you did and now I'm not even sure that's true.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wait, last I heard you were about to start that program. Did you actually do it? I've been telling people you did and now I dunno if that's even true."
+        },
+        {
+          "style": "formal",
+          "text": "The last I heard, you were about to begin that program, so did you in fact go through with it? I have been telling people that you did, and now I am not certain that is accurate."
+        }
+      ],
+      "note": "**go through with it** 은 마음먹은 일을 도중에 접지 않고 실제로 끝까지 했다는 뜻입니다. **last I heard** 는 내가 마지막으로 듣기로는 이라는 말입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그 앱 처음 깔았을 때는 진짜 좋았는데, 이제 내가 실제로 쓰던 기능 절반이 구독 결제를 해야 열려. 날씨 한번 보려는데 광고를 보래. 그래서 결국 지웠어.",
+      "text": "That app was great when I first got it, but now half the stuff I actually used is behind a subscription and it wants me to watch an ad just to check the weather, so I finally deleted it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Loved that app at first, but now half the stuff I actually used is locked behind a subscription and it makes me watch an ad just to check the weather. Finally deleted it."
+        },
+        {
+          "style": "formal",
+          "text": "That application was excellent when I first obtained it, but now half of the features I actually used require a subscription, and it asks me to watch an advertisement simply to check the weather, so I finally deleted it."
+        }
+      ],
+      "note": "**behind a subscription** 은 돈을 내고 구독해야만 쓸 수 있게 막아 놨다는 뜻입니다. **just to check** 는 겨우 이거 하나 하려는데 라는 불만이 담긴 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 이 text 와 거의 같은 문장이었습니다(앞 두 낱말만 다름). 더 짧고 툭툭 끊어지는 구어로 다시 썼습니다.",
+    "3번 formal 의 wished to endure it 은 원어민이 쓰지 않는 어색한 표현이라 뜻은 그대로 두고 자연스러운 격식체로 바꿨습니다.",
+    "4번 casual 의 the last thing I heard 는 text 의 last I heard 보다 오히려 길고 덜 구어적이었습니다. 더 짧게 고치고 dunno 같은 말투를 넣었습니다.",
+    "5번 casual 도 앞머리만 바뀌고 나머지가 text 와 같아서 뒤쪽을 함께 줄였습니다.",
+    "5번 한국어에서 subscription 이 그냥 결제로 옮겨져 있어 구독 결제로 고쳤습니다(note 가 가르치는 표현과 맞추려고)."
+  ]
+}

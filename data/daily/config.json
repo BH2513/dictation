@@ -1,6 +1,5 @@
 {
   "count": 5,
-  "maxWords": 28,
   "level": "advanced",
   "model": "opus",
   "avoidRecentDays": 14,

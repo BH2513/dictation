@@ -94,11 +94,12 @@ check('짧아도 통과한다',
 check('두 낱말이어도 통과한다',
   daily.validate({ sentences: [row({ text: 'Not really.' })] }, CFG).slice(1), []);
 
-check('문장이 길면 잡는다',
+// 길이로는 버리지 않는다. 위도 아래도 없다 (운영자 결정) —
+// "긴 거는 문제 없어. 자연스럽기만 하면 100자도 괜찮아."
+check('아무리 길어도 안 잡는다',
   daily.validate({ sentences: [row({
-    text: 'one two three four five. six seven eight nine ten eleven twelve thirteen.'
-  })] }, CFG).slice(1),
-  ['문장 1: 영어 문장이 13 단어입니다 (12 단어를 넘으면 외워서 따라 말할 수 없습니다).']);
+    text: new Array(61).join('word ') + 'end.'
+  })] }, CFG).slice(1), []);
 
 check('한국어가 비면 잡는다',
   daily.validate({ sentences: [row({ ko: '  ' })] }, CFG).slice(1),
@@ -237,16 +238,16 @@ check('관용구 오용을 보라고 한다', rev.indexOf('hit the spot') >= 0, 
 check('지적만 말고 고치라고 한다', rev.indexOf('직접 고쳐서 내놓으세요') >= 0, true);
 check('개수를 바꾸지 말라고 한다', rev.indexOf('문장 개수(5개)') >= 0, true);
 check('돈을 달러로 보라고 한다', rev.indexOf('돈이 달러로 적혀 있는가') >= 0, true);
-check('검수에서도 짧다고 늘리지 말라고 한다',
-  rev.indexOf('하한은 없습니다. 짧다고 늘리지 마세요') >= 0, true);
-check('검수에 단어 수 하한이 없다', rev.indexOf('~35 단어') >= 0, false);
+check('검수에서 길이를 보지 말라고 한다',
+  rev.indexOf('길이는 보지 마세요') >= 0, true);
+check('검수 지시문에 단어 수가 아예 안 나온다', /\d+\s*단어/.test(rev), false);
 check('검수에서 it/this/that 을 구체화하라고 하지 않는다',
   rev.indexOf('구체적인 물건, 시각, 요일을 넣습니다') >= 0, false);
 check('검수에서 말버릇을 빼라고 하지 않는다',
   rev.indexOf('말버릇을 장식으로 넣었는가') >= 0, false);
 check('늘려 쓴 데를 잘라 내라고 한다', rev.indexOf('그 마디를 잘라 내세요') >= 0, true);
-check('아래쪽에 붙었다고 늘리지 말라고 한다',
-  rev.indexOf('늘리지 마세요') >= 0, true);
+check('짧다고 늘리지도 길다고 줄이지도 말라고 한다',
+  rev.indexOf('짧다고 늘리지 말고 길다고 줄이지 마세요') >= 0, true);
 // 영어는 앞 단계에서 이미 읽혔다. 여기서는 나머지를 영어에 맞추는 것이 일이다
 check('영어를 다시 손보지 말라고 한다',
   rev.indexOf('"text" 를 다시 손보려 하지 말고') >= 0, true);
@@ -487,12 +488,16 @@ check('UTC 로 같은 날 낮이면 그대로',
 
 console.log('\n지시문 — 조건이 실제로 담기는지');
 var prompt = daily.buildPrompt({
-  count: 2, maxWords: 35,
+  count: 2,
   situations: ['회의에서 반대하기', '병원에서 증상 설명'],
   vocab: ['concentrated', 'threatened']
 });
-check('상한만 알려 준다', prompt.indexOf('35 단어를 넘지 마세요') >= 0, true);
-check('하한은 없다고 못 박는다', prompt.indexOf('하한은 없습니다') >= 0, true);
+// 운영자가 세 번 말했다 — 길이는 상관없고 자연스러움이 1순위다.
+// 그런데도 한 번 도로 기어들었다("평균 11 단어쯤입니다. 이 정도여야 합니다").
+// 숫자로 길이를 시키는 것이 다시 들어오면 여기서 걸린다
+check('지시문에 단어 수가 아예 안 나온다', /\d+\s*단어/.test(prompt), false);
+check('길이를 재지 말라고 한다', prompt.indexOf('길이는 재지 마세요') >= 0, true);
+check('길면 안 된다고 하지 않는다', prompt.indexOf('넘지 마세요') >= 0, false);
 check('상황이 들어간다', prompt.indexOf('병원에서 증상 설명') >= 0, true);
 check('어휘가 들어간다', prompt.indexOf('concentrated') >= 0, true);
 check('편한 말투를 못 박는다', prompt.indexOf('편한 동료에게 하는 말투') >= 0, true);
@@ -652,8 +657,10 @@ check('묶음 번호만 센다 (다른 파일은 안 센다)',
 console.log('\n저장소에 실제로 들어 있는 설정으로도 되는지');
 var cfg = daily.config();
 check('상황이 요청 개수보다 많다', cfg.situations.length > cfg.count, true);
-check('길이 상한만 있고 하한은 없다',
-  [typeof cfg.maxWords, typeof cfg.minWords], ['number', 'undefined']);
+// 길이를 정하는 값이 설정에 하나도 없어야 한다 (운영자 결정)
+check('설정에 길이 값이 아예 없다',
+  ['minWords', 'maxWords', 'shortWords', 'shortCount']
+    .filter(function (k) { return cfg[k] !== undefined; }), []);
 check('프로필이 하나 이상 있다', daily.profileIds().length > 0, true);
 
 console.log(failed ? '\n실패 ' + failed + '건\n' : '\n전부 통과\n');

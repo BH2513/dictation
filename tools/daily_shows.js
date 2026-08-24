@@ -292,10 +292,55 @@ function toDayFile(parsed, lines, date) {
   return out;
 }
 
+/* 같은 대사인지 견주는 열쇠. 띄어쓰기와 대소문자만 다른 것은 같은 것으로 본다 */
+function lineKey(text) {
+  return String(text || '').toLowerCase().replace(/\s+/g, ' ').trim();
+}
+
+/* **오늘 파일이 이미 있으면 덮어쓰지 않고 뒤에 붙인다.**
+
+   하루에 여러 번 고르기 때문이기도 하지만, 그보다 중요한 이유가 있다 —
+   앱은 문장을 **자리 번호**로 가리킨다. 담아 둔 문장카드도, 어디까지 했는지도 그렇다.
+   같은 번호에 다른 문장을 덮어쓰면 예전에 담은 카드가 엉뚱한 문장을 가리킨다.
+   붙이기만 하면 앞의 번호는 절대 움직이지 않는다.
+
+   덤으로, 운영자가 워크플로를 한 번 더 눌러도 오늘 것이 사라지지 않고 늘어난다.
+   같은 대사가 두 번 들어가지 않게 글로 견준다. */
+function mergeDay(old, fresh) {
+  if (!old || !old.sentences || !old.sentences.length) return fresh;
+
+  var out = {
+    videoId: old.videoId || fresh.videoId,
+    title: old.title || fresh.title,
+    date: old.date || fresh.date,
+    source: 'shows',
+    sentences: []
+  };
+  var seen = {};
+  var i;
+  for (i = 0; i < old.sentences.length; i++) {
+    var was = old.sentences[i];
+    was.i = out.sentences.length;
+    out.sentences.push(was);
+    seen[lineKey(was.text)] = true;
+  }
+  for (i = 0; i < fresh.sentences.length; i++) {
+    var one = fresh.sentences[i];
+    if (seen[lineKey(one.text)]) continue;      // 이미 오늘 나온 대사다
+    seen[lineKey(one.text)] = true;
+    one.i = out.sentences.length;
+    out.sentences.push(one);
+  }
+  return out;
+}
+
 function save(parsed, lines, date, pids, generatedAt) {
+  // 사람마다 파일이 따로 있고 붙일 것도 다르므로, 프로필마다 새로 만들어 붙인다
   var day = toDayFile(parsed, lines, date);
   for (var p = 0; p < pids.length; p++) {
-    daily.writeJSON(path.join(DAILY, pids[p], date + '-shows.json'), day);
+    var file = path.join(DAILY, pids[p], date + '-shows.json');
+    day = mergeDay(daily.readJSON(file, null), toDayFile(parsed, lines, date));
+    daily.writeJSON(file, day);
     markIndex(pids[p], date, day.sentences.length, generatedAt);
   }
   return day;
@@ -330,5 +375,5 @@ function tally(pid, cfg) {
 module.exports = {
   candidates: candidates, poolLines: poolLines, videoLines: videoLines, tally: tally, recentLines: recentLines, pickLines: pickLines,
   buildPrompt: buildPrompt, buildSchema: buildSchema,
-  validate: validate, toDayFile: toDayFile, save: save, markIndex: markIndex
+  validate: validate, toDayFile: toDayFile, mergeDay: mergeDay, save: save, markIndex: markIndex
 };

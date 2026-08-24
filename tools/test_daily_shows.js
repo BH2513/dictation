@@ -112,6 +112,37 @@ check('영상이 있으면 그 대목을 가리킨다',
 check('자막 창고에서 온 것은 영상이 없다', day.sentences[1].from, null);
 check('번호는 0 부터 다시 매긴다', [day.sentences[0].i, day.sentences[1].i], [0, 1]);
 
+console.log('\n하루에 여러 번 골라 뒤에 붙인다 — 덮어쓰지 않는다');
+/* 자리 번호를 문장카드와 진도가 가리키므로, 앞의 번호가 움직이면 안 된다 */
+function fakeDay(texts) {
+  return {
+    videoId: 'shows-2026-08-27', title: 'From your videos · 2026-08-27',
+    date: '2026-08-27', source: 'shows',
+    sentences: texts.map(function (t, i) { return { i: i, text: t, ko: '뜻', from: null }; })
+  };
+}
+
+var merged = shows.mergeDay(fakeDay(['A one.', 'B two.']), fakeDay(['C three.', 'D four.']));
+check('앞의 것이 그대로 앞에 있다',
+  [merged.sentences[0].text, merged.sentences[1].text], ['A one.', 'B two.']);
+check('뒤에 붙는다',
+  [merged.sentences[2].text, merged.sentences[3].text], ['C three.', 'D four.']);
+check('자리 번호는 순서대로 이어진다',
+  merged.sentences.map(function (s) { return s.i; }), [0, 1, 2, 3]);
+
+var again = shows.mergeDay(fakeDay(['A one.', 'B two.']), fakeDay(['B two.', 'C three.']));
+check('같은 대사는 두 번 안 들어간다 (워크플로를 두 번 돌렸을 때)',
+  again.sentences.map(function (s) { return s.text; }), ['A one.', 'B two.', 'C three.']);
+check('띄어쓰기·대소문자만 다른 것도 같은 것으로 본다',
+  shows.mergeDay(fakeDay(['A one.']), fakeDay(['a  ONE.'])).sentences.length, 1);
+
+check('오늘 파일이 없으면 그대로 쓴다',
+  shows.mergeDay(null, fakeDay(['A one.'])).sentences.length, 1);
+check('빈 파일이 있어도 그대로 쓴다',
+  shows.mergeDay(fakeDay([]), fakeDay(['A one.'])).sentences.length, 1);
+check('붙여도 videoId 는 안 바뀐다 — 카드가 이 값을 가리킨다',
+  merged.videoId, 'shows-2026-08-27');
+
 console.log('\n고르기 — 최근에 쓴 줄은 피한다');
 var used = {};
 used['t|she was already gone by the time i got there'] = true;

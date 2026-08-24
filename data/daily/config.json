@@ -46,6 +46,7 @@
     "친구한테 고민 상담하면서 결론은 못 내리기",
     "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기"
   ],
+  "showsBatches": 2,
   "showsCandidates": 6,
   "showsMinWords": 8,
   "showsMaxWords": 30,

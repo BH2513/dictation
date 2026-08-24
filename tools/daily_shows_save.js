@@ -24,10 +24,14 @@ try {
   }
 
   var date = process.env.DAILY_DATE || daily.todayKST();
+  var was = daily.readJSON(
+    require('path').join(daily.DAILY, pids[0], date + '-shows.json'), null);
+  var had = (was && was.sentences) ? was.sentences.length : 0;
   var day = shows.save(parsed, lines, date, pids, new Date().toISOString());
 
-  process.stdout.write(date + ' 영상 대사 ' + day.sentences.length + '줄을 저장했습니다 ('
-    + pids.join(', ') + ').\n');
+  // 덮어쓰는 것이 아니라 붙이는 것이므로, 몇 줄이 늘었는지를 적는다
+  process.stdout.write(date + ' 영상 대사 ' + (day.sentences.length - had) + '줄을 더했습니다. '
+    + '오늘 모두 ' + day.sentences.length + '줄 (' + pids.join(', ') + ').\n');
   if (parsed.skipped && parsed.skipped.length) {
     process.stdout.write('버린 후보 ' + parsed.skipped.length + '개:\n');
     for (var k = 0; k < parsed.skipped.length; k++) {

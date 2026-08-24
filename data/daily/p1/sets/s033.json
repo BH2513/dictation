@@ -1,0 +1,116 @@
+{
+  "setId": "s033",
+  "videoId": "daily-s033",
+  "title": "Set 33",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "택배 기다린다고 둘러댔는데, 사실은 아홉 시까지 알람 미루기만 누르다가 열쇠까지 못 찾았어.",
+      "text": "I said I was waiting on a package, but really I hit snooze until nine and then couldn't find my keys.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Told them I was waiting on a package. Really I just hit snooze till nine and then couldn't find my keys."
+        },
+        {
+          "style": "formal",
+          "text": "I said that I was waiting for a package, but in truth I kept pressing the snooze button until nine and then could not find my keys."
+        }
+      ],
+      "note": "**hit snooze** 는 알람이 울릴 때 다시 알림 버튼을 눌러 조금 더 자는 것을 말합니다. **waiting on a package** 는 택배를 기다린다는 뜻으로, 미국 구어에서는 for 대신 on 을 자주 씁니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이모가 애는 언제 가질 거냐고 물었어. 웃어넘겼더니 더 큰 소리로 또 묻길래 그냥 밖으로 나왔어.",
+      "text": "My aunt asked when we're having kids, and when I laughed it off she just asked again louder, so I went outside.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my aunt goes, when are you two having kids? I laughed it off and she just asked again, louder, so I went outside."
+        },
+        {
+          "style": "formal",
+          "text": "My aunt asked when we are going to have children, and when I laughed it off she simply repeated the question more loudly, so I stepped outside."
+        }
+      ],
+      "note": "**laughed it off** 는 곤란한 말을 진지하게 받지 않고 웃어서 넘긴다는 뜻입니다. 캐주얼 문장의 **my aunt goes** 에서 goes 는 said 대신 쓰는 말투로, 남의 말을 그대로 옮길 때 씁니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "윗집에 누가 사는지는 몰라도 매일 밤 한 시쯤 의자를 바닥에 드르륵 끌어. 그때마다 나는 어김없이 깨어 있어.",
+      "text": "Whoever's above me drags a chair across the floor every night around one, and I'm awake for it every single time.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Somebody upstairs drags a chair across the floor every night around one, and I'm awake for it every time."
+        },
+        {
+          "style": "formal",
+          "text": "Whoever lives above me drags a chair across the floor every night at around one o'clock, and I am awake for it every single time."
+        }
+      ],
+      "note": "**Whoever's above me** 는 윗집에 누가 사는지 모를 때 그 사람을 가리키는 말입니다. **every single time** 은 every time 에 single 을 넣어 예외 없이 매번이라고 강조한 표현입니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "금요일부터 온수가 안 나와요. 전화도 두 번 했고요. 그러니까 사람이 언제 오는지만 알려 주시겠어요?",
+      "text": "The hot water's been out since Friday, and I've called twice, so can you just tell me when somebody's actually coming?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No hot water since Friday, and I've called twice, so can you just tell me when someone's actually coming?"
+        },
+        {
+          "style": "formal",
+          "text": "The hot water has been out since Friday and I have called twice, so could you please tell me when someone will actually be coming?"
+        }
+      ],
+      "note": "**the hot water's been out** 에서 out 은 고장이 나서 안 나온다는 뜻입니다. **actually** 는 말만 하지 말고 실제로 오는 때를 묻는 답답함을 담고 있습니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "솔직히 말해도 돼? 색은 너한테 진짜 잘 어울려. 근데 어깨가 당겨. 한 시간쯤 지나면 결국 벗게 될걸.",
+      "text": "Honestly? The color's great on you, but it's pulling across the shoulders, so you'd end up taking it off an hour in.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You want the truth? The color's great on you, but it's pulling across the shoulders. You'd take it off an hour in."
+        },
+        {
+          "style": "formal",
+          "text": "Honestly, the color looks wonderful on you, but it is pulling across the shoulders, so you would end up taking it off an hour in."
+        }
+      ],
+      "note": "**pulling across the shoulders** 는 옷이 어깨 쪽에서 당겨 낀다는 뜻으로, 옷 입어 보고 하는 말입니다. **an hour in** 은 시작하고 한 시간쯤 지난 시점을 가리킵니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 캐주얼: 자기 말을 뒤집는 자리에 붙은 but nah 가 어색해서 문장을 끊고 Really I just… 로 고쳤습니다.",
+    "1번 격식: pressed snooze 는 원어민이 안 쓰는 말이라 kept pressing the snooze button 으로 고쳤습니다.",
+    "3번 캐주얼: I'm up for it 은 그거 하고 싶다는 뜻으로도 읽혀서 I'm awake for it 으로 되돌렸습니다.",
+    "5번 캐주얼: have it off 는 영국 구어로 성관계를 뜻하는 표현이라 you'd take it off 로 바꿨습니다.",
+    "1번 한국어: 둘러댄 상황이 드러나게 다듬고 열쇠까지 못 찾았다는 흐름을 살렸습니다."
+  ]
+}

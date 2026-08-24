@@ -6,122 +6,122 @@
   "sentences": [
     {
       "i": 0,
-      "ko": "솔직히 지금 여기 사람들 다 없었으면 좋겠다.",
-      "text": "Yeah, I'm kind of wishing everyone wasn't here right now.",
+      "ko": "이게 왜 그렇게 이해가 안 돼?",
+      "text": "Why is this so hard for you to get?",
       "alts": [
         {
           "style": "casual",
-          "text": "Wish it was just us right now."
+          "text": "You still don't get it?"
         },
         {
           "style": "formal",
-          "text": "To be honest, I would rather no one else were here at the moment."
+          "text": "I do not understand why this is so difficult for you to grasp."
         }
       ],
-      "note": "**kind of wishing** 은 바라는 마음을 대놓고 말하기 뭐할 때 한 겹 눌러서 말하는 방법이다. 사람들 앞에서 속마음을 슬쩍 흘릴 때 쓴다.",
-      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
+      "note": "**get** 이 \"이해하다\" 로 쓰인 자리. 몇 번을 설명해도 안 통할 때 나오는 말이라 상대에 따라 세게 들릴 수 있다. 가까운 사이에서만 쓴다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
       "from": {
-        "videoId": "RSLnwpSfe-4",
-        "i": 144
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1111
       },
-      "start": 305.4,
-      "end": 310.96,
+      "start": 2848.68,
+      "end": 2850.24,
       "recording": null
     },
     {
       "i": 1,
-      "ko": "이제야 떠난다는 게 실감 났나 봐. 좀 울컥해 있으니까 아무도 건드리지 마.",
-      "text": "Now, it just hit her that she's leaving and she's kind of emotional, so no one say anything to set her off.",
+      "ko": "아, 맞다. 우리 먹을 거 있어.",
+      "text": "Oh, I just remembered we do have something to eat.",
       "alts": [
         {
           "style": "casual",
-          "text": "She just realized she's really leaving, so don't say anything that'll get her going."
+          "text": "Wait, we've got food after all."
         },
         {
           "style": "formal",
-          "text": "It has finally sunk in that she is leaving, so please avoid saying anything that might upset her."
+          "text": "It has just occurred to me that we do have something to eat."
         }
       ],
-      "note": "**it just hit her** 는 알고는 있었는데 이제야 실감이 났다는 뜻이고, **set her off** 는 참고 있던 감정을 터뜨리게 만든다는 뜻이다. 우는 사람, 화난 사람 옆에서 다른 사람에게 주의를 줄 때 쓴다.",
+      "note": "**do have** — 앞에서 없다고 했던 것을 뒤집을 때 have 앞에 do 를 넣어 \"있긴 있어\" 를 만든다. 한국 사람이 잘 안 쓰는 강조법이다.",
       "situation": "The Ones with the Whole Gang from Season 10 | Friends",
       "from": {
         "videoId": "FlrWUyB_j90",
-        "i": 693
+        "i": 10
       },
-      "start": 1714.32,
-      "end": 1719.44,
+      "start": 17.64,
+      "end": 20.16,
       "recording": null
     },
     {
       "i": 2,
-      "ko": "너한테 다시 반하는 것 같아.",
-      "text": "I think I'm falling in love with you all over again.",
+      "ko": "사실 후보를 두 개까지 좁혔어.",
+      "text": "Uh, actually we we've narrowed it down to two names.",
       "alts": [
         {
           "style": "casual",
-          "text": "Feels like I'm falling for you again."
+          "text": "It's down to two names now."
         },
         {
           "style": "formal",
-          "text": "It seems I am falling in love with you once more."
+          "text": "We have narrowed our choices to two names."
         }
       ],
-      "note": "**all over again** 은 '처음부터 다시 한 번' 이다. 오래된 사이에서 새삼스레 마음이 다시 일 때, 또는 지겨운 일을 또 겪을 때도 쓴다.",
-      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "note": "**narrowed it down to** — 여럿 중에서 후보를 줄여 갈 때 쓴다. 이름 짓기뿐 아니라 식당 고를 때, 사람 뽑을 때도 그대로 쓴다.",
+      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
       "from": {
-        "videoId": "6nVAQaiLNkY",
-        "i": 587
+        "videoId": "cWheLYR8moU",
+        "i": 334
       },
-      "start": 1562.519,
-      "end": 1567.639,
+      "start": 919.36,
+      "end": 922.4,
       "recording": null
     },
     {
       "i": 3,
-      "ko": "야, 우리 집엔 왜 잼이 없냐?",
-      "text": "Hey, how come we never have jam at our place?",
+      "ko": "가끔 그냥 쿵파오 치킨이 확 당길 때가 있어.",
+      "text": "I just get this craving for Kung Pao chicken.",
       "alts": [
         {
           "style": "casual",
-          "text": "Why's there never any jam in our fridge?"
+          "text": "Sometimes I'm just dying for Kung Pao chicken."
         },
         {
           "style": "formal",
-          "text": "I was wondering why we never seem to keep jam at home."
+          "text": "Occasionally I develop a strong desire for Kung Pao chicken."
         }
       ],
-      "note": "**how come** 은 why 보다 편한 말투인데, 뒤가 의문문 순서가 아니라 평서문 순서 그대로 온다(how come we never have, ~~how come do we~~). 따지기보다 그냥 궁금할 때 쓴다.",
-      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "note": "**get this craving for** — 특정 음식이 갑자기 먹고 싶어질 때. 여기서 this 는 \"그 왜 있잖아\" 하는 느낌으로 넣는 것이라 굳이 옮기지 않는다.",
+      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
       "from": {
-        "videoId": "6nVAQaiLNkY",
-        "i": 75
+        "videoId": "QdQ58BbGRsA",
+        "i": 222
       },
-      "start": 169.519,
-      "end": 171.959,
+      "start": 625.28,
+      "end": 628.6,
       "recording": null
     },
     {
       "i": 4,
-      "ko": "저기, 전에 내가 더 힘이 되어 주지 못해서 정말 미안해.",
-      "text": "You know, I'm I'm really sorry I wasn't more supportive before.",
+      "ko": "이제 네 얘기 좀 해 보자.",
+      "text": "Why don't we talk about you a little bit?",
       "alts": [
         {
           "style": "casual",
-          "text": "Sorry I didn't back you up more back then."
+          "text": "Let's talk about you for a bit."
         },
         {
           "style": "formal",
-          "text": "I sincerely apologize for not having been more supportive at the time."
+          "text": "Perhaps we could turn the conversation to you."
         }
       ],
-      "note": "**wasn't more supportive** 는 곁에서 편들어 주고 응원해 주지 못했다는 뜻이다. 한국어의 '힘이 되어 주지 못했다' 자리에 그대로 들어가는 말이라 뒤늦게 사과할 때 쓴다.",
-      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "note": "**Why don't we** 는 물음이 아니라 제안이다. 화제를 상대 쪽으로 돌릴 때 쓰고, **a little bit** 을 붙이면 부담이 줄어든다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
       "from": {
-        "videoId": "FlrWUyB_j90",
-        "i": 385
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1041
       },
-      "start": 1016.84,
-      "end": 1019.769,
+      "start": 2640.48,
+      "end": 2644.08,
       "recording": null
     }
   ]

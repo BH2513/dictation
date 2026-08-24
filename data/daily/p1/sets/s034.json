@@ -1,0 +1,115 @@
+{
+  "setId": "s034",
+  "videoId": "daily-s034",
+  "title": "Set 34",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "우리 개는 내가 바닥에 앉아서 옆에 있어 줘야 밥을 먹어요. 그래서 요즘 아침은 매일 그러고 있어요.",
+      "text": "My dog won't eat unless I'm sitting on the floor next to him, so that's how I spend every morning now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The dog's gotta have me sitting on the floor right next to him or he won't eat, so that's my whole morning now."
+        },
+        {
+          "style": "formal",
+          "text": "My dog will not eat unless I am seated on the floor beside him, so that is how I spend every morning now."
+        }
+      ],
+      "note": "**won't eat unless** 는 그 조건이 갖춰져야만 먹는다는 뜻이에요. **that's how I spend every morning** 은 아침 시간을 그렇게 보낸다고 마무리할 때 쓰는 말이에요.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "스탠딩 책상을 샀는데 한 번도 올려 본 적이 없어요. 그래서 그냥 돈만 너무 많이 쓴 책상이 됐어요.",
+      "text": "I bought this standing desk and I've never once raised it, so it's just a desk that cost way too much.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Bought a standing desk, never raised it once, so now it's just a desk I paid way too much for."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a standing desk and have never once raised it, so it is simply a desk that cost far too much."
+        }
+      ],
+      "note": "**never once** 는 단 한 번도 없었다고 힘줘 말할 때 씁니다. **way too much** 는 너무 지나치게라는 뜻의 구어예요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "집주인이 1월에 월세를 또 올린대요. 이사를 가야 할 것 같긴 한데 여기서 9년을 살아서 이 짐을 다 싸는 게 상상이 안 돼요.",
+      "text": "My landlord's raising the rent again in January, so I should probably move, but I've been here nine years and I can't picture packing it all up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Rent's going up again in January, so yeah, I should probably move, but I've been here nine years and I can't even picture packing all this up."
+        },
+        {
+          "style": "formal",
+          "text": "My landlord is raising the rent again in January, so I should probably move, but I have been here nine years and I cannot imagine packing it all up."
+        }
+      ],
+      "note": "**can't picture** 는 머릿속에 그려지지 않는다, 즉 상상이 안 된다는 뜻이에요. **packing it all up** 은 짐을 전부 싸서 챙기는 것을 말합니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이미 차에 타 있었는데 금요일에는 수영장이 8시에 문을 닫는다는 게 그때 생각났어요. 그래서 그냥 저녁만 사 왔어요.",
+      "text": "I was in the car already, but then I remembered the pool closes at eight on Fridays, so I just picked up dinner instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I'm sitting in the car and I remember the pool closes at eight on Fridays, so I just grabbed dinner instead."
+        },
+        {
+          "style": "formal",
+          "text": "I was already in the car, but then I remembered that the pool closes at eight on Fridays, so I simply picked up dinner instead."
+        }
+      ],
+      "note": "**picked up dinner** 는 저녁거리를 사서 들고 온 것이에요. **closes at eight** 처럼 영업시간은 현재형으로 말합니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "오늘 밤에 온통 얼어붙는대요. 그래서 그 먼 데까지 운전해 가는 대신 모임을 우리 집에서 하기로 했어요.",
+      "text": "They're saying everything's going to ice over tonight, so we're moving the get-together to my place instead of driving all the way out there.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Supposed to ice over everywhere tonight, so we're just doing the get-together at my place instead of driving all the way out there."
+        },
+        {
+          "style": "formal",
+          "text": "They are saying that everything will ice over tonight, so we are moving the gathering to my home rather than driving all the way out there."
+        }
+      ],
+      "note": "**ice over** 는 길이나 표면이 얼음으로 덮이는 것이에요. **get-together** 는 편하게 모이는 자리를 말하고, **all the way out there** 는 그 먼 데까지라는 느낌을 줍니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 note 의 **pack it all up** 이 문장에 그대로 나오지 않아(문장은 packing it all up) 별표 표현을 문장에 실제로 있는 형태로 바꿨습니다.",
+    "4번 note 의 **pick up dinner** 도 문장에는 picked up dinner 로 나와서 별표 표현을 문장에 있는 형태로 맞췄습니다.",
+    "1번 한국어의 '내가 옆에 바닥에 앉아 있어야만' 이 자리 표현이 겹쳐 딱딱해서 친구에게 말하듯 풀었습니다.",
+    "영어(text)는 다섯 문장 모두 그대로 두었습니다 — 관용구 쓰임, 소리내어 읽었을 때의 자연스러움, 길이(최대 27단어), casual/formal 의 차이와 뜻 보존에 걸리는 데가 없었습니다."
+  ]
+}

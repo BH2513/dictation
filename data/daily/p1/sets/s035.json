@@ -1,0 +1,114 @@
+{
+  "setId": "s035",
+  "videoId": "daily-s035",
+  "title": "Set 35",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "회의 때마다 그 사람은 내가 뭐라고 말할 때까지 기다렸다가 더 큰 소리로 똑같이 따라 말해요. 그러면 다들 그 사람이 한 말로 기억하죠.",
+      "text": "In every meeting she waits for me to say something, then says it back louder, and that's the version everyone remembers.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "She waits till I say something, then says it back louder, and that's the one everyone remembers."
+        },
+        {
+          "style": "formal",
+          "text": "During every meeting she waits for me to speak, then restates it more loudly, and that is the version everyone remembers."
+        }
+      ],
+      "note": "**says it back louder** 는 내가 한 말을 그대로 되받아서 더 큰 소리로 말한다는 뜻입니다. say back 은 남의 말을 그대로 돌려주는 말이에요.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "토요일에 동생이랑 운동 딱 한 번 했는데 월요일까지는 멀쩡했어요. 그런데 지금은 웃기만 해도 아파요.",
+      "text": "I did one workout with my brother on Saturday and I felt fine until Monday, and now it hurts to laugh.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Me and my brother worked out once on Saturday, I was fine till Monday, and now it hurts to laugh."
+        },
+        {
+          "style": "formal",
+          "text": "I completed a single workout with my brother on Saturday and felt fine until Monday, and now it is painful to laugh."
+        }
+      ],
+      "note": "**it hurts to laugh** 는 웃는 동작 자체가 아프다는 말입니다. hurt 뒤에 to 와 동사를 붙이면 그 행동을 할 때 아프다는 뜻이 됩니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "잘 돌아가는데 제가 떨어뜨려서 뚜껑에 긁힌 자국이 있어요. 그래서 30달러 깎았어요. 지금 아시는 게 나을 것 같아서요.",
+      "text": "It works great, but there's a scratch on the lid where I dropped it, so I knocked $30 off. I'd rather you know now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Runs great, but I dropped it and there's a scratch on the lid, so I took $30 off. Better you hear it from me now."
+        },
+        {
+          "style": "formal",
+          "text": "It works very well, but there is a scratch on the lid where I dropped it, so I have reduced the price by $30. I would prefer that you know now."
+        }
+      ],
+      "note": "**knocked $30 off** 는 값에서 30달러를 깎아 줬다는 말입니다. **I'd rather you know now** 는 지금 알고 계시는 편이 낫겠다는 뜻이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "저 이제 가 봐야 해요. 강아지를 아침부터 계속 케이지에 넣어 놔서, 집에 갔는데 난장판이면 곤란하거든요.",
+      "text": "I've got to get going, because the dog's been in the crate since this morning and I don't want to come home to a mess.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I gotta run, the dog's been in the crate since this morning and I don't wanna come home to a mess."
+        },
+        {
+          "style": "formal",
+          "text": "I must be on my way, as the dog has been in the crate since this morning and I would rather not come home to a mess."
+        }
+      ],
+      "note": "**come home to a mess** 는 집에 들어섰을 때 이미 난장판이 되어 있는 상황을 말합니다. come home to 뒤에는 돌아가서 마주하게 되는 것이 옵니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "거기 몇 년 동안 제일 좋아하던 곳이었는데, 시내 더 넓은 자리로 옮기고 나서는 시끄럽기만 하고 음식도 식어서 나와요.",
+      "text": "That place was my favorite for years, but they moved to a bigger space downtown and now it's just loud and the food comes out cold.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I loved that place for years, but they moved into a bigger spot downtown and now it's just loud and the food shows up cold."
+        },
+        {
+          "style": "formal",
+          "text": "That establishment was my favorite for years, but they relocated to a larger space downtown, and now it is simply loud and the food arrives cold."
+        }
+      ],
+      "note": "**comes out cold** 는 음식이 나올 때부터 이미 식어 있다는 말입니다. 주방에서 음식이 나오는 것을 come out 이라고 합니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 보다 오히려 길고 문어체였습니다(\"sits through every meeting waiting for...\"). 더 짧고 구어에 가깝게 줄였습니다.",
+    "3번 한국어의 말끝이 \"있어요/깎았습니다\"로 섞여 있어 \"깎았어요\"로 맞췄습니다.",
+    "4번 한국어의 \"켄넬\"은 한국에서 잘 안 쓰는 말이라 \"케이지에 넣어 놔서\"로 바꿨습니다. 영어(crate)의 뜻은 그대로입니다."
+  ]
+}

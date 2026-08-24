@@ -236,21 +236,18 @@ function buildPrompt(opts) {
   lines.push('잘 쓴 글을 만들지 마세요. 사람이 입으로 하는 말을 그대로 적으세요.');
   lines.push('');
   if (opts.real && opts.real.length) {
-    var sum = 0;
-    for (var q = 0; q < opts.real.length; q++) sum += wordCount(opts.real[q]);
-    var avg = Math.round(sum / opts.real.length);
     lines.push('## 사람은 이렇게 말합니다 \u2014 진짜 대사');
     lines.push('');
     lines.push('아래는 **드라마에서 실제로 한 말을 자막 그대로 옮긴 것**입니다. 지어낸 문장이 아닙니다.');
     lines.push('');
     for (var y = 0; y < opts.real.length; y++) lines.push('- ' + opts.real[y]);
     lines.push('');
-    lines.push('**내용은 베끼지 마세요.** 여기서 볼 것은 둘뿐입니다 \u2014');
-    lines.push('**얼마나 짧은지**, 그리고 **누구에게 하는 말인지.**');
+    lines.push('**내용은 베끼지 마세요.** 이건 따라 쓸 문장이 아니라 \u2014');
+    lines.push('**사람이 실제로 어떻게 말하는지**를 귀에 담아 두라고 보여 주는 것입니다.');
     lines.push('');
-    lines.push('세어 보면 평균 ' + avg + ' 단어쯤입니다. 우리가 전에 만든 것은 24 단어였습니다.');
-    lines.push('**당신이 만들 문장도 이 정도여야 합니다.** 그리고 대부분이 **앞에 있는 사람에게** 하는 말입니다 \u2014');
+    lines.push('읽어 보면 알겠지만 대부분이 **앞에 있는 사람에게** 하는 말입니다.');
     lines.push('혼자 겪은 일을 적어 내려간 수기가 아닙니다.');
+    lines.push('길이도 세지 마세요 \u2014 **저 사람들이 말하듯 말하면 길이는 저절로 그렇게 됩니다.**');
     lines.push('');
   }
   lines.push('## 영어 문장 \u2014 이게 제일 중요합니다');

@@ -1404,6 +1404,7 @@
   var dailyTyped = '';      // 대사 갈래에서 영어로 쳐 본 것
   var dailyResult = null;   // 그 채점 결과. 다시 그려도 지워지지 않게 남긴다
   var dailyShown = false;   // 정답을 봤는지
+  var dailyKoShown = false; // 한국어 뜻을 폈는지 (대사 갈래에서만 쓴다 — 아래 설명)
   var dailyRecording = false;
   var dailyProgress = null;
   var dailyKind = 'made';   // 'made' = AI 가 만든 문장, 'shows' = 등록한 영상의 실제 대사
@@ -1790,6 +1791,7 @@
     dailyTyped = '';
     dailyResult = null;
     dailyShown = false;
+    dailyKoShown = false;
     if (window.Recorder && dailyRecording) { Recorder.discard(); }
     dailyRecording = false;
     if (canSpeak()) { try { window.speechSynthesis.cancel(); } catch (e) {} }
@@ -2054,10 +2056,33 @@
     setupClip(pid, s);
     var step = hasScene(s) ? 1 : 0;
 
+    /* **대사 갈래에서는 한국어를 감춰 둔다** (2026-08-26 운영자 요청).
+
+       지어낸 문장(`Daily`) 쪽에서 한국어는 **문제**다 — 그걸 보고 영어로 옮기는 것이라
+       감추면 할 일이 없어진다. 그래서 거기서는 그대로 펴 둔다.
+
+       대사 쪽은 다르다. 장면을 보고 **들은 것을 영어로 쳐 보는** 것이라, 한국어는
+       문제가 아니라 **막혔을 때 보는 힌트**다. 펴 놓으면 눈이 먼저 가서
+       듣기 전에 뜻을 알아 버린다. 그래서 **누를 때까지 감춰 둔다.**
+
+       문장이 넘어가면 도로 감긴다 (`resetDailyAnswer`) — 앞 문장에서 폈다고
+       다음 문장까지 펴져 있으면 감춘 뜻이 없다. */
     step++;
-    box.appendChild(stepRow(step, dailyKind === 'shows'
-      ? 'Check the meaning in Korean' : 'Read the Korean'));
-    box.appendChild(el('div', 'kotask', s.ko || ''));
+    if (dailyKind === 'shows') {
+      box.appendChild(stepRow(step, 'Check the meaning in Korean'));
+      if (dailyKoShown) {
+        box.appendChild(el('div', 'kotask', s.ko || ''));
+      } else {
+        var kb = el('button', 'peek', 'Show the Korean');
+        kb.onclick = function () { dailyKoShown = true; drawDaily(pid); };
+        box.appendChild(kb);
+        box.appendChild(el('div', 'hint',
+          'Try the scene first. Tap only if you need it.'));
+      }
+    } else {
+      box.appendChild(stepRow(step, 'Read the Korean'));
+      box.appendChild(el('div', 'kotask', s.ko || ''));
+    }
 
     /* 말하기 — 못 하는 기기에서는 이 줄을 통째로 안 만든다 (SPEC 9) */
     if (window.Recorder && Recorder.canRecord()) {

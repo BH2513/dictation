@@ -1,9 +1,6 @@
 {
   "count": 5,
-  "minWords": 12,
   "maxWords": 28,
-  "shortWords": 20,
-  "shortCount": 2,
   "level": "advanced",
   "model": "opus",
   "avoidRecentDays": 14,
@@ -51,7 +48,7 @@
     "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기"
   ],
   "showsCandidates": 6,
-  "showsMinWords": 12,
+  "showsMinWords": 8,
   "showsMaxWords": 30,
   "batches": 3,
   "showsExclude": [

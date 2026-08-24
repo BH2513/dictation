@@ -15,7 +15,7 @@ function check(name, got, want) {
   }
 }
 
-var CFG = { count: 2, minWords: 5, maxWords: 12 };
+var CFG = { count: 2, maxWords: 12 };
 
 function row(over) {
   var base = {
@@ -87,15 +87,18 @@ check('개수가 모자라면',
   daily.validate({ sentences: [row()] }, CFG),
   ['문장이 2개여야 하는데 1개입니다.']);
 
-check('문장이 짧으면 잡는다',
-  daily.validate({ sentences: [row({ text: 'Too short.' })] }, CFG).slice(1)[0],
-  '문장 1: 영어 문장이 2 단어입니다 (5~12 이어야 합니다).');
+// 하한은 없앴다 (운영자 결정). 진짜 대사 1,458줄 중 58%가 12 단어 미만이었다 —
+// 하한을 두면 진짜 말이 사는 자리를 통째로 막는다
+check('짧아도 통과한다',
+  daily.validate({ sentences: [row({ text: 'I told you so.' })] }, CFG).slice(1), []);
+check('두 낱말이어도 통과한다',
+  daily.validate({ sentences: [row({ text: 'Not really.' })] }, CFG).slice(1), []);
 
 check('문장이 길면 잡는다',
   daily.validate({ sentences: [row({
     text: 'one two three four five. six seven eight nine ten eleven twelve thirteen.'
   })] }, CFG).slice(1),
-  ['문장 1: 영어 문장이 13 단어입니다 (5~12 이어야 합니다).']);
+  ['문장 1: 영어 문장이 13 단어입니다 (12 단어를 넘으면 외워서 따라 말할 수 없습니다).']);
 
 check('한국어가 비면 잡는다',
   daily.validate({ sentences: [row({ ko: '  ' })] }, CFG).slice(1),
@@ -171,36 +174,25 @@ check('없는 표현을 강조하면 검사에서 잡는다',
   daily.validate({ sentences: [row({ note: '**swamped** 는 바쁘다는 뜻입니다.' })] }, CFG).slice(1),
   ['문장 1: note 에서 강조한 표현이 문장에 하나도 나오지 않습니다.']);
 
-console.log('\n번역체의 자국 — 쉼표 더미, 한 문장, 대명사 투성이');
-check('한 문장에 쉼표 셋이면 걸린다',
-  daily.commaHeavy('I went, I saw, I came, and I left.'), true);
-check('쉼표 둘까지는 괜찮다', daily.commaHeavy('I went, I saw, and I left.'), false);
-check('문장을 나누면 괜찮다',
-  daily.commaHeavy('I went, I saw. I came, and I left.'), false);
-
+console.log('\n영어에 대한 기계 검사는 길이 상한 하나뿐이다');
+// 쉼표 3개 제한과 it/that 5개 제한을 없앴다 (운영자 결정).
+// 진짜 대사에 들이대 보니 쉼표 제한은 6%를, 하한은 58%를 버렸다 —
+// 사람은 글보다 오히려 길게 이어 말한다. 자연스러움은 소리내어 읽는 단계가 본다
 check('문장 수를 센다',
   daily.sentencesOf('One thing. Two things! Three?').length, 3);
 check('마침표 뒤 빈 조각은 안 센다', daily.sentencesOf('Only one.').length, 1);
 
-check('대명사를 센다',
-  daily.vagueCount('It was that thing, and this is it.'), 5);
-check('구체적이면 적게 나온다',
-  daily.vagueCount('I ordered chicken and they sent pasta.'), 0);
-
-// 한 문장으로 끝나는 것은 이제 통과다 — 짧게 끝나는 것이 자연스러울 때가 있다
 check('한 문장뿐이어도 통과한다',
   daily.validate({ sentences: [row({ text: 'That deadline is really tough for us.' })] }, CFG).slice(1),
   []);
 
-check('쉼표가 많으면 잡는다',
+check('쉼표가 많아도 이제 통과한다',
   daily.validate({ sentences: [row({
-    text: 'I went, I saw, I came, and I left today.' })] }, CFG).slice(1),
-  ['문장 1: 한 문장에 쉼표가 너무 많습니다. 문장을 나누세요.']);
+    text: 'I went, I saw, I came, and I left.' })] }, CFG).slice(1), []);
 
-check('대명사가 다섯을 넘으면 잡는다',
+check('it/that 이 많아도 이제 통과한다',
   daily.validate({ sentences: [row({
-    text: 'It was that thing. This is it, with that among these too.' })] }, CFG).slice(1),
-  ['문장 1: it/this/that 이 7번 나옵니다. 구체적인 것을 넣으세요.']);
+    text: 'It was that thing, and this is it.' })] }, CFG).slice(1), []);
 
 // 자연스러움은 글자 모양으로 못 잡는다. 'and that was that' 은 제자리에 쓰면 멀쩡한 말이고
 // 'and that helps nobody' 가 나쁜 것은 시제가 안 맞아서지 그 글자 때문이 아니다.
@@ -224,33 +216,34 @@ check('겹치면 검사에서 잡는다',
   ['문장 1: casual 이 정답과 앞부분이 같습니다.']);
 
 console.log('\n길이가 다 비슷하면 잡는다');
-var SPREAD = { count: 3, minWords: 5, maxWords: 12, shortWords: 8, shortCount: 2 };
-function len(words) {   // 지정한 낱말 수로 두 문장짜리를 만든다
+// "5개 중 2개는 20 단어 이하" 를 없앴다 (운영자 결정).
+// 진짜 대사는 89%가 20 단어 이하인데 우리 규칙은 40%만 요구하고 있었다 — 방향이 반대였다
+function len(n) {
   var out = [];
-  for (var i = 0; i < words - 1; i++) out.push('word');
-  return 'Yes. ' + out.join(' ') + '.';
+  for (var i = 0; i < n; i++) out.push('word');
+  return out.join(' ') + '.';
 }
-check('둘이 짧으면 통과',
-  daily.validate({ sentences: [
-    row({ text: len(7) }), row({ text: len(8) }), row({ text: len(12) })] }, SPREAD)
+check('다섯이 다 길어도 이제 통과한다',
+  daily.validate({ sentences: [row({ text: len(11) }), row({ text: len(11) })] }, CFG)
     .filter(function (p) { return p.indexOf('단어 이하') >= 0; }), []);
-check('하나만 짧으면 잡는다',
-  daily.validate({ sentences: [
-    row({ text: len(7) }), row({ text: len(11) }), row({ text: len(12) })] }, SPREAD)
-    .filter(function (p) { return p.indexOf('단어 이하') >= 0; }),
-  ['8 단어 이하인 문장이 1개뿐입니다 (2개 이상이어야 합니다). 길이를 서로 다르게 하세요.']);
-check('설정에 없으면 이 검사를 안 한다',
-  daily.validate({ sentences: [row({ text: len(7) })] }, { count: 1, minWords: 5, maxWords: 12 })
-    .filter(function (p) { return p.indexOf('단어 이하') >= 0; }), []);
+check('다섯이 다 짧아도 이제 통과한다',
+  daily.validate({ sentences: [row({ text: len(3) }), row({ text: len(3) })] }, CFG)
+    .filter(function (p) { return p.indexOf('단어') >= 0; }), []);
 
 console.log('\n검수 — 만든 것을 한 번 더 읽히는 단계');
-var rev = daily.buildReviewPrompt({ sentences: [row()] }, { count: 5, minWords: 20, maxWords: 35 });
+var rev = daily.buildReviewPrompt({ sentences: [row()] }, { count: 5, maxWords: 35 });
 check('초안이 지시문에 담긴다', rev.indexOf('That deadline is tough') >= 0, true);
 check('관용구 오용을 보라고 한다', rev.indexOf('hit the spot') >= 0, true);
 check('지적만 말고 고치라고 한다', rev.indexOf('직접 고쳐서 내놓으세요') >= 0, true);
 check('개수를 바꾸지 말라고 한다', rev.indexOf('문장 개수(5개)') >= 0, true);
 check('돈을 달러로 보라고 한다', rev.indexOf('돈이 달러로 적혀 있는가') >= 0, true);
-check('짧은 것을 늘리지 말라고 한다', rev.indexOf('짧은 것을 늘리지 마세요') >= 0, true);
+check('검수에서도 짧다고 늘리지 말라고 한다',
+  rev.indexOf('하한은 없습니다. 짧다고 늘리지 마세요') >= 0, true);
+check('검수에 단어 수 하한이 없다', rev.indexOf('~35 단어') >= 0, false);
+check('검수에서 it/this/that 을 구체화하라고 하지 않는다',
+  rev.indexOf('구체적인 물건, 시각, 요일을 넣습니다') >= 0, false);
+check('검수에서 말버릇을 빼라고 하지 않는다',
+  rev.indexOf('말버릇을 장식으로 넣었는가') >= 0, false);
 check('늘려 쓴 데를 잘라 내라고 한다', rev.indexOf('그 마디를 잘라 내세요') >= 0, true);
 check('아래쪽에 붙었다고 늘리지 말라고 한다',
   rev.indexOf('늘리지 마세요') >= 0, true);
@@ -494,12 +487,12 @@ check('UTC 로 같은 날 낮이면 그대로',
 
 console.log('\n지시문 — 조건이 실제로 담기는지');
 var prompt = daily.buildPrompt({
-  count: 2, minWords: 20, maxWords: 35,
-  shortWords: 20, shortCount: 2,
+  count: 2, maxWords: 35,
   situations: ['회의에서 반대하기', '병원에서 증상 설명'],
   vocab: ['concentrated', 'threatened']
 });
-check('단어 수 조건이 들어간다', prompt.indexOf('20~35 단어') >= 0, true);
+check('상한만 알려 준다', prompt.indexOf('35 단어를 넘지 마세요') >= 0, true);
+check('하한은 없다고 못 박는다', prompt.indexOf('하한은 없습니다') >= 0, true);
 check('상황이 들어간다', prompt.indexOf('병원에서 증상 설명') >= 0, true);
 check('어휘가 들어간다', prompt.indexOf('concentrated') >= 0, true);
 check('편한 말투를 못 박는다', prompt.indexOf('편한 동료에게 하는 말투') >= 0, true);
@@ -511,19 +504,30 @@ check('영어만 내놓게 한다', prompt.indexOf('{ "texts": [') >= 0, true);
 check('한국어를 만들라고 하지 않는다', prompt.indexOf('"ko"') >= 0, false);
 check('말투도 여기서 만들라고 하지 않는다', prompt.indexOf('"alts"') >= 0, false);
 check('설명도 여기서 쓰라고 하지 않는다', prompt.indexOf('별표 두 개') >= 0, false);
-check('말버릇을 장식으로 넣지 말라고 한다',
-  prompt.indexOf('장식으로 넣지 마세요') >= 0, true);
+check('말버릇을 겁내지 말라고 한다', prompt.indexOf('말버릇') >= 0, true);
+check('말버릇을 넣지 말라고 하지는 않는다',
+  prompt.indexOf('장식으로 넣지 마세요') >= 0, false);
 check('한 문장으로 끝나도 된다고 한다', prompt.indexOf('한 문장으로 끝나도 됩니다') >= 0, true);
-check('쉼표로 잇지 말라고 한다', prompt.indexOf('쉼표로 계속 이으면 안 됩니다') >= 0, true);
 check('규칙을 채우려고 늘리지 말라고 한다',
-  prompt.indexOf('채워야 하는 양이 아닙니다') >= 0, true);
-check('that 이 무엇을 가리키는지 못 박는다',
-  prompt.indexOf('무엇을 가리키는지 낱말 하나로 짚을 수 있어야') >= 0, true);
+  prompt.indexOf('말을 늘리거나 덧붙이지 마세요') >= 0, true);
+
+// 아래는 전부 없앤 규칙이다. 다시 기어들어 오면 여기서 걸린다 (운영자 결정).
+// 진짜 원어민 대사에 들이대 보고 하나씩 근거를 확인했다
+console.log('\n없앤 규칙이 다시 들어오지 않는지');
+check('쉼표로 잇지 말라고 하지 않는다',
+  prompt.indexOf('쉼표로 계속 이으면 안 됩니다') >= 0, false);
+check('that 이 가리키는 것을 못 박지 않는다',
+  prompt.indexOf('무엇을 가리키는지 낱말 하나로 짚을 수 있어야') >= 0, false);
+check('숫자·요일·시각을 넣으라고 하지 않는다',
+  prompt.indexOf('무슨 요일이었는지') >= 0, false);
+check('길이를 서로 다르게 하라고 하지 않는다',
+  prompt.indexOf('길이를 서로 다르게 하세요') >= 0, false);
+check('20 단어 이하 개수를 못 박지 않는다',
+  prompt.indexOf('단어 이하**여야 합니다') >= 0, false);
+check('물음표를 막지 않는다', prompt.indexOf('쉼표와 마침표만 쓰세요') >= 0, false);
+check('물음표를 써도 된다고 한다', prompt.indexOf('물음표와 느낌표는 써도 됩니다') >= 0, true);
 check('난이도는 내용에서 나온다고 한다',
   prompt.indexOf('난이도는 길이가 아니라 내용에서') >= 0, true);
-check('길이를 서로 다르게 하라고 한다', prompt.indexOf('길이를 서로 다르게 하세요') >= 0, true);
-check('짧은 것을 쉽게 만들지 말라고 한다',
-  prompt.indexOf('짧은 것을 쉬운 것으로 만들지 마세요') >= 0, true);
 // "짧게, 다만 내용은 어렵게" 만 두었더니 압축을 했다 — 이어 주는 말을 빼고
 // 짐작하게 남기는 쪽으로. 그건 짧은 말이 아니라 잘 쓴 글이다 (s015~s023)
 check('짧게 만드는 법이 압축이 아니라고 못 박는다',
@@ -541,9 +545,6 @@ check('마지막에 뒤집는 줄을 두지 말라고 한다',
   prompt.indexOf('마지막에 뒤집는 한 줄을 두지 마세요') >= 0, true);
 check('눈으로 읽어야 알겠으면 실패라고 한다',
   prompt.indexOf('눈으로 읽어야 알겠으면 실패입니다') >= 0, true);
-check('짧은 것 개수를 안 주면 그 대목을 아예 안 넣는다',
-  daily.buildPrompt({ count: 5, minWords: 12, maxWords: 28, situations: ['가'], vocab: [] })
-    .indexOf('길이를 서로 다르게') >= 0, false);
 check('한국에만 있는 것을 옮기지 말라고 한다',
   prompt.indexOf('한국에만 있는 것을 영어로 옮기지 마세요') >= 0, true);
 check('1차 2차를 round 로 옮기지 말라고 한다',
@@ -551,19 +552,20 @@ check('1차 2차를 round 로 옮기지 말라고 한다',
 check('돈은 달러로 쓰라고 한다', prompt.indexOf('돈은 달러로 씁니다') >= 0, true);
 
 var withRecent = daily.buildPrompt({
-  count: 1, minWords: 12, maxWords: 35, situations: ['가'], vocab: [],
+  count: 1, maxWords: 35, situations: ['가'], vocab: [],
   recent: ['I could not lift my arms to wash my hair.']
 });
 check('최근 문장을 보여 준다',
   withRecent.indexOf('I could not lift my arms to wash my hair.') >= 0, true);
 check('겹치지 말라고 한다', withRecent.indexOf('같은 이야기를 다시 만들면 안 됩니다') >= 0, true);
 check('최근 문장이 없으면 그 대목을 아예 안 넣는다',
-  daily.buildPrompt({ count: 1, minWords: 12, maxWords: 35, situations: ['가'], vocab: [] })
+  daily.buildPrompt({ count: 1, maxWords: 35, situations: ['가'], vocab: [] })
     .indexOf('최근에 이미 나온 문장') >= 0, false);
-check('구체적으로 쓰라고 한다', prompt.indexOf('it, that, this 로 얼버무리지') >= 0, true);
+check('대명사로 얼버무리지 말라고 하지 않는다',
+  prompt.indexOf('it, that, this 로 얼버무리지') >= 0, false);
 check('맞히기 시험이 아니라고 못 박는다', prompt.indexOf('맞히기 시험이 아니') >= 0, true);
 check('어휘가 없으면 그 대목을 아예 안 넣는다',
-  daily.buildPrompt({ count: 1, minWords: 20, maxWords: 35, situations: ['가'], vocab: [] })
+  daily.buildPrompt({ count: 1, maxWords: 35, situations: ['가'], vocab: [] })
     .indexOf('어휘 참고') >= 0, false);
 
 console.log('\n최근 상황과 최근 문장 — 묶음을 읽는지');
@@ -604,7 +606,8 @@ check('묶음 번호만 센다 (다른 파일은 안 센다)',
 console.log('\n저장소에 실제로 들어 있는 설정으로도 되는지');
 var cfg = daily.config();
 check('상황이 요청 개수보다 많다', cfg.situations.length > cfg.count, true);
-check('단어 수 범위가 뒤집혀 있지 않다', cfg.minWords < cfg.maxWords, true);
+check('길이 상한만 있고 하한은 없다',
+  [typeof cfg.maxWords, typeof cfg.minWords], ['number', 'undefined']);
 check('프로필이 하나 이상 있다', daily.profileIds().length > 0, true);
 
 console.log(failed ? '\n실패 ' + failed + '건\n' : '\n전부 통과\n');

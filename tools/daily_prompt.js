@@ -26,11 +26,8 @@ try {
 
   process.stdout.write(daily.buildPrompt({
     count: cfg.count,
-    minWords: cfg.minWords,
     maxWords: cfg.maxWords,
     situations: situations,
-    shortWords: cfg.shortWords,
-    shortCount: cfg.shortCount,
     recent: daily.recentTexts(pid, textSets),
     vocab: vocab
   }));

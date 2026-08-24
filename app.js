@@ -1529,12 +1529,60 @@
       return;
     }
 
-    var fresh = dailyKind === 'shows' ? unusedShow() : unusedSet();
-    if (!fresh) { noMoreSets(pid, date); return; }
-    assignSet(pid, date, fresh, function () {
-      if (dailyKind === 'shows') openShow(pid, fresh, date, idx);
-      else openSet(pid, fresh, date, idx);
+    /* **하다 만 묶음이 있으면 그것부터 이어서 한다** (2026-08-27 운영자 결정).
+       *"그게 맞지. 그래야 낭비를 안 하지"* — 만들어 둔 문장을 안 버리는 것이 요점이다.
+       전에는 날이 바뀌면 무조건 새 묶음이 나와서, 열 개 중 여섯 개만 한 날의 나머지는
+       날짜 단추로 찾아 들어가야만 볼 수 있었다. 하루 열 개로 늘리면서 남기는 날이
+       더 생기므로 여기서 받는다. */
+    carryOver(pid, function (left) {
+      var pick = left || (dailyKind === 'shows' ? unusedShow() : unusedSet());
+      if (!pick) { noMoreSets(pid, date); return; }
+      assignSet(pid, date, pick, function () {
+        if (dailyKind === 'shows') openShow(pid, pick, date, idx);
+        else openSet(pid, pick, date, idx);
+      });
     });
+  }
+
+  /* 그 묶음에 문장이 몇 개인지. 목록에 적혀 있으므로 파일을 다시 읽지 않는다.
+     모르는 묶음(옛 날짜 파일 등)은 0 을 돌려준다 — 모르는 것을 "다 했다" 로 보면 안 된다 */
+  function setTotal(id) {
+    var i;
+    if (dailyKind === 'shows') {
+      for (i = 0; i < dailyIndex.length; i++) {
+        if (dailyIndex[i].date === id) return dailyIndex[i].showsCount || 0;
+      }
+      return 0;
+    }
+    for (i = 0; i < dailySets.length; i++) {
+      if (dailySets[i].id === id) return dailySets[i].count || 0;
+    }
+    return 0;
+  }
+
+  /* 제일 최근에 꺼내 쓴 묶음에 아직 안 한 문장이 남아 있으면 그 번호를 돌려준다.
+
+     **최근 것 하나만 본다.** 묶음이 바뀌는 자리는 "이 묶음을 다 봤을 때" 하나뿐이라
+     (`moreDaily`), 안 끝난 묶음이 둘 이상 쌓일 일이 없다.
+
+     진도는 기기 안에 있어서 물어봐야 안다. 못 물어보면 새 묶음으로 간다 —
+     기다리다 빈 화면을 보여 주는 것보다 낫다. */
+  function carryOver(pid, done) {
+    var k = planKey();
+    var last = null;
+    for (var i = 0; i < dailyPlans.length && !last; i++) {
+      var ids = dailyPlans[i][k];
+      if (ids && ids.length) last = ids[ids.length - 1];
+    }
+    var total = last ? setTotal(last) : 0;
+    if (!last || !total || !window.Store || !Store.available()) { done(null); return; }
+
+    Store.getProgress(pid, (dailyKind === 'shows' ? 'shows-' : 'daily-') + last, function (row) {
+      var marks = (row && row.sentences) || {};
+      var seen = 0;
+      for (var n = 0; n < total; n++) if (marks[n]) seen++;
+      done(seen < total ? last : null);
+    }, function () { done(null); });
   }
 
   /* 아직 어느 날에도 안 쓴 영상 대사 묶음 (파일 이름이 곧 번호다) */
@@ -1555,15 +1603,33 @@
     getJSON(dailyFile(pid, showId, 'shows'), function (day) {
       if (!day || !day.sentences || !day.sentences.length) { emptyShows(pid); return; }
       dailyDay = day;
-      dailyAt = 0;
-      if (idx !== null && idx !== undefined && !isNaN(idx)) {
-        dailyAt = Math.max(0, Math.min(day.sentences.length - 1, idx));
-      }
+      var want = pickedIndex(day, idx);
+      dailyAt = want.at;
       resetDailyAnswer();
-      loadDailyProgress(pid, day.videoId, function () { drawDaily(pid); });
+      loadDailyProgress(pid, day.videoId, function () {
+        if (want.findUnseen) startAtUnseen();
+        drawDaily(pid);
+      });
     }, function () {
       notice($('daily-body'), 'That set could not be loaded.', true);
     });
+  }
+
+  /* 주소에 자리 번호가 있으면 그 자리를, 없으면 0 번을 잡아 둔다.
+     진도는 아직 안 읽었으므로 "안 한 문장부터" 는 읽은 뒤에 한다 */
+  function pickedIndex(day, idx) {
+    if (idx !== null && idx !== undefined && !isNaN(idx)) {
+      return { at: Math.max(0, Math.min(day.sentences.length - 1, idx)), findUnseen: false };
+    }
+    return { at: 0, findUnseen: true };
+  }
+
+  /* **하다 만 묶음은 처음이 아니라 안 한 문장부터 연다** (2026-08-27 운영자 결정).
+     이어서 하라고 꺼내 준 것이라 앞에서부터 다시 훑게 하면 뜻이 없다.
+     다 한 묶음이면 그냥 첫 문장에 둔다 — 다시 보고 싶을 수도 있다. */
+  function startAtUnseen() {
+    var n = nextUnseen(-1);
+    if (n >= 0) dailyAt = n;
   }
 
   /* 아직 어느 날에도 안 쓴 묶음 중 제일 오래된 것 */
@@ -1602,12 +1668,13 @@
     getJSON('data/daily/' + pid + '/sets/' + setId + '.json', function (day) {
       if (!day || !day.sentences || !day.sentences.length) { emptyDaily(pid, $('daily-body')); return; }
       dailyDay = day;
-      dailyAt = 0;
-      if (idx !== null && idx !== undefined && !isNaN(idx)) {
-        dailyAt = Math.max(0, Math.min(day.sentences.length - 1, idx));
-      }
+      var want = pickedIndex(day, idx);
+      dailyAt = want.at;
       resetDailyAnswer();
-      loadDailyProgress(pid, day.videoId, function () { drawDaily(pid); });
+      loadDailyProgress(pid, day.videoId, function () {
+        if (want.findUnseen) startAtUnseen();
+        drawDaily(pid);
+      });
     }, function () {
       notice($('daily-body'), 'That set could not be loaded.', true);
     });
@@ -2116,9 +2183,15 @@
     row.appendChild(sc);
     box.appendChild(row);
 
-    // 하기 싫은 문장에 붙잡혀 있을 이유가 없다. 건너뛴 것은 따로 모아 둔다
+    /* 하기 싫은 문장에 붙잡혀 있을 이유가 없다. 건너뛴 것은 따로 모아 둔다.
+
+       **다 한 묶음에서는 같은 자리가 '다음 묶음' 이 된다** (2026-08-27).
+       하던 것을 이어서 하게 되면서, 다 하고 난 뒤에 새것으로 넘어갈 길이 화면에
+       있어야 한다. 단추를 하나 더 만들지 않고 이름만 바꾼다 — 다 한 묶음에서
+       '건너뛰기' 는 할 일이 없고, 하는 일도 이미 그것이다 (`moreDaily`).
+       이미 한 문장의 표시는 건드리지 않는다 (`markDailySkipped`). */
     var more = el('div', 'buttons');
-    var mb = el('button', 'half', 'Skip');
+    var mb = el('button', 'half', unseenCount() ? 'Skip' : 'Next set \u203a');
     mb.id = 'daily-more';
     mb.onclick = function () { skipDaily(pid); };
     more.appendChild(mb);

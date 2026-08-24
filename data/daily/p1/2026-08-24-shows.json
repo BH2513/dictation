@@ -6,122 +6,122 @@
   "sentences": [
     {
       "i": 0,
-      "ko": "이게 왜 그렇게 이해가 안 돼?",
-      "text": "Why is this so hard for you to get?",
+      "ko": "나도 안 좋은 평 들을 만큼 들어 봤어.",
+      "text": "And I've had my share of bad reviews.",
       "alts": [
         {
           "style": "casual",
-          "text": "You still don't get it?"
+          "text": "Trust me, I've gotten plenty of bad reviews too."
         },
         {
           "style": "formal",
-          "text": "I do not understand why this is so difficult for you to grasp."
+          "text": "I have also received a fair number of negative reviews."
         }
       ],
-      "note": "**get** 이 \"이해하다\" 로 쓰인 자리. 몇 번을 설명해도 안 통할 때 나오는 말이라 상대에 따라 세게 들릴 수 있다. 가까운 사이에서만 쓴다.",
-      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "note": "**had my share of**는 \"나도 그런 일은 겪을 만큼 겪었다\"는 뜻입니다. 혼나거나 실패해서 풀이 죽은 사람에게 \"나도 그랬어\" 하고 공감해 줄 때 쓰기 좋습니다.",
+      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
       "from": {
-        "videoId": "Wj3ZcW-5JXc",
-        "i": 1111
+        "videoId": "cWheLYR8moU",
+        "i": 2
       },
-      "start": 2848.68,
-      "end": 2850.24,
+      "start": 7.56,
+      "end": 9.48,
       "recording": null
     },
     {
       "i": 1,
-      "ko": "아, 맞다. 우리 먹을 거 있어.",
-      "text": "Oh, I just remembered we do have something to eat.",
+      "ko": "그냥 내가 골라 준 대로 입어. 걔 완전 넘어올 테니까.",
+      "text": "Please just wear what I suggest and she is going to go nuts for you.",
       "alts": [
         {
           "style": "casual",
-          "text": "Wait, we've got food after all."
+          "text": "Come on, wear what I picked and she'll go crazy for you."
         },
         {
           "style": "formal",
-          "text": "It has just occurred to me that we do have something to eat."
+          "text": "If you would wear what I recommend, she will be quite taken with you."
         }
       ],
-      "note": "**do have** — 앞에서 없다고 했던 것을 뒤집을 때 have 앞에 do 를 넣어 \"있긴 있어\" 를 만든다. 한국 사람이 잘 안 쓰는 강조법이다.",
+      "note": "**go nuts for**는 \"누구한테 홀딱 반하다\"는 뜻의 편한 말입니다. 친구 옷차림이나 소개팅 조언을 할 때처럼 가까운 사이에서만 씁니다.",
       "situation": "The Ones with the Whole Gang from Season 10 | Friends",
       "from": {
         "videoId": "FlrWUyB_j90",
-        "i": 10
+        "i": 492
       },
-      "start": 17.64,
-      "end": 20.16,
+      "start": 1224.68,
+      "end": 1228.01,
       "recording": null
     },
     {
       "i": 2,
-      "ko": "사실 후보를 두 개까지 좁혔어.",
-      "text": "Uh, actually we we've narrowed it down to two names.",
+      "ko": "아니, 뭔가 이유가 있겠지.",
+      "text": "I mean, there's got to be an explanation.",
       "alts": [
         {
           "style": "casual",
-          "text": "It's down to two names now."
+          "text": "Come on, there's gotta be a reason for it."
         },
         {
           "style": "formal",
-          "text": "We have narrowed our choices to two names."
+          "text": "Surely there must be some explanation for this."
         }
       ],
-      "note": "**narrowed it down to** — 여럿 중에서 후보를 줄여 갈 때 쓴다. 이름 짓기뿐 아니라 식당 고를 때, 사람 뽑을 때도 그대로 쓴다.",
-      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
+      "note": "**there's got to be**는 도무지 이해가 안 되는 일 앞에서 \"그래도 뭔가 사정이 있을 거야\" 하고 상대를 감싸 줄 때 씁니다. 확신이 아니라 믿어 보자는 쪽에 가깝습니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
       "from": {
-        "videoId": "cWheLYR8moU",
-        "i": 334
+        "videoId": "FlrWUyB_j90",
+        "i": 772
       },
-      "start": 919.36,
-      "end": 922.4,
+      "start": 1996.799,
+      "end": 1998.44,
       "recording": null
     },
     {
       "i": 3,
-      "ko": "가끔 그냥 쿵파오 치킨이 확 당길 때가 있어.",
-      "text": "I just get this craving for Kung Pao chicken.",
+      "ko": "나 지금은 그냥 좀 혼자 있고 싶어.",
+      "text": "And I I just kind of want to be alone right now.",
       "alts": [
         {
           "style": "casual",
-          "text": "Sometimes I'm just dying for Kung Pao chicken."
+          "text": "Honestly, I'd rather just be by myself for a bit."
         },
         {
           "style": "formal",
-          "text": "Occasionally I develop a strong desire for Kung Pao chicken."
+          "text": "I would prefer to be alone for the moment, if you do not mind."
         }
       ],
-      "note": "**get this craving for** — 특정 음식이 갑자기 먹고 싶어질 때. 여기서 this 는 \"그 왜 있잖아\" 하는 느낌으로 넣는 것이라 굳이 옮기지 않는다.",
-      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
+      "note": "**kind of**를 끼우면 거절이 훨씬 부드러워집니다. 여기에 **right now**를 붙이면 \"너를 밀어내는 게 아니라 지금만 그렇다\"는 뜻이 되어 상대가 덜 서운해합니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
       "from": {
-        "videoId": "QdQ58BbGRsA",
-        "i": 222
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1157
       },
-      "start": 625.28,
-      "end": 628.6,
+      "start": 2974.96,
+      "end": 2979.36,
       "recording": null
     },
     {
       "i": 4,
-      "ko": "이제 네 얘기 좀 해 보자.",
-      "text": "Why don't we talk about you a little bit?",
+      "ko": "야, 걔가 프러포즈할지 안 할지도 아직 모르잖아.",
+      "text": "I mean, we don't even know if he's going to propose.",
       "alts": [
         {
           "style": "casual",
-          "text": "Let's talk about you for a bit."
+          "text": "Hold on, we have no idea if he'll even ask her."
         },
         {
           "style": "formal",
-          "text": "Perhaps we could turn the conversation to you."
+          "text": "We do not yet know whether he intends to propose."
         }
       ],
-      "note": "**Why don't we** 는 물음이 아니라 제안이다. 화제를 상대 쪽으로 돌릴 때 쓰고, **a little bit** 을 붙이면 부담이 줄어든다.",
-      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "note": "**don't even know if**는 김칫국부터 마시는 사람에게 제동을 걸 때 씁니다. **even**이 \"그것조차 모르는 상황\"이라는 느낌을 만들어 줍니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
       "from": {
-        "videoId": "Wj3ZcW-5JXc",
-        "i": 1041
+        "videoId": "6nVAQaiLNkY",
+        "i": 383
       },
-      "start": 2640.48,
-      "end": 2644.08,
+      "start": 1112,
+      "end": 1114.24,
       "recording": null
     }
   ]

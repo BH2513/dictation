@@ -1,0 +1,116 @@
+{
+  "setId": "s036",
+  "videoId": "daily-s036",
+  "title": "Set 36",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "배송 조회에는 토요일에 배달 완료라고 뜨는데 우리 집 현관에는 아무것도 없고, 기사가 찍었다는 사진은 남의 집 문이야. 이거 배상 신청을 해야 하나 아니면 그냥 더 기다려 봐야 하나?",
+      "text": "The tracking says it was delivered Saturday, but there's nothing on my porch, and the photo the driver took is somebody else's door. So do I file a claim or just keep waiting?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking's telling me it showed up Saturday, but my porch is empty, and that photo the driver took is somebody else's door. So do I file a claim or just wait it out?"
+        },
+        {
+          "style": "formal",
+          "text": "According to the tracking information, the package was delivered on Saturday, but there is nothing on my porch, and the photograph the driver took shows someone else's door. Should I file a claim, or should I continue to wait?"
+        }
+      ],
+      "note": "**file a claim** 은 물건이 분실되거나 잘못 배달됐을 때 배상을 신청한다는 뜻입니다. 캐주얼 쪽의 **wait it out** 은 따로 손쓰지 않고 해결될 때까지 그냥 버티며 기다린다는 말입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "회사에서 팀장 자리를 제안했어. 돈은 더 받는데 내가 진짜 좋아하던 일은 못 하게 돼. 계속 마음이 왔다 갔다 하는데, 솔직히 네가 무슨 말을 해 주길 바라는지 나도 모르겠어.",
+      "text": "They offered me the team lead thing and it's more money, but I'd stop doing the part I actually like. I keep going back and forth, and honestly I don't even know what I want you to tell me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So they want me to take the team lead spot, and yeah it pays more, but I'd be giving up the part I actually like. I keep flip-flopping, and honestly I don't even know what I'm hoping you'll say."
+        },
+        {
+          "style": "formal",
+          "text": "They have offered me the team lead position, and the salary is higher, but I would no longer be doing the part of the job I genuinely enjoy. I keep changing my mind, and to be honest, I am not sure what I want you to tell me."
+        }
+      ],
+      "note": "**going back and forth** 는 결정을 못 하고 마음이 이쪽저쪽으로 왔다 갔다 한다는 뜻입니다. 캐주얼 쪽의 **flip-flopping** 도 같은 뜻인데 훨씬 편한 말투입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "20분째 이것저것 넘겨만 보고 있잖아, 그냥 그 배 나오는 거 틀어. 그리고 이번에도 처음 10분 만에 잠들면 나 혼자 끝까지 볼 거야.",
+      "text": "We've been scrolling for twenty minutes, so just put on the one with the boat. And if you fall asleep in the first ten minutes again, I'm finishing it without you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Twenty minutes of scrolling, come on, just put on the boat one. And if you conk out in the first ten minutes again, I'm finishing it without you."
+        },
+        {
+          "style": "formal",
+          "text": "We have been scrolling for twenty minutes, so please just put on the one with the boat. And if you fall asleep during the first ten minutes again, I will finish it without you."
+        }
+      ],
+      "note": "**put on** 은 영상이나 음악을 튼다는 뜻으로 아주 자주 씁니다. 캐주얼 쪽의 **conk out** 은 곯아떨어진다는 구어체 표현입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "애 겨우 재웠는데 내가 일어나다가 바닥이 삐걱대는 바람에 지금 물 달라잖아. 이번엔 네가 좀 들어가 줄래? 나는 진짜 남은 기운이 하나도 없어.",
+      "text": "He was finally out, but the floor creaked when I stood up, so now he wants water. Can you go in this time? Because I've got nothing left.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "He'd finally gone down, and then the floor creaked when I got up, so now he wants water. Can you take this one? I'm running on empty."
+        },
+        {
+          "style": "formal",
+          "text": "He had finally fallen asleep, but the floor creaked when I stood up, so now he wants water. Could you go in this time? I am afraid I have nothing left."
+        }
+      ],
+      "note": "**out** 은 여기서 잠들었다는 뜻이고, 캐주얼 쪽의 **gone down** 도 아이가 잠들었다는 말로 부모들이 흔히 씁니다. **running on empty** 는 연료가 바닥난 것처럼 완전히 지쳤다는 뜻입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "싱크대 물이 왜 이렇게 안 내려가나 알아보려고 유튜브를 켠 것뿐인데, 어느새 웬 사람이 녹슨 도끼 복원하는 걸 40분째 보고 있어. 싱크대는 아직도 그대로고.",
+      "text": "I only opened YouTube to figure out why the sink was draining slow, and then somehow I'm forty minutes into a guy restoring a rusted axe. The sink's still slow.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "All I wanted was to find out why the sink was draining slow, and somehow I'm forty minutes deep into some guy restoring a rusted axe. Sink's still slow."
+        },
+        {
+          "style": "formal",
+          "text": "I opened YouTube solely to find out why the sink was draining slowly, and somehow I am now forty minutes into a video of a man restoring a rusted axe. The sink is still slow."
+        }
+      ],
+      "note": "**forty minutes into** 는 무언가를 시작한 지 40분이 지났다는 뜻입니다. 캐주얼 쪽의 **forty minutes deep into** 는 거기에 푹 빠져서 헤어나오지 못하고 있다는 느낌까지 줍니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 캐주얼의 'am I filing a claim or just waiting it out?' 은 현재진행형이라 이미 정해 놓은 일정처럼 들려서 지금 고민 중이라는 뜻과 어긋납니다. 'do I file a claim or just wait it out?' 으로 고치고 note 의 표현도 문장에 실제로 나오는 wait it out 으로 맞췄습니다.",
+    "2번 캐주얼의 'flip flopping' 은 붙임표를 넣어 flip-flopping 으로 쓰는 말입니다. note 도 같이 고쳤습니다.",
+    "3번 캐주얼의 'konk out' 은 철자가 틀렸습니다. conk out 이 맞습니다. note 도 같이 고쳤습니다.",
+    "4번 한국어가 옮긴 티가 나서 말하는 투로 다듬었습니다 ('일어서다가 바닥이 삐걱거려서' → '일어나다가 바닥이 삐걱대는 바람에', '물 달라고 해' → '물 달라잖아').",
+    "5번 격식체의 'only to determine' 은 '알아보려고만' 과 '알아봤더니 뜻밖에' 두 가지로 읽힙니다. 'solely to find out' 으로 바꿔 한 가지로만 읽히게 했습니다."
+  ]
+}

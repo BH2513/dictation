@@ -472,6 +472,15 @@ button.rec-on{background:var(--bad);border-color:var(--bad);color:#fff;}
   font-size:var(--f-big);line-height:1.55;font-weight:600;
 }
 
+/* 감춰 둔 한국어를 펴는 자리. 한국어 상자와 같은 자리에 같은 크기로 앉아야
+   폈을 때 화면이 안 튄다 */
+.peek{
+  display:block;width:100%;text-align:left;
+  margin:10px 0 6px;padding:16px;
+  background:var(--card);border:1px dashed var(--line);border-radius:12px;
+  color:var(--muted);font-size:var(--f-body);font-weight:600;
+}
+
 .answer{
   margin-top:16px;padding:14px 16px;
   background:var(--card);border:1px solid var(--line);border-radius:12px;

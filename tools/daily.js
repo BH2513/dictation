@@ -265,12 +265,9 @@ function buildPrompt(opts) {
   lines.push('  (caved on day three 는 맞지만 cave on ~ 으로도 읽혀서 걸립니다. caved three days in 이 낫습니다).');
   lines.push('');
   lines.push('## 길이와 난이도');
-  lines.push('- **길이는 세지 마세요.** 자연스러운 말이 끝나는 데서 끝내면 됩니다.');
-  lines.push('  울타리는 하나뿐입니다 \u2014 다 합쳐서 ' + opts.maxWords + ' 단어를 넘지 마세요.');
-  lines.push('  (듣고 외워서 따라 말해야 하므로 그보다 길면 연습이 안 됩니다.)');
-  lines.push('  **하한은 없습니다. 여덟 단어로 끝나도 됩니다.**');
-  lines.push('  진짜 대사 1,458줄을 세어 보니 열에 아홉이 20 단어 이하였고 절반 넘게가 12 단어도 안 됐습니다.');
-  lines.push('  전에 하한을 12 단어로 두었더니 진짜 말이 사는 자리를 통째로 막고 있었습니다.');
+  lines.push('- **길이는 재지 마세요. 위도 아래도 정해진 것이 없습니다** (운영자 결정).');
+  lines.push('  여덟 단어로 끝나도 되고, 길어도 됩니다. **자연스럽기만 하면 길이는 아무 문제가 아닙니다.**');
+  lines.push('  단어를 세는 순간 할 말을 늘리거나 줄이게 되고, 거기서 어색해집니다.');
   lines.push('- **짧게 만드는 법은 압축이 아니라 덜 말하는 것입니다.**');
   lines.push('  할 말이 적어서 짧은 것이지, 할 말을 줄여 담아서 짧은 것이 아닙니다.');
   lines.push('  이어 주는 말을 빼서 줄이면 짧아지기는 하지만 말이 아니라 글이 됩니다.');
@@ -739,8 +736,8 @@ function buildReviewPrompt(draft, cfg) {
   lines.push('5. **한국어가 번역투가 아닌가.** 한국 사람이 친구에게 하듯 자연스러워야 합니다.');
   lines.push('6. **note 에서 별표로 감싼 표현이 위 문장들 안에 실제로 나오는가.**');
   lines.push('   없는 표현을 가르치면 안 됩니다. 감싼 것이 하나도 없어도 안 됩니다.');
-  lines.push('7. **"text" 가 ' + cfg.maxWords + ' 단어를 넘지 않는가.** 넘으면 줄입니다.');
-  lines.push('   **하한은 없습니다. 짧다고 늘리지 마세요** \u2014 진짜 말은 열에 아홉이 20 단어 이하입니다.');
+  lines.push('7. **길이는 보지 마세요.** 위도 아래도 정해진 것이 없습니다 (운영자 결정).');
+  lines.push('   짧다고 늘리지 말고 길다고 줄이지 마세요. 자연스러우면 그대로 둡니다.');
   lines.push('8. 줄표(\u2014)와 따옴표를 쓰지 않았는가. 물음표와 느낌표는 써도 됩니다.');
   lines.push('');
   lines.push('## 어떻게 할 것인가');
@@ -864,16 +861,11 @@ function validate(parsed, cfg) {
     if (!r.situation || !String(r.situation).trim()) problems.push(at + '상황이 비었습니다.');
     if (!r.note || !String(r.note).trim()) problems.push(at + '설명이 비었습니다.');
 
-    // 길이는 상한만 본다. 하한을 두었더니 진짜 말이 사는 자리(8~11 단어)를
-    // 통째로 막고 있었다 — 진짜 대사 1,458줄 중 58%가 12 단어 미만이었다.
-    // 외워서 따라 말해야 하므로 너무 긴 것만 막는다 (운영자 결정)
-    var n = wordCount(r.text);
-    if (!n) {
-      problems.push(at + '영어 문장이 비었습니다.');
-    } else if (n > cfg.maxWords) {
-      problems.push(at + '영어 문장이 ' + n + ' 단어입니다 ('
-        + cfg.maxWords + ' 단어를 넘으면 외워서 따라 말할 수 없습니다).');
-    }
+    // 길이로는 버리지 않는다. 위도 아래도 없다 (운영자 결정) —
+    // "긴 거는 문제 없어. 자연스럽기만 하면 100자도 괜찮아."
+    // 하한을 두었을 때는 진짜 대사 1,458줄 중 58%가 걸렸고, 상한을 두었을 때는
+    // 모델이 늘 거기 붙어 다섯 개가 다 비슷해졌다. 어느 쪽이든 영어를 비튼다
+    if (!wordCount(r.text)) problems.push(at + '영어 문장이 비었습니다.');
 
     var key = String(r.text || '').toLowerCase().replace(/[^a-z0-9 ]/g, '').trim();
     if (key && seen[key]) problems.push(at + '앞 문장과 같습니다.');

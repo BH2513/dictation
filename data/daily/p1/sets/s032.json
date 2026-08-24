@@ -1,0 +1,112 @@
+{
+  "setId": "s032",
+  "videoId": "daily-s032",
+  "title": "Set 32",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "여동생이 몇 달만 우리 집에 들어와 살겠다는데 내가 벌써 그래도 된다는 식으로 말해 버렸어. 이걸 어떻게 물러야 할지 모르겠어.",
+      "text": "My sister wants to move in with me for a few months, and I already said maybe. I don't know how to take that back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my sister's asking to crash with me for a few months, and I already told her maybe. No idea how to walk that back."
+        },
+        {
+          "style": "formal",
+          "text": "My sister has asked to stay with me for a few months, and I have already told her it might be possible. I am not certain how to retract that."
+        }
+      ],
+      "note": "**take that back**, **walk that back** 은 이미 한 말을 없던 걸로 물린다는 뜻입니다. **crash with me** 는 남의 집에 잠깐 얹혀 지낸다는 편한 말이에요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "삼 년은 됐지? 그동안 어떻게 지냈는지 얘기 좀 해 봐, 아직 포틀랜드에 살아?",
+      "text": "It's got to be three years, right? So catch me up, are you still out in Portland?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Three years, has to be. So fill me in, you still out in Portland?"
+        },
+        {
+          "style": "formal",
+          "text": "It must be three years now, is that right? Please tell me what I have missed. Are you still living in Portland?"
+        }
+      ],
+      "note": "**catch me up**, **fill me in** 은 못 본 사이의 소식을 알려 달라는 말입니다. **out in Portland** 의 out 은 멀리 떨어진 동네에 산다는 느낌을 줍니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "3월에 기타를 샀어. 한 이 주 동안은 매일 밤 쳤는데 그 뒤로는 계속 소파 뒤에 처박혀 있어.",
+      "text": "I bought a guitar in March and played it every night for like two weeks, and it's been behind the couch ever since.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got myself a guitar back in March, played it every night for maybe two weeks, and it's been sitting behind the couch ever since."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar in March and played it every evening for approximately two weeks. It has been behind the couch ever since."
+        }
+      ],
+      "note": "**ever since** 는 그 일이 있고 나서 지금까지 죽 그렇다는 뜻입니다. **for like two weeks** 의 like 는 이 주쯤이라고 대충 말할 때 넣는 말이에요.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "점심 먹으려고 앉아서 영상 하나 틀었는데 정신 차려 보니 네 시였고 나는 남이 카펫 청소하는 걸 보고 있더라.",
+      "text": "I sat down to eat lunch and put on one video, and then it's four o'clock and I'm watching people clean carpets.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sat down for lunch, put on one video, and next thing it's four o'clock and I'm watching people clean carpets."
+        },
+        {
+          "style": "formal",
+          "text": "I sat down to have lunch and started one video. Then it was four o'clock and I was watching people clean carpets."
+        }
+      ],
+      "note": "**next thing it's four o'clock** 은 정신 차려 보니 벌써 네 시더라는 말입니다. 영상을 트는 건 **put on** 을 씁니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "장 본 거 두 봉지에 60달러 나왔어. 고기는 사지도 않았는데. 계산이 잘못된 것 같아서 영수증을 자꾸 들여다보고 있어.",
+      "text": "Two bags of groceries was sixty bucks, and I didn't even buy meat. I keep checking the receipt like they made a mistake.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sixty bucks for two bags of groceries, and I didn't even get meat. I keep looking at the receipt like somebody messed up."
+        },
+        {
+          "style": "formal",
+          "text": "Two bags of groceries came to sixty dollars, and I did not even purchase meat. I keep reviewing the receipt as though an error had been made."
+        }
+      ],
+      "note": "**bucks** 는 달러를 편하게 부르는 말입니다. **messed up** 은 누가 실수했다는 뜻으로, 격식을 차리면 **made a mistake** 가 됩니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 \"how to withdraw that\" 은 말을 물린다는 뜻으로 원어민이 쓰지 않는 표현이라 \"how to retract that\" 으로 고쳤습니다. (withdraw 는 지원서·제안을 공식적으로 거둬들일 때 쓰고, 이미 한 말을 되돌릴 때는 retract 입니다.)"
+  ]
+}

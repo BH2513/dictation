@@ -1,0 +1,113 @@
+{
+  "setId": "s031",
+  "videoId": "daily-s031",
+  "title": "Set 31",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "오늘 밤에 시리즈 새로 시작 안 할 거야. 그러면 새벽 두 시까지 못 자잖아. 그냥 영화 하나 골라.",
+      "text": "I'm not starting a whole new series tonight, because I'll be up until two. Just pick a movie.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nope, not starting a whole new series tonight, I'll be up till two. Just pick a movie."
+        },
+        {
+          "style": "formal",
+          "text": "I would prefer not to begin an entire new series this evening, as I will be awake until two. Please simply choose a film."
+        }
+      ],
+      "note": "**I'll be up until two** 는 새벽 두 시까지 안 자고 깨어 있게 된다는 말입니다. 여기서 up 은 일어나 있는, 잠들지 않은 상태를 뜻합니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나 이 드라마에 완전 빠져 있었는데, 웃긴 역 맡던 사람이 시즌 3 끝나고 나갔어. 이제 예전 같지가 않아.",
+      "text": "I was obsessed with this show, but the funny one left after season three, and it's not the same now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I couldn't get enough of this show, but the funny one bailed after season three and now it's just not the same."
+        },
+        {
+          "style": "formal",
+          "text": "I was thoroughly taken with this program, but the humorous one departed after the third season, and it is no longer the same."
+        }
+      ],
+      "note": "**obsessed with** 는 푹 빠져 있었다는 뜻이고, **it's not the same** 은 예전 같지 않다고 아쉬워할 때 쓰는 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "토요일에 스피닝 수업을 딱 한 번 들었거든. 몇 년 만에 처음이었어. 그런데 이제 앉으려면 난간을 붙잡아야 해.",
+      "text": "I took one spin class Saturday, first time in years, and now I'm holding onto the rail just to sit down.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "One spin class Saturday, first one in years, and now I'm grabbing the rail just to sit down."
+        },
+        {
+          "style": "formal",
+          "text": "I attended a single spin class on Saturday, my first in years, and I am now holding the rail simply in order to sit down."
+        }
+      ],
+      "note": "**first time in years** 는 몇 년 만에 처음이라는 뜻입니다. **holding onto the rail** 은 난간을 꽉 붙잡는 것이고, just to sit down 은 앉는 것뿐인데도라는 과장입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "재우는 데 한 시간 반 걸렸어. 노래 한 곡만 더 해 달라고 계속 그러더라고. 내가 먼저 잠들었어.",
+      "text": "Bedtime took an hour and a half, because she kept asking for one more song. I fell asleep before she did.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "An hour and a half to get her down, she kept asking for one more song. I was out before she was."
+        },
+        {
+          "style": "formal",
+          "text": "Putting her to bed required an hour and a half, as she continued to ask for one more song. I fell asleep before she did."
+        }
+      ],
+      "note": "**kept asking** 은 계속 해 달라고 졸랐다는 뜻으로, keep 뒤에 ing 를 붙이면 그 행동이 반복된다는 느낌이 됩니다. 캐주얼의 **I was out** 은 곯아떨어졌다는 말입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "자전거는 잘 나가는데 뒷타이어가 많이 닳아서 갈아 끼우셔야 할 거예요. 그래서 70달러에 내놓습니다.",
+      "text": "The bike rides fine, but the back tire's worn down and you'll want to replace it, so I'm asking $70.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Rides fine, but the back tire's pretty worn and you'll wanna swap it, so I'm asking $70."
+        },
+        {
+          "style": "formal",
+          "text": "The bicycle rides well, but the rear tire is worn and you will want to replace it, so I am asking $70."
+        }
+      ],
+      "note": "**worn down** 은 닳아서 못 쓰게 된 상태입니다. **I'm asking $70** 은 내가 부르는 값이 70달러라는 뜻으로, 물건을 팔 때 쓰는 표현입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal 의 devoted to 는 '충성스럽게 애착을 가진' 쪽이라 obsessed(푹 빠졌다)와 뜻이 어긋나서, taken with 로 바꿨습니다.",
+    "3번 한국어의 '몇 년 만에 처음으로.' 가 문장이 끊긴 번역투라 '몇 년 만에 처음이었어.' 로 고치고 뒷줄도 말맛에 맞게 다듬었습니다."
+  ]
+}

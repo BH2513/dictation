@@ -1,0 +1,116 @@
+{
+  "setId": "s030",
+  "videoId": "daily-s030",
+  "title": "Set 30",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "카페 세 군데를 걸어서 돌았는데 테이블마다 누가 노트북을 올려놨더라고. 그래서 포기하고 집에 왔어.",
+      "text": "I walked to three different cafes and every table had somebody's laptop on it, so I gave up and came home.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tried three cafes and every single table had somebody's laptop on it, so I just gave up and went home."
+        },
+        {
+          "style": "formal",
+          "text": "I walked to three separate cafes, and every table was occupied by someone's laptop, so I abandoned the idea and returned home."
+        }
+      ],
+      "note": "**gave up** 은 하려던 걸 그만두고 손을 놓는다는 말이다. 캐주얼 쪽의 **every single table** 은 하나도 빠짐없이 다 그랬다고 힘줘 말할 때 single 을 끼우는 것이다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "운동가방까지 챙겨서 출근했는데 회의가 일곱 시까지 가는 바람에 그냥 바로 집으로 갔어.",
+      "text": "I brought my gym bag to work and everything, but then a meeting ran until seven, so I just went straight home.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Had my gym bag with me at work and everything, but then a meeting went till seven, so I just headed straight home."
+        },
+        {
+          "style": "formal",
+          "text": "I had even brought my gym bag to work, but a meeting ran until seven o'clock, so I went directly home."
+        }
+      ],
+      "note": "**and everything** 은 앞에 말한 준비까지 다 해 뒀다는 걸 강조한다. 회의가 어디까지 이어졌다고 할 때 **ran until seven** 처럼 run 을 쓴다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "우리 고양이가 아침 다섯 시만 되면 울어. 예전에 그때 밥을 줬거든. 이제는 아무리 해도 안 그쳐.",
+      "text": "My cat starts crying at five every morning, because that's when I used to feed her, and now I can't get her to stop.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My cat's crying at five every morning because that's when I used to feed her, and now she won't quit."
+        },
+        {
+          "style": "formal",
+          "text": "My cat begins crying at five o'clock every morning because that is when I used to feed her, and I am now unable to get her to stop."
+        }
+      ],
+      "note": "**used to feed** 는 예전엔 그랬는데 지금은 안 한다는 뜻이다. **can't get her to stop** 은 그만두게 만들 수가 없다, 즉 시켜도 안 된다는 말이다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "10월에 집 계약이 끝나는데, 같은 돈으로 더 넓은 데를 구할 수도 있어. 대신 걸어서 출근하는 건 못 하게 되고.",
+      "text": "My lease is up in October and I could get more space for the same money, but I'd lose my walk to work.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Lease is up in October, and for the same money I could get way more space, but then there goes my walk to work."
+        },
+        {
+          "style": "formal",
+          "text": "My lease expires in October, and I could have more space for the same amount of money, but I would lose my walk to work."
+        }
+      ],
+      "note": "**my lease is up** 은 임대 계약 기간이 다 됐다는 말이다. **my walk to work** 처럼 걸어서 출근하는 것 자체를 하나의 명사로 말한다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "지금 안 나가면 막차를 놓쳐. 그러니까 나 인사하고 갔다고 전해 줘, 알았지?",
+      "text": "If I don't leave now I'll miss the last train, so tell them I said goodbye, okay?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I gotta go now or I'm gonna miss the last train, so tell them I said bye, okay?"
+        },
+        {
+          "style": "formal",
+          "text": "If I do not leave now, I will miss the last train, so please tell them that I said goodbye."
+        }
+      ],
+      "note": "**miss the last train** 은 막차를 놓치다. **tell them I said goodbye** 는 직접 인사를 못 하고 가면서 대신 전해 달라고 부탁하는 말이다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 캐주얼: \"Hit up three cafes on foot\" — 원어민은 카페를 hit up 한다고 잘 쓰지 않고 on foot 은 한국어를 그대로 옮긴 티가 난다. \"Tried three cafes\" 로 바꿨다.",
+    "1번 note: hit up 이 문장에서 빠졌으므로 실제로 남아 있는 표현(every single table)을 짚도록 갈았다.",
+    "3번 캐주얼: \"Cat's up crying\" 은 원어민이 쓰지 않는 형태고 \"get her to quit\" 도 어색해서 \"My cat's crying ... and now she won't quit\" 으로 고쳤다.",
+    "4번 캐주얼: text 보다 오히려 길고 \"Come October my lease is up\" 이 캐주얼이라기보다 문어체라서, 더 짧은 구어(way more, there goes my walk to work)로 다시 썼다.",
+    "4번 formal: \"obtain more space\" 는 붙지 않는 짝이라 \"have more space\" 로 바꿨다. 뜻은 그대로다."
+  ]
+}

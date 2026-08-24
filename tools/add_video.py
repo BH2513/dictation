@@ -23,6 +23,7 @@ GAP_SEC = 0.8       # 줄 간 무음이 이 이상이면 경계
 WORD_SEC = 0.28     # 시각이 없는 단어 하나가 차지한다고 보는 시간
 MAX_DUR = 15.0      # 한 문장 최대 길이(초)
 MAX_WORDS = 25      # 한 문장 최대 단어 수
+FORCED_LIMIT = 0.30  # 낱말 수 한도에 걸려 잘린 줄이 이 비율을 넘으면 받아쓰기에 못 쓴다
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -342,6 +343,26 @@ def drop_unusable(sentences):
         one["i"] = len(kept)
         kept.append(one)
     return kept, len(sentences) - len(kept)
+
+
+def forced_ratio(sentences, max_words=MAX_WORDS):
+    """낱말 수 한도에 걸려 잘린 줄의 비율.
+
+    자막에 문장부호가 없으면 문장이 어디서 끝나는지 알 길이 없어서, 남는 것은
+    무음 간격과 강제 분할뿐이다. 그런데 프렌즈처럼 말이 빠르고 겹치는 영상은
+    문장이 끝나도 쉬지를 않는다 — 저장소의 문장부호 있는 영상 8개에서 진짜
+    문장 경계 5,503군데를 재 보니 0.8초 이상 쉬는 곳은 7%, 기준을 0.35초로
+    낮춰도 9%뿐이고 중앙값은 0초였다. 그래서 무음으로는 못 찾고 25낱말마다
+    그냥 잘린다. 그렇게 잘린 줄은 말 한가운데서 시작하고 끝나 연습이 안 된다.
+
+    자막 종류를 따지지 말고 **결과**를 보고 가른다 — 말이 느린 강연은
+    문장부호가 없어도 무음으로 잘 나뉘어 이 비율이 낮게 나온다.
+    """
+    if not sentences:
+        return 0.0
+    hit = sum(1 for one in sentences
+              if len(str(one.get("text", "")).split()) >= max_words - 1)
+    return hit / len(sentences)
 
 
 def to_sentences(groups):
@@ -679,6 +700,24 @@ def main():
     sentences, dropped = drop_unusable(sentences)
     if not sentences:
         die("연습에 쓸 만한 문장이 없습니다. 이 영상은 등록하지 않았습니다.")
+
+    # 문장이 말 한가운데서 잘리는 영상은 아예 받지 않는다.
+    # 예전에는 "받아쓰기에는 그대로 쓸 수 있습니다" 라고 안내하고 등록했는데,
+    # 그렇게 들어온 영상 3개가 한 줄 평균 20낱말짜리 토막이 되어 못 쓰게 됐다
+    # (문장부호 있는 영상은 평균 5낱말이다). 등록하고 나면 되돌리기 어려우니
+    # 여기서 막는다.
+    rough = forced_ratio(sentences)
+    if rough >= FORCED_LIMIT:
+        die("이 영상은 받아쓰기에 쓸 수 없어 등록하지 않았습니다.\n\n"
+            "  자막에 마침표가 없어서 문장이 어디서 끝나는지 알 수 없습니다.\n"
+            "  그래서 문장 %d개 중 %d개가 말 한가운데서 잘렸습니다.\n"
+            "  (이런 식입니다:  \"… oh he is precious where did you\"\n"
+            "                   \"get him my friend rescued him …\")\n\n"
+            "  영상을 틀고 자막(CC)을 켜서 마침표가 찍히는지 보세요.\n"
+            "  마침표가 없으면 그 영상은 어떻게 해도 문장이 제대로 안 나뉩니다.\n"
+            "  같은 채널이라도 영상마다 다르니 다른 영상으로 시도해 주세요."
+            % (len(sentences), int(round(rough * len(sentences)))))
+
     ko_cues = parse_vtt(ko_raw) if ko_raw else []
     sentences = attach_korean(sentences, ko_cues)
     has_ko = any("ko" in s for s in sentences)
@@ -724,7 +763,9 @@ def main():
     else:
         say("대사 연습   : 쓸 수 없습니다")
         say("            이 자막에는 문장부호가 거의 없어 문장 끝을 알 수 없습니다.")
-        say("            받아쓰기에는 그대로 쓸 수 있습니다.")
+        say("            받아쓰기 쪽은 확인했습니다 — 말 한가운데서 잘린 줄이")
+        say("            %d%% 라 연습에 쓸 만합니다 (30%% 넘으면 등록하지 않습니다)."
+            % int(round(rough * 100)))
         say("            Daily 의 Shows 탭에 쓰려면, 영상을 틀고 CC 를 켜서")
         say("            자막에 마침표가 찍히는 클립으로 골라 주세요.")
     say("한국어    : %s" % ("있음" if has_ko else "없음"))

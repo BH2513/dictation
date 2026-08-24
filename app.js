@@ -141,7 +141,11 @@
     }
     if (videoId === 'cards') { showCards(profileId, parts[2] || ''); return; }
     if (videoId === 'edit') { showEdit(profileId, parts[2] || ''); return; }
-    showListen(profileId, videoId, parts[2] ? parseInt(parts[2], 10) : null);
+    // 카드에서 건너온 것이면 돌아갈 자리를 들고 간다. 한 번 쓰고 버린다 —
+    // 남겨 두면 나중에 목록에서 연 영상에도 'Cards' 로 돌아가는 단추가 붙는다
+    var back = cardBack;
+    cardBack = null;
+    showListen(profileId, videoId, parts[2] ? parseInt(parts[2], 10) : null, back);
   }
 
   /* ---------------------------------------------------------------- 프로필 선택 */
@@ -401,7 +405,7 @@
     var review = homeGroup(box, 'Review');
     var tCards = homeTile({
       icon: '\ud83d\udcc7', tint: 'rgba(148,163,184,.18)',
-      name: 'Cards', desc: 'The sentences you saved, four ways.',
+      name: 'Cards', desc: 'Korean on one side, English on the other.',
       go: function () { go('#/' + pid + '/cards'); }
     });
     review.appendChild(tCards.li);
@@ -541,14 +545,20 @@
 
   /* ---------------------------------------------------------------- 듣기 */
 
-  function showListen(pid, videoId, jumpTo) {
+  function showListen(pid, videoId, jumpTo, back) {
     var profileId = pid;
     setProfileId(pid);
     show('listen');
     current = -1;
     video = null;
     $('listen-title').textContent = 'Loading\u2026';
-    $('back-to-library').onclick = function () { go('#/' + profileId + '/videos'); };
+    /* 카드에서 건너왔으면 **보던 카드 자리로** 돌아간다 (2026-08-27 운영자 요청).
+       폰에 설치해서 쓰면 브라우저 뒤로가기 단추가 없으므로, 화면 안에 길이 있어야 한다 */
+    var backBtn = $('back-to-library');
+    backBtn.textContent = back ? '← Cards' : '← Dictation';
+    backBtn.onclick = back
+      ? function () { go(back); }
+      : function () { go('#/' + profileId + '/videos'); };
     clear($('sentence-list'));
     $('now').textContent = '';
     say('');
@@ -1076,23 +1086,34 @@
     }, function () { say2('Could not load that copy.'); });
   }
 
-  /* ---------------------------------------------------------------- 문장카드 복습 (SPEC 7) */
+  /* ---------------------------------------------------------------- 문장카드 (SPEC 7)
 
-  var MODES = [
-    { id: 'ko', name: 'Korean → English', hint: 'Read the Korean, say it in English.' },
-    { id: 'listen', name: 'Listen and say', hint: 'Hear it, say it back. Text stays hidden.' },
-    { id: 'blank', name: 'Fill the blanks', hint: 'The words you missed are hidden.' },
-    { id: 'retype', name: 'Type it again', hint: 'Write the whole sentence again.' }
-  ];
-  var cardMode = 'retype';
-  var cardList = [];        // [{card, sentence, videoTitle}]
+     **낱말 카드다.** 앞면에 한국어, 누르면 뒤집혀 영어가 나온다. 그게 전부다
+     (2026-08-27 운영자 결정).
+
+     전에는 모드가 넷이었다 — 한→영 / 듣고 말하기 / 빈칸 채우기 / 받아쓰기 재시험.
+     운영자가 *"뭐가뭔지 모르겠고 잘 안 되더라, 뭐가 복잡하게 많은데"* 라고 했다.
+     연습할 자리는 이미 다 따로 있다 (받아쓰기 화면·Daily·Shows). 카드가 할 일은
+     **외웠는지 확인하는 것** 하나다. 모드를 고르게 하면 그 앞에서 멈춘다.
+
+     **영상에서 온 카드는 그 영상으로 건너가 한 번 더 듣고 돌아온다** (운영자 요청).
+     돌아오면 **보던 카드 그 자리**여야 한다 — 처음으로 돌아가면 아무도 안 쓴다.
+     자리는 주소(`#/{프로필}/cards/{번호}`)에 적어 둔다. 앞뒤로 넘길 때는
+     `history.replaceState` 로 조용히 고친다 — 주소를 바꿔 넣으면 화면이 다시 그려져
+     카드를 저장소에서 통째로 다시 읽고, 보던 카드가 처음으로 튄다. */
+
+  var cardList = [];        // [{card, s, title}] — 새로 담은 것이 앞
   var cardAt = 0;
-  var cardShown = false;
+  var cardShown = false;    // 뒤집었는지
+  var cardBack = null;      // 카드에서 영상으로 건너갈 때 돌아올 자리. 한 번 쓰고 버린다
 
-  function showCards(pid, mode) {
+  function showCards(pid, at) {
     setProfileId(pid);
     show('cards');
-    if (mode) cardMode = mode;
+    // 옛 주소(`#/p1/cards/retype`)로 들어와도 첫 카드가 나오게 둔다
+    var want = parseInt(at, 10);
+    if (isNaN(want) || want < 0) want = 0;
+
     var box = $('cards-body');
     notice(box, 'Loading\u2026');
 
@@ -1103,33 +1124,29 @@
     Store.listCards(pid, function (cards) {
       if (!cards.length) {
         clear(box);
-        box.appendChild(modeRow(pid));
         notice2(box, 'No cards yet.\nWhile practising, press Save card on any sentence '
           + 'you want to come back to.');
         return;
       }
-      // 빈칸 모드는 그 문장에서 틀렸던 낱말을 알아야 한다
-      Store.listMisses(pid, function (misses) {
-        loadCardSentences(pid, cards, function (rows) {
-          attachMisses(rows, misses);
-          cardList = filterForMode(rows, cardMode);
-          cardAt = 0;
-          drawCards(box, pid);
-        });
-      }, function () {
-        loadCardSentences(pid, cards, function (rows) {
-          cardList = filterForMode(rows, cardMode);
-          cardAt = 0;
-          drawCards(box, pid);
-        });
+      loadCardSentences(pid, cards, function (rows) {
+        if (!rows.length) {
+          // 담긴 것은 있는데 하나도 못 읽었다. 조용히 "없음" 이라고 하면 안 된다 (SPEC 9)
+          clear(box);
+          notice2(box, 'Your cards point to sentences this app could not load.');
+          return;
+        }
+        cardList = rows;
+        cardAt = Math.min(want, rows.length - 1);
+        cardShown = false;
+        drawCards(box, pid);
       });
     }, function () { notice(box, 'Could not read your cards.', true); });
   }
 
   /* 대화 카드를 영상 파일과 같은 모양으로 만들어 준다.
      `talk-3` 은 그 대화의 턴, `talk-3-w` 는 그 대화 요약의 "배울 표현" 이다.
-     **한국어(ko)를 넣지 않는다** — 대화에는 한국어가 없다. 그래서 한→영 모드에는
-     안 나오고 듣고 말하기·받아쓰기 재시험에만 나온다. */
+     **한국어(ko)를 넣지 않는다** — 대화에는 한국어가 없다. 그런 카드는 앞면에
+     한국어 대신 "외워서 말해 보고 뒤집으세요" 가 앉는다. */
   function talkSentences(pid, vid, done) {
     if (!window.Store || !Store.available()) { done(null); return; }
     var body = vid.slice(5);
@@ -1200,196 +1217,117 @@
     }
   }
 
-  function attachMisses(rows, misses) {
-    var by = {};
-    for (var i = 0; i < misses.length; i++) {
-      var m = misses[i];
-      var k = m.videoId + '|' + m.i;
-      if (!by[k]) by[k] = {};
-      by[k][String(m.word).toLowerCase().replace(/[^a-z0-9']/g, '')] = true;
+  /* 이 카드를 영상에서 다시 들을 수 있는가. 자리는 두 갈래로 온다.
+
+     - 대사(Shows)에서 담은 카드 — 문장에 `from` 이 붙어 있다. 그게 원래 영상의 자리다
+     - 받아쓰기에서 담은 카드 — 카드 자체가 영상 문장이다
+
+     지어낸 문장(Daily)과 대화(Talk)에는 영상이 없다. 그때는 단추를 아예 안 만든다. */
+  function cardVideo(row) {
+    var f = row.s && row.s.from;
+    if (f && f.videoId && f.i !== undefined && f.i !== null) {
+      return { videoId: f.videoId, i: f.i };
     }
-    for (var r = 0; r < rows.length; r++) {
-      rows[r].missed = by[rows[r].card.videoId + '|' + rows[r].card.i] || {};
+    var vid = String(row.card.videoId || '');
+    if (vid && !isDailyId(vid) && vid.indexOf('talk-') !== 0) {
+      return { videoId: vid, i: row.card.i };
     }
+    return null;
   }
 
-  /* 한→영 모드는 한국어가 있는 문장만 쓸 수 있다 */
-  function filterForMode(rows, mode) {
-    if (mode !== 'ko') return rows;
-    var out = [];
-    for (var i = 0; i < rows.length; i++) if (rows[i].s.ko) out.push(rows[i]);
-    return out;
-  }
-
-  function modeRow(pid) {
-    var wrap = el('div', 'modes');
-    for (var i = 0; i < MODES.length; i++) {
-      (function (m) {
-        var b = el('button', 'small' + (m.id === cardMode ? ' on' : ''), m.name);
-        b.onclick = function () { go('#/' + pid + '/cards/' + m.id); };
-        wrap.appendChild(b);
-      })(MODES[i]);
-    }
-    return wrap;
+  /* 지금 보고 있는 카드 번호를 주소에 조용히 적어 둔다. 영상에 갔다가 폰의 뒤로가기로
+     돌아와도 그 자리가 나오게 하려는 것이다. 화면은 다시 그리지 않는다 */
+  function markCardPos(pid) {
+    if (!window.history || !history.replaceState) return;
+    try { history.replaceState(null, '', '#/' + pid + '/cards/' + cardAt); } catch (e) {}
   }
 
   function drawCards(box, pid) {
     clear(box);
-    box.appendChild(modeRow(pid));
 
     if (!cardList.length) {
-      notice2(box, cardMode === 'ko'
-        ? 'No cards with a Korean translation yet. Videos need Korean captions for this mode.'
-        : 'No cards yet.');
+      notice2(box, 'No cards yet.');
       return;
     }
-    cardShown = false;
 
     var row = cardList[cardAt];
-    var head = el('div', 'count', (cardAt + 1) + ' of ' + cardList.length + ' \u00b7 ' + row.title);
-    box.appendChild(head);
+    box.appendChild(el('div', 'count',
+      (cardAt + 1) + ' of ' + cardList.length + ' \u00b7 ' + row.title));
 
-    var m = modeById(cardMode);
-    box.appendChild(el('div', 'hint', m.hint));
-
-    var face = el('div', 'now', '');
+    // 카드 자체가 단추다. 어디를 눌러도 뒤집힌다
+    var face = el('button', 'card');
     face.id = 'card-face';
+    face.onclick = function () { cardShown = !cardShown; drawCardFace(row); };
     box.appendChild(face);
     drawCardFace(row);
-
-    var btns = el('div', 'buttons');
-    if (cardMode === 'listen' || cardMode === 'blank' || cardMode === 'retype') {
-      // 하루 문장은 읽어 줄 수 있어야만 Play 를 만든다 (SPEC 9 — 기능 감지)
-      if (!isDailyId(row.card.videoId) || canSpeak()) {
-        var play = el('button', 'half', 'Play');
-        play.onclick = function () { playCardAudio(row); };
-        btns.appendChild(play);
-      }
-    }
-    var showBtn = el('button', 'half', 'Show');
-    showBtn.onclick = function () { cardShown = true; drawCardFace(row); };
-    btns.appendChild(showBtn);
-    box.appendChild(btns);
-
-    if (cardMode === 'retype' || cardMode === 'blank') {
-      var ta = document.createElement('textarea');
-      ta.id = 'card-input';
-      ta.rows = 3;
-      ta.placeholder = 'Type it';
-      ta.setAttribute('autocomplete', 'off');
-      ta.setAttribute('autocapitalize', 'off');
-      ta.setAttribute('spellcheck', 'false');
-      box.appendChild(ta);
-      var check = el('div', 'buttons');
-      var cb = el('button', 'primary', 'Check');
-      cb.onclick = function () { checkCard(row); };
-      check.appendChild(cb);
-      box.appendChild(check);
-    }
 
     var nav = el('div', 'buttons');
     var prev = el('button', 'half', '\u2039 Previous');
     prev.disabled = (cardAt === 0);
-    prev.onclick = function () { cardAt--; drawCards(box, pid); };
+    prev.onclick = function () { cardAt--; cardShown = false; markCardPos(pid); drawCards(box, pid); };
     var next = el('button', 'half', 'Next \u203a');
     next.disabled = (cardAt >= cardList.length - 1);
-    next.onclick = function () { cardAt++; drawCards(box, pid); };
+    next.onclick = function () { cardAt++; cardShown = false; markCardPos(pid); drawCards(box, pid); };
     nav.appendChild(prev);
     nav.appendChild(next);
     box.appendChild(nav);
 
-    var open = el('div', 'buttons');
-    var daily = isDailyId(row.card.videoId);
-    var ob = el('button', 'half', daily ? 'Open in Daily' : 'Open in the video');
-    ob.onclick = function () {
-      go(daily
-        ? '#/' + pid + '/' + routeOfKind(kindOfId(row.card.videoId)) + '/'
-            + row.card.videoId.slice(6) + '/' + row.card.i
-        : '#/' + pid + '/' + row.card.videoId + '/' + row.card.i);
-    };
-    open.appendChild(ob);
-    var rm = el('button', 'half', 'Remove card');
+    // 영상이 있는 카드는 그 자리로 건너간다. 돌아올 자리를 들고 간다 (운영자 요청).
+    // 한 줄을 통째로 준다 — 뒤집기 다음으로 자주 누를 자리다
+    var target = cardVideo(row);
+    if (target) {
+      var vrow = el('div', 'buttons');
+      var vb = el('button', 'half', 'Hear it in the video');
+      vb.onclick = function () {
+        cardBack = '#/' + pid + '/cards/' + cardAt;
+        markCardPos(pid);
+        go('#/' + pid + '/' + target.videoId + '/' + target.i);
+      };
+      vrow.appendChild(vb);
+      box.appendChild(vrow);
+    }
+
+    // 빼는 것은 드문 일이라 작은 글씨로 둔다 — 큰 단추에는 그때 할 일만 (SPEC 10-d).
+    // `buttons` 줄에 넣으면 화면 폭을 다 먹어서 지우기가 제일 큰 단추가 된다
+    var rrow = el('div', 'cardtools');
+    var rm = el('button', 'small', 'Remove card');
     rm.onclick = function () { removeCurrentCard(pid, row); };
-    open.appendChild(rm);
-    box.appendChild(open);
+    rrow.appendChild(rm);
+    box.appendChild(rrow);
   }
 
   function removeCurrentCard(pid, row) {
     Store.removeCard(pid, row.card.videoId, row.card.i, function () {
       cardList.splice(cardAt, 1);
       if (cardAt >= cardList.length) cardAt = Math.max(0, cardList.length - 1);
+      cardShown = false;
+      markCardPos(pid);
       drawCards($('cards-body'), pid);
     }, function () { say('Could not remove that card.'); });
   }
 
-  function modeById(id) {
-    for (var i = 0; i < MODES.length; i++) if (MODES[i].id === id) return MODES[i];
-    return MODES[3];
-  }
-
+  /* 카드의 한 면. 앞은 한국어, 뒤는 영어.
+     한국어가 없는 카드(받아쓰기·대화에서 담은 것)도 감추지 않는다 — 앞면에
+     무엇을 하면 되는지 적어 둔다. 영상이 있는 카드는 그것부터 들으면 된다. */
   function drawCardFace(row) {
     var face = $('card-face');
     if (!face) return;
     clear(face);
-    face.className = 'now';
+    face.className = cardShown ? 'card back' : 'card';
 
+    // 단추 안에는 span 만 넣는다 (button 안의 div 는 표준이 아니다). 자리잡기는 CSS 가 한다
     if (cardShown) {
-      face.appendChild(document.createTextNode(row.s.text));
-      if (row.s.ko) face.appendChild(el('span', 'ko', row.s.ko));
+      face.appendChild(el('span', 'en', row.s.text));
+      face.appendChild(el('span', 'flip', 'Tap to turn it back'));
       return;
     }
-    if (cardMode === 'ko') {
-      face.appendChild(document.createTextNode(row.s.ko || ''));
+    if (row.s.ko) {
+      face.appendChild(el('span', 'ko', row.s.ko));
+      face.appendChild(el('span', 'flip', 'Tap to see the English'));
       return;
     }
-    if (cardMode === 'blank') {
-      face.appendChild(blanked(row));
-      return;
-    }
-    face.className = 'now empty';
-    face.appendChild(document.createTextNode(
-      cardMode === 'listen' ? 'Press Play, then say it back.' : 'Press Play, then type it.'));
-  }
-
-  /* 빈칸 채우기 — 그 문장에서 틀렸던 낱말만 가린다 (SPEC 7) */
-  function blanked(row) {
-    var wrap = el('span', null);
-    var words = row.s.text.split(/\s+/);
-    var missed = row.missed || {};
-    for (var i = 0; i < words.length; i++) {
-      var bare = words[i].toLowerCase().replace(/[^a-z0-9']/g, '');
-      if (missed[bare]) {
-        wrap.appendChild(el('span', 'blank', words[i].replace(/[A-Za-z0-9]/g, '_')));
-      } else {
-        wrap.appendChild(document.createTextNode(words[i]));
-      }
-      wrap.appendChild(document.createTextNode(' '));
-    }
-    return wrap;
-  }
-
-  function playCardAudio(row) {
-    // 하루 문장에는 영상이 없다. 폰에 내장된 목소리로 읽어 준다
-    if (isDailyId(row.card.videoId)) {
-      if (!speakText(row.s.text)) say('This browser cannot read it aloud. Press Show instead.');
-      return;
-    }
-    go('#/' + profileId + '/' + row.card.videoId + '/' + row.card.i);
-  }
-
-  function checkCard(row) {
-    var ta = $('card-input');
-    if (!ta || !ta.value.replace(/\s/g, '')) return;
-    var r = grade(row.s.text, ta.value, strict);
-    cardShown = true;
-    var face = $('card-face');
-    clear(face);
-    face.className = 'now';
-    for (var i = 0; i < r.words.length; i++) {
-      face.appendChild(el('span', r.ok[i] ? 'w' : 'w bad', r.words[i]));
-      face.appendChild(document.createTextNode(' '));
-    }
-    face.appendChild(el('span', 'ko', r.right + ' of ' + r.total + ' words correct.'));
+    face.appendChild(el('span', 'ko dim', 'Say it from memory.'));
+    face.appendChild(el('span', 'flip', 'Tap to see the English'));
   }
 
   /* ---------------------------------------------------------------- 하루 다섯 문장 (ROADMAP 1단계)
@@ -1816,6 +1754,7 @@
   var clipSource = {};      // 영상 ID → 그 영상의 문장 목록. 한 번만 읽는다
   var clipNow = null;       // 지금 화면에 붙어 있는 장면 {line, scene}
   var clipRepeat = false;   // 켜 두면 튼 자리를 계속 되풀이한다
+  var clipRate = 1;         // 장면 재생 속도. 원어민 말이 빠를 때 늦춘다
   var clipFrom = null;      // 되풀이할 때 돌아갈 자리
   var clipKey = '';         // 그 장면이 어느 문장의 것인지 (영상ID|자리번호)
 
@@ -1892,7 +1831,7 @@
     // 재생 명령을 씹어서 자리만 옮겨지고 소리가 안 난다
     clip.playVideo();
     clip.seekTo(Math.max(0, from), true);
-    clip.setPlaybackRate(slow ? 0.75 : 1);
+    clip.setPlaybackRate(clipRate);
     var armed = false, waited = 0;
     clipTimer = setInterval(function () {
       if (!clip || typeof clip.getCurrentTime !== 'function') return;
@@ -1940,6 +1879,34 @@
     dailySay(clipRepeat
       ? 'Repeat on. What you play goes round and round until you turn this off.'
       : 'Repeat off. It stops at the end of this round.');
+  }
+
+  /* 장면 재생 속도 (운영자 요청). 드라마 대사는 원어민이 실제로 하는 말이라
+     처음에는 그냥 빠르다. **단추는 하나다** — 누를 때마다 1× → 0.75× → 0.5× 로 돌아간다.
+     지금 몇 배속인지가 단추에 그대로 적혀 있어야 한다.
+
+     재생 중에도 바로 먹는다. 멈췄다 다시 트는 것이 아니라서 보던 자리를 잃지 않는다. */
+  var CLIP_RATES = [1, 0.75, 0.5];
+
+  function clipRateLabel() {
+    // 1 은 '1×' 로, 나머지는 소수점을 그대로 적는다 (0.75× / 0.5×)
+    return 'Speed ' + clipRate + '\u00d7';
+  }
+
+  function cycleClipRate() {
+    var at = 0;
+    for (var i = 0; i < CLIP_RATES.length; i++) if (CLIP_RATES[i] === clipRate) at = i;
+    clipRate = CLIP_RATES[(at + 1) % CLIP_RATES.length];
+    var b = $('clip-rate');
+    if (b) {
+      b.className = (clipRate === 1) ? 'half' : 'half on';
+      b.textContent = clipRateLabel();
+    }
+    // 듣는 도중에 눌러도 그 자리에서 바로 느려진다
+    if (clip && clipReady) { try { clip.setPlaybackRate(clipRate); } catch (e) {} }
+    dailySay(clipRate === 1
+      ? 'Normal speed.'
+      : 'Playing at ' + clipRate + '\u00d7. The scene stays where it is.');
   }
 
   /* 앞뒤로 한 마디씩 붙여 장면을 만든다. 그 대사만 틀면 무슨 상황인지 알 수 없다.
@@ -2029,7 +1996,7 @@
     $('daily-cover').onclick = $('clip-scene').onclick;
   }
 
-  function drawDaily(pid) {
+  function drawDaily(pid, keep) {
     var head = $('daily-head');
     var box = $('daily-body');
     clear(head);
@@ -2074,7 +2041,7 @@
         box.appendChild(el('div', 'kotask', s.ko || ''));
       } else {
         var kb = el('button', 'peek', 'Show the Korean');
-        kb.onclick = function () { dailyKoShown = true; drawDaily(pid); };
+        kb.onclick = function () { keepTyped(); dailyKoShown = true; drawDaily(pid, true); };
         box.appendChild(kb);
         box.appendChild(el('div', 'hint',
           'Try the scene first. Tap only if you need it.'));
@@ -2084,8 +2051,13 @@
       box.appendChild(el('div', 'kotask', s.ko || ''));
     }
 
-    /* 말하기 — 못 하는 기기에서는 이 줄을 통째로 안 만든다 (SPEC 9) */
-    if (window.Recorder && Recorder.canRecord()) {
+    /* **대사 갈래에서는 말하기와 쓰기가 한 칸이다** (2026-08-27 운영자 요청).
+       말한 것이 곧 답이라 받아적힌 글을 그대로 쓰는 칸에 넣는다 — 아래 dailySayWrite 참조.
+       지어낸 문장 쪽은 채점을 안 하므로 말하기 칸만 그대로 둔다. */
+    if (dailyKind === 'shows') {
+      step++;
+      box.appendChild(dailySayWrite(pid, s, step));
+    } else if (window.Recorder && Recorder.canRecord()) {
       var speak = el('div', 'speak on');
       step++;
       speak.appendChild(stepRow(step, 'Say it in English', 'rowlabel'));
@@ -2131,13 +2103,6 @@
         + 'then press Show answer.'));
     }
 
-    /* 채점은 하지 않는다. 이건 옮겨 말하기 연습이라 정답이 하나가 아니고,
-       글자로 맞히는 것은 목적이 아니다 (운영자 결정). 말해 보고 견주기만 한다.
-
-       다만 드라마 대사는 배우가 실제로 한 말이라 정답이 하나다. 그쪽에서는 쳐 보고
-       채점까지 한다 (운영자 결정). */
-    if (dailyKind === 'shows') { step++; box.appendChild(dailyWriteBlock(pid, s, step)); }
-
     step++;
     box.appendChild(stepRow(step, 'Check the answer'));
     var row = el('div', 'buttons');
@@ -2176,20 +2141,59 @@
     st.id = 'daily-status';
     box.appendChild(st);
 
-    window.scrollTo(0, 0);
+    /* **다시 그렸다고 맨 위로 올리지 않는다** (2026-08-27 운영자 지적).
+       정답을 펴거나 한국어를 펴는 것은 보고 있던 자리에서 일어나는 일인데,
+       그때마다 화면이 영상 위로 튀어 올라 방금 편 것을 다시 찾아 내려가야 했다.
+       문장을 바꿀 때만 올린다 — 그때는 처음부터 하는 것이 맞다. */
+    if (!keep) window.scrollTo(0, 0);
   }
 
-  /* 영어로 쳐 보는 칸. 대사 갈래에서만 그린다.
-     Check 를 누르면 받아쓰기 화면과 같은 방식으로 정답이 나오고 틀린 낱말만 칠해진다. */
-  function dailyWriteBlock(pid, s, step) {
+  /* **말하기와 쓰기를 한 칸에 둔다** (2026-08-27 운영자 요청). 대사 갈래에서만 그린다.
+
+     둘은 사실 같은 일이다 — 대사는 정답이 하나라 말한 것이 곧 답이다. 따로 두었더니
+     받아적힌 글을 눈으로 보고 같은 것을 손으로 또 옮겨 적게 되어 있었다.
+     그래서 **받아적힌 글이 그대로 쓰는 칸에 들어간다.** 잘못 들은 낱말은 거기서 고친다
+     (대화 연습에서 배운 것과 같다 — 보이는 글과 고치는 글이 같은 자리여야 한다).
+
+     말하든 치든 마지막에 누르는 것은 Check 하나다. 못 하는 기기에서는 그 갈래만
+     빠지고 나머지는 그대로 된다 (SPEC 9 — 기능 감지). */
+  function dailySayWrite(pid, s, step) {
     var write = el('div', 'speak');
-    write.appendChild(stepRow(step, 'Write it in English', 'rowlabel'));
+    var canRec = !!(window.Recorder && Recorder.canRecord());
+    write.appendChild(stepRow(step,
+      canRec ? 'Say it in English, or type it' : 'Write it in English', 'rowlabel'));
+
+    if (canRec) {
+      var sbtn = el('div', 'buttons');
+      var rec = el('button', dailyRecording ? 'half rec-on' : 'half',
+        dailyRecording ? 'Stop' : 'Record');
+      rec.id = 'daily-rec';
+      rec.onclick = function () { toggleDailyRecord(pid); };
+      sbtn.appendChild(rec);
+
+      var mine = el('button', 'half', 'Play mine');
+      mine.id = 'daily-mine';
+      mine.disabled = !(window.Recorder && Recorder.lastUrl());
+      mine.onclick = function () {
+        var au = $('daily-audio');
+        if (!au || !au.getAttribute('src')) return;
+        try { au.currentTime = 0; au.play(); } catch (e) { dailySay('Could not play the recording.'); }
+      };
+      sbtn.appendChild(mine);
+      write.appendChild(sbtn);
+
+      var au2 = document.createElement('audio');
+      au2.id = 'daily-audio';
+      au2.preload = 'none';
+      if (window.Recorder && Recorder.lastUrl()) au2.src = Recorder.lastUrl();
+      write.appendChild(au2);
+    }
 
     var ta = document.createElement('textarea');
     ta.id = 'daily-input';
     ta.rows = 2;
     ta.value = dailyTyped;
-    ta.setAttribute('placeholder', 'Type the line');
+    ta.setAttribute('placeholder', canRec ? 'Say it, or type it here' : 'Type the line');
     ta.setAttribute('autocomplete', 'off');
     ta.setAttribute('autocapitalize', 'off');
     ta.setAttribute('autocorrect', 'off');
@@ -2204,12 +2208,27 @@
 
     var now = el('div', 'now empty');
     now.id = 'daily-now';
-    now.appendChild(document.createTextNode('Write what you think the line was, then press Check.'));
+    now.appendChild(document.createTextNode(canRec
+      ? 'Press Record and say the line — what you say lands in the box. Then press Check.'
+      : 'Write what you think the line was, then press Check.'));
     write.appendChild(now);
+
+    // 받아적을 수 없는 기기에서는 왜 글이 안 들어오는지 적어 준다 (SPEC 9)
+    if (canRec && !Recorder.canTranscribe()) {
+      write.appendChild(el('div', 'hint',
+        'This browser cannot write down what you say. Say it out loud, then type it yourself.'));
+    }
 
     // 다시 그려도 방금 본 채점 결과가 사라지지 않게 한다
     if (dailyResult) drawDailyGraded(dailyResult, now);
     return write;
+  }
+
+  /* 화면을 다시 그리기 전에 쓰던 글을 챙긴다. 이걸 빼면 정답을 펴는 순간
+     아직 Check 를 안 누른 글이 통째로 사라진다 */
+  function keepTyped() {
+    var ta = $('daily-input');
+    if (ta) dailyTyped = ta.value;
   }
 
   function checkDaily(pid) {
@@ -2260,13 +2279,20 @@
     Store.addMisses(pid, dailyDay.videoId, dailyAt, missed, noteStorage);
   }
 
-  /* 정답 · 다른 표현 · 설명. 정답을 보기 전에는 그리지 않는다 */
+  /* 정답 · 다른 표현 · 설명. 정답을 보기 전에는 그리지 않는다.
+
+     **위에 영상이 있으면 읽어 주는 단추를 두지 않는다** (2026-08-27 운영자 지적).
+     대사 갈래에서는 배우가 실제로 한 말을 바로 위에서 들을 수 있다 — 그 옆에
+     폰 목소리로 읽어 주는 단추를 또 두면 무엇을 들어야 할지만 헷갈린다.
+     지어낸 문장 쪽에는 영상이 없으므로 거기서는 그대로 둔다 (유일하게 듣는 길이다).
+
+     **`Practise this video` 도 뺐다** (같은 자리) — 그 장면은 이미 위에 있다. */
   function dailyAnswerBlock(s) {
     var wrap = el('div', 'answer');
     wrap.appendChild(el('div', 'rowlabel', 'Answer'));
     wrap.appendChild(el('div', 'ans', s.text));
 
-    if (canSpeak()) {
+    if (canSpeak() && !hasScene(s)) {
       var b = el('div', 'buttons');
       var listen = el('button', 'half', 'Listen');
       listen.onclick = function () {
@@ -2281,15 +2307,6 @@
       };
       b.appendChild(slowb);
       wrap.appendChild(b);
-    }
-
-    // 장면은 위에서 이미 들을 수 있다. 여기서는 그 영상 전체로 건너간다
-    if (s.from && s.from.videoId) {
-      var open = el('div', 'buttons');
-      var ob = el('button', 'half', 'Practise this video');
-      ob.onclick = function () { go('#/' + profileId + '/' + s.from.videoId + '/' + s.from.i); };
-      open.appendChild(ob);
-      wrap.appendChild(open);
     }
 
     if (s.alts && s.alts.length) {
@@ -2396,9 +2413,10 @@
 
   function revealDaily(pid) {
     if (dailyShown) return;
+    keepTyped();
     dailyShown = true;
     markDailyDone(pid);
-    drawDaily(pid);
+    drawDaily(pid, true);
     dailySay('Compare it with what you said, then say it once more out loud.');
   }
 
@@ -2463,11 +2481,17 @@
         if (url && au) { au.src = url; if (mb) mb.disabled = false; }
         if (heard) {
           dailyHeard = heard;
+          // 대사 갈래에는 쓰는 칸이 있다. 받아적힌 말을 거기에 그대로 넣어 준다 —
+          // 사람이 눈으로 보고 같은 것을 또 옮겨 적을 이유가 없다 (2026-08-27 운영자 요청)
+          var ta = $('daily-input');
+          if (ta) { dailyTyped = heard; ta.value = heard; }
           var hb = $('daily-heard');
           if (hb) { clear(hb); hb.appendChild(document.createTextNode('You said: ' + heard)); }
         }
         if (!url) { dailySay(recordNote(note)); return; }
-        if (heard) dailySay('Now write it down, or press Show answer and compare.');
+        if (heard && $('daily-input')) {
+          dailySay('That went into the box. Fix any wrong words, then press Check.');
+        } else if (heard) dailySay('Now write it down, or press Show answer and compare.');
         else if (!Recorder.canTranscribe()) {
           dailySay('Recorded. Play it back, then compare it with the answer.');
         } else {
@@ -3749,6 +3773,7 @@
     $('slow-btn').onclick = toggleSlow;
     $('repeat-btn').onclick = toggleRepeat;
     $('clip-repeat').onclick = toggleClipRepeat;
+    $('clip-rate').onclick = cycleClipRate;
     $('prev-btn').onclick = function () { stepSentence(-1); };
     $('next-btn').onclick = function () { stepSentence(1); };
     $('home-switch').onclick = function () { go('#/'); };

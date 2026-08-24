@@ -281,6 +281,23 @@ check('다른 나라 것을 옮겨 놓았는지 보라고 한다',
   al.indexOf('다른 나라 것을 영어 낱말로 옮겨 놓았다') >= 0, true);
 check('이 영어만 읽는 사람 기준으로 가늠하라고 한다',
   al.indexOf('이 영어만 읽는 사람이 무슨 말인지 바로 아는가') >= 0, true);
+// "원어민이 이렇게 말하나" 는 잘 쓴 글도 통과시킨다. 걸러 내는 것은 듣는 쪽 질문이다 —
+// 운영자가 "이게 뭔말인지 모르겠다" 고 한 문장들이 전부 첫 질문만 통과한 것이었다
+check('듣는 사람이 한 번에 알아듣는지도 묻는다',
+  al.indexOf('듣는 사람이 한 번 듣고 바로 알아듣습니까') >= 0, true);
+check('잘 쓴 글이 첫 질문만 통과한다고 알려 준다',
+  al.indexOf('잘 쓴 글은 첫 번째만 통과하고 두 번째에서 걸립니다') >= 0, true);
+check('이어 주는 말이 빠진 것을 보라고 한다',
+  al.indexOf('문장을 잇는 말이 빠져서 뒷줄이 뚝 떨어진다') >= 0, true);
+check('실제로 나간 그 문장을 예로 든다',
+  al.indexOf('I could have waited. I drove home.') >= 0, true);
+check('왜 그런지를 짐작하게 두지 말라고 한다',
+  al.indexOf('왜 그런지를 말하지 않고 짐작하게 둔다') >= 0, true);
+check('마지막에 터뜨리는 것은 글이라고 한다',
+  al.indexOf('뜻을 마지막까지 아껴 두었다가 끝에서 터뜨린다') >= 0, true);
+// 빠진 접속사를 도로 넣는 것은 "늘리는 것" 이 아니다. 길이 때문에 못 고치면 안 된다
+check('이어 주는 말을 도로 넣는 것은 늘리는 것이 아니라고 한다',
+  al.indexOf('이어 주는 말을 도로 넣는 것은 늘리는 것이 아닙니다') >= 0, true);
 
 var alSchema = daily.buildAloudSchema({ count: 5 });
 check('영어만 돌려받는다', alSchema.required, ['texts']);
@@ -507,6 +524,23 @@ check('난이도는 내용에서 나온다고 한다',
 check('길이를 서로 다르게 하라고 한다', prompt.indexOf('길이를 서로 다르게 하세요') >= 0, true);
 check('짧은 것을 쉽게 만들지 말라고 한다',
   prompt.indexOf('짧은 것을 쉬운 것으로 만들지 마세요') >= 0, true);
+// "짧게, 다만 내용은 어렵게" 만 두었더니 압축을 했다 — 이어 주는 말을 빼고
+// 짐작하게 남기는 쪽으로. 그건 짧은 말이 아니라 잘 쓴 글이다 (s015~s023)
+check('짧게 만드는 법이 압축이 아니라고 못 박는다',
+  prompt.indexOf('압축이 아니라 덜 말하는 것입니다') >= 0, true);
+
+console.log('\n지시문 — 글이 아니라 말이라고 못 박는지');
+check('글이 아니라 말이라고 한다', prompt.indexOf('이건 글이 아니라 말입니다') >= 0, true);
+check('한 번에 못 알아들으면 실패라고 한다',
+  prompt.indexOf('한 번에 알아듣지 못하면 그 문장은 실패입니다') >= 0, true);
+check('이어 주는 말을 빼지 말라고 한다',
+  prompt.indexOf('이어 주는 말을 빼지 마세요') >= 0, true);
+check('왜 그런지를 입으로 말하라고 한다',
+  prompt.indexOf('왜 그런지를 입으로 말하세요') >= 0, true);
+check('마지막에 뒤집는 줄을 두지 말라고 한다',
+  prompt.indexOf('마지막에 뒤집는 한 줄을 두지 마세요') >= 0, true);
+check('눈으로 읽어야 알겠으면 실패라고 한다',
+  prompt.indexOf('눈으로 읽어야 알겠으면 실패입니다') >= 0, true);
 check('짧은 것 개수를 안 주면 그 대목을 아예 안 넣는다',
   daily.buildPrompt({ count: 5, minWords: 12, maxWords: 28, situations: ['가'], vocab: [] })
     .indexOf('길이를 서로 다르게') >= 0, false);

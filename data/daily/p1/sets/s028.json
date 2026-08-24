@@ -1,0 +1,114 @@
+{
+  "setId": "s028",
+  "videoId": "daily-s028",
+  "title": "Set 28",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "비행기 표 예매하려고 노트북 열었는데, 정신 차려 보니 어떤 사람이 집 앞 진입로에서 엔진 뜯어 고치는 영상을 보고 있어. 표는 아직도 못 샀고.",
+      "text": "I opened my laptop to book a flight, and then I'm watching some guy rebuild an engine in his driveway, and I still haven't booked it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I sat down to book a flight, and now I'm watching some dude rebuild an engine in his driveway, and the flight's still not booked."
+        },
+        {
+          "style": "formal",
+          "text": "I opened my laptop intending to book a flight, and I am now watching a man rebuild an engine in his driveway, and I have still not booked it."
+        }
+      ],
+      "note": "**book a flight** 는 비행기 표를 예매한다는 뜻이다. **some guy** 는 이름도 모르는 어떤 남자를 가리킬 때 쓰는 말로, 격의 없는 자리에서는 **some dude** 라고도 한다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "지난주부터 식기세척기에서 물이 새서 싱크대 아래로 흘러요. 수건을 깔아 뒀는데 이제 바닥이 부풀어 올라요. 이번 주에 사람 좀 보내 주실 수 있을까요?",
+      "text": "The dishwasher's been leaking under the cabinet since last week. I put a towel down, but the floor's swelling now, so can somebody come out this week?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Water's been leaking out from under the dishwasher since last week. I threw a towel down but the floor's swelling up now, so can somebody get out here this week?"
+        },
+        {
+          "style": "formal",
+          "text": "The dishwasher has been leaking beneath the cabinet since last week. I placed a towel underneath, but the floor is now swelling, so could someone come out this week?"
+        }
+      ],
+      "note": "**come out** 은 수리 기사가 집까지 와 준다는 뜻이다. 나무 바닥이 물을 먹어 부풀어 오르는 것은 **swelling** 이라고 한다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "결국 형이랑 같이 살게 됐어? 내가 마지막으로 듣기론 짐도 안 풀고 상자째로 지낸다고 했는데.",
+      "text": "Did you ever end up moving in with your brother? Last I heard you were living out of boxes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So did you ever move in with your brother? Last I heard you were still living out of boxes."
+        },
+        {
+          "style": "formal",
+          "text": "Did you ever end up moving in with your brother? The last I heard, you were living out of boxes."
+        }
+      ],
+      "note": "**living out of boxes** 는 이사 짐을 상자에서 꺼내지 않은 채 그대로 지낸다는 말이다. **end up** 은 이러저러하다가 결국 그렇게 됐다는 뜻이다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "주말 내내 더위가 장난 아닐 거래서 등산을 일요일 아침 6시로 당겼어. 차라리 잠을 덜 자는 게 낫지.",
+      "text": "The heat's supposed to be brutal all weekend, so we moved the hike to six on Sunday morning. I'd rather lose the sleep.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's gonna be brutal out all weekend, so we bumped the hike to six Sunday morning. I'd rather lose the sleep."
+        },
+        {
+          "style": "formal",
+          "text": "The heat is expected to be brutal throughout the weekend, so we have moved the hike to six on Sunday morning. I would rather lose the sleep."
+        }
+      ],
+      "note": "**supposed to** 는 그럴 거라고들 한다는 뜻으로 일기예보를 전할 때 자주 쓴다. **I'd rather** 는 차라리 이쪽이 낫다고 고를 때 쓰는 말이다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "1월에는 주말마다 사워도우 빵을 구웠는데, 일 때문에 2주를 집을 비웠더니 냉장고에 둔 발효종이 죽어 버렸어.",
+      "text": "I was making sourdough every weekend in January, but then I was gone two weeks for work and the starter died in the fridge.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Back in January I was doing sourdough every weekend, then work took me out of town for two weeks and the starter died in the fridge."
+        },
+        {
+          "style": "formal",
+          "text": "I was making sourdough every weekend in January, but I was then away on a two-week work trip, and the starter died in the refrigerator."
+        }
+      ],
+      "note": "**starter** 는 사워도우 빵을 부풀리는 발효종을 말한다. **I was gone two weeks** 는 2주 동안 자리를 비웠다는 뜻이다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 이 text 보다 길고 \"from under the cabinet from the dishwasher\" 처럼 from 이 두 번 겹쳐 읽기 어려워서, 물이 새는 자리를 한 번만 말하도록 짧게 다시 썼다.",
+    "5번 casual 이 \"I was making/doing sourdough every weekend\" 로 text 와 앞부분이 그대로 겹쳐서, \"Back in January\" 로 시작을 바꾸고 but 을 떼어 더 구어답게 줄였다.",
+    "5번 formal 의 \"away for two weeks for work\" 는 for 가 두 번 나와 어색해서 \"away on a two-week work trip\" 으로 고쳤다. 뜻은 그대로다."
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "setId": "s027",
+  "videoId": "daily-s027",
+  "title": "Set 27",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그 빵집 봄에 주인이 바뀌었는데, 이제 빵 맛이 마트에서 파는 냉동 빵 같아. 그래도 습관이 돼서 계속 가고 있어.",
+      "text": "That bakery changed hands in the spring, and now the bread tastes like the frozen stuff from the store. I keep going anyway, out of habit.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "New owners took over that bakery in the spring, and now the bread tastes like the frozen stuff from the store. I still go, out of habit."
+        },
+        {
+          "style": "formal",
+          "text": "That bakery came under new ownership in the spring, and the bread now tastes like the frozen product sold at the store. I continue to go regardless, purely out of habit."
+        }
+      ],
+      "note": "**changed hands** 는 가게나 물건의 주인이 바뀌었다는 뜻이다. **out of habit** 은 딱히 이유가 있어서가 아니라 그냥 하던 대로 한다는 말이다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "여기 처음 이사 왔을 때는 머리 깎는 데 25달러였는데 같은 사람이 지금은 40달러를 받아. 그래서 8주에 한 번으로 간격을 늘리기 시작했어.",
+      "text": "My haircut was $25 when I moved here and the same guy charges $40 now. So I've started stretching it out to eight weeks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Haircut was $25 when I moved here, and now the same guy wants $40. So I'm stretching it to eight weeks."
+        },
+        {
+          "style": "formal",
+          "text": "A haircut cost $25 when I moved here, and the same barber now charges $40. Consequently, I have begun extending the interval to eight weeks."
+        }
+      ],
+      "note": "**stretching it out** 은 하는 간격을 더 길게 늘린다는 뜻이다. 돈 아끼려고 미룰 때 자주 쓴다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "소파는 진짜 편한데, 고양이가 팔걸이 한쪽을 다 긁어놔서 보자마자 눈에 띌 거예요. 그래서 80달러만 받으려고요.",
+      "text": "The couch is really comfortable, but the cat scratched up one arm and you'll see it right away, so I'm asking $80.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's a super comfy couch, but the cat tore up one arm and you'll spot it right off, so I'm asking $80."
+        },
+        {
+          "style": "formal",
+          "text": "The couch is very comfortable; however, the cat has scratched one arm, and you will notice it immediately, so I am asking $80."
+        }
+      ],
+      "note": "**scratched up** 은 긁어서 엉망으로 만들었다는 뜻이다. 물건을 팔 때 부르는 값은 **I'm asking $80** 처럼 말한다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "토요일에 회사 사람들이랑 농구를 했는데 몇 년 만이었어. 그러고 나서 지금 계단을 할아버지처럼 옆으로 내려가고 있어.",
+      "text": "I played basketball with some guys from work Saturday, first time in years, and now I'm going down the stairs sideways like an old man.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Shot hoops with some guys from work Saturday, first time in years, and now I'm taking the stairs sideways like an old man."
+        },
+        {
+          "style": "formal",
+          "text": "I played basketball with several colleagues on Saturday, the first time in years, and I am now descending the stairs sideways like an elderly man."
+        }
+      ],
+      "note": "**first time in years** 는 몇 년 만에 처음이라는 말이다. **like an old man** 은 몸이 뻣뻣해진 자기를 놀리듯 말하는 표현이다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "내가 고른 건 다 싫다고 했으니까 이번엔 네가 골라. 근데 또 살인 사건 다큐면 난 자러 갈 거야.",
+      "text": "You said no to everything I picked, so now you pick. And if it's another murder documentary, I'm going to bed.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You shot down everything I picked, so it's your turn. And if it's another murder documentary, I'm going to bed."
+        },
+        {
+          "style": "formal",
+          "text": "You rejected everything I selected, so the choice is now yours. If it is another murder documentary, I am going to bed."
+        }
+      ],
+      "note": "**said no to** 는 그냥 싫다고 거절했다는 뜻이다. casual 의 **shot down** 은 남이 낸 의견을 딱 잘라 퇴짜 놓는다는 말이다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 보다 오히려 길고 앞부분만 살짝 달랐다. \"New owners took over…\" 로 시작을 확실히 바꾸고 뒤를 짧게 줄였다.",
+    "2번 casual 의 \"I paid $25 for a haircut…\" 이 text 와 어순만 다를 뿐 길이가 같았다. 주어를 떼고 \"Haircut was $25…\" 로 더 구어답게 줄였다.",
+    "4번 casual 의 \"Got a basketball game in with some guys…\" 가 말로 하면 걸린다. 농구를 가리키는 실제 구어 \"Shot hoops with…\" 로 바꿨다.",
+    "5번 note 의 \"하나하나 거절했다\" 는 said no to 의 뜻을 넘겨 짚은 설명이라 \"그냥 싫다고 거절했다\" 로 고쳤다."
+  ]
+}

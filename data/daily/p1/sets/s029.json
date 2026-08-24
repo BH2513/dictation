@@ -1,0 +1,118 @@
+{
+  "setId": "s029",
+  "videoId": "daily-s029",
+  "title": "Set 29",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "다리에서 사고 난 데 걸려서 꼼짝 못 했다고 둘러댔어. 사실은 늦잠 잔 거고, 이번 달만 벌써 두 번째라 그 얘기로 잔소리 듣기가 싫었거든.",
+      "text": "I told them I got stuck behind an accident on the bridge. Really I overslept, and that's twice this month, so I didn't want to hear about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Told them there was a wreck on the bridge and I got stuck behind it. Truth is I overslept, and that's twice this month, so I didn't wanna hear about it."
+        },
+        {
+          "style": "formal",
+          "text": "I informed them that I had been held up behind an accident on the bridge. In truth I had overslept, and that is twice this month, so I did not wish to hear about it."
+        }
+      ],
+      "note": "**got stuck behind** 는 앞에 뭔가가 막고 있어서 빠져나가지 못했다는 뜻입니다. **didn't want to hear about it** 은 그 일로 한 소리 듣는 게 싫었다는 말입니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "사흘 내내 배송 중이라고 뜨는데, 밤마다 결국 물류창고로 돌아가 있어. 게다가 전화해서 물어볼 사람이 아예 없어.",
+      "text": "It's been out for delivery three days straight, and every night it ends up back at the warehouse. And there's nobody you can actually call.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Three days straight it's been out for delivery, and every night it's back at the warehouse. And you can't get a real person on the phone."
+        },
+        {
+          "style": "formal",
+          "text": "It has been out for delivery for three days in a row, and each night it returns to the warehouse. Nor is there anyone you can actually reach by phone."
+        }
+      ],
+      "note": "**out for delivery** 는 택배가 배송 기사한테 넘어가서 배달 중인 상태를 말합니다. **ends up** 은 이런저런 끝에 결국 그렇게 되고 만다는 뜻입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "결국 올라가서 문을 두드렸는데 너무 친절하게 나오는 바람에, 이제는 오히려 내가 잘못한 사람 같아. 그런데도 그 집 애들은 여전히 밤 열 시만 되면 뛰기 시작해.",
+      "text": "I finally went up and knocked, and they were so nice, now I feel like I'm the problem. And their kids still start running at ten at night.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I finally went up and knocked, and they were super nice, so now I feel like I'm the jerk. And their kids still take off running at ten at night."
+        },
+        {
+          "style": "formal",
+          "text": "I eventually went up and knocked, and they were so kind that now I feel I am the one at fault. Even so, their children still start running at ten at night."
+        }
+      ],
+      "note": "**I'm the problem** 은 잘못한 쪽이 나인 것 같다는 말입니다. casual 의 **the jerk** 는 진상, 못되게 구는 사람을 가리킵니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "삼촌이 지금 얼마 버냐고 묻더니, 내가 말을 안 하니까 엄마가 그만하라고 할 때까지 소리 내서 액수를 찍어 댔어.",
+      "text": "My uncle asked what I make now, and when I wouldn't say, he guessed out loud until my mom told him to stop.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my uncle wanted to know what I make now, and when I wouldn't say, he just kept guessing out loud till my mom made him stop."
+        },
+        {
+          "style": "formal",
+          "text": "My uncle asked what I earn now, and when I declined to say, he continued guessing aloud until my mother told him to stop."
+        }
+      ],
+      "note": "**what I make** 는 얼마나 버는지, 수입을 묻는 표현입니다. **out loud** 는 속으로가 아니라 입 밖으로 소리 내서 한다는 뜻입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그냥 문자로 써서 보내면 될 걸 자꾸 전화를 걸어, 그래서 간단한 질문 하나가 이십 분짜리가 돼. 이제는 그냥 울리게 두고 문자로 답해.",
+      "text": "He keeps calling me instead of just typing it out, so one quick question turns into twenty minutes. Now I let it ring and text him back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Instead of just texting me he calls, so one quick question ends up being twenty minutes. Now I just let it ring and hit him back with a text."
+        },
+        {
+          "style": "formal",
+          "text": "He continues to call me rather than simply writing it out, so one quick question becomes twenty minutes. I now let it ring and reply to him by message."
+        }
+      ],
+      "note": "**let it ring** 은 전화를 받지 않고 그냥 울리게 둔다는 뜻입니다. **turns into** 는 결국 다른 것이 되어 버린다는 말입니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 \"delayed behind an accident\" 는 원어민이 쓰지 않는 짝이라 \"held up behind an accident\" 로 고쳤습니다.",
+    "1번 한국어가 \"사고 뒤에 갇혀 있었다\" 로 영어를 그대로 옮긴 티가 나서, 둘러대는 말투로 다시 썼습니다.",
+    "2번 formal 이 And 로 시작해 격식체답지 않아 \"Nor is there anyone…\" 으로 바꿨습니다. 뜻은 그대로입니다.",
+    "3번 formal 도 And 로 시작해서 \"Even so,\" 로 잇고, 어색한 begin running 을 start running 으로 되돌렸습니다.",
+    "3번 한국어의 \"내가 문제인 사람 같아\" 가 어색해서 \"오히려 내가 잘못한 사람 같아\" 로 다듬었습니다.",
+    "4번 casual 이 text 와 거의 같게 시작(My uncle asked/asks)하고 현재-과거 시제가 섞여 있어 앞부분을 새로 썼습니다.",
+    "5번 formal 의 telephone me 는 지나치게 고풍스러워 call me 로 낮췄습니다."
+  ]
+}

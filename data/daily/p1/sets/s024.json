@@ -1,0 +1,116 @@
+{
+  "setId": "s024",
+  "videoId": "daily-s024",
+  "title": "Set 24",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "내 생일이라 옥상에서 고기 구워 먹으려고 했는데, 토요일에 하루 종일 비 온대. 그래서 그냥 다들 우리 집으로 오기로 했어.",
+      "text": "We were going to grill on the roof for my birthday, but it's supposed to rain all day Saturday, so everybody's just coming to my apartment instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My birthday cookout was gonna be up on the roof, but it's supposed to rain all day Saturday, so now everyone's just coming over to my apartment."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to grill on the roof for my birthday, but rain is expected all day Saturday, so everyone will be coming to my apartment instead."
+        }
+      ],
+      "note": "**it's supposed to rain** 은 비가 온다는 예보를 전할 때 쓰는 말이다. 내 예상이 아니라 들은 이야기라는 느낌이 있다. 원래 계획 대신 다른 것으로 바꿀 때는 문장 끝에 **instead** 를 붙인다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "너 아직도 화요일 저녁 수업 가르쳐? 지난번에 얘기했을 때는 그만두려던 참이었잖아.",
+      "text": "Are you still teaching that Tuesday night class? Last time we talked you were about to give it up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You still teaching that Tuesday night class? Last we talked you were about to drop it."
+        },
+        {
+          "style": "formal",
+          "text": "Are you still teaching the Tuesday evening class? When we last spoke, you were about to give it up."
+        }
+      ],
+      "note": "**you were about to** 는 막 ~하려던 참이었다는 뜻이다. 하던 일을 그만둔다고 할 때는 **give it up** 을 쓰고, 편한 말로는 **drop it** 이라고 한다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "배송 조회에는 금요일에 도착해서 문 앞에 두고 갔다고 나오는데, 보내 준 사진은 남의 집 현관 매트야.",
+      "text": "The tracking says my package was delivered Friday and left at my door, but the photo they sent is somebody else's welcome mat.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking says they left my package at my door Friday, but the photo they sent is somebody else's welcome mat."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking information indicates that my package was delivered on Friday and left at my door, but the photograph they sent shows someone else's welcome mat."
+        }
+      ],
+      "note": "**The tracking says** 처럼 안내문이나 조회 화면을 주어로 놓고 says 를 쓰면 거기에 그렇게 나와 있다는 뜻이 된다. **welcome mat** 은 현관 앞에 깔아 두는 매트다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "6월부터 도예 수업 회비를 내고 있는데 두 번밖에 안 갔어. 공방이 차로 40분 거리라서.",
+      "text": "I've been paying for a pottery class since June and only gone twice, because the studio's a forty minute drive.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Been paying for a pottery class since June and I've only shown up twice, because the studio's a forty minute drive."
+        },
+        {
+          "style": "formal",
+          "text": "I have been paying for a pottery class since June, and I have attended only twice, because the studio is a forty minute drive away."
+        }
+      ],
+      "note": "**a forty minute drive** 는 차로 40분 걸리는 거리라는 뜻이다. 영어는 거리를 킬로미터 대신 걸리는 시간으로 말하는 일이 많다. **only gone twice** 처럼 지금까지의 횟수는 현재완료(I've)로 센다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이모가 애는 언제 낳을 거냐고 물었어. 그러고는 두 번을 더 묻길래, 남은 저녁 내내 부엌에서 설거지만 했어.",
+      "text": "My aunt asked when I'm having kids, and then she asked twice more, so I spent the rest of dinner in the kitchen washing dishes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Three times my aunt asked me when I'm having kids, so I spent the rest of dinner in the kitchen doing dishes."
+        },
+        {
+          "style": "formal",
+          "text": "My aunt asked when I intend to have children, and then she asked twice more, so I spent the remainder of dinner in the kitchen washing dishes."
+        }
+      ],
+      "note": "**twice more** 는 같은 것을 두 번 더 했다는 뜻으로, 숫자 뒤에 more 를 붙인다. **the rest of dinner** 는 저녁 식사가 끝날 때까지 남은 시간을 말한다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번: 20 단어 이하인 문장이 2번 하나뿐이었다. 짧은 것을 늘리는 대신 4번의 \"and I've only gone twice\" 에서 I've 를 덜어 20 단어로 맞췄다(말할 때도 자연스럽게 생략되는 자리다). 노트의 별표 표현도 실제 문장에 남은 \"only gone twice\" 로 고쳤다.",
+    "3번 casual: \"According to the tracking\" 은 text 의 \"The tracking says\" 보다 오히려 격식체라 캐주얼이 아니었다. 더 짧은 구어(Tracking says they left ...)로 바꿨다.",
+    "3번 casual: \"got delivered Friday and left at my door\" 는 left 가 수동인지 능동인지 두 가지로 읽혀서, 사람이 두고 갔다는 쪽으로 문장을 다시 썼다.",
+    "5번 casual: text 와 뒷부분이 통째로 같고 앞에 First 만 붙어 오히려 길어졌다. 앞부분부터 다르게, 더 짧은 구어로 바꿨다.",
+    "5번 ko: the rest of dinner 는 저녁이 끝날 때까지 남은 시간인데 \"저녁 먹는 내내\" 라고 되어 있어 뜻이 어긋났다. \"남은 저녁 내내\" 로 고쳤다."
+  ]
+}

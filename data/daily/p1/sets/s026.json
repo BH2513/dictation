@@ -1,0 +1,117 @@
+{
+  "setId": "s026",
+  "videoId": "daily-s026",
+  "title": "Set 26",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "덴버 쪽 일자리 답을 금요일까지 달래. 돈은 더 주는데 아빠가 올해만 두 번 넘어지셔서 메일 보내는 걸 계속 미루고 있어.",
+      "text": "They want an answer on the Denver job by Friday. The money's better, but my dad's fallen twice this year, so I keep putting off the email.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I've gotta get back to them about the Denver job by Friday. It pays more, but my dad's fallen twice this year, so I still haven't sent the email."
+        },
+        {
+          "style": "formal",
+          "text": "They have requested a decision on the Denver position by Friday. The compensation is better, but my father has fallen twice this year, so I continue to postpone the email."
+        }
+      ],
+      "note": "**keep putting off** 는 해야 할 일을 자꾸 뒤로 미룬다는 뜻이다. casual 의 **still haven't sent** 는 아직 안 보냈다는 말로 같은 상황을 더 쉽게 말한 것이다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "우리 개는 목줄을 보면 산책인 줄 알아서, 손만 댔다 하면 제자리에서 빙빙 돌아. 그래서 요즘은 코트 주머니에 넣어 둬.",
+      "text": "My dog knows the leash means a walk, so I can't touch it without him spinning in circles. So now I keep it in my coat pocket.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The second my dog sees the leash he knows he's getting a walk, so I can't even touch it without him spinning in circles. Now I just keep it in my coat pocket."
+        },
+        {
+          "style": "formal",
+          "text": "My dog has learned that the leash means a walk, so I cannot touch it without him spinning in circles. For that reason I now keep it in my coat pocket."
+        }
+      ],
+      "note": "**spinning in circles** 는 신이 나서 제자리를 빙빙 도는 모습이다. casual 의 **the second my dog sees** 는 보자마자라는 뜻이다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "나는 물만 마시고 딱 한 곡만 더 듣다가 아홉 시 반에는 거기서 나왔어.",
+      "text": "I stuck to water and only stayed for one more song, so I was out of there by nine thirty.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I just drank water and hung around for one more song, so I was gone by nine thirty."
+        },
+        {
+          "style": "formal",
+          "text": "I drank only water and remained for one additional song, so I departed by nine thirty."
+        }
+      ],
+      "note": "**stuck to water** 는 술 대신 물만 마셨다는 뜻이다. **out of there by nine thirty** 는 아홉 시 반에는 그 자리를 떴다는 말이다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "강 건너에 방 하나 더 있는 집이 200달러 싸게 나왔는데, 그러면 매일 아침 여섯 시에 버스를 두 번 타야 해.",
+      "text": "There's a place across the river with a second bedroom for two hundred less, but I'd be on two buses at six every morning.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I found a place across the river with an extra bedroom for two hundred bucks less, but then I'm on two buses at six every morning."
+        },
+        {
+          "style": "formal",
+          "text": "There is an apartment across the river with a second bedroom for two hundred less, but I would be on two buses at six every morning."
+        }
+      ],
+      "note": "**two hundred less** 는 200달러 더 싸다는 뜻이다. **on two buses** 는 버스를 두 번 갈아타고 다닌다는 말이다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "나 걔네한테 내일 일곱 시에 통화 있다고 할 거야. 너는 맞다고만 해 줘.",
+      "text": "I'm going to tell them I've got a call at seven tomorrow. Just back me up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'll just say I've got a call at seven tomorrow. Go along with it."
+        },
+        {
+          "style": "formal",
+          "text": "I am going to tell them that I have a call at seven tomorrow. Please support me on that."
+        }
+      ],
+      "note": "**back me up** 은 내 말이 맞다고 옆에서 편들어 달라는 뜻이다. casual 의 **go along with it** 도 같은 말이다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 \"keep not sending the email\" 은 원어민이 쓰지 않는 말투라 \"still haven't sent the email\" 로 고치고, note 의 강조 표현도 따라 바꿨다.",
+    "3번은 상황(아이 재우다가 진 빠진 얘기)과 영어(모임에서 일찍 나온 얘기)가 서로 맞지 않는다. 상황은 바꾸지 말라고 되어 있어 그대로 두었으니 만드는 쪽에서 확인이 필요하다.",
+    "3번 text 는 아홉 시 반에 나왔다는 데서 할 말이 끝나는데 and went straight to bed 가 덧붙어 있어 잘라 냈다(25단어에서 20단어). 20단어 이하가 5번 하나뿐이던 것도 이걸로 둘이 됐다.",
+    "3번 ko 와 alts 를 잘라 낸 영어에 맞춰 같이 줄였다.",
+    "4번 casual 이 뒷부분을 text 와 글자까지 똑같이 베끼고 있어 앞뒤를 다르게 고쳤다.",
+    "4번 note 가 어디에도 없는 I would be on two buses 를 강조하고 있어, text 에 실제로 있는 on two buses 로 바꿨다."
+  ]
+}

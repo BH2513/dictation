@@ -1,0 +1,116 @@
+{
+  "setId": "s025",
+  "videoId": "daily-s025",
+  "title": "Set 25",
+  "madeAt": "2026-08-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "5번가에 있는 그 커피숍이 사람으로 꽉 차서 빈자리가 문 옆자리 하나뿐이었어. 그래서 누가 들어올 때마다 얼어 죽는 줄 알았어.",
+      "text": "The coffee shop on Fifth was packed, and the only open seat was by the door, so I was freezing every time somebody walked in.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That coffee place on Fifth was jammed, and the one open seat was right by the door, so I froze every time somebody walked in."
+        },
+        {
+          "style": "formal",
+          "text": "The coffee shop on Fifth was extremely crowded, and the only available seat was beside the door, so I was cold every time someone entered."
+        }
+      ],
+      "note": "**packed** 는 사람이 발 디딜 틈 없이 꽉 찼다는 뜻이다. **freezing** 은 춥다를 과장해서 얼어붙을 만큼 춥다고 할 때 쓴다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "사이즈는 잘 맞아. 그런데 너 검은색 재킷이 이미 세 개나 더 있잖아. 이건 토요일에 입었던 거랑 구별이 안 돼.",
+      "text": "It fits you fine. But you've got three other black jackets, and I can't tell this one apart from the one you wore Saturday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The fit is fine. But you've already got three other black jackets, and I can't tell this one from the one you wore Saturday."
+        },
+        {
+          "style": "formal",
+          "text": "It fits you well. However, you already own three other black jackets, and I cannot distinguish this one from the one you wore on Saturday."
+        }
+      ],
+      "note": "**tell this one apart from** 은 이것과 저것을 구별한다는 뜻이다. **It fits you fine** 은 옷이 몸에 잘 맞는다는 말이다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "운동복이 아직 세탁기 안에 있어서 목요일에 가려고. 이번에는 진짜로 갈 거야.",
+      "text": "My gym clothes are still in the washer, so I'll go Thursday. And this time I'm actually going to go.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Workout stuff is still in the washer, so I'm gonna go Thursday. And this time I'm actually going."
+        },
+        {
+          "style": "formal",
+          "text": "My exercise clothing is still in the washing machine, so I will go on Thursday. And this time I genuinely intend to go."
+        }
+      ],
+      "note": "**washer** 는 세탁기를 말한다. **actually** 는 지금까지 미뤄 온 것과 대비해서 이번엔 정말이라고 못 박는 말이다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "알람이 안 울렸다고 말했고 그건 사실이야. 그런데 여덟 시에 한 번 깼다가 다시 잤다는 건 빼고 말했어.",
+      "text": "I said my alarm never went off, which is true, but I left out the part where I woke up at eight and went back to sleep.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "All I said was the alarm never went off, and that's true, but I skipped the part where I woke up at eight and went right back to sleep."
+        },
+        {
+          "style": "formal",
+          "text": "I stated that my alarm never sounded, which is true, but I omitted the part where I woke at eight and returned to sleep."
+        }
+      ],
+      "note": "**went off** 는 알람이 울렸다는 뜻이다. **left out the part where** 는 어떤 대목을 일부러 빼고 말했다는 뜻이다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "걔는 메일이란 메일은 다 우리 팀장을 참조로 넣어. 점심 어디서 먹을지 묻는 메일까지도.",
+      "text": "He copies my manager on every single email, even the one asking where we're getting lunch.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "He CCs my manager on every email, even the one asking where we're grabbing lunch."
+        },
+        {
+          "style": "formal",
+          "text": "He copies my manager on every email without exception, including the one inquiring where we would be getting lunch."
+        }
+      ],
+      "note": "**copies my manager on** 은 메일에 그 사람을 참조로 넣는다는 뜻이다. **every single** 은 하나도 빠짐없이 전부라고 강조하는 말이다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 의 honestly 는 뜻 없이 붙은 말버릇이라 뺐다. 캐주얼은 관용구나 추임새가 아니라 더 짧고 축약된 구어다.",
+    "2번 formal 이 casual 과 시작이 겹치고 perfectly 로 원문에 없던 강조를 더해서 It fits you well 로 고쳤다. 말투만 올리고 뜻은 그대로 둔다.",
+    "4번 casual 의 My story was that ~ 는 말이 아니라 글 냄새가 났고 kinda 도 뜻 없이 들어가서, All I said was ~ 로 바꾸고 추임새를 뺐다.",
+    "5번 casual 은 my manager gets copied 로 수동태가 되어 늘어졌다. 구어에서는 CC 를 동사로 써서 He CCs my manager on ~ 이라고 말한다.",
+    "5번 한국어가 every single 의 강조를 못 살려서 메일이란 메일은 다 로 고쳤다."
+  ]
+}

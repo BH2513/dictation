@@ -6,74 +6,74 @@
   "sentences": [
     {
       "i": 0,
-      "ko": "받아 준다고는 했는데, 돈으로는 안 되고 그 가게에서만 쓸 수 있는 걸로만 준대.",
-      "text": "Well, they said they would, but they would only give me store credit.",
+      "ko": "저기, 어제 일은 정말 미안해. 나도 많이 생각해 봤어.",
+      "text": "Listen, I feel really badly about yesterday and I thought about it a lot.",
       "alts": [
         {
           "style": "casual",
-          "text": "Turns out it was store credit only, even though they agreed to take it back."
+          "text": "Hey, I've been feeling awful about yesterday — I couldn't stop thinking about it."
         },
         {
           "style": "formal",
-          "text": "They did agree to take the item back, but they would issue store credit only."
+          "text": "I would like to apologize for yesterday. I have given it a great deal of thought."
         }
       ],
-      "note": "**store credit** 은 현금으로 돌려주지 않고 그 가게에서만 쓰게 해 주는 것이다. 환불이 안 될 때 가게에서 자주 듣는 말이라, 물건을 바꾸거나 무르러 갔던 이야기를 할 때 그대로 쓸 수 있다.",
-      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "note": "**I feel really badly about** 는 사과할 때 \"마음이 계속 안 좋다\"는 뜻으로 쓴다. sorry 보다 미안함이 오래 남아 있다는 느낌이라 하루 지나서 다시 꺼낼 때 어울린다. 앞의 **Listen,** 은 어려운 얘기를 꺼내기 전에 상대를 붙잡아 두는 말이다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
       "from": {
-        "videoId": "Wj3ZcW-5JXc",
-        "i": 55
+        "videoId": "FlrWUyB_j90",
+        "i": 897
       },
-      "start": 125.459,
-      "end": 128.16,
+      "start": 2276.839,
+      "end": 2280.81,
       "recording": null
     },
     {
       "i": 1,
-      "ko": "헬멧은 계속 쓰고 있는 게 좋을걸. 앞으로 좀 험할 테니까.",
-      "text": "But I would keep that helmet on cuz you're in for a rough ride.",
+      "ko": "이 얘긴 그만하고 다 같이 기분 좋게 밥 먹자.",
+      "text": "Let's move past this and try to have a nice meal all together.",
       "alts": [
         {
           "style": "casual",
-          "text": "Keep the helmet on — things are gonna get bumpy."
+          "text": "Can we just drop it and enjoy dinner together?"
         },
         {
           "style": "formal",
-          "text": "You may want to leave the helmet on, as the road ahead will be difficult."
+          "text": "I suggest we put this behind us and enjoy the meal together."
         }
       ],
-      "note": "**you're in for a rough ride** 는 앞으로 힘든 일이 기다리고 있다고 미리 일러 줄 때 쓴다. 실제로 뭘 타는 자리가 아니어도 쓰고, 농담 반으로 겁을 줄 때가 많다.",
-      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "note": "**move past this** 는 다툰 일을 덮자는 게 아니라 \"지금은 그 얘기를 접고 넘어가자\"는 말이다. 식탁에서 분위기가 굳었을 때 어른이 정리하듯 꺼내는 자리다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
       "from": {
-        "videoId": "Wj3ZcW-5JXc",
-        "i": 680
+        "videoId": "FlrWUyB_j90",
+        "i": 38
       },
-      "start": 1701.039,
-      "end": 1706.2,
+      "start": 97.36,
+      "end": 100,
       "recording": null
     },
     {
       "i": 2,
-      "ko": "걔가 너한테 완전 빠져 있는데, 커피 한잔하자고 하면 당연히 좋다고 하지.",
-      "text": "Well, given that he's desperately in love with you, he probably wouldn't mind getting a cup of coffee or something.",
+      "ko": "저번에 거기 인터뷰했을 때 어떻게 됐는지 기억나?",
+      "text": "Remember what happened the last time I did an interview for them?",
       "alts": [
         {
           "style": "casual",
-          "text": "He's crazy about you, so he'd totally say yes to coffee."
+          "text": "You know how it went last time I interviewed for them, right?"
         },
         {
           "style": "formal",
-          "text": "Considering that he is deeply in love with you, he would almost certainly be glad to have coffee with you."
+          "text": "You may recall what occurred when I last interviewed for them."
         }
       ],
-      "note": "**given that** 은 서로 이미 아는 사실을 근거로 댈 때 쓴다(\"~인 걸 보면\", \"~이니까\"). **wouldn't mind** 는 마지못해 한다는 뜻이 아니라 \"기꺼이 할걸\" 에 가깝다 — 부탁하거나 권할 때 부드럽게 쓰는 말이다.",
-      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
+      "note": "**Remember what happened the last time** 은 지난번 안 좋았던 일을 꺼내서 \"또 하지 말자\"고 말릴 때 쓴다. 대놓고 반대하지 않고 상대가 스스로 떠올리게 하는 방식이다.",
+      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
       "from": {
-        "videoId": "QdQ58BbGRsA",
-        "i": 875
+        "videoId": "cWheLYR8moU",
+        "i": 294
       },
-      "start": 2421.64,
-      "end": 2428,
+      "start": 802.76,
+      "end": 805.64,
       "recording": null
     }
   ]

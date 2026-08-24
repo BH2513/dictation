@@ -139,6 +139,45 @@ function vocabulary(pid, sample, rand) {
   return shuffle(Object.keys(seen), rand).slice(0, sample);
 }
 
+/* 진짜 원어민 대사를 뽑아 온다. 지시문에 본보기로 넣는다.
+
+   모델은 규칙이 아니라 **눈앞에 보이는 예문**을 따라 한다. 실제로 겪었다 —
+   길이 규칙을 다 걷어냈는데도 평균이 24.5 단어로 오히려 늘었다. 그때 지시문이
+   보여 주던 유일한 예문이 우리가 전에 만든 문장 40개(평균 23.1 단어)였다.
+
+   그래서 진짜 대사를 보여 준다. 자막에서 실제로 한 말이라 평균 12.6 단어다.
+   문장부호가 없는 자동자막은 뺀다 — 어디서 끊기는지 알 수 없다. */
+function realLines(pid, want, rand, cfg) {
+  var dir = path.join(ROOT, 'data', 'videos', pid);
+  var index = readJSON(path.join(dir, 'index.json'), []);
+  var skip = {};
+  var ex = (cfg && cfg.showsExclude) || [];
+  for (var e = 0; e < ex.length; e++) skip[ex[e]] = true;   // 강연·뉴스는 대사가 아니다
+
+  var out = [];
+  for (var v = 0; v < index.length; v++) {
+    if (skip[index[v].videoId]) continue;
+    var data = readJSON(path.join(dir, index[v].videoId + '.json'), null);
+    if (!data || !data.sentences) continue;
+    var rows = data.sentences, marked = 0;
+    for (var c = 0; c < rows.length; c++) if (/[.?!,]/.test(String(rows[c].text || ''))) marked++;
+    if (!rows.length || marked / rows.length <= 0.5) continue;   // 자동자막은 통째로 건너뛴다
+    for (var s = 0; s < rows.length; s++) {
+      var text = String(rows[s].text || '').trim();
+      if (!/^[A-Z]/.test(text) || !/[.?!]$/.test(text)) continue;
+      if (text === text.toUpperCase()) continue;                 // 다 대문자인 줄은 뺀다
+      if (/["\u201c\u201d]/.test(text)) continue;                   // 따옴표가 있으면 인용이라 혼자 안 선다
+      if (/\b(um|uh|erm)\b/i.test(text)) continue;                // 받아적기 잡음
+      if (/\b(\w+)\s+\1\b/i.test(text)) continue;                 // 겹쳐 말한 자리 (do you can't do)
+      if (/\b(Dr|Mr|Mrs|Ms|St|Jr|vs)\.$/i.test(text)) continue;      // 줄임말에서 잘린 토막
+      var n = wordCount(text);
+      if (n < 8 || n > 24) continue;
+      out.push(text);
+    }
+  }
+  return shuffle(out, rand).slice(0, want || 12);
+}
+
 function buildPrompt(opts) {
   var count = opts.count;
   var lines = [];
@@ -196,6 +235,24 @@ function buildPrompt(opts) {
   lines.push('가늠하는 법: **눈으로 읽어야 알겠으면 실패입니다.**');
   lines.push('잘 쓴 글을 만들지 마세요. 사람이 입으로 하는 말을 그대로 적으세요.');
   lines.push('');
+  if (opts.real && opts.real.length) {
+    var sum = 0;
+    for (var q = 0; q < opts.real.length; q++) sum += wordCount(opts.real[q]);
+    var avg = Math.round(sum / opts.real.length);
+    lines.push('## 사람은 이렇게 말합니다 \u2014 진짜 대사');
+    lines.push('');
+    lines.push('아래는 **드라마에서 실제로 한 말을 자막 그대로 옮긴 것**입니다. 지어낸 문장이 아닙니다.');
+    lines.push('');
+    for (var y = 0; y < opts.real.length; y++) lines.push('- ' + opts.real[y]);
+    lines.push('');
+    lines.push('**내용은 베끼지 마세요.** 여기서 볼 것은 둘뿐입니다 \u2014');
+    lines.push('**얼마나 짧은지**, 그리고 **누구에게 하는 말인지.**');
+    lines.push('');
+    lines.push('세어 보면 평균 ' + avg + ' 단어쯤입니다. 우리가 전에 만든 것은 24 단어였습니다.');
+    lines.push('**당신이 만들 문장도 이 정도여야 합니다.** 그리고 대부분이 **앞에 있는 사람에게** 하는 말입니다 \u2014');
+    lines.push('혼자 겪은 일을 적어 내려간 수기가 아닙니다.');
+    lines.push('');
+  }
   lines.push('## 영어 문장 \u2014 이게 제일 중요합니다');
   lines.push('');
   lines.push('- **자연스러움이 다른 모든 조건보다 먼저입니다.** 규칙을 채우려고');
@@ -232,6 +289,8 @@ function buildPrompt(opts) {
   if (opts.recent && opts.recent.length) {
     lines.push('');
     lines.push('## 최근에 이미 나온 문장 \u2014 겹치지 마세요');
+    lines.push('**이건 겹치지 않으려고 보여 주는 것이지 본보기가 아닙니다.**');
+    lines.push('길이와 말투는 위의 진짜 대사를 보세요. 아래 것들은 너무 깁니다.');
     lines.push('상황이 달라도 **같은 이야기를 다시 만들면 안 됩니다.**');
     lines.push('("팔이 안 올라가서 머리를 못 감았다" 가 두 묶음에 그대로 나온 적이 있습니다.)');
     for (var v = 0; v < opts.recent.length; v++) lines.push('- ' + opts.recent[v]);
@@ -1000,6 +1059,7 @@ module.exports = {
   config: config, profileIds: profileIds, todayKST: todayKST,
   recentSituations: recentSituations, pickSituations: pickSituations,
   shuffle: shuffle, vocabulary: vocabulary, buildPrompt: buildPrompt,
+  realLines: realLines,
   recentTexts: recentTexts,
   extractJSON: extractJSON, unwrap: unwrap,
   buildSchema: buildSchema, buildReviewSchema: buildReviewSchema,

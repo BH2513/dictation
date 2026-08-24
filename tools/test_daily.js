@@ -568,6 +568,49 @@ check('어휘가 없으면 그 대목을 아예 안 넣는다',
   daily.buildPrompt({ count: 1, maxWords: 35, situations: ['가'], vocab: [] })
     .indexOf('어휘 참고') >= 0, false);
 
+console.log('\n진짜 대사를 본보기로 보여 주는지');
+// 모델은 규칙이 아니라 눈앞의 예문을 따라 한다. 길이 규칙을 다 걷어냈는데도
+// 평균이 24.5 단어로 늘었던 것은, 지시문이 보여 주던 예문이 우리가 전에 만든
+// 문장 40개(평균 23.1 단어)뿐이었기 때문이다. 진짜 대사(평균 11 단어)를 보여 준다
+var pidR = daily.profileIds()[0];
+var realCfg = daily.config();
+var reals = daily.realLines(pidR, 12, null, realCfg);
+check('진짜 대사를 뽑아 온다', reals.length, 12);
+check('연습에 못 쓸 길이는 안 뽑는다',
+  reals.filter(function (t) {
+    var n = t.trim().split(/\s+/).length; return n < 8 || n > 24;
+  }).length, 0);
+check('문장부호로 끝나는 것만 뽑는다',
+  reals.filter(function (t) { return !/[.?!]$/.test(t); }).length, 0);
+check('따옴표가 든 줄은 안 뽑는다',
+  reals.filter(function (t) { return /"/.test(t); }).length, 0);
+check('받아적기 잡음(um, uh)은 안 뽑는다',
+  reals.filter(function (t) { return /\b(um|uh)\b/i.test(t); }).length, 0);
+check('줄임말에서 잘린 토막은 안 뽑는다',
+  reals.filter(function (t) { return /\b(Dr|Mr|Mrs)\.$/.test(t); }).length, 0);
+// 강연·뉴스는 대사가 아니라 본보기가 못 된다
+check('showsExclude 에 든 영상은 안 본다',
+  daily.realLines(pidR, 1000, null, realCfg).length
+    < daily.realLines(pidR, 1000, null, { showsExclude: [] }).length, true);
+
+var withReal = daily.buildPrompt({
+  count: 1, maxWords: 28, situations: ['가'], vocab: [],
+  real: ['I told you so.', 'Why did you even call him back?']
+});
+check('진짜 대사가 지시문에 들어간다',
+  withReal.indexOf('Why did you even call him back?') >= 0, true);
+check('내용은 베끼지 말라고 한다', withReal.indexOf('내용은 베끼지 마세요') >= 0, true);
+check('평균 길이를 세어서 알려 준다', withReal.indexOf('평균 6 단어쯤입니다') >= 0, true);
+check('누구에게 하는 말인지를 보라고 한다',
+  withReal.indexOf('앞에 있는 사람에게') >= 0, true);
+check('진짜 대사가 없으면 그 대목을 아예 안 넣는다',
+  daily.buildPrompt({ count: 1, maxWords: 28, situations: ['가'], vocab: [] })
+    .indexOf('사람은 이렇게 말합니다') >= 0, false);
+// 최근 문장은 겹침 방지용이지 본보기가 아니다. 그렇게 읽히면 길이가 그쪽으로 끌려간다
+check('최근 문장은 본보기가 아니라고 못 박는다',
+  daily.buildPrompt({ count: 1, maxWords: 28, situations: ['가'], vocab: [],
+    recent: ['I could not lift my arms.'] }).indexOf('본보기가 아닙니다') >= 0, true);
+
 console.log('\n최근 상황과 최근 문장 — 묶음을 읽는지');
 var pid0 = daily.profileIds()[0];
 var sets0 = daily.listSets(pid0);

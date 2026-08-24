@@ -141,6 +141,32 @@ window.TalkUI = (function () {
 
   function stopQuiet() { if (quiet) { clearTimeout(quiet); quiet = null; } }
 
+  /* **글을 손대고 있나** (2026-08-26 운영자 지적).
+     고치는 동안에도 마이크는 켜 둔다 — 고치고 말하고 고치고 말하고 할 수 있어야 한다.
+     그래서 "손대는 중" 은 따로 켜고 끄는 값이 아니라 **커서가 그 칸에 있느냐**로 본다.
+     값을 하나 더 두면 어긋나는 자리가 하나 더 생긴다. */
+  /* **언제 저절로 보낼지를 한 곳에서 정한다.**
+     말이 들어왔을 때만 재면, 이미 돌고 있던 시계가 고치는 사이에 터진다 —
+     실제로 그랬다. 손댈 때·손 뗄 때도 여기를 불러 다시 잰다. */
+  function armAutoSend() {
+    stopQuiet();
+    if (mode !== 'listening' || !handsFree() || editing()) { armBar(0); return; }
+    var text = (saidFinal + ' ' + saidNow).replace(/\s+/g, ' ').replace(/^ | $/g, '');
+    if (!text) { armBar(0); return; }
+    var wait = stillGoing(text) ? quietMs() + CARRY_MS : quietMs();
+    var gen = hearGen;
+    armBar(wait);
+    quiet = setTimeout(function () {
+      if (gen === hearGen && !editing()) sendHeard();
+    }, wait);
+  }
+
+  function editing() {
+    var ta = $('talk-said');
+    if (!ta) return false;
+    try { return document.activeElement === ta; } catch (e) { return false; }
+  }
+
   /* 듣기를 끝낸다. **이미 저 혼자 끝난 것을 또 끄지 않는다** —
      끄는 동작이 아이폰에서 소리를 내므로, 끝난 것에 대고 한 번 더 부르면 소리만 더 난다.
      `ended` 는 "이미 끝났다고 알림을 받았다" 는 뜻이다. */
@@ -183,12 +209,7 @@ window.TalkUI = (function () {
       var has = !!(saidFinal + saidNow).replace(/^\s+|\s+$/g, '');
       if (has !== hadWords) { hadWords = has; paint(); }
       // 말이 이어지는 동안에는 계속 미룬다. 멎어야 보낸다
-      stopQuiet();
-      if (!handsFree()) { armBar(0); return; }   // 누를 때까지 기다린다
-      var heardSoFar = (saidFinal + ' ' + saidNow).replace(/\s+/g, ' ');
-      var wait = stillGoing(heardSoFar) ? quietMs() + CARRY_MS : quietMs();
-      armBar(wait);
-      quiet = setTimeout(function () { if (mine === hearGen) sendHeard(); }, wait);
+      armAutoSend();
     };
 
     r.onerror = function (e) {
@@ -501,16 +522,19 @@ window.TalkUI = (function () {
       ta = el('textarea', 'livesaid');
       ta.id = 'talk-said';
       ta.rows = 2;
-      // 손대는 순간 마이크를 끈다. 하던 말은 saidFinal 에 합쳐지므로 안 없어진다
-      ta.onfocus = function () {
-        if (mode !== 'listening') return;
-        hush();
-        paint();                                   // 큰 단추가 Send 로 바뀐다
-        try { ta.focus(); } catch (e) {}           // 다시 그려도 여기 그대로 있다
-      };
+      // **마이크는 안 끈다** (2026-08-26 운영자 지적). 고치고 말하고 고치고 말하고
+      // 할 수 있어야 한다. 손댄 자리를 지키는 일은 아래 그리는 쪽에서 한다
+      /* 손대면 돌고 있던 시계를 멈추고, 손을 떼면 다시 잰다.
+
+         **여기서 `paint()` 를 부르면 안 된다.** 큰 단추를 누르면 칸에서 손이 떨어지는데,
+         그때 다시 그리면 **누르려던 그 단추가 사라져서 누름이 허공에 떨어진다** —
+         고쳐 놓고 Send 를 눌러도 안 나갔다. 실제로 그랬다.
+         단추 쪽은 손댔는지와 상관없이 같으므로, 글 있는 칸만 다시 그린다. */
+      ta.onfocus = function () { armAutoSend(); paintLive(); };
+      ta.onblur = function () { armAutoSend(); paintLive(); };
       ta.oninput = function () {
         saidFinal = ta.value;
-        saidNow = '';
+        saidNow = '';                              // 받아적히던 조각은 이미 글에 들어 있다
         grow(ta);
         var has = !!ta.value.replace(/^\s+|\s+$/g, '');
         if (has !== hadWords) { hadWords = has; paint(); }   // Talk ↔ Send
@@ -527,10 +551,23 @@ window.TalkUI = (function () {
       n.appendChild(hold);
     }
 
-    // **고치는 중에는 덮어쓰지 않는다.** 손대고 있는데 글이 바뀌면 커서가 튄다
-    var busy = false;
-    try { busy = (document.activeElement === ta); } catch (e) {}
-    if (!busy && ta.value !== text) { ta.value = text; grow(ta); }
+    /* **손대는 중에도 마이크는 켜져 있다.** 그래서 새 말이 들어오는데,
+       칸을 통째로 갈아 끼우면 커서가 끝으로 튀어 고치던 자리를 잃는다.
+
+       그래서 손대는 중에는 둘을 지킨다.
+       - **받아적히는 중인 조각은 안 넣는다.** 그건 한 마디 안에서도 계속 바뀌어서
+         넣었다 뺐다 하면 글이 요동친다. 그 마디가 끝나면 그때 한 번에 붙는다
+       - **커서 자리를 그대로 되돌려 놓는다.** 새 말은 글 끝에 붙으므로
+         고치던 자리는 그 앞에 그대로 있다 */
+    var busy = editing();
+    var want = busy ? saidFinal : text;
+    if (ta.value !== want) {
+      var a = 0, b = 0;
+      if (busy) { try { a = ta.selectionStart; b = ta.selectionEnd; } catch (e) {} }
+      ta.value = want;
+      if (busy) { try { ta.setSelectionRange(a, b); } catch (e) {} }
+      grow(ta);
+    }
 
     ta.readOnly = (mode === 'thinking');
     ta.placeholder = canHear() ? 'Listening \u2014 just start talking.' : 'Type what you want to say.';
@@ -541,6 +578,8 @@ window.TalkUI = (function () {
       else if (mode !== 'listening') hint.textContent = text
         ? 'Tap the words to fix them, then Send.'
         : '';
+      else if (editing()) hint.textContent = 'Still listening \u2014 keep talking and it '
+        + 'lands at the end.';
       else if (handsFree()) hint.textContent = 'Take your time. Tap the words to fix them.';
       else hint.textContent = 'Nothing is sent until you tap Send. '
         + 'Tap the words to fix them.';
@@ -642,9 +681,14 @@ window.TalkUI = (function () {
 
     // 나머지는 작은 글씨로. 크기가 같으면 무엇이 중요한지 알 수 없다
     var side = el('div', 'sidebar2');
-    // 멈춰 뒀는데 하던 말이 있으면, 고친 뒤에 이어서 더 말할 수 있어야 한다.
-    // 큰 단추는 보내기 하나뿐이므로 이건 작은 글씨로 둔다
-    if (canHear() && mode === 'idle' && said) {
+    /* 마이크를 여닫는 자리. **큰 단추는 보내기 하나뿐**이라 이건 작은 글씨로 둔다.
+       고치는 동안에도 마이크는 켜져 있으므로, 조용한 데서 하거나 옆에서 떠들 때
+       잠깐 닫을 길이 있어야 한다. */
+    if (canHear() && mode === 'listening' && said) {
+      var p = el('button', 'link', 'Pause the mic');
+      p.onclick = function () { hush(); paint(); };
+      side.appendChild(p);
+    } else if (canHear() && mode === 'idle' && said) {
       var k = el('button', 'link', 'Keep talking');
       k.onclick = function () { listen(); };
       side.appendChild(k);

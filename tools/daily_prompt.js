@@ -29,6 +29,7 @@ try {
     maxWords: cfg.maxWords,
     situations: situations,
     recent: daily.recentTexts(pid, textSets),
+    real: daily.realLines(pid, 12, null, cfg),
     vocab: vocab
   }));
 } catch (e) {

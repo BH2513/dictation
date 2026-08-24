@@ -600,9 +600,12 @@ var withReal = daily.buildPrompt({
 check('진짜 대사가 지시문에 들어간다',
   withReal.indexOf('Why did you even call him back?') >= 0, true);
 check('내용은 베끼지 말라고 한다', withReal.indexOf('내용은 베끼지 마세요') >= 0, true);
-check('평균 길이를 세어서 알려 준다', withReal.indexOf('평균 6 단어쯤입니다') >= 0, true);
 check('누구에게 하는 말인지를 보라고 한다',
   withReal.indexOf('앞에 있는 사람에게') >= 0, true);
+// 길이를 숫자로 시키면 AI 는 할 말을 줄여서 숫자를 맞춘다 — 두 번 겪었다 (운영자 지적).
+// 본보기만 보여 주고 길이는 아예 말하지 않는다
+check('길이를 숫자로 시키지 않는다', /평균 \d+ 단어/.test(withReal), false);
+check('길이를 세지 말라고 한다', withReal.indexOf('길이도 세지 마세요') >= 0, true);
 check('진짜 대사가 없으면 그 대목을 아예 안 넣는다',
   daily.buildPrompt({ count: 1, maxWords: 28, situations: ['가'], vocab: [] })
     .indexOf('사람은 이렇게 말합니다') >= 0, false);

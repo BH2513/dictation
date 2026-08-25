@@ -1,0 +1,115 @@
+{
+  "setId": "s043",
+  "videoId": "daily-s043",
+  "title": "Set 43",
+  "madeAt": "2026-08-26",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "낮 열두 시쯤이면 갠다고 했거든. 그래서 다들 앉아서 기다리기만 했는데 오히려 더 심해졌어. 그래서 지금 다들 대신 우리 집으로 오는데 냉장고에 아무것도 없어.",
+      "text": "It was supposed to clear up by noon, so we just sat around waiting, and then it got worse. So now everybody's coming here instead, and I've got nothing in the fridge.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "They said it'd clear up by noon, so we hung around waiting and it just got worse. Now everyone's coming over here instead and my fridge is empty."
+        },
+        {
+          "style": "formal",
+          "text": "The forecast indicated that it would clear by noon, so we waited, and then the weather worsened. Everyone is now coming here instead, and I have nothing in the refrigerator."
+        }
+      ],
+      "note": "**clear up** 은 비나 구름이 걷혀서 날이 개는 것을 말합니다. **sat around** 는 딱히 뭘 하지 않고 그냥 앉아서 시간을 보냈다는 뜻입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나 그 프로그램 진짜 좋아했는데, 웃기게 만들던 두 사람을 잘라 버렸어. 그래서 지금은 솔직히 그냥 습관으로 보는 거야.",
+      "text": "I used to love that show, but they got rid of the two people who made it funny, and now I'm honestly just watching it out of habit.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That show used to be my favorite, but they cut the two people who made it funny, so now I'm kinda just watching it out of habit."
+        },
+        {
+          "style": "formal",
+          "text": "I once enjoyed that program a great deal, but they removed the two people who made it funny, and I am now watching it merely out of habit."
+        }
+      ],
+      "note": "**got rid of** 는 사람을 내보내거나 없애 버렸다는 뜻입니다. **out of habit** 은 좋아서가 아니라 습관이 돼서 한다는 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "같은 책을 두 번이나 읽어 줬는데도 애가 안 자려고 버티는 거야. 그래서 옆에 잠깐 누웠는데 정작 잠든 건 나였어. 열 시 다 됐는데 나 아직 밥도 못 먹었어.",
+      "text": "I read him the same book twice and he still wasn't having it, so I lay down next to him for a minute, and then I'm the one who fell asleep. It's almost ten and I haven't eaten.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Same book, twice, and he still wasn't having it, so I lay down next to him for a sec and I'm the one who ended up asleep. It's almost ten and I still haven't eaten."
+        },
+        {
+          "style": "formal",
+          "text": "I read him the same book twice and he still would not settle, so I lay down beside him for a moment, and I was the one who fell asleep. It is nearly ten and I have not eaten."
+        }
+      ],
+      "note": "**wasn't having it** 은 아무리 달래도 받아들이지 않고 버틴다는 뜻입니다. **I'm the one who** 는 정작 그렇게 한 사람은 나라고 뒤집어 말할 때 씁니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "솔직히 말해도 돼? 색은 너한테 진짜 잘 어울려. 그런데 어깨가 좀 커서 옷이 너를 입은 것처럼 보여. 한 치수 작은 게 있으면 그걸로 입어 보는 게 좋겠어.",
+      "text": "Can I be honest? The color's great on you, but it's kind of big through the shoulders, so it's sort of wearing you. If they've got it one size down, I'd go try that on.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Want the truth? That color looks amazing on you, but it's a bit big in the shoulders, so it's kinda wearing you. If they have a size down, go try it on."
+        },
+        {
+          "style": "formal",
+          "text": "May I be candid? The color suits you very well, but it is somewhat large through the shoulders, so it is rather wearing you. If they have it one size smaller, I would try that on."
+        }
+      ],
+      "note": "**wearing you** 는 옷이 사람을 압도해서 사람보다 옷만 보인다는 표현입니다. **one size down** 은 한 치수 작은 것을 말합니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그래서 너는 진짜 어떻게 지내? 바쁘다는 말만 하지 마. 다들 바쁘다고만 하고, 그러면 나는 너에 대해 아무것도 모르는 채로 돌아서게 되잖아.",
+      "text": "So how are you, actually? And don't just say busy, because everybody says busy and then I walk away still not knowing anything about you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No, really, how are you? And don't just say busy, cause everyone says busy and then I leave still not knowing a thing about you."
+        },
+        {
+          "style": "formal",
+          "text": "How are you, truly? And please do not simply say busy, because everyone says busy and then I leave still knowing nothing about you."
+        }
+      ],
+      "note": "**actually** 를 이렇게 붙이면 형식적인 안부가 아니라 진짜 어떤지 묻는다는 뜻이 됩니다. **walk away** 는 그 자리를 뜨는 것입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 text 의 \"I laid down\" 을 \"I lay down\" 으로 고쳤습니다. lie(눕다)의 과거는 lay 이고, 같은 문장의 casual·formal 이 이미 lay 로 되어 있어 셋이 어긋나 있었습니다.",
+    "4번 note 가 별표로 감싼 **it's wearing you** 는 어느 문장에도 그대로 나오지 않습니다(text 는 \"it's sort of wearing you\", casual 은 \"it's kinda wearing you\"). 실제로 나오는 **wearing you** 로 줄였습니다.",
+    "2번 casual 의 \"just watching out of habit\" 은 순간 watch out(조심하다)으로 읽힙니다. \"watching it out of habit\" 으로 고쳤습니다.",
+    "4번 text 의 조건절 뒤에 쉼표를 넣었습니다(\"one size down, I'd go try that on\"). 소리내어 읽을 때 숨이 끊기는 자리입니다."
+  ]
+}

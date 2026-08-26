@@ -1,0 +1,113 @@
+{
+  "setId": "s046",
+  "videoId": "daily-s046",
+  "title": "Set 46",
+  "madeAt": "2026-08-27",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "자리에 앉자마자 사촌이 그래서 너희 둘 다시 만나는 거야 아니야? 하는 거예요. 그러니까 다들 나를 쳐다보고요. 엄마가 이미 다 얘기해 놨더라고요. 그래서 우리 생각 중이야 하고는, 남은 시간 내내 현관에 나가서 전화받는 척했어요.",
+      "text": "The second I sat down my cousin goes, so are you two back together or not? And then everybody's looking at me, because apparently my mom had already told them the whole thing. So I said we're figuring it out, and I spent the rest of the night out on the porch pretending to take a call.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I barely got in my chair before my cousin's like, so are you two back together or what? And now the whole table's staring at me, cause I guess my mom already filled them in on all of it. So I go, we're figuring it out, and then I hid out on the porch the rest of the night acting like I was on a call."
+        },
+        {
+          "style": "formal",
+          "text": "The moment I sat down, my cousin asked whether the two of us had gotten back together. Everyone then turned to look at me, as my mother had evidently already told them the entire story. I said that we were still working it out, and I spent the remainder of the evening on the porch, pretending to take a call."
+        }
+      ],
+      "note": "**The second I sat down** 은 앉자마자라는 뜻입니다. **goes** 는 said 대신 쓰는 구어라서 사촌이 ~하는 거예요 하는 느낌으로 들립니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "우리 개는 누가 옆에 서 있지 않으면 밥에 입도 안 대요. 그래서 아침마다 커피 들고 싱크대에 기대서 다 먹을 때까지 기다려요. 내가 방에서 나가면 바로 먹기를 멈추고요. 내가 그렇게 길들인 거 알아요. 그런데 이제 와서 고치기엔 한참 늦었죠.",
+      "text": "My dog won't touch his food unless somebody's standing there with him, so every morning I'm just leaning against the counter with my coffee waiting on him to finish. And if I walk out of the room he stops eating. I know I'm the one who taught him that, but we're way past fixing it now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Mine won't eat a bite unless somebody's right there with him, so every morning I'm just leaning on the counter with my coffee waiting for him to finish. Second I step out of the room, he quits. And yeah, I'm the one who taught him that, but it's way too late to undo it now."
+        },
+        {
+          "style": "formal",
+          "text": "My dog will not eat his food unless someone is standing there with him, so each morning I lean against the counter with my coffee, waiting for him to finish. If I leave the room, he stops eating. I am aware that I am the one who taught him this, but we are well past correcting it now."
+        }
+      ],
+      "note": "**won't touch his food** 는 밥에 입도 안 댄다는 뜻이고, **way past fixing it** 은 손쓰기엔 이미 한참 지났다는 말입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "일요일에 형이 같이 달리자고 꼬드겨서 나갔는데, 한 3킬로였나, 별것도 아니거든요. 그런데 그때부터 소파에서 일어날 때마다 노인처럼 끙끙대요. 앉는 건 괜찮아요. 다시 일어나는 게 문제예요. 그런데 이번 주말에 또 가자고 문자를 보내네요.",
+      "text": "My brother talked me into going for a run Sunday, and it was maybe two miles, which is nothing, but I've been getting up off the couch like an old man ever since. Sitting down is fine. It's the standing back up that gets me. And now he's texting me about going again this weekend.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sunday my brother dragged me out for a run, and it was like two miles, which is nothing, but I've been getting off the couch like an old man ever since. Sitting's fine. It's standing back up that gets me. And now he's texting me about doing it again this weekend."
+        },
+        {
+          "style": "formal",
+          "text": "My brother persuaded me to go for a run on Sunday. It was perhaps two miles, which is hardly anything, but I have been getting up from the couch like an old man ever since. Sitting down is not a problem. It is standing back up that troubles me. And now he is texting me about going again this weekend."
+        }
+      ],
+      "note": "**talked me into** 는 꼬드겨서 하게 만들었다는 뜻이고, **that gets me** 는 바로 그게 힘들다, 그게 문제다라고 할 때 쓰는 구어입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "3월에 계약이 끝나는데 한 달에 200달러를 더 달래요. 그 돈이면 주차장도 있고 방도 진짜 두 개인 집으로 갈 수 있어요. 그런데 이 골목에서 6년을 살았고, 모퉁이 가게 아저씨는 내가 집 비울 때 우편물을 받아 놔 줘요. 그게 여기 남을 이유가 된다고 어떻게 입 밖으로 말해야 할지 모르겠어요.",
+      "text": "Our lease is up in March and they want another two hundred a month, and for that I could get a place with parking and an actual second bedroom. But I've been on this street six years, and the guy at the corner store keeps my mail for me when I'm out of town, and I don't know how to say that out loud like it's a real reason to stay.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So in March the lease is up and they want another two hundred a month, and for that kind of money I could get a place with parking and a real second bedroom. But I've been on this street six years, and the guy at the corner store holds my mail when I'm out of town, and I don't know how to say that out loud like it's an actual reason to stay."
+        },
+        {
+          "style": "formal",
+          "text": "Our lease expires in March, and they are asking for an additional two hundred dollars per month. For that amount I could have a place with parking and an actual second bedroom. However, I have been on this street for six years, and the man at the corner store keeps my mail for me when I am out of town, and I do not know how to say that aloud as though it were a real reason to stay."
+        }
+      ],
+      "note": "**our lease is up in March** 는 3월에 임대 계약이 끝난다는 뜻입니다. **keeps my mail for me** 는 우편물을 대신 받아 놔 준다는 말입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "빵 만들겠다고 장비를 통째로 샀어요. 저울에 무쇠 냄비에 전부 다요. 처음 몇 덩이는 진짜 잘 나왔고요. 그런데 처음부터 끝까지 이틀이 걸려요. 그래서 마지막에 시작한 건 밤새 그냥 잊어버렸고, 발효종은 6월부터 냉장고 안쪽에 그대로 있어요. 아직도 도저히 못 버리겠어요.",
+      "text": "I bought the whole setup for making bread, the scale, the dutch oven, all of it, and the first few loaves actually came out great. But it takes two days start to finish, so the last one I started I just forgot about it overnight, and now the starter's been sitting in the back of the fridge since June. I still can't make myself throw it out.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I went and bought all the bread gear, the scale, the dutch oven, the whole thing, and the first couple loaves came out great. But it takes two days start to finish, so the last one I started I just flat out forgot about overnight, and now the starter's been sitting in the back of the fridge since June. Still can't make myself toss it."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased the entire setup for making bread, the scale, the dutch oven, all of it, and the first few loaves turned out very well. However, the process takes two days from start to finish, so with the last one I began, I simply forgot about it overnight, and the starter has been sitting at the back of the refrigerator since June. I still cannot bring myself to throw it out."
+        }
+      ],
+      "note": "**start to finish** 는 처음부터 끝까지라는 뜻이고, **I still can't make myself throw it out** 은 아직도 버릴 마음이 안 생긴다는 말입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 의 waiting him out 은 상대가 포기하기를 버티며 기다린다는 뜻이라 밥 다 먹기를 기다리는 자리에 안 맞습니다. waiting for him to finish 로 고쳤습니다.",
+    "4번 formal 의 gentleman 은 동네 가게 아저씨를 가리키기에 지나치게 격식이라 어색합니다. man 으로 낮췄습니다 (말투만 올리고 뜻은 그대로)."
+  ]
+}

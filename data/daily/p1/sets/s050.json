@@ -1,0 +1,117 @@
+{
+  "setId": "s050",
+  "videoId": "daily-s050",
+  "title": "Set 50",
+  "madeAt": "2026-08-28",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "삼촌이 내가 얼마 버는지 계속 묻는데 내가 계속 딴소리를 하니까 아예 소리 내서 숫자를 하나씩 불러 보는 거야. 내 표정이 변할 때까지. 이제 자기가 맞혔다고 생각하고 내가 문밖으로 나가기도 전에 온 식구한테 다 말할걸.",
+      "text": "My uncle kept asking what I make, and I kept changing the subject, so he just started guessing numbers out loud until I made a face. Now he thinks he's got it, and he'll tell everybody before I'm even out the door.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My uncle just would not drop it. He kept asking what I make and I kept dodging, so he started throwing out numbers till I made a face. Now he's sure he's got it, and he's gonna tell everybody before I'm even out the door."
+        },
+        {
+          "style": "formal",
+          "text": "My uncle repeatedly asked what my salary is, and I continued to change the subject, so he began guessing figures aloud until my expression gave it away. He now believes he has the answer, and he will tell everyone before I have even left the house."
+        }
+      ],
+      "note": "**change the subject** 는 곤란한 얘기가 나올 때 화제를 딴 데로 돌린다는 뜻입니다. **made a face** 는 표정이 일그러져서 속마음이 드러난 것이고, 캐주얼의 **would not drop it** 은 그 얘기를 놓지 않고 계속 물고 늘어졌다는 말입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "소파는 진짜 편한데 왼쪽 방석에 개가 자던 자리가 거뭇하게 남아서 안 지워져요. 사진 찍을 때 그 방석을 뒤집어 놨는데 그게 좀 마음에 걸려서 지금 말씀드려요. 가지러 오실 수 있으면 40달러에 드릴게요.",
+      "text": "The couch is really comfortable, but there's a dark spot on the left cushion where the dog used to sleep and it doesn't come out. I flipped that cushion over for the photos, which I feel bad about, so I'm telling you now. Forty bucks if you can come get it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the couch is super comfy, but there's a dark spot on the left cushion where the dog used to sleep and it won't come out. I flipped that cushion for the pictures, which I feel bad about, so I'm telling you now. Forty bucks if you can come grab it."
+        },
+        {
+          "style": "formal",
+          "text": "The sofa is very comfortable, but there is a dark spot on the left cushion where the dog used to sleep, and it does not come out. I turned that cushion over for the photographs, which I regret, so I am telling you now. Forty dollars if you are able to pick it up."
+        }
+      ],
+      "note": "**it doesn't come out** 은 얼룩이 안 빠진다는 뜻으로, 세탁이나 청소 얘기에서 그대로 씁니다. **Forty bucks** 의 bucks 는 달러를 편하게 부르는 말이고, **come get it** 은 직접 와서 가져가라는 중고 거래에서 흔한 표현입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "안에 있는 사람들이 다 노트북을 펴 놓고 있고 어떤 남자는 아예 모니터까지 갖다 놓고 제대로 차려 놨더라고. 그래서 커피 들고 한참 서 있다가 그냥 나왔어. 요즘은 어디 앉아야 하는 건지 모르겠어.",
+      "text": "Everybody in there had a laptop out and one guy had a whole setup, like an actual monitor, so I stood around holding my coffee for a while and then just left. I don't know where you're supposed to sit anymore.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every single person in there was on a laptop, and one guy had a whole setup, like an actual monitor, so I just stood there with my coffee for a bit and then bailed. I don't even know where you're supposed to sit anymore."
+        },
+        {
+          "style": "formal",
+          "text": "Everyone inside had a laptop out, and one man had an entire setup, including an actual monitor, so I stood holding my coffee for a while and then left. I no longer know where one is meant to sit."
+        }
+      ],
+      "note": "**a whole setup** 은 장비를 갖춰서 제대로 차려 놓은 상태를 말합니다. **stood around** 는 할 일 없이 어정쩡하게 서 있는 것이고, 캐주얼의 **bailed** 는 그 자리에서 빠져나왔다는 뜻입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "알람을 두 개나 못 듣고 잤는데 회사에서 그 말을 대놓고 할 수는 없어서 치과 예약이 길어졌다고 했어. 그러니까 내가 치과에 갔다는 걸 기억하고 있어야 돼. 혹시 누가 너한테 물어보면 맞다고 해 줘.",
+      "text": "I slept through both alarms, but I wasn't going to say that out loud at work, so I told them my dentist appointment ran long. Which means I have to remember I went to the dentist, so if anybody asks you, back me up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I didn't hear either alarm, and no way was I saying that out loud at work, so I told them my dentist appointment ran late. Which means I gotta remember I went to the dentist, so if anybody asks you, back me up."
+        },
+        {
+          "style": "formal",
+          "text": "I slept through both alarms, but I was not going to say that aloud at work, so I told them my dental appointment had run long. That means I must remember that I went to the dentist, so if anyone asks you, please tell them the same thing."
+        }
+      ],
+      "note": "**slept through both alarms** 는 알람이 울렸는데도 못 듣고 계속 잤다는 뜻입니다. **ran long** 은 예정보다 오래 걸렸다는 말이고, **back me up** 은 내 말이 맞다고 편들어 달라는 부탁입니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "화요일부터 계속 배송 중이라고만 떠 있어서 그거 받으려고 집에 두 번이나 있었어. 솔직히 그냥 분실됐다고 말해 주는 게 나을 것 같아. 환불되냐고 물어봤더니 이틀만 더 기다려 보라더라.",
+      "text": "The tracking's said out for delivery since Tuesday and I've stayed home for it twice now, so honestly I'd rather they just tell me they lost it. I asked about a refund and they said give it two more days.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's been saying out for delivery since Tuesday and I've sat home waiting for it twice now, so at this point I'd rather they just say they lost it. I asked about a refund and they said give it two more days."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking has said out for delivery since Tuesday, and I have stayed home for it twice now, so I would honestly prefer that they simply tell me they have lost it. I asked about a refund, and they said to allow two more days."
+        }
+      ],
+      "note": "**out for delivery** 는 물건이 배송 기사에게 넘어가 오늘 배달 예정이라는 배송 조회 문구입니다. **stayed home for it** 은 그것 때문에 집에 있었다는 뜻이고, **give it two more days** 는 이틀만 더 기다려 보라는 말입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 캐주얼: \"would not drop it about what I make\" 는 drop it 뒤에 about 을 붙이지 않는 편이라 어색했습니다. \"My uncle just would not drop it.\" 로 끊고 뒤에 \"He kept asking what I make\" 를 붙여, note 가 짚는 would not drop it 은 그대로 살렸습니다.",
+    "2번 포멀: \"collect it\" 은 미국 구어의 중고 거래에서 잘 쓰지 않아 \"pick it up\" 으로 바꿨습니다. 뜻은 그대로입니다.",
+    "3번 캐주얼: \"Everyone in there was on a laptop\" 이 text 의 \"Everybody in there had a laptop out\" 과 앞부분이 거의 겹쳤습니다. \"Every single person in there was on a laptop\" 으로 시작을 바꾸고 뒷부분도 더 짧은 구어(with my coffee for a bit)로 손봤습니다.",
+    "4번 캐주얼: \"Both alarms went right past me\" 는 알람에 쓰는 표현이 아닙니다. \"I didn't hear either alarm\" 으로 바꿨습니다 — text 와 시작도 겹치지 않고 note 의 slept through both alarms 는 text 에 그대로 남아 있습니다.",
+    "4번 포멀: \"please support my account\" 는 번역체입니다. 격식체라도 이렇게 말하지 않아서 \"please tell them the same thing\" 으로 바꿨습니다. 부탁하는 내용은 같습니다.",
+    "5번 캐주얼: 뒤 두 문장이 text 와 글자까지 똑같았습니다. \"so at this point I'd rather they just say they lost it\" 으로 바꿔 말투 차이를 냈습니다."
+  ]
+}

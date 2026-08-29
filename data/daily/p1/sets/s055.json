@@ -1,0 +1,114 @@
+{
+  "setId": "s055",
+  "videoId": "daily-s055",
+  "title": "Set 55",
+  "madeAt": "2026-08-30",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "귀마개를 끼고 자기 시작했는데 효과는 있어요. 그런데 이제는 알람 소리를 못 듣고 그냥 자 버려서 일주일에 두 번은 지각해요. 남의 집 세탁기 때문에요. 관리소장한테 두 번이나 전화했고 얘기해 보겠다고 하는데, 그러고 나면 아무 소식이 없어요.",
+      "text": "I've started sleeping with earplugs in, and it works, except now I sleep through my alarm, so I'm late twice a week because of somebody else's washing machine. And I've called the building manager twice and he says he'll talk to them, and that's the last I hear of it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So now I'm wearing earplugs to bed, and it does work, except I sleep right through my alarm, so I'm late twice a week 'cause of somebody else's washing machine. I've called the building manager twice and he says he'll talk to them, and then I never hear about it again."
+        },
+        {
+          "style": "formal",
+          "text": "I have begun sleeping with earplugs, and they are effective, except that I now sleep through my alarm and am late twice a week because of someone else's washing machine. I have called the building manager twice, and he says he will speak with them, and then I hear nothing further."
+        }
+      ],
+      "note": "**sleep through my alarm** 은 알람이 울렸는데도 못 듣고 계속 잔다는 뜻입니다. **that's the last I hear of it** 은 그 뒤로 감감무소식이라는 말이에요.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "타는 건 멀쩡한데 뒷바퀴에 바람이 조금씩 새요. 그래서 일주일에 한 번쯤은 바람을 넣어 줘야 할 거예요. 저는 그냥 안 타게 되면서 끝내 손을 못 봤고요. 그래서 120달러가 아니라 80달러인 거예요. 원하시면 와서 동네 한 바퀴 타 보고 정하셔도 돼요.",
+      "text": "It rides fine, but the back tire has a slow leak, so you'd be putting air in it about once a week, and I never got around to dealing with it because I just stopped riding. That's why it's eighty and not a hundred and twenty. Come take it around the block first if you want.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nothing wrong with how it rides, but the back tire's got a slow leak, so you'd be pumping it up about once a week, and I never dealt with it 'cause I just quit riding. That's why it's eighty bucks and not a hundred and twenty. Come ride it around the block first if you want."
+        },
+        {
+          "style": "formal",
+          "text": "It rides well, but the rear tire has a slow leak, so you would need to add air roughly once a week, and I never attended to it because I simply stopped riding. That is why it is eighty rather than a hundred and twenty. You are welcome to ride it around the block first."
+        }
+      ],
+      "note": "**a slow leak** 는 구멍이 나서 한 번에 빠지는 게 아니라 바람이 아주 천천히 새는 상태입니다. **never got around to dealing with it** 은 해야지 하면서 결국 손대지 못했다는 말이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이모가 만나는 사람 있냐고 묻길래 없다고 했어요. 그랬더니 거기서 넘어가질 않고 식탁을 돌면서 나한테 소개해 줄 사람 아는 사람 없냐고 하나하나 다 물어보는 거예요. 할머니 앞에서요! 그리고 이제는 엄마가 교회 다니는 어떤 남자 얘기로 문자를 보내요. 이번 달 남은 날은 이러다 다 가겠죠.",
+      "text": "My aunt asked if I'm seeing anybody, and I said no, so instead of letting it go she went around the table asking everybody if they knew anybody for me. In front of my grandmother! And now my mom's texting me about some guy from her church, so that's the rest of my month.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my aunt goes, are you seeing anyone, and I said no, and instead of dropping it she went around the whole table asking if anybody knew anybody for me. In front of my grandma! And now my mom's texting me about some guy from her church, so that's the rest of my month."
+        },
+        {
+          "style": "formal",
+          "text": "My aunt asked whether I am seeing anyone, and I said that I am not, and rather than leaving it there she went around the table asking everyone if they knew someone for me. In front of my grandmother. And now my mother is texting me about a man from her church, so that will occupy the remainder of my month."
+        }
+      ],
+      "note": "**seeing anybody** 는 사귀는 사람이 있냐고 물을 때 쓰는 말입니다. **instead of letting it go** 는 그쯤에서 그만두지 않고 계속 물고 늘어졌다는 뜻이에요.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "뒤쪽 침실 창문이 이제 잠기지가 않아서 저절로 스르르 열려요. 날이 추워지니까 일단 수건을 끼워 놨는데, 이게 제대로 고친 게 아닌 건 저도 알죠. 이번 주에 사람 좀 보내 주실 수 있을까요? 목요일은 두 시 이후로 아무 때나 집에 있어요.",
+      "text": "The window in the back bedroom doesn't latch anymore, so it drifts open on its own, and now that it's getting cold I've got a towel jammed in it, which I know isn't really a fix. Can you send somebody out this week? I'm around Thursday any time after two.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That back bedroom window won't latch anymore, so it just drifts open on its own, and now that it's getting cold I've got a towel shoved in there, which I know isn't really a fix. Can you get somebody out this week? I'm around Thursday anytime after two."
+        },
+        {
+          "style": "formal",
+          "text": "The window in the back bedroom no longer latches, so it drifts open on its own, and now that it is getting cold I have wedged a towel into it, which I realize is not a proper repair. Could you send someone out this week? I am available Thursday any time after two."
+        }
+      ],
+      "note": "**doesn't latch** 는 걸쇠가 안 걸려서 창문이 잠기지 않는다는 뜻입니다. **I'm around** 는 그 시간에 집에 있다, 시간이 된다는 뜻으로 약속 잡을 때 자주 씁니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "3월에 계약이 끝나는데 또 월세를 올린대요. 그 돈이면 20분만 나가도 방 두 개짜리를 제대로 얻을 수 있어요. 그런데 6년을 걸어서 출근했거든요. 그 걸어 다니는 게 나한테 얼마나 큰 건지는 없어져 봐야 알 것 같아요. 그래서 이번 주말에 정하자고 말만 계속 하고 결국 안 정해요.",
+      "text": "Our lease is up in March and they're raising the rent again, and for what we'd be paying we could get an actual second bedroom twenty minutes out. But I've walked to work for six years, and I don't think I'd know what that walk is worth until it's gone. So we keep saying we'll decide this weekend, and then we don't.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "They're bumping the rent again when we renew in March, and for what we'd be paying we could get a real second bedroom twenty minutes out. But I've walked to work for six years, and I don't think I'd know what that walk's worth till it's gone. So we keep saying we'll decide this weekend, and then we don't."
+        },
+        {
+          "style": "formal",
+          "text": "Our lease expires in March and they are raising the rent again, and for what we would be paying we could have an actual second bedroom twenty minutes away. However, I have walked to work for six years, and I do not think I would know what that walk is worth until it is gone. So we keep saying we will decide this weekend, and then we do not."
+        }
+      ],
+      "note": "**our lease is up in March** 는 3월에 임대 계약이 끝난다는 말입니다. **what that walk is worth** 는 그 걸어서 출근하는 게 얼마나 값진지를 뜻해요.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 캐주얼이 뒤 두 문장을 text 와 글자까지 똑같이 쓰고 있어서, 더 구어답게 (bucks / Come ride it) 바꿔 말투 차이를 냈습니다.",
+    "3번 formal 의 so that is the remainder of my month 는 영어로 말이 안 되는 자리라 that will occupy the remainder of my month 로 고쳤습니다 (뜻은 그대로).",
+    "5번 formal 의 until it was gone 은 앞의 would know 와 시제가 어긋나서 until it is gone 으로 고쳤습니다."
+  ]
+}

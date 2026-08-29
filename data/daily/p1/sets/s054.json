@@ -1,0 +1,115 @@
+{
+  "setId": "s054",
+  "videoId": "daily-s054",
+  "title": "Set 54",
+  "madeAt": "2026-08-30",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "딱 2분만 옆에 누워 있으려고 했는데, 눈 떠 보니까 9시 반이었어. 팔은 애 머리 밑에 깔려 있고 둘 다 옷도 안 갈아입은 채로. 그래서 설거지가 그대로 쌓여 있는데, 미안하지만 오늘 밤엔 안 할래.",
+      "text": "I laid down next to him for what was supposed to be two minutes, and then I woke up at nine thirty with my arm stuck under his head and both of us still in our clothes. So the dishes are sitting there, and I'm sorry, but I'm not doing them tonight.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I was gonna lie down next to him for two minutes, tops, and then suddenly it's nine thirty, my arm's pinned under his head and we're both still in our clothes. The dishes are just sitting there, and sorry, but I'm not touching them tonight."
+        },
+        {
+          "style": "formal",
+          "text": "I lay down beside him for what was meant to be two minutes, and I woke at nine thirty with my arm trapped beneath his head and both of us still fully dressed. The dishes are still waiting, and I am sorry, but I am not going to do them this evening."
+        }
+      ],
+      "note": "**what was supposed to be two minutes** 는 원래 2분이면 끝날 일이었는데 그렇게 안 됐다는 뜻입니다. 이렇게 계획과 결과가 어긋날 때 자주 씁니다. **stuck under his head** 는 팔이 머리 밑에 깔려 못 빼는 상태를 말합니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "금요일에 배송 완료로 처리됐다면서 현관 사진을 보내 줬는데, 우리 집 현관이 아니야. 그러니까 몇 집 건너 어느 집 계단에 놓여 있는 건데 누구네 집인지 모르겠어. 몇 집 문을 두드려 보다가 뭔가 좀 민망해져서 그냥 집으로 왔어.",
+      "text": "They marked it delivered Friday and sent me a picture of a porch, but it's not my porch, so it's sitting on somebody's step a couple doors down and I have no idea whose. I knocked on a couple of doors and then I felt weird about it and just came home.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So it says delivered Friday and they sent me this photo of a porch, except that's not my porch, so it's sitting on somebody's step a couple doors down and I've got no clue whose. I knocked on a couple doors, then it started feeling weird, so I just came home."
+        },
+        {
+          "style": "formal",
+          "text": "They recorded it as delivered on Friday and sent me a photograph of a porch, but it is not my porch, so it is sitting on someone's step a couple of doors down and I have no idea whose. I knocked on a couple of doors, but I began to feel uncomfortable and simply came home."
+        }
+      ],
+      "note": "**a couple doors down** 은 같은 길에서 두어 집 건너라는 뜻입니다. **I felt weird about it** 은 딱히 잘못한 건 없는데 어색하고 계면쩍은 기분이 들었다는 말로, 한국어의 뻘쭘하다에 가깝습니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "오늘 아침에 전철이 엉망이었다고 했어. 원래도 자주 그러니까 아무도 의심 안 할 거야. 근데 사실은 자다가 알람을 꺼 버려서 9시 10분 전에 깼어. 좀 미안하긴 한데, 다시 가서 사실대로 말할 만큼 미안하진 않아.",
+      "text": "I told them the train was a mess this morning, and it usually is, so nobody's going to question it. But really I turned my alarm off in my sleep and woke up at ten to nine. I feel a little bad about it, just not bad enough to go back and tell them the truth.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I said the train was a mess this morning, which it usually is, so nobody's gonna question it. Truth is I shut my alarm off in my sleep and woke up at ten to nine. I feel kinda bad about it, just not bad enough to go back and come clean."
+        },
+        {
+          "style": "formal",
+          "text": "I told them that the train service was in disarray this morning, which it generally is, so no one is going to question it. In truth, I turned off my alarm in my sleep and woke at ten minutes to nine. I do feel somewhat bad about it, though not bad enough to go back and tell them the truth."
+        }
+      ],
+      "note": "**ten to nine** 은 9시 10분 전, 그러니까 8시 50분입니다. 시각을 이렇게 몇 분 전으로 말하는 방식을 익혀 두세요. casual 의 **come clean** 은 숨기던 걸 사실대로 털어놓는다는 뜻입니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "엄마가 자꾸 우리랑 같이 살고 싶다는 티를 내. 나도 싫다고는 못 했어. 이제 혼자시니까 거절하면 마음이 너무 안 좋을 것 같아서. 근데 우리 집은 좁고, 솔직히 엄마랑 나는 한집에 안 살 때 훨씬 잘 지내. 내가 너한테 뭘 물어보고 있는 건지도 모르겠다. 그냥 한번 입 밖으로 꺼내고 싶었나 봐.",
+      "text": "My mom keeps hinting that she wants to move in with us, and I haven't said no, because she's on her own now and I'd feel awful about it. But our place is small, and honestly she and I get along a lot better when we're not in the same house. I don't even know what I'm asking you, I think I just needed to say it out loud.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my mom keeps dropping hints about moving in with us, and I haven't said no, because she's on her own now and I'd feel awful. But our place is tiny, and honestly she and I get along way better when we're not in the same house. I don't even know what I'm asking you here, I think I just needed to say it out loud."
+        },
+        {
+          "style": "formal",
+          "text": "My mother continues to hint that she would like to move in with us, and I have not said no, because she is on her own now and I would feel terrible about it. However, our home is small, and in all honesty she and I get along considerably better when we are not in the same house. I am not even certain what I am asking of you, I believe I simply needed to say it aloud."
+        }
+      ],
+      "note": "**keeps hinting** 은 대놓고 말하지 않고 계속 눈치를 준다는 뜻이고, casual 의 **dropping hints** 도 같은 말입니다. **say it out loud** 는 답을 바라는 게 아니라 그냥 소리 내어 말해 보고 싶었다는 뜻으로, 고민을 털어놓을 때 자주 씁니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "자, 그래서 너 요즘 어떻게 지내는 거야? 내가 마지막으로 들었을 땐 거기 그만둘까 고민 중이라더니, 그러고 한 1년을 연락이 없더라. 결국 그만둔 거야, 아니면 아직도 그 자리에 앉아서 그만둘 거라고 혼자 되뇌고 있는 거야?",
+      "text": "Okay, so what's actually going on with you? Last I heard you were thinking about leaving that place, and then you went quiet on me for like a year. Did you end up doing it, or are you still sitting there telling yourself you will?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Alright, so what's actually the deal with you? Last thing I heard, you were thinking about quitting that place, and then you went quiet on me for like a year. So did you actually do it, or are you still sitting there telling yourself you're gonna?"
+        },
+        {
+          "style": "formal",
+          "text": "May I ask what is actually going on with you? The last I heard, you were considering leaving that place, and then I did not hear from you for about a year. Did you in fact do it, or are you still sitting there telling yourself that you will?"
+        }
+      ],
+      "note": "**Last I heard** 는 내가 마지막으로 들은 소식은 이라는 뜻으로, 오랜만에 만난 사람에게 근황을 물을 때 씁니다. **did you end up doing it** 의 end up 은 이러쿵저러쿵 하다가 결국 그렇게 됐느냐를 묻는 표현입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 formal 의 \"not badly enough\" 를 \"not bad enough\" 로 고쳤습니다. feel badly 는 과잉교정이라 격식체에서도 틀린 말이 됩니다.",
+    "3번 formal 의 \"the train was in disarray\" 를 \"the train service was in disarray\" 로 고쳤습니다. 열차 한 대가 아니라 운행이 엉망이었다는 뜻이라 the train 만 두면 어색합니다.",
+    "4번 casual 의 \"get on way better\" 를 \"get along way better\" 로 고쳤습니다. text 와 formal 이 get along 인데 casual 만 영국식 get on 이라 말투가 아니라 지역이 달라져 있었습니다.",
+    "4번 casual 의 어깨점 붙은 'cause 를 because 로 바꿨습니다. 뜻과 말투는 그대로이고 부호만 뺐습니다."
+  ]
+}

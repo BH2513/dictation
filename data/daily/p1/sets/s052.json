@@ -1,0 +1,117 @@
+{
+  "setId": "s052",
+  "videoId": "daily-s052",
+  "title": "Set 52",
+  "madeAt": "2026-08-29",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "늘 가는 샌드위치 가게가 또 값을 올렸어. 많이 오른 것도 아니고 1달러쯤인데, 1년에 두 번씩 그러니까 이제 샌드위치 하나에 14달러야. 그래도 나는 계속 가니까, 저 사람들 다 알고 그러는 거지.",
+      "text": "My usual sandwich place raised their prices again, and it's not even a big jump, it's like a dollar, but they do that twice a year and now I'm paying fourteen bucks for a sandwich. I still go, so I guess they know exactly what they're doing.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The place I always get sandwiches from bumped their prices again, and it's not even a big jump, like a dollar, but they pull that twice a year and now I'm dropping fourteen bucks on a sandwich. I still go, so yeah, they know exactly what they're doing."
+        },
+        {
+          "style": "formal",
+          "text": "The sandwich shop I frequent has increased its prices once again. It is not a large increase, only about a dollar, but they do this twice a year, and I am now paying fourteen dollars for a sandwich. I continue to go, so I suppose they know exactly what they are doing."
+        }
+      ],
+      "note": "**bucks** 는 달러를 편하게 부르는 말이라 값을 말할 때 dollars 대신 씁니다. **they know exactly what they're doing** 은 저쪽이 다 계산하고 그러는 거라는 뜻입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "너 20분째 화면만 넘기고 있잖아. 내가 뭐 하나 고를 때마다 에이 그건 지금 안 당겨 하고. 그럼 네가 골라! 나는 이제 진짜 아무거나 괜찮아. 그냥 앉아서 뭐라도 보고 싶을 뿐이야.",
+      "text": "You've been scrolling for twenty minutes, and every time I pick something you go, eh, I'm not in the mood for that. So you pick! I genuinely don't care at this point, I just want to sit down and watch something.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Twenty minutes of scrolling now, and every time I pick something you're like, eh, not feeling that. So you pick! I honestly don't care anymore, I just wanna sit down and watch something."
+        },
+        {
+          "style": "formal",
+          "text": "You have been scrolling for twenty minutes, and every time I select something, you say you are not in the mood for it. So you choose. I genuinely do not mind at this point; I would simply like to sit down and watch something."
+        }
+      ],
+      "note": "**I'm not in the mood for that** 은 그게 싫다기보다 지금은 안 당긴다는 뜻입니다. **I genuinely don't care at this point** 은 이 정도 왔으면 정말 아무거나 상관없다는 말입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "10분쯤 뒤에 나한테 문자 좀 보내 줄래? 내용은 아무거나. 폰 확인하고 그 표정 지을게. 지금 나 혼자 일어나면 디저트 먹고 가라고 붙잡을 게 뻔하거든. 나 5시에 일어나야 해.",
+      "text": "Can you text me in about ten minutes? Anything, I'll look at my phone and do the face. Because if I stand up on my own right now they're going to talk me into staying for dessert, and I've got to be up at five.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, could you shoot me a text in like ten minutes? Anything, I'll check my phone and do the face. Cause if I get up on my own right now they're gonna talk me into dessert, and I gotta be up at five."
+        },
+        {
+          "style": "formal",
+          "text": "Would you mind sending me a message in about ten minutes? Anything will do; I will look at my phone and make the face. If I stand up on my own right now, they will persuade me to stay for dessert, and I have to be up at five."
+        }
+      ],
+      "note": "**text me** 는 문자 보내 달라는 말입니다. **do the face** 는 무슨 일이 생긴 듯한 그 표정을 짓겠다는 뜻으로, 서로 아는 표정이라 a 가 아니라 the 를 씁니다. **talk me into staying** 은 말로 구슬려서 남게 만든다는 뜻이고, into 뒤에는 하게 될 행동이 -ing 로 옵니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이번 주말에 캠핑 가기로 했었는데 내내 비 온대. 추운 데서 자는 건 하겠는데 비 오는 데서는 안 해. 그래서 그냥 시내에 방을 잡았어. 솔직히 다들 좀 마음 놓은 목소리더라.",
+      "text": "We were supposed to camp this weekend, but it's going to rain the whole time, and I'll camp in the cold, but I'm not doing it in the rain. So we got a room in town instead, and honestly everybody sounded kind of relieved.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We had camping planned this weekend, but it's gonna rain the whole time, and look, I'll camp in the cold, but not in the rain. So we grabbed a room in town instead, and honestly everybody sounded kinda relieved."
+        },
+        {
+          "style": "formal",
+          "text": "We had intended to camp this weekend, but it is going to rain the entire time. I am willing to camp in the cold, but I will not do so in the rain. We have taken a room in town instead, and honestly, everyone sounded rather relieved."
+        }
+      ],
+      "note": "**We were supposed to** 는 그러기로 되어 있었는데 어그러졌다는 신호입니다. **sounded kind of relieved** 는 말투에서 다행이라는 기색이 느껴졌다는 뜻입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "기타 레슨을 끊어서 네 번까지는 나갔어. 그러다 일 때문에 한 주를 빠졌는데, 한 번 빠지고 나니까 그다음도 빠지기가 너무 쉽더라. 기타는 아직 스탠드에 그대로 세워져 있는데, 그게 다시 다닐 거라고 나 자신을 속이는 방법인 것 같아.",
+      "text": "I signed up for guitar lessons and I made it to four of them, and then I missed a week because of work, and once you miss one it's so easy to miss the next one. The guitar's still out on the stand, which I think is my way of pretending I'm going back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I started guitar lessons and got through four of them, then I missed a week because of work, and once you miss one it's way too easy to miss the next. The guitar's still out on the stand, which is probably my way of pretending I'm going back."
+        },
+        {
+          "style": "formal",
+          "text": "I enrolled in guitar lessons and attended four of them, and then I missed a week because of work, and once you miss one, it is very easy to miss the next. The guitar is still out on its stand, which I believe is my way of pretending that I will return."
+        }
+      ],
+      "note": "**signed up for** 는 수업이나 모임에 등록했다는 말입니다. **made it to four of them** 은 네 번은 실제로 빠지지 않고 나갔다는 뜻으로, make it to 는 어딘가에 실제로 갔다는 표현입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어 마지막 줄 \"뭘 하는지 정확히 알고 하는 거지\" 가 영어를 그대로 옮긴 번역투라 \"다 알고 그러는 거지\" 로 고쳤습니다.",
+    "1번 formal 에서 단수인 shop 을 their 로 받고 있어 격식체와 안 맞았습니다. its 로 고쳤습니다.",
+    "3번 한국어의 \"표정 지을게\" 는 무슨 표정인지가 빠져서 영어의 the face(서로 아는 그 표정)와 어긋났습니다. \"그 표정\" 으로 고쳤습니다.",
+    "3번 note 의 \"into 뒤에 남는 행동이 옵니다\" 가 뜻이 흐려서 다시 썼고, text 에 실제로 나오는 do the face 설명을 더했습니다.",
+    "4번 casual 이 가운데 대목이 text 와 글자까지 같았습니다. \"but not in the rain\" 으로 더 짧게 줄여 말투 차이를 냈습니다.",
+    "5번 casual 도 가운데가 text 와 같아서 \"way too easy\" 로 바꿨습니다."
+  ]
+}

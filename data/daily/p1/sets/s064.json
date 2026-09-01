@@ -1,0 +1,116 @@
+{
+  "setId": "s064",
+  "videoId": "daily-s064",
+  "title": "Set 64",
+  "madeAt": "2026-09-02",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아래층 남자가 그 커다란 스피커를 갖고 있는데, 음악 소리는 나도 별로 신경 안 쓰여. 문제는 바닥을 타고 올라오는 저음이야. 침대가 다 울려. 한 번 내려가서 얘기한 적 있는데 되게 친절하게 나오더라고. 그래서 또 말 꺼내기가 미안해. 그런데 매주 목요일이야. 밤 열두 시에 누워서 잘 시간이 몇 시간 남았나 계산하고 있어.",
+      "text": "The guy under us has one of those big speakers, and I don't even mind the music, it's the bass that comes up through the floor and makes my whole bed hum. I went down there once about it and he was really nice, so now I feel bad bringing it up again, but it's every Thursday, and I'm lying there at midnight doing the math on how many hours of sleep I've got left.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the guy downstairs has one of those huge speakers. It's not even the music, it's the bass coming up through the floor, my whole bed hums. I said something to him once and he was super nice about it, so now I feel bad bringing it up again. But it's every Thursday, and there I am at midnight doing the math on how much sleep I've got left."
+        },
+        {
+          "style": "formal",
+          "text": "The gentleman in the apartment below us owns one of those large speakers, and the music itself does not bother me at all. It is the bass that travels up through the floor and makes my entire bed hum. I went down to speak with him about it once and he was very pleasant, so I now feel uncomfortable raising it again. However, it happens every Thursday, and I find myself lying awake at midnight calculating how many hours of sleep I have remaining."
+        }
+      ],
+      "note": "**doing the math on** 은 머릿속으로 숫자를 따져 보는 것입니다. **bringing it up** 은 그 얘기를 다시 꺼내는 것입니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그 스페인어 앱 하루도 안 빠지고 했었어. 연속 기록이 말도 안 되게 쌓여서 이백 일쯤 됐었는데, 3월에 아프면서 며칠 빠졌어. 기록이 끊기고 나니까 그 뒤로는 아예 안 열게 되더라. 바보 같지, 그때 노래에서 단어가 들리기 시작했었거든. 지금도 매일 밤 아홉 시에 알림이 오는데 그냥 밀어서 없애.",
+      "text": "I was doing that Spanish app every single day, and I had this ridiculous streak going, like two hundred days, and then I got sick in March and missed a couple of days, and once the streak was gone I just never opened it again. Which is dumb, because I was actually starting to catch words in songs. It still reminds me every night at nine and I swipe it away.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was on that Spanish app every single day. Had this crazy streak going, like two hundred days, and then I got sick in March, missed a couple days, and that was it. Streak gone, never opened it again. Which is so dumb, cause I was actually starting to catch words in songs. It still pings me every night at nine and I just swipe it away."
+        },
+        {
+          "style": "formal",
+          "text": "I was using that Spanish application every single day, and I had accumulated a rather remarkable streak of roughly two hundred days. Then I fell ill in March and missed a couple of days, and once the streak was broken I simply never opened it again. It is unfortunate, because I had genuinely begun to recognize words in songs. It still sends me a reminder every evening at nine, and I dismiss it."
+        }
+      ],
+      "note": "**streak** 는 하루도 안 빠지고 이어 온 연속 기록입니다. **swipe it away** 는 알림을 옆으로 밀어 치우는 것입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "집에 오는 길에 차에서 한 십오 분 잤거든. 그걸로 그날 밤은 끝난 거야. 아홉 시 반에 눈이 말똥말똥해서는 자기가 본 벌레 얘기를 하고 있더라고. 그래서 애 침대 옆 바닥에 누워서 잠들 때까지 있었는데 나도 같이 잠들어 버렸어. 열한 시에 깨 보니까 불은 다 켜져 있고 설거지는 싱크대에 그대로 있었어.",
+      "text": "She fell asleep in the car for maybe fifteen minutes on the way home, and that was the whole night right there, because then she's wide awake at nine thirty telling me about a bug she saw. So I lay on the floor next to her bed until she went down, and I fell asleep too, and I woke up at eleven with all the lights on and the dishes still in the sink.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "She crashed in the car for maybe fifteen minutes on the way home, and yeah, that was the whole night gone, cause then she's wide awake at nine thirty telling me about some bug she saw. So I'm lying on the floor next to her bed till she finally goes down, and I fall asleep too, and I wake up at eleven with every light on and the dishes still sitting in the sink."
+        },
+        {
+          "style": "formal",
+          "text": "She fell asleep in the car for perhaps fifteen minutes on the way home, and that determined the entire evening, because she was then wide awake at nine thirty describing an insect she had seen. I lay on the floor beside her bed until she went to sleep, and I fell asleep as well, and I woke at eleven with all of the lights on and the dishes still in the sink."
+        }
+      ],
+      "note": "**wide awake** 는 잠이 확 달아나 눈이 말똥말똥한 상태입니다. 아이가 잠드는 것은 **went down** 이라고 합니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "다 계획해 놨었어. 퇴근하고 바로 헬스장에 가려고 했는데 마커스가 밥 먹으러 가자는 거야. 그걸 거절할 수가 있나. 그리고 한번 먹고 나면 다시 못 일어나니까, 오늘은 간다는 시늉도 안 할래. 수요일. 수요일엔 갈 거야.",
+      "text": "I had it all planned out, I was going to go to the gym straight from work, and then Marcus asked if I wanted to grab food, and I wasn't going to say no to that. And once I've eaten I'm not getting back up, so I'm not even going to pretend I'm going tonight. Wednesday, though. Wednesday I'm going.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I had the whole thing planned, I was gonna head to the gym right after work, and then Marcus asked if I wanted to grab food, and there's no way I'm turning that down. And once I've eaten I'm not getting back up, so I'm not even gonna pretend I'm going tonight. Wednesday, though. Wednesday I'm going."
+        },
+        {
+          "style": "formal",
+          "text": "I had made all of my plans. I intended to go to the gym directly from work, and then Marcus asked whether I would like to get something to eat, and I was not going to decline that. Once I have eaten I will not get back up, so I am not going to pretend that I am going this evening. Wednesday, however. On Wednesday I will go."
+        }
+      ],
+      "note": "**I had it all planned out** 은 계획을 다 세워 뒀다는 말입니다. **I'm not even going to pretend** 는 안 될 걸 아니까 그런 척조차 안 하겠다는 뜻입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "주말 내내 비 온대서 캠핑은 접었어. 솔직히 좀 마음이 놓여. 이번 주 내내 기운이 하나도 없었거든. 그런데 이제 아들이 그럼 대신 뭐 하냐고 계속 물어봐. 아무것도 안 하고 넘어가 줄 애가 아니라서, 금요일까지 또 영화 말고 뭘 할지 생각해 내야 해.",
+      "text": "They're saying rain all weekend, so we called off the camping thing, and honestly I'm a little relieved, because I've been running on empty all week. But now my son keeps asking what we're doing instead, and doing nothing isn't going to fly with him, so I have to come up with something by Friday that isn't just the movies again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Forecast says rain all weekend, so we bailed on the camping thing, and honestly? I'm kinda relieved, cause I've been running on empty all week. But now my son keeps asking what we're doing instead, and doing nothing is not gonna fly with him, so I've gotta come up with something by Friday that isn't just the movies again."
+        },
+        {
+          "style": "formal",
+          "text": "They are forecasting rain all weekend, so we have canceled the camping trip, and I must admit I am somewhat relieved, as I have been running on empty all week. However, my son now keeps asking what we will do instead, and doing nothing will not satisfy him, so I need to think of something by Friday that is not simply the movies again."
+        }
+      ],
+      "note": "**running on empty** 는 연료가 바닥난 차처럼 기운이 다 떨어진 상태입니다. **isn't going to fly** 는 상대가 그걸로는 안 넘어간다는 말입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 뒷부분과 거의 글자까지 똑같아서, 문장을 끊고 더 짧은 구어체로 다시 썼습니다 (\"So the guy downstairs...\", \"there I am at midnight...\").",
+    "2번 casual 도 text 와 거의 같은 문장이라, 주어를 떨어뜨리고 (\"Had this crazy streak going\") 뒷부분도 말투를 더 낮췄습니다.",
+    "3번 text 의 \"I laid on the floor\" 는 문법이 틀렸습니다 (자동사는 lay). 학습자가 그대로 외우면 안 되므로 \"I lay on the floor\" 로 고쳤습니다.",
+    "3번 한국어의 \"낮에 본 벌레\" 는 영어(a bug she saw)에 없는 정보라 \"자기가 본 벌레\" 로 맞췄습니다.",
+    "2번 formal 의 recognise, 5번 formal 의 cancelled / cinema 가 영국식이라 나머지 문장(미국식)과 어긋납니다. recognize, canceled, the movies 로 통일했습니다."
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "setId": "s063",
+  "videoId": "daily-s063",
+  "title": "Set 63",
+  "madeAt": "2026-09-02",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이사 온 뒤로 현관 초인종이 계속 안 돼요. 그래서 누가 오면 저한테 전화를 해야 하고 제가 내려가서 문을 열어 줘요. 지난주에는 그것 때문에 택배를 못 받았고요. 급한 일은 아닌데 사람 좀 보내서 한번 봐 주실 수 있을까요? 저는 오전에는 거의 집에 있어요.",
+      "text": "The buzzer at the front door hasn't worked since I moved in, so anybody who comes over has to call me and I go down and let them in, and last week I missed a delivery because of it. I know it's not an emergency or anything, but can you get somebody out to look at it? I'm home most mornings.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That front door buzzer's been broken since I moved in, so anybody coming over has to call me and I run down and let them in, and I missed a delivery last week because of it. It's not an emergency or anything, but can you send someone out to look at it? I'm home most mornings."
+        },
+        {
+          "style": "formal",
+          "text": "The buzzer at the front door has not worked since I moved in, so anyone who visits must call me and I go down to let them in, and last week I missed a delivery as a result. I understand this is not an emergency, but could you arrange for someone to come and look at it? I am home most mornings."
+        }
+      ],
+      "note": "**get somebody out to look at it** 는 수리할 사람을 좀 보내서 살펴봐 달라고 할 때 쓰는 말이에요. **it's not an emergency or anything** 는 급한 건 아니라고 먼저 낮춰 두고 부탁을 꺼내는 표현이고요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "엄마가 6월에 한 번 넘어지셨어요. 지금은 괜찮으신데 병원 갈 때마다 언니가 다 모시고 다녀요. 그걸 계속 언니한테만 떠맡기는 건 아니잖아요. 그래서 다시 그쪽으로 이사 가는 얘기를 하고 있어요. 일은 거기서도 계속할 수 있을 것 같고요. 그런데 애가 이 학교에서 이제 겨우 친구를 사귀었는데 저 때문에 처음부터 다시 시작하게 되는 건 싫어요.",
+      "text": "My mom had a fall back in June, and she's okay now, but my sister's the one driving her to every appointment, and it's not fair to leave all that on her forever. So we've been talking about moving back, and I could probably keep my job from there. But my kid finally has friends at this school, and I don't want to be the reason he starts all over again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Back in June my mom had a fall, and she's fine now, but my sister's the one driving her to every appointment, and we can't just leave all that on her forever. So we've been talking about moving back, and I could probably keep my job from there. But my kid's finally got friends at this school, and I don't wanna be the reason he starts all over again."
+        },
+        {
+          "style": "formal",
+          "text": "My mother had a fall in June. She is well now, but my sister is the one driving her to every appointment, and it is not fair to leave all of that on her indefinitely. We have therefore been discussing moving back, and I could most likely keep my job from there. However, my son has finally made friends at this school, and I do not want to be the reason he has to start over again."
+        }
+      ],
+      "note": "**had a fall** 는 넘어져서 다치신 일을 조심스럽게 말할 때 쓰는 표현이에요. **start all over again** 는 하던 걸 다 버리고 처음부터 다시 시작한다는 뜻이고요.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "저더러 팀을 맡으라고 해요. 돈은 더 받고요. 그런데 그러면 매일 같이 점심 먹는 사람들 평가를 제가 쓰게 되는 거예요. 그렇다고 거절하면 두 번은 안 물어볼 것 같고요. 일주일 내내 할까 말까 하고 있어요. 솔직히 그냥 어떻게 하라고 딱 말해 줬으면 했는데 안 그럴 거죠?",
+      "text": "They want me to take over the team, and it's more money, but then I'm the one doing reviews for people I eat lunch with every day. And if I turn it down I don't think they'd ask me a second time. I've been going back and forth on it all week, and honestly I was hoping you'd just tell me what to do, but you're not going to, are you?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "There's this team lead thing they want me to take, and it's more money, but then I'm the one writing reviews for people I have lunch with every day. And if I say no, I don't think they'd ask me twice. I've been going back and forth on it all week, and honestly I was kinda hoping you'd just tell me what to do, but you're not gonna, are you?"
+        },
+        {
+          "style": "formal",
+          "text": "They would like me to take over the team, and it is more money, but I would then be the one conducting reviews for people I eat lunch with every day. And if I decline, I do not believe they would ask me a second time. I have been weighing it all week, and I will admit I was hoping you would simply tell me what to do, but you are not going to, are you?"
+        }
+      ],
+      "note": "**going back and forth on it** 는 마음을 못 정하고 이랬다저랬다 한다는 뜻이에요. **turn it down** 는 들어온 제안을 거절한다는 말이고요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "로봇 청소기를 하나 샀는데 돌아가긴 잘 돌아가요. 그게 문제가 아니고요. 문제는 돌리기 전에 제가 바닥에 있는 걸 다 주워 놔야 한다는 거예요. 안 그러면 양말을 삼키고 그 자리에 그냥 멈춰 서 있어요. 그러니까 청소기가 청소하기 전에 제가 먼저 청소를 하고 있는 거죠. 게다가 구석은 결국 일반 청소기를 또 꺼내서 밀어요. 제가 옆에서 계속 챙겨 줘야 하는 물건에 200달러를 쓴 거예요.",
+      "text": "I got one of those robot vacuums, and it works, that's not the problem. The problem is I have to pick everything up off the floor before I run it or it swallows a sock and just sits there. So I'm cleaning before the thing cleans, and I still drag the regular vacuum out for the corners anyway. Two hundred dollars for something I have to babysit.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Picked up one of those robot vacuums, and yeah, it works, that's not the problem. The problem is I've gotta get everything up off the floor before I run it or it eats a sock and just sits there. So I'm cleaning before the thing cleans, and I'm still dragging the regular vacuum out for the corners anyway. Two hundred bucks for something I've gotta babysit."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased one of those robot vacuums, and it does work, that is not the problem. The problem is that I must clear everything off the floor before running it, or it swallows a sock and simply sits there. So I am cleaning before the machine cleans, and I still bring out the regular vacuum for the corners regardless. Two hundred dollars for something I have to supervise."
+        }
+      ],
+      "note": "**babysit** 는 아기 보듯 옆에서 계속 돌봐 줘야 한다는 뜻인데 사람뿐 아니라 물건에도 써요. **that's not the problem** 는 진짜 문제는 따로 있다고 넘어갈 때 쓰는 말이고요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "일요일에 아빠 쪽 친척들을 만났어요. 만난 지 10분쯤 되니까 바로 너희 둘은 집 언제 사냐는 말이 나오더라고요. 사촌이 6월에 집 계약을 끝냈거든요. 그래서 그 얘기가 따로따로 네 번쯤 나왔어요. 저는 지금은 세 사는 게 좋다고 했어요. 진짜로 그렇고요. 그랬더니 고모가 그건 영영 못 돌려받는 돈이라고 하시더라고요. 거기다 대고 무슨 말을 해요?",
+      "text": "Sunday was my dad's side of the family, so about ten minutes in it's like, when are you two buying a place, and my cousin just closed on a house in June, so it came up maybe four separate times. And I said we're happy renting right now, which is true, and my aunt goes, well, that's money you're never getting back. What am I supposed to say to that?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We did my dad's side of the family Sunday, so maybe ten minutes in it's like, when are you two buying a place, and my cousin just closed on a house in June, so it came up maybe four separate times. And I said we're happy renting right now, which we are, and my aunt's like, well, that's money you're never getting back. What am I even supposed to say to that?"
+        },
+        {
+          "style": "formal",
+          "text": "On Sunday we saw my father's side of the family, and roughly ten minutes in the question was when the two of us were going to buy a place, and as my cousin had just closed on a house in June, it came up perhaps four separate times. I said that we are happy renting at present, which is true, and my aunt replied that it is money we will never get back. What am I supposed to say to that?"
+        }
+      ],
+      "note": "**closed on a house** 는 집 매매를 최종적으로 마무리했다는 뜻이에요. **that's money you're never getting back** 는 돌려받지 못하고 그냥 나가는 돈이라는 말이고요.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "세 번째 문장 한국어 끝의 \"안 그러실 거죠?\" 는 친구에게 하는 말인데 높임(-시-)이 섞여 있어 \"안 그럴 거죠?\" 로 바꿨습니다.",
+    "두 번째 문장 한국어의 \"떠맡길 수는 없잖아요\" 는 영어의 it's not fair to leave all that on her 보다 단정적이라 \"떠맡기는 건 아니잖아요\" 로 맞췄습니다.",
+    "다섯 번째 formal 의 the question was when the two of us are buying a place 는 시제가 어긋나서 were going to buy 로 고쳤습니다.",
+    "다섯 번째 casual 의 so like ten minutes in it's when are you two buying a place 는 남의 말을 꺼내는 신호가 없어 읽기 어색해서 so maybe ten minutes in it's like, when are you two buying a place 로 고쳤습니다.",
+    "다섯 번째 한국어의 \"좋다고 했고 진짜로 그런데\" 가 이어 붙어 어색해서 문장을 끊고 \"진짜로 그렇고요. 그랬더니 고모가\" 로 다듬었습니다."
+  ]
+}

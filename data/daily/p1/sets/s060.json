@@ -1,0 +1,113 @@
+{
+  "setId": "s060",
+  "videoId": "daily-s060",
+  "title": "Set 60",
+  "madeAt": "2026-09-01",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "윗집에 어린애가 있어서 뛰어다니는 건 한 번도 뭐라고 한 적 없어. 애들은 원래 그러니까. 그런데 어젯밤에는 자정에 가구를 바닥에 끌고 다니더라고. 나는 여섯 시에 일어나야 하는데. 문 두드리러 가는 이웃은 되지 말자고 스스로 계속 다짐하는데, 이제 이런 밤 두 번만 더 있으면 딱 그런 이웃이 될 것 같아.",
+      "text": "The people upstairs have a little kid, so I've never said anything about the running around, because that's just what kids do. But last night they were dragging furniture across the floor at midnight, and I have to be up at six. I keep telling myself I'm not going to be the neighbor who knocks on the door, but I'm about two nights away from being that neighbor.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "There's a little kid up there, so I've never brought up the running around, kids just do that. But last night they're dragging furniture across the floor at midnight and I gotta be up at six. I keep telling myself I'm not gonna be the neighbor who knocks on the door, but I'm like two nights away from being that neighbor."
+        },
+        {
+          "style": "formal",
+          "text": "The family upstairs has a young child, so I have never said anything about the running around, because that is simply what children do. Last night, however, they were dragging furniture across the floor at midnight, and I must be up at six. I keep telling myself that I will not become the neighbor who knocks on the door, but I am about two nights away from being that neighbor."
+        }
+      ],
+      "note": "**that's just what kids do** 는 애들은 원래 그런다는 뜻으로, 상대를 이해해 주고 넘어갈 때 씁니다. **about two nights away from** 은 두 밤만 더 지나면 그렇게 된다는 말로, 참는 게 한계에 다다랐을 때 씁니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "택배가 같은 창고에 엿새째 그대로 있는데 배송 조회에는 그냥 배송 중이라고만 떠. 그걸로는 알 수 있는 게 아무것도 없잖아. 그래서 결국 문의를 넣었더니 영업일로 이틀은 더 기다려야 그때부터 확인이라도 해 볼 수 있대. 휴대폰 충전기야! 이럴 줄 알았으면 월요일에 그냥 나가서 하나 샀지.",
+      "text": "My package has been sitting at the same warehouse for six days and the tracking just says in transit, which tells me nothing. So I finally messaged them, and they said to give it two more business days before they can even look into it. It's a phone charger! I would have gone and bought one on Monday if I'd known.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Six days my package has been sitting at the same warehouse, and the tracking just says in transit, which tells me nothing. So I finally messaged them and they're like, give it two more business days before we can even look into it. It's a phone charger! I'd have gone and bought one Monday if I'd known."
+        },
+        {
+          "style": "formal",
+          "text": "My package has remained at the same warehouse for six days, and the tracking states only that it is in transit, which tells me nothing. I finally messaged them, and they said to allow two more business days before they are able to look into it at all. It is a phone charger. Had I known, I would have gone out and purchased one on Monday."
+        }
+      ],
+      "note": "**in transit** 은 배송 조회에 뜨는 배송 중이라는 말입니다. **look into it** 은 무슨 일인지 알아본다는 뜻이고, **business days** 는 주말을 뺀 영업일입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그래서 그동안 어떻게 지냈어? 내가 마지막으로 알기로는 주차 때문에 골치인 그 아파트를 일 년 더 계약하려던 참이었고, 그것 때문에 꽤 힘들어했잖아. 그냥 눌러앉았어, 아니면 진짜로 나왔어?",
+      "text": "So what have you been up to? Last I knew you were about to sign another year on that apartment with the parking situation, and you were pretty miserable about it. Did you stay, or did you actually get out of there?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "How've you been? Last I heard you were about to sign another year on that place with the parking mess, and you were pretty miserable about it. Did you stay, or did you actually get out of there?"
+        },
+        {
+          "style": "formal",
+          "text": "What have you been doing lately? The last I knew, you were about to sign another year on that apartment with the parking situation, and you were quite miserable about it. Did you remain there, or did you in fact leave?"
+        }
+      ],
+      "note": "**what have you been up to** 는 그동안 뭐 하고 지냈냐고 안부를 묻는 말입니다. **Last I knew** 는 내가 마지막으로 알기로는, **get out of there** 는 거기서 빠져나오다라는 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "원래 걔 생일을 마당에서 하려고 했는데, 토요일에 화씨 95도까지 올라간다는 데다 거기는 그늘이 하나도 없어서 아예 통째로 언니네 집으로 옮겼어. 야외에서 구워 먹을 음식은 벌써 다 만들어 놨거든. 그래서 이제 언니네 거실에서 햄버거랑 감자 샐러드를 먹게 생겼어.",
+      "text": "We were going to do her birthday out in the yard, but it's supposed to be ninety five on Saturday and there's no shade back there, so we moved the whole thing over to my sister's place. I've already made all the cookout food, so now we're eating burgers and potato salad in her living room.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Her birthday was gonna be out in the yard, but it's supposed to be ninety five Saturday and there's no shade back there, so we moved the whole thing over to my sister's. I already made all the cookout food, so now we're eating burgers and potato salad in her living room."
+        },
+        {
+          "style": "formal",
+          "text": "We had intended to hold her birthday outside in the yard, but the temperature is expected to reach ninety five on Saturday and there is no shade back there, so we have moved the entire event to my sister's home. I have already prepared all of the cookout food, so we will be eating burgers and potato salad in her living room."
+        }
+      ],
+      "note": "**cookout** 은 마당이나 야외에서 고기를 구워 먹는 모임입니다. **there's no shade** 는 그늘이 없다, **move the whole thing over to** 는 행사를 통째로 다른 데로 옮긴다는 말입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "거기까지 그 먼 길을 운전해서 갔는데 주차장이 꽉 차서 다들 자리 찾아 뱅뱅 돌고 있더라. 어차피 시간도 한 시간밖에 없었고. 주차하고 옷 갈아입고 나면 갔다 온 보람도 없었을 것 같아서 그냥 집으로 왔어. 내일 갈 거야, 그런 눈으로 보지 마.",
+      "text": "I drove all the way over there, and then the lot was full and people were circling, and I only had an hour anyway. By the time I parked and got changed it wouldn't have been worth it, so I just came home. I'll go tomorrow, don't give me that look.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I get all the way out there and the lot's full, people circling, and I've only got an hour anyway. Between parking and getting changed it wasn't gonna be worth it, so I just went home. I'll go tomorrow, don't give me that look."
+        },
+        {
+          "style": "formal",
+          "text": "I drove the entire way there, and then the lot was full and people were circling, and I had only an hour in any case. By the time I had parked and changed, it would not have been worthwhile, so I simply returned home. I will go tomorrow. Please do not give me that look."
+        }
+      ],
+      "note": "**all the way** 는 그 먼 데까지라는 뜻으로 수고를 강조합니다. **by the time** 은 어떤 일을 다 마쳤을 때쯤이면, **don't give me that look** 은 그런 눈으로 보지 말라는 말입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 'the running about' 을 'running around' 으로 되돌렸습니다. 영국식 표현인 데다 'about the running about' 처럼 about 이 두 번 겹쳐 소리내어 읽으면 걸립니다. text 의 표현과도 어긋났습니다.",
+    "5번 casual 이 'So I get all the way out there'(현재) 로 시작해 놓고 'I only had an hour'(과거) 로 이어져 시제가 한 문장 안에서 엇갈렸습니다. 현재로 이야기하는 말투를 그대로 두되 'I've only got an hour', 'it wasn't gonna be worth it' 로 맞췄습니다."
+  ]
+}

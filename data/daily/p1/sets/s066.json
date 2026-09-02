@@ -1,0 +1,115 @@
+{
+  "setId": "s066",
+  "videoId": "daily-s066",
+  "title": "Set 66",
+  "madeAt": "2026-09-03",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "우리 팀에 이런 애가 하나 있는데, 뭐 좀 해 달라고 하면 매번 알았어 알았어, 갖다 줄게 해 놓고는 감감무소식이야. 그래서 결국 내가 직접 하게 되고, 이제는 다들 그게 원래 내 일인 줄 알아. 한마디 해야 하는 건 나도 아는데, 7월 내내 내 일 대신 막아 준 게 걔라서 계속 그냥 넘어가게 돼.",
+      "text": "Okay so there's this guy on my team, and every time I ask him for something he goes yeah yeah, I'll get it to you, and then nothing. So I end up just doing it myself, and now everybody assumes it was mine to begin with. I know I should say something to him, but he's the one who covered for me all of July, so I keep letting it go.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "This guy I work with, every time I ask him for something it's yeah yeah, I'll get it to you, and then nothing shows up. So I just do it myself, and now everyone thinks it was my job from the start. I know I should say something, but he covered for me all of July, so I keep letting it slide."
+        },
+        {
+          "style": "formal",
+          "text": "There is a colleague on my team who, every time I ask him for something, tells me that he will get it to me, and then nothing happens. As a result, I end up doing it myself, and now everyone assumes the work was mine from the beginning. I know that I should raise it with him, but he is the one who covered for me for all of July, so I keep letting it go."
+        }
+      ],
+      "note": "**I'll get it to you** 는 해서 곧 넘겨 주겠다는 말입니다. 여기서는 그 말만 해 놓고 실제로는 안 하는 상황이라 비꼬는 투가 됩니다. **covered for me** 는 내가 못 할 때 대신 맡아 줬다는 뜻이고, **letting it go** 와 **letting it slide** 는 둘 다 따지지 않고 그냥 넘어간다는 말입니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "셔츠는 예쁘네. 근데 그걸 대체 언제 입을지를 모르겠어. 회사에 입고 가진 않을 거고, 주말엔 늘 가던 데 세 군데만 가잖아. 그냥 마음에 들어서 사는 거면 괜찮아. 다만 맨날 입을 거라는 말은 하지 마. 부츠 살 때도 똑같이 말했잖아.",
+      "text": "It's a nice shirt, I just don't know when you'd actually wear it. Like you're not putting that on for work, and on the weekend we go to the same three places. If you're buying it because you like it, that's fine, just don't tell me you're going to wear it all the time, because you said that about the boots too.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nice shirt. I just don't see when you'd actually wear it. You're not putting that on for work, and on the weekend we go to the same three places. If you're buying it because you like it, fine, just don't tell me you're gonna wear it all the time, because you said that about the boots too."
+        },
+        {
+          "style": "formal",
+          "text": "It is a nice shirt, but I simply do not know when you would actually wear it. You would not wear it to work, and on the weekend we go to the same three places. If you are buying it because you like it, that is fine, but please do not tell me that you will wear it all the time, because you said that about the boots as well."
+        }
+      ],
+      "note": "**when you'd actually wear it** 의 actually 는 정말로 그걸 입을 일이 있느냐는 뜻으로, 안 입을 것 같다는 지적을 부드럽게 돌려 말합니다. **you said that about the boots too** 처럼 앞선 전적을 들어 보이는 것도 자주 쓰는 말투입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이번 달에만 드라마를 네 개쯤 시작해 놓고 하나도 안 끝냈잖아. 그러니까 오늘 밤에 또 그러진 않을래. 그리고 자막 있는 건 틀지 마. 2화쯤 되면 너 핸드폰만 보고 있을 거고, 그럼 내가 소리 내서 읽어 주는 신세가 되잖아.",
+      "text": "We've started like four different shows this month and finished none of them, so I'm not doing that again tonight. And don't put on anything with subtitles, because you'll be on your phone by the second episode, and then I'm the one reading it out loud to you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That's like four shows we've started this month and we haven't finished one, so I'm not doing that again tonight. And nothing with subtitles, because you'll be on your phone by episode two, and then I'm the one reading them out loud to you."
+        },
+        {
+          "style": "formal",
+          "text": "We have started four different shows this month and finished none of them, so I would rather not do that again tonight. Please also avoid anything with subtitles, because you will be on your phone by the second episode, and then I will be the one reading them aloud to you."
+        }
+      ],
+      "note": "**I'm not doing that again** 은 같은 짓을 또 반복하지 않겠다는 말입니다. **I'm the one reading it out loud to you** 처럼 I'm the one 을 쓰면 결국 그 일을 떠맡는 사람이 나라는 불만이 담깁니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "나는 개 좀 내보내야 한다고 말할래. 그 핑계엔 아무도 토를 안 달거든. 피곤하다고 하면 네 동생이 또 한 잔 더 시킬 거고, 그럼 나 자정까지 여기 붙잡혀 있어야 해. 그러니까 10분쯤 있다가 개 내보냈냐고 물어봐 줘.",
+      "text": "I'm going to tell them I have to let the dog out, because nobody argues with that one. If I say I'm tired, your brother will just order another round, and then I'm here till midnight. So give me ten minutes and then ask me if the dog's been out yet.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'll just say I gotta let the dog out, nobody argues with that one. If I say I'm tired, your brother's gonna order another round, and then I'm stuck here till midnight. So give me ten minutes and then ask me if the dog's been out yet."
+        },
+        {
+          "style": "formal",
+          "text": "I am going to tell them that I have to let the dog out, because no one questions that excuse. If I say that I am tired, your brother will simply order another round, and then I will be here until midnight. So give me ten minutes, and then ask me whether the dog has been out yet."
+        }
+      ],
+      "note": "**let the dog out** 은 개를 잠깐 밖에 내보내는 일상적인 표현입니다. **nobody argues with that one** 은 그 핑계에는 아무도 이의를 안 단다는 뜻이고, **order another round** 는 다 같이 한 잔씩 더 시키는 것입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "우리 집 개는 누가 옆에 서서 보고 있지 않으면 밥을 안 먹어. 언제부터 그랬는지는 나도 모르겠는데, 내가 주방에서 나가면 먹다 말고 따라 나와. 그래서 요즘은 아침마다 커피 들고 감독이라도 하는 것처럼 서 있어. 아내는 그게 웃겨 죽겠대. 개 버릇 들이지 말자고 한 사람이 나였거든.",
+      "text": "Our dog won't eat unless somebody's standing there watching him. I have no idea how that started, but if I walk out of the kitchen he stops and follows me. So now I stand there with my coffee every morning like I'm supervising, and my wife thinks it's hilarious, because I'm the one who said we weren't going to spoil him.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The dog won't touch his food unless someone's standing there watching him. No clue how that started, but if I leave the kitchen he stops and comes after me. So every morning I'm standing there with my coffee like some kind of supervisor, and my wife thinks it's hilarious, because I'm the one who said we weren't gonna spoil him."
+        },
+        {
+          "style": "formal",
+          "text": "Our dog will not eat unless someone is standing there watching him. I have no idea how it began, but if I leave the kitchen, he stops and follows me. So every morning I stand there with my coffee as though I am supervising, and my wife finds it hilarious, because I am the one who said that we were not going to spoil him."
+        }
+      ],
+      "note": "**spoil him** 은 다 받아 주다가 버릇을 잘못 들인다는 뜻입니다. **hilarious** 는 아주 웃기다는 뜻으로 funny 보다 한 단계 센 말이지만, 일상 대화에서 가볍게 아주 자주 씁니다. **I have no idea how that started** 는 어쩌다 이렇게 됐는지 모르겠다고 할 때 씁니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 note: \"I'll get it to you\" 를 \"실제로는 안 하는 사람이 자주 쓰는 표현\" 이라고 설명했는데 표현 자체에 그런 뜻은 없습니다. 이 문장의 상황 때문에 비꼬는 투가 되는 것이라고 고쳤습니다.",
+    "2번 formal: 세미콜론으로 이어 붙였는데 소리내어 말할 때는 드러나지 않는 문장부호라 but 으로 이었습니다. 뜻은 그대로입니다.",
+    "5번 note: hilarious 를 \"배꼽 잡게 웃기다\" 로 세게 설명했는데, 실제로는 일상 대화에서 가볍게 아주 자주 쓰는 말이라 그렇게 고쳤습니다.",
+    "그 밖에는 손대지 않았습니다. text 는 그대로 두었고, 3번의 text \"reading it out loud\" 와 alts 의 \"reading them\" 차이도 말로는 자연스러운 범위라 두었습니다."
+  ]
+}

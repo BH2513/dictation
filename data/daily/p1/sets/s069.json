@@ -1,0 +1,114 @@
+{
+  "setId": "s069",
+  "videoId": "daily-s069",
+  "title": "Set 69",
+  "madeAt": "2026-09-04",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "늘 사던 네 가지만 집었어. 닭고기, 계란, 커피, 빵. 그런데 62달러가 나오더라. 화면 쳐다보면서 숫자가 바뀌기라도 할 것처럼 그 자리에 서 있었어. 더 싼 데로 차 몰고 다녀야지 하면서도, 편도 20분이라 당연히 한 번도 안 가.",
+      "text": "I grabbed the same four things I always get, chicken, eggs, coffee and bread, and it came out to sixty two dollars. I actually stood there looking at the screen like it was going to change. And I keep saying I'll start driving out to the cheaper place, but that's twenty minutes each way, so of course I never do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Same four things I always buy, chicken, eggs, coffee and bread, and it came to sixty two dollars. I just stood there staring at the screen like the number was gonna change. And I keep saying I'm gonna start driving out to the cheaper place, but that's twenty minutes each way, so yeah, I never do."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased the same four items I always buy, chicken, eggs, coffee and bread, and the total came to sixty two dollars. I stood there looking at the screen as though it were going to change. I keep telling myself that I will start driving out to the less expensive store, but it is twenty minutes in each direction, so of course I never do."
+        }
+      ],
+      "note": "**came out to** 는 합계가 얼마 나왔다는 뜻이에요. **each way** 는 왕복이 아니라 한쪽 방향으로만 걸리는 시간, 즉 편도를 말합니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그래서 그동안 어떻게 지냈어? 두 마디로 때우지 말고. 우리 못 본 지 일 년 반은 됐잖아? 마지막으로 들었을 땐 그 회사 막 들어가려던 참이었지. 출퇴근이 멀어서 딱 6개월만 다니겠다고 큰소리쳤던 데. 아직도 다녀?",
+      "text": "So how have you been? And don't give me the two word version, because it's been what, a year and a half? Last I heard you were about to start that job with the commute you swore you'd only do for six months. Are you still doing that?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, catch me up. And not the two word version, because what, it's been a year and a half? Last I heard you were about to start that job with the commute you swore you'd only do for six months. You still doing that?"
+        },
+        {
+          "style": "formal",
+          "text": "How have you been? Please do not give me the two word version, as it has been a year and a half, has it not? The last I heard, you were about to begin that job with the commute you insisted you would only endure for six months. Are you still doing that?"
+        }
+      ],
+      "note": "**the two word version** 은 잘 지냈어 정도로 짧게 끝내는 대답을 말해요. **swore** 는 맹세했다기보다 딱 그때까지만 하겠다고 장담했다는 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "윗집에 애가 하나 있는데 아침 6시부터 뛰어. 진짜 뛴다니까. 근데 네 살이라 화를 낼 수도 없어. 문제는 밤 11시에 가구를 끌고 다닌다는 거야. 그건 진짜 거슬려. 그래서 소리 덮으려고 선풍기 틀어 놓고 자는데, 아내가 그걸 못 견뎌 해. 이제 윗집 말고 선풍기 가지고 싸우고 있어.",
+      "text": "The people above us have a kid who runs, and I mean runs, from about six in the morning, and I can't even be mad about that because he's four. But then they're dragging furniture around at eleven at night, and that part I do mind. So I've been sleeping with a fan on just for the noise, and my wife can't stand it, and now we're arguing about the fan instead of them.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "There's a kid upstairs who runs, and I mean runs, from about six in the morning, and I can't even be mad about it, he's four. But then they're dragging furniture around at eleven at night, and that part I do mind. So I've been sleeping with a fan on just for the noise, and my wife hates it, and now we're fighting about the fan instead of them."
+        },
+        {
+          "style": "formal",
+          "text": "The family above us has a child who runs, and I do mean runs, from approximately six in the morning, and I cannot even be upset about that, as he is four. However, they then drag furniture about at eleven at night, and that I do mind. I have been sleeping with a fan on simply for the noise, and my wife cannot stand it, so we are now arguing about the fan rather than about them."
+        }
+      ],
+      "note": "**and I mean runs** 는 앞에 한 말을 다시 못 박아 진짜로 그렇다고 강조하는 표현이에요. **that part I do mind** 처럼 do 를 넣으면 그건 정말 신경 쓰인다는 뜻이 됩니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "약속까지 한 시간이 비어서 도서관 옆 카페에 가 봤는데 빈자리가 하나도 없었어. 은행 옆에 있는 데도 똑같더라. 결국 포장해서 주차장에 세워 둔 차 안에서 마셨어. 그럴 거면 대체 왜 샀나 싶어.",
+      "text": "I had an hour to kill before my appointment, so I tried the coffee place by the library, and there wasn't a free table anywhere, and the other one by the bank was exactly the same. So I ended up getting one to go and drinking it in my car in the parking lot, and at that point I don't know why I bought it at all.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was killing an hour before my appointment, so I tried the coffee place by the library, and there wasn't a free table anywhere, and the other one by the bank was exactly the same. So I just got one to go and drank it in my car in the parking lot, and at that point, why did I even buy it?"
+        },
+        {
+          "style": "formal",
+          "text": "I had an hour to spare before my appointment, so I tried the coffee shop near the library, but there was not a free table anywhere, and the other one near the bank was exactly the same. I ended up ordering one to go and drinking it in my car in the parking lot, at which point I do not know why I bought it at all."
+        }
+      ],
+      "note": "**an hour to kill** 은 남는 한 시간을 때워야 한다는 뜻이에요. **one to go** 는 매장에서 안 마시고 포장해서 가져간다는 말입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "간 지 20분쯤 됐을 때 삼촌이 애는 언제 낳을 거냐고 묻더라. 그다음엔 할머니가 묻고, 디저트 먹을 때 또 누가 꺼냈어. 이미 두 번이나 나온 얘긴데. 악의가 있어서 그러는 게 아니라는 게 문제야. 진짜로 궁금해서 묻는 거거든. 다들 그만 묻게 만들 답이 나한테 없으니까, 그냥 나중에 봐야지 하면서 감자만 더 가져다 먹었어.",
+      "text": "We'd been there maybe twenty minutes when my uncle asked when we're having kids, and then my grandma asked me, and then somebody brought it up again over dessert like it hadn't already come up twice. And they're not being mean about it, that's the thing, they actually want to know. I just don't have an answer that makes everybody drop it, so I kept saying we'll see and going back for more potatoes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Twenty minutes in, maybe, and my uncle's asking when we're having kids, then my grandma asks me, then somebody brings it up again over dessert like it hadn't already come up twice. And they're not being mean about it, that's the thing, they actually wanna know. I just don't have an answer that gets everybody to drop it, so I kept saying we'll see and going back for more potatoes."
+        },
+        {
+          "style": "formal",
+          "text": "We had been there perhaps twenty minutes when my uncle asked when we intended to have children, and then my grandmother asked me, and then someone raised it again over dessert as though it had not already come up twice. They are not being unkind about it, and that is exactly the problem, they genuinely want to know. I simply do not have an answer that leads everyone to let it go, so I kept saying we will see and returning for more potatoes."
+        }
+      ],
+      "note": "**drop it** 은 그 얘기를 더 안 하고 그만두라는 뜻이에요. **we'll see** 는 확답을 피하면서 넘어갈 때 쓰는 두루뭉술한 대답입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "5번 formal: \"asked when we are having children\" 는 시제가 어긋나 어색해서 \"asked when we intended to have children\" 으로 고쳤습니다.",
+    "5번 formal: \"which is the difficulty\" 가 text 의 \"that's the thing\"(그게 문제야) 뜻을 제대로 옮기지 못해 \"and that is exactly the problem\" 으로 바꿨습니다.",
+    "4번 formal: \"an hour to kill\"(남는 시간을 때워야 한다)의 뜻이 \"I had an hour\" 로 빠져 있어 \"an hour to spare\" 로 되살렸습니다."
+  ]
+}

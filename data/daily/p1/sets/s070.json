@@ -1,0 +1,118 @@
+{
+  "setId": "s070",
+  "videoId": "daily-s070",
+  "title": "Set 70",
+  "madeAt": "2026-09-04",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이십 분쯤 있다가 부탁 하나만 들어줘. 나한테 차 얘기 좀 꺼내 줘. 열 시부터 견인 구역이 되는 자리에 세워 놨거든, 그건 진짜야. 내가 그냥 일어나서 간다고 하면 너희 엄마가 싸 갈 음식을 챙겨 주기 시작할 거고 그럼 거기서 삼십 분이 더 가. 그러니까 차 얘기만 꺼내 줘, 알았지?",
+      "text": "In about twenty minutes, do me a favor and ask me about my car, because I'm parked in a spot that turns into a tow zone at ten and that part's actually true. If I just stand up and say I'm heading out, your mom's going to make me a plate to take home and that's another half hour right there. So just bring up the car, alright?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Like twenty minutes from now, ask me about my car, okay? I'm parked somewhere that turns into a tow zone at ten and that part's actually true. If I just get up and say I'm taking off, your mom's gonna fix me a plate to take home and there goes another half hour. So just bring up the car."
+        },
+        {
+          "style": "formal",
+          "text": "In approximately twenty minutes, would you do me a favor and ask me about my car? I am parked in a space that becomes a tow zone at ten, and that part is genuinely true. If I simply stand up and announce that I am leaving, your mother will prepare a plate for me to take home, and that is another half hour. So please bring up the car."
+        }
+      ],
+      "note": "**do me a favor and** 는 부탁을 꺼낼 때 앞에 붙이는 말로, 뒤에 시킬 일을 바로 이어서 말합니다. **bring up** 은 어떤 얘기를 먼저 꺼낸다는 뜻입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "우리 집 고양이가 새벽 네 시를 내가 일어나는 시간으로 정해 버렸어. 울지도 않아. 방문 앞에 앉아서 누가 문을 열어 줄 때까지 선반 위 물건을 하나씩 떨어뜨려. 버텨 보려고도 했는데 걔는 밤새 시간이 있고 나는 없잖아. 그래서 결국 나가서 밥을 줘. 그러니까 계속 그러는 거라는 것도 아는데, 새벽 네 시에는 거기까지 생각이 안 나.",
+      "text": "Our cat has decided four in the morning is when I get up, and she doesn't meow or anything, she sits outside the bedroom door and knocks things off the shelf one at a time until somebody opens it. I've tried waiting her out, but she's got all night and I don't. So I go feed her, and I know that's exactly why she keeps doing it, but at four in the morning I'm not thinking that far ahead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So apparently four in the morning is when I get up now, according to the cat. She doesn't meow or anything, she just sits outside the bedroom door and knocks stuff off the shelf one thing at a time till somebody opens it. I've tried waiting her out, but she's got all night and I don't. So I go feed her, and yeah, I know that's exactly why she keeps doing it, but at four in the morning I'm not thinking that far ahead."
+        },
+        {
+          "style": "formal",
+          "text": "Our cat has determined that four in the morning is when I get up, and she does not meow or make any sound at all. She sits outside the bedroom door and knocks items off the shelf one at a time until someone opens it. I have tried waiting her out, but she has all night and I do not. So I go and feed her, and I am aware that this is precisely why she continues to do it, but at four in the morning I am not thinking that far ahead."
+        }
+      ],
+      "note": "**waiting her out** 은 상대가 포기할 때까지 가만히 버티는 것입니다. **I'm not thinking that far ahead** 는 그 앞일까지는 머리가 안 돌아간다는 뜻입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "5번가에 있는 그 작은 가게, 금요일 하면 무조건 거기였는데, 작년에 하던 사장이 가게를 팔았어. 메뉴는 그대로인데 맛이 예전 같지가 않아. 8월에 한 번 더 가 봤는데 이십 분 만에 나왔어. 차에 탈 때까지 둘 다 그 얘기를 한마디도 안 했어. 서로 그 말을 먼저 입 밖에 내기가 싫었던 것 같아.",
+      "text": "That little place on Fifth used to be our whole Friday, and then the guy who ran it sold it last year, and it's the same menu but nothing tastes like it did. We gave it one more shot in August and we were out of there in twenty minutes. And neither of us said anything about it until we got to the car, because I don't think either of us wanted to be the one to say it out loud.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We used to spend every Friday at that little place on Fifth, and then the guy who ran it sold it last year, and it's the same menu but nothing tastes like it used to. We gave it one more try in August and we were out of there in twenty minutes. Neither of us said a word about it till we got to the car, cause I don't think either of us wanted to be the one to say it out loud."
+        },
+        {
+          "style": "formal",
+          "text": "That small place on Fifth was once our entire Friday, and then the man who ran it sold it last year. The menu is the same, but nothing tastes as it did. We gave it one more attempt in August and we left within twenty minutes. Neither of us mentioned it until we reached the car, because I do not believe either of us wished to be the one to say it aloud."
+        }
+      ],
+      "note": "**gave it one more shot** 은 마지막으로 한 번 더 해 봤다는 말입니다. **say it out loud** 는 속으로만 생각하던 것을 소리 내어 말한다는 뜻입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "봄에 기타를 하나 샀는데 진짜 꾸준히 했어. 매일 저녁 먹고 이십 분씩. 그러다 손가락이 아파서 며칠 쉬었는데 그걸로 끝이었어. 6월부터 서랍장에 기대 세워져 있고, 내가 만지는 건 청소기 돌리려고 옮길 때뿐이야. 지난주에 딸이 아직도 치냐고 묻길래 그런 셈이라고 했는데, 사실이 아니야.",
+      "text": "I got a guitar back in the spring and I was actually sticking with it, like twenty minutes after dinner every night, and then my fingers got sore so I took a couple of days off, and that was the end of it. It's been leaning against the dresser since June and the only time I touch it is when I move it to vacuum. My daughter asked me last week if I still play and I said sort of, which isn't true.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Bought a guitar back in the spring and I was actually sticking with it, like twenty minutes after dinner every night. Then my fingers got sore so I took a couple days off, and that was it. It's been leaning against the dresser since June and the only time I touch it is when I move it to vacuum. My daughter asked me last week if I still play and I said sort of, which isn't true."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar in the spring and I was genuinely keeping up with it, roughly twenty minutes after dinner each evening. Then my fingers became sore, so I took a couple of days off, and that was the end of it. It has been leaning against the dresser since June, and the only time I touch it is when I move it in order to vacuum. My daughter asked me last week whether I still play, and I said sort of, which is not true."
+        }
+      ],
+      "note": "**sticking with it** 은 중간에 그만두지 않고 계속 붙잡고 한다는 뜻입니다. **that was the end of it** 은 거기서 그대로 끝나 버렸다는 말입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "혹시 그 얘기 나오면 나 차에서 통화 중이었다고 해 줄 수 있어? 알람을 두 개나 못 듣고 내리 잤거든. 변명거리도 딱히 없어. 그냥 별것도 아닌 거 보다가 너무 늦게 잤어. 지난주 화요일 일로도 이미 한마디 들었단 말이야. 또 걸고넘어질 거리를 만들어 주고 싶지는 않아.",
+      "text": "If it comes up, can you say I was on a call in the car? Because I slept straight through two alarms, and I don't even have a good excuse, I was just up way too late watching nothing. And he already said something about last Tuesday, so I'd rather not give him another thing to bring up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Can you say I was on a call in the car, if it comes up? I slept right through two alarms, and I don't even have a good excuse, I was just up way too late watching nothing. He already said something about last Tuesday, so I'd rather not hand him another thing to bring up."
+        },
+        {
+          "style": "formal",
+          "text": "If it comes up, could you say that I was on a call in the car? I slept straight through two alarms, and I do not even have a good excuse. I was simply up far too late watching nothing. He has already made a comment about last Tuesday, so I would prefer not to give him another matter to raise."
+        }
+      ],
+      "note": "**if it comes up** 은 그 얘기가 나오게 되면 이라는 뜻입니다. **slept straight through two alarms** 는 알람이 울렸는데도 못 듣고 그냥 내리 잤다는 말입니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어에 'do me a favor'(부탁 하나만 들어줘)에 해당하는 말이 없어서 note 가 가르치는 표현을 학습자가 떠올릴 수 없었습니다. '부탁 하나만 들어줘'를 넣었습니다.",
+    "2번 casual 이 'Four in the morning is when our cat has decided I get up' 으로 어순만 뒤집은 데다 입으로 말하기 어색했습니다. 'So apparently four in the morning is when I get up now, according to the cat.' 로 더 짧고 구어답게 고쳤습니다.",
+    "2번 한국어의 '기상 시간'이 말투에 안 맞아 '내가 일어나는 시간'으로 바꿨습니다.",
+    "3번 formal 의 'we had left within twenty minutes' 는 과거완료를 쓸 자리가 아니어서 'we left within twenty minutes' 로 고쳤습니다.",
+    "3번 한국어 '우리 금요일의 전부였는데'가 영어를 그대로 옮긴 티가 나서 '금요일 하면 무조건 거기였는데'로 바꿨습니다.",
+    "4번 casual 이 text 와 앞부분·뒷부분이 거의 같았습니다. 주어를 떼고('Bought a guitar back in the spring') 쉼표로 이어 붙인 곳을 문장으로 끊어 구어답게 고쳤습니다.",
+    "4번 formal 의 'I acquired a guitar' 는 기타를 산 자리에 쓰는 말이 아니어서 'I purchased a guitar' 로 바꿨습니다."
+  ]
+}

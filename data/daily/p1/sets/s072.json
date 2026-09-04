@@ -1,0 +1,113 @@
+{
+  "setId": "s072",
+  "videoId": "daily-s072",
+  "title": "Set 72",
+  "madeAt": "2026-09-05",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 화씨 95도까지 올라간대서 언니한테 동물원은 안 가겠다고 했어. 지난번에도 한 시간쯤 버티다가 딸이 못 하겠다고 했거든. 그냥 언니네 수영장에 앉아 있자고, 그러면 아무도 운전 안 해도 되고.",
+      "text": "It's supposed to hit ninety five on Saturday, so I told my sister we're not doing the zoo, because last time we lasted about an hour before my daughter was done. We'll just sit in her pool instead and nobody has to drive anywhere.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Saturday's gonna hit ninety five, so I told my sister the zoo's off, last time we made it about an hour before my daughter was done. We'll just sit in her pool and nobody's gotta drive anywhere."
+        },
+        {
+          "style": "formal",
+          "text": "The forecast is ninety five degrees on Saturday, so I have told my sister that we will not be going to the zoo, since last time we lasted approximately an hour before my daughter had had enough. We will sit in her pool instead, and no one will have to drive anywhere."
+        }
+      ],
+      "note": "**hit ninety five** 는 기온이 95도까지 오른다는 말입니다. **my daughter was done** 은 더는 못 하겠다, 질렸다는 뜻으로 사람한테 씁니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나 오늘 밤엔 안 가. 진짜 이유를 말해 줄게. 오는 길에 가방 안에서 이어폰 배터리가 나갔어. 거기서 틀어 주는 아무 노래나 들으면서 러닝머신에서 사십 분을 버틸 생각은 없어. 이게 어떻게 들리는지는 나도 알아.",
+      "text": "I'm not going tonight, and I'll tell you the actual reason, my headphones died in my bag on the way over. I'm not doing forty minutes on a treadmill listening to whatever they've got playing in there. I know exactly how that sounds.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Skipping tonight, and I'll give you the real reason, my headphones died in my bag on the way over. No way I'm doing forty minutes on a treadmill listening to whatever they're playing in there. Yeah, I know how that sounds."
+        },
+        {
+          "style": "formal",
+          "text": "I will not be going tonight, and I will tell you the actual reason: my headphones died in my bag on the way over. I am not going to spend forty minutes on a treadmill listening to whatever they happen to be playing in there. I am well aware of how that sounds."
+        }
+      ],
+      "note": "**my headphones died** 는 이어폰 배터리가 나갔다는 말입니다. **I know exactly how that sounds** 는 내 말이 핑계처럼 들린다는 걸 스스로 안다고 미리 인정하는 표현입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "여기까지 운전해서 오기 전에 말해 둘 게 있어요. 왼쪽 쿠션 밑면에 우리 고양이가 낸 얼룩이 있어요. 뒤집어 놓으면 전혀 안 보이긴 하는데, 그 말 안 하고 소파를 팔고 싶지는 않아서요. 나머지는 다 멀쩡하고, 이사 갈 집이 좁아서 내놓는 것뿐이에요.",
+      "text": "Before you drive over, I should tell you the cushion on the left has a stain on the underside from our cat, and you can flip it over and you'd never see it, but I'm not going to sell you the couch without telling you. Everything else is solid, we're only getting rid of it because the new place is smaller.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Heads up before you drive over, the left cushion has a cat stain on the underside, and you could flip it and never know it was there, but I'm not gonna sell you the couch without saying so. Everything else is solid, we're only getting rid of it because the new place is smaller."
+        },
+        {
+          "style": "formal",
+          "text": "Before you make the drive, I should mention that the cushion on the left has a stain on the underside from our cat. It can be turned over and you would never see it, but I am not willing to sell you the couch without telling you. Everything else is in sound condition; we are only parting with it because the new place is smaller."
+        }
+      ],
+      "note": "**Heads up** 은 미리 알려 준다고 운을 뗄 때 쓰는 캐주얼한 말입니다. **flip it over** 는 뒤집어 놓는다는 뜻입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "예전 상사가 전화해서 다시 올 생각 없냐고 물었어. 돈은 지금 받는 것보다 나아. 근데 내가 거기를 그만둔 데는 이유가 있었고, 그 이유가 달라졌다고는 생각 안 해. 그래서 일주일 내내 가야지 했다가 아니지 했다가 하고 있어. 너 같으면 어떻게 하겠어?",
+      "text": "My old boss called and asked if I'd come back, and the money is better than what I'm making now, but I left there for a reason and I don't think that reason has changed. So I've been talking myself into it and back out of it all week. What would you do if you were me?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my old boss called, wants me back, and the money beats what I'm making now, but I left there for a reason and I don't think that reason has changed. I've been talking myself into it and back out of it all week. What would you do if you were me?"
+        },
+        {
+          "style": "formal",
+          "text": "My former manager called and asked whether I would return, and the salary is better than what I am earning now, but I left for a reason and I do not believe that reason has changed. I have therefore spent the entire week talking myself into it and back out of it again. What would you do in my position?"
+        }
+      ],
+      "note": "**talking myself into it and back out of it** 은 스스로 하자고 설득했다가 다시 마음을 접기를 되풀이한다는 말입니다. **the money beats what I'm making now** 는 지금 받는 돈보다 낫다는 캐주얼한 표현입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "색은 너한테 정말 잘 어울려. 내가 걸리는 건 길이야. 네가 자꾸 잡아당기는 딱 그 자리에 떨어지잖아. 입고 나서 벌써 세 번이나 그러고 있어. 밤새 옷자락 잡아당기고 있을 거면 두 번은 못 입어.",
+      "text": "The color is great on you, it's the length I'd think about, because it sits right where you keep pulling at it. You've done that three times since you put it on. If you're going to be tugging at it all night you're not going to wear it twice.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Love the color on you, it's the length I'd think about, it hits right where you keep pulling at it. You've done that three times since you put it on. If you're tugging at it all night, you're not gonna wear it twice."
+        },
+        {
+          "style": "formal",
+          "text": "The color suits you very well; it is the length I would consider, because it falls exactly where you keep pulling at it. You have done so three times since you put it on. If you are going to be tugging at it all night, you will not wear it a second time."
+        }
+      ],
+      "note": "**tugging at it** 은 옷을 자꾸 잡아당긴다는 말입니다. **it's the length I'd think about** 은 다른 건 괜찮은데 길이가 마음에 걸린다고 부드럽게 짚어 주는 표현입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "5번 casual 이 text 와 첫머리가 거의 같았습니다(The color is great on you / That color's great on you — 관사와 축약만 다름). 말투가 확실히 갈리도록 'Love the color on you' 로 시작을 바꿨습니다. 뒤의 'it's the length I'd think about' 은 note 가 짚는 표현이라 그대로 뒀습니다.",
+    "1번 한국어의 '95도' 는 한국 사람이 읽으면 섭씨로 읽혀 말이 안 됩니다. 숫자는 영어와 같게 두고 '화씨' 만 붙였습니다."
+  ]
+}

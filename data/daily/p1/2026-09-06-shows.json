@@ -1,0 +1,200 @@
+{
+  "videoId": "shows-2026-09-06",
+  "title": "From your videos · 2026-09-06",
+  "date": "2026-09-06",
+  "source": "shows",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아까 잠깐은 좀 괜찮아진 줄 알았는데, 아니네.",
+      "text": "Uh, for a second there I thought I was feeling better, but I'm not.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Thought I was getting better for a sec, but nope."
+        },
+        {
+          "style": "formal",
+          "text": "Briefly I believed I was recovering, but apparently I am not."
+        }
+      ],
+      "note": "**for a second there** 는 \"방금 잠깐은\" 이라는 뜻으로, 조금 전에 잠깐 그렇게 생각했다가 아니었음을 알았을 때 문장 앞에 붙입니다. 몸 상태뿐 아니라 \"잠깐 될 줄 알았는데\" 하는 모든 자리에 씁니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 28
+      },
+      "start": 61.039,
+      "end": 63.91,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나 결혼할 때 그 연락처 수첩 너희한테 넘겼어야 했는데.",
+      "text": "I should have given you guys my black book when I got married.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Shoulda handed you my little black book back when I got married."
+        },
+        {
+          "style": "formal",
+          "text": "When I married, I ought to have passed that address book on to you."
+        }
+      ],
+      "note": "**should have given** 은 \"줬어야 했는데 안 줬다\" 는 뒤늦은 아쉬움입니다. **you guys** 는 친구 여러 명을 한꺼번에 부를 때 쓰는 가장 흔한 말로, 남녀 섞여 있어도 그대로 씁니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 332
+      },
+      "start": 860.079,
+      "end": 862.44,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그냥 자동응답기가 받게 두는 게 어때?",
+      "text": "Why don't we just let the machine get that?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Just let it go to voicemail."
+        },
+        {
+          "style": "formal",
+          "text": "Perhaps we should allow the answering machine to take the call."
+        }
+      ],
+      "note": "**Why don't we just** 는 \"그냥 ~하는 게 어때?\" 하고 부드럽게 제안할 때 씁니다. just 가 들어가면 \"복잡하게 굴지 말고\" 하는 느낌이 더해집니다. 전화를 안 받고 넘길 때 **let it go to voicemail** 도 요즘 더 많이 쓰는 표현입니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 369
+      },
+      "start": 869.64,
+      "end": 872.959,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "나 청소기에 딸린 부속품 다 써 봤어. 솔 달린 그 동그란 것만 빼고.",
+      "text": "I've even used all those attachments on the vacuum except for that little round one with the bristles.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tried every attachment on the vacuum except that little round brush one."
+        },
+        {
+          "style": "formal",
+          "text": "Every attachment on the vacuum has been used, apart from the small round one with the bristles."
+        }
+      ],
+      "note": "**attachments** 는 청소기나 믹서기처럼 본체에 갈아 끼우는 부속품을 말합니다. '이것까지 다 해 봤다' 고 살짝 자랑하듯 말할 때 **I've even used** 처럼 even 을 넣습니다.",
+      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
+      "from": {
+        "videoId": "QdQ58BbGRsA",
+        "i": 726
+      },
+      "start": 2032.64,
+      "end": 2036.48,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그거면 필요한 정보는 거의 다 있는 거예요.",
+      "text": "It's pretty much all the information you need.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That's about all you need to know."
+        },
+        {
+          "style": "formal",
+          "text": "Virtually all of the information you require is included there."
+        }
+      ],
+      "note": "**pretty much** 은 '거의, 사실상' 이라는 뜻으로 딱 잘라 말하기 애매할 때 앞에 붙입니다. 글보다 말할 때 훨씬 자주 나옵니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 894
+      },
+      "start": 2292.68,
+      "end": 2294.72,
+      "recording": null
+    },
+    {
+      "i": 5,
+      "ko": "브라이언은 너한테 좀 과분한 것 같은데.",
+      "text": "Well, I think Brian's a little out of your league.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly, Brian's a bit much for you."
+        },
+        {
+          "style": "formal",
+          "text": "In my opinion, Brian is somewhat beyond your reach."
+        }
+      ],
+      "note": "**out of your league** 는 상대가 나보다 급이 높아서 넘보기 어렵다는 뜻입니다. 주로 연애 얘기에서 친구를 놀리듯 가볍게 씁니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1335
+      },
+      "start": 3387.079,
+      "end": 3391.724,
+      "recording": null
+    },
+    {
+      "i": 6,
+      "ko": "그리고 조만간 제 가게를 하나 내고 싶어요.",
+      "text": "And someday soon, I hope to open my own restaurant.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Pretty soon I want to have a place of my own."
+        },
+        {
+          "style": "formal",
+          "text": "In the near future, I intend to establish my own restaurant."
+        }
+      ],
+      "note": "**someday soon** 은 '언젠가 곧', 정해지진 않았지만 멀지 않은 때를 말합니다. 꿈이나 계획을 조심스럽게 꺼낼 때 **I hope to** 와 짝으로 씁니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1035
+      },
+      "start": 2619.24,
+      "end": 2623.68,
+      "recording": null
+    },
+    {
+      "i": 7,
+      "ko": "저기요, 이거 제가 시킨 거랑 다른데요.",
+      "text": "No, no, this is not what I ordered.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, I didn't order this."
+        },
+        {
+          "style": "formal",
+          "text": "Excuse me, but this does not appear to be the dish I ordered."
+        }
+      ],
+      "note": "**this is not what I ordered** 는 식당에서 다른 음식이 나왔을 때 그대로 쓰는 말입니다. 따지는 말이 아니라 사실을 알리는 말이라, 앞에 Excuse me 만 붙이면 충분히 정중합니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 243
+      },
+      "start": 620.28,
+      "end": 623.08,
+      "recording": null
+    }
+  ]
+}

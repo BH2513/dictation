@@ -1,0 +1,109 @@
+{
+  "setId": "s076",
+  "videoId": "daily-s076",
+  "title": "Set 76",
+  "madeAt": "2026-09-06",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "여기까지 차 몰고 오기 전에 미리 말해 둘게요. 뒷바퀴가 일주일쯤은 바람이 차 있다가 다시 주저앉아요. 그래서 튜브를 새로 갈아 끼워야 할 거예요. 계속 미루다가 여름 내내 그냥 그 상태로 탔는데, 주차장에서 그걸 알게 되는 건 아닌 것 같아서요. 그래서 140달러가 아니라 90달러예요.",
+      "text": "Heads up before you drive all the way out here, the back tire holds air for about a week and then it's flat again, so you'd want to put a new tube in it. I've been riding it like that all summer because I never got around to it, but I'm not going to let you find that out in the parking lot. That's why it's ninety and not a hundred and forty.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Before you drive all the way out here, you should know the back tire holds air for like a week and then it's flat again, so you'd wanna throw a new tube in it. I've been riding it like that all summer 'cause I never got around to it, but I'm not gonna let you find that out in the parking lot. That's why it's ninety and not a hundred and forty."
+        },
+        {
+          "style": "formal",
+          "text": "I want to mention this before you make the drive out here. The back tire holds air for about a week and then it goes flat again, so you would want to install a new tube. I have been riding it in that condition all summer because I never got around to it, but I would rather not have you discover it in the parking lot. That is why the price is ninety rather than a hundred and forty."
+        }
+      ],
+      "note": "**Heads up** 은 본론에 들어가기 전에 미리 알려 둔다는 말이에요. **never got around to it** 은 할 마음은 있었는데 계속 못 했다는 뜻이고요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아니, 이미 두 번이나 본 건 틀지 말자. 그거 편한 거 알고 네가 좋아하는 것도 아는데, 그거 틀면 나 두 번째 화쯤엔 폰만 보고 있을걸. 그러고 나면 너는 내가 너랑 같이 뭘 본 적이 없다고 하겠지. 우리 둘 다 안 본 걸로 골라. 그러면 지루한 부분도 내가 참고 볼게, 약속.",
+      "text": "Okay, we're not putting on the one we've already seen twice. I know it's easy and I know you love it, but if you put that on I'm on my phone by the second episode, and then you'll say I never actually watch anything with you. Pick something neither of us has seen and I'll sit through the slow parts, I promise.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nope, we're not putting on the one we've already seen twice. I know it's easy and I know you love it, but if you put that on I'm on my phone by the second episode, and then you'll tell me I never actually watch anything with you. Pick something neither of us has seen and I'll sit through the slow parts, promise."
+        },
+        {
+          "style": "formal",
+          "text": "I would rather we did not put on the one we have already seen twice. I understand that it is easy and that you love it, but if you put it on, I will be on my phone by the second episode, and then you will say that I never actually watch anything with you. Please choose something neither of us has seen, and I will sit through the slow parts. You have my word."
+        }
+      ],
+      "note": "**sit through** 는 지루하거나 힘들어도 끝까지 앉아서 본다는 뜻이에요. **neither of us has seen** 은 우리 둘 다 안 본 것이라는 말이고요.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "거기까지 다 갔어. 그래 놓고 주차장에 앉아서 사람들이 매트 들고 들어가는 것만 보고 있었지. 7시까지 안에서 수업이 있다는 얘기잖아. 차에서 끝날 때까지 기다릴 수도 있었는데, 내가 나를 알잖아. 어차피 그때쯤이면 스스로 안 가는 쪽으로 마음을 돌렸을 거야. 그래서 그냥 집으로 왔고, 지금 여기 앉아서 아침에 가겠다고 말하고 있네.",
+      "text": "I got all the way there, and then I sat in the lot and watched a bunch of people walk in with mats, which means there's a class on the floor until seven. I could've waited it out in the car, but I know myself, I'd have talked myself out of it by then anyway. So I drove home, and now I'm sitting here telling you I'll go in the morning.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I got all the way there, then I just sat in the lot watching a bunch of people walk in with mats, which means there's a class on the floor till seven. I could've waited it out in the car, but I know myself, I'd have talked myself out of it by then anyway. So I drove home, and now I'm sitting here telling you I'll go in the morning."
+        },
+        {
+          "style": "formal",
+          "text": "I arrived, and then I sat in the lot and watched a number of people walk in carrying mats, which means there is a class on the floor until seven. I could have waited it out in the car, but I know myself, and I would have talked myself out of it by then in any case. So I drove home, and now I am sitting here telling you that I will go in the morning."
+        }
+      ],
+      "note": "**waited it out** 은 상황이 끝날 때까지 버티며 기다린다는 뜻이에요. **talked myself out of it** 은 스스로를 설득해서 안 하기로 한다는 말입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "걔가 7월 이후로 나한테 세 번이나 약속을 취소했어. 그것도 늘 당일에. 그런데 매번 진짜 이유가 있어서 대놓고 짜증도 못 내겠어. 지금 와서 이 얘기를 꺼내면 내가 횟수를 세고 있었던 것처럼 들리잖아. 솔직히 세고 있긴 했지. 그렇다고 아무 말도 안 하면 앞으로도 계속 아무 말 못 하고 넘어갈 거고. 너 같으면 말하겠어? 아니면 내가 예민한 거야?",
+      "text": "She's cancelled on me three times since July, always the day of, and there's always a real reason, so I can't even be annoyed about it out loud. But if I bring it up now it sounds like I've been keeping count, and honestly I have been. And if I don't say anything I'm just going to keep not saying anything. Would you say something, or is that a me problem?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That's three times she's cancelled on me since July, always the day of, and there's always a real reason, so I can't even be annoyed about it out loud. But if I bring it up now it sounds like I've been keeping count, and honestly I have been. And if I don't say anything I'm just gonna keep not saying anything. Would you say something, or is that a me problem?"
+        },
+        {
+          "style": "formal",
+          "text": "She has cancelled on me three times since July, always on the day itself, and there is always a legitimate reason, so I cannot even express my annoyance out loud. But if I raise it now, it will sound as though I have been keeping count, and honestly I have been. And if I say nothing, I will simply continue to say nothing. Would you say something, or is that a problem of my own making?"
+        }
+      ],
+      "note": "**the day of** 는 바로 그날, 약속 당일을 가리켜요. **is that a me problem** 은 문제가 상대가 아니라 내 쪽에 있는 거냐고 묻는 요즘 표현입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "금요일에 배송 완료로 찍혔는데 문 앞에 아무것도 없어. 보내 준 사진은 남의 집 현관이고, 우리 건물도 아니야. 그래서 복도 쪽 집들 문을 두드리면서 내 이름 적힌 상자 받은 사람 있냐고 물어보고 다녔어. 판매자는 택배사에 접수하라고 하고, 택배사는 판매자한테 다시 가라고 하고. 나만 중간에 껴서 기다리라는 소리만 듣고 있어.",
+      "text": "They marked it delivered on Friday and there's nothing at my door, and the photo they sent is somebody else's porch, it's not even my building. So I've been knocking on doors down the hall asking if anybody got a box with my name on it. And the seller tells me to file a claim with the carrier, and the carrier tells me to go back to the seller, so I'm stuck in the middle getting told to wait.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So they marked it delivered Friday and there's nothing at my door, and the photo they sent is somebody else's porch, it's not even my building. So I've been knocking on doors down the hall asking if anybody got a box with my name on it. And the seller tells me to file a claim with the carrier, the carrier tells me to go back to the seller, so I'm stuck in the middle getting told to wait."
+        },
+        {
+          "style": "formal",
+          "text": "They marked it delivered on Friday and there is nothing at my door, and the photograph they sent shows somebody else's porch. It is not even my building. I have been knocking on doors down the hall asking whether anybody received a box with my name on it. The seller tells me to file a claim with the carrier, and the carrier tells me to return to the seller, so I am caught in the middle and being told to wait."
+        }
+      ],
+      "note": "**file a claim** 은 분실이나 파손을 정식으로 접수하는 것을 말해요. **stuck in the middle** 은 양쪽 사이에 껴서 아무것도 못 하는 상황입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ]
+}

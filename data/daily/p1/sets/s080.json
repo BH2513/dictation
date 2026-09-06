@@ -1,0 +1,114 @@
+{
+  "setId": "s080",
+  "videoId": "daily-s080",
+  "title": "Set 80",
+  "madeAt": "2026-09-07",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아니, 그건 말고. 저번 주에도 네가 그거 골라 놓고 2화쯤에서 잠들었잖아. 그래서 일요일 아침에 내가 놓친 내용을 처음부터 다 설명해 줬고. 그러니까 이번엔 안 자고 끝까지 보든가, 아니면 내가 8월부터 노래 부르던 그거 드디어 틀든가.",
+      "text": "Okay, not that one. You picked it last week and you were asleep by the second episode, and then I had to catch you up on the whole thing Sunday morning. So either you stay awake for it this time, or we finally put on the one I've been asking about since August.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nope, pick something else. That was your pick last week and you were out cold by episode two, and then I had to fill you in on the whole thing Sunday morning. So you stay awake for it this time, or we finally put on the one I've been asking about since August."
+        },
+        {
+          "style": "formal",
+          "text": "That one is not an option. You selected it last week and you were asleep by the second episode, and then I had to summarize the entire thing for you on Sunday morning. So either you remain awake for it this time, or we finally watch the one I have been asking about since August."
+        }
+      ],
+      "note": "**catch you up on** 은 상대가 놓친 내용을 따라잡게 설명해 준다는 뜻입니다. **put on** 은 영상이나 음악을 튼다는 말입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "가방까지 차에 실어 놨었어. 그런데 마커스가 자기는 벌써 거기서 하체 하는 중이라고 문자를 보낸 거야. 내가 들어가면 걔가 나도 같이 하체 시킬 거고. 그래서 걔 없는 내일 가려고. 진짜 이유가 그거야. 더 그럴듯한 핑계를 지어낼 생각도 없어.",
+      "text": "I had my bag in the car and everything, but then Marcus texted me he's already there doing legs, and if I walk in he's going to make me do legs with him. So I'm going tomorrow when he's not there. That's the actual reason, I'm not even going to make up a better one.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My bag was in the car and everything, and then Marcus texts me he's already there doing legs, and if I show up he's gonna make me do legs with him. So I'm just going tomorrow when he's not around. That's really the reason, I'm not even gonna come up with a better one."
+        },
+        {
+          "style": "formal",
+          "text": "I had my bag in the car and everything, but then Marcus sent me a message saying he is already there training legs, and if I walk in he is going to make me train legs with him. So I am going tomorrow, when he is not there. That is the actual reason; I am not going to invent a better one."
+        }
+      ],
+      "note": "**doing legs** 는 헬스장에서 하체 운동을 한다는 말입니다. **make up** 은 없는 이야기를 지어낸다는 뜻입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "미안해. 걔네한테는 밤새 폰이 꺼져 있었다고 했어. 따지고 보면 거짓말은 아니야. 진짜 꺼졌으니까. 충전기를 안 꽂아 놨을 뿐이지. 그래서 알람이 아예 안 울렸어. 옆집 사람이 차 시동 거는 소리에야 깼어. 혹시 누가 물어보면 나 늘 그러듯이 7시에 나갔다고 해 줘.",
+      "text": "I'm sorry, I told them my phone died overnight, which is technically true, because it did, it just wasn't plugged in, so the alarm never went off. I didn't wake up until my neighbor started his car. If anybody asks you, I left at seven like I always do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, okay? I told them my phone died overnight, and technically that's true, because it did, it just wasn't plugged in, so the alarm never went off. Didn't wake up till my neighbor started his car. Anybody asks you, I left at seven like always."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize. I told them my phone had died overnight, which is technically true, because it did; it simply was not plugged in, so the alarm never went off. I did not wake up until my neighbor started his car. If anyone asks you, I left at seven, as I always do."
+        }
+      ],
+      "note": "**technically true** 는 따지고 보면 틀린 말은 아니라는 뜻입니다. **went off** 는 알람이 울렸다는 말입니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "된다고 하고 싶어. 너라면 나한테는 두말없이 해 줬을 테니까. 그런데 금요일에 엄마가 오시는데 손님방을 아직 손도 못 댔어. 다음 주말이었으면 아침 8시에 커피 사 들고 갔지. 다음에 한 번 더 물어봐 줄래? 이 말 꺼내는 것도 미안하다.",
+      "text": "I want to say yes, because you'd do it for me in a second, but my mom gets in Friday and I haven't touched the guest room yet. If it was next weekend I'd be there at eight in the morning with coffee. Can you ask me again next time? I feel bad even saying it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, I wanna say yes, because you'd do it for me in a second, but my mom gets in Friday and I still haven't touched the guest room. If this was next weekend I'd be there at eight in the morning with coffee. Ask me again next time? I feel bad even saying it."
+        },
+        {
+          "style": "formal",
+          "text": "I would like to say yes, because you would do it for me without hesitation, but my mother arrives on Friday and I have not yet touched the guest room. If it were next weekend, I would be there at eight in the morning with coffee. Could you ask me again next time? I feel bad even saying it."
+        }
+      ],
+      "note": "**in a second** 는 망설임 없이 바로 해 준다는 뜻입니다. **gets in** 은 도착한다는 말입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "동생이 돈 모으는 동안 두어 달 우리 집에서 지내고 싶대. 내가 벤한테 얘기해 보겠다고는 했는데 아직 안 했어. 벤이 뭐라고 할지 뻔하거든. 방이 남는 건 동생 말이 맞고. 그래서 얘기를 꺼내려다가도 매번 딴 얘기를 하게 돼. 그동안 동생은 내가 아직 벤을 설득하고 있는 줄 알고.",
+      "text": "My sister wants to stay with us for a couple of months while she saves up, and I told her I'd talk to Ben about it, and I haven't, because I already know what he's going to say. And she's not wrong that we've got the room. So every time I go to bring it up I find something else to talk about, and meanwhile she thinks I'm still working on him.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my sister wants to crash with us for a couple of months while she saves up, and I said I'd talk to Ben about it, and I haven't, because I already know exactly what he's gonna say. And she's right that we've got the room. So every time I go to bring it up I find something else to talk about, and meanwhile she thinks I'm still working on him."
+        },
+        {
+          "style": "formal",
+          "text": "My sister would like to stay with us for a couple of months while she saves money, and I told her I would speak to Ben about it, and I have not, because I already know what he is going to say. And she is not wrong that we have the room. So every time I mean to raise it, I find something else to discuss, and in the meantime she believes I am still working on him."
+        }
+      ],
+      "note": "**bring it up** 은 어떤 얘기를 꺼낸다는 말입니다. **working on him** 은 그 사람을 계속 설득하는 중이라는 뜻입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 note 의 별표 표현 **go off** 가 문장에는 \"went off\" 로만 나와서 그대로 나오지 않았습니다. **went off** 로 맞췄습니다.",
+    "3번 casual 의 \"I was out until my neighbor started his car\" 는 \"밖에 나가 있었다\" 로도 읽혀서 순간 헷갈립니다. \"Didn't wake up till my neighbor started his car.\" 로 바꿨습니다.",
+    "5번 formal 의 \"every time I intend to raise it\" 은 원어민이 그 자리에서 쓰지 않는 말입니다. \"every time I mean to raise it\" 으로 고쳤습니다."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "setId": "s081",
+  "videoId": "daily-s081",
+  "title": "Set 81",
+  "madeAt": "2026-09-08",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저 위층 3B인데요. 건물 현관문이 지난주부터 계속 뻑뻑해요. 어젯밤엔 열쇠가 겨우 돌아갈 때까지 밖에서 비 맞으며 족히 5분은 서 있었어요. 저 때문에 누가 문을 받쳐서 열어 놓고 다니게 되는 건 싫으니까, 열쇠공 좀 불러 주실래요? 금요일은 하루 종일 집에 있어요.",
+      "text": "Hey, it's me up in 3B. The front door of the building has been sticking since last week, and last night I was standing out there in the rain for a good five minutes before the key finally turned. I don't want to be the reason somebody starts propping it open, so can you get a locksmith out? I'm around all day Friday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hi, 3B here. That front door's been sticking since last week, and last night I'm standing out in the rain a good five minutes before the key finally turns. I don't wanna be the reason somebody starts propping it open, so can you get a locksmith out here? I'm around all day Friday."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is the resident in 3B. The front door of the building has been sticking since last week, and last night I stood outside in the rain for a good five minutes before the key finally turned. I would prefer not to be the reason someone begins propping it open, so could you arrange for a locksmith? I am available all day Friday."
+        }
+      ],
+      "note": "문이 **sticking** 하다는 건 뻑뻑해서 잘 안 열린다는 뜻이고, **a good five minutes** 는 짧게 잡아도 족히 5분이라는 강조입니다. **propping it open** 은 문을 뭔가로 받쳐 열어 둔 채로 두는 것입니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "웬일로 열 시에 잠자리에 들었거든요. 그러다 비행기 사고를 분 단위로 짚어 주는 영상 하나를 눌렀는데, 당연히 그 뒤에 또 하나가 바로 붙어 있죠. 고개 들어 보니 새벽 두 시였어요. 나중엔 재미있지도 않았는데 그냥 다음 편이 계속 시작되게 놔뒀어요.",
+      "text": "I got in bed at ten for once, and then I clicked on one video about a plane crash where the guy walks through the whole thing minute by minute, and of course there's another one right after it. I looked up and it was two in the morning. And I wasn't even into it by the end, I just kept letting the next one start.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So for once I'm in bed by ten, and then I click on this one plane crash video where the guy goes through the whole thing minute by minute, and obviously there's another one right after it. I look up and it's two in the morning. And I wasn't even into it by the end, I just kept letting the next one start."
+        },
+        {
+          "style": "formal",
+          "text": "For once I was in bed at ten, and then I clicked on a single video about a plane crash in which the narrator goes through the entire thing minute by minute, and naturally there is another one immediately afterward. When I looked up, it was two in the morning. I was not even interested by the end; I simply kept allowing the next one to begin."
+        }
+      ],
+      "note": "**for once** 는 평소와 달리 웬일로, 모처럼이라는 뜻입니다. **I wasn't even into it** 는 그것에 빠져 있지도 않았다, 즉 재미있어서 본 것도 아니라는 말입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "마지막 남은 자리에 앉았는데 하필 화장실 바로 옆 작은 테이블이었어요. 그 문이 30초마다 계속 벌컥 열리더라고요. 15분 만에 일어나 나왔는데, 저는 그러려던 게 아니었어요. 3월 이후로 처음 보는 친구였거든요. 다음엔 그냥 우리 집으로 부르려고요.",
+      "text": "We got the last table and it was the tiny one right by the bathroom, so that door kept swinging open every thirty seconds. We were out of there in fifteen minutes, which is not what I wanted, because I hadn't seen her since March. Next time I'm just having her over to my place.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So they stuck us at the last table, the tiny one right by the bathroom, and that door kept swinging open every thirty seconds. We were gone in fifteen minutes, which isn't what I wanted, because I hadn't seen her since March. Next time she's just coming over to my place."
+        },
+        {
+          "style": "formal",
+          "text": "We were given the last table, the small one directly beside the restroom, and that door swung open every thirty seconds. We left within fifteen minutes, which was not what I had wanted, as I had not seen her since March. Next time I will simply invite her to my home."
+        }
+      ],
+      "note": "**We were out of there** 는 그 자리에서 빠져나왔다는 구어체 표현입니다. **kept swinging open** 은 문이 자꾸 벌컥 열렸다는 뜻입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "토요일에 회사 사람들이랑 농구를 한 시간쯤 했는데 그날 밤엔 아무렇지도 않았어요. 그런데 월요일인 지금은 난간을 안 잡으면 계단을 못 내려가요. 이게 이틀은 지나야 온다는 걸 아무도 안 알려 주더라고요. 게다가 다음 주에도 나간다고 이미 말해 놨고요.",
+      "text": "I played basketball with the guys from work on Saturday, maybe an hour, and I felt completely fine that night. Now it's Monday and I can't get down the stairs without holding the rail. Nobody warns you that it doesn't hit until two days later. And I already told them I'm coming back next week, so.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Saturday I'm out playing basketball with the work guys, maybe an hour, and I felt totally fine that night. Now it's Monday and I can't get down the stairs without hanging onto the rail. Nobody tells you it doesn't hit until two days later. And I already told them I'm coming back next week, so."
+        },
+        {
+          "style": "formal",
+          "text": "I played basketball with my colleagues on Saturday, perhaps an hour, and I felt perfectly fine that evening. It is now Monday and I cannot get down the stairs without holding the rail. No one warns you that it does not set in until two days later. And I have already told them I will be returning next week."
+        }
+      ],
+      "note": "**it doesn't hit until two days later** 에서 hit 은 근육통이 몰려오는 것을 말합니다. **holding the rail** 은 계단 난간을 붙잡는 것입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "얘가 잘 시간엔 제가 뭐든 다 대답해 준다는 걸 알아챘어요. 그래서 어젯밤엔 달은 어디로 가느냐, 옆집 사람은 나이가 많으냐 하는 거였고, 저는 앉아서 그걸 다 대답해 줬죠. 그러고는 애는 2분 만에 잠들고 저는 한 시간을 말똥말똥 깨어 있었어요. 참, 내일 밤 재우는 건 당신 차례예요. 아침은 제가 맡을게요.",
+      "text": "She's figured out that I'll answer anything at bedtime, so last night it was where the moon goes and if the neighbor is old, and I sat there answering all of it. Then she was asleep in two minutes and I was wide awake for another hour. You're doing bedtime tomorrow night, by the way. I'll take the morning.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "She knows by now that at bedtime I'll answer anything, so last night it's where does the moon go and is the neighbor old, and I'm sitting there answering every bit of it. Then she's out in two minutes and I'm wide awake another hour. You've got bedtime tomorrow night, by the way. I'll do the morning."
+        },
+        {
+          "style": "formal",
+          "text": "She has realized that I will answer anything at bedtime, so last night it was where the moon goes and whether the neighbor is old, and I sat there answering all of it. She was then asleep within two minutes while I remained wide awake for another hour. You will be handling bedtime tomorrow night, incidentally. I will take the morning."
+        }
+      ],
+      "note": "**She's figured out** 은 아이가 눈치로 알아냈다는 뜻입니다. **wide awake** 는 잠이 확 달아나 말똥말똥한 상태를 말합니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 note 가 **keep swinging open** 으로 감싸 놓았는데 문장에는 `kept swinging open` 으로 나옵니다. 문장에 실제로 있는 형태로 맞췄습니다.",
+    "4번 formal 의 `my colleagues from work` 는 같은 말이 겹칩니다(colleagues 가 이미 회사 사람). `my colleagues` 로 줄였습니다.",
+    "4번 formal 끝의 `so.` 는 말끝을 흐리는 구어라 격식체와 어울리지 않아 뺐습니다. 내용은 그대로입니다.",
+    "5번 casual 의 `she's worked out` 은 영국식 말투라 미국 구어인 `she knows by now` 로 바꿨습니다. text 와 앞부분이 겹치지도 않습니다.",
+    "1번 한국어 '누가 문을 받쳐서 열어 놓고 다니게 만든 사람이 저인 건 싫으니까' 가 번역투라 '저 때문에 …' 로 풀었고, `열쇠 수리공` 을 실제로 더 많이 쓰는 `열쇠공` 으로 했습니다.",
+    "3번 한국어 '마지막 남은 자리를 받았는데' 가 어색해서 '마지막 남은 자리에 앉았는데' 로 고쳤습니다.",
+    "5번 한국어에서 '저' 와 '나' 가 섞여 있어 '제가' 로 맞췄습니다."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "setId": "s085",
+  "videoId": "daily-s085",
+  "title": "Set 85",
+  "madeAt": "2026-09-09",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "배송조회에 아직도 배송 중이라고 떠 있는데 그게 화요일이야. 그러니까 어디 트럭에 그대로 실려 있든가 누가 다른 건물에 놓고 갔든가 둘 중 하나지. 그렇다고 하나 더 주문할 수도 없는 게, 토요일 생일 선물이거든. 너희 집 초인종은 돼? 우리 건 여름부터 안 되는데, 그게 진짜 문제인 것 같다는 생각이 들기 시작했어.",
+      "text": "The tracking still says out for delivery, and that was Tuesday, so either it's sitting in a truck somewhere or somebody dropped it at the wrong building. And I can't just order another one, because it's a birthday thing for Saturday. Is your buzzer working? Because mine hasn't worked since the summer and I'm starting to think that's the whole problem.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking's been saying out for delivery since Tuesday, so it's either stuck on a truck somewhere or somebody left it at the wrong building. And I can't just buy another one, it's a birthday thing for Saturday. Does your buzzer work? Mine's been dead since the summer and I'm kinda starting to think that's the whole problem."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking information still shows out for delivery, and that was Tuesday, so either the package is sitting in a truck somewhere or someone delivered it to the wrong building. I cannot simply order another one, because it is a birthday gift for Saturday. Is your buzzer working? Mine has not worked since the summer, and I am beginning to think that is the entire problem."
+        }
+      ],
+      "note": "**out for delivery** 는 물건이 배송 기사에게 넘어가 오늘 배달될 예정이라는 배송조회 상태 표시입니다. **buzzer** 는 건물 공동현관에서 눌러 안에 있는 사람을 부르는 초인종입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "일주일 내내 잘 지키고 있었거든. 그러다 목요일에 누가 도넛을 사 왔는데, 반 개만 먹자고 스스로 다짐했어. 두 개 먹었지. 그러고는 어차피 오늘은 망했다 싶어서 그날 저녁엔 피자를 시켰어. 나를 무너뜨리는 건 도넛이 아니야. 항상 도넛 다음에 오는 것들이지.",
+      "text": "I was doing fine all week, and then somebody brought donuts in on Thursday and I told myself I'd have half of one. I had two. And then I figured the day was already shot, so we ordered pizza that night. It's never the donut that gets me, it's everything after the donut.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "All week I was totally fine, and then Thursday somebody brings in donuts and I go, okay, half of one. I had two. And then I figured the day was already blown, so we got pizza that night. It's never the donut that gets me, it's everything after the donut."
+        },
+        {
+          "style": "formal",
+          "text": "I was doing well all week, and then someone brought donuts in on Thursday and I told myself I would have half of one. I had two. I then decided the day was already ruined, so we ordered pizza that evening. It is never the donut that undoes me, it is everything that comes after the donut."
+        }
+      ],
+      "note": "**the day was already shot** 은 그날 하루는 이미 망했다는 뜻으로, shot 이 못 쓰게 됐다는 뜻의 구어입니다. **that gets me** 는 나를 무너뜨리는 건 그것이다, 나한테는 그게 통한다는 뜻입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "폰이 자꾸 한 사십 퍼센트쯤에서 꺼져. 그러고 충전기를 꽂으면 이십 퍼센트라고 뜨고. 그래서 이제 실제로 몇 퍼센트인지를 모르겠어. 게다가 꼭 밖에 나와 있을 때만 이러고, 집에서 충전기 바로 옆에 앉아 있을 때는 절대 안 그래. 그냥 배터리 문제인 것 같아, 아니면 수리 맡겨야 할까?",
+      "text": "My phone keeps shutting off at like forty percent, and then I plug it in and it says twenty, so I don't actually know what it's at anymore. And it only does it when I'm out somewhere, never at home when I'm sitting next to a charger. Do you think that's just the battery, or should I take it in?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Something's up with my phone, it keeps dying at like forty percent, then I plug it in and it says twenty, so I don't even know what it's at anymore. And it only pulls this when I'm out somewhere, never at home when I'm sitting right next to a charger. You think it's just the battery, or should I take it in?"
+        },
+        {
+          "style": "formal",
+          "text": "My phone continues to shut off at around forty percent, and then I plug it in and it reads twenty, so I no longer know what it is actually at. It only does this when I am out somewhere, never at home when I am sitting beside a charger. Do you think that is simply the battery, or should I bring it in?"
+        }
+      ],
+      "note": "**take it in** 은 고장 난 물건을 수리받으러 가져간다는 뜻입니다. 캐주얼의 **it only pulls this** 는 꼭 이럴 때만 이런 짓을 한다는 느낌으로, 물건을 사람처럼 말할 때 씁니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "오 분만 있으려고 애 옆에 누웠는데 열 시 반에 깼어. 애 머리에 깔린 팔은 완전히 감각이 없고 집 안 불은 다 켜진 채로. 그래서 설거지는 아직 싱크대에 그대로 있고 너희 어머니한테 전화도 다시 못 드렸어. 그냥 방에서 나와서 십 분쯤 울게 두면 된다는 거 알아. 그런데 그게 나는 안 돼.",
+      "text": "I laid down next to him for what was supposed to be five minutes, and I woke up at ten thirty with my arm completely dead under his head and every light in the house still on. So the dishes are still in the sink and I never called your mom back. I know I could just leave the room and let him cry for ten minutes, but I can't make myself do it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was just gonna lie down with him for five minutes, and next thing I know it's ten thirty, my arm's totally dead under his head and every light in the house is still on. So the dishes are still in the sink and I never called your mom back. I know I could just walk out and let him cry for ten minutes, but I can't make myself do it."
+        },
+        {
+          "style": "formal",
+          "text": "I lay down beside him for what was meant to be five minutes, and I woke at ten thirty with my arm completely numb beneath his head and every light in the house still on. As a result, the dishes are still in the sink and I never returned your mother's call. I know I could simply leave the room and allow him to cry for ten minutes, but I cannot bring myself to do it."
+        }
+      ],
+      "note": "**my arm completely dead** 는 눌려서 감각이 없어진, 저린 팔을 말합니다. **I can't make myself do it** 은 방법을 몰라서가 아니라 마음이 안 먹어져서 못 하겠다는 뜻입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "자, 너는 요즘 어떻게 지내? 마지막으로 들은 게 언니네로 들어갈지도 모른다는 거였는데, 그러고 나서 넉 달쯤 연락이 뚝 끊겼잖아. 아직 그 집에 살아? 처음부터 끝까지 다 듣고 싶어. 나 시간 많아.",
+      "text": "Okay, so what's going on with you? Because last I heard you were maybe moving in with your sister, and then you went quiet on me for like four months. Are you still at the same place? I want the whole story, I'm not in a hurry.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So what's new with you? Last I heard you were maybe gonna move in with your sister, and then you went quiet on me for like four months. You still at the same place? I want the whole story, I'm in no rush."
+        },
+        {
+          "style": "formal",
+          "text": "So, what has been happening with you? The last I heard, you were possibly moving in with your sister, and then I did not hear from you for about four months. Are you still at the same place? I would like the whole story, and I am not in a hurry."
+        }
+      ],
+      "note": "**you went quiet on me** 는 연락이 뚝 끊겼다는 뜻이고, on me 가 붙어서 나만 두고 그랬다는 서운함이 들어갑니다. **last I heard** 는 내가 마지막으로 들은 바로는 이라는 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어 '그게 문제의 전부인 것 같다' 가 번역투라 '그게 진짜 문제인 것 같다' 로 고쳤습니다.",
+    "2번 note 가 **it gets me** 를 짚었는데 문장에는 'that gets me' 로 나옵니다. 실제로 나오는 표현으로 맞췄습니다.",
+    "4번 casual 의 'I got in next to him' 은 어디에 들어갔다는 건지 흐려서, 'I was just gonna lie down with him for five minutes' 로 다시 썼습니다. 겸사겸사 text 와 시작이 겹치지 않게 하고 말투도 더 구어로 내렸습니다."
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "setId": "s087",
+  "videoId": "daily-s087",
+  "title": "Set 87",
+  "madeAt": "2026-09-10",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "매주 사는 것들 그대로 샀는데 140달러가 나왔어. 그래서 주차장에 서서 영수증을 하나하나 훑어봤지. 뭘 두 번 찍은 게 분명하다고 생각했거든. 아니더라고. 요즘은 그냥 그 값인 거야.",
+      "text": "I got the same stuff I get every week and it came to a hundred and forty dollars, so I stood there in the parking lot going through the receipt because I was sure they rang something up twice. They didn't. That's just what it costs now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Same exact stuff as every week, and it rang up at a hundred and forty dollars, so I'm standing out in the parking lot reading through the whole receipt because I figured they charged me twice for something. Nope. That's just what it costs now."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased the same items I buy every week, and the total came to a hundred and forty dollars. I stood in the parking lot reviewing the receipt because I was certain something had been scanned twice. It had not. That is simply what it costs now."
+        }
+      ],
+      "note": "**ring something up** 은 계산대에서 물건을 찍어 계산에 올린다는 뜻입니다. **That's just what it costs now** 는 이제 가격이 그렇게 됐다고 받아들일 때 쓰는 말입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "봉투를 잘못 줬는데 자리에 앉고 나서야 알았어. 영수증에 적힌 이름이 내 이름이랑 꽤 비슷하거든. 그러니까 지금 도시 반대편에서 누가 내 저녁을 먹고 있고 나는 샐러드를 보고 있는 거지. 그냥 우리 있는 거 나눠 먹을래?",
+      "text": "They handed us the wrong bag and I didn't catch it until I was already sitting down, because the name on the receipt is pretty close to mine. So there's some guy across town eating my dinner right now and I'm looking at a salad. Do you want to just split what we've got?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So they gave us the wrong bag and I didn't even notice till I sat down, cause the name on the receipt is pretty close to mine. Some guy across town is eating my dinner right now and I'm sitting here with a salad. Wanna just split what we've got?"
+        },
+        {
+          "style": "formal",
+          "text": "They gave us the wrong bag, and I did not notice until I had already sat down, because the name on the receipt is quite similar to mine. So there is someone across town eating my dinner at this moment, and I am looking at a salad. Would you like to share what we have?"
+        }
+      ],
+      "note": "**catch it** 은 잘못된 걸 알아차린다는 뜻입니다. **split what we've got** 은 지금 우리에게 있는 음식을 나눠 먹자는 말입니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "여기까지 차 몰고 오시기 전에 말씀드릴 게 있어요. 사진에는 안 보이는데 윗면에 긁힌 자국이 있고, 서랍 하나는 살짝 들어 올려야 열려요. 쓰는 데는 아무 문제 없어요. 그냥 오셔서 제가 뭘 숨겼다고 생각하시는 게 싫어서요. 그래서 다른 사람들 부르는 값 말고 90달러에 내놓은 거예요.",
+      "text": "Before you drive all the way out here, I should tell you there's a scratch on the top that you can't see in the pictures, and one of the drawers sticks unless you lift it a little. It works fine, I just don't want you getting here and thinking I hid something. That's why I've got it at ninety and not what everybody else is asking.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Heads up before you make the trip out here, there's a scratch on top you can't see in the pictures, and one of the drawers sticks unless you lift it a bit. It works fine, I just don't want you showing up and thinking I hid something. That's why it's at ninety and not what everybody else is asking."
+        },
+        {
+          "style": "formal",
+          "text": "Before you drive all the way out here, I should mention that there is a scratch on the top which is not visible in the photographs, and one of the drawers sticks unless you lift it slightly. It works perfectly well. I simply do not want you to arrive and think that I concealed something. That is why I have it at ninety rather than what everyone else is asking."
+        }
+      ],
+      "note": "**sticks** 는 서랍이 뻑뻑해서 잘 안 열린다는 뜻입니다. **what everybody else is asking** 의 ask 는 파는 사람이 부르는 값을 말합니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "나 이거 한 잔만 하고 갈게. 애 봐 주는 사람한테 10시라고 했고 그 친구 아침에 수업이 있거든. 커피까지 마시면 자정까지 있을 거고, 레이네에서 딱 그랬잖아. 그러니까 나 다시 앉으려고 하면 말려 줘.",
+      "text": "I'm going to head out after this one, because I told the sitter ten and she's got class in the morning. And if I stay for coffee I'll be here till midnight, and that's exactly what happened at Ray's. So don't let me sit back down.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm taking off after this one, cause I told the sitter ten and she's got class in the morning. And if I stay for coffee I'm here till midnight, and that's exactly what happened at Ray's. So don't let me sit back down."
+        },
+        {
+          "style": "formal",
+          "text": "I am going to leave after this one, because I told the sitter ten and she has class in the morning. If I stay for coffee, I will be here until midnight, which is precisely what happened at Ray's. So please do not let me sit back down."
+        }
+      ],
+      "note": "**head out** 은 자리를 뜬다, 이만 간다는 캐주얼한 표현입니다. **don't let me sit back down** 은 내가 다시 앉으려 하면 말려 달라는 부탁입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "화장실 배수구 고치는 법 찾아보려고 앉았는데, 40분 뒤에 보니까 어떤 남자가 낡은 공구함 녹 벗겨 내는 걸 보고 있더라고. 나는 공구함도 없는데. 그때 아내가 들어와서 세면대는 손봤냐고 묻는 거야. 하나도 안 건드렸지.",
+      "text": "I sat down to look up how to fix the drain in the bathroom, and forty minutes later I'm watching a guy sand the rust off an old toolbox, and I don't even own a toolbox. Then my wife came in and asked if I'd gotten to the sink yet. I hadn't touched it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I get on my phone to figure out how to fix the bathroom drain, and forty minutes later I'm watching some guy sand the rust off an old toolbox, and I don't even own a toolbox. Then my wife walks in and asks if I got to the sink yet. Hadn't touched it."
+        },
+        {
+          "style": "formal",
+          "text": "I sat down to look up how to repair the drain in the bathroom, and forty minutes later I was watching a man sand the rust off an old toolbox, and I do not even own a toolbox. Then my wife came in and asked whether I had gotten to the sink yet. I had not touched it."
+        }
+      ],
+      "note": "**sand the rust off** 는 사포로 녹을 갈아 낸다는 뜻입니다. **hadn't touched it** 은 손도 안 댔다, 아예 시작도 안 했다는 말입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: 'going down the receipt' 는 원어민이 쓰지 않는 말이라 'reading through the whole receipt' 로 고쳤습니다.",
+    "2번 formal: 'Would you like to simply share what we have?' 의 simply 가 어색하게 끼어 있어 뺐습니다. 뜻은 그대로입니다.",
+    "3번 casual: 'Just so you know before you drive all the way out here' 가 text 앞부분과 거의 같아서 'Heads up before you make the trip out here' 로 바꿨습니다.",
+    "5번 casual: 'So I sat down to figure out...' 가 text 첫머리와 겹쳐서 'So I get on my phone to figure out...' 로 바꿨습니다."
+  ]
+}

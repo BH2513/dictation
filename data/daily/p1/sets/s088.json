@@ -1,0 +1,114 @@
+{
+  "setId": "s088",
+  "videoId": "daily-s088",
+  "title": "Set 88",
+  "madeAt": "2026-09-10",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "달력 봤는데, 내가 진짜로 뺄 수 있는 주는 10월 중간 두 주밖에 없어. 그다음 한 달은 부장님이 자리를 비워서 누구든 사무실을 지켜야 하거든. 애들 학교 일정이랑 맞아? 아니면 그때는 좀 그래? 안 되면 지금 말해 줘. 비행기표 알아보기 전에.",
+      "text": "Okay, so I looked at the calendar, and the only weeks I can actually get off are the two in the middle of October, because my boss is gone the whole month after that and somebody has to be here. Does that work with the kids in school, or is that a bad time? Because if it's a bad time I'd rather know now, before I start pricing flights.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Here's the thing. I went through the calendar and the only two weeks I can actually take off are the middle two in October, because my boss is gone the whole month after that and somebody's gotta be here. Does that work with the kids in school, or is it a bad time? If it's bad I'd rather hear it now, before I start pricing flights."
+        },
+        {
+          "style": "formal",
+          "text": "I have reviewed the calendar, and the only weeks I am able to take off are the two in the middle of October, as my supervisor will be away for the entire month that follows and someone needs to be present. Would that work with the children's school schedule, or would it be a poor time? If it would be a poor time, I would prefer to know now, before I begin pricing flights."
+        }
+      ],
+      "note": "**get off** 는 휴가로 며칠을 빼서 쉰다는 뜻입니다. **I'd rather know now** 는 나중에 말고 지금 알고 싶다는 말로, 안 좋은 소식일수록 이렇게 씁니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "걔는 우리 사촌 룸메이트인데, 좀 풀리고 나면 진짜 웃겨. 근데 미리 말해 두는데 처음 20분은 여기 있기 싫어하는 사람처럼 보일 거야. 처음 보는 사람한테는 원래 그래. 그러니까 한 시간은 지나고 나서 판단해. 그리고 걔는 먼저 연락 안 해. 또 보고 싶으면 네가 먼저 물어봐야 돼.",
+      "text": "She's my cousin's roommate and she's genuinely funny once she warms up, but I'm telling you now, the first twenty minutes she's going to seem like she'd rather be anywhere else. That's just how she is with new people. So don't make up your mind until you're an hour in. And she's never going to text first, so if you want to see her again you have to be the one who asks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Fair warning about her. She's my cousin's roommate, and she's actually really funny once she loosens up, but the first twenty minutes she's gonna look like she'd rather be anywhere else. That's just her with new people. So don't decide anything till you're an hour in. And she's never gonna text first, so if you wanna see her again, you've gotta be the one who asks."
+        },
+        {
+          "style": "formal",
+          "text": "She is my cousin's roommate, and she is genuinely funny once she becomes comfortable, but I should tell you now that for the first twenty minutes she will seem as though she would rather be anywhere else. That is simply how she is with new people. Please do not make up your mind until you are an hour in. She will never text first, so if you would like to see her again, you will have to be the one who asks."
+        }
+      ],
+      "note": "**warms up** 은 낯을 풀고 편해진다는 뜻입니다. **that's just how she is** 는 원래 그런 사람이라며 감싸 줄 때 씁니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "몇 년째 기타 배운다 배운다 하다가 3월에 진짜로 하나 샀거든. 코드 세 개쯤 짚었는데 손끝이 너무 아파서 일주일만 쉬자 했어. 그 일주일이 4월부터 지금까지야. 아직 소파 옆에 그대로 세워져 있어. 그거 보면 찔려서라도 잡겠지 했는데, 매일 지나다니다 보면 눈에 안 들어오게 되더라.",
+      "text": "I bought a guitar back in March because I'd been saying I would for years, and I got about three chords in before my fingertips hurt so bad I gave it a week off. And that week has been going on since April. It's still standing right there by the couch, and I thought that would shame me into picking it up, but it turns out you can walk past something every single day and stop seeing it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You know how I'd been saying for years I'd learn guitar? Well, I finally got one back in March, and I made it about three chords in before my fingertips hurt so bad I gave it a week off. That week's been going since April. It's still sitting right there by the couch, and I figured that'd shame me into picking it up, but turns out you can walk past something every single day and just stop seeing it."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar in March, having said for years that I would, and I had learned about three chords before my fingertips hurt badly enough that I gave it a week off. That week has been going on since April. It is still standing right there beside the couch, and I thought that would shame me into picking it up, but it turns out that one can walk past something every single day and eventually stop seeing it."
+        }
+      ],
+      "note": "**gave it a week off** 는 일주일만 쉬자며 잠깐 손 놓는다는 말입니다. **shame me into picking it up** 은 창피해서 어쩔 수 없이 하게 만든다는 뜻입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "토요일에 봄 이후로 처음 헬스장에 갔는데, 5년 전에 하던 운동을 똑같이 했어. 그게 바로 실수였지. 어제 재채기했다가 너무 아파서 주저앉았잖아. 다들 두 번째는 좀 낫다고 하는데, 그 말이 거짓말인지 확인하려면 또 가는 수밖에 없네.",
+      "text": "I went back to the gym Saturday for the first time since spring, and I did the exact same workout I used to do five years ago, which was the mistake right there. I sneezed yesterday and it hurt so much I had to sit down. Everybody keeps telling me the second time is easier, so apparently I have to go back just to find out if they're lying.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I finally hit the gym Saturday, first time since spring, and I did the exact same workout I used to do five years ago, which, yeah, that was the mistake right there. I sneezed yesterday and it hurt so bad I had to sit down. Everyone keeps telling me the second time's easier, so I guess I've gotta go back just to find out if they're lying."
+        },
+        {
+          "style": "formal",
+          "text": "I returned to the gym on Saturday for the first time since spring, and I did the very same workout I used to do five years ago, which was precisely the mistake. I sneezed yesterday and it hurt so much that I had to sit down. Everyone keeps telling me that the second time is easier, so apparently I must go back simply to find out whether they are lying."
+        }
+      ],
+      "note": "**the mistake right there** 는 바로 그게 문제였다고 짚을 때 씁니다. **the second time is easier** 처럼 the second time 은 두 번째로 할 때를 가리킵니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그 드라마 네 시즌을 봤어. 금요일 밤까지 아껴 뒀다가 봤다니까. 무슨 행사처럼. 근데 지금은 3주 전 거 두 편이 그대로 있고, 솔직히 걔네가 어떻게 되든 관심이 없어. 여동생 캐릭터 없앴을 때 정이 떨어진 것 같아. 다들 속으로 생각만 하는 걸 말해 주는 건 걔밖에 없었거든. 뒤로 갈수록 다시 재밌어진다고 하면 믿어는 줄게. 근데 안 볼 거야.",
+      "text": "I stuck with that show for four seasons and I used to save it for Friday nights, like it was a whole thing. Now there are two episodes sitting there from three weeks ago and I honestly don't care what happens to any of those people. I think it lost me when they got rid of the sister, because she was the only one who ever said what everybody was thinking. You can tell me it picks back up and I'll believe you, I'm just not going to watch it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I gave that show four whole seasons, and I used to save it for Friday nights, like it was a whole event. Now there's two episodes sitting there from three weeks ago and honestly? I don't care what happens to any of those people. I think it lost me when they got rid of the sister, because she was the only one who ever said what everybody was thinking. You can tell me it picks back up and I'll believe you, I'm just not gonna watch it."
+        },
+        {
+          "style": "formal",
+          "text": "I stayed with that series for four seasons, and I used to reserve it for Friday evenings, as something of an occasion. There are now two episodes waiting from three weeks ago, and I honestly do not care what happens to any of those people. I believe it lost me when they got rid of the sister, as she was the only one who ever said what everyone was thinking. You may tell me that it picks back up and I will believe you, but I simply am not going to watch it."
+        }
+      ],
+      "note": "**it lost me** 는 이야기가 재미를 잃어서 마음이 떠났다는 뜻입니다. **picks back up** 은 처졌다가 다시 살아난다는 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 formal 의 \"I had progressed roughly three chords\" 는 영어로 어색해서 \"I had learned about three chords\" 로 고쳤습니다. 같은 문장의 \"cease to see it\" 도 지나치게 문어체라 \"eventually stop seeing it\" 으로 바꿨습니다.",
+    "1번 formal 의 \"with the children being in school\" 이 어색해서 \"with the children's school schedule\" 로 고쳤습니다.",
+    "4번 note 가 **that was the mistake right there** 로 감쌌는데 text 에는 \"which was the mistake right there\" 로 나옵니다. 두 문장에 다 나오는 **the mistake right there** 로 맞췄습니다."
+  ]
+}

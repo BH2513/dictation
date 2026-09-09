@@ -1,0 +1,118 @@
+{
+  "setId": "s089",
+  "videoId": "daily-s089",
+  "title": "Set 89",
+  "madeAt": "2026-09-10",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "너희 애도 새로 오신 선생님 반으로 갔어? 우리 애가 그 반이 됐는데, 솔직히 좀 걱정했어. 선생님이 학교 갓 졸업하고 오신 분이라서. 그런데 얘가 올해 들어 처음으로 아침에 알아서 일어나더라. 그래서 8월에 그 이메일 보낼 뻔한 게 지금 좀 찔려.",
+      "text": "Did yours end up in the class with the new teacher? Because mine did, and I was honestly a little worried about it since she's straight out of school, but he's been getting himself up in the morning for the first time all year. So now I feel kind of bad about the email I almost sent in August.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Is yours in the class with the new teacher? Mine is, and honestly I was kinda worried since she's straight out of school, but he's been getting himself up in the morning for the first time all year. So now I feel kinda bad about that email I almost sent in August."
+        },
+        {
+          "style": "formal",
+          "text": "Did your child end up in the class with the new teacher? Mine did, and I will admit I was a little concerned, as she is straight out of school, but he has been getting himself up in the morning for the first time all year. So now I feel rather bad about the email I nearly sent in August."
+        }
+      ],
+      "note": "**end up in** 은 이리저리 하다가 결국 그 반으로 배정됐다는 뜻입니다. **straight out of school** 은 학교를 갓 졸업하고 바로 왔다, 즉 경력이 없다는 말입니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "안녕하세요, 2C호 데이브예요. 주방 싱크대 밑에 물 새는 게 또 시작됐어요. 6월에 기사분이 때운 바로 그 자리라서, 그때 제대로 고쳐진 게 아닌 것 같아요. 밑에 양동이 받쳐 놓고 하루 두 번씩 비우고 있어요. 이번에는 아예 다 뜯어서 봐 주실 분을 보내 주실 수 있을까요? 이번 주에는 오전이면 아무 날이나 집에 있을 수 있어요.",
+      "text": "Hey, it's Dave up in 2C. That leak under the kitchen sink is back, and it's the exact same spot the guy patched in June, so I don't think it ever actually got fixed. I've got a bucket under there and I'm emptying it twice a day. Can you send somebody who'll pull the whole thing apart this time? I can be home any morning this week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, Dave in 2C. The kitchen sink's leaking again, same exact spot the guy patched in June, so I don't think it ever really got fixed. There's a bucket under there and I'm dumping it twice a day. Can you send somebody who'll pull the whole thing apart this time? Any morning this week works."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is Dave in unit 2C. The leak under the kitchen sink has returned, and it is in exactly the same spot that was patched in June, so I do not believe it was ever properly repaired. I have a bucket underneath it that I am emptying twice a day. Could you send someone who will take the whole thing apart this time? I am available any morning this week."
+        }
+      ],
+      "note": "**patched** 는 제대로 고친 게 아니라 임시로 때웠다는 뉘앙스입니다. **pull the whole thing apart** 는 겉만 손보지 말고 통째로 뜯어내라는 뜻입니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "벌써 2년이라니 아직도 안 믿겨. 아직 야간 근무야, 아니면 드디어 빠졌어? 샘 결혼식 때 6개월만 더 해 보겠다고 했잖아. 그 뒤로 세 번쯤 그 생각이 났는데 한 번도 전화를 안 했네.",
+      "text": "I still can't believe it's been two years. Are you still on nights, or did you finally get off those? Because at Sam's wedding you told me you were giving it six months, and I've thought about that maybe three times since then and never once picked up the phone.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Two years already? Crazy. Are you still on nights, or did you finally get off those? At Sam's wedding you said you were giving it six months, and I've thought about that maybe three times since and never once picked up the phone."
+        },
+        {
+          "style": "formal",
+          "text": "I still cannot believe it has been two years. Are you still working nights, or have you finally come off them? At Sam's wedding you told me you were giving it six months, and I have thought about that perhaps three times since then and never once picked up the phone."
+        }
+      ],
+      "note": "**on nights** 는 야간 근무를 하고 있다는 말입니다. **giving it six months** 는 6개월만 해 보고 결정하겠다는 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "지난번엔 네가 골라서 그 잠수함 나오는 거 두 시간을 앉아서 봤잖아. 그러니까 오늘 밤은 내 차례야. 그리고 자막 있는 건 안 볼래. 어차피 20분이면 잠들 거고 그러면 통째로 놓치는 거니까. 그냥 그 요리 나오는 거 틀어. 10분 보고 싫으면 내가 바꿔 줄게, 약속해.",
+      "text": "You picked last time and we sat through two hours of that submarine thing, so it's my turn tonight. And I'm not doing anything with subtitles, because I'm going to be asleep in twenty minutes either way and then I've missed the whole thing. Just put on the cooking one. If you hate it after ten minutes I'll switch it, I promise.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tonight's mine. You picked last time and we sat through two hours of that submarine thing. And no subtitles, because I'm gonna be asleep in twenty minutes either way and then I've missed the whole thing. Just put on the cooking one. If you hate it after ten minutes I'll switch it, promise."
+        },
+        {
+          "style": "formal",
+          "text": "You chose last time and we sat through two hours of that submarine film, so it is my turn tonight. And I would rather not watch anything with subtitles, because I am going to be asleep in twenty minutes regardless and then I will have missed the whole thing. Please put on the cooking one. If you dislike it after ten minutes, I will change it, I promise."
+        }
+      ],
+      "note": "**sat through** 는 재미없는 것을 끝까지 참고 앉아서 봤다는 뜻입니다. **either way** 는 어느 쪽을 골라도 결과는 똑같다는 말입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그러겠다고 하고 싶은데, 그 주 내내 내가 맡으면 하루 아홉 시간씩 혼자 두는 사람이 되는 거잖아. 개한테 그건 할 짓이 아니야. 주말이면 언제든 갈게. 그리고 목요일까지도 사람을 못 구했으면 다시 전화해. 네가 여행을 취소하느니 내가 서툴게라도 맡는 게 나으니까.",
+      "text": "I want to say yes, but if I take him for that whole week I'd be the guy leaving him alone for nine hours a day, and that's not fair to the dog. Ask me for a weekend and I'm there. And if you still haven't found anybody by Thursday, call me back, because I'd rather do it badly than have you cancel the trip.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'd say yes in a second, but that whole week? I'd be the guy leaving him alone nine hours a day, and that's not fair to the dog. Ask me for a weekend and I'm there. And if you still haven't found anybody by Thursday, call me back, because I'd rather do it badly than have you cancel the trip."
+        },
+        {
+          "style": "formal",
+          "text": "I would like to say yes, but if I took him for that entire week I would be the person leaving him alone for nine hours a day, and that is not fair to the dog. Ask me for a weekend and I will be there. And if you have still not found anyone by Thursday, please call me back, because I would rather do it poorly than have you cancel the trip."
+        }
+      ],
+      "note": "**I'd rather A than B** 는 B 하느니 차라리 A 하겠다는 뜻입니다. **Ask me for a weekend and I'm there** 처럼 명령문 뒤에 and 를 붙이면 그렇게만 해 주면 바로 가겠다는 흔쾌한 대답이 됩니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 casual 이 text 의 첫 두 마디를 그대로 베껴 써서 앞부분을 다시 썼습니다 (차례 얘기를 먼저 꺼내는 순서로).",
+    "5번 casual 이 text 와 'wanna' 하나만 다르고 나머지가 같아서 시작을 바꾸고 더 짧게 줄였습니다.",
+    "2번 casual 이 text 를 거의 그대로 따라가서 더 짧고 축약된 구어로 고쳤습니다 (the leak is back → the sink's leaking again, emptying → dumping, 끝 문장도 줄임).",
+    "1번 한국어 마지막 줄 '그 이메일이 지금은 좀 미안해' 가 어색해서 '그 이메일 보낼 뻔한 게 지금 좀 찔려' 로 고쳤습니다.",
+    "3번 한국어 '아직 밤 근무야, 아니면 드디어 뺐어?' 의 '뺐어' 가 어색해서 '아직 야간 근무야, 아니면 드디어 빠졌어?' 로 고쳤습니다.",
+    "2번 한국어 '다 뜯어서 보실 분으로 보내 주실 수 있을까요' 를 '다 뜯어서 봐 주실 분을 보내 주실 수 있을까요' 로 다듬었습니다.",
+    "영어(text)는 손대지 않았습니다 — 관용구 쓰임(end up in, patched, on nights, sat through, either way, I'd rather A than B)은 모두 제자리였습니다."
+  ]
+}

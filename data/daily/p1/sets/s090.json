@@ -1,0 +1,118 @@
+{
+  "setId": "s090",
+  "videoId": "daily-s090",
+  "title": "Set 90",
+  "madeAt": "2026-09-11",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 호수까지 차 몰고 가려고 계획을 다 세워 놨는데, 주말 내내 비 온다고 하길래 숙소 취소하고 그냥 집에 있었어. 근데 비는 거의 안 왔어. 낮쯤엔 날씨가 아주 좋았고. 그래도 나는 또 취소할 거야. 지난번에 날씨 안 좋을 때 운전해서 갔다가 가는 내내 핸들을 두 손으로 꽉 잡고 갔는데, 도착하고 나서는 내가 너무 예민해져서 같이 있기 힘든 사람이 돼 있었거든.",
+      "text": "We had this whole plan to drive up to the lake Saturday, and then they started saying rain all weekend, so we canceled the cabin and just stayed home. And it barely rained. It was gorgeous by noon. I'd still cancel it again though, because the last time we drove up in bad weather I had both hands on the wheel the whole way and I was no fun to be around once we got there.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So we were all set to drive up to the lake Saturday, and then the forecast started saying rain all weekend, so we bailed on the cabin and just stayed in. And it hardly rained at all. It was gorgeous by noon. I'd cancel again though, because last time we drove up in bad weather I had both hands on the wheel the entire way and I was no fun to be around once we got there."
+        },
+        {
+          "style": "formal",
+          "text": "We had made plans to drive up to the lake on Saturday, but then they began forecasting rain all weekend, so we canceled the cabin and simply stayed home. And it barely rained. It was beautiful by noon. I would still cancel it again, however, because the last time we drove up in poor weather I kept both hands on the wheel the entire way and I was unpleasant company once we arrived."
+        }
+      ],
+      "note": "**no fun to be around** 은 그 사람이 예민하거나 굳어 있어서 옆에 있기 불편하다는 뜻입니다. **barely rained** 의 barely 는 거의 그러지 않았다는 말로, hardly 와 바꿔 쓸 수 있습니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "집 밖으로 한 번도 안 나갔는데, 언제쯤 후회가 되려나 싶어서 계속 기다리는 중이야. 일요일에 동생이 전화해서 뭐 했냐고 묻는데 솔직히 한 가지도 대답을 못 하겠더라. 근데 8월부터 계속 몸이 처져 있었거든. 오늘이 오랜만에 오후 두 시에 확 방전되지 않은 첫 월요일이야.",
+      "text": "I didn't leave the apartment once, and I keep waiting to feel bad about that. My brother called Sunday and asked what I did, and I honestly couldn't name one thing. But I've been dragging since August, and this is the first Monday in a long time where I didn't hit a wall at two in the afternoon.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I never even left the apartment, and I keep waiting to feel bad about it. My brother called Sunday and asked what I did, and honestly I couldn't come up with one thing. But I've been dragging since August, and this is the first Monday in forever where I didn't hit a wall at two in the afternoon."
+        },
+        {
+          "style": "formal",
+          "text": "I did not leave the apartment once, and I keep waiting to feel bad about that. My brother called on Sunday and asked what I had done, and I honestly could not name a single thing. However, I have been dragging since August, and this is the first Monday in a long time when I did not hit a wall at two in the afternoon."
+        }
+      ],
+      "note": "**hit a wall** 은 기운이 뚝 떨어져서 더는 못 하겠는 상태가 되는 것입니다. **dragging** 은 몸이 무겁고 계속 처져 있다는 뜻으로 씁니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "회사에 그만두겠다고 말할까 계속 생각하고 있는데, 옮길 데를 정해 놓은 게 없어. 그것 때문에 말을 못 꺼내는 거야. 일이 싫어서가 아니야. 6년을 다녔더니 내년 3월이 어떤 모습일지 훤히 다 보여서 그래. 아내는 보너스 나올 때까지는 기다리라고 하고 아마 그 말이 맞을 텐데, 지난봄에도 똑같은 소리를 하고 아직 여기 이러고 있어.",
+      "text": "I've been thinking about giving my notice, and I don't have anything lined up, which is the part that keeps me from doing it. It's not that the work is bad. It's that I've been there six years and I already know exactly what next March looks like. My wife says wait till bonus season and she's probably right, but I said the same thing last spring and here I am.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I keep thinking about handing in my notice, and I've got nothing lined up, which is the part that stops me. It's not that the work's bad. It's that I've been there six years and I already know exactly what next March looks like. My wife says hang on till bonus season and she's probably right, but I said the same thing last spring and here I am."
+        },
+        {
+          "style": "formal",
+          "text": "I have been considering giving my notice, and I do not have anything lined up, which is the part that prevents me from doing it. It is not that the work is bad. It is that I have been there six years and I already know precisely what next March will look like. My wife says I should wait until bonus season and she is probably right, but I said the same thing last spring and here I am."
+        }
+      ],
+      "note": "**giving my notice** 는 회사에 그만두겠다고 알리는 것, 즉 사표를 내는 것입니다. **lined up** 은 다음 갈 자리를 미리 잡아 놨다는 뜻입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "솔직히 말해도 돼? 그 옷은 네가 입은 것보다 옷걸이에 걸려 있을 때가 더 나아. 핏이 안 맞아서가 아니라 무늬가 너무 세서 그래. 너한테는 언제 입어도 잘 어울리는 그 초록색 재킷이 있잖아. 근데 이미 그거 입고 어디 나갔는데 기분이 좋았으면 내 말은 그냥 무시해. 결국 그게 유일한 기준이니까.",
+      "text": "Honestly? I like it better on the hanger than I do on you. It's not the fit, it's that the pattern's doing all the talking, and you've got that green jacket that just works every time. But if you've already worn it somewhere and you felt good in it, then ignore me completely, because that's the only test that matters.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Want the truth? I like it better on the hanger than I do on you. It's not the fit, it's that the pattern's doing all the talking, and you've got that green jacket that just works every single time. But if you've already worn it out somewhere and you felt good in it, then ignore me completely, because that's the only test that counts."
+        },
+        {
+          "style": "formal",
+          "text": "May I be honest? I prefer how it looks on the hanger to how it looks on you. It is not the fit; it is that the pattern is doing all of the talking, and you have that green jacket which works every time. But if you have already worn it somewhere and you felt good in it, then please disregard me entirely, because that is the only test that matters."
+        }
+      ],
+      "note": "**the pattern's doing all the talking** 은 무늬가 너무 튀어서 사람은 안 보이고 옷만 눈에 들어온다는 말입니다. **that just works** 라고 하면 뭘 어떻게 입어도 잘 어울린다는 뜻입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "간 지 10분쯤 됐나, 누가 사람들 다 있는 데서 취업 준비는 잘 돼 가냐고 물어보더라. 그러고는 다들 가만히 앉아서 대답만 기다리고 있는 거야. 그래서 짧게만 얘기하고 사촌한테 주방 고친 건 어떻게 됐냐고 물어봤어. 다른 사람 입을 열게 하는 것 말고는 방법이 없거든. 그걸로 한 20분은 벌었나. 그다음엔 할머니가 왜 사람을 한 번도 안 데려오냐고 물으시더라.",
+      "text": "I was there maybe ten minutes before somebody asked how the job hunt was going, in front of the whole room, and then they all just sat there waiting. So I gave them the short version and asked my cousin about her kitchen remodel, because getting somebody else talking is the only thing that works. And it bought me maybe twenty minutes. Then my grandmother wanted to know why I never bring anybody around.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Maybe ten minutes in, somebody asked how the job hunt was going, in front of the whole room, and then they all just sat there waiting. So I gave them the short version and asked my cousin about her kitchen remodel, because getting somebody else talking is the only thing that works. Bought me maybe twenty minutes. Then my grandmother wanted to know why I never bring anybody around."
+        },
+        {
+          "style": "formal",
+          "text": "I had been there perhaps ten minutes before someone asked how the job hunt was going, in front of the entire room, and then they all simply sat there waiting. So I gave them the brief version and asked my cousin about her kitchen remodel, because getting someone else talking is the only thing that works. And it bought me perhaps twenty minutes. Then my grandmother wanted to know why I never bring anyone around."
+        }
+      ],
+      "note": "**bought me maybe twenty minutes** 처럼 buy 를 쓰면 그만큼 시간을 벌었다는 뜻이 됩니다. **bring anybody around** 은 사귀는 사람을 집이나 모임에 데려와 소개하는 것을 말합니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 한국어의 \"작년 봄에도\"를 \"지난봄에도\"로 고쳤습니다. 지금이 9월이라 영어의 last spring 은 올해 봄을 가리키는데, 작년 봄이라고 하면 시점이 한 해 어긋납니다.",
+    "3번 한국어 \"일이 힘들어서가 아니야\"를 \"일이 싫어서가 아니야\"로 고쳤습니다. It's not that the work is bad 는 일이 고되다는 말이 아니라 일 자체가 나쁘지 않다는 말입니다.",
+    "4번 formal 의 \"I prefer it on the hanger to how it looks on you\" 는 비교하는 두 쪽의 모양이 어긋나 읽다가 걸립니다. \"I prefer how it looks on the hanger to how it looks on you\" 로 맞췄습니다.",
+    "5번 note 에서 별표로 감싼 **bought me twenty minutes** 가 문장에 그대로 나오지 않아, 실제로 나오는 **bought me maybe twenty minutes** 로 바꿨습니다.",
+    "1번 formal 의 cancelled 를 text 와 같은 canceled 철자로 통일했습니다. 한 세트 안에서 철자가 갈리면 학습자가 헷갈립니다.",
+    "2번 한국어 첫 줄 \"그게 언제쯤 후회가 될까 싶어서\" 가 번역투라 \"언제쯤 후회가 되려나 싶어서\" 로 다듬었습니다.",
+    "4번 한국어 \"사이즈가 안 맞아서가 아니라\" 를 \"핏이 안 맞아서가 아니라\" 로 고쳤습니다. 영어의 fit 은 치수가 아니라 옷이 몸에 떨어지는 모양을 말합니다."
+  ]
+}

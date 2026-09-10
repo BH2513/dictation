@@ -1,0 +1,118 @@
+{
+  "setId": "s092",
+  "videoId": "daily-s092",
+  "title": "Set 92",
+  "madeAt": "2026-09-11",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "계약이 11월에 끝나는데 집주인이 한 달에 180달러를 더 달라고 해요. 그래서 동생네 있는 동네를 알아보고 있어요. 거기가 더 싸고 방도 하나 더 생기거든요. 대신 걸어서 출근하는 건 못 하게 되는데, 솔직히 그 걷는 시간이 하루 중에 제일 좋아요. 그래서 집주인한테 전화하려고 자꾸 전화기를 들었다가, 딴 일을 찾아서 해요.",
+      "text": "Our lease is up in November and they want a hundred and eighty dollars more a month, so we've been looking at that area by my brother's. It's cheaper and we'd actually get a second bedroom, but then I lose the walk to work, and that walk is honestly the best part of my day. So I keep picking up the phone to call the landlord, and then I find something else to do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the lease ends in November and they want another hundred and eighty a month, and we've been checking out that area by my brother's. It's cheaper and we'd actually get a second bedroom, but then I'm losing the walk to work, and honestly that walk's the best part of my day. So I keep grabbing my phone to call the landlord, and then I go find something else to do."
+        },
+        {
+          "style": "formal",
+          "text": "Our lease expires in November and they are asking for a hundred and eighty dollars more per month, so we have been considering the neighborhood near my brother's. It is less expensive and we would gain a second bedroom, but I would lose my walk to work, and that walk is genuinely the best part of my day. So I keep picking up the phone to call the landlord, and then I find something else to do."
+        }
+      ],
+      "note": "**lease is up** 은 집 계약 기간이 끝난다는 뜻입니다. **I keep picking up the phone to call** 은 전화를 걸려고 하다가 결국 못 거는 일을 되풀이한다는 느낌이라, 미루고 있는 마음이 그대로 드러납니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "밤 아홉 시만 되면 소파에서 잠들어요. 그러다 자려고 일어나면 갑자기 눈이 말똥말똥해져서 새벽 한 시까지 누워 있고요. 저녁 먹고 아예 앉지를 말아야 한다는 건 저도 알아요. 그런데 그 한 시간이 아무도 저한테 뭘 시키지 않는 유일한 시간이에요. 남편은 소파에 앉지 말고 바로 침대로 가라고 해요. 맞는 말이죠. 그래도 저는 안 할 거예요.",
+      "text": "I keep falling asleep on the couch at nine, and then I get up to go to bed and I'm suddenly wide awake, so I'm lying there till one. And I know the answer is to just not sit down after dinner, but that's the only hour where nobody needs anything from me. My husband says go straight to bed and skip the couch, and he's right, and I'm still not going to do it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every night I'm out cold on the couch by nine, and then I get up to go to bed and suddenly I'm wide awake, so I'm lying there till one. And yeah, the fix is just not sitting down after dinner, but that's the one hour where nobody needs anything from me. My husband's like go straight to bed and skip the couch, and he's right, and I'm still not gonna do it."
+        },
+        {
+          "style": "formal",
+          "text": "I keep falling asleep on the sofa at nine, and then I get up to go to bed and find myself suddenly wide awake, so I lie there until one. I am aware that the solution is simply not to sit down after dinner, but that is the only hour when nobody needs anything from me. My husband tells me to go straight to bed and skip the sofa, and he is right, and I still do not intend to do it."
+        }
+      ],
+      "note": "**wide awake** 는 정신이 말똥말똥해서 잠이 확 달아난 상태입니다. 캐주얼 쪽의 **out cold** 는 반대로 곯아떨어졌다는 뜻이라, 두 표현이 정반대 짝입니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "아니야, 다 괜찮아. 바쁘긴 한데 일이 없는 것보다는 낫지. 그리고 요즘 집에서 밥 훨씬 많이 해 먹어. 아빠한테 나 드디어 아빠 말 듣는다고 전해 줘. 응, 잠도 잘 자. 나 지금 바로 나가 봐야 해서, 일요일에 전화할게. 그때 제대로 얘기하자, 알았지?",
+      "text": "No, everything's good, we're busy, which is better than the other way around. And I've been cooking at home a lot more, so you can tell Dad I'm finally listening to him. Yeah, I'm sleeping fine. Listen, I've got to run out the door, but I'll call you Sunday and we'll actually talk, okay?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nah, everything's good, we're slammed, which beats the other way around. And I've been cooking at home way more, so you can tell Dad I'm finally listening to him. Yeah, sleeping fine. Hey, I've gotta run, but I'll call you Sunday and we'll actually talk, okay?"
+        },
+        {
+          "style": "formal",
+          "text": "No, everything is fine, we are busy, which is preferable to the alternative. And I have been cooking at home a great deal more, so you may tell Dad that I am finally listening to him. Yes, I am sleeping well. I am afraid I must be going, but I will call you on Sunday and we will have a proper conversation, if that is all right."
+        }
+      ],
+      "note": "**better than the other way around** 는 반대 상황, 여기서는 일이 없어서 한가한 쪽보다는 낫다는 뜻입니다. **I've got to run** 은 급해서 가 봐야 한다고 대화를 끊을 때 쓰는 인사말입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "다들 아직 먹고 있을 때 인사하고 갈게요. 커피까지 기다리면 자정까지 있게 되거든요. 강아지를 다섯 시부터 못 내보냈어요. 그러니까 그걸 핑계로 삼을 거예요. 아니에요, 일어나지 마세요. 마저 드세요. 대신 동생분한테 그 주황색 음식 레시피 좀 달라고 전해 주세요.",
+      "text": "I'm going to say my goodbyes now while everybody's still eating, because if I wait for coffee I'm here till midnight. The dog hasn't been out since five, so that's my excuse and I'm using it. No, don't get up, finish your food. But tell your brother I want the recipe for whatever that orange thing was.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm gonna go say bye now while everyone's still eating, cause if I wait for coffee I'm here till midnight. Dog hasn't been out since five, so that's my excuse and I'm using it. No, don't get up, finish your food. But tell your brother I need the recipe for whatever that orange thing was."
+        },
+        {
+          "style": "formal",
+          "text": "I am going to say my goodbyes now while everybody is still eating, because if I wait for coffee I will be here until midnight. The dog has not been out since five, so that is my excuse and I intend to use it. No, please do not get up, finish your meal. But do tell your brother that I would like the recipe for whatever that orange dish was."
+        }
+      ],
+      "note": "**that's my excuse and I'm using it** 은 마침 핑곗거리가 생겼으니 그대로 써먹겠다고 농담처럼 말하는 표현입니다. **whatever that orange thing was** 는 이름은 모르겠는 그 주황색 음식이라는 뜻입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "목요일에 마리아랑 그 수업에 갔는데, 나올 때는 몸이 아주 개운했어요. 그런데 토요일에는 침대에서 못 일어났어요. 둘째 날에 제대로 온다는 걸 아무도 안 알려 주더라고요. 계단 올라가는 건 괜찮은데, 내려올 때는 무슨 할머니처럼 난간을 붙잡아야 해요. 그런데 마리아는 벌써 이번 주도 가자고 문자하고 있어요.",
+      "text": "I went to that class with Maria on Thursday and I felt great walking out, and then Saturday I couldn't get out of bed. Nobody warns you that it's the second day that gets you. Going up the stairs is fine, but coming down I have to hold the rail like somebody's grandmother. And she's already texting me about this week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I did that class with Maria on Thursday and I felt amazing walking out, and then Saturday I couldn't get out of bed. Nobody tells you it's the second day that gets you. Going up the stairs is fine, but coming down I'm hanging onto the rail like somebody's grandma. And she's already texting me about this week."
+        },
+        {
+          "style": "formal",
+          "text": "I attended that class with Maria on Thursday and I felt wonderful as I walked out, and then on Saturday I could not get out of bed. Nobody warns you that it is the second day that affects you. Going up the stairs is fine, but coming down I have to hold the rail like somebody's grandmother. And she is already texting me about this week."
+        }
+      ],
+      "note": "**it's the second day that gets you** 는 운동한 다음다음 날에 근육통이 더 심하게 온다는 말입니다. 여기서 **gets you** 는 사람을 제대로 힘들게 한다는 뜻으로 쓰입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 캐주얼이 text 와 앞부분부터 거의 그대로여서 말투 차이가 안 보였습니다. 더 짧고 구어답게 다시 썼습니다(go say bye, Dog hasn't been out).",
+    "1번 캐주얼의 \"the lease is done\" 은 원어민이 계약 만료에 쓰는 말이 아니라 \"the lease ends\" 로, 금액도 구어답게 \"another hundred and eighty a month\" 로 고쳤습니다.",
+    "3번 격식체의 \"everything is well\" 은 안 쓰는 말이라 \"everything is fine\" 으로 고쳤습니다.",
+    "2번 note 가 wide awake 와 out cold 를 \"한 문장 안에서 짝을 이룬다\" 고 했는데 둘은 서로 다른 말투 문장에 있습니다. 설명을 사실대로 고쳤습니다.",
+    "5번 한국어의 \"이튿날\" 이 영어와 안 맞았습니다. 목요일에 운동하고 토요일에 아팠으니 둘째 날이고, note 도 다음다음 날이라고 말합니다. \"둘째 날\" 로 고쳤습니다.",
+    "5번 한국어 \"남의 집 할머니처럼\" 이 번역투라 \"무슨 할머니처럼\" 으로 고쳤습니다.",
+    "4번 한국어의 \"그게 제 핑계고, 저는 그 핑계 쓸 거예요\" 가 어색해서 \"그걸 핑계로 삼을 거예요\" 로 다듬었습니다."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "setId": "s093",
+  "videoId": "daily-s093",
+  "title": "Set 93",
+  "madeAt": "2026-09-12",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "죄송해요, 알아요, 저도 알아요. 알람을 두 개나 맞춰 놨는데 자다가 둘 다 꺼 버린 모양이에요. 끈 기억이 아예 없거든요. 그러다 일곱 시에 딸이 들어와서는 왜 아직도 누워 있냐고 묻더라고요. 그러니까 앞쪽에서 누가 물어보면 차가 막혔다고 할 건데, 지금 하는 말이 진짜 있었던 일이에요.",
+      "text": "I'm sorry, I know, I know. I set two alarms and I apparently turned both of them off in my sleep, because I don't remember doing it. And then my daughter came in at seven and asked why I was still in bed. So if anybody up front asks, I hit traffic, but I'm telling you what actually happened.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Yeah, my bad, I know, I know. I had two alarms set and I must've turned em both off in my sleep, cause I don't remember doing it. Then my daughter walks in at seven asking why I'm still in bed. So if anyone up front asks, traffic, but I'm telling you what really happened."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize. I know, I know. I had set two alarms, and I appear to have turned both of them off in my sleep, as I have no recollection of doing so. Then my daughter came in at seven and asked why I was still in bed. So if anyone up front asks, I was caught in traffic, but I am telling you what actually happened."
+        }
+      ],
+      "note": "**apparently** 는 직접 보지는 못했지만 정황상 그랬던 것 같다고 할 때 씁니다. **up front** 는 사무실 앞쪽, 즉 입구나 프런트 쪽에 있는 사람들을 가리켜요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "드디어 어깨 때문에 병원에 갔는데, 의사가 어깨를 제대로 만져 보지도 않고 하루에 휴대폰을 몇 시간이나 보냐고 묻더라고요. 그래서 아침마다 해야 하는 운동이 세 개 생겼는데 딱 한 번 했어요. 그래도 심각한 건 아니래요. 솔직히 저는 그 말만 들으면 됐거든요.",
+      "text": "I finally went in about my shoulder, and the doctor barely touched it before she asked how many hours a day I'm on my phone. So now I've got three exercises I'm supposed to do every morning and I've done them once. But it's nothing serious, which is honestly all I wanted to hear.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally got my shoulder looked at, and the doctor barely touched it before she's asking how many hours a day I'm on my phone. So now I've got three exercises I'm supposed to do every morning and I've done em once. But it's nothing serious, which honestly is all I wanted to hear."
+        },
+        {
+          "style": "formal",
+          "text": "I finally had my shoulder examined, and the doctor had scarcely touched it before she asked how many hours a day I spend on my phone. As a result, I now have three exercises that I am meant to do every morning, and I have done them once. However, it is nothing serious, which is honestly all I wanted to hear."
+        }
+      ],
+      "note": "**barely touched it before she asked** 처럼 barely A before B 는 A 가 채 끝나기도 전에 B 가 벌어졌다는 뜻입니다. **nothing serious** 는 큰 병이나 큰일은 아니라는 말이에요.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "6월에 스페인어 학습 앱을 하나 등록했어요. 여행 전까지 진짜로 준비해 두려고요. 50일 연속으로 이어 가고 있었는데, 너희 집에 갔던 날 하룻밤을 빼먹고는 그 뒤로 한 번도 안 열어 봤어요. 아직도 매일 밤 아홉 시에 알림이 울리는데 읽지도 않고 그냥 밀어서 치워요.",
+      "text": "I signed up for one of those Spanish apps in June because I really was going to be ready for the trip, and I had a fifty day streak going. Then I missed one night when we were over at your place, and I haven't opened it since. It still goes off every night at nine and I just swipe it away without even reading it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Back in June I got one of those Spanish apps cause I really was gonna be ready for the trip, and I had a fifty day streak going. Then I skipped one night when we were over at your place, and I haven't opened it since. It still goes off every night at nine and I just swipe it away without even reading it."
+        },
+        {
+          "style": "formal",
+          "text": "I signed up for one of those Spanish apps in June, because I fully intended to be ready for the trip, and I had built up a fifty day streak. Then I missed one night while we were over at your place, and I have not opened it since. It still goes off every night at nine, and I simply dismiss it without even reading it."
+        }
+      ],
+      "note": "**streak** 는 하루도 안 빠지고 이어 온 연속 기록을 말합니다. **goes off** 는 알람이나 알림이 울리는 것을 뜻해요.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "데이나랑 커피 마시러 갔는데 빈 테이블이 하나도 없었어요. 안에 있는 사람들은 전부 노트북을 펴 놓고 여덟 시부터 앉아 있던 사람들처럼 보이더라고요. 그래서 누가 자리를 뜨나 하고 창가에 한참 서 있었는데 아무도 안 일어났어요. 결국 커피를 들고 밖으로 나가서 담벼락에 앉았는데 오히려 더 좋았어요. 손이 내내 시렸던 것만 빼면요.",
+      "text": "I met Dana for coffee and there wasn't a single open table, and everybody in there had a laptop out and looked like they'd been sitting there since eight. So we stood by the window for a while waiting for somebody to pack up, and nobody did. We ended up taking our coffee outside and sitting on the wall, which was actually nicer, except my hands were freezing the whole time.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So me and Dana went for coffee and there wasn't one open table, and everybody in there had a laptop out and looked like they'd been parked there since eight. So we stood by the window a while waiting on somebody to pack up, and nobody did. We just took our coffee outside and sat on the wall, which was actually nicer, except my hands were freezing the whole time."
+        },
+        {
+          "style": "formal",
+          "text": "I met Dana for coffee, and there was not a single open table, and everyone inside had a laptop out and appeared to have been sitting there since eight. We stood by the window for some time, waiting for someone to pack up, and no one did. We ended up taking our coffee outside and sitting on the wall, which was actually more pleasant, except that my hands were freezing the entire time."
+        }
+      ],
+      "note": "**pack up** 은 짐을 챙겨 자리를 뜨는 것을 말합니다. 좋았다고 해 놓고 **except** 로 아쉬운 점 하나를 뒤에 붙이는 건 말할 때 아주 흔한 마무리예요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "어젯밤에는 재우는 데 한 시간쯤 걸렸어요. 물 달라고 두 번 하고, 복도 문이 딱 알맞게 열려 있지 않다고 하고, 두 번째 노래 부를 때쯤에는 애보다 제가 먼저 잠들고 있었어요. 제가 일어나면 10분 뒤에 저를 찾으러 나올 게 뻔하니까 그냥 그대로 누워서 애가 잠들 때까지 버텼어요. 그 방에서 나왔을 때는 설거지에 손댈 기운이 하나도 없었어요.",
+      "text": "Bedtime took about an hour last night. He asked for water twice, and then the hall door wasn't open the right amount, and by the second song I was falling asleep faster than he was. And I knew if I got up he'd come find me ten minutes later, so I just stayed there and waited him out. By the time I got out of that room I didn't have it in me to touch the dishes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Last night bedtime was a solid hour. He wanted water twice, then the hall door wasn't open the right amount, and by the second song I was going out faster than he was. And I knew if I got up he'd come find me ten minutes later, so I just stayed put and waited him out. By the time I got out of that room I had nothing left for the dishes."
+        },
+        {
+          "style": "formal",
+          "text": "Bedtime took approximately an hour last night. He asked for water twice, and then the hall door was not open the right amount, and by the second song I was falling asleep faster than he was. I knew that if I got up, he would come and find me ten minutes later, so I simply stayed there and waited him out. By the time I left that room, I did not have it in me to touch the dishes."
+        }
+      ],
+      "note": "**waited him out** 은 상대가 먼저 지쳐 포기할 때까지 그냥 버티며 기다리는 것입니다. **didn't have it in me** 는 그걸 할 기운이 남아 있지 않다는 뜻이에요.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 \"I am aware, I am aware\" 가 기계 번역처럼 들려서 \"I know, I know\" 로 되돌리고 사과만 격식체로 올렸습니다. 격식체라도 사람 입에서 나오지 않는 말은 쓰지 않습니다.",
+    "3번 formal 의 \"Spanish applications\" 를 \"Spanish apps\" 로 고쳤습니다. 앱을 가리켜 applications 라고 말하는 원어민은 없습니다. 격식체에서도 app 은 app 입니다.",
+    "2번 formal 의 \"It is nothing serious, however,\" 는 however 가 문장 가운데 끼어 소리내어 읽기 어색해서 문장 앞으로 옮겼습니다."
+  ]
+}

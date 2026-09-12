@@ -1,0 +1,115 @@
+{
+  "setId": "s096",
+  "videoId": "daily-s096",
+  "title": "Set 96",
+  "madeAt": "2026-09-13",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "내가 너 맨날 끌고 가던 그 빵집 알지? 아들이 물려받고 나서 예전 같지가 않아. 빵은 여전히 맛있는데, 내가 거기 가던 진짜 이유였던 계란 들어간 그 빵을 이제 안 만들어. 게다가 누가 무슨 맛집 목록에 올려놔서 지금은 줄이 문밖까지 서 있어. 그래서 토요일마다 그 앞을 지나가면서 그냥 계속 걸어가.",
+      "text": "You know that bakery I used to drag you to? It's not the same since the son took it over. The bread's still good, but they stopped making the egg thing I actually went there for, and now there's a line out the door because somebody put them on some list. So I walk past it every Saturday and I just keep walking.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Remember the bakery I always dragged you to? Totally different since the son took over. Bread's still good, but they quit making that egg thing that was the whole reason I went, and now the line's out the door because somebody put them on a list. So every Saturday I walk right past it and keep going."
+        },
+        {
+          "style": "formal",
+          "text": "Do you remember the bakery I always insisted on taking you to? It has not been the same since the son took it over. The bread is still good, but they have stopped making the egg pastry that was my actual reason for going, and now there is a line out the door because someone placed them on a list. So I walk past it every Saturday and simply keep walking."
+        }
+      ],
+      "note": "**drag you to** 는 상대가 별로 안 내켜 하는데 억지로 데리고 다녔다는 뉘앙스입니다. **a line out the door** 는 줄이 가게 문밖까지 이어질 만큼 길다는 뜻이고, **took it over** 는 가게나 일을 넘겨받아 맡았다는 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "내 폰이 요즘 자꾸 배터리가 사십 퍼센트라고 떠 있다가 그냥 꺼져버려. 꼭 길 찾느라 보고 있을 때 그래. 그러고 충전기를 꽂으면 삼십 퍼센트로 다시 켜져. 아예 방전된 것도 아니었던 거지. 목요일에 수리 예약을 잡아 두긴 했는데 무슨 말 할지 이미 알아. 산 지 삼 년 됐고, 저번 폰 때도 똑같은 소리를 했거든.",
+      "text": "My phone's been doing this thing where it says forty percent and then it just dies, usually right when I'm using it for directions. And then I plug it in and it comes back at thirty, so it wasn't even dead. I've got an appointment Thursday, but I already know what they're going to tell me, because it's three years old and they said the same thing about my last one.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my phone keeps saying forty percent and then just dying, usually right when I'm using it for directions. Then I plug it in and it comes back at thirty, so it wasn't even dead. I've got an appointment Thursday, but I already know what they're gonna say, because it's three years old and they said the same thing about my last one."
+        },
+        {
+          "style": "formal",
+          "text": "My phone has developed a habit of showing forty percent and then shutting off entirely, usually just as I am using it for directions. When I plug it in, it returns at thirty percent, so it was not actually dead. I have an appointment on Thursday, but I already know what they will tell me, since it is three years old and they said the same thing about my previous one."
+        }
+      ],
+      "note": "**doing this thing where** 는 요즘 자꾸 이런 증상이 있다고 할 때 쓰는 구어 표현입니다. **it comes back at thirty** 의 come back 은 꺼졌던 기기가 다시 켜진다는 뜻입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 택배가 삼 일부터 계속 같은 도시에 멈춰 있어. 배송 조회가 한 번도 안 움직였는데 도착 예정일만 하루씩 계속 미뤄. 취소도 못 해. 저쪽에서는 배송 중인 물건이니까. 누가 그냥 분실됐다고 말해 주면 하나 다시 주문할 텐데, 아무도 그 말을 먼저 꺼내기는 싫은 거지.",
+      "text": "That package has been sitting in the same city since the third and the tracking hasn't moved once, but they keep pushing the date back a day at a time. So I can't even cancel it, because as far as they're concerned it's on the way. If somebody would just tell me it's lost I'd order another one, but nobody wants to be the one to say it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's been stuck in the same city since the third and the tracking hasn't budged once, but they keep bumping the date another day. So I can't even cancel it, because as far as they're concerned it's on its way. Somebody just tell me it's lost and I'll order a new one. Nobody wants to be the one to say it, though."
+        },
+        {
+          "style": "formal",
+          "text": "The package has remained in the same city since the third and the tracking has not updated once, yet they continue to postpone the date by a day at a time. I am therefore unable to cancel it, because as far as they are concerned it is on its way. If someone would simply tell me it is lost I would order another one, but no one is willing to be the one to say so."
+        }
+      ],
+      "note": "**as far as they're concerned** 는 그쪽 입장에서 보기에는 이라는 뜻입니다. **pushing the date back** 은 날짜를 자꾸 뒤로 미룬다는 말이고, **the tracking hasn't moved** 는 배송 조회 상태가 그대로라는 표현입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "아니야, 나 괜찮아, 진짜로. 그냥 이번 주가 좀 길었어. 목소리가 피곤하게 들리면 그거 때문이야. 응, 차도 멀쩡해. 점검 맡겼어. 엄마, 나 밥 잘 먹고 있어, 진짜야. 참, 아빠 무릎은 좀 어때? 운동 진짜 하고 계셔, 아니면 한다고 말만 하시는 거야?",
+      "text": "No, I'm good, really. It's just been a long week, so if I sound tired that's all it is. Yeah, the car's fine, I got it looked at. Mom, I'm eating, I promise. Hey, how's Dad's knee? Is he actually doing the exercises, or is he just telling you he is?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nah, I'm fine, honestly. It's just been a long week, so if I sound beat that's all it is. Yeah, car's fine, I got it checked out. Mom, I'm eating, I swear. Hey, how's Dad's knee? Is he really doing the exercises, or just saying he is?"
+        },
+        {
+          "style": "formal",
+          "text": "No, I am well, truly. It has simply been a long week, so if I sound tired that is all it is. Yes, the car is fine, I had it looked at. Mother, I am eating, I promise. By the way, how is Father's knee? Is he actually doing the exercises, or is he merely telling you that he is?"
+        }
+      ],
+      "note": "**I'm good** 은 괜찮다고 사양하거나 걱정 말라고 할 때 쓰는 말입니다. **I got it looked at** 은 내가 본 게 아니라 남에게 봐 달라고 맡겼다는 뜻이고, 캐주얼 쪽 **I sound beat** 의 beat 은 몹시 피곤하다는 말입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "우리 이십오 분째 뭐 볼지 넘기고만 있어. 웬만한 에피소드 한 편보다 길어. 그리고 오늘 밤에 새 시리즈 시작하는 건 안 돼. 지난번 것도 반쯤 보다가 잠들어서 내가 두 번이나 다시 설명해 줬잖아. 그냥 결말까지 나는 걸로 골라. 진짜로, 네가 계속 그냥 넘기기만 하는 그 작품 틀어. 딱 봐도 보고 싶은 거잖아.",
+      "text": "We've been scrolling for twenty five minutes, which is longer than most episodes. And no, we're not starting a new series tonight, because you fell asleep halfway through the last one and then I had to explain it to you twice. Just pick something with an ending. Honestly, put on the one you keep skipping past, because clearly you want to watch it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We're twenty five minutes into scrolling, which is longer than most episodes. And nope, we're not starting a new series tonight, because you fell asleep halfway through the last one and then I had to explain it to you twice. Just pick something that ends. Seriously, put on the one you keep skipping past, because you obviously want to watch it."
+        },
+        {
+          "style": "formal",
+          "text": "We have been scrolling for twenty five minutes, which is longer than most episodes. And no, we are not beginning a new series this evening, because you fell asleep halfway through the last one and I then had to explain it to you twice. Please choose something with an ending. Frankly, put on the one you keep passing over, since you clearly want to watch it."
+        }
+      ],
+      "note": "**keep skipping past** 는 목록에서 눈에 띄는데도 계속 지나쳐 넘긴다는 뜻입니다. **something with an ending** 은 질질 끌지 않고 결말이 나는 작품을 말하고, **halfway through** 는 보다가 중간쯤에서라는 표현입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal: 'the bakery I used to insist you come to with me' 가 원어민이 쓰지 않는 어색한 조합이라 'the bakery I always insisted on taking you to' 로 고쳤습니다.",
+    "3번 casual: 뒷부분 두 문장이 text 와 글자까지 똑같아서 캐주얼 구실을 못 했습니다. 'Somebody just tell me it's lost and I'll order a new one.' 처럼 더 짧고 구어체로 다시 썼습니다.",
+    "3번 formal: 'no one wishes to be the one to say so' 의 wish 는 이 자리에서 안 쓰는 낱말이라 'no one is willing to' 로 바꿨습니다.",
+    "4번 casual: 마지막 두 문장이 text 와 똑같아서 'Is he really doing the exercises, or just saying he is?' 로 줄여 캐주얼 쪽으로 붙였습니다."
+  ]
+}

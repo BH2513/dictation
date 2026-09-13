@@ -1,0 +1,115 @@
+{
+  "setId": "s101",
+  "videoId": "daily-s101",
+  "title": "Set 101",
+  "madeAt": "2026-09-14",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "나 회사 그만둘까 생각 중인데, 아직 아무한테도 입 밖으로 꺼낸 적 없으니까 다른 데 가서 말하지 마. 무슨 일이 있었던 것도 아니야. 그게 문제야. 오늘 아침에도 주차장에 십 분을 앉아 있다가 겨우 들어갔어. 한 달째 그러고 있어.",
+      "text": "I've been thinking about putting in my notice, and I haven't said that out loud to anybody yet, so don't repeat it. Nothing happened, that's the thing. I just sat in the parking lot for ten minutes this morning before I could make myself go in, and I've been doing that for about a month now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I'm kinda thinking about quitting, and you're the first person I've said it to, so keep it to yourself. Nothing even happened, that's the thing. I just sat in the parking lot for ten minutes this morning before I could get myself to walk in, and I've been doing that for about a month now."
+        },
+        {
+          "style": "formal",
+          "text": "I have been considering putting in my notice, and I have not mentioned it aloud to anyone yet, so I would ask you not to repeat it. Nothing has happened, which is precisely the issue. I simply sat in the parking lot for ten minutes this morning before I could bring myself to go inside, and I have been doing that for about a month now."
+        }
+      ],
+      "note": "**putting in my notice** 는 사직서를 내는 것, 즉 회사를 그만두겠다고 알리는 것입니다. **make myself go in** 은 들어가기 싫은 걸 억지로 자기를 밀어 넣는다는 느낌입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "여덟 시에 자전거 관련해서 딱 하나만 찾아보려고 앉았는데, 정신 차려 보니 열한 시 십오 분 전이고 웬 남자가 의자 사포질하는 걸 보고 있더라. 나중엔 재밌지도 않았어. 다음 영상이 저절로 시작되니까 그냥 계속 본 거야. 그래서 설거지는 아직 그대로고 나는 여섯 시에 일어나야 해.",
+      "text": "I sat down at eight to look up one thing about my bike, and then it was quarter to eleven and I was watching some guy sand down a chair. And I wasn't even enjoying it by the end, I just kept going because the next video starts on its own. So the dishes are still sitting there and I have to be up at six.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay so at eight I sat down to look up one thing about my bike, and next thing I know it's quarter to eleven and I'm watching some guy sand down a chair. And I wasn't even into it by the end, I just kept going because the next video starts on its own. So the dishes are still sitting there and I gotta be up at six."
+        },
+        {
+          "style": "formal",
+          "text": "I sat down at eight to look up one thing about my bicycle, and then it was quarter to eleven and I was watching a man sand down a chair. I was not even enjoying it by the end; I simply continued because the next video begins on its own. So the dishes are still sitting there and I have to be up at six."
+        }
+      ],
+      "note": "**quarter to eleven** 은 열한 시 십오 분 전입니다. to 는 아직 안 된 것, past 는 지난 것입니다. **sand down** 은 사포로 문질러 매끈하게 다듬는 것입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "해결해 달라는 게 아니야. 이 일에 얽혀 있지 않은 사람한테 그냥 소리 내서 말해 보고 싶은 거야. 한쪽으로 마음을 굳혔다가도 자고 일어나면 반대쪽에 가 있거든. 어느 쪽을 골라도 아마 괜찮을 거야. 그래서 더 못 고르는 거고. 그냥, 한 달 뒤에도 내가 이러고 있으면 나한테 한마디 해 줘.",
+      "text": "I'm not asking you to fix it, I just need to say it out loud to somebody who isn't in the middle of it. Because every time I talk myself into one side, I sleep on it and wake up on the other one. And I'd probably be fine either way, which is exactly why I can't pick. Just, if I'm still doing this in a month, say something to me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You don't have to fix it or anything, I just need to say it out loud to somebody who's not in the middle of it. Every time I talk myself into one side, I sleep on it and wake up on the other one. And honestly I'd be fine either way, which is why I can't pick. Just, if I'm still doing this in a month, call me on it."
+        },
+        {
+          "style": "formal",
+          "text": "I am not asking you to fix it. I simply need to say it aloud to someone who is not in the middle of it, because every time I talk myself into one side, I sleep on it and wake up on the other one. I would probably be fine either way, which is exactly why I cannot decide. If I am still doing this in a month, please say something to me."
+        }
+      ],
+      "note": "**talk myself into one side** 는 스스로를 설득해서 한쪽으로 마음을 굳히는 것입니다. **sleep on it** 은 하룻밤 자면서 더 생각해 본다는 뜻입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "안녕하세요, 아래층 4B 인데요. 부엌 싱크대에 물이 또 올라와요. 7월에 기사님 오셨던 그 문제하고 같은 거예요. 빠지긴 빠지는데 이십 분쯤 걸려요. 진짜 배관이 문제면 계속 뭘 부어 봐야 소용없을 것 같아서요. 이번 주에 오실 수 있나요? 아니면 제가 토요일에 집에 있는 걸로 잡아 둘까요?",
+      "text": "Hey, it's me down in 4B. The water's coming back up in the kitchen sink again, so it's the same thing your guy came out for in July. It does drain eventually, but it's taking about twenty minutes, and I don't want to keep pouring stuff down there if it's actually the pipe. Is he around this week, or should I just plan on being home Saturday?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hi, this is 4B downstairs. The water's backing up in the kitchen sink again, so it's the same thing your guy came out for in July. It does drain eventually, but it's taking like twenty minutes, and I don't wanna keep pouring stuff down there if it's really the pipe. Is he around this week, or should I just plan on being home Saturday?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is the resident in 4B. The water is coming back up in the kitchen sink again, so it is the same problem your technician came out for in July. It does drain eventually, but it is taking about twenty minutes, and I would rather not keep pouring things down there if it is in fact the pipe. Is he available this week, or should I plan on being home on Saturday?"
+        }
+      ],
+      "note": "**coming back up** 은 물이 빠지지 않고 도로 올라오는 것입니다. **came out for** 는 기사가 집까지 나와서 봐 준 일을 말합니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "걔가 내 사촌 룸메이트인데, 나도 같이 저녁 먹은 게 두 번뿐이야. 그런데 두 번 다 처음보다 헤어질 때쯤 더 마음에 들더라. 긴장하면 말이 많아지니까 조금만 기다려 줘. 그리고 너무 오래 끌었던 관계를 막 정리한 참이라 서두를 마음은 없대. 네 번호 넘기기 전에 너도 알아 두는 게 좋을 것 같아서.",
+      "text": "Okay, so she's my cousin's roommate, and I've only had dinner with her twice, but both times I liked her more by the end than I did at the start. She talks a lot when she's nervous, so give it a minute. And she just got out of something that went on way too long, so she's not in a hurry, which I figured you'd want to know before I hand her your number.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So okay, she's my cousin's roommate and I've only had dinner with her like twice, but both times I liked her way more by the end than at the start. She talks a ton when she's nervous, so give it a minute. And she just got out of something that dragged on way too long, so she's in no rush, which I figured you'd wanna know before I hand her your number."
+        },
+        {
+          "style": "formal",
+          "text": "She is my cousin's roommate, and I have only had dinner with her on two occasions, but on both of them I liked her more by the end than I did at the start. She talks a great deal when she is nervous, so do give it a moment. She has also just come out of something that went on far too long, so she is not in a hurry, which I thought you would want to know before I give her your number."
+        }
+      ],
+      "note": "**give it a minute** 은 바로 판단하지 말고 잠깐 기다려 보라는 말입니다. **got out of something** 은 오래 만난 사람과 막 헤어졌다는 것을 돌려 말하는 표현입니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번: \"hand in my notice\" 는 영국식 표현인데 같은 문장 안에 미국식 \"parking lot\" 이 같이 있어 말투가 섞였습니다. \"putting in my notice\" 로 바꾸고 formal 과 note 도 따라 고쳤습니다.",
+    "3번: casual 이 첫 마디만 다르고 나머지는 text 와 글자까지 똑같았습니다. 전체를 더 구어답게(You don't have to fix it or anything / honestly / call me on it) 다시 썼습니다.",
+    "5번: casual 이 text 와 거의 겹쳐서 like twice, talks a ton, in no rush 처럼 더 말하듯이 손봤습니다.",
+    "4번 formal 의 \"pouring products down there\" 가 어색해서 \"things\" 로 바꿨습니다."
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "setId": "s100",
+  "videoId": "daily-s100",
+  "title": "Set 100",
+  "madeAt": "2026-09-14",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "우리 층에 뭐든지 다 우리 팀장을 참조로 넣는 여자분이 있어. 걸어와서 나한테 물어보면 될 일까지 그래. 한번은 내가 한마디 했는데, 그랬더니 이제는 팀장을 참조에 넣으면서 같은 메일에 미안하다는 말까지 붙여. 그게 더 이상해. 나쁜 마음으로 그러는 것 같지는 않고 그냥 자기 발을 빼 두려는 거겠지. 그런데 결국 감시가 필요한 사람처럼 보이는 건 나야.",
+      "text": "There's a woman on my floor who copies my manager on everything, even stuff she could just walk over and ask me about. And I said something to her once, so now she copies him and apologizes in the same message, which is somehow worse. I don't think she's doing it to be mean, she's just covering herself, but I'm the one who ends up looking like I need watching.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, so this lady on my floor cc's my manager on literally everything, even stuff she could just walk over and ask me about. I said something to her once, so now she cc's him and says sorry in the same message, which is somehow worse. She's not being mean, she's just covering herself, but I'm the one who ends up looking like I need watching."
+        },
+        {
+          "style": "formal",
+          "text": "There is a woman on my floor who copies my manager on everything, including matters she could simply walk over and ask me about. I mentioned it to her once, and now she copies him and apologizes within the same message, which is somehow worse. I do not believe she is doing it to be unkind; she is protecting herself. However, I am the one who ends up appearing to require supervision."
+        }
+      ],
+      "note": "**copies my manager on everything** 은 모든 메일에 팀장을 참조로 넣는다는 뜻이고, casual 의 **cc's** 가 같은 말입니다. **covering herself** 는 나중에 문제가 생겨도 자기는 빠져나갈 수 있게 미리 대비해 둔다는 뜻입니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "토요일에 호수로 차 몰고 가기로 했었는데 하루 종일 비 온다고 해서 금요일 밤에 그냥 취소했어. 새벽 다섯 시에 일어나서 차 안에서 갈지 말지 싸우는 것보다는 나으니까. 그런데 네 시쯤까지 비가 안 오더라. 우리 형이 벌써 두 번이나 그 얘기를 꺼냈어. 다시 그때로 돌아가도 똑같이 할 거야. 그냥 한동안 그 소리를 들어야 하는 거지.",
+      "text": "We were supposed to drive up to the lake on Saturday, but they were calling for rain the whole day, so we called it off Friday night instead of getting up at five and arguing about it in the car. And then it didn't rain until about four. My brother's brought that up twice now. I'd do the same thing again, I just have to hear about it for a while.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So we were gonna drive up to the lake Saturday, but they were calling for rain all day, so we bailed Friday night instead of getting up at five and fighting about it in the car. And then it didn't rain till like four. My brother's brought that up twice now. I'd do the same thing again, I just gotta hear about it for a while."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to drive up to the lake on Saturday, but rain was forecast for the entire day, so we cancelled on Friday evening rather than rising at five and arguing about it in the car. As it turned out, it did not rain until approximately four. My brother has now raised it twice. I would make the same decision again; I simply have to hear about it for a while."
+        }
+      ],
+      "note": "**they were calling for rain** 은 일기예보가 비를 예보했다는 뜻으로, 여기서 they 는 예보하는 사람들을 막연히 가리킵니다. **called it off** 는 예정된 일을 취소하는 것이고, casual 의 **bailed** 는 가기로 한 걸 그냥 안 가기로 했다는 더 편한 말입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 드라마 이제 세 시즌째 보고 있는데, 아직 보는 이유는 첫 시즌이 워낙 좋아서인 것 같아. 내가 진짜 좋아했던 인물들은 다 없어졌고, 새로 나온 인물들은 대부분 서로한테 줄거리를 설명해 주기만 해. 아내는 봄에 이미 그만뒀는데 자꾸 나한테 왜 아직도 보냐고 물어. 나도 딱히 해 줄 대답이 없어.",
+      "text": "We're three seasons into that show now, and I think I'm only still watching because of how good the first year was. Everybody I actually liked is gone, and the new people mostly just explain the plot to each other. My wife quit it back in the spring and she keeps asking me why I'm still watching it, and I don't really have an answer for her.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That show's on season three now and honestly I'm only still watching 'cause the first year was so good. Everybody I actually liked is gone, and the new people just explain the plot to each other. My wife quit back in the spring and she keeps asking me why I'm still watching, and I got nothing for her."
+        },
+        {
+          "style": "formal",
+          "text": "We are now three seasons into that series, and I believe I am only still watching because of how strong the first year was. Everyone I genuinely liked has left, and the new characters largely explain the plot to one another. My wife stopped watching it back in the spring, and she keeps asking me why I am still watching, and I do not really have an answer for her."
+        }
+      ],
+      "note": "**three seasons into that show** 는 그 드라마를 세 시즌째 보는 중이라는 뜻으로, into 가 얼마나 들어와 있는지를 나타냅니다. **back in the spring** 의 back 은 꽤 지난 과거라는 느낌을 더해 줍니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "여기는 다 괜찮아, 진짜로. 일은 그대로고 차도 정비소에서 찾아왔고, 딱히 알릴 일이 없어. 지난주에 전화 안 한 건 자꾸 시간이 늦어져서 그런 거지 무슨 일이 있어서가 아니야. 그리고 엄마, 그 말투 좀 하지 마. 진짜라니까. 화요일에 캐롤 아주머니랑 하는 거 아직 해?",
+      "text": "Everything's good here, honestly. Work's the same, the car's back from the shop, so there's nothing to report. I didn't call last week because it kept getting late on me, not because something's going on. And don't do that voice, Mom, I'm telling you the truth. Are you still doing the Tuesday thing with Carol?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly, we're all good here. Work's the same, got the car back from the shop, nothing to report really. I just didn't call last week 'cause it kept getting late on me, not 'cause anything's up. And don't do that voice, Mom, I'm telling you the truth. You still doing the Tuesday thing with Carol?"
+        },
+        {
+          "style": "formal",
+          "text": "Everything is fine here, honestly. Work is the same and the car is back from the shop, so there is nothing to report. I did not call last week because it kept getting late on me, not because anything is going on. And please do not use that tone, Mother, I am telling you the truth. Are you still doing the Tuesday thing with Carol?"
+        }
+      ],
+      "note": "**it kept getting late on me** 는 정신 차려 보니 자꾸 시간이 늦어 있었다는 뜻으로, on me 가 내 뜻과 상관없이 그렇게 됐다는 느낌을 줍니다. **don't do that voice** 는 못 믿겠다는 티가 나는 그 말투 좀 쓰지 말라는 뜻입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "8월에 자동차 보험료가 또 올랐어. 주차 딱지 한 장 뗀 적도 없는데. 그래서 전화했더니 직원은 다들 그렇다, 주 전체가 그렇다는 말만 계속하더라. 그럼 나더러 어쩌라는 거야, 11달러 아끼자고 여기저기 알아보라고? 다른 데 두 군데서 견적을 받아 봤는데 둘 다 더 비쌌어. 그래서 그냥 내고 있고 짜증도 나. 요즘은 뭐든 다 이런 식인 것 같아.",
+      "text": "My car insurance went up again in August and I haven't had so much as a parking ticket, so I called them, and the guy just kept telling me it's everybody, it's the whole state. And what am I supposed to do, shop around to save eleven dollars? I got two other quotes and they were both higher. So I'm paying it and I'm annoyed about it, which seems to be how everything goes lately.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So they raised my car insurance again in August and I haven't even gotten a parking ticket. I called, and the guy just keeps going, it's everybody, it's the whole state. So what, I'm supposed to shop around to save eleven bucks? I got two other quotes, both higher. So I'm paying it and I'm annoyed about it, which is pretty much how everything goes lately."
+        },
+        {
+          "style": "formal",
+          "text": "My car insurance increased again in August, and I have not had so much as a parking ticket, so I called them, and the representative simply kept telling me that it is affecting everyone, that it is the entire state. And what am I meant to do, shop around to save eleven dollars? I obtained two other quotes and both were higher. So I am paying it and I am annoyed about it, which appears to be how everything goes lately."
+        }
+      ],
+      "note": "**so much as a parking ticket** 은 주차 딱지 한 장조차 없었다는 강조 표현입니다. **shop around** 은 더 싼 곳을 찾아 여기저기 알아보는 것이고, casual 의 **eleven bucks** 는 달러를 편하게 부르는 말입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 첫머리부터 거의 같은 문장이었습니다. 말투만 바꾼 게 아니라 사실상 같은 글이라, 더 짧고 구어적으로(this lady, literally, 축약) 다시 썼습니다.",
+    "3번 casual 은 text 와 두 낱말(into → in on, quit it → quit)만 달랐습니다. season three, 'cause 같은 구어로 다시 쓰고 뒤도 줄였습니다.",
+    "4번 casual 도 text 를 거의 그대로 옮긴 수준이라, 주어를 떨구고 축약을 넣어 말하는 투로 고쳤습니다.",
+    "5번 casual 도 text 와 앞부분이 겹쳐서, 시작을 바꾸고 중간을 더 짧게 끊어 다시 썼습니다.",
+    "4번 formal 의 \"Everything is well here\" 는 원어민이 쓰지 않는 말이라 \"Everything is fine here\" 로 고쳤습니다.",
+    "5번 formal 의 \"I telephoned them\" 은 지금은 쓰지 않는 옛말이라 \"I called them\" 으로 되돌렸습니다.",
+    "4번 한국어의 \"그 목소리 좀 내지 마\" 가 번역투라 \"그 말투 좀 하지 마\" 로 고쳤습니다. note 의 설명(말투)과도 맞습니다."
+  ]
+}

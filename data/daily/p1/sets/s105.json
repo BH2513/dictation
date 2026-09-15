@@ -1,0 +1,113 @@
+{
+  "setId": "s105",
+  "videoId": "daily-s105",
+  "title": "Set 105",
+  "madeAt": "2026-09-16",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 옆집 사람 울타리 세우는 걸 도와주게 됐어. 그렇게 보내려던 날이 아니었는데. 금요일 밤에 부탁을 하는데 핑곗거리가 빨리 안 떠오르더라고. 거의 해 질 때까지 걸렸어. 기둥 절반이 자리가 틀려서 구덩이를 다시 파야 했거든. 허리는 아직도 안 좋아. 그래도 밥은 먹여 주더라, 그러니 뭐라 하기도 좀 그래.",
+      "text": "So I ended up helping my neighbor put up a fence on Saturday, which is not how I planned to spend the day. He asked me Friday night and I couldn't come up with a reason fast enough. And it took us until almost dark, because half the posts were in the wrong spot and we had to dig the holes again. My back's still not right. He fed me though, so I can't really complain.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Guess who spent Saturday putting up a fence with the guy next door? Not how I wanted my day to go. He asked me Friday night and I couldn't think of an excuse fast enough. We were out there till it was almost dark, cause half the posts were in the wrong place and we had to dig the holes all over again. My back's still messed up. He fed me though, so I can't really complain."
+        },
+        {
+          "style": "formal",
+          "text": "I spent Saturday helping my neighbor build a fence, which was not how I had intended to spend the day. He asked me on Friday evening, and I could not come up with a reason quickly enough. It took us until nearly dark, because half of the posts were in the wrong position and we had to dig the holes again. My back has still not recovered. He did feed me, however, so I cannot really complain."
+        }
+      ],
+      "note": "**ended up helping** 은 그럴 생각이 없었는데 결국 그렇게 하게 됐다는 뜻입니다. **come up with a reason** 은 둘러댈 이유를 머리에서 만들어 낸다는 말입니다.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "내가 너 맨날 끌고 가던 휠러 거리 그 빵집 알지? 봄에 새 주인이 사더니 이제 예전 그 집이 아니야. 빵은 뭐 괜찮아. 근데 내가 진짜 가던 이유였던 아침 메뉴를 다 없앴어. 게다가 누가 영상에 올려서 지금은 문밖까지 줄이 서 있어. 그래도 난 계속 가니까, 따지고 보면 나도 문제의 일부인 셈이지.",
+      "text": "You know that bakery on Wheeler I used to drag you to? New people bought it in the spring and it's just not the same place. The bread's fine, I guess, but they got rid of the morning stuff I actually went for, and now there's a line out the door because somebody put it in a video. I still go, which probably makes me part of the problem.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Remember that bakery over on Wheeler I always dragged you to? Some new people bought it in the spring and it's just not the same anymore. Bread's fine I guess, but they dropped all the morning stuff I actually went there for, and now the line's out the door cause somebody put it in a video. I still go, so yeah, I'm probably part of the problem."
+        },
+        {
+          "style": "formal",
+          "text": "Do you recall the bakery on Wheeler that I used to bring you to? New owners purchased it in the spring, and it is no longer the same place. The bread is fine, I suppose, but they discontinued the morning items I actually went there for, and now there is a line out the door because someone featured it in a video. I still go, which probably makes me part of the problem."
+        }
+      ],
+      "note": "**drag you to** 는 내키지 않아 하는 사람을 억지로 데리고 간다는 말입니다. **a line out the door** 는 줄이 문밖까지 늘어설 만큼 붐빈다는 뜻입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "내 폰이 40퍼센트라고 해 놓고 그냥 꺼져 버려. 그래서 요즘 2010년처럼 충전기를 들고 다녀. 화면이 저절로 눌리기도 하고. 뭘 읽고 있는데 카메라가 켜진다니까? 매장 직원은 배터리라는데, 배터리면 왜 화면이 저절로 눌려? 그 돈 다 냈다가 알고 보니 처음부터 딴 게 문제였다고 하면 어떡해.",
+      "text": "My phone's been doing this thing where it says forty percent and then it just dies, so now I carry the charger everywhere like it's 2010. And sometimes the screen taps things on its own, like I'll be reading something and it opens the camera. The guy at the store told me it's the battery, but if it's the battery, then why is it tapping? I don't want to pay for that and find out it was something else the whole time.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My phone keeps saying forty percent and then just dying on me, so now I'm hauling the charger around like it's 2010. And the screen taps stuff on its own sometimes? Like I'll be reading something and it just opens the camera. Guy at the store said it's the battery, but if it's the battery then why's it tapping? I don't wanna pay for that and then find out it was something else the whole time."
+        },
+        {
+          "style": "formal",
+          "text": "My phone has been displaying forty percent and then shutting off completely, so I now carry the charger everywhere as though it were 2010. The screen also registers taps on its own at times. I will be reading something and it opens the camera. The employee at the store told me it is the battery, but if it is the battery, then why is it tapping? I would rather not pay for that and then discover it was something else all along."
+        }
+      ],
+      "note": "**it just dies** 는 기기가 예고 없이 그냥 꺼진다는 말입니다. **the whole time** 은 몰랐을 뿐 처음부터 줄곧 그랬다는 뜻입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "야, 나 케이크 나오기 전에 먼저 일어날게. 베이비시터가 열 시까지 집에 들어가야 하는데 내가 데려다줘야 하거든. 알아, 또 내가 제일 먼저 가네. 다들한테 인사는 네가 대신 좀 해 줘. 테이블 한 바퀴 돌면 삼십 분은 더 있어야 하고 그러면 진짜 늦어.",
+      "text": "Hey, I'm going to head out before they bring the cake, because the sitter has to be home by ten and I'm the one driving her. I know, I'm the first one leaving again. Say bye to everybody for me, because if I go around the table I'm here another half hour and then I'm really late.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, I'm gonna take off before they bring out the cake, cause the sitter's gotta be home by ten and I'm the one driving her. Yeah yeah, first one out the door again. Say bye to everybody for me, cause if I go around the table I'm here another half hour and then I'm really late."
+        },
+        {
+          "style": "formal",
+          "text": "Excuse me, I am going to leave before they bring out the cake, as the sitter must be home by ten and I am the one driving her. I know, I am the first one leaving again. Please say goodbye to everyone for me, because if I go around the table I will be here another half hour and then I will truly be late."
+        }
+      ],
+      "note": "**head out** 은 있던 자리를 뜨고 나선다는 말입니다. **say bye to everybody for me** 는 내 몫의 인사를 대신 전해 달라는 부탁입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "우리 팀에 회의 때는 다 맞다고 고개만 끄덕이다가 한 시간 뒤에 팀 전체한테 걱정되는 점이 있다고 메일 보내는 사람이 있어. 그래서 같은 회의를 두 번 하는 꼴이야. 두 번째는 다들 볼 수 있게 글로 남는다는 것만 다르고. 그렇다고 뭐라 할 수도 없어. 거기 쓴 말이 틀린 게 하나도 없거든. 그냥 다 같이 앉아 있을 때 입으로 말해 줬으면 좋겠어.",
+      "text": "There's a guy on my team who nods along with everything in the meeting, and then an hour later he sends the whole group an email about how he has concerns. So we end up having the same meeting twice, except the second one's in writing where everybody can see it. And I can't say anything to him, because nothing he puts in there is actually wrong. I just want him to say it out loud while we're all sitting right there.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "There's this guy on my team who nods along with everything in the meeting, and then an hour later he's emailing the whole group about his concerns. So we end up doing the same meeting twice, except round two is in writing where everyone can see it. And I can't say anything to him, cause nothing he puts in there is actually wrong. I just want him to say it out loud while we're all sitting right there."
+        },
+        {
+          "style": "formal",
+          "text": "There is a colleague on my team who nods along with everything during the meeting, and then an hour later he sends the entire group an email explaining that he has concerns. As a result, we end up holding the same meeting twice, except that the second one is in writing where everyone can see it. I cannot say anything to him, because nothing he includes is actually incorrect. I would simply like him to say it aloud while we are all sitting right there."
+        }
+      ],
+      "note": "**nods along with everything** 은 속으로 어떻든 겉으로는 다 동의하는 척 고개를 끄덕인다는 뜻입니다. **say it out loud** 는 혼자 담아 두지 말고 그 자리에서 소리 내어 말하라는 말입니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 \"install a fence\" 는 사람이 직접 세우는 자리에 원어민이 잘 쓰지 않는 말이라 \"build a fence\" 로 바꿨습니다 (text 의 put up a fence 와 같은 뜻).",
+    "5번 formal 이 \"nods along with everything\" 을 \"agrees with everything\" 으로 눅여서, 겉으로만 동의하는 척한다는 note 의 요점이 사라졌습니다. 말투만 올리고 표현은 그대로 두도록 \"nods along with everything during the meeting\" 으로 되돌렸습니다."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "setId": "s111",
+  "videoId": "daily-s111",
+  "title": "Set 111",
+  "madeAt": "2026-09-18",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그래서 어떻게 됐어? 지난번에 얘기할 때 너 그 수업 곧 시작한다고 했잖아. 그러고는 연락이 뚝 끊겼고. 아직 다니고 있어, 아니면 우리가 늘 하겠다고만 하고 마는 다른 것들처럼 된 거야?",
+      "text": "Okay, so what's the update? Last time we talked you were about to start that class, and then you kind of disappeared on me. Are you still doing it, or did that go the way of everything else we say we're going to do?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So what's the deal? You were gonna start that class, and then you just kinda went quiet on me. You still doing it, or did that end up like everything else we swear we're gonna do?"
+        },
+        {
+          "style": "formal",
+          "text": "May I ask how things have been going? When we last spoke you were about to begin that class, and then I did not hear anything further from you. Are you still attending, or did it go the way of everything else we say we are going to do?"
+        }
+      ],
+      "note": "**disappeared on me** 는 나한테 연락을 뚝 끊고 사라졌다는 뜻입니다. on me 가 붙으면 그게 나한테 일어난 일이라는 서운한 느낌이 담깁니다. **go the way of** 는 앞에 말한 것들처럼 흐지부지된다는 말입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "한 편만 더 보고 자야지 했는데 그게 11시였어. 정신 차려 보니까 거의 2시더라. 그 드라마가 그렇게 재밌는 것도 아니야. 폰을 내려놓기도 전에 다음 화가 알아서 시작해 버리는 게 문제지. 그래서 오늘 하루 종일 아무것도 못 할 거야. 제일 최악인 건 그러고 있는 동안에도 내가 알고 있었다는 거야.",
+      "text": "I said one more and I'd go to bed, and that was at eleven, and the next time I looked up it was almost two. It's not even that the show's that good, it's that the next episode starts on its own before I can put the phone down. So I'm going to be useless all day, and the worst part is I knew it while it was happening.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Told myself one more and then bed. That was at eleven. Next time I looked up it was almost two. And it's not like the show's even that good, it's that the next episode just starts on its own before I can put my phone down. So I'm gonna be useless all day, and the worst part is I knew it while it was happening."
+        },
+        {
+          "style": "formal",
+          "text": "I told myself I would watch one more and then go to bed, and that was at eleven. The next time I looked up it was nearly two. It is not that the show is especially good. It is that the next episode begins on its own before I can set the phone down. I am going to be useless all day, and the worst part is that I knew it while it was happening."
+        }
+      ],
+      "note": "**the next time I looked up** 은 정신 차려 보니, 고개 들어 보니 라는 뜻으로 시간이 훌쩍 지났을 때 씁니다. **on its own** 은 저절로, 알아서 라는 뜻입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "다른 사람 음식이 왔어. 그런데 배달 기사한테 팁 주고 문 닫고 나서야 봉투를 열었거든. 그러니까 이제 와서 복도까지 쫓아가기도 좀 뭐하더라고. 전부 치킨인데 나는 치킨을 안 먹어. 그래서 남편만 아주 신났고 나는 여기 서서 크래커나 먹고 있어. 이 시간에 또 시키지는 않을 거야.",
+      "text": "They brought somebody else's food, and I didn't open the bag until I'd already tipped the guy and shut the door, so by then it felt weird to go chasing him down the hall. It's all chicken, and I don't eat chicken, so my husband's having a great night and I'm standing here eating crackers. And I'm not ordering again at this hour.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I got somebody else's food, and I didn't open the bag till after I'd tipped the guy and shut the door, so by then it felt weird to go running after him down the hall. It's all chicken, and I don't eat chicken, so my husband's having a great night and I'm over here eating crackers. And I'm not ordering again this late."
+        },
+        {
+          "style": "formal",
+          "text": "They delivered someone else's order, and I did not open the bag until I had already tipped the driver and closed the door, so by then it felt strange to chase him down the hallway. It is all chicken, and I do not eat chicken, so my husband is having a wonderful evening and I am standing here eating crackers. And I am not ordering again at this hour."
+        }
+      ],
+      "note": "**it felt weird to** 는 하기가 좀 뭐했다는 말입니다. 안 된다는 게 아니라 어색해서 못 하겠다는 뉘앙스입니다. **having a great night** 은 신났다, 아주 좋은 저녁을 보내고 있다는 뜻입니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "토요일에 있던 약속 두 개 다 안 간다고 했는데, 조금도 안 미안해. 오후 1시쯤에 아침을 아주 거하게 차려 먹고, 그러고는 그냥 현관 계단에 한참 앉아 있었어. 하루 종일 나한테 뭘 해 달라는 사람이 아무도 없었어. 그게 자꾸 생각나.",
+      "text": "We said no to both things we had on Saturday, and I'm not even a little sorry about it. I made a huge breakfast at like one in the afternoon and then we just sat out on the steps for a while. Nobody needed anything from me all day, and that's the part I keep thinking about.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We backed out of both things we had Saturday, and honestly? Not sorry even a little. I made this huge breakfast at like one in the afternoon and then we just sat out on the steps for a while. Nobody needed anything from me all day, and that's the part I keep coming back to."
+        },
+        {
+          "style": "formal",
+          "text": "We declined both of the commitments we had on Saturday, and I am not the least bit sorry about it. I made a very large breakfast at around one in the afternoon, and then we simply sat outside on the steps for a while. No one needed anything from me all day, and that is the part I keep thinking about."
+        }
+      ],
+      "note": "**not even a little sorry** 는 조금도 미안하지 않다고 힘주어 말하는 표현입니다. 캐주얼 쪽의 **backed out of** 는 하기로 해 놓은 약속을 안 하겠다고 무르는 것입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "너희 딸도 올해 읽기 숙제 엄청 많아? 우리 애는 7시에 앉는데 9시까지도 식탁에 앉아 있어. 그중 절반은 그냥 하면 될 걸 나랑 말싸움하는 거고. 숙제가 너무 많은 건지 우리 애가 유난인 건지 모르겠어. 물어보는 부모마다 자기 애는 괜찮다고 하거든.",
+      "text": "Is your daughter getting a ton of reading homework this year? Because mine sits down at seven and we're still at the table at nine, and half of it is her arguing with me instead of just doing it. I can't tell if it's too much or if it's just her, because every other parent I ask says their kid's fine.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Your daughter buried in reading homework this year too? Mine sits down at seven and we're still at that table at nine, and half of it is her arguing with me instead of just doing it. I can't tell if it's too much or if it's just her, because every other parent I ask says their kid's fine."
+        },
+        {
+          "style": "formal",
+          "text": "Is your daughter receiving a great deal of reading homework this year? Mine sits down at seven and we are still at the table at nine, and half of that is her arguing with me rather than simply doing it. I cannot tell whether it is too much or whether it is simply her, because every other parent I ask says that their child is fine."
+        }
+      ],
+      "note": "**a ton of** 는 엄청 많다는 뜻입니다. 캐주얼 쪽의 **buried in** 도 같은 자리에서 숙제에 파묻혀 있다는 뜻으로 쓰였습니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 캐주얼: 'So where do we stand?' 는 관계나 협상의 현재 위치를 묻는 말이라 근황 묻기에 안 맞습니다. 'So what's the deal?' 로 바꿨습니다.",
+    "1번 격식: 'how that has been progressing' 의 that 이 가리키는 것이 아직 안 나와서 순간 헷갈립니다. 'how things have been going' 으로 바꿨습니다.",
+    "2번 격식: 세미콜론은 글에서만 쓰는 부호라 소리내어 읽는 자리에 안 맞아 문장을 끊었습니다.",
+    "3번 한국어: '그제서야' 는 '그때에야 비로소' 라는 뜻이라 영어의 by then(이제 와서) 과 어긋납니다. '이제 와서' 로 고쳤습니다.",
+    "4번 note: **backed out of** 는 캐주얼 쪽에만 나오는 표현이라 어디에 나오는지 밝혔습니다.",
+    "5번 캐주얼: 앞부분 'Is your daughter' 가 text 와 그대로 겹쳐서 어순을 바꿔 말투를 더 구어로 만들었습니다."
+  ]
+}

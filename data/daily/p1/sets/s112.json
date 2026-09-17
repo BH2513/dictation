@@ -1,0 +1,115 @@
+{
+  "setId": "s112",
+  "videoId": "daily-s112",
+  "title": "Set 112",
+  "madeAt": "2026-09-18",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "오늘 점심값 얼마 냈는지 알아? 14달러야. 그것도 샌드위치랑 음료 하나인데, 대단한 것도 아니고. 이 회사 들어오고부터 거기를 계속 다녔는데 8달러였던 때가 기억나. 그래서 이제 나도 남들처럼 집에서 밥을 싸 와. 절대 그럴 일 없다고 큰소리쳤었는데 말이야. 하루 14달러면 일주일에 70달러고, 그 돈 내려고 줄까지 서야 하잖아.",
+      "text": "You know what I paid for lunch today? Fourteen dollars, and that's just a sandwich and a drink, nothing fancy. I've been going to that place since I started this job and I remember when it was eight. So now I'm bringing food from home like everybody else, which I swore I was never going to do, because fourteen a day is seventy a week just to stand in line.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Guess what lunch ran me today? Fourteen bucks, and that's just a sandwich and a drink, nothing fancy. I've been hitting that place since I started this job and I remember when it was eight. So now I'm packing food from home like everybody else, which I swore I'd never do, 'cause fourteen a day is seventy a week just to stand in line."
+        },
+        {
+          "style": "formal",
+          "text": "Do you know what I paid for lunch today? Fourteen dollars, and that was only a sandwich and a drink, nothing elaborate. I have been going to that place since I started this job, and I remember when it was eight. So now I am bringing food from home like everyone else, which I swore I would never do, because fourteen dollars a day comes to seventy a week simply to stand in line."
+        }
+      ],
+      "note": "**nothing fancy** 는 별것 아닌 평범한 것이라는 뜻입니다. **which I swore I was never going to do** 는 절대 안 하겠다고 장담했던 일을 결국 하게 됐을 때 붙이는 말입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그거 오늘 밤에 시작하면 8시간짜리야. 어떻게 될지 너도 뻔히 알잖아. 세 편쯤 보다가 네가 얘기가 하나도 진전이 없다고 할 거고, 그럼 보자고 한 사람은 나 혼자가 되는 거지. 그냥 우리 봤던 거 틀면 안 될까? 알았어, 틀어. 대신 미리 말해 두는데 나는 누가 누군지 설명 나오기도 전에 잠들 거야.",
+      "text": "If we start that one tonight we're in for eight hours, and you know exactly how this goes, because three episodes in you decide it's not going anywhere and then I'm the one who wanted it. Can we just put on something we've already seen? Fine, go ahead and start it, but I'm telling you right now I'll be asleep before they explain who anybody is.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That one's eight hours if we start it tonight, and come on, you know exactly how this goes. Three episodes in you decide it's going nowhere and then I'm the one who wanted it. Can't we just put on something we've already seen? Fine, go ahead, start it, but I'm telling you right now I'll be out before they explain who anybody is."
+        },
+        {
+          "style": "formal",
+          "text": "If we begin that one tonight we are committing to eight hours, and you know exactly how this will go, because three episodes in you will decide it is not going anywhere, and then I will be the one who wanted it. Could we simply watch something we have already seen? Very well, go ahead and start it, but I am telling you now that I will be asleep before they explain who anyone is."
+        }
+      ],
+      "note": "**it's not going anywhere** 는 이야기가 제자리걸음이라 진전이 없다는 뜻입니다. 캐주얼의 **I'll be out** 은 잠들어 버린다는 말입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그러자고 하고 싶어, 진심으로. 그런데 지난번에 차 빌려주고는 하루 종일 휴대폰만 들여다보고 있었거든. 그건 네 탓이 아니라 내 문제야. 게다가 아내가 목요일에 장모님 댁까지 차 몰고 가야 해서, 내가 유별나게 굴지 않는다 쳐도 빠듯해. 그냥 내가 태워다 주면 어때? 솔직히 여기 앉아서 조마조마해하느니 그게 나아.",
+      "text": "I want to say yes, I really do, but the last time I lent my car out I spent the whole day checking my phone, and that's on me, not on you. And my wife has to drive out to her mom's Thursday anyway, so it'd be tight even if I wasn't weird about it. Can I just drive you instead? I'd honestly rather do that than sit here wondering.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "God, I wish I could say yes, I really do, but last time I lent my car out I spent the whole day staring at my phone, and that's on me, not on you. Plus my wife's gotta drive out to her mom's Thursday anyway, so it'd be tight even if I wasn't weird about it. How about I just drive you? Honestly I'd rather do that than sit here wondering."
+        },
+        {
+          "style": "formal",
+          "text": "I would like to say yes, I truly would, but the last time I lent out my car I spent the entire day checking my phone, and that is my fault, not yours. In addition, my wife has to drive out to her mother's on Thursday regardless, so it would be tight even if I were not strange about it. Might I simply drive you instead? I would honestly prefer that to sitting here wondering."
+        }
+      ],
+      "note": "**that's on me** 는 상대가 아니라 내 탓이라고 인정할 때 씁니다. **it'd be tight** 는 시간이나 일정이 빠듯하다는 뜻입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "토요일에 호수에 가기로 했었는데 금요일 밤부터 비가 쏟아지더니 그칠 줄을 몰랐어. 그래서 부엌에 앉아 9시쯤까지 기상 레이더만 들여다보다가 그냥 접었지. 애들이 나보다 더 담담하게 받아들이더라. 결국 고속도로 옆에 있는 그 볼링장에 갔는데, 이제는 애들이 처음부터 그게 계획이었던 줄 알아.",
+      "text": "We were supposed to drive up to the lake on Saturday, but it started coming down Friday night and it never let up, so we sat in the kitchen watching the radar until about nine and then we just called it. The kids took it better than I did. We ended up at that bowling alley out by the highway, and now they think that was the plan the whole time.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the lake was the plan for Saturday, but it started coming down Friday night and never quit, so we sat in the kitchen watching the radar till about nine and then we just bailed. The kids took it better than I did. We wound up at that bowling alley out by the highway, and now they think that was the plan the whole time."
+        },
+        {
+          "style": "formal",
+          "text": "We were meant to drive up to the lake on Saturday, but the rain began Friday night and it never let up, so we sat in the kitchen watching the radar until about nine and then we decided against it. The children took it better than I did. We ended up at that bowling alley out by the highway, and now they believe that was the plan all along."
+        }
+      ],
+      "note": "**it never let up** 은 비가 수그러들지 않고 계속됐다는 뜻입니다. **we just called it** 은 하던 계획을 거기서 그만 접었다는 말입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "엄마가 지금은 괜찮으셔. 바로 그게 문제야. 그러니까 올해 안에 뭘 정해야 할 이유가 없거든. 그런데 진짜 무슨 일이 생기고 나서 움직이면 그땐 정신없이 이사하게 되고, 이 집도 누가 부르는 값에 그냥 넘기게 돼. 애들은 여기서 잘 지내고 친구들도 다 있어서, 저녁 먹다가 이 얘기만 꺼내면 분위기가 안 좋아져. 때가 되면 알게 되겠지 하고 계속 스스로한테 말하는데, 그런 식으로 알게 되는 게 아닌 것 같아.",
+      "text": "My mom's doing fine right now, that's the thing, so there's no reason I have to decide anything this year. But if I wait until something actually happens, then I'm moving in a panic and I'm taking whatever somebody offers me for this place. And the kids are happy here, they've got their friends, so every time I bring it up at dinner it doesn't go well. I keep telling myself I'll know when it's time. I don't think that's how it works.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Thing is, my mom's fine right now, so there's no reason I gotta decide anything this year. But if I wait till something actually happens, then I'm moving in a panic and taking whatever anybody offers me for this place. And the kids are happy here, they've got their friends, so every time I bring it up at dinner it never goes well. I keep telling myself I'll know when it's time. I don't think it works like that."
+        },
+        {
+          "style": "formal",
+          "text": "My mother is doing well at the moment, that is the difficulty, so there is no reason I must decide anything this year. But if I wait until something actually happens, then I will be moving in a panic and accepting whatever someone offers me for this house. And the children are happy here, they have their friends, so every time I raise it at dinner it does not go well. I keep telling myself that I will know when the time comes. I do not believe that is how it works."
+        }
+      ],
+      "note": "**that's the thing** 은 바로 그 점이 문제라고 짚을 때 씁니다. **I'll know when it's time** 은 때가 되면 저절로 알 거라며 결정을 미룰 때 쓰는 말입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal: \"Would you like to know what I paid...\" 는 정말로 알고 싶냐고 묻는 제안이 되어 원문의 되묻는 말맛과 뜻이 달라졌습니다. \"Do you know what I paid for lunch today?\" 로 고쳤습니다.",
+    "4번 formal: 원문의 \"that bowling alley\"(둘 다 아는 그 볼링장)가 \"the bowling alley\" 로 바뀌어 가리키는 느낌이 빠졌습니다. \"that bowling alley\" 로 되돌렸습니다.",
+    "5번 casual: \"it goes badly\" 는 말할 때 잘 안 쓰는 딱딱한 표현이라, 더 구어다운 \"it never goes well\" 로 고쳤습니다.",
+    "5번 한국어: \"그렇게 알아지는 일이 아닌\" 이 어색해서 \"그런 식으로 알게 되는 게 아닌 것 같아\" 로 고쳤습니다."
+  ]
+}

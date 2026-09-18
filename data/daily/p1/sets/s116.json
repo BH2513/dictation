@@ -1,0 +1,117 @@
+{
+  "setId": "s116",
+  "videoId": "daily-s116",
+  "title": "Set 116",
+  "madeAt": "2026-09-19",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "나야 해 주고 싶은데, 우리 고양이한테 일주일은 좀 길어. 작년 여름에 너희 개 여기 있는 동안 내내 침대 밑에 숨어만 있었고 밥도 거의 안 먹었거든. 그냥 내가 아침마다 들러서 잠깐 밖에 내보내 주면 안 될까? 어차피 너희 집이 출근길에 있으니까 그건 어렵지 않아.",
+      "text": "I would, but a whole week's a lot with our cat. She hid under the bed the entire time your dog stayed here last summer and barely ate anything. Could I just come by in the mornings and let him out instead? Your place is on my way to work anyway, so that part's easy.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Our cat's the problem. A whole week's a lot for her. She hid under the bed the entire time your dog was here last summer and barely ate anything. Can I just swing by in the mornings and let him out instead? You're on my way to work anyway, so that part's easy."
+        },
+        {
+          "style": "formal",
+          "text": "I would be glad to, but an entire week would be difficult with our cat. She hid under the bed for the whole of your dog's stay last summer and ate very little. Would it be possible for me to stop by in the mornings and let him out instead? Your home is on my route to work, so that part would be simple."
+        }
+      ],
+      "note": "**swing by** 는 가는 길에 잠깐 들른다는 뜻입니다. **on my way to work** 는 출근길에 있다는 말이라 부탁을 가볍게 만들 때 자주 붙입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "금요일에 데크 사포질까지 다 해 놓고 칠만 하면 됐는데, 주말 내내 비가 왔어. 나무가 마르질 않아서 아무것도 못 발랐지. 지금 반만 하다 만 채로 그냥 있어. 수요일에 비가 또 온다더라. 아내 말대로 8월에 시작했어야 했는데.",
+      "text": "I had the deck sanded and ready to go Friday, and then it rained the whole weekend, so the boards never dried out and I couldn't put anything on them. Now it's just sitting there half finished, and they're saying more rain Wednesday. I should have started it in August like my wife told me to.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the deck was all sanded and ready to go Friday, and then it rained all weekend. The boards never dried out, so I couldn't get anything on them. Now it's just sitting there half finished, and they're saying more rain Wednesday. I should've started it in August like my wife told me to."
+        },
+        {
+          "style": "formal",
+          "text": "The deck was sanded and ready to finish on Friday, and then it rained all weekend, so the boards never dried out and I was unable to apply anything to them. It is sitting there half finished now, and more rain is forecast for Wednesday. I should have begun it in August, as my wife told me to."
+        }
+      ],
+      "note": "**ready to go** 는 준비가 다 끝나서 시작만 하면 된다는 뜻입니다. **I should have started it in August** 처럼 should have 는 안 한 일을 두고 후회할 때 씁니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "너 아직 포틀랜드에 있어? 아니면 결국 1년만 하고 끝난 거야? 내가 마지막으로 들었을 땐 계약 끝나면 돌아온다고 했잖아. 그러다 그 등산 사진 보고 아예 눌러앉기로 했나 보다 했지. 일은 어때? 봄에는 아주 지긋지긋해하는 것 같던데.",
+      "text": "So are you still out in Portland, or did that end up being a one year thing? Last I heard you were going to come back once the lease was up, and then I saw the pictures from that hiking trip, so I figured you'd decided to stay. How's the job? You sounded pretty done with it in the spring.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wait, are you still out in Portland, or did that turn into a one year thing? Last I heard you were gonna come back once the lease was up, and then I saw the pictures from that hiking trip, so I figured you'd decided to stay. How's the job? You sounded pretty done with it in the spring."
+        },
+        {
+          "style": "formal",
+          "text": "Are you still out in Portland, or did that end up being a one year arrangement? The last I heard, you intended to return once the lease was up, and then I saw the photographs from that hiking trip, so I assumed you had decided to stay. How is the job? You sounded quite tired of it in the spring."
+        }
+      ],
+      "note": "**done with it** 은 이제 진절머리가 나서 그만하고 싶다는 뜻입니다. **I figured** 는 상황을 보고 그런가 보다 하고 짐작했다는 말입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "애가 방에서 네 번을 나왔어. 그것도 나올 때마다 이유가 달라. 처음엔 목마르다고, 그다음엔 복도에서 무슨 소리가 났다고, 마지막엔 그냥 공룡 얘기가 하고 싶었대. 그래서 결국 조용해질 때까지 방문 앞 바닥에 앉아 있었어. 일어나려니까 다리가 저리더라. 오늘 밤에 주방 치우려고 했는데 나도 그냥 자려고.",
+      "text": "He came out of his room four times, and it was something different every time. First he was thirsty, then he heard a noise in the hall, and the last time he just wanted to tell me about a dinosaur. So I ended up sitting on the floor outside his door until it went quiet, and my leg was asleep by the time I got up. I was going to do the kitchen tonight and now I'm just going to bed too.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Four times he came out of his room, and it was something different every time. First he was thirsty, then he heard a noise in the hall, and the last time he just wanted to tell me about a dinosaur. So I ended up on the floor outside his door till it went quiet, and my leg was asleep by the time I got up. I was gonna do the kitchen tonight and now I'm just going to bed too."
+        },
+        {
+          "style": "formal",
+          "text": "He left his room four times, and it was something different on each occasion. First he was thirsty, then he heard a noise in the hallway, and the last time he simply wanted to tell me about a dinosaur. I ended up sitting on the floor outside his door until it was quiet, and my leg had fallen asleep by the time I stood up. I had intended to do the kitchen tonight, and now I am going to bed as well."
+        }
+      ],
+      "note": "**my leg was asleep** 은 다리가 저리다는 뜻이지 잠과는 상관이 없습니다. **I ended up sitting** 은 그럴 생각은 없었는데 결국 그렇게 됐다는 말입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "나 잘 지내, 우리 다 잘 지내. 미안, 저녁 먹던 중이라 전화를 늦게 받았어. 일은 똑같고 집도 괜찮고 별일 없어. 아니, 돈 걱정은 안 해도 돼, 엄마. 또 시작하지 마. 그보다 아빠 무릎은 어때? 8월에는 나한테 아무것도 아니라고 하더니, 캐럴 이모는 아빠가 계단도 못 오른다던데.",
+      "text": "I'm good, we're all good. Sorry, I was in the middle of dinner, that's why it took me a minute to pick up. Work's the same, the apartment's fine, nothing to report. No, we're okay on money, Mom, don't start. How's Dad's knee, though? He told me it was nothing back in August, and then Aunt Carol tells me he can't do the stairs.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We're fine, all of us. Sorry, you caught me in the middle of dinner, that's why it took me a minute to pick up. Work's the same, the apartment's fine, nothing to report. And no, we're okay on money, Mom, don't start. How's Dad's knee though? He told me it was nothing back in August, and then Aunt Carol tells me he can't do the stairs."
+        },
+        {
+          "style": "formal",
+          "text": "I am well, and we are all well. I apologize, I was in the middle of dinner, which is why it took me a minute to answer. Work is the same, the apartment is fine, there is nothing to report. No, we are fine for money, Mom, please do not start. How is Dad's knee, though? He told me it was nothing back in August, and then Aunt Carol tells me he cannot manage the stairs."
+        }
+      ],
+      "note": "**nothing to report** 는 전할 만한 일이 없다, 별일 없다는 뜻입니다. **don't start** 는 늘 하던 잔소리를 또 꺼내려 할 때 그 얘기는 하지 말라고 막는 말입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 영어: 쉼표로 계속 이어 붙은 데를 두 문장으로 나누고 because 를 뺐습니다. 말할 때는 이유를 접속사로 묶기보다 그냥 다음 문장으로 넘어갑니다.",
+    "1번 casual: 쉼표로 문장 두 개를 이어 붙인 자리를 끊고, A whole week is 를 A whole week's 로 줄였습니다. 캐주얼은 더 짧고 축약된 구어여야 합니다.",
+    "2번 casual: 앞은 현재형(I've got, it rains)인데 뒤는 과거형(never dried out, couldn't)이라 시제가 어긋났습니다. 과거로 통일하고 시작 부분도 text 와 겹치지 않게 바꿨습니다.",
+    "2번 formal: they are forecasting 의 they 가 누구인지 격식체에서 뜬금없어서 more rain is forecast for Wednesday 로 고쳤습니다. 뜻은 그대로입니다.",
+    "3번 formal: quite finished with it 은 격식체에서 쓰지 않는 말투라 quite tired of it 으로 바꿨습니다. 봄에 그 일에 질려 있었다는 뜻은 그대로입니다.",
+    "5번 한국어: '돈도 모자라지 않아' 가 번역투라 '돈 걱정은 안 해도 돼' 로 고치고, don't start 를 '또 시작하지 마' 로 옮겼습니다."
+  ]
+}

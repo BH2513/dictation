@@ -1,0 +1,112 @@
+{
+  "setId": "s118",
+  "videoId": "daily-s118",
+  "title": "Set 118",
+  "madeAt": "2026-09-20",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "댁 아들은 올해 담임 선생님 얘기 좀 하나요? 우리 애는 집에 와서 아무 말도 안 하다가, 과제 두 개가 밀렸다는 메일이 오는데 그게 처음 듣는 소리예요. 2주에 한 번씩 학교에 찾아가는 학부모는 되고 싶지 않은데, 그렇다고 10월에야 이런 걸 알게 되는 것도 안 되잖아요.",
+      "text": "Did your son say anything about the teacher they got this year? Because mine comes home and tells me nothing, and then I get an email saying he's behind on two assignments, and that's the first I'm hearing of it. I don't want to be the parent who's in there every other week, but I also can't be finding this out in October.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Has your kid said anything about the teacher they've got this year? Cause mine comes home, tells me nothing, and then I'm getting an email that he's two assignments behind and it's the first I've heard of it. I don't wanna be that parent who's up there every other week, but I can't be finding this out in October either."
+        },
+        {
+          "style": "formal",
+          "text": "Has your son mentioned anything about the teacher they have this year? Mine comes home and tells me nothing, and then I receive an email saying he is behind on two assignments, and that is the first I have heard of it. I do not want to be the parent who is in there every other week, but I also cannot be learning about this in October."
+        }
+      ],
+      "note": "**that's the first I'm hearing of it** 은 그 얘기를 지금 처음 듣는다는 뜻으로, 미리 못 들어서 당황했을 때 씁니다. **behind on two assignments** 처럼 be behind on 은 과제나 일이 밀렸다고 할 때 씁니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "소개해 주고 싶은 사람은 회사 동료인데, 아홉 살짜리 아이가 있다는 건 지금 미리 말해 둘게. 저녁 먹다가 그 얘기가 나오는 것보다 나한테 듣는 게 나을 것 같아서. 재미있는 사람이야, 진짜로 재미있어. 너 혼자 대화를 다 끌고 가게 가만히 앉아 있지도 않을 거고. 하나 걸리는 건 토요일마다 일해서 평일 저녁이어야 한다는 거야. 내가 물어봐 줄까?",
+      "text": "So the person I want you to meet is a friend from work, and I'm telling you now that she's got a nine year old, because I'd rather you hear it from me than have it come up at dinner. She's funny, like actually funny, and she's not going to sit there and make you carry the whole conversation. The only thing is she works Saturdays, so it'd have to be a weeknight. Do you want me to ask her?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So this friend from work, I want you to meet her, and I'm telling you up front she's got a nine year old, cause I'd rather you hear it from me than have it come up over dinner. She's funny, like actually funny, and she's not gonna make you carry the whole conversation. Only thing is she works Saturdays, so it'd have to be a weeknight. Want me to ask her?"
+        },
+        {
+          "style": "formal",
+          "text": "The person I would like you to meet is a friend from work, and I am telling you now that she has a nine year old, because I would rather you hear it from me than have it come up at dinner. She is funny, genuinely funny, and she will not sit there and make you carry the entire conversation. The only difficulty is that she works Saturdays, so it would have to be a weeknight. Would you like me to ask her?"
+        }
+      ],
+      "note": "**make you carry the whole conversation** 은 상대가 말을 안 해서 혼자 대화를 끌고 가게 만든다는 뜻입니다. **The only thing is** 는 다 좋은데 딱 하나 걸리는 게 있다고 할 때 꺼내는 말입니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "아홉 시면 소파에서 곯아떨어지는데, 그러다 일어나서 양치하고 막상 침대에 누우면 눈이 말똥말똥해져서 한 시까지 누워 있어. 아내는 소파에서 자지 좀 말라고 계속 그러고 그 말이 맞긴 한데, 하루 중에 진짜 졸린 때가 그때뿐이란 말이야. 그래서 어젯밤엔 억지로 열한 시까지 버텼는데도 결국 한 시간을 그냥 누워만 있었어.",
+      "text": "I'm out cold on the couch by nine, but then I get up and brush my teeth, and by the time I'm actually in bed I'm wide awake, so I lie there until one. My wife keeps telling me to stop falling asleep on the couch, and she's right, except that's the only time all day I'm actually tired. So last night I made myself stay up till eleven and I still ended up lying there for an hour.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "By nine I'm passed out on the couch, then I get up to brush my teeth and by the time I'm actually in bed I'm wide awake, so I'm lying there till one. My wife keeps telling me to quit falling asleep on the couch, and she's right, except that's the only time all day I'm actually tired. So last night I made myself stay up till eleven and I still lay there for an hour."
+        },
+        {
+          "style": "formal",
+          "text": "I fall sound asleep on the couch by nine, but then I get up and brush my teeth, and by the time I am actually in bed I am wide awake, so I lie there until one. My wife keeps telling me to stop falling asleep on the couch, and she is correct, except that is the only time all day that I am genuinely tired. Last night I made myself stay up until eleven and I still ended up lying there for an hour."
+        }
+      ],
+      "note": "**out cold** 는 완전히 곯아떨어진 상태를 말합니다. 반대로 **wide awake** 는 정신이 말똥말똥해서 잠이 안 오는 상태예요.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "휴대폰이 자꾸 꺼져요. 60퍼센트라고 떠 있다가 2분 뒤에 그냥 꺼져 버리는데, 매일 그러는 게 아니라서 그러는 걸 남한테 보여 줄 수가 없어요. 수리점에 가져갔더니 직원이 자기 기계에 연결해 보고는 배터리는 이상 없다고 하더라고요. 그래 놓고 주차장에 나왔더니 손에 들고 있던 게 꺼졌어요. 그래서 요즘은 어디를 가든 충전기를 들고 다녀요.",
+      "text": "My phone keeps dying on me. It'll say sixty percent and then two minutes later it's just off, and it doesn't do it every day, so I can never show anybody it actually doing it. I took it in and the guy plugged it into his thing and told me the battery tests fine, and then it died in my hand out in the parking lot. So now I carry the charger with me everywhere I go.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I can't keep my phone alive. It'll say sixty percent and two minutes later it's just off, and it doesn't do it every day, so nobody ever catches it actually doing it. I took it in and the guy plugged it into his thing and said the battery tests fine, and then it died in my hand out in the parking lot. So now I'm carrying the charger with me everywhere I go."
+        },
+        {
+          "style": "formal",
+          "text": "My phone continues to shut off on me. It will show sixty percent and then two minutes later it is simply off, and it does not happen every day, so I can never show anyone it actually doing it. I took it in and the technician plugged it into his equipment and told me the battery tests fine, and then it died in my hand out in the parking lot. So now I carry the charger with me everywhere I go."
+        }
+      ],
+      "note": "**keeps dying on me** 는 기기가 자꾸 꺼져서 나를 곤란하게 한다는 말입니다. on me 가 나한테 그런다는 억울한 느낌을 더해 줘요. **the battery tests fine** 은 검사해 보니 배터리는 멀쩡하다는 뜻입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "배송 조회에는 화요일에 배달 완료라고 뜨고 현관에 놓인 사진까지 있는데, 우리 집 현관이 아니에요. 우리 집엔 그런 계단이 없거든요. 전화했더니 이틀만 더 기다려 보고 그다음에 접수를 넣으라는데, 그 이틀이 내일이면 끝나요. 딸 선물이고 생일이 토요일이라서, 남의 집 현관문을 들여다보면서 동네를 오르락내리락하고 있어요. 무슨 이상한 사람처럼요.",
+      "text": "The tracking says delivered on Tuesday, and there's a picture of it sitting on a porch, except that's not my porch, I don't have steps like that. I called them and they told me to give it two more days and then file something, and the two days is up tomorrow. It's my daughter's present and her birthday is Saturday, so I've been walking up and down the street looking at everybody's front door like some kind of weirdo.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking says it got delivered Tuesday, and there's a photo of it sitting on a porch, except that's not my porch, I don't have steps like that. I called and they told me to give it two more days and then file something, and those two days are up tomorrow. It's my daughter's present and her birthday's Saturday, so I've been going up and down the street looking at everybody's front door like some kind of weirdo."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking indicates it was delivered on Tuesday, and there is a photograph of it sitting on a porch, except that is not my porch, as I do not have steps like that. I called them and they told me to allow two more days and then file a claim, and the two days are up tomorrow. It is my daughter's present and her birthday is Saturday, so I have been walking up and down the street looking at everyone's front door like some sort of eccentric."
+        }
+      ],
+      "note": "**the two days is up tomorrow** 에서 be up 은 정해진 기한이 다 됐다는 뜻입니다. **file something** 은 분실 신고 같은 것을 정식으로 접수한다는 말이고, 뭘 넣는지 정확히 모를 때 something 으로 뭉뚱그려 말한 겁니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 캐주얼의 'show anybody it actually happening' 이 어색해서 'catch it actually doing it' 으로 고쳤습니다 (본문의 'show anybody it actually doing it' 과도 겹치지 않습니다)."
+  ]
+}

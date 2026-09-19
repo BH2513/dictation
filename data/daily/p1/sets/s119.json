@@ -1,0 +1,117 @@
+{
+  "setId": "s119",
+  "videoId": "daily-s119",
+  "title": "Set 119",
+  "madeAt": "2026-09-20",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저기요, 방금 두고 가신 봉투에 다른 사람 이름이 적혀 있어요. 접시에 다 덜어 놓고 나서야 알았어요. 누구 곤란하게 하려는 건 아닌데, 음식에 전부 새우가 들어 있고 우리 딸은 새우 근처에도 못 가요. 맞는 걸로 보내 주실 수 있어요, 아니면 제가 가지러 갈까요?",
+      "text": "Hey, so the bag you guys just dropped off has somebody else's name on it, and I didn't catch it until I'd already put everything out on plates. I'm not trying to get anybody in trouble, but there's shrimp in all of it and my daughter can't go near shrimp. Can you send the right one out, or do you want me to come get it?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, sorry to bug you. The bag that just got dropped off has someone else's name on it, and I didn't notice till I'd plated everything. Not trying to get anyone in trouble, but there's shrimp in all of it and my daughter can't be near shrimp. Any chance you can run the right one over? Or I can just come grab it."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for the trouble, but the bag that was just delivered has another person's name on it, and I did not notice until I had already served everything onto plates. I am not trying to cause difficulty for anyone, but there is shrimp in all of it, and my daughter cannot go near shrimp. Could you send out the correct order, or would you prefer that I come and collect it?"
+        }
+      ],
+      "note": "**I didn't catch it** 은 눈으로 잡아내지 못했다, 즉 알아채지 못했다는 뜻입니다. **get anybody in trouble** 은 누군가를 곤란하게 만든다는 말이라 항의할 때 자주 앞에 붙입니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "사촌 형이 요즘 얼마 버냐고 대놓고 물어봤어. 다들 둘러앉은 밥상에서 묻길래 그냥 웃으면서 잘 지낸다고 했는데도 안 그만두더라. 그다음엔 삼촌이 왜 아직 세 들어 사냐고 묻고. 하나씩 물어보는 거야 괜찮은데, 밥 먹기도 전에 한 시간을 그런다니까.",
+      "text": "My cousin asked me straight out what I'm making now, and he asked at the table with everybody sitting right there, so I kind of laughed and said I'm doing fine, and he just kept going. Then my uncle wanted to know why we're still renting. I don't mind the questions one at a time, but it's an hour of that before anybody's even eaten.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my cousin just comes right out and asks what I'm making these days, and he asks at the table with everybody sitting there, so I kinda laughed and said I'm doing okay, and he wouldn't drop it. Then my uncle's asking why we're still renting. One question here and there is fine, but it's a solid hour of that before anyone's even eaten."
+        },
+        {
+          "style": "formal",
+          "text": "My cousin asked me directly what I am earning now, and he asked at the table with everyone sitting right there, so I laughed a little and said that I am doing well, and he carried on regardless. Then my uncle asked why we are still renting. I do not mind the questions one at a time, but it goes on for an hour before anyone has even eaten."
+        }
+      ],
+      "note": "**asked me straight out** 은 돌려 말하지 않고 곧장 물었다는 뜻입니다. **he just kept going** 은 말려도 멈추지 않고 계속했다는 말입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "한 달쯤 빵 만드는 데 완전히 빠져 있었어. 장비를 통째로 사서 일요일마다 한 덩이씩 구웠지. 그러다 주말에 놀러 갔다 오느라 발효종에 먹이를 안 줬더니 죽어 버렸고, 다시 시작하려면 뭐라도 굽기까지 일주일을 기다려야 했어. 그게 6월이야. 그 병은 아직도 냉장고 안쪽에 있어. 차마 버리질 못하겠더라고.",
+      "text": "I got really into making bread for about a month. I bought the whole setup, and I was doing a loaf every Sunday. Then we went away for a weekend and I didn't feed the starter, so it died, and to start again I'd have had to wait a week before I could bake anything at all. That was in June. The jar is still in the back of my fridge because I can't make myself dump it out.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was way into making bread for like a month. Bought the whole setup, did a loaf every Sunday. Then we went away for a weekend, didn't feed the starter, and it died. Starting over meant waiting a week before I could bake anything at all. That was back in June. Jar's still in the back of my fridge because I can't make myself toss it."
+        },
+        {
+          "style": "formal",
+          "text": "I became quite absorbed in making bread for about a month. I purchased the entire setup, and I was baking a loaf every Sunday. Then we went away for a weekend and I did not feed the starter, so it died, and to begin again I would have had to wait a week before I could bake anything at all. That was in June. The jar is still at the back of my refrigerator because I cannot bring myself to throw it out."
+        }
+      ],
+      "note": "**got really into** 는 어떤 일에 푹 빠졌다는 뜻입니다. **I can't make myself dump it out** 처럼 make myself 는 머리로는 알지만 차마 그렇게 못 하겠다는 말입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "진짜 아무것도 안 했어. 아빠한테 차고 치우는 거 도와드린다고 했고 점심때면 끝날 줄 알았는데, 물건 하나하나를 쌓기 전에 다 이야기하고 넘어가시더라고. 그래서 토요일이 통째로 날아갔고, 일요일은 허리가 아파 죽겠어서 꼼짝도 안 했어. 그래도 차고에 차는 넣었어. 십 년 만에 처음일걸.",
+      "text": "Nothing, honestly. I told my dad I'd help him get the garage cleared out, and I figured we'd be done by lunch, but he wants to talk about every single thing before it goes in the pile. So Saturday was gone, and then Sunday I didn't move because my back was killing me. We did get his car in there, though, and I don't think that's happened in ten years.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nothing, really. I said I'd help my dad clear out the garage, figured we'd be done by lunch, but he's got a story about every single thing before it goes in the pile. So there went Saturday, and Sunday I didn't move because my back was wrecked. We did get his car in there though. First time in ten years, I think."
+        },
+        {
+          "style": "formal",
+          "text": "Nothing at all, to be honest. I told my father that I would help him clear out the garage, and I assumed we would be finished by lunch, but he wishes to discuss every single item before it goes in the pile. So Saturday was lost, and then on Sunday I did not move because my back was giving me a great deal of pain. We did manage to get his car inside, however, and I do not believe that has happened in ten years."
+        }
+      ],
+      "note": "**my back was killing me** 는 허리가 아파 죽겠다는 뜻으로, 아픈 곳을 주어로 놓고 다 쓸 수 있습니다. **Saturday was gone** 은 하루가 그냥 사라졌다는 말입니다.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "너 그 드라마 아직 봐? 나는 시즌 3까지는 끝까지 따라갔는데, 무슨 일이 있었는지 배우가 통째로 바뀌었더라. 게다가 딴짓하고 있는 줄 아는지 뭐든 두 번씩 설명해 줘. 예전엔 일주일 내내 그것만 기다렸거든. 지금은 한 달 전 편이 그대로 남아 있는데 하나도 안 아쉬워.",
+      "text": "Are you still watching that show? Because I stayed with it through the third season, and I don't know what happened, but it's a whole different cast now and they explain everything twice like you weren't paying attention. I used to wait all week for it. Now there's an episode from a month ago just sitting there and I don't feel bad about it at all.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You still keeping up with that show? Because I hung in there through season three, and I don't know what happened, but it's a totally different cast now and they explain everything twice like you weren't paying attention. I used to count down all week for it. Now I've got an episode from a month ago just sitting there and I don't feel bad about it one bit."
+        },
+        {
+          "style": "formal",
+          "text": "Are you still watching that series? Because I stayed with it through the third season, and I do not know what happened, but there is an entirely different cast now, and they explain everything twice, as though one had not been paying attention. I used to look forward to it all week. Now there is an episode from a month ago sitting there unwatched, and I do not feel the least bit bad about it."
+        }
+      ],
+      "note": "**stayed with it** 은 중간에 그만두지 않고 계속 봤다는 뜻입니다. **I used to wait all week for it** 의 used to 는 지금은 안 하는 예전 습관을 말합니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 거의 같아서(같은 순서, 같은 길이) 말투 차이가 안 났습니다. 더 짧고 구어적으로 다시 썼습니다.",
+    "1번 한국어 마지막 줄이 영어(맞는 걸 보내 달라)와 어긋나 '제 주문으로'를 '맞는 걸로'로 고쳤습니다.",
+    "2번 formal 의 'he simply continued' 가 어색해서 'he carried on regardless' 로, 'my uncle wished to know' 는 'my uncle asked' 로 고쳤습니다.",
+    "3번 casual 이 첫 줄 빼고 text 와 문장이 그대로 겹쳐서, 주어를 생략하고 축약해 말하는 투로 다시 썼습니다.",
+    "4번 casual 도 중간이 text 와 그대로 겹쳐서 더 짧게 끊어 다시 썼습니다. 마지막도 'First time in ten years' 로 줄였습니다.",
+    "영어 본문(text)은 손대지 않았습니다. 관용구 쓰임(got really into, my back was killing me, stayed with it, get anybody in trouble)은 모두 제자리에 맞게 쓰였습니다."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "setId": "s117",
+  "videoId": "daily-s117",
+  "title": "Set 117",
+  "madeAt": "2026-09-20",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "너 내 친구 폴 알지? 작년에 그 일 있고 나서 연락 끊겼던 애. 걔가 내 생일에 아무 일도 없었다는 듯이 문자를 보냈더라고. 나는 아직 답장을 안 했고 벌써 2주가 됐어. 한편으로는 그냥 안녕 하고 넘어가고 싶은데, 그러면 내가 걔를 그냥 봐주는 꼴이 되잖아. 그것도 마음에 안 들어. 자꾸 폰을 들었다가 도로 내려놔.",
+      "text": "You know my friend Paul, the one who stopped answering after that whole thing last year? He texted me on my birthday like nothing ever happened, and I still haven't written back, and it's been two weeks now. Part of me just wants to say hey and let it go, but then I'm the one letting him off the hook, and I don't love that either. I keep picking up my phone and putting it back down.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So remember Paul? My buddy who went quiet on me after all that stuff last year? He texts me on my birthday like nothing ever happened, and I still haven't written him back, and that was two weeks ago. Half of me just wants to say hey and drop it, but then I'm the one letting him off the hook, and I'm not crazy about that either. I keep picking my phone up and putting it right back down."
+        },
+        {
+          "style": "formal",
+          "text": "Do you remember my friend Paul, the one who stopped responding after that whole situation last year? He sent me a message on my birthday as though nothing had happened, and I still have not replied, and it has now been two weeks. Part of me would simply like to say hello and let it go, but then I am the one letting him off the hook, and I am not comfortable with that either. I keep picking up my phone and setting it back down."
+        }
+      ],
+      "note": "**letting him off the hook** 은 잘못한 사람한테 책임을 안 묻고 그냥 넘어가 준다는 뜻입니다. **went quiet on me** 는 상대가 나한테만 갑자기 연락을 끊었다는 말입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "더 늦기 전에 슬슬 일어나야겠다. 아침부터 아무도 개를 안 내보내서 걔가 나한테 한소리 할 거야. 아니야, 앉아 있어, 일어나지 마. 나 20분 거리밖에 안 돼. 대신 이번 주에 전화해. 내가 식탁에서 졸지 않을 때 또 이렇게 보자.",
+      "text": "I think I'm going to get out of here before it gets any later, because nobody's let the dog out since this morning and he'll have something to say about it. No, sit, don't get up, I'm only twenty minutes away. But call me this week and we'll do this again when I'm not falling asleep at the table.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I should probably take off before it gets any later, nobody's let the dog out since this morning and he's gonna have something to say about it. No, no, don't get up, I'm like twenty minutes away. Just call me this week and we'll do this again when I'm not falling asleep at the table."
+        },
+        {
+          "style": "formal",
+          "text": "I believe I should be on my way before it gets any later, as no one has let the dog out since this morning and he will certainly have something to say about it. No, please remain seated, do not get up, I am only twenty minutes away. But do call me this week and we will do this again when I am not falling asleep at the table."
+        }
+      ],
+      "note": "**have something to say about it** 은 가만있지 않고 한마디 할 거라는 뜻인데, 여기서는 개가 삐칠 거라는 농담입니다. **take off** 는 자리를 뜨다, 이만 가다는 말입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "잘 돌아가요. 2년 동안 거의 매일 썼어요. 그런데 솔직하게 말할게요. 뚜껑에 긁힌 자국이 있는데 보자마자 바로 눈에 띌 거예요. 그리고 충전기도 원래 딸려 온 게 아니라 처음 것을 잃어버리고 나서 산 거예요. 그래서 다른 사람들은 60달러 부르는데 저는 40달러만 받는 거예요. 먼저 와서 보고 싶으면 저는 주말 내내 집에 있어요. 집에 가져가서 기분 상하는 것보다 지금 직접 보는 게 나으니까요.",
+      "text": "It works fine, I've used it almost every day for two years, but I'll be straight with you, there's a scratch on the lid that you'll notice right away. And it's not the charger it came with, it's one I bought after I lost the first one. That's why I'm asking forty when everybody else is asking sixty. If you want to come look at it first, I'm around all weekend, because I'd rather you see it now than get it home and be annoyed.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Works great, I've used it pretty much every day for two years, but I'll be honest with you, there's a scratch on the lid you'll spot right away. And that's not the charger it came with, it's one I got after I lost the first one. That's why I'm only asking forty when everybody else wants sixty. Wanna come see it first? I'm around all weekend, I'd rather you look at it now than get it home and be annoyed."
+        },
+        {
+          "style": "formal",
+          "text": "It works perfectly well, and I have used it nearly every day for two years, but I want to be straightforward with you, there is a scratch on the lid that you will notice immediately. It is also not the charger it came with, but one I purchased after I lost the original. That is why I am asking forty when everyone else is asking sixty. If you would like to come and look at it first, I am available all weekend, as I would rather you see it now than take it home and be annoyed."
+        }
+      ],
+      "note": "**I'll be straight with you** 는 돌려 말하지 않고 솔직히 털어놓겠다는 뜻입니다. **I'd rather you see it now than** 은 저것보다 이게 낫다고 둘을 견줄 때 씁니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이걸 1년 더 버틸 수 있을지 모르겠어. 솔직히 일이 힘들어서가 아니야. 이 일이 어떻게 돌아가는지 절반은 나만 알아서, 금요일 하루 쉬려고 해도 꼭 누가 전화를 해. 모아 둔 돈은 몇 달 버틸 만큼은 있어. 그런데 막상 앉아서 부장님한테 말하는 장면을 떠올리면 마음이 이상해져서 또 한 주를 미뤄.",
+      "text": "I don't know if I've got another year of this in me. It's not even the work, honestly, it's that I'm the only one who knows how half of it runs, so I can't take a Friday off without somebody calling me about it. And we've got enough put away that I'd be okay for a few months. But then I picture actually sitting down and telling my boss, and I get all weird about it and put it off another week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly, not sure I've got another year of this in me. It's not even the work, it's that I'm the only one who knows how half of it runs, so I can't take a Friday off without somebody calling me about it. And we've got enough saved up that I'd be fine for a few months. But then I picture actually sitting down and telling my boss, and I get all weird about it and put it off another week."
+        },
+        {
+          "style": "formal",
+          "text": "I do not know whether I have another year of this in me. It is not even the work, to be honest, it is that I am the only one who knows how half of it runs, so I cannot take a Friday off without someone calling me about it. And we have enough put away that I would be fine for a few months. But then I picture actually sitting down and telling my supervisor, and I become uneasy about it and postpone it another week."
+        }
+      ],
+      "note": "**another year of this in me** 는 이걸 1년 더 버틸 힘이 내 안에 남아 있느냐는 말입니다. **put it off** 는 하기 싫은 일을 뒤로 미루는 것입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "일요일에 처남이랑 수영장에 갔어. 어릴 때 이후로 수영은 처음이었는데 나는 20분쯤 하고 나왔고 처남은 계속하더라. 지금 허리도 아프고 옆구리도 아파. 무리한 것도 아닌데. 오늘 아침에 회사에서 서류철을 떨어뜨렸는데, 잠깐 그걸 내려다보고 서 있다가 겨우 몸을 숙였어.",
+      "text": "I went to the pool with my brother in law on Sunday, first time I've been swimming since I was a kid, and I got out after about twenty minutes while he just kept going. Now my back hurts and so do my sides, and I wasn't even pushing it. I dropped a folder at work this morning and I stood there looking at it for a second before I made myself bend down.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hit the pool with my brother in law on Sunday, first time I've been swimming since I was a kid, and I was done after about twenty minutes while he just kept going. Now my back hurts and my sides do too, and I wasn't even pushing it. I dropped a folder at work this morning and just stood there staring at it a second before I made myself bend down."
+        },
+        {
+          "style": "formal",
+          "text": "I went to the pool with my brother in law on Sunday, the first time I have been swimming since I was a child, and I got out after about twenty minutes while he simply continued. Now my back hurts and so do my sides, and I was not even exerting myself. I dropped a folder at work this morning and I stood there looking at it for a moment before I made myself bend down."
+        }
+      ],
+      "note": "**pushing it** 은 힘든 줄 알면서 더 밀어붙인다는 뜻이라, 여기서는 무리한 것도 아니라는 말입니다. **made myself bend down** 은 하기 싫은 몸을 억지로 움직였다는 표현입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "다섯째 문장 캐주얼의 \"I was out after about twenty minutes\" 는 수영장 얘기 뒤라 \"물에서 나왔다\" 와 \"뻗었다\" 두 가지로 읽혀서 \"I was done after about twenty minutes\" 로 바꿨습니다.",
+    "둘째 문장 캐주얼의 \"No, stay, don't get up\" 은 바로 앞에서 개 얘기를 한 뒤라 개한테 하는 말처럼 들려서 \"No, no, don't get up\" 으로 바꿨습니다.",
+    "나머지 네 문장은 관용구 쓰임(letting him off the hook, have something to say about it, take off, I'll be straight with you, put it off, pushing it)과 한국어 뜻, note 가 짚은 표현이 모두 문장 안에 있어 그대로 두었습니다."
+  ]
+}

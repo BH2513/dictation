@@ -1,0 +1,115 @@
+{
+  "setId": "s121",
+  "videoId": "daily-s121",
+  "title": "Set 121",
+  "madeAt": "2026-09-21",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "미뤄 두기만 하던 건강검진을 드디어 받았는데, 결과가 다 괜찮게 나왔어. 솔직히 예상도 못 했어. 하나 걸린 게 혈압이 좀 높게 나온 건데, 늦은 줄 알고 주차장에서 뛰어 들어온 직후였어. 그래서 끝날 때 다시 쟀더니 정상이더라.",
+      "text": "I finally went in for that physical I've been putting off, and everything came back fine, which honestly I wasn't expecting. The only thing was my blood pressure looked a little high, but I'd just run in from the parking lot because I thought I was late. So he took it again at the end and it was normal.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I finally did that physical I've been blowing off, and it all came back clean, which honestly I wasn't expecting. Only thing was my blood pressure ran a little high, but I'd just sprinted in from the parking lot 'cause I thought I was late. He took it again at the end and it was fine."
+        },
+        {
+          "style": "formal",
+          "text": "I finally had the physical examination I had been postponing, and all of the results were normal, which I genuinely had not expected. The only concern was that my blood pressure appeared slightly elevated, but I had just hurried in from the parking lot because I thought I was late. He measured it again at the end and it was normal."
+        }
+      ],
+      "note": "**putting off** 는 해야 할 일을 자꾸 뒤로 미룬다는 뜻입니다. 검사나 결과가 나왔을 때는 **came back fine** 처럼 come back 을 씁니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나 몇 분 있다가 일어날게. 여섯 시에 공항에서 동생을 데리러 가야 하는데, 한숨도 못 자면 거기까지 운전을 못 할 것 같아서. 아니야, 다들 그냥 있어. 자리 파하려는 거 아니야. 코트만 챙겨서 알아서 나갈게.",
+      "text": "I'm going to take off in a few minutes, because I've got to be at the airport at six to get my brother, and if I don't sleep at all I'll be useless driving out there. No, everybody stay, I'm not trying to break anything up. I'll just grab my coat and let myself out.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gonna head out in a few, 'cause I gotta be at the airport at six to grab my brother, and if I don't get any sleep at all I'll be useless driving out there. No, everybody stay, I'm not trying to break this up. I'll just grab my coat and let myself out."
+        },
+        {
+          "style": "formal",
+          "text": "I will be leaving in a few minutes, as I must be at the airport at six to collect my brother, and if I do not sleep at all I will be of no use driving out there. No, please, everyone stay; I have no intention of ending the gathering. I will simply get my coat and see myself out."
+        }
+      ],
+      "note": "**take off** 는 자리를 뜬다는 뜻이고, **let myself out** 은 배웅 받지 않고 알아서 나간다는 말입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "미안, 미안. 알람은 울렸는데 자면서 꺼 버렸나 봐. 다시 봤을 때는 여덟 시 십 분이었어. 게다가 다리 쪽에 무슨 일이 있었는지 거기서 이십 분을 더 서 있었고. 나 뭐 놓쳤어?",
+      "text": "Sorry, sorry. My alarm went off and I think I turned it off in my sleep, because the next time I looked it was ten after eight. And then of course there was something going on by the bridge, so I sat there another twenty minutes. Did I miss anything?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I know, I know, I'm sorry. My alarm did go off, but I'm pretty sure I killed it in my sleep, 'cause next time I looked it was ten after eight. And then of course something was going on by the bridge, so I sat there another twenty minutes. Did I miss anything?"
+        },
+        {
+          "style": "formal",
+          "text": "My apologies, truly. My alarm did sound, but I believe I turned it off in my sleep, because the next time I looked it was ten minutes past eight. And then, of course, there was something going on near the bridge, so I sat there for another twenty minutes. Did I miss anything?"
+        }
+      ],
+      "note": "**went off** 는 알람이 울렸다는 뜻입니다. **ten after eight** 은 여덟 시 십 분이라는 말로, 시간 말할 때 after 를 이렇게 씁니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 집 개가 부엌 바닥을 무서워하기로 마음먹었나 봐. 7월에 타일을 새로 깔았는데 그 뒤로는 안 건너가. 가장자리에 서서 누가 와서 안아 줄 때까지 낑낑대는데, 몸무게가 사십 파운드야. 아내가 활주로처럼 수건을 깔아 줬더니 그 위로는 다녀. 요즘 우리는 그러고 살아.",
+      "text": "Our dog has decided he's scared of the kitchen floor. We put new tile down in July and now he won't walk across it, so he stands at the edge and cries until somebody comes and carries him, and he's forty pounds. My wife put a towel down for him like a runway, and he uses it. So that's how we live now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the dog's decided he's terrified of the kitchen floor. We put new tile down back in July and now he won't cross it, he just stands at the edge and cries till somebody comes and carries him, and he's forty pounds. My wife laid a towel down for him like a runway, and he uses it. That's our life now."
+        },
+        {
+          "style": "formal",
+          "text": "Our dog has decided that he is afraid of the kitchen floor. We installed new tile in July, and he now refuses to walk across it, so he stands at the edge and cries until someone comes and carries him, and he weighs forty pounds. My wife placed a towel down for him like a runway, and he uses it. That is how we live now."
+        }
+      ],
+      "note": "**has decided he's scared of** 는 개가 스스로 정하기라도 한 것처럼 말해서 웃기는 표현입니다. **like a runway** 는 활주로처럼 길을 내 줬다는 말입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "집주인이 건물을 팔아서 나는 2월까지야. 언니네 근처 싼 집으로 갈지, 내가 진짜 좋아했던 동네로 돌아가서 한 달에 200달러를 더 낼지 결정을 못 하겠어. 회사에 앉아 있을 때는 싼 집이 백번 맞는 것 같은데, 토요일에 예전 동네를 차로 지나가면 다시 원점이야. 이번 주말에 정한다고 말만 하고, 막상 주말이 오면 또 안 해.",
+      "text": "My landlord's selling the building, so I've got until February, and I can't decide if I should take the cheap place by my sister or go back to the neighborhood I actually liked and pay two hundred more a month. When I'm sitting at work the cheap one makes all the sense in the world, and then I drive through the old block on a Saturday and I'm right back where I started. I keep saying I'll decide this weekend, and then the weekend comes and I don't.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Landlord's selling the building, so I'm out in February, and I can't figure out if I take the cheap place by my sister or go back to the neighborhood I actually liked and pay two hundred more a month. Sitting at work, the cheap one makes total sense, and then I drive through the old block on a Saturday and I'm right back to square one. I keep saying I'll decide this weekend, and then the weekend shows up and I don't."
+        },
+        {
+          "style": "formal",
+          "text": "My landlord is selling the building, so I have until February, and I cannot decide whether to take the inexpensive apartment near my sister or return to the neighborhood I genuinely liked and pay two hundred dollars more per month. When I am sitting at work, the less expensive one seems entirely sensible, and then I drive through the old block on a Saturday and I am right back where I began. I keep saying I will decide this weekend, and then the weekend arrives and I do not."
+        }
+      ],
+      "note": "**makes all the sense in the world** 는 누가 봐도 말이 된다는 뜻이고, **right back where I started** 는 결국 다시 원점이라는 말입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어의 \"솔직히 기대도 안 했거든\" 은 I wasn't expecting 의 뜻(예상 못 했다)과 달라서 \"솔직히 예상도 못 했어\" 로 고쳤습니다.",
+    "1번 캐주얼의 \"that physical I keep blowing off\" 는 이미 받고 온 얘기인데 현재형이라 어긋나서 \"I've been blowing off\" 로 고쳤습니다.",
+    "4번 포멀의 \"has determined that he is afraid\" 는 사람이 조사해서 판정한 것처럼 읽혀서, 원문의 농담(개가 스스로 정했다)을 살리는 \"has decided that he is afraid\" 로 고쳤습니다.",
+    "5번 캐주얼이 text 와 첫머리(\"My landlord's selling the building\")가 그대로 겹쳐서 \"Landlord's selling the building, so I'm out in February\" 로 앞부분을 바꿨습니다."
+  ]
+}

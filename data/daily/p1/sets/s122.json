@@ -1,0 +1,116 @@
+{
+  "setId": "s122",
+  "videoId": "daily-s122",
+  "title": "Set 122",
+  "madeAt": "2026-09-21",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그러자고 하고 싶은데, 우리 차가 이거 하나뿐이고 그 주에 아내가 야간 근무야. 그러면 우리는 여기 발이 묶여서 애들을 어디에도 못 데려다줘. 하루 이틀이면 어떻게든 해 볼 수 있을 것 같기는 한데. 그냥 주말 동안 한 대 빌리는 건 어때? 비용은 내가 반 낼게, 진심이야.",
+      "text": "I want to say yes, but it's the only car we've got and my wife's working nights that week, so we'd be stuck here with no way to get the kids anywhere. A day or two I could probably figure out. Could you just rent one for the weekend instead? I'll split it with you, I mean that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Man, I really wanna say yes, but it's our only car and my wife's on nights that week, so we'd be stuck here with no way to get the kids anywhere. A day or two, sure, I could probably work that out. Can you just rent one for the weekend? I'll go halves with you, seriously."
+        },
+        {
+          "style": "formal",
+          "text": "I would like to say yes, but it is the only car we have and my wife is working night shifts that week, so we would be stranded here with no way to take the children anywhere. A day or two I could probably arrange. Would you consider renting one for the weekend instead? I would be glad to pay half, and I mean that."
+        }
+      ],
+      "note": "**split it with you** 는 비용을 반씩 나눠 내자는 말이고, 캐주얼하게는 **go halves with you** 라고도 합니다. 끝에 붙인 **I mean that** 은 빈말이 아니라 진짜 그렇게 하겠다는 뜻입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "사진은 다 진짜인데, 사진에 안 나온 게 하나 있어요. 고양이가 뒤쪽 모서리를 긁어 놔서 천이 당겨져 뜬 자리가 손바닥만 하게 있어요. 저희는 그쪽을 벽에 붙여 놓고 써서 보일 일은 없지만, 여기까지 다 오셔서 그걸 직접 발견하게 하고 싶지는 않아요. 그리고 무거워요. 집에 들일 때 셋이 들었으니까 진짜 들 수 있는 사람이랑 같이 오세요. 그래서 다른 데는 다 300달러 부르는데 저는 100달러만 받는 거예요.",
+      "text": "The pictures are honest, but there's one thing they don't show. The cat scratched up the back corner, and there's a spot about the size of your hand where the fabric's pulled. It sits against a wall the way we have it, so you'd never see it, but I'm not going to have you drive all the way out here and find it yourself. And it's heavy, so bring somebody who can actually lift, because it took three of us to get it in the house. That's why I'm asking a hundred instead of the three hundred everybody else wants.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Photos are all real, but there's one thing you can't see in them. Cat tore up the back corner, and there's a patch about the size of your hand where the fabric's pulled. Way we've got it, it's against a wall, so you'd never notice, but I'm not gonna let you drive all the way out here and find it on your own. It's heavy too, so bring somebody who can actually lift, cause it took three of us just to get it in the house. That's why I'm only asking a hundred instead of the three hundred everyone else wants."
+        },
+        {
+          "style": "formal",
+          "text": "The photographs are accurate, but there is one thing they do not show. The cat scratched the back corner, and there is an area roughly the size of your hand where the fabric has pulled. As we have it positioned, it sits against a wall, so you would never see it, but I am not willing to have you drive all this way and discover it yourself. It is also heavy, so please bring someone who is able to lift, as it took three of us to get it into the house. That is why I am asking a hundred rather than the three hundred everyone else wants."
+        }
+      ],
+      "note": "크기를 말할 때 자로 재지 않고 **about the size of your hand** 처럼 몸에 빗대 말합니다. **drive all the way out here** 는 먼 길을 일부러 차로 찾아온다는 뜻입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "잠드는 건 문제가 아니에요. 매일 밤 새벽 3시면 눈이 떠지고 머리가 바로 일 생각으로 가요. 근데 새벽 3시에 제가 할 수 있는 일은 아무것도 없잖아요. 폰을 주방에 두고 자 봤는데 그건 좀 도움이 돼요. 대신 폰만 없을 뿐이지 어두운 데 누워서 똑같은 짓을 하고 있어요. 아내는 자꾸 일어나서 책을 읽으라고 해요. 근데 저는 일어나기가 싫어요. 자고 싶은 거예요.",
+      "text": "Falling asleep isn't the problem. It's that I'm up at three every single night and my head goes straight to work, and there's nothing I can actually do about any of it at three in the morning. I tried leaving my phone out in the kitchen, and that helps a little, except then I'm just lying there in the dark doing the same thing without the phone. My wife keeps telling me to get up and read. But I don't want to get up, I want to be asleep.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Getting to sleep is fine. It's that I'm wide awake at three every single night and my brain goes right to work stuff, and there's nothing I can actually do about any of it at three in the morning. I tried leaving my phone out in the kitchen, and yeah, it helps a bit, except then I'm just lying there in the dark doing the same thing without it. My wife keeps telling me to get up and read. But I don't wanna get up, I wanna be asleep."
+        },
+        {
+          "style": "formal",
+          "text": "Falling asleep is not the difficulty. The problem is that I wake at three every single night and my mind turns immediately to work, and there is nothing I can actually do about any of it at three in the morning. I tried leaving my phone in the kitchen, which helps a little, except that I then lie there in the dark doing the same thing without the phone. My wife keeps telling me to get up and read. But I do not want to get up. I want to be asleep."
+        }
+      ],
+      "note": "**my head goes straight to work** 는 눈뜨자마자 생각이 일로 직행한다는 말입니다. **I'm up at three** 는 3시에 일어난다가 아니라 3시면 깨어 있게 된다는 뜻으로 씁니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "엄마 나 괜찮아, 진짜로. 그냥 2주 정도가 좀 힘들었고, 전화한다 전화한다 하다 보면 어느새 10시더라고. 아니야, 밥도 먹고 잠도 자. 걱정 안 해도 돼. 참, 10월에 레이첼 보러 차 타고 올라가는 거 그대로야? 아니면 바뀌었어? 가는 거면 나도 거기서 만날 수 있을 것 같아서.",
+      "text": "I'm fine, Mom, really. It's just been a long couple of weeks and I keep meaning to call you back and then all of a sudden it's ten o'clock. No, I'm eating, I'm sleeping, you don't have to worry about me. Hey, are you guys still driving up to see Rachel in October, or did that change? Because if you're going I could probably meet you out there.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Mom, I'm okay, honest. It's just been a long couple of weeks and I keep meaning to call you back and then boom, it's ten o'clock. No, I'm eating, I'm sleeping, you don't need to worry about me. Hey, you guys still driving up to see Rachel in October, or did that change? Cause if you're going I could probably meet you out there."
+        },
+        {
+          "style": "formal",
+          "text": "I am fine, Mother, truly. It has simply been a long couple of weeks, and I keep intending to return your call, and then suddenly it is ten o'clock. No, I am eating and I am sleeping. You do not need to worry about me. May I ask, are you still driving up to see Rachel in October, or has that changed? If you are going, I could most likely meet you there."
+        }
+      ],
+      "note": "**I keep meaning to call you back** 은 마음은 먹는데 계속 못 하고 있을 때 쓰는 말입니다. 뒤에 붙는 **all of a sudden** 은 그러다 보니 어느새 시간이 가 버렸다는 느낌을 줍니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "전화가 안 울려요. 그거 하나가 문제예요. 누가 전화했다고 해서 보면 부재중 전화가 딱 찍혀 있는데, 소리도 안 났고 화면에 뜨지도 않았어요. 무음도 아니에요. 그건 한 마흔 번은 확인했어요. 아들이 완전히 껐다가 다시 켜 줬더니 이틀은 괜찮다가 지금 또 그래요. 그러니까 저한테 연락이 안 되면 그것 때문이에요. 그냥 문자 주세요.",
+      "text": "It doesn't ring. That's the whole problem. Somebody tells me they called, and I look and there's the missed call sitting right there, but it never made a sound and nothing came up on the screen either. And it's not on silent, I've checked that about forty times. My son turned it all the way off and back on and it was fine for two days, and now it's doing it again. So if you can't get me, that's why. Just text me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The thing never rings. That's the whole deal. Someone tells me they called, and I look, and sure enough there's the missed call sitting right there, but it didn't make a sound and nothing popped up on the screen either. And it's not on silent, I've checked that like forty times. My son shut it all the way off and back on and it was fine for two days, and now it's doing it again. So if you can't reach me, that's why. Just text me."
+        },
+        {
+          "style": "formal",
+          "text": "It does not ring. That is the entire problem. Someone will tell me they called, and I look and find the missed call sitting there, but it never made a sound and nothing appeared on the screen either. It is not set to silent, and I have checked that about forty times. My son turned it completely off and back on and it was fine for two days, and now it is happening again. So if you are unable to reach me, that is the reason. Please simply send me a text."
+        }
+      ],
+      "note": "**the missed call** 은 부재중 전화, **it's not on silent** 는 무음 모드가 아니라는 말입니다. 횟수를 **about forty times** 처럼 과장해서 말하는 것도 실제 대화에서 흔합니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 캐주얼의 \"you don't gotta worry about me\" 는 원어민이 쓰지 않는 어색한 꼴이라 \"you don't need to worry about me\" 로 바꿨습니다.",
+    "2번 한국어의 \"천이 딸려 나간 자리\" 는 the fabric's pulled(천이 당겨진 것)의 뜻과 달라 \"천이 당겨져 뜬 자리\" 로 고쳤습니다.",
+    "2번 한국어 마지막 줄이 번역투(\"...100달러만 받는 게 그 이유예요\")라 \"그래서 ... 저는 100달러만 받는 거예요\" 로 자연스럽게 고쳤습니다.",
+    "3번 한국어의 \"그중에 제가 할 수 있는 건 하나도 없잖아요\" 가 어색해 \"제가 할 수 있는 일은 아무것도 없잖아요\" 로 다듬었습니다.",
+    "5번 한국어의 \"그게 문제의 전부예요\" 가 번역투라 \"그거 하나가 문제예요\" 로 고쳤고, \"마흔 번은\" 앞에 \"한\" 을 넣어 말맛을 살렸습니다."
+  ]
+}

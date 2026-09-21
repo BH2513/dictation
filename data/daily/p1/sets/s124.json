@@ -1,0 +1,114 @@
+{
+  "setId": "s124",
+  "videoId": "daily-s124",
+  "title": "Set 124",
+  "madeAt": "2026-09-22",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "조카가 토요일에 자기랑 친구들이랑 농구하자고 꼬드겨서 나갔는데, 이십 분쯤 버티다가 길가 턱에 앉아 버렸어요. 주로 종아리가 문제예요. 어디든 걸어 다니니까 괜찮을 줄 알았는데 걷는 건 아무 도움이 안 되나 봐요. 그런데 조카가 벌써 다음 토요일 얘기를 문자로 보냈고 저는 아마 그러자고 할 거예요. 제가 얼마나 배웠는지 아시겠죠?",
+      "text": "My nephew talked me into playing basketball with him and his friends Saturday, and I lasted maybe twenty minutes before I had to go sit down on the curb. It's my calves, mostly. I figured I'd be fine because I walk everywhere, but apparently walking doesn't count for anything. And he already texted me about next Saturday, and I'm probably going to say yes, so you can see how much I learned.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my nephew got me out on the court with him and his buddies Saturday, and I made it maybe twenty minutes before I had to go sit on the curb. It's mostly my calves. I figured I'd be okay since I walk everywhere, but I guess walking doesn't count for anything. And he's already texted me about next Saturday and I'm probably gonna say yes, so that's how much I learned."
+        },
+        {
+          "style": "formal",
+          "text": "My nephew persuaded me to play basketball with him and his friends on Saturday, and I lasted perhaps twenty minutes before I had to sit down on the curb. It is mainly my calves. I assumed I would be fine because I walk everywhere, but apparently walking does not count for anything. He has already texted me about next Saturday, and I will most likely say yes, so you can see how much I have learned."
+        }
+      ],
+      "note": "**talked me into** 는 설득해서 결국 하게 만들었다는 뜻입니다. **I lasted maybe twenty minutes** 의 last 는 그 시간만큼 버텼다는 말이고, **walking doesn't count for anything** 은 걷는 게 운동으로 쳐주지도 않는다는 표현입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아버지 생일을 마당에서 하려고 했는데 토요일은 하루 종일 화씨 38도에 바람까지 분다고 해서, 결국 열네 명이 우리 집 거실에 들어앉게 됐어요. 솔직히 일주일 미루는 게 좋은데 여동생이 비행기로 오고 그 주말밖에 시간을 못 냈다네요. 그래서 오늘 밤에 식탁을 분해하고 소파를 복도로 내놓을 거예요.",
+      "text": "We were going to do my dad's birthday out in the yard, but they're saying thirty eight and windy all day Saturday, so now it's fourteen people in my living room. I'd rather just push it a week, honestly, except my sister's flying in and that's the only weekend she could get. So tonight we're taking the table apart and putting the couch out in the hallway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Dad's birthday was supposed to be out in the yard, but now they're calling for thirty eight and wind all day Saturday, so it's fourteen people crammed into my living room. Honestly I'd rather just push it a week, but my sister's flying in and that's the only weekend she could get. So tonight we're taking the table apart and sticking the couch out in the hallway."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to hold my father's birthday outside in the yard, but the forecast is thirty eight degrees and windy all day Saturday, so it will now be fourteen people in my living room. I would honestly prefer to postpone it by a week, except that my sister is flying in and that is the only weekend she could arrange. So this evening we are taking the table apart and moving the couch out into the hallway."
+        }
+      ],
+      "note": "**push it a week** 는 일정을 일주일 뒤로 미룬다는 뜻이고, **flying in** 은 멀리서 비행기를 타고 온다는 말입니다. **taking the table apart** 는 식탁을 분해한다는 표현입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "알려 주신 그 식당에 드디어 가 봤어요. 음식은 말씀하신 만큼 맛있었고 특히 갈비 요리가 그랬어요. 그런데 자리를 주방 문 바로 옆에 줘서 아내 말이 하나도 안 들렸어요. 저녁 내내 뭐라고요? 하는 소리만 했어요. 그래도 또 갈 거예요. 다음엔 앞쪽 자리로 달라고 하면 되니까요. 거기 예약 받아요? 아니면 그냥 오는 순서대로예요?",
+      "text": "Okay, so we finally went to that place you told us about, and the food was as good as you said, the short rib thing especially. But they put us right by the kitchen door and I couldn't hear my wife at all, so I spent the whole dinner going what? I'd still go back, I'd just ask for a table up front. Do they take reservations, or is it whoever walks in?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We made it to that place you told us about, finally, and the food was as good as you said, that short rib thing especially. But they stuck us right next to the kitchen door and I couldn't hear my wife at all, so I spent the whole dinner going what? I'd go back for sure, I'd just ask for a table up front. Do they take reservations, or is it whoever shows up?"
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the restaurant you recommended, and the food was as good as you said it was, particularly the short rib. However, they seated us directly beside the kitchen door and I could not hear my wife at all, so I spent the entire dinner saying pardon? I would still go back. I would simply request a table near the front. Do they take reservations, or is it whoever walks in?"
+        }
+      ],
+      "note": "**as good as you said** 는 들은 만큼 좋았다는 비교 표현입니다. **put us right by the kitchen door** 처럼 put 은 자리를 앉혔다는 뜻으로 쓰이고, **whoever walks in** 은 예약 없이 먼저 들어온 사람 순이라는 말입니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이사 얘기를 아직도 이랬다저랬다 하고 있어요. 집은 괜찮고 힘든 건 출퇴근이에요. 하루에 차에서 거의 두 시간을 보내는데 그것도 고속도로에서 아무 일 없을 때 얘기예요. 마당을 포기하면 도심에 더 가까운 집도 감당할 수 있는데, 아들이 드디어 이 동네에 친구가 둘 생겨서 여기가 좋다니까 모르겠어요. 아내는 봄 전에 정하고 싶어 해요. 작년 봄에도 제가 그 말을 했어요.",
+      "text": "We're still going back and forth about moving. The house is fine, it's the drive that's getting me, because I'm in the car almost two hours a day and that's if nothing happens on the highway. There's a place closer in we could swing if we gave up the yard, but my son's finally got two friends on this street and he's happy here, so I don't know. My wife wants it decided before spring. I said that last spring too.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Still going back and forth on the moving thing. The house is fine, it's the drive that's killing me, I'm in the car almost two hours a day and that's if nothing happens on the highway. There's a place closer in we could swing if we gave up the yard, but my son finally has two friends on this street and he's happy here, so I dunno. My wife wants it settled before spring. Said that last spring too."
+        },
+        {
+          "style": "formal",
+          "text": "We are still undecided about moving. The house itself is fine; it is the drive that is wearing on me, as I am in the car nearly two hours a day, and that is assuming nothing happens on the highway. There is a place closer in that we could manage if we gave up the yard, but my son has finally made two friends on this street and he is happy here, so I am not sure. My wife would like it decided before spring. I said that last spring as well."
+        }
+      ],
+      "note": "**going back and forth** 는 결정을 못 하고 마음이 오간다는 뜻입니다. **it's the drive that's getting me** 는 힘든 게 바로 그 운전이라고 콕 집어 말하는 틀이고, **we could swing** 의 swing 은 형편이 되어 감당한다는 말입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "저 이제 그 회사는 끝난 것 같아요. 7월에 다른 팀으로 옮겨 놓더니 지금은 하루 종일 회의만 하고 뭘 만드는 일은 아예 안 해요. 그걸 하려고 들어간 회사인데요. 친구 하나가 자기 회사에 넣어 줄 수 있다는데 돈은 더 적고 모르는 사람들 사이에서 처음부터 다시 시작해야 하죠. 그래서 크리스마스까지는 버텨 보자고 스스로 말하다가, 화요일에 무슨 일이 터지면 바로 또 채용 공고를 들여다보고 있어요.",
+      "text": "I think I might be done there. They moved me to a different team in July and now I'm in meetings all day and I don't actually build anything anymore, and that was the whole reason I took the job. A friend of mine says he can get me in where he is, but it's less money and I'd be starting over with people I don't know. So I keep telling myself I'll give it till Christmas, and then something happens on a Tuesday and I'm right back looking at postings.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly I'm about done there. They shifted me to a different team in July and now I'm in meetings all day and I don't build anything anymore, which was the whole reason I took the job. A buddy of mine says he can get me in where he works, but it's less money and I'd be starting over with people I don't know. So I keep telling myself I'll stick it out till Christmas, and then something happens on a Tuesday and I'm right back scrolling through postings."
+        },
+        {
+          "style": "formal",
+          "text": "I believe I may be finished there. They moved me to a different team in July, and I am now in meetings all day and no longer build anything, which was the entire reason I took the position. A friend of mine says he can get me in where he works, but the pay is lower and I would be starting over with people I do not know. So I keep telling myself I will give it until Christmas, and then something happens on a Tuesday and I am right back looking at postings."
+        }
+      ],
+      "note": "**I might be done there** 는 그 회사 생활이 마음속으로 끝났다는 뜻이고, **give it till Christmas** 는 그때까지는 한번 두고 보겠다는 말입니다. **postings** 는 채용 공고를 가리킵니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 이 text 와 가운데 토막이 글자까지 같아서, 날씨 말하는 부분을 구어체(they're calling for)로 바꾸고 표현을 다르게 했습니다.",
+    "5번 casual 의 scrolling postings 는 원어민이 안 쓰는 형태라 scrolling through postings 로 고쳤습니다.",
+    "3번 한국어에서 \"뭐라고요? 소리만 하고 있었어요\" 가 한 문장에 엉켜 읽히기 어려워, 문장을 끊고 \"뭐라고요? 하는 소리만 했어요\" 로 다듬었습니다."
+  ]
+}

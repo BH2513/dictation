@@ -1,0 +1,113 @@
+{
+  "setId": "s123",
+  "videoId": "daily-s123",
+  "title": "Set 123",
+  "madeAt": "2026-09-22",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "예전엔 그 가게에서 60달러면 나왔는데 지금은 매번 90달러야. 사는 건 똑같은 것들인데. 그래서 계산원이 물건 찍는 동안 화면을 계속 쳐다보게 됐어. 그런다고 뭐가 달라지는 것도 아닌데. 제일 어이없는 건 나는 앞으로도 계속 그 돈을 낼 거라는 거야. 어쩌겠어, 우유를 안 살 수도 없잖아?",
+      "text": "I used to get out of that store for sixty bucks, and now it's ninety every single time, and I'm buying the exact same stuff. So I've started watching the screen while she rings it up like that's going to help. And the worst part is I'm just going to keep paying it, because what am I supposed to do, not buy milk?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "That store used to run me sixty bucks, and now it's ninety every single time, and I'm grabbing the exact same stuff. So now I'm staring at the screen while she rings it up like that's gonna do anything. And the worst part? I'm just gonna keep paying it, cause what am I supposed to do, not buy milk?"
+        },
+        {
+          "style": "formal",
+          "text": "I was previously able to leave that store having spent sixty dollars, and now it is ninety on every occasion, and I am purchasing precisely the same items. I have begun watching the screen while the cashier scans them, as though that will help. The worst part is that I will simply continue to pay it, because what alternative do I have, to go without milk?"
+        }
+      ],
+      "note": "**rings it up** 은 계산원이 물건을 찍어 값을 계산하는 것을 말합니다. **what am I supposed to do** 는 달리 방법이 없을 때 그럼 어쩌라는 거냐고 되묻는 말입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "쓰던 청소기를 그냥 둘 걸 그랬어. 이건 알아서 바닥을 치워 준다는데, 내가 먼저 돌아다니면서 다 주워 놓지 않으면 양말을 삼켜 버려. 그러니까 일은 어차피 절반을 내가 하는 셈이지. 300달러나 주고 샀는데. 남편은 한 달만 써 보래. 글쎄, 나는 옛날 거 밀고 다니는 게 오히려 좋았던 것 같아.",
+      "text": "I should have kept my old vacuum. This one's supposed to do the floor by itself, except I have to go around and pick everything up first or it eats a sock, so I'm doing half the work anyway and I paid three hundred dollars for it. My husband says give it a month. I don't know, I think I actually liked pushing the old one around.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Should've just hung onto my old vacuum. This one's supposed to do the floor on its own, except I gotta go around and pick everything up first or it eats a sock, so I'm doing half the work anyway and I dropped three hundred dollars on it. My husband says give it a month. I dunno, I think I kinda liked pushing the old one around."
+        },
+        {
+          "style": "formal",
+          "text": "I ought to have kept my old vacuum. This one is meant to clean the floor by itself, but I must first walk through and pick everything up, otherwise it swallows a sock, so I am doing half of the work regardless, and I paid three hundred dollars for it. My husband says to give it a month. I am not certain. I believe I genuinely preferred pushing the old one around."
+        }
+      ],
+      "note": "**should have kept** 는 그렇게 하지 않은 것을 뒤늦게 후회할 때 씁니다. **give it a month** 는 한 달은 써 보고 판단하라는 말입니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이틀 다 약속이 있었는데 둘 다 깨졌어. 솔직히 몇 달 만에 제일 좋은 주말이었어. 토요일엔 집 밖으로 한 발짝도 안 나갔고, 야구 경기를 거의 끝까지 봤고, 그러다 오후 네 시에 노인네처럼 소파에서 잠들었어. 평소 같으면 하루를 통째로 날린 게 마음에 걸렸을 텐데, 월요일에 일어나니까 진짜로 회사에 가고 싶더라고. 나한테 그게 필요했던 것 같아.",
+      "text": "We had plans both days and they both fell through, and honestly it was the best weekend I've had in months. I never left the house Saturday, I watched most of a ball game, and then I fell asleep on the couch at four in the afternoon like an old man. Normally I'd feel bad about throwing a whole day away, but I woke up Monday and I actually wanted to go to work, so I think I needed it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Both days we had plans, and both of them fell apart, and honestly? Best weekend I've had in months. Never left the house Saturday, watched most of a ball game, and then I'm out cold on the couch at four in the afternoon like an old man. Usually I'd feel bad about blowing a whole day, but I woke up Monday actually wanting to go to work, so yeah, I think I needed it."
+        },
+        {
+          "style": "formal",
+          "text": "We had plans on both days and both of them fell through, and honestly it was the finest weekend I have had in months. I did not leave the house on Saturday, I watched most of a ball game, and then I fell asleep on the sofa at four in the afternoon like an old man. Ordinarily I would feel guilty about wasting an entire day, but I woke on Monday genuinely wanting to go to work, so I believe I needed it."
+        }
+      ],
+      "note": "**fell through** 는 약속이나 계획이 성사되지 못하고 무산된 것을 말합니다. **throwing a whole day away** 는 하루를 통째로 허비했다는 뜻입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "오는 길에 차에서 미리 연습까지 했어. 누가 이사 얘기를 물어볼 게 뻔하다고 생각했거든. 그런데 아무도 이사 얘기를 안 꺼내더라. 할머니가 왜 혼자 왔냐고 물으시길래 우리 천천히 가는 중이라고 했더니, 그 말을 식탁에 앉은 사람들 전부한테 뉴스 읽듯이 그대로 옮기시더라고. 이제 거기 있는 사람들이 내 인생을 나보다 더 잘 알아. 그래도 그 맛있는 감자 요리를 해 주셨으니 내가 무슨 말을 하겠어?",
+      "text": "I practiced in the car on the way over, because I knew somebody was going to ask about the move, and then nobody asked about the move at all. My grandmother wanted to know why I showed up by myself, so I said we're taking it slow, and she repeated that to the entire table like she was reading the news. Now everybody in there knows more about my life than I do. But she made the good potatoes, so what am I going to say?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ran through it in the car on the way over, cause I figured somebody was gonna bring up the move, and then nobody brought up the move at all. My grandma wanted to know why I turned up alone, so I go, we're taking it slow, and she says it back to the whole table like she's reading the news. Now everyone in there knows more about my life than I do. But she made the good potatoes, so what am I gonna say?"
+        },
+        {
+          "style": "formal",
+          "text": "I rehearsed in the car on the way over, because I was certain that someone would ask about the move, and then no one asked about the move at all. My grandmother wished to know why I had arrived on my own, so I said that we are taking it slowly, and she repeated that to the entire table as though she were reading the news. Everyone in that room now knows more about my life than I do. But she had made the good potatoes, so what was I to say?"
+        }
+      ],
+      "note": "**we're taking it slow** 는 사이를 서두르지 않고 천천히 진전시키는 중이라는 뜻입니다. **what am I going to say?** 는 불만이 있어도 따질 수 없을 때 그럼 무슨 말을 하겠냐고 되묻는 말입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "내 코트가 지난주 화요일부터 두 동네 건너 창고에 처박혀 있어. 앱은 아침마다 도착 날짜를 하루씩 또 미루고. 이젠 거기 뜨는 말은 하나도 안 믿어. 사실 신경도 안 썼을 텐데, 이걸 주문한 날 입던 코트를 남 줘 버렸거든. 그러고 이번 주에 날이 추워졌어. 전화했더니 직원이 자기도 나랑 똑같은 화면을 보고 있고 자기 쪽에서 더 나오는 건 없대. 그래서 그냥 알겠다고 하고 끊었어.",
+      "text": "My coat has been sitting at some warehouse two towns over since last Tuesday, and every morning the app pushes it back another day, so I don't believe anything it tells me now. I wouldn't even care, except I gave away my old coat the day I ordered this one, and then it got cold this week. I called and the guy told me he can see exactly what I'm seeing and there's nothing else on his end, so I just said okay and hung up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "There's a warehouse two towns over that's had my coat since last Tuesday, and every morning the app bumps it another day, so I don't buy anything it tells me now. I wouldn't even care, except I gave my old coat away the day I ordered this one, and then it got cold this week. Called them, and the guy goes he's looking at the exact same thing I am and there's nothing else on his end, so I just said okay and hung up."
+        },
+        {
+          "style": "formal",
+          "text": "My coat has been sitting at a warehouse two towns away since last Tuesday, and each morning the application pushes it back another day, so I no longer believe anything it tells me. I would not mind in the least, except that I gave away my old coat on the day I ordered this one, and then the weather turned cold this week. I telephoned, and the representative told me that he can see exactly what I am seeing and that there is nothing further on his end, so I simply said that it was fine and ended the call."
+        }
+      ],
+      "note": "**pushes it back another day** 는 예정일을 하루 더 뒤로 미룬다는 뜻입니다. **nothing else on his end** 는 자기 쪽에서는 더 알 수 있는 것도 해 줄 것도 없다는 말입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "5번 casual 의 첫 문장이 시제가 어긋났습니다 — \"There's a coat of mine parked ... since last Tuesday\" 는 현재형에 since 가 붙어 말이 안 됩니다. 창고를 앞에 내세운 구어체 문장으로 다시 썼습니다(\"There's a warehouse two towns over that's had my coat since last Tuesday\"). text 와 첫머리가 겹치지도 않습니다.",
+    "3번 formal 의 \"like an elderly man\" 을 \"like an old man\" 으로 되돌렸습니다 — 이건 말투를 올릴 수 있는 자리가 아니라 굳어진 비유라, elderly 로 바꾸면 격식이 아니라 그냥 어색해집니다."
+  ]
+}

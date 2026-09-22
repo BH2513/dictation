@@ -1,0 +1,114 @@
+{
+  "setId": "s128",
+  "videoId": "daily-s128",
+  "title": "Set 128",
+  "madeAt": "2026-09-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "솔직히 말해도 돼? 재킷은 너한테 진짜 잘 어울리는데 바지는 잘 모르겠어. 좀 짧아서, 밤새 바지를 자꾸 잡아당기고 있으면 입는 게 즐겁지 않을 거야. 나라면 재킷은 그냥 두고, 바지는 한 치수 큰 게 있는지 알아볼래.",
+      "text": "Honestly? The jacket's great on you, but I'm not sure about the pants. They're kind of short, and if you're tugging at them all night you're not going to enjoy wearing them. I'd keep the jacket and see if they have the pants a size up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, real talk? Love the jacket on you, but the pants, not so sure. They're kinda short, and if you're pulling at them all night you're not gonna have fun in them. Keep the jacket and see if they've got the pants one size up."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, the jacket looks wonderful on you, but I am not certain about the trousers. They are somewhat short, and if you are adjusting them all night, you will not enjoy wearing them. I would keep the jacket and ask whether they have the trousers in the next size up."
+        }
+      ],
+      "note": "**great on you** 는 옷이 너한테 잘 어울린다는 말입니다. **tugging at** 은 옷 같은 것을 자꾸 잡아당긴다는 뜻이고, **a size up** 은 한 치수 큰 것을 말합니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "새 매트리스 들이고 나서부터 잠을 너무 못 자. 남편은 그 매트리스를 엄청 좋아해서 뭐라고 하기가 좀 그런데, 매일 아침 바닥에서 잔 것 같은 기분으로 일어나. 반품 기한이 2주밖에 안 남아서 곧 말을 꺼내야 할 것 같아.",
+      "text": "I've been sleeping terribly since we got the new mattress. My husband loves it, so I don't really want to say anything, but I wake up every morning feeling like I slept on the floor. We've only got two more weeks to send it back, so I guess I have to bring it up soon.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ever since we got the new mattress my sleep's been awful. My husband's crazy about it, so I kinda don't wanna say anything, but every morning I wake up feeling like I slept on the floor. We've only got two more weeks to return it, so I guess I gotta bring it up soon."
+        },
+        {
+          "style": "formal",
+          "text": "I have been sleeping very poorly since we purchased the new mattress. My husband is very fond of it, so I would rather not say anything, but I wake each morning feeling as though I had slept on the floor. We have only two more weeks to return it, so I suppose I will need to raise the matter soon."
+        }
+      ],
+      "note": "**bring it up** 은 말하기 곤란한 이야기를 꺼낸다는 뜻입니다. **send it back** 은 산 물건을 반품한다는 말입니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "안녕하세요, 2B호예요. 부엌 수도꼭지에서 물이 샌 지 일주일쯤 됐는데, 이제는 밤에 침실에서도 똑똑 소리가 들릴 정도예요. 제가 직접 조여 봤는데 부품을 새로 갈아야 할 것 같아요. 이번 주에 누가 와 주실 수 있을까요? 저는 거의 매일 5시 이후에 집에 있어요.",
+      "text": "Hi, it's me from 2B. The kitchen faucet's been dripping for about a week now, and it's gotten so bad I can hear it from the bedroom at night. I tried tightening it myself, but I think it needs a new part. Is there any way somebody could come by this week? I'm home after five most days.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, 2B here. My kitchen faucet's been dripping for like a week now, and it's so bad I can hear it from the bedroom at night. Tried tightening it myself, but I think it needs a new part. Any chance someone could swing by this week? I'm usually home after five."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is the tenant in 2B. The kitchen faucet has been dripping for approximately one week, and it has become so loud that I can hear it from the bedroom at night. I attempted to tighten it myself, but I believe it requires a new part. Would it be possible for someone to come by this week? I am home after five o'clock on most days."
+        }
+      ],
+      "note": "**Is there any way** 는 가능하겠느냐고 공손하게 부탁할 때 씁니다. **come by** 는 잠깐 들른다는 뜻이고, 캐주얼에서는 **swing by** 라고도 합니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이번 주말에 아무것도 안 했는데 하나도 찔리지 않아. 차고 좀 치워야지 하고 계속 생각은 했는데, 일어날 때마다 커피만 한 잔 더 타서 도로 앉았어. 그래서 차고는 아직도 엉망이지만, 솔직히 몇 주 만에 제일 기분이 좋아.",
+      "text": "I didn't do a single thing this weekend, and I don't feel bad about it at all. I kept telling myself I should clean out the garage, but every time I got up I just made another cup of coffee and sat back down. So the garage is still a mess, but honestly I feel better than I have in weeks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did absolutely nothing this weekend and I'm totally fine with it. Kept telling myself I should clean out the garage, but every time I got up I just made another coffee and sat right back down. Garage is still a mess, but honestly I feel better than I have in weeks."
+        },
+        {
+          "style": "formal",
+          "text": "I did not accomplish a single thing this weekend, and I do not feel guilty about it in the least. I kept telling myself that I ought to clean out the garage, but each time I stood up, I simply made another cup of coffee and sat back down. The garage is therefore still in disarray, but I genuinely feel better than I have in weeks."
+        }
+      ],
+      "note": "**didn't do a single thing** 은 아무것도 안 했다는 것을 힘주어 말할 때 씁니다. **better than I have in weeks** 는 몇 주 만에 가장 좋다는 뜻입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "수요일에 봄 이후 처음으로 수영장에 다시 갔는데, 나는 살살 한다고 했거든. 근데 다음 날 온몸이 쑤시고 오한까지 나서 무슨 병에 걸리는 줄 알았어. 아내 말로는 아무것도 안 하다가 갑자기 한 시간을 꽉 채우면 그렇게 된대. 그래서 다음엔 절반만 하고 어떤지 보려고.",
+      "text": "I went back to the pool on Wednesday for the first time since spring, and I thought I was taking it easy, but the next day I was achy all over and I had chills, like I was coming down with something. My wife says that's what happens when you go from nothing to a whole hour, so next time I'm going to do half and see how that goes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So Wednesday I finally hit the pool again, first time since spring. I figured I was going easy, but the next day I was sore all over and had chills, like I was getting sick. My wife says that's what you get for going from zero to a whole hour, so next time I'm gonna do half and see how it goes."
+        },
+        {
+          "style": "formal",
+          "text": "On Wednesday I returned to the pool for the first time since spring. I believed I was being careful, but the following day I was aching all over and had chills, as though I were becoming ill. My wife says that is what happens when one goes from no exercise to a full hour, so next time I intend to swim for half that time and see how it goes."
+        }
+      ],
+      "note": "**taking it easy** 는 무리하지 않고 살살 한다는 뜻입니다. **coming down with something** 은 감기 같은 병에 걸리려고 한다는 말입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어: 영어는 이미 산 재킷을 keep 하라는 말인데 한국어가 '재킷은 사고'로 되어 있어 '재킷은 그냥 두고'로 고치고, tugging at 에 맞게 '끌어내리고'를 '자꾸 잡아당기고'로 바꿈",
+    "4번 note: 별표로 감싼 not do a single thing 은 문장에 그대로 나오지 않아 실제 표현인 didn't do a single thing 으로 고침",
+    "5번 casual: that's what you get going from 은 전치사가 빠져 어색해서 that's what you get for going from 으로 고침"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "setId": "s127",
+  "videoId": "daily-s127",
+  "title": "Set 127",
+  "madeAt": "2026-09-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "2시에 배송 완료됐다고 뜨는데 문 앞에 아무것도 없어. 양옆집에도 벌써 다 물어봤어. 게다가 내일까지는 신고도 못 한대. 오늘 안에 아직 올 수도 있다나 봐.",
+      "text": "It says it was delivered at two o'clock, but there's nothing at the door, and I already asked both neighbors. And I can't even report it until tomorrow, because apparently it could still show up by the end of the day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking says two o'clock, but nope, nothing here, and I've already checked with both neighbors. Can't even report it till tomorrow either, 'cause apparently it might still turn up tonight."
+        },
+        {
+          "style": "formal",
+          "text": "According to the tracking information, it was delivered at two o'clock, but there is nothing at the door, and I have already asked both of my neighbors. I am also unable to report it until tomorrow, since apparently it may still arrive by the end of the day."
+        }
+      ],
+      "note": "**It says** 는 배송 조회나 안내문에 그렇게 나와 있다는 뜻입니다. **show up** 은 물건이 도착하거나 나타난다는 말로, casual 의 **turn up** 도 같은 뜻입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "카페를 세 군데나 갔는데 테이블마다 노트북 하는 사람이 앉아 있더라. 그중 반은 뭘 마시지도 않더라. 결국 커피를 포장해서 차 안에 앉아 마셨는데, 그럴 거면 만난 의미가 없잖아.",
+      "text": "We went to three different places and every single table had somebody on a laptop, and half of them weren't even drinking anything. So we ended up getting our coffee to go and sitting in the car, which kind of defeats the whole point of meeting up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tried three places, and every table had some guy on a laptop, half of 'em not even drinking anything. So we just grabbed coffee to go and sat in the car, which kinda defeats the purpose of hanging out."
+        },
+        {
+          "style": "formal",
+          "text": "We visited three different cafés, and at every table there was someone working on a laptop, and half of them were not even drinking anything. We therefore took our coffee to go and sat in the car, which rather defeated the purpose of meeting."
+        }
+      ],
+      "note": "**ended up** 은 어쩌다 보니 결국 그렇게 됐다는 뜻입니다. **defeats the whole point** 는 원래 하려던 목적이 아예 무의미해진다는 말입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "빨래 기다리면서 영상 딱 하나만 틀어 놨는데, 자동 재생이 계속 넘어갔나 봐. 빨래 끝난 지 두 시간이나 됐는데 아직도 여기 앉아 있어.",
+      "text": "I only put on one video while I was waiting for the laundry, but I guess autoplay just kept going, because the laundry's been done for two hours and I'm still sitting here.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was just gonna watch one video while the laundry ran, but autoplay kept going I guess, 'cause it's been done for two hours and I'm still here."
+        },
+        {
+          "style": "formal",
+          "text": "I intended to watch only one video while waiting for the laundry, but it seems autoplay continued, because the laundry finished two hours ago and I am still sitting here."
+        }
+      ],
+      "note": "**put on** 은 영상이나 음악을 튼다는 뜻입니다. **I guess** 는 확실하지 않을 때 ~인가 봐 하고 짐작을 붙이는 말입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그냥 아무거나 좀 고르면 안 돼? 20분째 넘기고만 있잖아. 내가 하나 찾을 때마다 너는 그거 봤다고 하면서, 막상 무슨 내용인지는 말을 못 하잖아.",
+      "text": "Can we just pick something? We've been scrolling for twenty minutes, and every time I find one you say you've already seen it, but then you can't tell me what happens in it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, can we just pick one? It's been twenty minutes of scrolling, and every time I find something you're like, seen it, but you can't tell me what happens!"
+        },
+        {
+          "style": "formal",
+          "text": "Could we please choose something? We have been scrolling for twenty minutes, and each time I find one, you say you have already seen it, yet you cannot tell me what happens in it."
+        }
+      ],
+      "note": "**We've been scrolling for twenty minutes** 처럼 have been ~ing 는 계속 그러고 있다는 뜻입니다. casual 의 **you're like** 는 말투나 반응을 옮길 때 너는 ~ 이러잖아 하는 느낌입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "모퉁이에 있는 피자집이 원래 내 최애였거든. 근데 작년에 주인이 바뀌면서 소스를 바꿨어. 맛없는 건 아닌데 예전 같지가 않아. 언젠가 원래대로 돌려놓지 않을까 해서 자꾸 가 보게 돼.",
+      "text": "That pizza place on the corner used to be my favorite, but somebody new bought it last year and they changed the sauce. It's not bad, it's just not the same, and I keep going back hoping they'll change it back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I used to love the pizza place on the corner, but somebody new took over last year and changed the sauce. It's not bad, just not the same, and I keep going back hoping they'll switch it back."
+        },
+        {
+          "style": "formal",
+          "text": "The pizza restaurant on the corner used to be my favorite, but it was purchased by a new owner last year, and the sauce was changed. It is not bad, but it is not the same, and I continue to return in the hope that they will restore the original sauce."
+        }
+      ],
+      "note": "**used to be** 는 예전에는 그랬지만 지금은 아니라는 뜻입니다. **it's just not the same** 은 나쁘진 않은데 예전 그 느낌이 아니라는 말이고, **keep going back** 은 자꾸 다시 가게 된다는 뜻입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal: since it may apparently still arrive 는 apparently 자리가 어색해서 since apparently it may still arrive 로 옮김",
+    "2번 casual: kills the whole point 는 관용구가 비틀린 형태라 원래 관용구인 defeats the purpose 로 고침",
+    "2번 formal: had not even ordered anything 은 원문(마시지도 않음)과 뜻이 달라 were not even drinking anything 으로 고침",
+    "2번 한국어: 음료도 안 시켰어 는 영어(weren't even drinking anything)와 뜻이 달라 뭘 마시지도 않더라 로 고침",
+    "5번 한국어: 돌려놓지 않았을까 는 이미 바꿨는지 확인하러 가는 뜻이 되어, 영어처럼 앞으로 되돌려 주길 바라는 뜻으로 고침",
+    "5번 formal: restore the original 뒤에 무엇을 되돌리는지가 빠져 있어 sauce 를 붙임"
+  ]
+}

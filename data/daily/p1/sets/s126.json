@@ -1,0 +1,114 @@
+{
+  "setId": "s126",
+  "videoId": "daily-s126",
+  "title": "Set 126",
+  "madeAt": "2026-09-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아, 나도 그러고 싶은데 토요일에 우리 형 부엌 페인트칠 도와주기로 이미 말해 놨어. 지난번에도 형한테 약속 펑크 냈거든. 이번에 또 그러면 두고두고 그 얘기 들을 거야. 그래도 일요일에 일손이 더 필요하면 점심 먹고 들를 수 있어.",
+      "text": "Ah, I wish I could, but I already told my brother I'd help him paint his kitchen on Saturday, and I bailed on him last time, so if I do it again he's never going to let me hear the end of it. If you still need an extra pair of hands on Sunday, though, I can come by after lunch.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Man, I can't. Promised my brother I'd help paint his kitchen Saturday, and I flaked on him last time, so if I do it again he'll never let it go. Still need a hand Sunday? I can swing by after lunch."
+        },
+        {
+          "style": "formal",
+          "text": "I am afraid I cannot, as I have already promised my brother that I would help him paint his kitchen on Saturday. I let him down the last time, and if I were to do so again, he would never let me forget it. However, if you still require assistance on Sunday, I would be glad to come by after lunch."
+        }
+      ],
+      "note": "**bailed on** 는 사람과의 약속을 막판에 펑크 낸다는 뜻이에요. **never going to let me hear the end of it** 는 두고두고 그 얘기를 꺼낼 거라는 말이고, **an extra pair of hands** 는 일손 하나 더를 말해요.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "너희 딸도 그 과학 과제 해? 우리 딸은 화산을 골랐길래 잘했다고 했지. 근데 어젯밤 아홉 시에 와서는 목요일까지 내야 하고 포스터 보드가 필요하대. 그래서 밤 열 시에 드러그스토어에 누가 가 있었게? 지난주에만 말해 줬어도 기꺼이 도와줬을 텐데.",
+      "text": "Is your daughter doing that science project too? Because mine picked volcanoes, and I said great, and then last night at nine she tells me it's due Thursday and she needs a poster board. So guess who was at the drugstore at ten? I'd have been happy to help if she'd just told me last week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wait, your daughter's got that science project too? Mine went with volcanoes, fine, great, then at nine last night she goes, oh, it's due Thursday and I need a poster board. So guess who's at the drugstore at ten? I'd have happily helped if she'd just said something last week."
+        },
+        {
+          "style": "formal",
+          "text": "Is your daughter also working on that science project? My daughter chose volcanoes, which I was pleased about, but last night at nine o'clock she informed me that it is due on Thursday and that she needs a poster board. As a result, I was at the drugstore at ten. I would have been glad to help had she told me last week."
+        }
+      ],
+      "note": "**guess who** 는 누구였게? 하고 물은 뒤 결국 나였다고 푸념할 때 써요. **it's due Thursday** 는 목요일까지 내야 한다는 뜻이에요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "아니야, 여기는 다 괜찮아. 차 문제는 해결됐으니까 이제 걱정 안 해도 돼. 목소리가 좀 이상하게 들리면 방금 낮잠 자다 깨서 그래, 그게 다야. 그건 그렇고 아빠 무릎은 좀 어때?",
+      "text": "Yeah, no, everything's good here. The car thing got sorted out, so you can stop worrying about that. If I sound a little off, it's because I just woke up from a nap, that's all. Anyway, how's Dad's knee doing?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nah, all good over here. Car stuff's sorted, so quit worrying about it. If I sound kinda weird, I just woke up from a nap, that's it. So how's Dad's knee?"
+        },
+        {
+          "style": "formal",
+          "text": "Everything is fine here. The matter with the car has been resolved, so there is no need to worry about it any longer. If I sound slightly unlike myself, it is only because I have just woken from a nap. In any case, how is Father's knee?"
+        }
+      ],
+      "note": "**Yeah, no** 는 상대 말을 받으면서 아니라고 할 때 쓰는 입말이에요. **got sorted out** 는 문제가 해결됐다는 뜻이고, **a little off** 는 평소와 좀 다르다는 말이에요.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "드디어 치과에 갔는데, 알고 보니 내가 자면서 이를 갈고 있었대. 그래서 매일 아침 턱이 아팠나 봐. 의사가 밤에 마우스피스를 끼라는데 그 말 듣고 좀 웃었어. 안 그래도 침대에서 편하게 눕기가 힘든데 말이야.",
+      "text": "So I finally went to the dentist, and apparently I've been grinding my teeth in my sleep, which would explain why my jaw's been sore every morning. He wants me to wear a mouth guard at night, and I kind of laughed, because I can't get comfortable in bed as it is.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally made it to the dentist, and turns out I grind my teeth in my sleep, so that's why my jaw's sore every morning. He wants me in a mouth guard at night, and I kinda laughed, since I can't get comfy in bed as it is."
+        },
+        {
+          "style": "formal",
+          "text": "I finally visited the dentist, and it appears that I have been grinding my teeth while I sleep, which would account for the soreness in my jaw every morning. He would like me to wear a mouth guard at night, and I must admit I laughed, because I already find it difficult to get comfortable in bed."
+        }
+      ],
+      "note": "**apparently** 는 들어 보니 ~래 하고 전해 들은 것을 말할 때 써요. **grinding my teeth** 는 이를 간다는 뜻이고, **as it is** 는 안 그래도, 지금도 이미라는 말이에요.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "어젯밤에 애 재우는 데 한 시간 반 걸렸어. 잠들었나 싶어서 몰래 방을 빠져나가려고 하면 꼭 바닥이 삐걱거리고, 그러면 애가 벌떡 일어나 앉아서 어디 가냐고 물어. 진짜 잠들었을 때는 내가 너무 녹초가 돼서 애 방 바닥에 삼십 분을 더 누워 있었어. 도저히 몸이 안 일으켜지더라.",
+      "text": "It took me an hour and a half to get him down last night. Every time I thought he was out, I'd try to sneak out of the room and the floor would creak, and he'd sit straight up and ask where I was going. By the time he actually fell asleep I was so wiped that I just lay there on his floor for another half hour, because I couldn't make myself get up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Took me an hour and a half to get him to sleep last night. Every time I thought he was out, I'd tiptoe to the door, the floor would creak, and boom, he's sitting up asking where I'm going. By the time he actually conked out I was so wiped I just lay on his floor another half hour. Couldn't make myself get up."
+        },
+        {
+          "style": "formal",
+          "text": "Last night it took me an hour and a half to get him to sleep. Each time I believed he had fallen asleep, I attempted to leave the room quietly, but the floor would creak, and he would sit straight up and ask where I was going. By the time he finally fell asleep, I was so exhausted that I remained lying on his floor for another half hour, because I could not bring myself to get up."
+        }
+      ],
+      "note": "**get him down** 는 아이를 재운다는 뜻이에요. **wiped** 는 완전히 녹초가 됐다는 말이고, **couldn't make myself get up** 는 일어나려고 해도 몸이 말을 안 들었다는 뜻이에요.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어: 포스터 보드를 사러 간 미국 drugstore를 약국이라고 하면 한국 사람에게는 어색해서 드러그스토어로 바꿨다",
+    "4번 한국어: I kind of laughed는 내가 웃었다는 말인데 좀 웃겼어는 상황이 우스웠다는 뜻이라 그 말 듣고 좀 웃었어로 고쳤다",
+    "5번 casual: sneak for the door는 원어민이 잘 안 쓰는 조합이라 tiptoe to the door로 바꿨다"
+  ]
+}

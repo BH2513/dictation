@@ -1,0 +1,112 @@
+{
+  "setId": "s130",
+  "videoId": "daily-s130",
+  "title": "Set 130",
+  "madeAt": "2026-09-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "어머, 이게 얼마 만이야? 2년 됐나? 마지막으로 봤을 때 너 덴버로 이사 가기 직전이었잖아. 그래서 진짜 갔어, 아니면 결국 그냥 여기 있기로 했어?",
+      "text": "Oh my God, how long has it been? Two years? The last time I saw you, you were about to move to Denver, so did that actually happen, or did you end up staying?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wow, it's been what, two years? Last time I saw you, you were just about to move to Denver. So did you actually go, or did you end up staying put?"
+        },
+        {
+          "style": "formal",
+          "text": "Goodness, how long has it been? Two years? When we last met, you were about to relocate to Denver. Did that move actually take place, or did you ultimately decide to stay?"
+        }
+      ],
+      "note": "**end up** ~ing 는 원래 계획과 달리 결국 ~하게 되다라는 뜻입니다. casual 의 **stay put** 은 움직이지 않고 그 자리에 그대로 있다는 말입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "퇴근하고 바로 가려고 했는데, 언니한테 전화가 와서 한 시간쯤 통화했거든. 끊고 나니까 거의 8시더라고. 그래서 그냥 내일 아침에 가기로 했어.",
+      "text": "I was going to go straight from work, but then my sister called and we were on the phone for like an hour, and by the time we hung up it was almost eight. So I figured I'd just go tomorrow morning instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna head over right after work, but my sister called and we talked for like an hour, and when we hung up it was almost eight. So I figured I'd just go tomorrow morning."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to go directly from work, but my sister called and we spoke for about an hour, and by the time we finished it was nearly eight o'clock. I therefore decided to go tomorrow morning instead."
+        }
+      ],
+      "note": "**by the time** 은 ~할 무렵에는, ~했을 때는 이미 라는 뜻입니다. **I figured** 는 이렇게 하면 되겠다 싶었다, 그렇게 판단했다는 느낌으로 자주 씁니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "도와주고 싶은데 이번에는 개를 못 맡을 것 같아. 집주인이 반려동물 때문에 벌써 한 번 경고했거든. 들키면 진짜 집에서 쫓겨날 수도 있어. 메건한테는 물어봤어? 걔네 마당 엄청 넓잖아.",
+      "text": "I'd love to help, but I don't think I can take the dog this time. My landlord already warned me once about pets, and if he finds out, I could actually lose the apartment. Have you asked Megan? She's got that big yard.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wish I could, but I can't take the dog this time. My landlord's already warned me once about pets, and if he finds out I could seriously lose my place. You ask Megan? She's got that huge yard."
+        },
+        {
+          "style": "formal",
+          "text": "I would be glad to help, but I do not believe I can look after the dog this time. My landlord has already warned me once about pets, and if he were to find out, I could actually lose the apartment. Have you asked Megan? She has that large yard."
+        }
+      ],
+      "note": "**I'd love to help, but** 는 부탁을 부드럽게 거절할 때 쓰는 표현입니다. **finds out** 는 몰랐던 사실을 알아내다, 들키다는 뜻입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "폰이 자꾸 저절로 꺼졌다 켜져. 문자 쓰고 있는데 갑자기 화면이 까매지더니 로고가 다시 뜨는 거야. 지난번 업데이트하고 나서부터 그러니까 배터리 문제가 아니라 업데이트 문제였으면 좋겠어. 지금은 진짜 새 폰 사기 싫거든.",
+      "text": "My phone keeps restarting on its own. Like, I'll be in the middle of a text and the screen just goes black, and then the logo comes back up. It started after the last update, so I'm hoping it's just the update and not the battery, because I really don't want to buy a new phone right now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my phone won't stop restarting by itself. I'll be halfway through a text and the screen just goes black, then the logo pops back up. Started after the last update, so I'm hoping it's just that and not the battery, cause I really don't wanna buy a new phone right now."
+        },
+        {
+          "style": "formal",
+          "text": "My phone continues to restart without warning. For instance, while I am in the middle of writing a message, the screen goes black and the logo then reappears. This began after the most recent update, so I am hoping the update is the cause rather than the battery, as I would prefer not to purchase a new phone at the moment."
+        }
+      ],
+      "note": "**keeps restarting** 처럼 keep ~ing 는 자꾸 ~하다, 계속 ~하다는 뜻입니다. **on its own** 은 누가 건드리지 않았는데 저절로 라는 말입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "내가 금요일 오후에 회사 일이 있어서 금요일 밤에나 출발할 수 있어. 근데 토요일 아침에 차로 올라가도 거기서 이틀은 꽉 채워 있을 수 있고, 하룻밤 더 있고 싶으면 내가 월요일에 휴가 내면 돼. 넌 언제가 좋아?",
+      "text": "So I can't leave till Friday night, because I've got something at work that afternoon. But if we drive up Saturday morning instead, we'd still get two full days there, and I could take Monday off if you want to stay an extra night. What works for you?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Friday night's the earliest I can leave, I've got a work thing that afternoon. But if we head up Saturday morning, we still get two full days, and I could take Monday off if you wanna stay another night. What do you think?"
+        },
+        {
+          "style": "formal",
+          "text": "I am unable to leave until Friday evening, as I have a work commitment that afternoon. However, if we were to drive up on Saturday morning instead, we would still have two full days there, and I could take Monday off should you wish to stay an additional night. What would suit you best?"
+        }
+      ],
+      "note": "**take Monday off** 는 월요일에 쉬다, 휴가를 내다는 뜻입니다. **What works for you?** 는 일정을 맞출 때 너는 언제가 괜찮아? 하고 묻는 표현입니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어: 영어 like an hour 는 한 시간쯤이라는 뜻인데 한 시간 가까이로 옮겨져 있어 한 시간쯤으로 고침"
+  ]
+}

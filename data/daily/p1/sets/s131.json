@@ -1,0 +1,115 @@
+{
+  "setId": "s131",
+  "videoId": "daily-s131",
+  "title": "Set 131",
+  "madeAt": "2026-09-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "내일 등산 가기로 했는데 하루 종일 비가 쏟아진다고 해서 그냥 영화 보러 가기로 했어. 이럴 줄 알았으면 지난주에 새 등산화 안 샀지.",
+      "text": "We were supposed to go hiking tomorrow, but they're saying it's going to pour all day, so now we're just going to the movies instead. If I'd known, I wouldn't have bought new boots last week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hiking's off tomorrow. They're saying it's gonna pour all day, so we're just doing a movie instead. Wish I'd known before I bought new boots last week."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to go hiking tomorrow, but the forecast is for heavy rain all day, so we will be going to the cinema instead. Had I known, I would not have purchased new boots last week."
+        }
+      ],
+      "note": "**pour** 는 비가 억수같이 쏟아진다는 뜻이에요. **If I'd known, I wouldn't have** 는 알았더라면 안 했을 텐데 하고 지난 일을 아쉬워할 때 쓰는 말이에요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이번엔 다이어트를 목요일까지 버텼어. 근데 누가 회사에 도넛을 사 왔고, 딱 반 개만 먹자고 생각했는데 어떻게 됐을지 알지? 그래서 월요일부터 다시 시작하려고. 지난주 월요일에도 똑같이 말했지만.",
+      "text": "I made it till Thursday on my diet this time. Then somebody brought doughnuts into work, and I told myself I'd just have half of one, but you know how that goes. So I'm starting over on Monday, which is exactly what I said last Monday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got to Thursday on the diet this time. Then someone brought doughnuts to work, and I was like, I'll just have half. Yeah, you know how that goes. So I'm starting over Monday, which is exactly what I said last Monday."
+        },
+        {
+          "style": "formal",
+          "text": "This time I managed to keep to my diet until Thursday. Then a colleague brought doughnuts into the office, and I told myself I would only have half of one, but I am sure you can imagine what happened. I will therefore begin again on Monday, which is precisely what I said last Monday."
+        }
+      ],
+      "note": "**made it till Thursday** 는 목요일까지 버텼다는 뜻이에요. **you know how that goes** 는 뻔하잖아, 어떻게 됐을지 알지 하는 느낌이에요.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "요즘 머리 자르는 데 얼마 받는지 봤어? 봄에는 25달러였는데 지금은 40달러야. 같은 사람이 똑같이 잘라 주는데. 망치지만 않을 자신 있으면 내가 직접 자르겠다.",
+      "text": "Did you see what they're charging for a haircut now? It was twenty five dollars in the spring and now it's forty, and it's the same guy doing the same thing. I'd cut it myself if I thought I wouldn't mess it up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Have you seen haircut prices now? Twenty five bucks in the spring, forty now, and it's the same guy doing the same thing. I'd do it myself if I didn't think I'd screw it up."
+        },
+        {
+          "style": "formal",
+          "text": "Have you noticed how much they are charging for a haircut now? It was twenty five dollars in the spring and it is now forty, for the same barber doing the same work. I would cut it myself if I were confident I would not ruin it."
+        }
+      ],
+      "note": "**what they're charging** 는 가게에서 받는 값이 얼마인지 말할 때 써요. **mess it up** 은 망치다, 엉망으로 만들다라는 뜻이에요.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그러니까 그 친구는 간호사인데 밤 근무에 주말 근무도 많아서 시간이 자주 나진 않아. 그래도 말은 진짜 편하게 통해. 좀 직설적이긴 해서 음식이 별로면 그냥 별로라고 말하는데, 너는 오히려 그런 점을 좋아할 것 같아. 네 번호 줘도 돼?",
+      "text": "Okay, so she's a nurse and she works nights and a lot of weekends, so she's not free very often, but she's really easy to talk to. She's a little blunt, like if she doesn't like the food she'll just tell you, but I think you'd actually like that about her. Can I give her your number?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "She works nights as a nurse, plus a lot of weekends, so she's hardly ever free, but she's super easy to talk to. Kinda blunt, like if the food's bad she'll just say so, but I think you'd actually like that. Cool if I give her your number?"
+        },
+        {
+          "style": "formal",
+          "text": "She is a nurse who works nights and many weekends, so she is not often available, but she is very easy to talk to. She can be somewhat direct; if she does not care for the food, for example, she will simply tell you, but I believe you would appreciate that about her. Would you mind if I gave her your number?"
+        }
+      ],
+      "note": "**easy to talk to** 는 말이 잘 통하는, 대하기 편한 사람을 말해요. **blunt** 는 돌려 말하지 않고 직설적이라는 뜻이에요.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "윗집 사람들 매일 밤 가구 옮기나 봐. 11시쯤 되면 누가 소파를 바닥에 질질 끄는 소리가 나거든. 한 번 올라가서 말하려고 했는데 그 집 아저씨가 너무 친절해서 결국 내가 사과하고 왔어. 그래서 이제는 그냥 누워서 듣고만 있어.",
+      "text": "The people upstairs must be moving furniture every night, because around eleven it sounds like somebody's dragging a couch across the floor. I went up once to say something, but the guy was so nice that I ended up apologizing to him, so now I just lie there and listen to it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Pretty sure the people upstairs move furniture every night. Around eleven it's like someone's dragging a couch across the floor. Went up once to say something, but he was so nice I ended up saying sorry to him, so now I just lie there and listen."
+        },
+        {
+          "style": "formal",
+          "text": "The neighbours upstairs must be moving furniture every evening, because at around eleven o'clock it sounds as though someone is dragging a sofa across the floor. I went upstairs on one occasion to raise the matter, but the gentleman was so pleasant that I found myself apologizing to him, so now I simply lie there and listen to it."
+        }
+      ],
+      "note": "**must be moving** 은 틀림없이 옮기고 있나 보다 하고 짐작할 때 써요. **ended up apologizing** 은 어쩌다 보니 결국 사과하게 됐다는 뜻이에요.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어: told myself 를 '먹자고 했는데'로 옮기면 남에게 말한 것처럼 읽혀서 '먹자고 생각했는데'로 고침",
+    "4번 casual: 앞부분 'So she's a nurse' 가 text 의 'Okay, so she's a nurse' 와 겹쳐서 문장 첫머리를 바꿈",
+    "5번 casual: 앞부분 'The guys upstairs gotta be moving furniture every night' 가 text 와 거의 같아서 'Pretty sure...'로 시작하게 바꾸고 더 짧게 줄임",
+    "5번 한국어: '그 남자가'는 번역투라서 '그 집 아저씨가'로, 끝 문장은 '그냥 누워서 듣고만 있어'로 다듬음"
+  ]
+}

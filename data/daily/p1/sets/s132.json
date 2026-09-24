@@ -1,0 +1,116 @@
+{
+  "setId": "s132",
+  "videoId": "daily-s132",
+  "title": "Set 132",
+  "madeAt": "2026-09-25",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "솔직하게 말해 줄까? 부츠는 진짜 예뻐. 근데 네가 그걸 정말 신을 것 같지는 않아. 지난번 부츠도 발 아파 죽는 줄 알았다며. 근데 이건 굽이 더 높잖아. 그래도 신어 봤는데 발이 안 조이면 반품하지 말고 신어. 너한테 진짜 잘 어울리거든.",
+      "text": "You want the truth? I love the boots, I just don't think you're actually going to wear them, because you said the last pair killed your feet and these have an even higher heel. If they don't pinch, though, keep them, because they look great on you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly? The boots are great, but I don't see you wearing them. You said the last ones killed your feet, and these have a higher heel. If they don't pinch, though, keep 'em. They look awesome on you."
+        },
+        {
+          "style": "formal",
+          "text": "Would you like my honest opinion? I love the boots, but I do not believe you will actually wear them, since you said the last pair hurt your feet and these have an even higher heel. If they do not pinch, however, you should keep them, because they look wonderful on you."
+        }
+      ],
+      "note": "**killed your feet** 는 신발 때문에 발이 너무 아팠다는 구어 표현입니다. **pinch** 는 신발이 꽉 껴서 발을 조인다는 뜻입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "누가 물어보면 다리에서 사고 났다고 해 줘. 사고는 없었어. 알람 두 개 울리는 것도 모르고 잤거든. 근데 케빈은 이걸 몰랐으면 좋겠어. 월요일에 지각한 걸로 벌써 나한테 뭐라고 하고 있단 말이야.",
+      "text": "Okay, if anybody asks, there was an accident on the bridge. There wasn't, I slept right through two alarms, but I'd rather Kevin didn't hear that, because he's already on me about being late on Monday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So if anyone asks, there was a wreck on the bridge. There wasn't, I slept through two alarms, but don't let Kevin hear that. He's already on my case about Monday."
+        },
+        {
+          "style": "formal",
+          "text": "If anyone should ask, please say there was an accident on the bridge. There was not; I slept through two alarms, but I would prefer that Kevin not hear about it, as he has already spoken to me about arriving late on Monday."
+        }
+      ],
+      "note": "**slept right through** 는 알람이 울려도 모르고 계속 잤다는 뜻입니다. **on me about** 는 무엇 때문에 누구를 계속 들볶는다는 말이고, 캐주얼의 **on my case** 도 같은 뜻입니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "커피는 식어 가는데 그 가게를 세 바퀴쯤 돌았어. 자리가 날 때마다 내가 가기 전에 누가 먼저 앉아 버리더라고. 결국 문 옆 창틀에 걸터앉았는데, 솔직히 돈만 안 냈으면 그냥 나왔을 거야.",
+      "text": "I walked around that place like three times with my coffee getting cold, because every time a table opened up somebody would grab it before I got there. I finally just sat on the windowsill by the door, and honestly I'd have left if I hadn't already paid.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I did like three laps of that place while my coffee got cold. Every time a table opened up, somebody grabbed it first. Ended up sitting on the windowsill by the door, and I'd have bailed if I hadn't paid already."
+        },
+        {
+          "style": "formal",
+          "text": "I walked around the café approximately three times while my coffee grew cold, because each time a table became available, someone else took it before I reached it. Eventually I sat on the windowsill near the door, and frankly, I would have left had I not already paid."
+        }
+      ],
+      "note": "**grab** 는 자리를 재빨리 차지한다는 뜻입니다. **I'd have left if I hadn't already paid** 는 돈을 아직 안 냈더라면 나갔을 거라는 과거 가정입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "아니야 엄마, 밥 잘 먹고 있어, 진짜야. 요즘 일이 좀 바빴을 뿐이야. 그러니까 전화 못 했다고 무슨 일 있는 거 아니야. 좀 한가해지면 주말에 한번 갈게. 아마 다음 달쯤에.",
+      "text": "No, Mom, I'm eating fine, I promise. Work's just been busy, so if I haven't called it's not because anything's wrong. I'll come up for a weekend once things calm down, probably sometime next month.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm eating, Mom, I swear. Work's been nuts, that's all. No calls doesn't mean something's wrong. I'll come up some weekend once it calms down, probably next month."
+        },
+        {
+          "style": "formal",
+          "text": "No, Mom, I am eating properly, I promise. Work has simply been very busy, so if I have not called, it is not because anything is wrong. I will come up for a weekend once things calm down, most likely at some point next month."
+        }
+      ],
+      "note": "**once things calm down** 은 상황이 좀 잠잠해지면이라는 뜻입니다. **come up** 은 상대가 있는 쪽으로 찾아간다는 말로, 여기서는 부모님 댁에 들른다는 뜻입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "같은 책을 네 번이나 읽어 달라고 하더니, 그다음엔 물 달라고 하고, 그다음엔 갑자기 학교에 있는 무슨 강아지 얘기를 해 줘야 한다는 게 생각났대. 그래서 열 시 넘어서야 겨우 잠들었어. 그 뒤에 일 좀 하려고 했는데 소파에 앉자마자 끝이었어. 새벽 한 시에 불 다 켜 놓은 채로 소파에서 깼어.",
+      "text": "She made me read her the same book four times, and then she wanted water, and then she suddenly remembered she had to tell me about some dog at school, so it was after ten when she finally went down. I was going to get some work done after that, but I sat down on the couch and that was it, I woke up there at one with all the lights still on.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Four times, same book. Then she wanted water, then all of a sudden she had to tell me about some dog at school, so she didn't go down till after ten. I was gonna get some work done, but I hit the couch and that was it. Woke up there at one with every light on."
+        },
+        {
+          "style": "formal",
+          "text": "She asked me to read the same book to her four times, then she asked for water, and then she suddenly remembered that she needed to tell me about a dog at school, so it was after ten o'clock when she finally fell asleep. I had intended to do some work afterward, but I sat down on the couch and fell asleep, and I woke up there at one o'clock with all the lights still on."
+        }
+      ],
+      "note": "**went down** 은 아이가 잠자리에 들어 잠든다는 뜻입니다. **that was it** 은 그걸로 끝이었다는 말로, 앉자마자 곯아떨어졌다는 느낌입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어: keep them 은 반품하지 말고 갖고 있으라는 뜻이라 '그냥 가져'를 '반품하지 말고 신어'로 고침. pinch 도 '끼면'보다 '조이면'이 뜻에 가까움",
+    "3번 note: '이미 돈을 안 냈더라면'이 앞뒤가 꼬인 말이라 '돈을 아직 안 냈더라면'으로 고침",
+    "4번 casual: 앞부분이 text와 거의 같아(Mom, I'm eating fine) 더 짧고 다른 구어로 다시 씀",
+    "4번 formal: 엄마에게 Mother 는 뜻 없이 딱딱하기만 해서 Mom 으로 두고 말투만 올림",
+    "4번 note: come up 은 멀리 있는 곳이 아니라 상대가 있는 쪽으로 찾아간다는 말이라 설명을 고침"
+  ]
+}

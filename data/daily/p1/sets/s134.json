@@ -1,0 +1,117 @@
+{
+  "setId": "s134",
+  "videoId": "daily-s134",
+  "title": "Set 134",
+  "madeAt": "2026-09-25",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아니 뭐, 돈도 더 주고 드디어 내 팀도 생기긴 하는데, 하필 엄마가 이제 막 도움이 더 필요해지기 시작한 때에 네 시간 거리로 이사를 가야 돼. 지난주에 물어봤으면 바로 한다고 했을 텐데, 지금은 솔직히 잘 모르겠어.",
+      "text": "I mean, the money's better, and I'd finally get my own team, but I'd have to move four hours away right when my mom's starting to need more help. If you'd asked me last week I would've said yes right away, but now I honestly don't know.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Look, it pays more and I'd finally have my own team, but it's four hours away and my mom's gonna need more help soon. Last week I'd have said yes, no question. Now? I really dunno."
+        },
+        {
+          "style": "formal",
+          "text": "The salary is higher, and I would finally have my own team, but I would have to relocate four hours away just as my mother is beginning to need more assistance. Had you asked me last week, I would have accepted immediately, but now I am genuinely uncertain."
+        }
+      ],
+      "note": "**right when** 은 딱 ~하는 그때에, 하필 ~할 때라는 뜻입니다. **If you'd asked me last week** 는 지난주에 물어봤으면이라는 뜻으로, 뒤에 **I would've said** 를 붙여 지나간 일을 가정할 때 씁니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "우리 고양이가 요즘 욕실 세면대에서 자기 시작했는데, 새 소파 들이면서 고양이 침대를 옮겨서 그런 것 같아. 그래서 아침마다 양치하려면 고양이를 들어서 꺼내야 하는데, 꼭 오히려 내가 무례하다는 듯이 쳐다봐.",
+      "text": "Our cat's started sleeping in the bathroom sink, and I'm pretty sure it's because we moved her bed when we got the new couch. So every morning I have to lift her out before I can brush my teeth, and she looks at me like I'm the one being rude.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the cat sleeps in the bathroom sink now, pretty sure 'cause we moved her bed when the new couch came. Every morning I gotta lift her out just to brush my teeth, and she looks at me like I'm the rude one."
+        },
+        {
+          "style": "formal",
+          "text": "Our cat has begun sleeping in the bathroom sink, and I believe it is because we moved her bed when we purchased the new couch. As a result, each morning I must lift her out before I can brush my teeth, and she regards me as though I am the one being impolite."
+        }
+      ],
+      "note": "**I'm pretty sure** 는 거의 확실하다고 말할 때 씁니다. **like I'm the one being rude** 는 오히려 내가 무례하게 구는 쪽인 것처럼이라는 말로, 억울함을 우스갯소리로 드러냅니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "안녕하세요, 난방기 때문에 또 연락드려서 죄송해요. 화요일에 보내 주신 기사님이 고쳐서 돌아가긴 했는데, 어젯밤에 또 꺼져서 아침에는 집 안이 완전 냉골이었어요. 이번에는 혹시 다른 분을 보내 주실 수 있을까요? 그분이 제대로 고친 것 같지가 않아서요.",
+      "text": "Hi, sorry to bother you again about the heater. The guy you sent on Tuesday got it working, but it shut off again last night, and it was freezing in here by morning. Could you maybe send somebody else this time? Because I don't think he actually fixed it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, me again about the heater, sorry. Your guy got it going on Tuesday, but it died again last night and it was freezing in here by morning. Can you send someone else this time? I don't think he really fixed it."
+        },
+        {
+          "style": "formal",
+          "text": "Good afternoon, I apologize for contacting you again regarding the heater. The technician you sent on Tuesday managed to get it working, but it shut off again last night, and the apartment was extremely cold by morning. Would it be possible to send a different technician this time? I do not believe the problem was actually repaired."
+        }
+      ],
+      "note": "**sorry to bother you again** 은 또 귀찮게 해서 죄송하다며 부탁을 꺼낼 때 쓰는 말입니다. **got it working** 은 고장 난 것을 돌아가게 만들었다는 뜻입니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "전화만 오면 스피커폰으로 안 하면 상대방이 제 목소리를 못 들어요. 껐다 켜 보기도 했고, 케이스가 마이크를 막고 있나 싶어서 케이스까지 빼 봤는데도 계속 그래요. 그래서 폰 문제인지 통신사 쪽 문제인지 모르겠어요.",
+      "text": "Every time I get a call, the other person can't hear me unless I put it on speaker. I already tried turning it off and on, and I even took the case off in case it was covering the mic, but it's still doing it, so I don't know if it's the phone or something on my carrier's end.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Whenever somebody calls, they can't hear me unless I'm on speaker. I've restarted it, even pulled the case off in case it was blocking the mic, and it's still doing it. No clue if it's the phone or my carrier."
+        },
+        {
+          "style": "formal",
+          "text": "Whenever I receive a call, the other party cannot hear me unless I use the speakerphone. I have already restarted the device, and I even removed the case in case it was obstructing the microphone, but the problem persists, so I am not certain whether it is the phone itself or an issue with my carrier."
+        }
+      ],
+      "note": "**turning it off and on** 은 껐다 켜 보는 것, 즉 재시작을 말합니다. **on my carrier's end** 는 통신사 쪽에서, 통신사 쪽 문제라는 뜻입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "잘 돼요. 다만 미리 말씀드리면, 소리를 끝까지 올리면 왼쪽 스피커가 조금 지직거려요. 그래서 80달러만 받는 거예요. 근데 주로 배경음악 틀어 놓는 용도면 아마 거의 모르실 거예요.",
+      "text": "It works fine, I just want to be upfront that the left speaker crackles a little if you turn it all the way up. That's why I'm only asking eighty dollars for it, but if you mostly use it for background music, you probably won't even notice.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It works, but heads up, the left speaker crackles a bit if you crank it all the way. That's why it's just eighty bucks. If it's mostly for background music, you probably won't even notice."
+        },
+        {
+          "style": "formal",
+          "text": "It functions properly, but I would like to be transparent that the left speaker crackles slightly at maximum volume. That is why I am asking only eighty dollars for it. However, if you primarily use it for background music, you will likely not notice it at all."
+        }
+      ],
+      "note": "**be upfront** 는 숨기지 않고 미리 솔직하게 말한다는 뜻입니다. **crackles** 는 스피커가 지직거린다는 말이고, **turn it all the way up** 은 볼륨을 끝까지 올리는 것입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 note: 별표 친 표현(If you'd asked me last week, I would've said)이 영어 문장에는 쉼표 없이 나와 글자가 맞지 않아서, 문장에 있는 그대로 두 조각으로 나눠 짚음",
+    "1번 ko: '손이 더 필요해지기 시작한 참에'가 어색하고 right when의 '하필 그때'라는 느낌이 안 살아서 자연스러운 말로 고침",
+    "2번 ko: like I'm the one being rude는 '오히려 내가 무례한 쪽인 것처럼'이라는 뜻인데 '오히려'가 빠져 있어서 넣음",
+    "2번 formal: Consequently는 말로 하기에 너무 딱딱해서 뜻이 같은 As a result로 바꿈",
+    "3번 ko: '얼어붙을 것처럼 추웠어요'가 번역투라서 '완전 냉골이었어요'로 바꿈",
+    "5번 casual: prob은 문자에서나 쓰는 줄임말이라 소리 내어 말하는 연습에 맞지 않아 probably로 바꿈"
+  ]
+}

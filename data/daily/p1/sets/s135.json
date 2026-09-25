@@ -1,0 +1,118 @@
+{
+  "setId": "s135",
+  "videoId": "daily-s135",
+  "title": "Set 135",
+  "madeAt": "2026-09-26",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "한 2주 동안은 진짜 잘하고 있었는데, 토요일에 조카 생일이 있었거든. 케이크 한 조각 먹고 나니까 어차피 이번 주말은 망했다 싶어서 그냥 칼로리 세는 걸 그만뒀어.",
+      "text": "I was doing so well for like two weeks, but then we had my nephew's birthday on Saturday, and once I had one piece of cake I figured the whole weekend was ruined anyway, so I just stopped counting.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Two weeks, I was killing it. Then Saturday was my nephew's birthday, I had one piece of cake, figured the whole weekend was shot anyway, and just quit counting."
+        },
+        {
+          "style": "formal",
+          "text": "I had been doing very well for about two weeks, but then we celebrated my nephew's birthday on Saturday, and once I had eaten one piece of cake, I decided the entire weekend was already ruined, so I simply stopped counting."
+        }
+      ],
+      "note": "**I figured** 는 속으로 ~라고 생각했다, ~인 셈 쳤다는 뜻입니다. casual 의 **shot** 은 망가진, 끝장난이라는 구어고, **killing it** 은 아주 잘하고 있다는 말입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "잠깐, 너 아직 같은 회사 다녀, 아니면 드디어 옮겼어? 지난번에 얘기했을 때 팀장 때문에 꽤 질려 있었잖아.",
+      "text": "Wait, are you still at the same place, or did you finally switch? Because last time we talked you were pretty fed up with your manager.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hold on, you still at the same place, or'd you finally switch? Last time we talked you were pretty sick of your manager."
+        },
+        {
+          "style": "formal",
+          "text": "Just a moment. Are you still working at the same company, or did you finally change jobs? When we last spoke, you seemed quite frustrated with your manager."
+        }
+      ],
+      "note": "**fed up with** 는 ~에 진절머리가 나다, 질리다는 뜻입니다. casual 의 **sick of** 도 같은 뜻으로 더 가볍게 씁니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "계속 그만둘까 생각하는데, 모아 둔 돈 들여다볼 때마다 겁이 나. 바로 다른 데 못 구하면 한 석 달밖에 못 버틸 것 같거든.",
+      "text": "I keep thinking about quitting, but every time I sit down and look at what I've got saved, I get scared, because if I didn't find something right away I'd only last maybe three months.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I keep thinking I'll quit, but whenever I look at my savings I get scared, 'cause if I didn't find something right away I'd only make it like three months."
+        },
+        {
+          "style": "formal",
+          "text": "I have been thinking about resigning, but each time I review my savings, I become anxious, because if I did not find another position immediately, I would only be able to last approximately three months."
+        }
+      ],
+      "note": "**last** 는 동사로 버티다, 견디다는 뜻입니다. casual 의 **make it** 도 그 기간을 버텨 내다는 의미로 씁니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이사 도와주고 싶은데, 지난주에 다친 허리가 아직 안 나았어. 소파 들다가 또 삐끗하면 회사를 못 나가. 대신 끝나고 들러서 짐 푸는 거 도와줄까?",
+      "text": "I'd love to help you move, but my back's still not right from last week, and if I lift a couch and throw it out again I'm going to miss work. I could come by after and help you unpack, though?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'd totally help you move, but my back's still messed up from last week, and if I throw it out again lifting a couch I'll miss work. I can swing by after and help unpack though?"
+        },
+        {
+          "style": "formal",
+          "text": "I would be glad to help you move, but my back has not yet recovered from last week, and if I injured it again lifting a couch, I would have to miss work. Would it be helpful if I came by afterward to help you unpack?"
+        }
+      ],
+      "note": "**throw it out** 은 허리를 삐끗하다는 뜻입니다. casual 의 **swing by** 는 잠깐 들르다는 구어입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "요즘 매일 새벽 네 시쯤 깨는데 다시 잠이 안 와. 그래서 알람 울릴 때까지 누워서 회사 일 생각만 하게 돼. 점심 먹고 나서는 커피를 안 마셔 봤는데 전혀 달라진 게 없어.",
+      "text": "I've been waking up at like four every morning and I just can't get back to sleep, so I end up lying there thinking about work until the alarm goes off. I tried cutting out coffee after lunch, but it hasn't made any difference.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Keep waking up around four and can't fall back asleep, so I just lie there thinking about work till the alarm. Cut out coffee after lunch, didn't help at all."
+        },
+        {
+          "style": "formal",
+          "text": "I have been waking up at approximately four o'clock every morning and am unable to fall back asleep, so I end up lying awake thinking about work until my alarm sounds. I tried eliminating coffee after lunch, but it has not made any difference."
+        }
+      ],
+      "note": "**end up** ~ing 는 결국 ~하게 되다는 뜻입니다. **cutting out** 은 어떤 것을 끊다, 빼다는 말이고, **made any difference** 는 효과가 있다는 뜻으로 부정문에서 자주 씁니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어: 세는 걸 그만뒀어 만으로는 무엇을 세는지 알 수 없어 칼로리 세는 걸 로 고침",
+    "2번 formal: Excuse me 를 말 첫머리에 쓰면 기분이 상했다는 말이나 남의 주의를 끄는 말로 들려서 Just a moment 로 바꿈. finally 가 eventually 로 바뀌면서 드디어 라는 느낌이 약해져서 finally 로 되돌림",
+    "3번 formal: I continue to consider resigning 은 사람이 소리 내서 하는 말로 너무 딱딱해서 I have been thinking about resigning 으로 고침",
+    "3번 한국어: 앉아서 볼 때마다 는 sit down 을 그대로 옮긴 번역투라서 모아 둔 돈 들여다볼 때마다 로 고침",
+    "4번 한국어: 도와줘도 될까 보다 친구에게 먼저 도와주겠다고 하는 영어의 말투에 맞춰 도와줄까 로 고침",
+    "5번 casual: 앞부분 I keep waking up at like four every morning 이 text 와 거의 같아서 더 짧게 줄여 씀. Tried no coffee after lunch 는 영어로 어색해서 Cut out coffee after lunch 로 고침",
+    "5번 한국어: 점심 이후로 커피를 끊어 봤는데 는 점심 때부터 끊었다는 뜻으로 읽힐 수 있어서 점심 먹고 나서는 커피를 안 마셔 봤는데 로 고침"
+  ]
+}

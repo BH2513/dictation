@@ -1,0 +1,115 @@
+{
+  "setId": "s139",
+  "videoId": "daily-s139",
+  "title": "Set 139",
+  "madeAt": "2026-09-27",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "솔직히 거기는 이제 끝난 것 같아. 일이 문제가 아니라 상사가 매주 말을 바꿔서 내가 한 일의 절반이 그냥 버려져. 3월에 보너스 나올 때까지만 있을 거야. 그걸 두고 나가는 건 바보 같은 짓이니까.",
+      "text": "I think I'm done there, honestly. It's not even the work, it's that my boss changes his mind every week, so half of what I do just gets thrown out. I'm only staying till my bonus comes in March, because it'd be stupid to walk away from that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly? I'm pretty much over that job. The work's fine, it's my boss flip-flopping every week, so half my work just ends up in the trash. I'm only sticking around till my bonus hits in March, since walking away from that would be dumb."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, I believe I am finished with that position. The issue is not the work itself, but rather that my manager changes his mind every week, so half of what I produce is simply discarded. I am only remaining until my bonus arrives in March, as it would be unwise to walk away from it."
+        }
+      ],
+      "note": "**I'm done there** 는 그곳(직장)에 더는 미련이 없다는 뜻이에요. **gets thrown out** 은 애써 한 것이 버려진다는 말이고, **walk away from** 은 받을 수 있는 것을 포기하고 떠난다는 뜻이에요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "정말 미안한데, 베이비시터한테 9시까지 들어간다고 했거든. 걔가 내일 학교 가야 돼서 이제 슬슬 가 봐야 할 것 같아. 그래도 진짜 재밌었다. 조만간 또 하자?",
+      "text": "I'm so sorry, but I told the babysitter I'd be back by nine, and she's got school tomorrow, so I should probably get going. This was really fun though, let's do it again soon?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, sorry, I gotta head out. I told the sitter I'd be home by nine and she's got school tomorrow. This was so fun though, let's do it again soon?"
+        },
+        {
+          "style": "formal",
+          "text": "I sincerely apologize, but I told the babysitter I would return by nine, and she has school tomorrow, so I should probably be going. I truly enjoyed this, though. Shall we do it again soon?"
+        }
+      ],
+      "note": "**I should probably get going** 은 자리를 뜰 때 부드럽게 쓰는 말이에요. 캐주얼에서는 **gotta head out** 이라고 더 짧게 말해요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "학교에서 휴대폰 관련해서 온 이메일 받았어? 애들한테 매일 아침 휴대폰을 내라고 하던데, 그건 나도 완전 찬성이야. 근데 그러면 연습이 취소됐을 때 아들한테 어떻게 연락하라는 거야?",
+      "text": "Did you get that email from the school about phones? They want the kids to hand them in every morning, which I'm totally fine with, but then how am I supposed to reach my son if practice gets canceled?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You see the school's email about phones? Kids have to turn them in every morning, and I'm totally fine with that, but how do I get hold of my son if practice gets canceled?"
+        },
+        {
+          "style": "formal",
+          "text": "Have you received the email from the school regarding phones? They would like the children to hand them in every morning, which I fully support, but how am I expected to contact my son if practice is canceled?"
+        }
+      ],
+      "note": "**hand them in** 은 선생님 같은 사람에게 물건을 제출한다는 뜻이에요. **how am I supposed to** 는 그러면 대체 어떻게 하라는 거냐고 답답함을 담아 묻는 말이에요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "나 맨날 피곤한데, 아마 새벽 1시쯤까지 침대에서 휴대폰을 봐서 그런 것 같아. 부엌에 그냥 두고 와야 한다는 건 아는데, 그러면 누워 있어도 머릿속이 계속 돌아가. 그래서 결국 일어나서 가져오게 돼.",
+      "text": "I'm tired all the time, and I'm pretty sure it's because I'm on my phone in bed till like one. I know I should just leave it in the kitchen, but when I do, I lie there and my brain won't shut off, so I end up getting up and grabbing it anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm always wiped out, and it's gotta be from scrolling in bed till like one. I know, the phone should stay in the kitchen, but then I just lie there and my brain won't shut off, so I get up and grab it anyway."
+        },
+        {
+          "style": "formal",
+          "text": "I am constantly tired, and I am fairly certain it is because I use my phone in bed until around one. I know I ought to leave it in the kitchen, but when I do, I lie awake unable to quiet my mind, and I end up getting up to retrieve it anyway."
+        }
+      ],
+      "note": "**my brain won't shut off** 는 생각이 멈추지 않아 잠이 안 온다는 말이에요. **end up** 은 결국 원하지 않던 쪽으로 하게 된다는 뜻이에요.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "안녕하세요, 3B호 샘인데요. 욕실 창문이 이제 끝까지 안 닫혀서 밤에 거기가 엄청 추워요. 비 올 때도 좀 걱정되고요. 혹시 이번 주에 누가 와서 좀 봐 주실 수 있을까요? 저는 보통 5시 이후에 집에 있어요.",
+      "text": "Hi, it's Sam in 3B. The bathroom window won't close all the way anymore, so it gets really cold in there at night, and I'm kind of worried about when it rains. Is there any chance someone could come take a look this week? I'm usually home after five.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, Sam from 3B here. The bathroom window won't shut all the way anymore, so it's freezing in there at night, and I'm kinda worried about when it rains. Any chance someone could swing by and check it this week? I'm usually home after five."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is Sam in unit 3B. The bathroom window no longer closes completely, so the room becomes quite cold at night, and I am somewhat concerned about what will happen when it rains. Would it be possible for someone to inspect it this week? I am generally home after five."
+        }
+      ],
+      "note": "**won't close all the way** 는 끝까지 완전히 안 닫힌다는 말이에요. **Is there any chance** 는 부탁할 때 혹시 가능할지 조심스럽게 묻는 표현이고, **take a look** 은 한번 봐 준다는 뜻이에요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: stuff 가 한 문장에 두 번 나와 어색해서 my boss flip-flopping every week, so half my work 로 고침",
+    "2번 한국어: 그 애가 는 번역투라 친구에게 하는 말투인 걔가 로 고침",
+    "4번 한국어: 머리가 안 꺼져 는 영어를 그대로 옮긴 말이라 머릿속이 계속 돌아가서 로 고침",
+    "5번 casual: worried for when it rains 는 원어민이 안 쓰는 말이라 worried about when it rains 로 고침"
+  ]
+}

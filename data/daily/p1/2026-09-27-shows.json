@@ -1,0 +1,248 @@
+{
+  "videoId": "shows-2026-09-27",
+  "title": "From your videos · 2026-09-27",
+  "date": "2026-09-27",
+  "source": "shows",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "침만 안 흘리고 있었으면 좀 더 믿었을 거야.",
+      "text": "That would be a lot more convincing if you weren't drooling.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Kinda hard to buy that with you drooling like that."
+        },
+        {
+          "style": "formal",
+          "text": "I would find that far more believable if you were not drooling."
+        }
+      ],
+      "note": "상대가 말로는 아니라면서 티가 다 날 때 놀리듯 쓰는 말입니다. **a lot more convincing** 은 '훨씬 설득력 있다', 편한 말로는 **buy that** 이 '그 말을 믿다'라는 뜻입니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 73
+      },
+      "start": 177.56,
+      "end": 180.88,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "오늘 논리고 수학이고 완전 엉망이네.",
+      "text": "Both logic and math are taking a serious hit today.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Logic and math are both getting wrecked today."
+        },
+        {
+          "style": "formal",
+          "text": "Today, both logic and mathematics are suffering considerably."
+        }
+      ],
+      "note": "상대가 앞뒤 안 맞는 소리를 할 때 농담으로 받아치는 말입니다. **taking a serious hit** 은 '큰 타격을 입다'로, 주가나 평판이 떨어질 때도 씁니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 462
+      },
+      "start": 1178.84,
+      "end": 1183.8,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "좋아, 이름은 나중에 정하자.",
+      "text": "All right, we can work out that name later.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, we'll figure out the name later."
+        },
+        {
+          "style": "formal",
+          "text": "Very well, we can decide on that name at a later time."
+        }
+      ],
+      "note": "급하지 않은 건 일단 미뤄 두자고 할 때 씁니다. **work out** 과 **figure out** 은 '(이것저것 따져서) 정하다, 해결하다'라는 뜻입니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 90
+      },
+      "start": 199.319,
+      "end": 202.679,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "너 밤새 혼자 시내를 돌아다녔다는 거네.",
+      "text": "You walked around all night in the city by yourself.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So you wandered the city solo all night."
+        },
+        {
+          "style": "formal",
+          "text": "Apparently, you spent the entire night walking through the city on your own."
+        }
+      ],
+      "note": "걱정되거나 놀라서 상대가 한 일을 되짚어 말할 때 씁니다. **walked around** 는 '여기저기 돌아다니다', **by yourself** 는 '혼자서'라는 뜻입니다.",
+      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
+      "from": {
+        "videoId": "RSLnwpSfe-4",
+        "i": 381
+      },
+      "start": 944.52,
+      "end": 949.279,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "나가서 놀면 바람도 좀 쐬고 좋잖아.",
+      "text": "If you play, you get some fresh air.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Play and you'll get some fresh air."
+        },
+        {
+          "style": "formal",
+          "text": "Should you choose to play, you will get some fresh air."
+        }
+      ],
+      "note": "집에만 있는 사람을 밖으로 끌어낼 때 하는 말입니다. **get some fresh air** 는 '바람 좀 쐬다'라는 뜻이고, 답답할 때 \"I need to get some fresh air.\"처럼도 씁니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 320
+      },
+      "start": 834.32,
+      "end": 836.24,
+      "recording": null
+    },
+    {
+      "i": 5,
+      "ko": "그럼 그동안 무슨 일 있었는지 좀 알려 줘.",
+      "text": "So, why don't you just catch me up?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Just fill me in."
+        },
+        {
+          "style": "formal",
+          "text": "Could you please bring me up to date on what I have missed?"
+        }
+      ],
+      "note": "**catch me up** 은 자리를 비웠거나 늦게 와서 '그동안 무슨 얘기 했어?' 하고 물을 때 씁니다. 같은 뜻으로 **fill me in** 도 아주 흔합니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 496
+      },
+      "start": 1183.36,
+      "end": 1185.52,
+      "recording": null
+    },
+    {
+      "i": 6,
+      "ko": "지금 우리 언니랑 통화 중인데 잠깐 기다리라고 했거든. 주말에 언니네 오두막 써도 된대, 스키 타러 가자.",
+      "text": "Because I have my sister on hold and she said that we could have her cabin for the weekend and go skiing.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My sister's on the other line — says we can use her cabin this weekend and go skiing."
+        },
+        {
+          "style": "formal",
+          "text": "My sister is waiting on the other line, and she has offered us her cabin for the weekend so that we can go skiing."
+        }
+      ],
+      "note": "**on hold** 는 전화를 끊지 않고 상대를 기다리게 해 둔 상태예요. 통화하다가 다른 사람에게 급히 말을 전할 때 씁니다. **on the other line** 도 '다른 전화로 연결돼 있다'는 뜻으로 같이 알아 두세요.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 425
+      },
+      "start": 1206.559,
+      "end": 1212.68,
+      "recording": null
+    },
+    {
+      "i": 7,
+      "ko": "화장실은 복도 따라 쭉 가시면 왼쪽에 있어요.",
+      "text": "Bathroom is down the hall to your left.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Down the hall, on your left."
+        },
+        {
+          "style": "formal",
+          "text": "You will find the bathroom down the hall on your left."
+        }
+      ],
+      "note": "**down the hall** 은 '복도 끝 쪽으로 가면'이라는 뜻으로, 집이나 사무실에 온 손님에게 길을 알려 줄 때 그대로 씁니다. 방향은 **to your left** 처럼 상대 기준으로 말해요.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 905
+      },
+      "start": 2327.319,
+      "end": 2330.96,
+      "recording": null
+    },
+    {
+      "i": 8,
+      "ko": "야, 누구 공 좀 가볍게 주고받을 사람?",
+      "text": "Hey, who wants to uh throw the ball around a little?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Anyone up for tossing the ball around?"
+        },
+        {
+          "style": "formal",
+          "text": "Would anyone like to play catch for a little while?"
+        }
+      ],
+      "note": "**throw the ball around** 는 시합이 아니라 그냥 공을 가볍게 주고받으며 노는 거예요. 공원이나 마당에서 같이 놀자고 할 때 씁니다. **up for** 는 '~할 생각 있어?'라고 권할 때 편하게 붙이는 말이에요.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 303
+      },
+      "start": 803.96,
+      "end": 806.399,
+      "recording": null
+    },
+    {
+      "i": 9,
+      "ko": "오늘이 내 직장 생활 통틀어서 최고의 날이야.",
+      "text": "This is the single greatest day of my professional career.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Best day of my career, hands down."
+        },
+        {
+          "style": "formal",
+          "text": "Today is the greatest day I have ever had in my professional life."
+        }
+      ],
+      "note": "**the single greatest** 는 greatest 를 한 번 더 세게 누르는 말로, '딱 하나 꼽자면 이게 최고'라는 느낌입니다. 승진이나 큰 계약 같은 기쁜 일이 있을 때 과장 섞어 말하기 좋아요. **hands down** 은 '두말할 것 없이'라는 뜻이에요.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 647
+      },
+      "start": 1609.399,
+      "end": 1613.52,
+      "recording": null
+    }
+  ]
+}

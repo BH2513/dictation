@@ -1,0 +1,115 @@
+{
+  "setId": "s140",
+  "videoId": "daily-s140",
+  "title": "Set 140",
+  "madeAt": "2026-09-27",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "음, 걔가 처음엔 좀 조용한데, 편해지면 진짜 웃겨. 그러니까 처음 10분 보고 걔를 판단하지는 마.",
+      "text": "Okay, so he's kind of quiet at first, but once he gets comfortable he's really funny, so don't make up your mind about him in the first ten minutes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Give him a chance. He's kinda quiet at first, but once he loosens up he's super funny, so don't write him off in the first ten minutes."
+        },
+        {
+          "style": "formal",
+          "text": "He tends to be rather reserved at first, but once he is comfortable he is very funny, so I would suggest not forming an opinion of him within the first ten minutes."
+        }
+      ],
+      "note": "**make up your mind about** 는 누구나 무엇에 대해 마음을 정한다, 판단을 내린다는 뜻입니다. casual의 **write him off** 는 별 볼 일 없다고 단정하고 제쳐 둔다는 말입니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이번 주말에 캠핑 가기로 했었는데, 이틀 다 비 온다고 해서 한 주 미뤘어. 솔직히 좀 다행이야, 짐도 아직 하나도 안 쌌거든.",
+      "text": "We were supposed to go camping this weekend, but they're saying it's going to rain both days, so we pushed it back a week. I'm kind of relieved, honestly, because I hadn't even started packing.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Camping's off this weekend, it's supposed to rain both days, so we moved it back a week. Kinda glad, to be honest, I hadn't even started packing."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to go camping this weekend, but rain is forecast for both days, so we have postponed the trip by one week. To be honest, I am somewhat relieved, as I had not yet started packing."
+        }
+      ],
+      "note": "**pushed it back** 은 일정을 뒤로 미뤘다는 뜻입니다. **they're saying** 은 일기예보나 사람들이 그렇게 말한다고 할 때 흔히 씁니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "색은 너한테 진짜 잘 어울리는데, 어깨가 좀 끼네. 한 치수 큰 거 있으면 나라면 그걸로 하겠어.",
+      "text": "The color's great on you, but it's a little tight across the shoulders, so if they have it in the next size up, I'd go with that one instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Love the color on you, but it's kinda tight in the shoulders, so I'd grab the next size up if they've got it."
+        },
+        {
+          "style": "formal",
+          "text": "The color suits you very well, but it is slightly tight across the shoulders, so if it is available in the next size up, I would choose that one instead."
+        }
+      ],
+      "note": "**great on you** 는 옷이나 색이 너한테 잘 어울린다는 말입니다. **the next size up** 은 한 치수 큰 것, **go with** 는 여러 개 중에서 그걸로 고른다는 뜻입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이번엔 진짜 목요일까지 배달 안 시키고 버텼거든. 근데 일이 갑자기 미친 듯이 바빠져서 요리할 힘이 하나도 없는 거야. 그래서 피자 시켜서 부엌에 선 채로 한 판 다 먹었어.",
+      "text": "I actually made it all the way to Thursday this time without ordering in, but then work got crazy and I was too tired to cook, so I ordered a pizza and ate the whole thing standing in the kitchen.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Made it all the way to Thursday without ordering in this time, but then work went nuts and I was way too tired to cook, so I got a pizza and ate the whole thing standing in the kitchen."
+        },
+        {
+          "style": "formal",
+          "text": "This time I managed to go until Thursday without ordering food, but then work became extremely busy and I was too tired to cook, so I ordered a pizza and ate all of it standing in the kitchen."
+        }
+      ],
+      "note": "**made it all the way to Thursday** 는 목요일까지 어떻게든 버텼다는 뜻입니다. **ordering in** 은 음식을 집으로 배달시켜 먹는 것, **work got crazy** 는 일이 정신없이 바빠졌다는 말입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "네가 말해 준 그 태국 음식점 드디어 가 봤어. 음식은 진짜 맛있었는데, 너무 시끄러워서 서로 말이 하나도 안 들리더라. 그래서 거의 말없이 먹기만 했어. 또 가긴 할 건데, 아마 포장만 할 것 같아.",
+      "text": "We finally went to that Thai place you told me about, and the food was really good, but it was so loud we couldn't hear each other, so we basically just ate and didn't talk. I'd go back, but probably just for takeout.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally tried that Thai place you mentioned. Food was super good, but it was so loud we couldn't hear each other, so we pretty much just ate and didn't talk. I'd go back, but probably just for takeout."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant that you mentioned, and the food was very good, but it was so loud that we could not hear each other, so we mostly ate without talking. I would return, but most likely only for takeout."
+        }
+      ],
+      "note": "**that Thai place** 에서 place 는 식당을 편하게 부르는 말입니다. **takeout** 은 포장해 가는 음식, **basically** 는 사실상, 거의라는 뜻으로 말에서 자주 씁니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual의 Give him a bit 은 무엇을 준다는 건지 순간 헷갈려서 Give him a chance 로 바꿈",
+    "3번 한국어 난 그걸로 할래 는 내가 산다는 뜻으로 읽혀서, I'd go with that one 의 조언 뜻에 맞게 나라면 그걸로 하겠어 로 고침",
+    "5번 casual의 prob 은 글로 줄여 쓰는 말이라 말로 하는 연습에 맞게 probably 로 고침",
+    "5번 한국어 너가 를 네가 로 고침"
+  ]
+}

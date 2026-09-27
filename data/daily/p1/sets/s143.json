@@ -1,0 +1,115 @@
+{
+  "setId": "s143",
+  "videoId": "daily-s143",
+  "title": "Set 143",
+  "madeAt": "2026-09-28",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "응 엄마, 밥 잘 먹고 있어, 진짜야. 그냥 요즘 좀 많이 바빴어, 그게 다야. 그러니까 내가 바로 전화 못 해도 걱정하지 마.",
+      "text": "Yeah, Mom, I'm eating fine, I promise. I've just been really busy, that's all, so don't worry if I don't call you back right away.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Mom, relax, I'm eating fine. Just been super busy, so if I don't call back right away, don't freak out."
+        },
+        {
+          "style": "formal",
+          "text": "Yes, Mother, I am eating well, I assure you. I have simply been very busy, so please do not worry if I do not return your call immediately."
+        }
+      ],
+      "note": "**that's all** 은 그게 다야, 별일 아니야 라는 뜻으로 상대를 안심시킬 때 씁니다. **call you back** 은 전화를 다시 걸어 준다는 말입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아니, 우리 아무것도 안 했어. 토요일엔 옷도 안 갈아입었는데, 어디 여행 가는 것보다 그게 더 필요했던 것 같기도 해.",
+      "text": "Nope, we didn't do anything. I didn't even get dressed on Saturday, and I kind of think I needed that more than any trip.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nah, we just stayed in. I never even got dressed Saturday, and honestly I kinda needed that more than a trip."
+        },
+        {
+          "style": "formal",
+          "text": "No, we did not do anything. I did not even get dressed on Saturday, and I believe I needed that more than any trip."
+        }
+      ],
+      "note": "**get dressed** 는 옷을 챙겨 입는다는 뜻입니다. **kind of** 는 말을 부드럽게 흐릴 때 쓰는 구어로, 캐주얼에서는 **kinda** 로 줄여 말합니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "우리 고양이가 아침 6시에 조리대 위 물건을 떨어뜨리면 내가 그만하라고 일어나서 밥 준다는 걸 알아냈어. 그래서 이젠 하루도 안 빼고 매일 아침 그래.",
+      "text": "My cat figured out that if she knocks stuff off the counter at six, I'll get up and feed her just to make it stop, so now she does it every single morning.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Now my cat just knocks stuff off the counter at six till I get up and feed her. Every morning."
+        },
+        {
+          "style": "formal",
+          "text": "My cat has learned that if she knocks items off the counter at six, I will get up and feed her simply to make it stop, and so she now does it every morning without fail."
+        }
+      ],
+      "note": "**figured out** 은 궁리해서 알아냈다는 뜻입니다. **every single morning** 은 하루도 빠짐없이 매일 아침이라고 강조하는 말입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이모가 사람들 다 있는 데서 나한테 연봉이 얼마냐고 물어봤는데, 내가 대답을 안 하니까 엄마가 그냥 대신 말해 버렸어. 그래서 이제 온 가족이 다 알아.",
+      "text": "My aunt asked me how much I make right in front of everybody, and when I didn't answer, my mom just told her anyway, so now the whole family knows.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my aunt goes, how much do you make? In front of everyone! I didn't answer, so my mom just told her, and now the whole family knows."
+        },
+        {
+          "style": "formal",
+          "text": "My aunt asked me about my salary in front of everyone, and when I did not respond, my mother told her instead, so the entire family is now aware of it."
+        }
+      ],
+      "note": "**how much I make** 는 돈을 얼마나 버는지, 즉 연봉을 묻는 말입니다. **right in front of everybody** 는 사람들 바로 앞에서라는 뜻이고, 캐주얼의 **my aunt goes** 는 이모가 이렇게 말하더라 하고 옮길 때 씁니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "헬스장 갈 준비 다 해 놨는데, 친구한테 전화가 와서 몇 분만 얘기하려고 했거든. 근데 끊고 보니까 벌써 밖이 깜깜한 거야. 그래서 그냥 집에 있었어.",
+      "text": "I was all set to go to the gym, but then my friend called and I figured I'd just talk for a few minutes, and by the time we hung up it was already dark out, so I just stayed home.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was totally gonna hit the gym, but my friend called, and I thought, eh, just a few minutes. Next thing I know it's dark out, so I just stayed home."
+        },
+        {
+          "style": "formal",
+          "text": "I was fully prepared to go to the gym, but my friend called and I thought I would only speak with them for a few minutes. By the time we ended the call, it was already dark outside, so I remained at home."
+        }
+      ],
+      "note": "**all set to** 는 무엇을 할 준비가 다 됐다는 뜻입니다. **by the time we hung up** 은 전화를 끊을 때쯤에는 이라는 말이고, 캐주얼의 **hit the gym** 은 헬스장에 간다는 구어입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어의 '솔직히'는 영어에 없는 말이라 빼고, kind of 의 흐리는 말투에 맞게 '~것 같기도 해'로 고침",
+    "3번 casual 이 text 와 앞부분이 거의 같아서 더 짧은 구어로 새로 씀 (worked out 도 영국식이라 함께 뺌)",
+    "3번 한국어 '내가 그거 멈추게 하려고'가 번역투라 '그만하라고'로 고치고, every single morning 의 강조를 '하루도 안 빼고'로 살림",
+    "5번 formal 에서 원문에 없는 친구의 성별(her)을 넣어서 빼고 뜻만 그대로 올림"
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "videoId": "shows-2026-09-28",
+  "title": "From your videos · 2026-09-28",
+  "date": "2026-09-28",
+  "source": "shows",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그냥 하나 골라. 그럼 끝이잖아.",
+      "text": "So, why don't you just pick one and that'll be it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Just pick one and you're done."
+        },
+        {
+          "style": "formal",
+          "text": "Perhaps you could simply choose one, and then the matter would be settled."
+        }
+      ],
+      "note": "**why don't you just** 는 \"그냥 ~하면 되잖아\" 하고 망설이는 사람을 부드럽게 떠밀 때 씁니다. **that'll be it** 는 \"그걸로 끝\", 더 고민할 것 없다는 말입니다.",
+      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
+      "from": {
+        "videoId": "cWheLYR8moU",
+        "i": 337
+      },
+      "start": 924.48,
+      "end": 928.48,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "우리 집에서 내가 저녁 해 줄까?",
+      "text": "How about if I cook dinner at my place?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wanna come over? I'll cook."
+        },
+        {
+          "style": "formal",
+          "text": "Would you like me to prepare dinner for us at my home?"
+        }
+      ],
+      "note": "**How about if I** 는 \"내가 ~하면 어때?\" 하고 내 쪽에서 뭔가를 해 주겠다고 제안할 때 씁니다. 집은 house 보다 **at my place** 라고 하는 게 훨씬 자연스럽습니다.",
+      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
+      "from": {
+        "videoId": "QdQ58BbGRsA",
+        "i": 149
+      },
+      "start": 414,
+      "end": 415.52,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "우리 스키 타러 가자고, 뭐랄까, 초대를 좀 받았거든.",
+      "text": "We were um sort of invited to go skiing.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We kinda got invited skiing."
+        },
+        {
+          "style": "formal",
+          "text": "We received something of an invitation to go skiing."
+        }
+      ],
+      "note": "**sort of** 는 \"뭐랄까, 좀\" 하고 말을 흐릴 때 씁니다. 꺼내기 조금 민망하거나 딱 잘라 말하기 애매한 소식을 전할 때 잘 나옵니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 609
+      },
+      "start": 1609.52,
+      "end": 1612.72,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "머릿속에 말 좀 걸러 주는 게 있으면 얼마나 좋을까.",
+      "text": "If only there was something in your head to control the things you say.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ever heard of a filter?"
+        },
+        {
+          "style": "formal",
+          "text": "It would be wonderful if you had some way of controlling what you say."
+        }
+      ],
+      "note": "**If only there was** 는 \"~가 있기만 하면 좋을 텐데\" 라는 뜻인데, 여기서는 생각 없이 말하는 친구를 비꼬는 말로 쓰였습니다. 말실수한 친구에게 농담 섞어 한마디 할 때 씁니다.",
+      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
+      "from": {
+        "videoId": "cWheLYR8moU",
+        "i": 297
+      },
+      "start": 814.24,
+      "end": 818.36,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "내일 큰 발표가 있어서 그거 준비하느라 계속 바빴어.",
+      "text": "JUST BEEN WORKING on this big presentation for tomorrow.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Been swamped with tomorrow's big presentation."
+        },
+        {
+          "style": "formal",
+          "text": "I have been working on an important presentation for tomorrow."
+        }
+      ],
+      "note": "\"요즘 뭐 해?\" 하고 물으면 I've 를 빼고 **Just been working on** ~ 이라고 짧게 답합니다. 계속 그 일에 매달려 있었다는 느낌을 줍니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 486
+      },
+      "start": 1168.04,
+      "end": 1170.08,
+      "recording": null
+    },
+    {
+      "i": 5,
+      "ko": "이 방에 사람이 좀 너무 많은 것 같은데.",
+      "text": "There's a few too many people in this room.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Way too crowded in here."
+        },
+        {
+          "style": "formal",
+          "text": "I believe this room has become somewhat overcrowded."
+        }
+      ],
+      "note": "**a few too many**는 '필요한 것보다 조금 많다'는 뜻이에요. 모임 자리에서 눈치 주거나 에둘러 불편함을 말할 때 딱 좋고, 술을 좀 과하게 마셨을 때 **a few too many**라고만 해도 통해요.",
+      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
+      "from": {
+        "videoId": "QdQ58BbGRsA",
+        "i": 265
+      },
+      "start": 735.8,
+      "end": 737.52,
+      "recording": null
+    },
+    {
+      "i": 6,
+      "ko": "이렇게 건강하게 헤어져 본 건 처음이야.",
+      "text": "I have never had such a healthy breakup.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Easiest breakup I've ever had."
+        },
+        {
+          "style": "formal",
+          "text": "That was the healthiest breakup I have ever experienced."
+        }
+      ],
+      "note": "**I have never had such a** ~ 는 '이렇게 ~한 건 처음이야'라는 감탄으로, 좋은 경험이든 황당한 경험이든 다 쓸 수 있어요. 서로 싸우지 않고 좋게 끝난 이별은 **healthy breakup**이라고 해요.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 839
+      },
+      "start": 2133.24,
+      "end": 2137.72,
+      "recording": null
+    },
+    {
+      "i": 7,
+      "ko": "저녁 하라고 시켜 놓고, 한 시간이나 늦게 와서는 딱 하나 부탁한 것까지 잊어버려?",
+      "text": "You forced me to make dinner, then you're an hour late and you forget the one little thing that I asked you to do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I cook because you made me, you show up an hour late, and you forget the one thing I asked for?"
+        },
+        {
+          "style": "formal",
+          "text": "After insisting that I cook dinner, you arrived an hour late and forgot the one small thing I had asked you to do."
+        }
+      ],
+      "note": "**the one little thing**은 '딱 그거 하나'라는 뜻으로, 부탁한 게 별것도 아니었는데 그것조차 안 했다고 서운함을 강조할 때 써요. **an hour late**처럼 늦은 시간을 앞에 붙이면 '한 시간이나 늦었다'는 느낌이 돼요.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 58
+      },
+      "start": 145.68,
+      "end": 150.96,
+      "recording": null
+    },
+    {
+      "i": 8,
+      "ko": "누가 너더러 대장 하래?",
+      "text": "I don't know who made you the boss.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Since when are you the boss?"
+        },
+        {
+          "style": "formal",
+          "text": "May I ask who put you in charge?"
+        }
+      ],
+      "note": "친구나 가족이 이래라저래라 할 때 받아치는 말이에요. **who made you the boss**는 '누가 너한테 그럴 권한을 줬냐'는 뜻이고, 비슷하게 **put you in charge**도 자주 써요.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 75
+      },
+      "start": 176.12,
+      "end": 178.07,
+      "recording": null
+    },
+    {
+      "i": 9,
+      "ko": "그래서, 그 여자 진짜 다시 만날 거야?",
+      "text": "So, are you actually going to see her again?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You gonna see her again or what?"
+        },
+        {
+          "style": "formal",
+          "text": "Do you really intend to see her again?"
+        }
+      ],
+      "note": "소개팅이나 데이트 이야기를 듣고 결론을 물을 때 쓰는 말이에요. 여기서 **actually**는 '말만 그런 게 아니라 정말로'라는 느낌을 더해 줘서, 상대가 망설이는 것 같을 때 넣으면 자연스러워요.",
+      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
+      "from": {
+        "videoId": "RSLnwpSfe-4",
+        "i": 425
+      },
+      "start": 1052.2,
+      "end": 1053.86,
+      "recording": null
+    }
+  ]
+}

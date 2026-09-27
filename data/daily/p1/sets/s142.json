@@ -1,0 +1,115 @@
+{
+  "setId": "s142",
+  "videoId": "daily-s142",
+  "title": "Set 142",
+  "madeAt": "2026-09-28",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 사촌들이랑 축구를 했거든, 대학 졸업하고 처음으로. 그날 밤엔 멀쩡했어. 근데 지금은 온몸이 쑤시고 계단도 겨우 내려가. 내 몸이 복수할 날만 기다리고 있었나 봐.",
+      "text": "I played soccer with my cousins on Saturday, first time since college, and I felt totally fine that night. But now everything hurts and I can barely get down the stairs, so I guess my body was just waiting to get back at me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Played soccer with my cousins Saturday, first time since college. Felt fine that night, but now I'm sore all over and can barely do the stairs. Guess my body was just waiting to get back at me."
+        },
+        {
+          "style": "formal",
+          "text": "On Saturday I played soccer with my cousins for the first time since college, and I felt perfectly fine that evening. Now, however, everything hurts and I can barely walk down the stairs, so I suppose my body was simply waiting to get back at me."
+        }
+      ],
+      "note": "**get back at** 은 누구에게 앙갚음하다, 복수하다라는 뜻이에요. **can barely** 는 겨우 ~하다, 거의 못 하다라는 말이고, casual 에서는 **do the stairs** 처럼 계단을 오르내리다를 간단히 말해요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "1월에 월세를 또 200달러 올린대. 그래서 그냥 이사 갈까 싶기도 해. 근데 더 싼 데는 다 회사에서 40분쯤 걸리고, 그러면 아낀 돈을 결국 기름값으로 다 쓸 것 같아.",
+      "text": "They're raising the rent another two hundred dollars in January, so part of me thinks we should just move. But anything cheaper is like forty minutes from work, and I'd probably end up spending all that money on gas anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Rent's going up another two hundred bucks in January, so part of me's like, let's just move. But anything cheaper's like forty minutes from work, and I'd probably just blow it all on gas anyway."
+        },
+        {
+          "style": "formal",
+          "text": "The rent is being raised by another two hundred dollars in January, so part of me believes we should simply move. However, anything less expensive is approximately forty minutes from work, and I would likely end up spending all of that money on gas regardless."
+        }
+      ],
+      "note": "**part of me thinks** 는 마음 한편으로는 ~라고 생각한다는 뜻이에요. **end up** 은 결국 ~하게 되다이고, casual 의 **blow** 는 돈을 펑펑 써 버리다라는 말이에요.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "윗집 남자가 밤 11시쯤부터 운동을 하기 시작했는데, 꼭 우리 침대 바로 위에 아령을 떨어뜨리는 소리가 나. 지난주에 쪽지를 남겼는데 오히려 더 심해졌어. 그래서 이제 그 사람 집 문을 두드려야 할지 그냥 집주인한테 말해야 할지 모르겠어.",
+      "text": "The guy upstairs started working out at like eleven at night, and it sounds like he's dropping weights right on top of our bed. I left a note last week, but it's actually gotten worse, so now I don't know if I should knock on his door or just go to the landlord.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Upstairs guy works out at like eleven at night now, and it sounds like he's dropping weights right on our bed. Left him a note last week and it's gotten worse, so I dunno if I should knock or just go to the landlord."
+        },
+        {
+          "style": "formal",
+          "text": "The man who lives upstairs has begun exercising at approximately eleven o'clock at night, and it sounds as though he is dropping weights directly above our bed. I left a note last week, but the situation has actually become worse, so I am now unsure whether I should knock on his door or simply speak with the landlord."
+        }
+      ],
+      "note": "**working out** 은 운동하다라는 뜻이에요. **it's actually gotten worse** 는 오히려 더 나빠졌다는 말로, actually 가 기대와 반대라는 느낌을 줘요.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "솔직히 소파는 진짜 편해요. 근데 고양이를 키워서 등받이 쪽에 긁힌 자국이 좀 있어요. 그래도 벽에 붙여 두실 거면 아예 안 보일 거예요.",
+      "text": "Honestly, it's a really comfortable couch, but we have a cat, so there are a few scratches along the back. If you're putting it against a wall, though, you'd never even see them.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's super comfy, honestly, but we've got a cat, so there are a few scratches on the back. If it's going against a wall, though, you'd never even see them."
+        },
+        {
+          "style": "formal",
+          "text": "To be candid, it is a very comfortable couch, but we have a cat, so there are a few scratches along the back. However, if you intend to place it against a wall, you would never notice them."
+        }
+      ],
+      "note": "**comfy** 는 comfortable 을 줄인 말로 편하다는 뜻이에요. **you'd never even see them** 은 아예 안 보일 거라는 말로, even 이 강조를 해 줘요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "어제 2시에 배송 완료됐다고 뜨는데 우리 집 문 앞에 없고, 이웃들도 아무도 못 받았대. 택배 회사에 벌써 전화했는데 계속 하루만 더 기다려 보라고만 해서, 뭐 기다려야지.",
+      "text": "It says it was delivered yesterday at two, but it's not at my door, and none of my neighbors have it either. I already called the delivery company, and they just keep telling me to wait another day, so I guess I'm waiting.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking says it came yesterday at two, but it's not here and none of my neighbors have it. Called them already, they just keep saying wait another day, so I guess I'm waiting."
+        },
+        {
+          "style": "formal",
+          "text": "According to the tracking information, it was delivered yesterday at two o'clock, but it is not at my door, and none of my neighbors have it either. I have already contacted the delivery company, and they continue to tell me to wait another day, so I suppose I will wait."
+        }
+      ],
+      "note": "**none of my neighbors have it either** 는 이웃 중 아무도 가지고 있지 않다는 뜻이에요. **keep telling me to** 는 계속 ~하라고 한다는 말이고, **I guess I'm waiting** 은 어쩔 수 없이 기다려야겠다는 체념이 담긴 말이에요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 거의 같은 문장을 되풀이해서, 주어를 빼고 짧게 끊은 구어로 새로 씀",
+    "2번 casual 의 prob 는 문자에서 쓰는 줄임말이라 소리내어 말하지 않음. I'd probably just blow it all on gas anyway 로 고치고 note 의 blowing 도 blow 로 맞춤",
+    "3번 casual 의 the upstairs guy's started 는 입에서 어색하게 나옴. 더 짧게 줄이고 text 와 겹치는 앞부분을 바꿈",
+    "5번 casual 이 text 를 거의 그대로 따라가서, 더 짧게 줄이고 축약된 구어로 새로 씀"
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "videoId": "shows-2026-09-30",
+  "title": "From your videos · 2026-09-30",
+  "date": "2026-09-30",
+  "source": "shows",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그냥 친구로서 같이 노는 거야.",
+      "text": "I'm just going to hang out as friends.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Just hanging out as friends, that's all."
+        },
+        {
+          "style": "formal",
+          "text": "We are only going to spend time together as friends."
+        }
+      ],
+      "note": "**hang out**은 특별한 계획 없이 같이 어울려 노는 것을 말합니다. 뒤에 **as friends**를 붙이면 '데이트 아니야'라고 선을 그을 때 씁니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1184
+      },
+      "start": 3031.52,
+      "end": 3032.64,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아니 뭐, 어차피 그날은 수업마다 의상 입고 가야 되거든. 그러니까.",
+      "text": "I mean, I have to wear a costume to all my classes that day anyway, so.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gotta wear a costume to every class that day anyway, so."
+        },
+        {
+          "style": "formal",
+          "text": "In any case, I am required to wear a costume to all of my classes that day."
+        }
+      ],
+      "note": "**anyway**는 '어차피'라는 뜻으로 문장 끝에 자주 붙습니다. 끝에 **so**만 남기고 말을 흐리면 '그러니까 상관없잖아' 같은 뒷말을 상대에게 맡기는 말투가 됩니다.",
+      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
+      "from": {
+        "videoId": "cWheLYR8moU",
+        "i": 236
+      },
+      "start": 644.32,
+      "end": 647.8,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "근데 나 화장한 거 걔가 눈치채지 않을까?",
+      "text": "But won't she notice I have makeup on?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Won't she see I'm wearing makeup?"
+        },
+        {
+          "style": "formal",
+          "text": "Is she not going to notice that I am wearing makeup?"
+        }
+      ],
+      "note": "**have makeup on**은 '화장을 한 상태'라는 뜻입니다. **won't she notice**처럼 부정으로 물으면 '분명 눈치챌 것 같은데' 하는 걱정이 담깁니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1020
+      },
+      "start": 2588.28,
+      "end": 2590.17,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "어… 나 아직도 저거 맛있어 보이는데, 이래도 되나?",
+      "text": "UH, is it okay that I still think it looks delicious?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Still looks tasty to me, is that weird?"
+        },
+        {
+          "style": "formal",
+          "text": "Would it be all right if I still thought it looked delicious?"
+        }
+      ],
+      "note": "**is it okay that I still ~?**는 남들은 아니라는데 나만 아직 그렇게 느낄 때 조심스럽게 묻는 말입니다. **looks delicious**는 음식이 '맛있어 보인다'는 뜻입니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 238
+      },
+      "start": 598.2,
+      "end": 602.606,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "파티엔 갈게. 근데 차려입고 가진 않을 거야.",
+      "text": "I'll come to the party, but I'm not dressing up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Fine, I'm in — just not dressing up."
+        },
+        {
+          "style": "formal",
+          "text": "I will attend the party; however, I will not be wearing anything formal."
+        }
+      ],
+      "note": "**dressing up**은 파티나 결혼식에 가려고 옷을 갖춰 입는다는 뜻입니다. 초대는 받아들이되 옷까지 신경 쓰기는 싫을 때 이렇게 조건을 붙여 말합니다.",
+      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
+      "from": {
+        "videoId": "cWheLYR8moU",
+        "i": 239
+      },
+      "start": 655.92,
+      "end": 658.24,
+      "recording": null
+    },
+    {
+      "i": 5,
+      "ko": "그러니까 일단 해 보고 어떻게 되나 보자는 거지.",
+      "text": "I mean, we just try it and see.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Let's just give it a shot and see."
+        },
+        {
+          "style": "formal",
+          "text": "What I am suggesting is that we simply attempt it and observe the outcome."
+        }
+      ],
+      "note": "**try it and see**는 '해 보고 결과를 보자'는 말로, 망설이는 상대를 가볍게 설득할 때 씁니다. 앞의 **I mean**은 방금 한 말을 다르게 풀어 말할 때 붙입니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1025
+      },
+      "start": 2596.56,
+      "end": 2598.17,
+      "recording": null
+    },
+    {
+      "i": 6,
+      "ko": "나 평생 잘릴 걱정은 없잖아.",
+      "text": "I have job security for life, you know.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nobody's ever firing me, trust me."
+        },
+        {
+          "style": "formal",
+          "text": "My position is secure for the rest of my life."
+        }
+      ],
+      "note": "**job security**는 '잘릴 걱정이 없다'는 뜻입니다. 공무원이나 정년이 보장되는 직장 얘기를 할 때 자주 쓰고, 뒤에 **for life**를 붙이면 '평생'이 됩니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 675
+      },
+      "start": 1679.2,
+      "end": 1682.399,
+      "recording": null
+    },
+    {
+      "i": 7,
+      "ko": "미안해서 결혼한다는 게 진짜 제일 좋은 이유라고 생각해?",
+      "text": "Do you um you really think the best reason to get married is because you're sorry?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Getting married 'cause you feel bad? Seriously?"
+        },
+        {
+          "style": "formal",
+          "text": "Is feeling sorry truly the best reason to marry someone, in your view?"
+        }
+      ],
+      "note": "**the best reason to** 뒤에 동사를 붙이면 '~하는 가장 좋은 이유'가 됩니다. 상대가 내린 결정의 이유가 이상하다고 넌지시 되물을 때 씁니다.",
+      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
+      "from": {
+        "videoId": "RSLnwpSfe-4",
+        "i": 137
+      },
+      "start": 276.199,
+      "end": 280.16,
+      "recording": null
+    },
+    {
+      "i": 8,
+      "ko": "새로 생긴 블루스 목소리에 어울리는 우울한 노래를 좀 써야 하는데, 나한텐 그렇게 슬픈 일이 한 번도 없었단 말이야.",
+      "text": "So, I need to write some depressing stuff to go with my new bluesy voice, but nothing that sad has ever really happened to me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gotta write sad songs for my new bluesy voice, but my life's been way too happy."
+        },
+        {
+          "style": "formal",
+          "text": "I must compose some melancholy material to suit my new blues voice; however, nothing truly tragic has ever happened to me."
+        }
+      ],
+      "note": "**to go with**는 '~에 어울리게, ~와 짝을 맞춰'라는 뜻으로, 옷이나 음식, 노래를 맞춰 고를 때 씁니다. **nothing that sad**는 '그렇게까지 슬픈 일은 없다'며 정도를 낮춰 말할 때 씁니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 705
+      },
+      "start": 1772.92,
+      "end": 1779.689,
+      "recording": null
+    }
+  ]
+}

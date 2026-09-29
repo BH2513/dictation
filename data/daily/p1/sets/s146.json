@@ -1,0 +1,119 @@
+{
+  "setId": "s146",
+  "videoId": "daily-s146",
+  "title": "Set 146",
+  "madeAt": "2026-09-29",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "기침 때문에 드디어 병원에 갔는데, 그렇게 오래 기다렸는데 의사가 한 2초 들어 보더니 그냥 알레르기일 거래. 좀 짜증 나긴 하는데, 그래도 나쁜 소리 듣는 것보다는 낫잖아, 그치?",
+      "text": "So I finally went in about my cough, and after all that waiting the doctor listened for like two seconds and said it's probably just allergies. I'm kind of annoyed, but I guess that's better than hearing something bad, right?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally got my cough checked out, and after all that waiting the doc listened for like two seconds and said it's probably just allergies. Kinda annoyed, but hey, better than bad news, right?"
+        },
+        {
+          "style": "formal",
+          "text": "I finally went to see the doctor about my cough, and after a long wait, the doctor listened for perhaps two seconds and said it is most likely allergies. I am somewhat frustrated, but I suppose that is better than receiving bad news, wouldn't you agree?"
+        }
+      ],
+      "note": "**went in about** 는 어떤 증상 때문에 병원에 가서 진료를 받았다는 말입니다. **for like two seconds** 는 정말 잠깐이었다고 과장할 때 쓰고, casual 의 **got my cough checked out** 도 같은 뜻입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "작동은 잘 돼. 다만 미리 솔직하게 말하자면 배터리가 예전만큼 오래 못 가서, 아마 계속 충전기에 꽂아 두고 쓰는 게 좋을 거야. 그래서 40달러만 받는 거야.",
+      "text": "It works fine, I just want to be upfront that the battery doesn't hold a charge like it used to, so you'll probably want to keep it plugged in. That's why I'm only asking forty bucks for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Works fine, but heads up, the battery doesn't hold a charge like it used to, so you'll probably wanna keep it plugged in. That's why I'm only asking forty bucks."
+        },
+        {
+          "style": "formal",
+          "text": "It works properly, but I should point out that the battery does not hold a charge as well as it once did, so you will likely want to keep it plugged in. That is why I am only asking forty dollars for it."
+        }
+      ],
+      "note": "**be upfront** 는 불리한 점을 미리 솔직하게 털어놓는다는 뜻입니다. **doesn't hold a charge** 는 배터리가 충전해도 금방 닳는다는 말이고, casual 의 **heads up** 은 미리 알려 둘게 정도의 느낌입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "작년 여름 이후로 처음 수영하러 갔는데, 물에 너무 오래 있었나 봐. 그때부터 계속 오한이 나고 목이 아파. 몸 좀 다시 만들어 보려고 했더니 이 꼴이네.",
+      "text": "I went swimming for the first time since last summer, and I think I stayed in way too long, because I've had chills and a sore throat ever since. So much for getting back in shape.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "First time swimming since last summer, and I guess I stayed in way too long, 'cause I've had chills and a sore throat ever since. So much for getting back in shape."
+        },
+        {
+          "style": "formal",
+          "text": "I went swimming for the first time since last summer, and I believe I remained in the water far too long, as I have had chills and a sore throat ever since. So much for improving my fitness."
+        }
+      ],
+      "note": "**So much for** 는 기대했던 일이 틀어졌을 때 허탈하게 하는 말입니다. **getting back in shape** 는 다시 몸을 만든다는 뜻이고, **way too long** 은 너무 지나치게 오래라는 강조입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "회사 그만둘까 계속 생각하는데, 이력서 고치려고 앉기만 하면 그만두고 뭘 하고 싶은지도 모르겠더라고. 그래서 그냥 노트북 덮고 다시 회사 불평이나 해.",
+      "text": "I keep thinking about quitting, but every time I sit down to update my resume, I realize I don't even know what I'd want to do instead. So I just close the laptop and go back to complaining about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Quitting's always on my mind, but every time I sit down to fix my resume, I realize I've got no clue what I'd even wanna do instead. So I just shut the laptop and go back to griping about it."
+        },
+        {
+          "style": "formal",
+          "text": "I continue to consider resigning, but each time I sit down to update my resume, I realize that I do not know what I would like to do instead. Therefore, I simply close the laptop and return to complaining about it."
+        }
+      ],
+      "note": "**I keep thinking about** 는 어떤 생각이 자꾸 든다는 말입니다. **what I'd want to do instead** 는 대신 뭘 하고 싶은지라는 뜻이고, casual 의 **griping** 은 투덜거리다라는 구어입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "자, 첫째 주 주말은 사촌 결혼식 때문에 안 되는데, 그다음 주 목요일에 출발하면 나는 금요일에 휴가 내면 되고 그래도 꽉 채워서 사흘은 놀 수 있어. 너는 괜찮아? 아니면 목요일은 너무 이른가?",
+      "text": "Okay, I can't do the first weekend because of my cousin's wedding, but if we leave the Thursday after that, I could take Friday off and we'd still get three full days. Does that work for you, or is Thursday too early?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "First weekend's out, my cousin's getting married. But if we head out the Thursday after, I can take Friday off and we'd still get three full days. That work for you, or is Thursday too early?"
+        },
+        {
+          "style": "formal",
+          "text": "Unfortunately, I am unable to go the first weekend because of my cousin's wedding. However, if we depart the Thursday after that, I could take Friday off and we would still have three full days. Would that be convenient for you, or is Thursday too early?"
+        }
+      ],
+      "note": "**take Friday off** 는 금요일에 휴가를 낸다는 뜻입니다. **Does that work for you?** 는 일정이 괜찮은지 묻는 가장 흔한 말이고, casual 의 **First weekend's out** 은 첫 주말은 안 된다는 뜻입니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 prob 은 글자로 줄인 인터넷 말투라 소리내어 말하는 연습에 안 맞아 probably 로 되돌림",
+    "1번 formal 끝의 is it not? 은 너무 딱딱하고 어색해서 wouldn't you agree? 로 고침",
+    "1번 한국어 '그렇게 오래 기다렸더니' 는 뜻이 어긋나 '그렇게 오래 기다렸는데' 로 고침",
+    "2번 casual 의 prob wanna 를 probably wanna 로 고침 (prob 은 글자 줄임말)",
+    "2번 formal 의 I would like to be honest that 은 문법이 어색해 I should point out that 으로 고침",
+    "3번 casual 의 cause 를 구어 표기 'cause 로 바로잡음",
+    "4번 한국어 '깨달아' 가 번역투라 '모르겠더라고' 로 자연스럽게 고침",
+    "5번 한국어 '음,' 은 Okay 의 말투와 달라 '자,' 로, '꼬박 사흘은 있을 수 있어' 를 '꽉 채워서 사흘은 놀 수 있어' 로 고침"
+  ]
+}

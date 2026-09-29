@@ -1,0 +1,115 @@
+{
+  "setId": "s145",
+  "videoId": "daily-s145",
+  "title": "Set 145",
+  "madeAt": "2026-09-29",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "새 직장이 돈은 훨씬 더 많이 주는데, 엄마랑 세 시간 떨어진 데로 이사를 가야 하거든. 엄마도 이제 나이가 점점 드시고. 그래서 자꾸 이랬다저랬다 해. 모르겠다, 우리 잠깐 딴 얘기 하면 안 될까? 머리 아파.",
+      "text": "The new job pays a lot better, but I'd have to move three hours away from my mom, and she's not getting any younger. So I keep going back and forth on it. I don't know, can we talk about something else for a bit? My head hurts.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Pay's way better, but it's three hours from my mom, and she's not getting any younger. So I just can't decide. I dunno, can we talk about something else? My head hurts."
+        },
+        {
+          "style": "formal",
+          "text": "The new position pays considerably better, but I would have to move three hours away from my mother, and she is not getting any younger. So I continue to go back and forth on it. I am not sure. Would you mind if we talked about something else for a while? I have a headache."
+        }
+      ],
+      "note": "**go back and forth** 는 마음을 못 정하고 이랬다저랬다 한다는 뜻이에요. **not getting any younger** 는 나이가 점점 든다는 걸 돌려 말하는 표현입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "차에서는 완전히 곯아떨어져 있었는데, 안고 들어오자마자 눈이 말똥말똥해져서 다시 재우는 데 한 시간이 더 걸렸어. 결국 나는 신발도 안 벗고 걔 방바닥에서 잠들어 버렸어.",
+      "text": "He was out cold in the car, but the second I carried him inside he woke right up, and it took me another hour to get him back down. So I ended up falling asleep on his floor with my shoes still on.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Out cold in the car, and then the minute I carry him in he's wide awake, and it takes me another hour to get him back down. So I end up crashing on his floor with my shoes still on."
+        },
+        {
+          "style": "formal",
+          "text": "He was sound asleep in the car, but the moment I carried him inside he woke up completely, and it took me another hour to get him back to sleep. As a result, I fell asleep on his floor with my shoes still on."
+        }
+      ],
+      "note": "**out cold** 는 정신없이 곯아떨어졌다는 뜻이고, **get him back down** 은 아이를 다시 재운다는 말이에요. **the second** 는 ~하자마자입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "분위기 깨서 미안한데, 내일 아침 6시 비행기라서 디저트 나오기 전에 슬쩍 빠질게. 너희는 더 있다 가, 알았지? 그리고 맛있으면 나 한 조각만 남겨 줘.",
+      "text": "I hate to be that person, but I've got a flight at six tomorrow, so I'm going to sneak out before dessert. You guys stay, though, okay? And save me a piece if it's good.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry to be that guy, but I've got a six a.m. flight tomorrow, so I'm gonna slip out before dessert. You guys stay though, okay? And save me a slice if it's good."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for leaving early, but I have a flight at six tomorrow morning, so I will need to excuse myself before dessert. Please do stay, though. And if it is good, would you save me a piece?"
+        }
+      ],
+      "note": "**I hate to be that person** 은 분위기 깨는 사람이 되긴 싫지만 이라고 양해를 구할 때 써요. **sneak out** 은 조용히 슬쩍 빠져나간다는 뜻입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "자꾸 새벽 세 시쯤 깨서 그냥 누운 채로 회사 일 생각만 하다 보니까, 알람 울릴 때쯤엔 한숨도 못 잔 것 같아. 점심 먹고 나서는 커피도 끊어 봤는데 전혀 달라진 게 없어.",
+      "text": "I keep waking up at like three and then I just lie there thinking about work, so by the time my alarm goes off I feel like I didn't sleep at all. I even stopped having coffee after lunch, and it didn't make any difference.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every night I'm up at like three, just lying there thinking about work, so when my alarm goes off it's like I never slept. I even cut out coffee after lunch, and nope, no difference."
+        },
+        {
+          "style": "formal",
+          "text": "I have been waking up at around three in the morning and lying awake thinking about work, so by the time my alarm goes off I feel as though I have not slept at all. I even stopped drinking coffee after lunch, and it made no difference."
+        }
+      ],
+      "note": "**by the time my alarm goes off** 는 알람이 울릴 때쯤이면 이라는 뜻이에요. **it didn't make any difference** 는 해 봤는데 아무 효과가 없었다는 말입니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "늦어서 미안, 전철이 아무 이유도 없이 한 20분을 그냥 서 있더라고. 그래, 그래, 늦잠 잤어. 근데 전철이 느렸던 것도 진짜야, 맹세해!",
+      "text": "Sorry I'm late, the train just sat there for like twenty minutes for no reason. Okay, fine, I overslept. But the train really was slow too, I swear!",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My bad, train got stuck for like twenty minutes. Okay, fine, I overslept. But it was slow too, swear!"
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for arriving late. The train was stopped for about twenty minutes for no apparent reason. Very well, I admit that I overslept. However, the train genuinely was slow as well, I promise."
+        }
+      ],
+      "note": "**Okay, fine** 은 버티다가 결국 인정할 때 쓰는 말이에요. **I swear** 는 진짜라고 강조할 때 붙입니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 The new job pays 로 시작해 text 와 앞부분이 겹쳐서 더 짧은 구어로 바꿨고, flip-flopping 은 주로 정치인이 말을 바꿀 때 쓰는 말이라 뺐습니다",
+    "3번 한국어 이런 말 하는 사람 되기 싫은데 는 I hate to be that person 을 그대로 옮긴 번역투라서 분위기 깨서 미안한데 로 바꿨습니다",
+    "5번 casual 이 text 와 거의 같아서 더 짧게 줄였습니다",
+    "5번 한국어에서 출퇴근 열차를 기차라고 하면 어색해서 전철로 바꾸고, 알았어 알았어 를 그래 그래 로 다듬었습니다"
+  ]
+}

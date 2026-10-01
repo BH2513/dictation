@@ -1,0 +1,116 @@
+{
+  "setId": "s150",
+  "videoId": "daily-s150",
+  "title": "Set 150",
+  "madeAt": "2026-10-01",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "마음이 좀 편해질 것 같아서 도자기 수업에 등록했는데, 만드는 것마다 다 삐뚤빼뚤하게 나와서 몇 주 다니다가 그냥 안 나갔어. 근데 사실 아직도 수업료가 빠져나가고 있는 것 같아.",
+      "text": "I signed up for a pottery class because I thought it'd be relaxing, but everything I made came out lopsided, so after a few weeks I just stopped going. And I think I'm still getting charged for it, actually.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Took a pottery class since I figured it'd be chill, but all my stuff came out crooked, so I quit after a few weeks. Pretty sure they're still charging me for it, too."
+        },
+        {
+          "style": "formal",
+          "text": "I enrolled in a pottery class because I believed it would be relaxing, but everything I made came out uneven, so after a few weeks I stopped attending. In fact, I believe I am still being charged for it."
+        }
+      ],
+      "note": "**came out lopsided** 는 만든 결과물이 한쪽으로 기울어 삐뚤게 나왔다는 뜻입니다. **getting charged for** 는 무엇의 요금이 계속 청구되고 있다는 말로, 끝에 붙은 **actually** 가 말하다 생각난 사실을 덧붙이는 느낌을 줍니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "앉을 데를 찾아서 카페를 세 군데나 가 봤는데, 가는 데마다 노트북 하는 사람들로 꽉 차 있어서 결국 차에서 커피를 마셨어.",
+      "text": "We tried three different coffee shops looking for somewhere to sit, and every single one was full of people on laptops, so we ended up drinking our coffee in the car.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hit up three coffee shops looking for a seat, and they were all packed with laptop people, so we just drank it in the car."
+        },
+        {
+          "style": "formal",
+          "text": "We visited three different coffee shops in search of a place to sit, and each one was full of people working on laptops, so we ultimately drank our coffee in the car."
+        }
+      ],
+      "note": "**ended up** 은 계획한 건 아닌데 어쩌다 보니 결국 그렇게 됐다는 뜻입니다. **every single one** 은 every one 을 강조해서 하나도 빠짐없이 전부라는 느낌을 줍니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "솔직히 어디로 가든 상관없어. 그냥 금요일까지 날짜만 정해 주면 돼. 그 뒤로는 우리 상사가 아무것도 결재를 안 해 주거든. 그러니까 너 회사에 한번 알아보고 알려 줄래?",
+      "text": "Honestly, I don't care where we go, I just need the dates by Friday, because my boss won't sign off on anything after that. So can you check with your work and let me know?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Don't care where we go, just need dates by Friday 'cause my boss won't okay anything after that. Can you check at work and get back to me?"
+        },
+        {
+          "style": "formal",
+          "text": "To be candid, I have no preference as to where we go, but I need the dates by Friday, as my manager will not approve anything after that. Could you please check with your employer and let me know?"
+        }
+      ],
+      "note": "**sign off on** 은 윗사람이 무언가를 승인하거나 결재해 준다는 뜻입니다. **check with** 는 누구에게 먼저 물어보고 확인한다는 말이라 여기서는 네 회사에 확인해 보라는 뜻이 됩니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "네가 말해 준 그 태국 음식점 드디어 가 봤어. 네 말대로 음식은 진짜 맛있었는데, 자리 나기까지 거의 한 시간을 기다려서 토요일에 또 갈지는 모르겠어.",
+      "text": "So we finally tried that Thai place you told us about. You were right, the food was really good, but we waited almost an hour for a table, so I don't know if I'd go back on a Saturday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally hit that Thai spot you mentioned. Food was great, you were right, but we waited almost an hour for a table, so not sure I'd go back on a Saturday."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended. You were correct that the food was excellent, but we waited nearly an hour for a table, so I am not certain I would return on a Saturday."
+        }
+      ],
+      "note": "**You were right** 는 상대가 한 말이 맞았다고 인정할 때 흔히 쓰는 말입니다. **I don't know if I'd go back** 은 다시 갈지 잘 모르겠다며 부드럽게 망설임을 나타냅니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "같은 책을 네 번이나 읽어 줬는데, 방에서 나가려고만 하면 물 달라, 한 번 더 안아 달라 그러는 거야. 그래서 겨우 잠들었을 때는 너무 지쳐서 오늘 밤에 하려던 일을 하나도 못 했어.",
+      "text": "I read her the same book four times, and every time I tried to leave she wanted water or another hug. So by the time she finally fell asleep, I was too tired to do any of the stuff I wanted to get done tonight.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Same book four times, and every time I got up she wanted water or another hug. By the time she conked out I was way too wiped to get anything done tonight."
+        },
+        {
+          "style": "formal",
+          "text": "I read her the same book four times, and each time I attempted to leave, she asked for water or another hug. By the time she finally fell asleep, I was too exhausted to do any of the things I had intended to accomplish this evening."
+        }
+      ],
+      "note": "**by the time** 은 어떤 일이 일어났을 때쯤에는 이미 다른 일이 벌어져 있었다는 뜻입니다. **too tired to** 는 너무 지쳐서 무엇을 할 수 없었다는 말이고, casual 의 **conked out** 은 곯아떨어졌다는 뜻입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 의 Hit up three coffee shops for a seat 는 for a seat 가 어색해서 looking for a seat 로 고쳤고, 뒷부분도 더 짧은 구어로 바꿨습니다",
+    "3번 casual 앞부분이 text 와 거의 같아서 주어를 빼고 get back to me 로 줄여 차이를 냈습니다",
+    "3번 formal 의 check with your workplace 는 원어민이 쓰지 않는 말이라 check with your employer 로 고쳤습니다",
+    "4번 casual 이 text 처럼 We finally 로 시작해서 주어를 뺐고, 한국어 너가 를 네가 로 고쳤습니다",
+    "5번 casual 첫 마디가 text 와 거의 같아서 Same book four times 로 시작하는 짧은 구어로 새로 썼습니다"
+  ]
+}

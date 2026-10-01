@@ -1,0 +1,248 @@
+{
+  "videoId": "shows-2026-10-01",
+  "title": "From your videos · 2026-10-01",
+  "date": "2026-10-01",
+  "source": "shows",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "다들 알고 있었으면서 나한테만 말 안 한 거야?",
+      "text": "You all knew and you didn't tell me?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wait, everyone knew? And nobody told me?"
+        },
+        {
+          "style": "formal",
+          "text": "Were all of you aware of this and chose not to tell me?"
+        }
+      ],
+      "note": "**You all knew** 는 나만 빼고 다 알고 있었다는 걸 알았을 때 서운함을 담아 따지는 말이에요. 깜짝 파티나 친구 소식을 나만 늦게 들었을 때 그대로 쓰면 됩니다.",
+      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
+      "from": {
+        "videoId": "RSLnwpSfe-4",
+        "i": 319
+      },
+      "start": 792.52,
+      "end": 795.12,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "인사 한 번 받으려면 내가 뭘 해야 되는 건데?",
+      "text": "What do I got to do to get a goodbye?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Seriously, what's it take to get a goodbye around here?"
+        },
+        {
+          "style": "formal",
+          "text": "What must I do in order to receive a goodbye?"
+        }
+      ],
+      "note": "**What do I got to do to** ~ 는 '~하려면 내가 대체 뭘 해야 돼?' 하고 서운함을 섞어 따질 때 써요. 문법으로는 have got to 가 맞지만 말할 때는 이렇게 줄여서 많이 합니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 793
+      },
+      "start": 2041.919,
+      "end": 2043.679,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "분명히 네 생각보다 잘됐을 거야.",
+      "text": "I'll bet it went better than you think.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Bet it went way better than you think."
+        },
+        {
+          "style": "formal",
+          "text": "I am certain that it went better than you believe."
+        }
+      ],
+      "note": "**I'll bet** 은 '틀림없이 ~일 거야'라는 뜻이에요. 면접이나 발표를 망쳤다고 걱정하는 친구를 달랠 때 딱 맞는 말입니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 627
+      },
+      "start": 1557.679,
+      "end": 1559.52,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "반품은 받아 준다고 했는데, 돈으로는 안 주고 그 가게 적립금으로만 준대.",
+      "text": "Well, they said they would, but they would only give me store credit.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "They'd take it back, sure, but only for store credit."
+        },
+        {
+          "style": "formal",
+          "text": "They agreed to do so; however, they would only offer me store credit."
+        }
+      ],
+      "note": "**store credit** 은 환불 대신 그 가게에서만 쓸 수 있게 주는 금액이에요. 반품하러 갔다가 현금으로 못 돌려받았을 때 이렇게 말합니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 55
+      },
+      "start": 125.459,
+      "end": 128.16,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그걸로 먹고사는 게 아니라서 천만다행이다.",
+      "text": "Well, thank God your livelihood doesn't depend on it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Good thing you don't do that for a living."
+        },
+        {
+          "style": "formal",
+          "text": "It is fortunate that you do not rely on that for your income."
+        }
+      ],
+      "note": "**thank God** 는 '다행이다'를 놀리듯 말할 때도 써요. 친구가 노래나 요리를 영 못할 때 농담으로 던지는 말이에요. **livelihood** 는 생계, 같은 뜻을 쉽게 말하면 **for a living** 입니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1393
+      },
+      "start": 3562.839,
+      "end": 3565.53,
+      "recording": null
+    },
+    {
+      "i": 5,
+      "ko": "그래, 그 테스트 해 봤는데, 나 진짜 남자보다 일이 먼저인 사람이더라.",
+      "text": "All right, I took the quiz and it turns out I do put career before men.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, did the quiz. Turns out I really do pick work over guys."
+        },
+        {
+          "style": "formal",
+          "text": "I completed the quiz, and it seems that I do place my career before men."
+        }
+      ],
+      "note": "**it turns out** 는 해 보거나 알아보니 뜻밖에 그렇더라 할 때 씁니다. **I do put** 처럼 do 를 끼우면 '진짜로 그렇다'고 힘주어 인정하는 말이 됩니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 753
+      },
+      "start": 1969.919,
+      "end": 1977.879,
+      "recording": null
+    },
+    {
+      "i": 6,
+      "ko": "잡지에서 나를 크게 다루고 싶다고 했는데, 내가 거절했어.",
+      "text": "They wanted to do a big profile on me, but I said no.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Some magazine wanted a big story on me. I turned 'em down."
+        },
+        {
+          "style": "formal",
+          "text": "A publication asked to feature me in a lengthy article, but I declined."
+        }
+      ],
+      "note": "**do a big profile on me** 는 신문·잡지가 한 사람을 집중 취재해 기사로 싣는 것을 말합니다. 거절했다는 말은 **I said no** 처럼 가장 쉽게 해도 충분합니다.",
+      "situation": "The Ones with the Whole Gang from Season 8 | Friends",
+      "from": {
+        "videoId": "cWheLYR8moU",
+        "i": 292
+      },
+      "start": 798.64,
+      "end": 801.48,
+      "recording": null
+    },
+    {
+      "i": 7,
+      "ko": "글쎄, 나도 뭐라고 해 줘야 할지 모르겠네.",
+      "text": "Well, I don't know what to tell you, dear.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Dunno what to say, hon."
+        },
+        {
+          "style": "formal",
+          "text": "I am afraid I do not know what to tell you, dear."
+        }
+      ],
+      "note": "**I don't know what to tell you** 는 상대가 하소연하거나 따질 때 '나도 어쩔 수 없다'는 뜻으로 씁니다. 가게 직원이 손님에게도 자주 하는 말이고, **dear** 는 나이 든 사람이 다정하게 부를 때 붙입니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1234
+      },
+      "start": 3160.839,
+      "end": 3162.96,
+      "recording": null
+    },
+    {
+      "i": 8,
+      "ko": "그러면 늦을 줄 알았으면서도 그냥 간 거잖아.",
+      "text": "You knew it would make you late and you still went anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Even knowing you'd be late, you went anyway."
+        },
+        {
+          "style": "formal",
+          "text": "Despite knowing that it would make you late, you chose to go regardless."
+        }
+      ],
+      "note": "'~때문에 늦다'를 영어는 **make you late** 처럼 그것이 너를 늦게 만든다고 합니다. **still went anyway** 는 알면서도 굳이 했다고 따질 때 쓰는 말로, still 과 anyway 를 겹쳐 '그런데도'를 세게 만듭니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 63
+      },
+      "start": 159.519,
+      "end": 161.45,
+      "recording": null
+    },
+    {
+      "i": 9,
+      "ko": "너희가 무슨 말 했던 건지 이제야 좀 알겠더라.",
+      "text": "I finally started to see what you guys were talking about.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Now I get what you guys meant."
+        },
+        {
+          "style": "formal",
+          "text": "I have at last begun to understand what you were all referring to."
+        }
+      ],
+      "note": "**see what you guys were talking about** 에서 see 는 '보다'가 아니라 '이해하다'입니다. 남들이 하던 말을 뒤늦게 실감할 때 **finally started to** 를 붙여 '이제야'의 느낌을 냅니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 807
+      },
+      "start": 2059.2,
+      "end": 2062.32,
+      "recording": null
+    }
+  ]
+}

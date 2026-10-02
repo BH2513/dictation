@@ -1,0 +1,117 @@
+{
+  "setId": "s153",
+  "videoId": "daily-s153",
+  "title": "Set 153",
+  "madeAt": "2026-10-02",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "언니가 토요일에 나오라고 계속 문자를 보내서 거절하기가 좀 미안하기까지 했는데, 그냥 집에 있으면서 진짜 아무것도 안 했거든. 솔직히 몇 년 만에 제일 좋은 주말이었어.",
+      "text": "My sister kept texting me to come out Saturday, and I almost felt bad saying no, but I just stayed home and did absolutely nothing, and honestly it was the best weekend I've had in forever.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Kept getting texts from my sister about Saturday, kinda felt bad saying no, but I stayed in and did nothing. Honestly? Best weekend in forever."
+        },
+        {
+          "style": "formal",
+          "text": "My sister repeatedly messaged me asking me to join her on Saturday, and I nearly felt guilty declining, but I remained at home and did nothing whatsoever. To be honest, it was the best weekend I have had in a very long time."
+        }
+      ],
+      "note": "**in forever** 는 정말 오랜만에라는 뜻으로, the best weekend I've had in forever 처럼 최상급과 잘 붙어 다닙니다. **felt bad saying no** 는 거절하기 미안했다는 말입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "배송 조회에 화요일부터 계속 배송 출발로 떠 있어서 집에서 꼼짝 못 하고 기다렸는데, 이제 와서 잘못된 주소로 갔을 수도 있대. 이럴 줄 알았으면 그냥 가게에서 샀지.",
+      "text": "The tracking has said out for delivery since Tuesday, so I've been stuck at home waiting for it, and now they're telling me it might've gone to the wrong address. If I'd known, I would've just bought it at the store.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's been saying out for delivery since Tuesday, so I've been stuck at home waiting, and now they're saying it mighta gone to the wrong address. If I'd known, I'd have just grabbed it at the store."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking information has shown the package as out for delivery since Tuesday, so I have remained at home waiting for it, and I am now being told it may have been sent to the wrong address. Had I known, I would simply have purchased it at the store."
+        }
+      ],
+      "note": "**out for delivery** 는 배송 조회에 뜨는 배송 출발, 배송 중이라는 표현입니다. **If I'd known, I would've** 는 알았더라면 ~했을 텐데 하고 후회할 때 씁니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "퇴근하고 헬스장 가려고 했는데 친구가 전화해서 한 시간 정도 수다 떨다 보니까 너무 늦은 것 같더라고. 내일 아침에 갈게, 진짜로.",
+      "text": "I was going to go to the gym after work, but then my friend called and we ended up talking for like an hour, and by then it just felt too late. I'll go tomorrow morning, I promise.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna hit the gym after work, but my friend called and we talked for like an hour, and by then it felt way too late. Tomorrow morning, I promise."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to go to the gym after work, but a friend called and we ended up speaking for about an hour, and by then it seemed too late. I will go tomorrow morning, I assure you."
+        }
+      ],
+      "note": "**ended up** 은 의도와 달리 결국 ~하게 됐다는 뜻입니다. **by then** 은 그때쯤에는이라는 뜻으로 이미 늦어 버린 상황을 말할 때 씁니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "어젯밤에 둘이서만 햄버거 먹으러 갔거든. 별것도 아닌데 팁까지 하니까 거의 60달러 나왔어. 예전엔 그 돈이면 저녁 먹고 영화까지 봤는데.",
+      "text": "We went out for burgers last night, just the two of us, nothing fancy, and it came to almost sixty bucks with the tip. I remember when that would've gotten us dinner and a movie.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Grabbed burgers last night, just us two, nothing fancy, and it was almost sixty bucks with tip. That used to get us dinner and a movie."
+        },
+        {
+          "style": "formal",
+          "text": "Last night the two of us went out for burgers, nothing elaborate, and the total came to nearly sixty dollars including the tip. I recall a time when that amount would have covered dinner and a movie."
+        }
+      ],
+      "note": "**came to** 는 금액이 얼마가 나왔다고 할 때 씁니다. **nothing fancy** 는 별것 아닌, 소박한이라는 뜻입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "세상에, 이게 얼마 만이야! 아직 공원 쪽에 살아? 아니면 전에 말하던 대로 드디어 이사했어?",
+      "text": "Oh my gosh, it's been forever! Are you still living over by the park, or did you guys finally move like you were talking about?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Whoa, it's been ages! You still over by the park, or did you guys finally move like you said?"
+        },
+        {
+          "style": "formal",
+          "text": "Goodness, it has been such a long time! Are you still living near the park, or did you finally move as you had mentioned?"
+        }
+      ],
+      "note": "**it's been forever** 는 정말 오랜만이다라는 반가운 인사입니다. **over by the park** 는 공원 근처 그쪽이라는 뜻으로, over by 는 대략 어느 쪽인지 가리킬 때 씁니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: 문장 첫머리의 Sis 는 주어로 어색하고, 그렇다고 My sister kept 로 바꾸면 text 와 앞부분이 겹쳐서 순서를 바꿔 새로 썼습니다",
+    "2번 casual: It's said 는 소리내어 읽으면 It is said 로 들려 헷갈리므로 It's been saying 으로 고쳤습니다",
+    "2번 ko: 주소를 잘못 갔을 수도 있대는 문장이 꼬여서 잘못된 주소로 갔을 수도 있대로 고쳤습니다",
+    "2번 formal: purchased it in the store 를 원어민이 더 자주 쓰는 at the store 로 고쳤습니다",
+    "5번 casual: No way 는 반가운 인사보다 못 믿겠다는 반응에 가까워 Whoa 로 바꿨습니다",
+    "5번 formal: as you had been discussing 은 딱딱하고 어색해서 as you had mentioned 로 고쳤습니다"
+  ]
+}

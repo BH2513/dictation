@@ -1,0 +1,112 @@
+{
+  "setId": "s157",
+  "videoId": "daily-s157",
+  "title": "Set 157",
+  "madeAt": "2026-10-03",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "신발까지 다 신고 나갈 준비 끝났었는데, 문자 답장하려고 소파에 딱 1초 앉았거든. 그걸로 끝이었어. 다시 일어날 생각이 없더라.",
+      "text": "I had my shoes on and everything, but then I sat down on the couch for one second to answer a text, and that was it, I wasn't getting back up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Shoes on, ready to go, and then I sat on the couch for one sec to text someone back and nope, I wasn't getting up again."
+        },
+        {
+          "style": "formal",
+          "text": "I had already put on my shoes and was ready to leave, but I sat down on the couch for a moment to reply to a message, and after that I simply could not bring myself to get up again."
+        }
+      ],
+      "note": "**that was it** 는 거기서 끝이었다, 그걸로 게임 끝이었다는 뜻이에요. **I had my shoes on and everything** 의 and everything 은 그 밖에 준비도 다 했다는 느낌을 줍니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "학교에서 현장학습 때문에 온 이메일 봤어? 내일까지 20달러랑 서명한 동의서를 내래. 근데 그거 일주일 내내 애 가방에 들어 있었던 것 같아.",
+      "text": "Did you get that email from the school about the field trip? They want twenty bucks and a signed form by tomorrow, and I'm pretty sure it's been sitting in his backpack all week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You see the school's email about the field trip? They need twenty bucks and a signed form by tomorrow, and I bet it's been stuck in his backpack all week."
+        },
+        {
+          "style": "formal",
+          "text": "Did you receive the email from the school regarding the field trip? They are asking for twenty dollars and a signed form by tomorrow, and I believe it has been in his backpack all week."
+        }
+      ],
+      "note": "**bucks** 는 dollars 를 편하게 부르는 말이에요. **it's been sitting in his backpack** 은 한동안 가방 속에 그대로 처박혀 있었다는 뜻입니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "자리는 잘 찾았어? 내가 왔을 때는 꽉 차 있어서, 어떤 남자 뒤에 그냥 서 있었거든. 결국 그 사람이 눈치채고 노트북을 챙기더라.",
+      "text": "Did you find a seat okay? Because when I got here it was packed, and I ended up just standing behind this guy until he got the hint and packed up his laptop.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You get a seat alright? 'Cause it was packed when I showed up, so I just stood behind this guy till he took the hint and packed up his laptop."
+        },
+        {
+          "style": "formal",
+          "text": "Were you able to find a seat without any trouble? When I arrived it was very crowded, and I ended up standing behind a gentleman until he took the hint and put away his laptop."
+        }
+      ],
+      "note": "**got the hint** 는 눈치를 챘다는 뜻이에요. **packed** 는 사람이 꽉 찼다는 뜻이고, 뒤의 **packed up** 은 짐을 챙겼다는 뜻이라 같은 낱말이 두 가지로 쓰였습니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "방금 주유소에서 샌드위치 하나에 9달러 냈는데 맛도 없었어. 아니, 그 돈이면 그냥 어디 앉아서 제대로 된 점심을 먹을 걸 그랬어.",
+      "text": "I just paid nine bucks for a sandwich at the gas station, and it wasn't even good. Like, at that point I should've just sat down somewhere and had a real lunch.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nine bucks for a gas station sandwich, and it wasn't even good. Honestly, for that I should've just gone and sat down for a real lunch."
+        },
+        {
+          "style": "formal",
+          "text": "I just paid nine dollars for a sandwich at the gas station, and it was not even good. At that price, I should have simply sat down somewhere and had a proper lunch."
+        }
+      ],
+      "note": "**at that point** 는 그 정도면, 그럴 바에야라는 뜻이에요. **should've just** 는 그냥 ~할 걸 그랬다고 후회할 때 씁니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "저녁 먹는 내내 이모들이 둘째는 언제 낳냐고만 물었어. 나는 아직 잘 모르겠다고 계속 말했는데, 다들 그걸 낳겠다는 말로 알아듣더라.",
+      "text": "The whole dinner was just my aunts asking when we're having a second kid, and I kept saying we're not sure yet, but they all acted like that meant yes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My aunts spent the whole dinner asking when we're having another kid, and I kept going, we don't know yet, but they all took that as a yes."
+        },
+        {
+          "style": "formal",
+          "text": "Throughout the entire dinner, my aunts kept asking when we are planning to have a second child, and although I repeatedly said that we are not sure yet, they all behaved as though that meant yes."
+        }
+      ],
+      "note": "**acted like that meant yes** 는 그 말을 그렇다는 뜻으로 받아들인 것처럼 굴었다는 뜻이에요. **The whole dinner was just** 는 저녁 내내 그 얘기뿐이었다는 느낌을 줍니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 formal: until he understood 는 무엇을 알아챘는지가 빠져 뜻이 흐려지고 text 의 got the hint 를 눅였으므로 until he took the hint 로 고침"
+  ]
+}

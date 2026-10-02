@@ -1,0 +1,224 @@
+{
+  "videoId": "shows-2026-10-03",
+  "title": "From your videos · 2026-10-03",
+  "date": "2026-10-03",
+  "source": "shows",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아, 잠깐 좀 나아지나 싶었는데 아니네.",
+      "text": "Uh, for a second there I thought I was feeling better, but I'm not.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Thought I was getting better for a sec, but nope."
+        },
+        {
+          "style": "formal",
+          "text": "I briefly believed that I was recovering, but I am still unwell."
+        }
+      ],
+      "note": "**for a second there**는 '잠깐은 ~인 줄 알았는데'처럼 착각했다가 아닌 걸 깨달았을 때 씁니다. 몸이 나아졌다고 할 때는 **feeling better**가 가장 흔합니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 28
+      },
+      "start": 61.039,
+      "end": 63.91,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아니 그러니까, 너 걔랑 결혼할 것 같아?",
+      "text": "I mean, like, do you see yourself marrying her?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So, you think you'll marry her?"
+        },
+        {
+          "style": "formal",
+          "text": "Can you imagine yourself marrying her someday?"
+        }
+      ],
+      "note": "**see yourself marrying**처럼 **see yourself ~ing**는 '네가 ~하는 모습이 그려져?'라는 뜻으로, 친구에게 앞날을 진지하게 물어볼 때 씁니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 822
+      },
+      "start": 2093.76,
+      "end": 2097.079,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "내가 전에 연애 문제는 너 혼자 알아서 하라고 했던 거 있잖아.",
+      "text": "You know when I said that I want you to deal with this relationship stuff all on your own?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Remember how I said you should handle the relationship stuff by yourself?"
+        },
+        {
+          "style": "formal",
+          "text": "Do you recall when I told you that I wanted you to handle these relationship matters alone?"
+        }
+      ],
+      "note": "**You know when I said**는 '내가 전에 ~라고 했던 거 있잖아'라며 예전에 한 말을 꺼낼 때 씁니다. 그 말을 뒤집거나 고칠 때 자주 나옵니다. **deal with**는 골치 아픈 일을 맡아서 처리할 때 씁니다.",
+      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
+      "from": {
+        "videoId": "RSLnwpSfe-4",
+        "i": 156
+      },
+      "start": 334,
+      "end": 339,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "걔 사촌이 괜찮은 집을 전대로 내놓는대.",
+      "text": "Her cousin has this great place to sublet.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Turns out her cousin's subletting a really nice place."
+        },
+        {
+          "style": "formal",
+          "text": "There is an excellent apartment that her cousin is looking to sublet."
+        }
+      ],
+      "note": "**sublet**은 자기가 빌린 집을 다른 사람에게 다시 빌려주는 것입니다. 미국에서 집 구할 때 아주 흔한 말입니다. **this great place**처럼 말할 때 this를 붙이면 '이번에 알게 된 괜찮은 거'라는 느낌으로 이야기를 꺼내게 됩니다.",
+      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
+      "from": {
+        "videoId": "RSLnwpSfe-4",
+        "i": 208
+      },
+      "start": 464.88,
+      "end": 466.6,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "우리 사귄 지 이제 겨우 2주 정도밖에 안 됐어.",
+      "text": "We've only been going out a couple of weeks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's only been a couple weeks."
+        },
+        {
+          "style": "formal",
+          "text": "It has only been a few weeks since we started dating."
+        }
+      ],
+      "note": "**going out** 은 여기서 '외출하다'가 아니라 '사귀다'라는 뜻이에요. 사귄 지 얼마 안 돼서 아직 진지한 얘기는 이르다고 할 때 씁니다. **a couple of weeks** 는 딱 2주라기보다 '2~3주쯤'이라는 느낌이에요.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 382
+      },
+      "start": 1110.2,
+      "end": 1112,
+      "recording": null
+    },
+    {
+      "i": 5,
+      "ko": "걔가 너 엄청 좋아하잖아. 커피 한잔하자고 하면 싫다고는 안 할걸.",
+      "text": "Well, given that he's desperately in love with you, he probably wouldn't mind getting a cup of coffee or something.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "He's crazy about you. He'd totally say yes to coffee."
+        },
+        {
+          "style": "formal",
+          "text": "Considering that he is deeply in love with you, I doubt he would object to having coffee with you."
+        }
+      ],
+      "note": "**given that** 은 '~인 걸 생각하면'이라는 뜻으로, 근거를 먼저 깔고 말할 때 씁니다. **wouldn't mind** 는 '싫어하지 않을 거야'인데, 실제로는 '분명히 좋아할걸'을 돌려 말하는 표현이에요.",
+      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
+      "from": {
+        "videoId": "QdQ58BbGRsA",
+        "i": 875
+      },
+      "start": 2421.64,
+      "end": 2428,
+      "recording": null
+    },
+    {
+      "i": 6,
+      "ko": "근데 이걸 이런 식으로 알게 되다니.",
+      "text": "And this is the way that I find out.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Great, so that's how I hear about it."
+        },
+        {
+          "style": "formal",
+          "text": "I cannot believe I had to learn about it this way."
+        }
+      ],
+      "note": "중요한 소식을 나만 늦게, 엉뚱한 데서 알게 돼서 서운할 때 하는 말이에요. **find out** 은 '알게 되다'라는 뜻으로, 몰랐던 사실을 알아차리게 됐을 때 씁니다.",
+      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
+      "from": {
+        "videoId": "QdQ58BbGRsA",
+        "i": 228
+      },
+      "start": 646.12,
+      "end": 647.65,
+      "recording": null
+    },
+    {
+      "i": 7,
+      "ko": "그렇긴 한데, 좋은 소식이면 지금 바로 말해 줘야지.",
+      "text": "Yeah, but if it's good news, you should tell him now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Good news? Then just tell him now."
+        },
+        {
+          "style": "formal",
+          "text": "If it is good news, I think you ought to tell him right away."
+        }
+      ],
+      "note": "**Yeah, but** 은 상대 말에 일단 맞장구를 쳐 놓고 다른 생각을 꺼낼 때 씁니다. 말할까 말까 망설이는 친구 등을 떠밀어 줄 때 딱 맞는 말이에요.",
+      "situation": "The Ones with the Whole Gang from Season 1 | Friends",
+      "from": {
+        "videoId": "QdQ58BbGRsA",
+        "i": 891
+      },
+      "start": 2456.4,
+      "end": 2459.16,
+      "recording": null
+    },
+    {
+      "i": 8,
+      "ko": "아, 아니요, 이거 제가 시킨 거 아닌데요.",
+      "text": "No, no, this is not what I ordered.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wait, I didn't order this."
+        },
+        {
+          "style": "formal",
+          "text": "Excuse me, I believe there has been a mistake with my order."
+        }
+      ],
+      "note": "식당에서 음식이 잘못 나왔을 때 그대로 쓰면 되는 말이에요. **not what I ordered** 는 '내가 시킨 게 아니다'라는 뜻이고, 더 짧게는 **I didn't order this** 라고 해도 됩니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 243
+      },
+      "start": 620.28,
+      "end": 623.08,
+      "recording": null
+    }
+  ]
+}

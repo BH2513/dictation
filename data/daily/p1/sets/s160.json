@@ -1,0 +1,112 @@
+{
+  "setId": "s160",
+  "videoId": "daily-s160",
+  "title": "Set 160",
+  "madeAt": "2026-10-04",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 시댁에 차 타고 올라갔는데, 잠깐 들렀다 오려던 게 시아버지가 울타리 고치는 걸 도와 달라고 하셔서 집에 열 시쯤에나 들어왔어.",
+      "text": "We drove up to see my in-laws on Saturday, and it was supposed to be a quick visit, but my father-in-law wanted help fixing the fence, so we didn't get home until like ten.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Saturday we went up to my in-laws'. Was supposed to be quick, but my father-in-law wanted a hand with the fence, so we didn't get back till like ten."
+        },
+        {
+          "style": "formal",
+          "text": "On Saturday we drove up to visit my in-laws. It was meant to be a brief visit, but my father-in-law asked for help repairing the fence, so we did not arrive home until around ten."
+        }
+      ],
+      "note": "**drove up to** 는 차를 타고 (보통 북쪽이나 먼 곳으로) 올라간다는 말이에요. **in-laws** 는 배우자의 부모님, 곧 시댁이나 처가 식구를 한꺼번에 가리켜요.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "모퉁이에 있는 그 커피집 원래 내가 제일 좋아하던 데였는데, 주인이 바뀌고 나서는 뭘 마셔도 좀 탄 맛이 나. 그러니까 가는 길에 딱 있어서 아직 가긴 가는데, 이제 별로 기대는 안 돼.",
+      "text": "That coffee place on the corner used to be my favorite, but it changed owners and now everything tastes kind of burnt. I mean, I still go because it's right on my way, but I don't really look forward to it anymore.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I used to love the coffee place on the corner, but new owners took over and now it all tastes kinda burnt. I still go 'cause it's right on my way, but I'm not really excited about it anymore."
+        },
+        {
+          "style": "formal",
+          "text": "The coffee shop on the corner was once my favorite, but it has changed ownership and now everything tastes somewhat burnt. I do still go, since it is directly on my way, but I no longer look forward to it."
+        }
+      ],
+      "note": "**look forward to** 는 무언가를 기다리며 기대한다는 뜻이에요. **right on my way** 는 가는 길에 바로 있다는 말이에요.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "목요일에 친구가 꼬셔서 스피닝 수업에 갔거든. 예전에 자전거 맨날 탔으니까 괜찮겠지 했는데, 다음 날 아침에 일어나니까 몸살 난 것처럼 온몸이 쑤시더라. 오랜만에 하는 건데 너무 무리했나 봐.",
+      "text": "My friend talked me into a spin class on Thursday, and I figured I'd be fine since I used to ride all the time, but I woke up the next morning feeling like I had the flu, my whole body aching. I think I just pushed way too hard for my first time back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Thursday my friend got me to go to spin class. I figured I'd be fine, I used to ride all the time, but next morning I felt like I had the flu, everything hurt. Guess I went way too hard my first time back."
+        },
+        {
+          "style": "formal",
+          "text": "On Thursday my friend persuaded me to attend a spin class, and I assumed I would be fine since I used to ride regularly. However, I woke the next morning feeling as though I had the flu, with my whole body aching. I believe I simply pushed far too hard for my first time back."
+        }
+      ],
+      "note": "**talked me into** 는 나를 설득해서 뭔가를 하게 만들었다는 말이에요. **pushed way too hard** 는 너무 무리했다는 뜻이에요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "잠깐, 지난번에 봤을 때 너 다시 학교 다닐까 생각 중이었잖아. 결국 갔어, 아니면 아직 같은 회사 다녀?",
+      "text": "Wait, last time I saw you, you were thinking about going back to school. Did you end up doing that, or are you still at the same place?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hang on, weren't you thinking about going back to school last time? Did you do it, or are you still at the same job?"
+        },
+        {
+          "style": "formal",
+          "text": "When we last spoke, you were considering returning to school. Did you decide to do so, or are you still with the same employer?"
+        }
+      ],
+      "note": "**end up doing** 은 결국 어떻게 하게 됐는지 물을 때 써요. **the same place** 는 여기서 같은 직장을 가리켜요.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그래서 휴대폰 케이스를 시켰는데, 정작 온 건 강아지 스웨터였어. 우리 집엔 개도 없는데! 반품하려면 송장을 뽑아서 우체국까지 내가 직접 가져가야 하는데, 솔직히 12달러 때문에 그럴 가치는 없어.",
+      "text": "So I ordered a phone case, and what actually showed up was a dog sweater. We don't even have a dog! And to send it back I'd have to print a label and take it to the post office myself, which honestly isn't worth it for twelve bucks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, I ordered a phone case and got a dog sweater instead. We don't even have a dog! Sending it back means printing a label and dragging it to the post office myself, and honestly that's not worth it for twelve bucks."
+        },
+        {
+          "style": "formal",
+          "text": "I ordered a phone case, but what arrived was a sweater for a dog. We do not even own a dog! To return it, I would need to print a label and bring it to the post office myself, which frankly is not worth the effort for twelve dollars."
+        }
+      ],
+      "note": "**showed up** 은 물건이 도착했다는 말로도 써요. **isn't worth it** 은 들이는 수고에 비해 그만한 가치가 없다는 뜻이에요.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 한국어 '오랜만에 처음 하는 건데'는 오랜만에와 처음이 겹쳐 어색해서 '오랜만에 하는 건데'로 고침"
+  ]
+}

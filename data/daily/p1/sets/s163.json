@@ -1,0 +1,115 @@
+{
+  "setId": "s163",
+  "videoId": "daily-s163",
+  "title": "Set 163",
+  "madeAt": "2026-10-05",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "의사 선생님이 그냥 근육이 놀란 것 같다고 해서 다행이긴 한데, 2주 동안 무거운 건 아무것도 들지 말래. 아니, 우리 애들을 못 봐서 하는 소리지.",
+      "text": "So the doctor said it's probably just a pulled muscle, which is good, but she wants me to stop lifting anything heavy for two weeks, and I'm like, have you met my kids?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Doc says it's prob just a pulled muscle, so that's good, but she wants me to quit lifting anything heavy for two weeks. Like, has she met my kids?"
+        },
+        {
+          "style": "formal",
+          "text": "The doctor told me it is most likely only a pulled muscle, which is good news, but she would like me to avoid lifting anything heavy for two weeks, and I could not help wondering whether she had ever met my children."
+        }
+      ],
+      "note": "**pulled muscle** 은 근육이 놀라거나 살짝 늘어난 것을 말해요. **have you met my kids?** 는 우리 애들 알면 그런 말 못 할걸 하고 농담처럼 받아치는 말이에요.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "퇴근하고 헬스장 가려고 했는데, 시간표가 바뀌어서 남은 수업이 8시 거 하나밖에 없더라. 그때쯤이면 벌써 저녁 먹은 뒤라서, 배부른데 가 봤자 소용없겠다 싶었어.",
+      "text": "I was going to go to the gym after work, but they changed the schedule and the only class left was at eight, and by then I'd already had dinner, so I figured there's no point going on a full stomach.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna hit the gym after work, but they moved the schedule around and the only class left was at eight. I'd already eaten by then, so I figured why bother on a full stomach."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to go to the gym after work, but the schedule was changed and the only remaining class was at eight o'clock. By that time I had already eaten dinner, so I decided there was little point in going on a full stomach."
+        }
+      ],
+      "note": "**on a full stomach** 는 배가 부른 상태로라는 뜻이에요. **there's no point** ~ing 는 ~해 봤자 소용없다는 말이에요.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "봄에 도자기 수업을 등록했는데, 처음엔 진짜 좋았거든. 근데 일 때문에 2주를 빠지고 다시 가 보니까 다들 벌써 그릇을 만들고 있는 거야. 그래서 그냥 어쩌다 보니 안 가게 됐어.",
+      "text": "I signed up for a pottery class back in the spring, and I loved it at first, but then I missed two weeks because of work, and when I went back everyone was already making bowls, so I just kind of stopped going.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Back in the spring I signed up for pottery and loved it at first, but then work made me miss two weeks, and when I went back everyone was already doing bowls, so I kinda just quit going."
+        },
+        {
+          "style": "formal",
+          "text": "I enrolled in a pottery class in the spring and enjoyed it very much at first. However, I missed two weeks because of work, and when I returned everyone was already making bowls, so I gradually stopped attending."
+        }
+      ],
+      "note": "**signed up for** 는 등록하다, 신청하다예요. **kind of stopped going** 은 딱 그만둔 건 아니고 어쩌다 보니 안 가게 됐다는 느낌이에요.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "너희 아들도 올해 해리스 선생님 반 됐어? 우리 애가 집에 와서 그 선생님은 금요일에 숙제를 내준다고 하더라고. 그게 진짜인지, 아니면 그냥 불평할 거리를 찾는 건지 모르겠어.",
+      "text": "Did your son get Mr. Harris this year too? Because mine came home saying he gives homework on Fridays, and I'm trying to figure out if that's actually true or if he's just looking for something to complain about.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Your son got Mr. Harris this year too? Mine came home saying he gives homework on Fridays, and I'm tryna figure out if that's for real or my kid just wants something to complain about."
+        },
+        {
+          "style": "formal",
+          "text": "Was your son also placed in Mr. Harris's class this year? My son came home saying that Mr. Harris assigns homework on Fridays, and I am trying to determine whether that is actually true or whether my son is simply looking for something to complain about."
+        }
+      ],
+      "note": "**get Mr. Harris** 는 해리스 선생님 반이 되다라는 뜻으로 편하게 쓰는 말이에요. **looking for something to complain about** 은 괜히 불평할 거리를 찾는다는 뜻이에요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "첫 주말만 된다면 그것도 괜찮은데, 그러면 바다 가는 건 빼야 돼. 여행 절반을 운전만 하면서 보내고 싶지는 않거든. 바다는 내년 여름으로 미루는 건 어때?",
+      "text": "If you can only do the first weekend, that's fine, but then we'd have to skip the beach part, because I don't want to spend half the trip just driving. What if we save that for next summer?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Only the first weekend works for you? That's fine, but then we gotta skip the beach, since I don't wanna spend half the trip driving. Maybe save it for next summer?"
+        },
+        {
+          "style": "formal",
+          "text": "If you are only available for the first weekend, that is perfectly fine, but we would then need to skip the beach portion, as I would prefer not to spend half of the trip driving. Perhaps we could save that for next summer?"
+        }
+      ],
+      "note": "**skip the beach part** 는 일정에서 바다 가는 부분을 빼다라는 말이에요. **What if we** ~? 는 ~하면 어때? 하고 제안할 때 써요.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어 끝문장이 반말 중에 갑자기 '그래요?'로 바뀌어 말투가 섞였음. 친구에게 하는 반말로 통일함",
+    "1번 formal 의 시제가 안 맞아서(could not help wondering whether she has met) had met 으로 맞춤",
+    "4번 한국어 '금요일에도'는 영어에 없는 '도'가 붙어 뜻이 달라져서 '금요일에'로 고침",
+    "4번 alts 에서 he 가 해리스 선생님인지 아들인지 헷갈려서 아들을 가리키는 말로 분명하게 바꿈"
+  ]
+}

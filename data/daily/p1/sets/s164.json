@@ -1,0 +1,116 @@
+{
+  "setId": "s164",
+  "videoId": "daily-s164",
+  "title": "Set 164",
+  "madeAt": "2026-10-05",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "애 빨리 재우려고 옆에 같이 누웠는데 정작 내가 곯아떨어졌어. 벌써 11시인데 설거지고 뭐고 아무것도 못 했어.",
+      "text": "I lay down with him so he'd fall asleep faster, but I'm the one who passed out, and now it's eleven and I still haven't done the dishes or anything.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got in bed with him so he'd fall asleep quicker and I'm the one who crashed. Now it's eleven and I haven't done the dishes or anything."
+        },
+        {
+          "style": "formal",
+          "text": "I lay down beside him so that he would fall asleep more quickly, but I was the one who fell asleep, and now it is eleven o'clock and I still have not washed the dishes or done anything else."
+        }
+      ],
+      "note": "**passed out** 은 기절하다라는 뜻도 있지만 일상에서는 피곤해서 곯아떨어지다라는 뜻으로 많이 씁니다. **I'm the one who** 는 다른 사람이 아니라 정작 내가 그랬다고 강조할 때 씁니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아, 다 괜찮아요, 아빠. 일이 좀 바쁘긴 한데 괜찮아요. 근데 엄마한테 차 얘기는 하지 마세요, 네? 다 해결됐어요. 엄마가 그것 때문에 매일 전화하시는 게 싫어서 그래요.",
+      "text": "Oh, everything's fine, Dad. Work's busy, but it's fine. Just don't mention the car to Mom, okay? It's totally handled, I just don't want her calling me every day about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nah, it's all good, Dad. Busy at work, but it's fine. Just don't say anything to Mom about the car, okay? I've totally got it covered, I just don't want her calling me every day about it."
+        },
+        {
+          "style": "formal",
+          "text": "Everything is fine, Dad. Work has been busy, but it is fine. Please do not mention the car to Mom. It has been completely taken care of. I simply do not want her calling me every day about it."
+        }
+      ],
+      "note": "**don't mention** A to B 는 B에게 A 얘기를 꺼내지 말라는 뜻입니다. **It's totally handled** 는 내가 알아서 다 처리했으니 걱정 말라는 말입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이번 주말에 차 타고 호수에 가려고 했는데, 거기 바람도 세고 엄청 춥대. 그래서 그냥 집에 있으면서 영화나 한 편 볼까 해.",
+      "text": "We were going to drive up to the lake this weekend, but they're saying it'll be windy and freezing up there, so we're just staying home and maybe watching a movie instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Lake trip's off this weekend. They say it's gonna be windy and freezing up there, so we're just staying in and maybe watching a movie."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to drive up to the lake this weekend, but the forecast says it will be windy and extremely cold there, so we will stay at home and perhaps watch a film instead."
+        }
+      ],
+      "note": "**they're saying** 은 일기예보나 뉴스에서 그러더라는 뜻으로 씁니다. **drive up to** 는 차를 몰고 좀 떨어진 곳까지 가다라는 말입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 집 고양이가 새벽 6시에 조리대 위 물건을 떨어뜨리면 누가 일어나서 밥을 준다는 걸 알아 버렸어. 그래서 이제 부엌에 깨질 만한 게 하나도 안 남았어.",
+      "text": "Our cat's figured out that if she knocks stuff off the counter at six in the morning, somebody gets up and feeds her, so now there's nothing breakable left in our kitchen.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So our cat's worked out that knocking stuff off the counter at six a.m. gets somebody up to feed her, and now there's nothing breakable left in the kitchen."
+        },
+        {
+          "style": "formal",
+          "text": "Our cat has learned that if she knocks items off the counter at six in the morning, someone will get up and feed her, so there is now nothing breakable left in our kitchen."
+        }
+      ],
+      "note": "**figured out** 은 스스로 알아냈다, 터득했다라는 뜻입니다. **knocks stuff off** 는 물건을 쳐서 떨어뜨린다는 말입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "배송 완료라고 뜨는데 문 앞에 없어. 이웃들한테도 벌써 물어봤어. 내일까지 안 오면 가게에 전화해야 할 것 같은데, 진짜 한 시간씩 통화 대기하고 싶지는 않아.",
+      "text": "It says delivered, but it's not at my door, and I already asked the neighbors. If it doesn't show up by tomorrow, I guess I'll call the store, but I really don't want to sit on hold for an hour.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Says it got delivered, but it's not here, and I've already checked with the neighbors. If it doesn't turn up by tomorrow I guess I'll call the store, but I really don't wanna be stuck on hold for an hour."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking shows it as delivered, but it is not at my door, and I have already asked the neighbors. If it does not arrive by tomorrow, I suppose I will call the store, although I would much prefer not to wait on hold for an hour."
+        }
+      ],
+      "note": "**show up** 은 물건이나 사람이 나타나다, 도착하다라는 뜻입니다. **sit on hold** 는 전화 연결을 기다리며 대기하다라는 말입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal 의 'Please do not mention the car to Mom, would you?' 는 정중한 부탁 뒤에 부가의문을 붙인 어색한 꼴이라 부가의문을 뺐습니다.",
+    "3번 text 의 catching a movie 는 보통 극장에 가서 보는 것인데 집에 있겠다는 말과 부딪혀 watching a movie 로 바꿨고, formal 의 go to see a film 도 watch a film 으로 맞췄습니다. note 의 catch a movie 는 이제 문장에 없어서 drive up to 로 바꿨습니다.",
+    "3번 casual 의 Was gonna 는 주어가 빠져 나 혼자 가려던 것처럼 들리고 text 와 앞부분도 겹쳐서 다르게 시작하도록 고쳤습니다.",
+    "4번 note 의 figure out, knock stuff off 는 문장에 그 꼴로 나오지 않아 실제로 나오는 figured out, knocks stuff off 로 맞췄습니다.",
+    "5번 casual 에서 it's not here 가 두 번 되풀이돼서 뒤의 것을 doesn't turn up 으로 바꿨습니다."
+  ]
+}

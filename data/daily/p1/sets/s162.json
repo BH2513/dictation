@@ -1,0 +1,116 @@
+{
+  "setId": "s162",
+  "videoId": "daily-s162",
+  "title": "Set 162",
+  "madeAt": "2026-10-05",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "요즘 잠을 통 못 자. 그냥 스트레스 때문인 줄 알았는데, 알고 보니 점심 먹고 마시던 커피 탓인 것 같더라고. 그래서 그걸 끊었고, 이제 진짜 효과가 있는지 지켜보는 중이야.",
+      "text": "I haven't been sleeping well at all lately. I thought it was just stress, but it turns out it's probably the coffee I've been having after lunch, so I cut that out, and now I'm just waiting to see if it actually helps.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I've been sleeping terribly lately. Figured it was stress, but turns out it's probably my after-lunch coffee, so I quit that and now I'm just waiting to see if it helps."
+        },
+        {
+          "style": "formal",
+          "text": "I have not been sleeping well at all recently. I assumed it was simply stress, but it appears the coffee I have been drinking after lunch is the likely cause, so I have stopped drinking it, and I am now waiting to see whether that makes a difference."
+        }
+      ],
+      "note": "**it turns out** 는 알고 보니 ~더라 라는 뜻으로, 생각과 다른 사실을 알게 됐을 때 씁니다. **cut that out** 은 습관이나 음식을 끊었다는 말입니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이번 주말에 아무것도 안 했는데, 솔직히 몇 달 만에 제일 좋은 주말이었어. 빨래라도 좀 해야 하지 않나 계속 생각했는데 결국 안 했어. 근데 하나도 안 찔려.",
+      "text": "I didn't do a single thing this weekend, and honestly, it was the best weekend I've had in months. I kept thinking I should at least do some laundry, but I never did, and I don't even feel bad about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did absolutely nothing this weekend, and honestly? Best weekend I've had in months. Kept telling myself I should at least do laundry, never did, and I don't even feel bad."
+        },
+        {
+          "style": "formal",
+          "text": "I did not do a single thing this weekend, and to be honest, it was the best weekend I have had in months. I kept thinking that I ought to at least do some laundry, but I never did, and I do not even feel guilty about it."
+        }
+      ],
+      "note": "**I didn't do a single thing** 은 아무것도 안 했다를 강조하는 말입니다. **feel bad about it** 은 그 일로 마음이 찔리거나 미안하다는 뜻입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "3월에 집 계약이 끝나는데, 마음 한편으로는 언니네 근처로 진짜 이사 가고 싶거든. 근데 그러면 병원도 새로 찾고 헬스장도 새로 찾고 전부 다 새로 해야 하잖아. 그렇게 처음부터 다시 시작할 준비가 됐는지 모르겠어.",
+      "text": "My lease is up in March, and part of me really wants to move closer to my sister, but then I'd have to find a new doctor and a new gym and a new everything, and I'm not sure I'm ready to start over like that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Lease is up in March, and part of me really wants to move near my sister. But then it's a new doctor, new gym, new everything, and I dunno if I'm ready to start over like that."
+        },
+        {
+          "style": "formal",
+          "text": "My lease ends in March, and part of me would very much like to move closer to my sister. However, I would then need to find a new doctor, a new gym, and a new everything, and I am not certain I am ready to start over in that way."
+        }
+      ],
+      "note": "**My lease is up** 은 임대 계약 기간이 끝난다는 뜻입니다. **part of me** 는 마음 한편으로는 이라는 말이고, **start over** 는 처음부터 다시 시작하다 입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "부엌 수도꼭지 고치는 법 찾아보려고 앉았는데, 어쩌다 보니 두 시간 뒤에 웬 아저씨가 낡은 배 복원하는 영상을 보고 있더라. 아 참, 수도꼭지는 아직도 물이 똑똑 떨어져.",
+      "text": "I sat down to look up how to fix the kitchen faucet, and somehow two hours later I was watching some guy restore an old boat. And the faucet's still dripping, by the way.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna figure out the faucet, and two hours later I'm watching some guy fix up a boat. Faucet's still dripping, by the way."
+        },
+        {
+          "style": "formal",
+          "text": "I sat down to find out how to repair the kitchen faucet, and somehow, two hours later, I was watching a man restore an old boat. The faucet, I should add, is still dripping."
+        }
+      ],
+      "note": "**somehow** 는 어쩌다 보니 라는 뜻입니다. **by the way** 는 말끝에 붙여 아 참, 그나저나 하고 덧붙일 때 씁니다. **dripping** 은 물이 똑똑 새는 것입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "네가 말해 준 그 태국 음식점 드디어 가 봤는데, 네 말이 맞더라. 카레 진짜 맛있었어. 근데 자리 나는 데 한 40분은 기다려야 해서, 다음엔 그냥 포장해 올까 봐.",
+      "text": "We finally went to that Thai place you told us about, and you were right, the curry was amazing. But we had to wait like forty minutes for a table, so next time I think we'll just get takeout.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally hit up that Thai place you told us about. You were right, the curry was amazing. But it was like a forty-minute wait for a table, so next time, takeout."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended, and you were quite right; the curry was excellent. However, we had to wait approximately forty minutes for a table, so next time I believe we will simply order takeout."
+        }
+      ],
+      "note": "**you were right** 는 네 말이 맞았다 라는 뜻입니다. **wait like forty minutes** 의 like 는 한 ~쯤 이라는 말버릇이고, **get takeout** 은 음식을 포장해 오다 입니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal 에서 text 의 even(하나도)이 빠져 뜻이 약해졌으므로 I do not even feel guilty 로 되살림",
+    "2번 한국어 끝 그게 하나도 찔리지 않아 가 번역투라 근데 하나도 안 찔려 로 고침",
+    "3번 한국어가 part of me(마음 한편으로는)를 이사 가고 싶은 마음이 정말 크거든 으로 옮겨 뜻이 달라졌으므로 마음 한편으로는 으로 맞춤",
+    "4번 casual 이 text 와 앞부분(look up how to fix the kitchen faucet)이 거의 같아 더 짧은 구어로 새로 씀",
+    "5번 casual 이 text 와 같은 We finally 로 시작하고 구조가 거의 같아 더 짧고 끊어 말하는 구어로 새로 씀"
+  ]
+}

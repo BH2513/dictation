@@ -1,0 +1,118 @@
+{
+  "setId": "s169",
+  "videoId": "daily-s169",
+  "title": "Set 169",
+  "madeAt": "2026-10-07",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "응, 엄마, 밥 잘 먹고 있어, 진짜야. 요즘 야근을 좀 많이 해서 그러니까, 내가 전화 안 받아도 무슨 일 있는 거 아니야. 아마 소파에서 그냥 잠들었을 거야.",
+      "text": "Yeah, Mom, I'm eating fine, I swear. I've just been working late a lot, so if I don't pick up, it's not because anything's wrong, I'm probably just asleep on the couch.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm eating, promise. Work's just been nuts, so if I don't pick up, I'm fine, I probably just crashed on the couch."
+        },
+        {
+          "style": "formal",
+          "text": "Yes, Mom, I am eating properly, I promise. I have simply been working late quite often, so if I do not answer, it is not because something is wrong. I am most likely asleep on the couch."
+        }
+      ],
+      "note": "**I swear** 는 진짜야, 맹세해 처럼 내 말을 믿어 달라고 강조할 때 씁니다. 캐주얼의 **crashed on the couch** 는 너무 피곤해서 소파에 쓰러져 잠든 것을 말합니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이번엔 진짜 건강하게 먹는 걸 계속할 줄 알았어. 다 직접 해 먹고 있었으니까. 근데 일이 미친 듯이 바빠지면서 매일 밤 배달을 시켜 먹기 시작했고, 이제는 거의 포기한 상태야.",
+      "text": "I really thought I'd stick with eating healthy this time, because I was cooking everything myself, but then work got crazy and I started ordering in every night, and now I've kind of stopped trying.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Figured I'd actually stick to eating healthy this time since I was cooking everything myself, but then work got nuts, I started getting takeout every night, and now I've kinda given up."
+        },
+        {
+          "style": "formal",
+          "text": "I truly believed I would maintain a healthy diet this time, since I was preparing all of my own meals, but then work became extremely busy and I began ordering delivery every night, and now I have more or less stopped trying."
+        }
+      ],
+      "note": "**stick with** 는 마음먹은 일을 꾸준히 계속하다는 뜻입니다. **ordering in** 은 음식을 집으로 배달시켜 먹는 것을 말합니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "내 옆자리 앉는 그 사람 알지? 오늘 회의에서 내 아이디어를 가져가서 자기 것처럼 발표하더라. 근데 난 그냥 가만히 앉아 있었어. 내가 뭐라고 했으면 나만 나쁜 사람 됐을 테니까.",
+      "text": "You know the guy who sits next to me? He took my idea in the meeting today and pitched it like it was his, and I just sat there, because if I'd said something, I would've looked like the bad guy.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Guy next to me totally stole my idea in the meeting and passed it off as his. I just sat there, 'cause if I'd said anything, I'd have looked like the bad guy."
+        },
+        {
+          "style": "formal",
+          "text": "You know the colleague who sits beside me? He took my idea in today's meeting and presented it as though it were his own, and I simply remained silent, because had I spoken up, I would have appeared to be the one in the wrong."
+        }
+      ],
+      "note": "**pitched it** 는 아이디어를 내놓고 설득하듯 발표했다는 뜻입니다. **looked like the bad guy** 는 괜히 나만 나쁜 사람처럼 보인다는 말입니다. 캐주얼의 **passed it off as his** 는 남의 것을 자기 것인 척했다는 뜻입니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이사 도와주고 싶어, 진짜로. 근데 그 토요일에 언니네 애들 봐 주기로 약속했거든. 또 약속을 깰 수는 없어. 대신 일요일에 가서 짐 푸는 거 도와줘도 될까?",
+      "text": "I'd love to help you move, I really would, but I promised my sister I'd watch her kids that Saturday, and I can't back out on her again. Can I come by Sunday and help you unpack instead?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wish I could help you move, seriously, but I told my sister I'd babysit her kids that Saturday and I can't bail on her again. Can I swing by Sunday and help you unpack instead?"
+        },
+        {
+          "style": "formal",
+          "text": "I would be glad to help you move, truly, but I promised my sister that I would look after her children that Saturday, and I cannot cancel on her again. Would it be all right if I came by on Sunday to help you unpack instead?"
+        }
+      ],
+      "note": "**back out on** 은 하기로 한 약속에서 빠져서 상대를 저버리는 것을 말합니다. 캐주얼의 **swing by** 는 잠깐 들르다는 뜻입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "2주 전에 조카 생일 선물을 주문했는데, 배송 조회가 지난주 화요일 이후로 그대로야. 그래서 계속 기다려야 할지 그냥 가게 가서 뭐 하나 사야 할지 모르겠어. 조카 생일 파티가 토요일이거든.",
+      "text": "I ordered a birthday present for my nephew two weeks ago, and the tracking hasn't changed since last Tuesday. So now I don't know if I should keep waiting or just go buy something at the store, because his party's on Saturday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My nephew's birthday present, I ordered it two weeks ago, and the tracking hasn't budged since last Tuesday. So I dunno if I should keep waiting or just grab something at the store, since his party's Saturday."
+        },
+        {
+          "style": "formal",
+          "text": "I placed an order for my nephew's birthday present two weeks ago, and the tracking information has not been updated since last Tuesday. I am therefore unsure whether to continue waiting or simply purchase something at a store, as his party is on Saturday."
+        }
+      ],
+      "note": "**the tracking hasn't changed** 는 배송 조회 정보가 바뀌지 않았다는 뜻입니다. 캐주얼의 **hasn't budged** 는 꿈쩍도 안 했다는 느낌으로 씁니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 앞부분(Mom, I'm eating fine)이 거의 같아서 더 짧은 구어로 새로 썼습니다.",
+    "1번 formal 의 Mother 는 실제 통화에서 거의 안 쓰는 딱딱한 호칭이라 Mom 으로 돌렸습니다. 말투는 나머지로 올렸습니다.",
+    "1번 한국어의 '야근을 자주 해서 그래' 는 무엇을 설명하는지가 붕 떠서 뒷말과 이어지게 고쳤습니다.",
+    "3번 casual 이 text 를 거의 그대로 옮긴 수준이라 줄이고 passed it off as his 로 바꿨습니다. note 도 맞췄습니다.",
+    "3번 formal 의 Are you familiar with 는 친구한테 하는 말로는 어색해서 You know 형태를 살렸고, 아이디어를 가져갔다는 내용이 빠져 있어서 되살렸습니다.",
+    "3번 한국어 '남자' 를 '그 사람' 으로 바꿔 더 자연스럽게 했습니다.",
+    "2번 한국어 '음식을 전부 내가 해 먹고' 를 '다 직접 해 먹고' 로 다듬었습니다."
+  ]
+}

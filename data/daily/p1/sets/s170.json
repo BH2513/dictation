@@ -1,0 +1,113 @@
+{
+  "setId": "s170",
+  "videoId": "daily-s170",
+  "title": "Set 170",
+  "madeAt": "2026-10-07",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "점심 먹으면서 영상 딱 하나만 보려고 했는데, 다음 영상이 계속 저절로 넘어가더라. 고개 들어 보니까 쉬는 시간이 다 끝났고, 샌드위치도 다 못 먹었어.",
+      "text": "I told myself I'd watch one video while I ate lunch, but it just kept playing the next one, and when I looked up my whole break was gone and I hadn't even finished my sandwich.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna watch one video over lunch, but it kept autoplaying the next one, and by the time I looked up my break was over and I hadn't even finished my sandwich."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to watch only one video during lunch, but the next one continued to play automatically, and when I looked up, my entire break had passed and I had not yet finished my sandwich."
+        }
+      ],
+      "note": "**I told myself** 는 속으로 ~하기로 마음먹었다는 뜻이에요. **looked up** 은 하던 것에서 고개를 들었다는 말이고, casual 의 **autoplaying** 은 다음 영상이 자동 재생되는 것을 말해요.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "안녕하세요, 3B호예요. 일요일부터 식기세척기에서 물이 새서 부엌 바닥이 온통 물이에요. 그래서 설거지를 전부 손으로 하고 있어요. 이번 주 안에 누가 와서 좀 봐 주실 수 있을까요? 제가 출근하고 없을 때 들어오셔도 괜찮아요.",
+      "text": "Hi, it's me from 3B. The dishwasher's been leaking all over the kitchen floor since Sunday, so I've been washing everything by hand. Is there any way someone could come take a look this week? I'm fine with them coming in while I'm at work.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, 3B here. Dishwasher's been leaking all over the kitchen floor since Sunday, so I'm washing everything by hand. Any chance somebody could swing by and check it this week? Totally fine if they come in while I'm at work."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is the tenant in 3B. The dishwasher has been leaking onto the kitchen floor since Sunday, so I have been washing everything by hand. Would it be possible for someone to come and inspect it this week? It would be perfectly fine for them to enter while I am at work."
+        }
+      ],
+      "note": "**Is there any way** 는 혹시 ~할 수 있을까요 하고 정중하게 부탁하는 말이에요. **take a look** 은 한번 살펴보다, casual 의 **swing by** 는 잠깐 들르다라는 뜻이에요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그래서 요즘 어떻게 지냈어? 저번에 얘기했을 때 회사 그만둘까 고민하고 있었잖아. 진짜 그만뒀어, 아니면 아직 다니고 있어?",
+      "text": "So what have you been up to? Last time we talked, you were thinking about quitting your job. Did you actually do it, or are you still there?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Anyway, what's new with you? Last time we talked you were thinking of quitting. Did you go through with it, or are you still stuck there?"
+        },
+        {
+          "style": "formal",
+          "text": "How have you been? When we last spoke, you were considering leaving your job. Did you decide to resign, or are you still working there?"
+        }
+      ],
+      "note": "**What have you been up to?** 는 요즘 뭐 하고 지냈냐고 안부를 묻는 말이에요. casual 의 **go through with it** 은 고민하던 일을 실제로 해냈다는 뜻이에요.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "시내에 새로 생긴 카페에 가 봤는데 자리가 하나도 없는 거야. 그래서 누가 나가길 기다리면서 음료 들고 한 20분쯤 돌아다녔어. 근데 겨우 앉고 보니까 커피가 결국 다 식어 있더라.",
+      "text": "We tried that new cafe downtown, and there wasn't a single seat, so we just walked around with our drinks for like twenty minutes waiting for someone to leave. And by the time we finally sat down, my coffee was cold anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went to that new cafe downtown and there wasn't one open seat, so we kinda wandered around with our drinks for like twenty minutes waiting for somebody to leave. And when we finally got a table, my coffee was cold anyway."
+        },
+        {
+          "style": "formal",
+          "text": "We visited the new cafe downtown, and there were no seats available, so we walked around with our drinks for about twenty minutes, waiting for someone to leave. By the time we were finally seated, my coffee had gone cold."
+        }
+      ],
+      "note": "**there wasn't a single seat** 는 자리가 하나도 없었다는 강조 표현이에요. **by the time** 은 ~할 즈음에는, 끝의 **anyway** 는 그렇게 기다렸는데도 결국이라는 느낌이에요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "딸이 노래 한 곡만 더 불러 달라고 계속 졸랐는데, 드디어 눈이 감기고 있어서 계속 불러 줬거든. 근데 멈추기만 하면 벌떡 다시 일어나 앉는 거야. 한 시간은 불렀을 거야. 이제 기운이 하나도 없어.",
+      "text": "My daughter kept asking for one more song, and I kept saying yes because her eyes were finally closing, but every time I stopped she'd sit right up again. I must've sung for an hour, and now I've got nothing left.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My kid kept begging for one more song and I kept going along with it 'cause her eyes were finally closing, but every time I stopped she'd pop right back up. Must've sung for an hour, and I'm totally wiped."
+        },
+        {
+          "style": "formal",
+          "text": "My daughter continued to ask for one more song, and I kept agreeing because her eyes were finally closing, but each time I stopped, she would sit up again. I must have sung for an hour, and I am now completely exhausted."
+        }
+      ],
+      "note": "**I've got nothing left** 는 힘이 하나도 안 남았다는 말이에요. **must've** 는 ~했을 거다라는 추측이고, casual 의 **wiped** 는 녹초가 됐다는 뜻이에요.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal: I am comfortable with them entering 은 딱딱하고 어색해서 It would be perfectly fine for them to enter 로 고침",
+    "4번 한국어와 note: 여기서 anyway 는 어차피가 아니라 그래 봤자, 결국 이라는 느낌이라 한국어와 설명을 고침"
+  ]
+}

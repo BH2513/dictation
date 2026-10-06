@@ -1,0 +1,122 @@
+{
+  "setId": "s168",
+  "videoId": "daily-s168",
+  "title": "Set 168",
+  "madeAt": "2026-10-07",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "너희 딸 학교도 이제 성적을 집으로 안 보내 주는 거야? 나는 학부모 상담 가서야 우리 애가 수학 낙제점 받고 있는 줄 알았어. 그때는 뭘 해 보기엔 좀 늦었더라고.",
+      "text": "Is your daughter's school also doing that thing where they don't send grades home anymore? Because I had no idea my kid was failing math until the parent-teacher conference, and by then it was kind of too late to do anything about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Does your daughter's school not send grades home anymore either? I didn't know my kid was failing math till the parent-teacher conference, and by then it was kinda too late to fix it."
+        },
+        {
+          "style": "formal",
+          "text": "Has your daughter's school also stopped sending grades home? I was not aware that my child was failing mathematics until the parent-teacher conference, and by that point it was rather too late to do anything about it."
+        }
+      ],
+      "note": "**doing that thing where** 는 요즘 그런 식으로 하는 거 있잖아, 하고 다들 아는 방식을 가리킬 때 쓰는 구어 표현이에요. **by then** 은 그때쯤엔 이미, 라는 뜻이에요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그냥 상사한테 나 번아웃 왔다고 말해야 하나 하는 생각이 자꾸 들어. 근데 그러면 상사가 좋은 프로젝트를 딴 사람한테 돌릴지도 몰라. 그래서 모르겠어. 연휴 지날 때까지 기다려 보고 좀 나아지나 볼까?",
+      "text": "I keep thinking I should just tell my boss I'm burned out, but if I do, he might start giving the good projects to someone else. So I don't know. Maybe I'll wait until after the holidays and see if it gets any better?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Part of me just wants to tell my boss I'm burned out, but then he might start handing the good projects to someone else. So, I dunno. Maybe I'll wait till after the holidays and see if it gets better?"
+        },
+        {
+          "style": "formal",
+          "text": "I keep thinking that I ought to tell my manager that I am burned out; however, if I do, he may begin assigning the better projects to someone else. I am therefore unsure. Perhaps I will wait until after the holidays and see whether the situation improves?"
+        }
+      ],
+      "note": "**I keep thinking** 은 자꾸 그런 생각이 든다는 말이에요. **burned out** 은 일에 지쳐서 완전히 바닥난 상태예요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "일요일에 남동생이랑 등산 갔거든, 거의 1년 만에. 산 위에 있을 땐 기분 진짜 좋았는데 지금은 몸살 오려나 봐. 온몸이 다 쑤시고 하루 종일 으슬으슬 추워.",
+      "text": "I went hiking with my brother on Sunday, first time in like a year, and I felt great while we were up there, but now I think I'm coming down with something, because everything hurts and I've been freezing all day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My brother and I went hiking Sunday, first time in like a year, and I felt awesome up there, but now I think I'm getting sick, cause everything hurts and I've been freezing all day."
+        },
+        {
+          "style": "formal",
+          "text": "On Sunday I went hiking with my brother for the first time in about a year, and I felt wonderful while we were up there; however, I now believe I am coming down with something, as everything hurts and I have felt cold all day."
+        }
+      ],
+      "note": "**coming down with something** 은 감기나 몸살 기운이 올 때 써요. **freezing** 은 몹시 춥다는 뜻이에요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "늦어서 미안, 고속도로에 엄청 큰 사고가 났었어. 그래, 알았어 알았어, 늦잠도 잤어. 근데 사고 난 건 진짜야, 뉴스에서 봤다니까!",
+      "text": "Sorry I'm late, there was this huge accident on the highway, and okay, fine, I overslept. But there really was an accident, I saw it on the news!",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My bad, huge wreck on the highway. Alright, alright, I slept in too. But the wreck was real, it was on the news!"
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for being late. There was a serious accident on the highway, and, I must admit, I also overslept. However, there truly was an accident; I saw it reported on the news."
+        }
+      ],
+      "note": "**okay, fine** 은 마지못해 사실을 인정할 때 붙이는 말이에요. **overslept** 는 늦잠을 잤다는 뜻이에요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "진짜 뛰러 나가려고 신발 신고 있었거든. 근데 여동생한테 전화가 와서 결국 한 시간이나 통화했어. 전화 끊고 나니까 밖이 깜깜해서 그냥 내일 가야겠다 했지.",
+      "text": "I was literally putting my shoes on to go for a run, and then my sister called, and we ended up talking for an hour, and by the time I got off the phone it was dark out, so I figured I'd just go tomorrow.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I had my shoes half on for a run, then my sister called and we talked for like an hour, and when I hung up it was already dark, so I was like, eh, tomorrow."
+        },
+        {
+          "style": "formal",
+          "text": "I was in the middle of putting on my shoes to go for a run when my sister called, and we ended up speaking for an hour. By the time I finished the call, it was dark outside, so I decided I would simply go tomorrow."
+        }
+      ],
+      "note": "**ended up** 은 어쩌다 보니 결국 그렇게 됐다는 말이에요. **got off the phone** 은 전화를 끊었다는 뜻이고, **I figured** 는 그냥 ~해야겠다 싶었다는 느낌이에요.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번: parent teacher conference 를 원어민 표기대로 parent-teacher conference 로 고쳐 text·alts 모두에 맞춤",
+    "1번: 한국어 '수학에서 낙제하고 있다는 걸' 이 번역투라 '수학 낙제점 받고 있는 줄' 로 고침",
+    "1번: note 의 doing that thing where 설명이 실제 쓰임(요즘 그런 식으로 하는 거 있잖아)과 달라 고침",
+    "2번: 한국어 둘째 문장에 주어가 빠져 누가 프로젝트를 주는지 흐려서 '상사가' 를 넣고 자연스럽게 다듬음",
+    "2번: formal 의 I continue to think 가 어색해서 I keep thinking that I ought to 로 고침",
+    "3번: 몸살 기운에 '너무 추워' 는 어색해서 '으슬으슬 추워' 로 고침",
+    "3번: casual 의 since 가 말투에 안 맞아 cause 로 바꿈",
+    "4번: casual 이 text 와 okay, fine 부분까지 겹쳐서 Alright, alright, I slept in 으로 바꾸고 더 짧게 끊음",
+    "4번: 한국어 '그래, 알았어, 늦잠 잤어' 가 마지못해 인정하는 느낌이 약해 '알았어 알았어, 늦잠도 잤어' 로 고침",
+    "5번: casual 의 끝부분이 text 와 그대로 겹쳐 so I was like, eh, tomorrow 로 바꿈",
+    "5번: note 의 I figured 설명이 틀려(그렇게 하기로 했다가 아니라 ~겠다 싶었다) 고침"
+  ]
+}

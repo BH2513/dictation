@@ -1,0 +1,116 @@
+{
+  "setId": "s165",
+  "videoId": "daily-s165",
+  "title": "Set 165",
+  "madeAt": "2026-10-06",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저기, 침실 히터가 아직도 안 돼요. 지난주에 사람 보내 주신다고 하셨는데 아무도 안 왔어요. 밤에 진짜 추워지고 있어서 그러는데, 기사님한테 한 번 더 연락해 주실 수 있을까요?",
+      "text": "Hey, so the heater in the bedroom still isn't working. I know you said you'd send someone last week, but nobody ever came, and it's getting really cold at night, so could you maybe call them again?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Heater in the bedroom's still broken. You said you'd send someone last week but nobody ever showed, and it's getting super cold at night. Can you give them another call?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I wanted to let you know that the heater in the bedroom is still not working. I understand you said you would send someone last week, but no one came, and it is becoming quite cold at night. Would you be able to contact them again?"
+        }
+      ],
+      "note": "**send someone** 는 사람을 보내 주다, 여기서는 고치러 올 사람을 보내 준다는 뜻입니다. **could you maybe** 를 붙이면 부탁이 한결 부드러워집니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "진짜 잘하고 있었거든. 6파운드쯤 빠졌었는데, 금요일에 친구 생일이라 케이크 한 조각쯤은 괜찮겠지 했지. 근데 토요일엔 피자, 일요일엔 타코 먹고, 그래서 뭐, 거의 원점이야.",
+      "text": "I was doing so well, I'd lost like six pounds, and then it was my friend's birthday on Friday and I figured one slice of cake wouldn't hurt. But then it was pizza on Saturday and tacos on Sunday, so yeah, I'm pretty much back where I started.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, I was killing it, down like six pounds. Then it was my friend's birthday Friday and I'm like, one slice of cake won't hurt. Then pizza Saturday, tacos Sunday, and yep, I'm basically back where I started."
+        },
+        {
+          "style": "formal",
+          "text": "I had been making excellent progress and had lost approximately six pounds. However, my friend's birthday was on Friday, and I assumed one slice of cake would do no harm. That was followed by pizza on Saturday and tacos on Sunday, so I am essentially back where I began."
+        }
+      ],
+      "note": "**back where I started** 는 처음 자리로 돌아왔다, 즉 원점이라는 뜻입니다. **wouldn't hurt** 는 해가 될 것 없다, 괜찮겠지라는 말입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 드라마는 내가 그거 보려고 밤늦게까지 안 자던 유일한 거였는데, 아빠 역을 죽여 버린 뒤로는 그냥 사람들이 부엌에서 서로 소리 지르는 게 다야. 여기까지 봤으니까 계속 보긴 하는데, 솔직히 이제 왜 보는지도 모르겠어.",
+      "text": "That show used to be the one thing I'd stay up for, but ever since they killed off the dad, it's just people yelling at each other in the kitchen. I keep watching because I've come this far, but honestly I don't even know why anymore.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I used to stay up just for that show, but since they killed off the dad it's just people yelling in the kitchen. I only keep watching because I've come this far, and honestly I dunno why anymore."
+        },
+        {
+          "style": "formal",
+          "text": "That program was once the only thing I would stay up late to watch, but since the father's character was killed off, it consists mostly of people shouting at one another in the kitchen. I continue watching because I have come this far, but frankly, I am no longer certain why."
+        }
+      ],
+      "note": "**killed off** 는 드라마에서 등장인물을 죽여 하차시키는 것입니다. **I've come this far** 는 여기까지 왔으니 아깝다는 느낌을 줍니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그 에어프라이어는 진짜 사지 말았어야 했어. 매일 밤 쓸 줄 알았는데, 너무 커서 조리대 반을 차지하는데 정작 두 번쯤 썼나? 그래서 지금 산 값보다 훨씬 싸게 인터넷에 팔려고 내놨어.",
+      "text": "I really shouldn't have bought that air fryer. I thought I'd use it every night, but it's so big it takes up half the counter and I've used it maybe twice, so now I'm trying to sell it online for way less than I paid.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Man, buying that air fryer was a mistake. Thought I'd use it every night, but it's huge, hogs half the counter, and I've used it like twice. Now I'm trying to sell it online for way less than I paid."
+        },
+        {
+          "style": "formal",
+          "text": "I truly should not have purchased that air fryer. I expected to use it every evening, but it is so large that it occupies half of the counter, and I have used it perhaps twice. I am now attempting to sell it online for considerably less than I paid."
+        }
+      ],
+      "note": "**shouldn't have bought** 는 사지 말았어야 했다는 후회의 표현입니다. **takes up** 은 자리를 차지한다는 뜻이고, **way less** 는 훨씬 적게라는 말입니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "정말 미안한데 나 이제 가 봐야겠어. 다섯 시에 일어나서 여동생 공항에 데려다줘야 하거든. 여기서 한 잔 더 마시면 아침에 분명 후회할 거야.",
+      "text": "I'm so sorry, but I've got to head out. I have to be up at five to drive my sister to the airport, and if I stay for one more drink, I know I'm going to regret it in the morning.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ah, sorry, I gotta take off. I'm up at five to drive my sister to the airport, and if I have one more drink I'm gonna regret it in the morning."
+        },
+        {
+          "style": "formal",
+          "text": "I sincerely apologize, but I must leave now. I need to wake up at five o'clock to drive my sister to the airport, and if I stay for another drink, I am certain I will regret it in the morning."
+        }
+      ],
+      "note": "**head out** 은 자리를 뜨다, 나가 보다라는 뜻입니다. **be up at five** 는 다섯 시에 일어나 있어야 한다는 말입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어 '거기에 한 번 더 전화해'는 거기가 어디인지 흐려서 '기사님한테 한 번 더 연락해'로 고침",
+    "1번 note에서 send someone을 '수리 기사를 부른다'고 풀었는데 실제 뜻은 집주인이 사람을 보내 주는 것이라 바로잡음",
+    "3번 한국어 '아빠를 죽인 뒤로는'은 실제로 사람을 죽인 것처럼 읽혀서 '아빠 역을 죽여 버린 뒤로는'으로 고침",
+    "3번 한국어 '밤새워서 보던 유일한 거'는 번역투이고 stay up for의 뜻과도 달라서 '그거 보려고 밤늦게까지 안 자던 유일한 드라마'로 고침",
+    "4번 한국어가 '차지하고 한 두 번 썼나?'로 어색하게 이어져서 '차지하는데 정작 두 번쯤 썼나?'로 고치고 띄어쓰기(한두 번)도 바로잡음"
+  ]
+}

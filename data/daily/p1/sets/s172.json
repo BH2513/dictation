@@ -1,0 +1,113 @@
+{
+  "setId": "s172",
+  "videoId": "daily-s172",
+  "title": "Set 172",
+  "madeAt": "2026-10-08",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "작동은 잘 되는데, 소리를 끝까지 올리면 왼쪽 스피커가 좀 지직거려서 20달러 깎았어요. 나중에 그걸로 메시지 받는 것보다 지금 말씀드리는 게 나을 것 같아서요.",
+      "text": "It works fine, it's just that the left speaker crackles a bit if you turn it all the way up, so I knocked twenty bucks off. I'd rather tell you now than have you message me about it later.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Works fine, the left speaker just crackles a little when you crank it all the way up, so I took twenty bucks off. Figured I'd tell you now instead of you messaging me about it later."
+        },
+        {
+          "style": "formal",
+          "text": "It works perfectly well. The only issue is that the left speaker crackles slightly at full volume, so I have reduced the price by twenty dollars. I would rather mention it now than have you contact me about it later."
+        }
+      ],
+      "note": "**knocked twenty bucks off** 는 값에서 20달러를 깎았다는 뜻입니다. **I'd rather tell you now than** ~ 는 ~하느니 차라리 지금 말하겠다는 뜻이고, casual 의 **crank it all the way up** 은 볼륨을 끝까지 올린다는 말입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "자, 우리 30분째 화면만 넘기고 있어. 하나만 더 싫다고 하면 내가 고를 거고, 그땐 불평하기 없기야.",
+      "text": "Okay, we've been scrolling for half an hour. If you say no to one more thing, I'm picking, and you don't get to complain about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Half an hour of scrolling, seriously. One more no and I'm picking, and you can't complain."
+        },
+        {
+          "style": "formal",
+          "text": "We have been scrolling for half an hour now. If you decline one more option, I will make the choice, and you will not be able to complain about it."
+        }
+      ],
+      "note": "**you don't get to complain** 은 너는 불평할 자격이 없다, 불평하기 없기라는 뜻입니다. **scrolling** 은 화면을 계속 넘기며 고르는 것을 말합니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "윗집에 꼬마가 있는데 아침 6시부터 이리저리 뛰어다녀. 애니까 이해는 하는데, 한 달째 6시 넘어서까지 자 본 적이 없어서 좀 미칠 것 같아.",
+      "text": "The people upstairs have a little kid who runs back and forth from six in the morning, and I get it, he's a kid, but I haven't slept past six in a month and I'm kind of losing my mind.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Upstairs neighbors' little kid runs back and forth starting at six a.m. I get it, he's a kid, but I haven't slept past six in a month and I'm kinda going crazy."
+        },
+        {
+          "style": "formal",
+          "text": "The family upstairs has a young child who runs back and forth from six in the morning. I understand that he is only a child, but I have not slept past six in a month, and I am close to my wits' end."
+        }
+      ],
+      "note": "**I get it** 은 이해한다, 알겠다는 뜻의 구어입니다. **losing my mind** 는 미칠 것 같다는 뜻이고, **slept past six** 는 6시를 넘겨서까지 잤다는 말입니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "주말 내내 아무것도 안 했거든. 죄책감 들 줄 알았는데, 솔직히 이렇게 월요일부터 벌써 피곤하지 않은 건 진짜 오랜만이야.",
+      "text": "I didn't do a single thing all weekend, and I thought I'd feel guilty about it, but honestly, this is the first Monday in ages where I'm not already tired.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did absolutely nothing all weekend. Thought I'd feel guilty, but honestly? First Monday in forever I'm not wiped out already."
+        },
+        {
+          "style": "formal",
+          "text": "I did not do anything at all over the weekend, and I expected to feel guilty about it. To be honest, however, this is the first Monday in a long time on which I do not already feel tired."
+        }
+      ],
+      "note": "**the first Monday in ages** 는 그런 월요일이 정말 오랜만이라는 뜻으로, **in ages** 는 아주 오랫동안이라는 말입니다. casual 의 **wiped out** 은 완전히 지쳤다는 뜻입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "퇴근하고 헬스장 가려고 했는데 운동화를 집에 두고 와서, 가지러 집에 갔다가 소파에 잠깐 앉았는데 거기서 끝났지 뭐.",
+      "text": "I was going to go to the gym after work, but I'd left my sneakers at home, so I went home to get them, sat down on the couch for a second, and that was the end of that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna hit the gym after work, but I'd forgotten my sneakers at home. Went back to grab them, sat on the couch for a sec, and yeah, that was it."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to go to the gym after work, but I had left my athletic shoes at home. I went home to retrieve them, sat down on the couch for a moment, and that was the end of it."
+        }
+      ],
+      "note": "**that was the end of that** 은 그걸로 끝이었다, 계획이 그대로 무산됐다는 뜻입니다. casual 의 **hit the gym** 은 헬스장에 가다라는 구어입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 formal 의 it is becoming rather difficult for me 는 losing my mind 를 너무 눅여서 뜻이 약해졌습니다. 말투만 올리고 강도는 살리도록 I am close to my wits' end 로 고쳤습니다.",
+    "4번 note 가 the first Monday in ages 를 정말 오랜만의 월요일이라고 풀어서 뜻이 어긋났습니다. 오랜만에 처음으로 그런 월요일이라는 뜻으로 고쳤습니다."
+  ]
+}

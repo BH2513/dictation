@@ -1,0 +1,115 @@
+{
+  "setId": "s171",
+  "videoId": "daily-s171",
+  "title": "Set 171",
+  "madeAt": "2026-10-08",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "음, 걔가 진짜 똑똑하긴 한데 말을 좀 직설적으로 해. 그래서 걔가 네 셔츠 별로라고 해도 기분 나쁘게 받아들이지 마. 원래 말을 그렇게 하는 애고, 솔직히 그건 너를 편하게 생각한다는 뜻이야.",
+      "text": "Okay, so she's really smart, but she's kind of blunt, so if she tells you she doesn't like your shirt, don't take it personally. That's just how she talks, and honestly, it means she's comfortable with you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "She's super smart but kinda blunt, so if she says she hates your shirt, don't sweat it. That's just her, and honestly it means she's comfortable with you."
+        },
+        {
+          "style": "formal",
+          "text": "She is very intelligent, but she can be rather blunt, so if she tells you she does not care for your shirt, please do not take it personally. That is simply how she speaks, and it actually means she is comfortable with you."
+        }
+      ],
+      "note": "**blunt** 는 돌려 말하지 않고 직설적이라는 뜻입니다. **don't take it personally** 는 너한테 하는 말로 받아들이지 말라, 기분 나빠하지 말라는 말입니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나도 더 있고 싶어, 진짜로. 근데 베이비시터한테 10시까지 들어간다고 했거든. 또 늦으면 그분 진짜 그만둘 것 같아.",
+      "text": "I'd love to stay, I really would, but I told the babysitter I'd be back by ten, and if I'm late again, I'm pretty sure she's going to quit on me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'd totally stay, I swear, but I promised the sitter I'd be home by ten, and if I'm late again I'm pretty sure she's gonna quit."
+        },
+        {
+          "style": "formal",
+          "text": "I would very much like to stay, I truly would, but I told the babysitter I would be back by ten, and if I am late again, I am fairly certain she will quit."
+        }
+      ],
+      "note": "**I'd love to stay, I really would** 는 아쉬운 마음을 강조하며 거절할 때 쓰는 말입니다. **quit on me** 는 나를 두고 그만둬 버린다는 느낌을 줍니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 헬스장 예전엔 진짜 좋았는데, 큰 체인이 인수하고 나서부터 기구 절반은 고장 나 있고 멀쩡한 건 맨날 줄 서야 돼. 그래서 이제 거의 안 가.",
+      "text": "That gym used to be so nice, but ever since some big chain bought it, half the machines are broken and there's always a line for the ones that still work, so I barely go anymore.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, that gym was great till some big chain took over. Now half the machines are busted and there's a line for the rest, so I hardly ever go."
+        },
+        {
+          "style": "formal",
+          "text": "That gym was once very pleasant, but since a large chain acquired it, half of the machines are out of order and there is always a queue for those that still function, so I rarely go anymore."
+        }
+      ],
+      "note": "**ever since** 는 그때 이후로 쭉이라는 뜻입니다. **barely go anymore** 는 이제는 거의 안 간다는 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "내 폰이 배터리가 한 40퍼센트 남았다고 뜨는데도 자꾸 꺼져. 그래서 이제 배터리를 아예 못 믿겠고, 어딜 가든 거의 충전기를 들고 다녀.",
+      "text": "My phone keeps dying when it still says like forty percent, so I can't trust the battery at all now, and I'm basically carrying a charger around everywhere I go.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My phone just dies at like forty percent, so I can't trust the battery at all, and now I'm lugging a charger around everywhere."
+        },
+        {
+          "style": "formal",
+          "text": "My phone repeatedly shuts down when it still shows approximately forty percent, so I can no longer rely on the battery, and I now carry a charger with me wherever I go."
+        }
+      ],
+      "note": "**keeps dying** 은 폰이 자꾸 꺼진다는 뜻으로, die 를 배터리가 나갈 때 씁니다. **basically** 는 사실상, 거의라는 느낌으로 말에 자주 붙습니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "나 드디어 눈 검사 받았는데, 알고 보니 몇 년 전부터 안경을 썼어야 했던 거야. 일 때문인 줄 알았던 두통도 아마 하루 종일 화면 보면서 눈 찡그려서 그랬던 것 같아.",
+      "text": "So I finally got my eyes checked, and it turns out I've needed glasses for years. All those headaches I kept blaming on work were probably just me squinting at my screen all day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally got my eyes tested, and turns out I've needed glasses for years. All those headaches I blamed on work? Probably just me squinting at my screen all day."
+        },
+        {
+          "style": "formal",
+          "text": "I finally had my eyes examined, and it appears I have needed glasses for several years. The headaches I had attributed to work were most likely caused by squinting at my screen throughout the day."
+        }
+      ],
+      "note": "**it turns out** 은 알고 보니라는 뜻입니다. **blaming on** 은 무엇의 탓으로 돌린다는 말이고, **squinting** 은 잘 보려고 눈을 찡그리는 것입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: comfy 는 주로 몸이 편한 것을 말해서 사람 사이에 쓰면 어색함. comfortable 로 되돌림",
+    "2번 formal: 베이비시터에게 resign 은 회사 사직처럼 들려 어색함. quit 으로 바꿈",
+    "3번 formal: 헬스장에 attend 는 번역체. go 로 바꿈",
+    "5번 ko: So 는 이야기를 꺼내는 말이지 원인이 아니라서 '그래서'를 '나'로 바꿈. '그 두통들이'의 번역투를 풀고, '안경이 필요했던'을 '안경을 썼어야 했던'으로 자연스럽게 고침"
+  ]
+}

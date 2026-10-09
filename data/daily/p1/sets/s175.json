@@ -1,0 +1,115 @@
+{
+  "setId": "s175",
+  "videoId": "daily-s175",
+  "title": "Set 175",
+  "madeAt": "2026-10-09",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저기, 욕실 환풍기 때문에 또 연락드려서 죄송해요. 8월부터 고장 나 있었는데 이제 천장에 곰팡이까지 피기 시작했어요. 더 심해지기 전에 누가 와서 꼭 좀 봐 주셔야 할 것 같아요.",
+      "text": "Hey, sorry to bug you again about the bathroom fan. It's been broken since August, and now there's mold starting to show up on the ceiling, so I really think someone needs to come look at it before it gets any worse.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, me again about the bathroom fan, sorry. It's been dead since August and now there's mold creeping onto the ceiling, so can someone come check it out before it gets worse?"
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for contacting you again regarding the bathroom fan. It has not worked since August, and mold is now beginning to appear on the ceiling, so I believe someone should inspect it before the problem becomes more serious."
+        }
+      ],
+      "note": "**sorry to bug you** 는 귀찮게 해서 미안하다는 가벼운 사과예요. **before it gets any worse** 는 더 나빠지기 전에라는 뜻으로 수리를 재촉할 때 자주 써요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아드님도 올해 파텔 선생님 반이에요? 우리 딸이 집에 와서 그러는데, 그 선생님이 수업 시간에 화장실을 못 가게 한대요. 애가 부풀려서 말하는 건지, 아니면 진짜 선생님한테 이메일을 보내야 하는 건지 모르겠어요.",
+      "text": "Does your son have Mr. Patel this year too? Because my daughter came home saying he won't let them go to the bathroom during class, and I can't tell if she's exaggerating or if I should actually email him about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Your son got Mr. Patel this year too? My daughter says he won't let them use the bathroom in class, and I can't tell if she's exaggerating or if I should actually email him."
+        },
+        {
+          "style": "formal",
+          "text": "Is your son also in Mr. Patel's class this year? My daughter told me that he does not allow students to use the restroom during class, and I am unsure whether she is exaggerating or whether I ought to contact him by email."
+        }
+      ],
+      "note": "**came home saying** 는 집에 와서 ~라고 하더라는 뜻이에요. **I can't tell if** 는 ~인지 잘 모르겠다, 판단이 안 선다는 말이에요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "정말 미안해. 지하철이 터널 안에서 한 20분을 그냥 서 있었는데, 아무도 아무 말도 안 해 주더라. 문자 보내려고 했는데 거기 밑에서는 신호가 하나도 안 잡혔어.",
+      "text": "I'm so sorry, the train just sat in the tunnel for like twenty minutes and nobody told us anything. I would've texted you, but I didn't have any signal down there.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, sorry! The train was stuck in the tunnel for like twenty minutes and nobody said a thing. I'd have texted, but I had zero signal down there."
+        },
+        {
+          "style": "formal",
+          "text": "I sincerely apologize. The train was stopped in the tunnel for approximately twenty minutes, and we were given no information. I would have sent you a message, but I did not have any signal underground."
+        }
+      ],
+      "note": "**sat in the tunnel** 의 sit 은 기차나 차가 움직이지 않고 그냥 서 있다는 뜻이에요. **I would've texted you** 는 문자하려고 했는데 못 했다는 변명이에요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "솔직히 말해도 돼? 색은 너한테 진짜 잘 어울리는데, 어깨가 좀 커. 아직 교환할 수 있으면 나라면 한 사이즈 작은 걸로 하겠어. 작은 게 훨씬 나아 보일 것 같아.",
+      "text": "Honestly? I love the color on you, but it's kind of big in the shoulders. If you can still return it, I'd go down a size, because I think the smaller one would look way better.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Real talk? The color's great on you, but it's kinda big in the shoulders. If you can still take it back, I'd size down. Smaller would look way better."
+        },
+        {
+          "style": "formal",
+          "text": "To be candid, the color suits you very well, but it is somewhat large in the shoulders. If it is still possible to return it, I would suggest a smaller size, as I believe it would look considerably better."
+        }
+      ],
+      "note": "**go down a size** 는 한 치수 작은 걸로 바꾸다는 뜻이고, casual 에서는 **size down** 이라고 해요. **I love the color on you** 는 그 색이 너한테 잘 어울린다는 말이에요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "안녕하세요, 방금 주문한 게 왔는데 제가 시킨 게 아니에요. 저는 치킨 카레를 시켰는데, 이건 새우가 들어간 무슨 국수 같은 거예요. 제가 새우 알레르기가 있어서 하나도 못 먹어요.",
+      "text": "Hi, I just got my order, but this isn't what I ordered. I asked for the chicken curry, and this is some kind of noodle thing with shrimp in it, and I'm allergic to shrimp, so I can't really eat any of it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, my order just came and it's the wrong one. I ordered chicken curry, but this is like a shrimp noodle thing, and I'm allergic to shrimp, so I can't eat any of it."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I have just received my order, but it is not what I ordered. I ordered the chicken curry, and this appears to be a noodle dish containing shrimp. I am allergic to shrimp, so I am unable to eat any of it."
+        }
+      ],
+      "note": "**this isn't what I ordered** 는 주문이 잘못 왔을 때 쓰는 기본 표현이에요. **some kind of noodle thing** 은 정확히 뭔지 모르는 걸 대충 무슨 국수 같은 거라고 말할 때 써요.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 한국어: 터널 안에 서 있고 지하에서 신호가 안 잡히는 상황이라 기차보다 지하철이 자연스러워 고침",
+    "4번 casual: 쉼표로 두 문장을 이어 붙였고 smaller one'd 축약이 입에 잘 안 붙어 문장을 나누고 Smaller would 로 고침",
+    "4번 한국어: 한 사이즈 작은 걸로 바꾸는 얘기라 환불보다 교환이 맞아 고침",
+    "5번 text와 casual: I got the chicken curry 가 받았다는 뜻으로도 읽혀 헷갈리므로 시킨 것이 분명하게 I asked for / I ordered 로 고침"
+  ]
+}

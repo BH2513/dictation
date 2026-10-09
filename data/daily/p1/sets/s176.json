@@ -1,0 +1,117 @@
+{
+  "setId": "s176",
+  "videoId": "daily-s176",
+  "title": "Set 176",
+  "madeAt": "2026-10-09",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "어머, 이게 얼마 만이야? 아직도 네 음식 맨날 먹던 그 룸메이트랑 살아, 아니면 드디어 혼자 살 집 구했어?",
+      "text": "Oh my gosh, how long has it been? Are you still living with that roommate who kept eating your food, or did you finally get your own place?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Whoa, it's been forever! You still stuck with that roommate who kept eating your stuff, or'd you finally move out?"
+        },
+        {
+          "style": "formal",
+          "text": "It has been such a long time. Are you still living with the roommate who kept eating your food, or have you finally found a place of your own?"
+        }
+      ],
+      "note": "**how long has it been?** 는 오랜만에 만났을 때 이게 얼마 만이야? 하고 반가움을 나타내는 말입니다. **get your own place** 는 남과 같이 살지 않고 혼자 살 집을 구한다는 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "우리 금요일마다 그 타코집 가곤 했잖아. 근데 메뉴 바뀌고 나서부터는 가격은 다 두 배로 올랐는데 양은 반이라서, 이제는 굳이 갈 이유를 잘 모르겠어.",
+      "text": "We used to go to that taco place every Friday, but ever since they changed the menu, everything costs twice as much and you get half as much food, so I don't really see the point anymore.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every Friday we'd hit up that taco place, but since the new menu it's double the price for half the food, so what's even the point anymore?"
+        },
+        {
+          "style": "formal",
+          "text": "We used to visit that taco restaurant every Friday; however, since they changed the menu, everything costs twice as much and the portions are half the size, so I no longer see the point of going."
+        }
+      ],
+      "note": "**ever since** 는 그때 이후로 쭉 이라는 뜻입니다. **I don't really see the point** 는 그걸 할 이유를 잘 모르겠다, 해 봤자 의미 없다는 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "내 폰이 자꾸 혼자 재부팅돼. 통화하는 도중에도 그래. 업데이트는 이미 해 봤는데, 폰 자체가 고장 난 건지 아니면 내가 너무 많이 떨어뜨려서 그런 건지 모르겠어.",
+      "text": "My phone keeps restarting on its own, like right in the middle of a call, and I already tried updating it, so I don't know if something's wrong with it or if I've just dropped it one too many times.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my phone just keeps restarting by itself, like mid-call, and I already updated it, so I dunno if it's busted or if I've just dropped it one too many times."
+        },
+        {
+          "style": "formal",
+          "text": "My phone continues to restart on its own, sometimes in the middle of a call, and I have already tried updating it, so I am not sure whether something is wrong with it or whether I have simply dropped it too many times."
+        }
+      ],
+      "note": "**on its own** 은 저절로, 누가 건드리지 않았는데 라는 뜻입니다. **one too many times** 는 한 번이 너무 많았다, 즉 견딜 수 있는 횟수를 넘겼다는 말입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "일할 데 찾느라 카페를 세 군데나 가 봤는데, 하나같이 노트북 하는 사람들로 꽉 차 있더라. 그래서 결국 커피 들고 차에 앉아서 폰으로 일했어.",
+      "text": "I went to three different coffee shops looking for somewhere to work, and every single one was full of people on laptops, so I ended up sitting in my car with my coffee and working off my phone.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tried three coffee shops to get some work done and every one was packed with laptop people, so I just sat in my car with my coffee and worked on my phone."
+        },
+        {
+          "style": "formal",
+          "text": "I visited three different coffee shops looking for a place to work, and every one of them was full of people on laptops, so I ended up sitting in my car with my coffee and working from my phone."
+        }
+      ],
+      "note": "**ended up** 은 처음 생각과 달리 결국 ~하게 됐다는 뜻입니다. **every single one** 은 하나도 빠짐없이 전부를 강조하는 말입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "나 잠깐 하소연 좀 해도 돼? 회사에 무슨 메일이든 전체 답장을 누르는 사람이 있는데, 그냥 고맙다는 말 하려고도 그래. 그래서 나랑 아무 상관 없는 메일이 하루에 쉰 통쯤 오는데, 보아하니 그게 신경 쓰이는 사람은 나밖에 없는 것 같아.",
+      "text": "Can I complain for a second? There's this guy at work who hits reply all on everything, even just to say thanks, so I get like fifty emails a day that have nothing to do with me, and apparently I'm the only one who minds.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, quick rant? This guy at work hits reply all on everything, even just to say thanks, so I'm getting like fifty emails a day that aren't about me, and I guess I'm the only one it bugs."
+        },
+        {
+          "style": "formal",
+          "text": "May I complain for a moment? There is a colleague at work who uses reply all on every message, even simply to say thank you, so I receive about fifty emails a day that have nothing to do with me, and apparently I am the only one who minds."
+        }
+      ],
+      "note": "**have nothing to do with me** 는 나와 아무 상관 없다는 뜻입니다. **apparently** 는 보아하니, ~인 것 같다 라는 뜻이고 **I'm the only one who minds** 는 신경 쓰는 사람이 나 하나뿐이라는 말입니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 or'd you 는 글로 보면 어색해서 or'd you finally move out? 으로 짧게 바꿈",
+    "1번 한국어 '네 음식 계속 먹던', '너만의 집' 이 번역투라 '네 음식 맨날 먹던', '혼자 살 집' 으로 고침",
+    "2번 casual 의 honestly I kinda don't see the point 는 말버릇이 겹쳐 어색해서 so what's even the point anymore? 로 고침",
+    "2번 한국어 '전부 가격은 두 배인데' 가 어색해서 '가격은 다 두 배로 올랐는데' 로 고침",
+    "5번 formal 의 replies to all on every message 는 원어민이 안 쓰는 말이라 uses reply all on every message 로 고침",
+    "5번 한국어 '듣자 하니 ... 나밖에 없대' 는 apparently 를 남에게 들은 말로 옮겼는데, 여기서는 보아하니의 뜻이라 '보아하니 ... 나밖에 없는 것 같아' 로 고침. note 설명도 맞춤"
+  ]
+}

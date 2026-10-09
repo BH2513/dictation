@@ -1,0 +1,117 @@
+{
+  "setId": "s174",
+  "videoId": "daily-s174",
+  "title": "Set 174",
+  "madeAt": "2026-10-09",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그 에어프라이어는 진짜 사지 말았어야 했어. 맨날 쓸 줄 알았는데 너무 커서 그냥 조리대 위에 자리만 차지하고 있고, 상자를 벌써 버려서 이제 반품도 못 해.",
+      "text": "I really shouldn't have bought that air fryer. I thought I'd use it all the time, but it's so big that it just sits on the counter, and I can't even return it now because I already threw out the box.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, buying that air fryer was a mistake. Figured I'd use it all the time, but it's huge, so it just sits on the counter, and I can't even send it back now 'cause I already tossed the box."
+        },
+        {
+          "style": "formal",
+          "text": "I truly should not have purchased that air fryer. I expected to use it constantly, but it is so large that it simply sits on the counter, and I am unable to return it now because I have already discarded the box."
+        }
+      ],
+      "note": "**shouldn't have bought** 는 사지 말았어야 했다는 후회입니다. **threw out** 은 버렸다는 뜻이고, casual 의 **tossed** 도 같은 뜻으로 더 가볍게 쓰는 말입니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "어제 봄 이후로 처음 스피닝 수업 갔는데, 할 만하다 싶었거든. 근데 오늘 아침에 계단을 겨우 내려왔어. 강사가 각자 페이스대로 하라고 할 때 들을걸.",
+      "text": "So I went to a spin class yesterday for the first time since spring, and I thought I was doing fine, but this morning I could barely get down the stairs. I should've listened when the instructor told us to go at our own pace.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did my first spin class since spring yesterday and thought I was totally fine, but this morning I could barely make it down the stairs. Shoulda listened when the instructor said go at your own pace."
+        },
+        {
+          "style": "formal",
+          "text": "Yesterday I attended a spin class for the first time since spring, and I believed I was managing well, but this morning I could scarcely walk down the stairs. I should have heeded the instructor when we were advised to proceed at our own pace."
+        }
+      ],
+      "note": "**could barely** 는 겨우 ~했다는 뜻입니다. **go at our own pace** 는 자기 속도에 맞춰서 하다라는 표현입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "배송 조회에는 2시에 배달 완료라고 나오는데 우리 집 문 앞에는 아무것도 없고, 건물 관리인도 아무것도 놓고 간 사람 없대. 그래서 이제 택배 회사에 전화해야 하는데, 분명히 이틀 더 기다리라고 하겠지.",
+      "text": "The tracking says it was delivered at two, but there's nothing at my door, and the building manager says nobody dropped anything off. So now I have to call the delivery company, and you know they're just going to tell me to wait another two days.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Says delivered at two, but nothing's here, and the building guy says nobody came by. Now I gotta call them, and they're totally gonna say wait two more days."
+        },
+        {
+          "style": "formal",
+          "text": "According to the tracking information, it was delivered at two, yet there is nothing at my door, and the building manager says that no one left anything. I will therefore have to contact the delivery company, and I expect they will simply ask me to wait another two days."
+        }
+      ],
+      "note": "**dropped anything off** 의 drop off 는 물건을 갖다 놓고 가다라는 뜻입니다. **you know they're just going to** 는 뻔히 그렇게 나올 거라는 느낌을 줍니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "아, 나도 그러고 싶은데 이번 주말엔 진짜 차 못 빌려줘. 엄마 공항에 모셔다드리느라 내가 써야 하거든. 다른 주말이었으면 당연히 빌려줬지, 너도 알잖아.",
+      "text": "Oh, I wish I could, but I really can't lend you the car this weekend, because I'm already using it to take my mom to the airport. If it was any other weekend, it'd be yours, you know that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Aw, wish I could, but I can't lend you the car this weekend. I'm already using it to take my mom to the airport. Any other weekend it'd be yours, you know that."
+        },
+        {
+          "style": "formal",
+          "text": "I wish I were able to, but I am unable to lend you the car this weekend, as I am already using it to take my mother to the airport. On any other weekend it would be yours, as you know."
+        }
+      ],
+      "note": "**I wish I could, but** 는 부탁을 부드럽게 거절할 때 쓰는 말입니다. **it'd be yours** 는 네 거나 마찬가지였을 거라는 뜻으로 기꺼이 빌려줬을 거라는 말입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그냥 그만두고 싶은 마음도 있어. 거기서 한 2년째 새로 배운 게 하나도 없거든. 근데 월급도 괜찮고 팀도 좋아서, 그걸 두고 나가면 좀 바보 같을 것 같아. 내가 이상한 건가?",
+      "text": "Part of me just wants to quit, because I haven't learned anything new there in like two years. But the pay's good and my team's great, so I'd feel kind of stupid walking away from that. Is that crazy?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Half of me wants to quit, 'cause I haven't learned anything new there in like two years. But good pay, great team, so walking away feels kinda dumb. Am I crazy?"
+        },
+        {
+          "style": "formal",
+          "text": "Part of me simply wishes to resign, because I have not learned anything new there in approximately two years. However, the salary is good and my team is excellent, so I would feel rather foolish leaving that behind. Does that seem unreasonable?"
+        }
+      ],
+      "note": "**Part of me just wants to** 는 마음 한편으로는 ~하고 싶다는 뜻입니다. **walking away from** 은 좋은 것을 두고 떠나다라는 표현입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal 에 영어 원문에 없는 강사 성별(she)이 들어가 있어 빼고, 한국어 어순을 자연스럽게 다듬음",
+    "3번 casual 이 text 와 가운데 부분이 거의 똑같아 더 짧고 축약된 구어로 새로 씀",
+    "3번 한국어 '관리인도 아무도 뭘 놓고 간 적 없대'가 어색해 '아무것도 놓고 간 사람 없대'로 고침",
+    "4번 한국어가 '빌려주고 싶은데 … 못 빌려줘'로 같은 말을 되풀이해 '나도 그러고 싶은데'로 고침",
+    "5번 casual 이 Part of me 의 망설이는 뜻을 없애고 장식용 Honestly 를 넣어서, 반쯤은 그만두고 싶다는 뜻을 살려 다시 씀",
+    "5번 한국어 앞의 '솔직히'는 영어에 없는 말이라 뺌"
+  ]
+}

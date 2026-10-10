@@ -1,0 +1,114 @@
+{
+  "setId": "s180",
+  "videoId": "daily-s180",
+  "title": "Set 180",
+  "madeAt": "2026-10-11",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "주말에 하려던 게 엄청 많았는데, 결국 일요일 밤까지 잠옷 차림으로 있었어. 근데 있잖아, 하나도 후회 안 해. 생각했던 것보다 나한테 그게 더 필요했나 봐.",
+      "text": "I had all these plans for the weekend, but I ended up staying in my pajamas till Sunday night, and you know what, I don't regret it at all. I think I needed it more than I realized.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Had a ton of plans this weekend, but I wound up in my pajamas till Sunday night, and honestly? Zero regrets. Guess I needed it more than I thought."
+        },
+        {
+          "style": "formal",
+          "text": "I had a number of plans for the weekend, but I ended up remaining in my pajamas until Sunday evening, and I do not regret it in the slightest. I believe I needed it more than I had realized."
+        }
+      ],
+      "note": "**ended up** 는 계획과 달리 결국 ~하게 됐다는 말이에요. **you know what** 은 말을 꺼내기 전에 상대의 주의를 끄는 표현으로, 있잖아 정도의 느낌이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "늦어서 미안. 알람 때문에 일이 좀 있었는데 얘기하자면 길어. 그러니까 그냥 차가 막혔다고 하고 넘어가면 안 될까?",
+      "text": "Sorry I'm late. There was this whole thing with my alarm, and it's kind of a long story, so can we just say it was traffic and leave it at that?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My bad. Alarm drama, long story. Can we just say traffic and leave it at that?"
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for arriving late. There was an issue with my alarm, and it is rather a long story, so might we simply say it was traffic and leave it at that?"
+        }
+      ],
+      "note": "**leave it at that** 은 더 묻지 말고 거기까지만 하자는 말이에요. **a long story** 는 얘기하자면 길다는 뜻으로 자세히 말하고 싶지 않을 때 써요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "여기 자리 있어요? 죄송해요, 쟁반 들고 한 10분째 돌아다녔는데 빈 의자가 여기 하나밖에 없네요.",
+      "text": "Is anyone sitting here? Sorry, I've been walking around with this tray for like ten minutes, and this is the only open chair in the whole place.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "This seat taken? Sorry, I've been wandering around with this tray for like ten minutes, and it's the only free chair in the whole place."
+        },
+        {
+          "style": "formal",
+          "text": "Pardon me, is anyone sitting here? I apologize, but I have been walking around with this tray for about ten minutes, and this is the only available chair in the entire place."
+        }
+      ],
+      "note": "**Is anyone sitting here?** 는 빈자리처럼 보이는 곳에 앉아도 되는지 물을 때 쓰는 표현이에요. **open chair** 는 비어 있는 의자를 말해요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "부엌 싱크대 고치는 법 찾으려고 유튜브를 켰을 뿐인데, 어쩌다 보니 두 시간 뒤에는 웬 아저씨가 낡은 배 복원하는 걸 보고 있더라. 싱크대는 아직도 물이 새고.",
+      "text": "I only opened YouTube to figure out how to fix the kitchen sink, and somehow two hours later I was watching some guy restore an old boat, and the sink's still leaking.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went on YouTube just to see how to fix the kitchen sink, and somehow two hours later I'm watching some guy fix up an old boat. Sink's still leaking."
+        },
+        {
+          "style": "formal",
+          "text": "I only went on YouTube to learn how to repair the kitchen sink, and somehow, two hours later, I was watching a man restore an old boat, and the sink is still leaking."
+        }
+      ],
+      "note": "**figure out** 은 방법을 알아내다, 이해하다라는 뜻이에요. **somehow** 는 어쩌다 보니, 나도 모르게라는 느낌을 줘요.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그 드라마 예전엔 진짜 좋아했는데, 시즌 2 지나고 나서는 아이디어가 좀 바닥난 것 같더라고. 그래서 지금은 그냥 습관처럼 계속 보는 것 같아.",
+      "text": "I used to love that show, but after the second season they kind of ran out of ideas, so now I just keep watching it out of habit, I guess.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Used to love that show, but after season two they kinda ran out of ideas, so now I'm just watching out of habit, I guess."
+        },
+        {
+          "style": "formal",
+          "text": "I was once very fond of that program, but after the second season they seemed to run out of ideas, so I now continue watching it simply out of habit, I suppose."
+        }
+      ],
+      "note": "**ran out of ideas** 는 아이디어가 바닥났다는 말이에요. **out of habit** 은 습관적으로, 버릇처럼이라는 뜻이에요.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 의 kinda a long story 는 소리내면 어색하고, leave it there 는 관용구 leave it at that 을 흐트러뜨린 것이라 더 짧은 구어로 새로 씀",
+    "3번 한국어 여기 통틀어서 가 번역투라 자연스럽게 고침",
+    "5번 한국어 좀 아이디어가 바닥났더라고 의 어순이 어색해 고침"
+  ]
+}

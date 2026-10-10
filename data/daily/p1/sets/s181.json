@@ -1,0 +1,117 @@
+{
+  "setId": "s181",
+  "videoId": "daily-s181",
+  "title": "Set 181",
+  "madeAt": "2026-10-11",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "응, 귀 때문에 드디어 병원 갔어. 알고 보니 그냥 귀지였는데, 2분 만에 씻어 내는 거 하려고 대기실에서 한 시간이나 앉아 있었어.",
+      "text": "Yeah, I finally went in about my ear. Turns out it was just wax, and I sat in the waiting room for an hour just so they could rinse it out in like two minutes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I finally got my ear checked. It was just wax! Sat there an hour for them to flush it out in, like, two minutes."
+        },
+        {
+          "style": "formal",
+          "text": "I finally had my ear examined. It turned out to be only wax, and I sat in the waiting room for an hour only for them to rinse it out in about two minutes."
+        }
+      ],
+      "note": "**turns out** 는 알고 보니 ~였다는 뜻으로, 예상과 다른 결과를 말할 때 써요. **rinse it out** 은 물로 씻어 낸다는 뜻이에요.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "안녕하세요, 위층 사는 데이나예요. 식기세척기 물이 또 안 빠져요. 이 일로 자꾸 귀찮게 해 드리기 싫어서 그러는데, 이번에는 또 사람 불러서 땜질하지 말고 그냥 새걸로 바꿔 주실 수 있을까요?",
+      "text": "Hi, it's Dana from upstairs. The dishwasher stopped draining again, and I don't want to keep bugging you about it, so is there any chance you could just replace it this time instead of having someone patch it up again?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, Dana upstairs here. Dishwasher's not draining again, and I hate to keep bugging you, but could you maybe just replace it this time instead of getting it patched up again?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is Dana from the apartment upstairs. The dishwasher has stopped draining once again, and I do not wish to keep troubling you about it. Would it be possible to replace it this time rather than having someone repair it again?"
+        }
+      ],
+      "note": "**keep bugging you** 는 자꾸 귀찮게 한다는 뜻이에요. **patch it up** 은 임시로 고쳐 놓는다는 말이고, **is there any chance you could** 는 부탁을 부드럽게 꺼낼 때 써요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "네가 말해 준 그 태국 음식점 드디어 가 봤어. 음식은 진짜 맛있었는데 자리 나길 40분이나 기다려서, 금요일 저녁에 또 갈지는 모르겠어.",
+      "text": "We finally tried that Thai place you told us about. The food was really good, but we waited forty minutes for a table, so I don't know if I'd go back on a Friday night.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We finally hit up that Thai place you told us about. Food was great, but we waited forty minutes for a table, so I dunno about going back on a Friday night."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended. The food was excellent, but we waited forty minutes for a table, so I am not certain I would return on a Friday evening."
+        }
+      ],
+      "note": "**you told us about** 는 네가 우리한테 말해 준이라는 뜻으로, 가게나 물건 뒤에 붙여요. **go back** 은 다시 간다는 뜻이고, **hit up** 은 어떤 가게에 가 본다는 캐주얼한 표현이에요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "나 디저트 먹고 일어나 봐야 돼. 베이비시터한테 10시까지 집에 간다고 했거든. 또 늦으면 이제 돈을 두 배로 받기 시작할 거야.",
+      "text": "I'm going to have to head out after dessert, because I told the babysitter we'd be home by ten, and if I'm late again she's going to start charging me double.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I gotta take off after dessert. Told the babysitter we'd be back by ten, and if I'm late again she's gonna start charging me double."
+        },
+        {
+          "style": "formal",
+          "text": "I will need to leave after dessert, as I told the babysitter we would be home by ten, and if I am late again, she will begin charging me double."
+        }
+      ],
+      "note": "**head out** 은 자리를 뜬다, 나간다는 뜻이에요. 캐주얼한 **take off** 도 같은 뜻이고, **charging me double** 은 나한테 두 배로 받는다는 말이에요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그만둘까 계속 생각하는데, 말 꺼내려고 할 때마다 상사가 나한테 엄청 잘해 줘서, 미안한 마음에 얘기를 못 꺼내겠어.",
+      "text": "I keep thinking about quitting, but every time I'm about to say something, my boss does something really nice for me, and then I feel too guilty to bring it up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Kinda wanna quit, but whenever I'm about to say it, my boss does something super nice and I feel way too guilty to bring it up."
+        },
+        {
+          "style": "formal",
+          "text": "I continue to consider resigning, but each time I am about to raise the matter, my manager does something very kind for me, and I then feel too guilty to mention it."
+        }
+      ],
+      "note": "**bring it up** 은 어떤 이야기를 꺼낸다는 뜻이에요. **too guilty to** 는 너무 미안해서 ~를 못 한다는 뜻이에요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어 '2분 정도면 씻어 내는 걸 하려고'가 어색해서 '2분 만에 씻어 내는 거 하려고'로 고침",
+    "1번 formal 이 대기실에서 한 시간을 기다린 것을 그 목적처럼 적어 억울한 느낌이 사라졌기에 'only for them to'로 바꾸고, waited an hour in the waiting room 중복도 정리함",
+    "3번 note 의 the place you told us about 는 문장에 그대로 나오지 않아(that Thai place you told us about) you told us about 로 고침",
+    "4번 한국어 '받겠대'는 베이비시터가 직접 한 말처럼 읽히는데, 영어는 내 짐작(she's going to start)이라 '받기 시작할 거야'로 고침",
+    "5번 casual 의 I keep thinking I'll quit 은 '그만둘 것 같다'는 예상으로 읽혀 뜻이 달라지므로 Kinda wanna quit 으로 바꿈",
+    "5번 한국어 '사장님'은 boss 를 너무 좁게 옮긴 것이라 '상사'로 고침"
+  ]
+}

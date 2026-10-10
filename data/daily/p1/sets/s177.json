@@ -1,0 +1,116 @@
+{
+  "setId": "s177",
+  "videoId": "daily-s177",
+  "title": "Set 177",
+  "madeAt": "2026-10-10",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "강아지한테 진짜 좋은 침대를 사 줬거든, 80달러쯤 줬는데 근처에도 안 가. 화장실 바닥에서 자는 걸 더 좋아해서, 이제 거기가 걔 방인가 봐.",
+      "text": "We got the dog this really nice bed, like eighty bucks, and he won't even go near it. He'd rather sleep on the bathroom floor, so I guess that's his room now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got the dog a super nice bed, like eighty bucks, and he won't go anywhere near it. Sleeps on the bathroom floor instead, so guess that's his room now."
+        },
+        {
+          "style": "formal",
+          "text": "We purchased a very nice bed for our dog, which cost about eighty dollars, and he will not even go near it. He prefers to sleep on the bathroom floor, so I suppose that is now his room."
+        }
+      ],
+      "note": "**he'd rather** 는 차라리 ~하는 게 낫다는 뜻으로, 다른 걸 두고 굳이 그쪽을 고를 때 씁니다. **won't go anywhere near it** 은 근처에도 안 간다는 강한 말입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "자꾸 새벽 3시쯤에 깨. 그러면 머릿속으로 다음 날 할 일을 하나하나 다 떠올리기 시작해서, 다시 잠들 때쯤이면 벌써 일어날 시간이야.",
+      "text": "I keep waking up at like three in the morning, and then my brain starts going through everything I have to do the next day, so by the time I fall back asleep, it's almost time to get up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every night I'm up at like three, and my brain starts running through all the stuff I gotta do, so by the time I'm back asleep, it's pretty much time to get up."
+        },
+        {
+          "style": "formal",
+          "text": "I have been waking up repeatedly at around three in the morning, and then I begin thinking through everything I need to do the following day, so by the time I fall asleep again, it is nearly time to get up."
+        }
+      ],
+      "note": "**by the time** 은 ~할 때쯤이면이라는 뜻입니다. **going through** 는 하나씩 짚어 본다는 말로, 머릿속으로 목록을 훑을 때 잘 씁니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "드디어 허리 때문에 병원에 갔는데, 의사가 한마디로 스트레칭 더 하고 덜 앉아 있으래. 아내가 1년 내내 하던 소리를 듣자고 40달러를 낸 거지.",
+      "text": "I finally went to the doctor about my back, and he basically told me to stretch more and sit less. So I paid forty bucks to hear what my wife's been telling me for a year.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally saw the doctor about my back, and he pretty much said stretch more, sit less. Forty bucks to hear what my wife's been saying for a year."
+        },
+        {
+          "style": "formal",
+          "text": "I finally consulted a doctor about my back, and he essentially advised me to stretch more and sit less. So I paid forty dollars to hear what my wife has been telling me for a year."
+        }
+      ],
+      "note": "**basically** 는 한마디로, 결국 요약하면이라는 뜻으로 말에서 아주 자주 씁니다. **bucks** 는 달러를 편하게 부르는 말입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "윗집 남자가 뭘 하는지 모르겠는데, 매일 밤 자정쯤 되면 가구를 바닥에 질질 끄는 소리가 나. 올라가서 한마디 할까 싶다가도, 한 번도 만나 본 적이 없어서 처음 하는 말이 항의면 좀 그렇잖아.",
+      "text": "I don't know what the guy upstairs is doing, but every night around midnight it sounds like he's dragging furniture across the floor. I'd go up and say something, but I've never even met him, and I don't want the first thing he hears from me to be a complaint.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No clue what the guy upstairs is up to, but every night around midnight it sounds like he's dragging furniture across the floor. I'd go say something, but I've never even met him, and I don't want my first words to him to be a complaint."
+        },
+        {
+          "style": "formal",
+          "text": "I am not sure what the gentleman upstairs is doing, but every night at around midnight, it sounds as though he is dragging furniture across the floor. I would go up and mention it, but I have never met him, and I would not want the first thing he hears from me to be a complaint."
+        }
+      ],
+      "note": "**I'd go up and say something, but** 은 올라가서 한마디 하고 싶지만 ~라서 못 한다는 말입니다. **No clue** 는 casual 에서 I don't know 대신 쓰는 짧은 말입니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "추수감사절은 괜찮았는데, 삼촌이 내가 차 판 걸 알고 나서부터 다들 한마디씩 하더라. 저녁 내내 돈이 없어서가 아니라 더 싸서 버스 타는 거라고 설명만 했어.",
+      "text": "Thanksgiving was fine until my uncle found out I'd sold my car, and then everybody had an opinion about it. I spent the whole dinner explaining that I take the bus now because it's cheaper, not because I'm broke.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Thanksgiving was going fine till my uncle found out I sold my car, and then everyone had something to say. I spent all of dinner explaining I take the bus now cause it's cheaper, not cause I'm broke."
+        },
+        {
+          "style": "formal",
+          "text": "Thanksgiving went well until my uncle learned that I had sold my car, and then everyone had an opinion on the matter. I spent the entire dinner explaining that I now take the bus because it is less expensive, not because I lack money."
+        }
+      ],
+      "note": "**everybody had an opinion** 은 다들 한마디씩 거들었다는 뜻입니다. **broke** 는 돈이 한 푼도 없다는 말로, 말할 때 아주 자주 씁니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: 뒷문장이 text와 똑같아서 더 짧은 구어(Sleeps on the bathroom floor instead, so guess that's his room now)로 바꿈",
+    "1번 한국어: '좋은가 봐'와 '방인가 보다 해'가 이어서 겹쳐 어색하므로 '더 좋아해서, 이제 거기가 걔 방인가 봐'로 다듬음",
+    "2번 casual: 'Like three a.m., I'm up again'은 소리내어 읽으면 어색한 어순이라 'Every night I'm up at like three'로 고침",
+    "2번 formal: 'I continue to wake up'은 원어민이 안 쓰는 번역체라 'I have been waking up repeatedly'로 바꿈",
+    "3번 casual: 뒷문장이 text와 거의 같아서 'Forty bucks to hear...'로 줄여 구어답게 바꿈"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "setId": "s184",
+  "videoId": "daily-s184",
+  "title": "Set 184",
+  "madeAt": "2026-10-12",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "어젯밤에 언젠가 정전이 됐었나 봐. 알람시계가 초기화돼서 해가 얼굴에 비칠 때까지 못 일어났어. 진짜 최대한 빨리 온 거야.",
+      "text": "The power went out sometime last night, and my alarm clock reset itself, so I didn't wake up till the sun was in my face. I got here as fast as I could, I swear.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Power died sometime last night and my alarm reset, so I slept till the sun hit my face. Got here fast as I could, swear."
+        },
+        {
+          "style": "formal",
+          "text": "The power went out at some point last night, and my alarm clock reset itself, so I did not wake up until the sun was in my face. I arrived as quickly as I possibly could, I assure you."
+        }
+      ],
+      "note": "**sometime last night** 는 어젯밤 언젠가라는 뜻으로, 정확히 언제인지 모를 때 써요. 끝에 붙이는 **I swear** 는 진짜야, 맹세해 하고 내 말을 믿어 달라고 할 때 씁니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나 진짜 미치게 하는 게 뭔지 알아? 그 사람은 회의 내내 한마디도 안 하고 앉아 있다가, 끝나자마자 내 자리로 와서 내 아이디어가 뭐가 문제인지 하나하나 다 말해.",
+      "text": "You know what drives me crazy? She'll sit through the whole meeting and not say a word, and then the second it's over she comes to my desk to tell me everything that's wrong with my idea.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Know what drives me nuts? She won't say a word the whole meeting, then the second it ends she's at my desk telling me everything wrong with my idea."
+        },
+        {
+          "style": "formal",
+          "text": "Do you know what I find very frustrating? She will sit through the entire meeting without saying a word, and then, the moment it is over, she comes to my desk to tell me everything that is wrong with my idea."
+        }
+      ],
+      "note": "**drives me crazy** 는 짜증 나서 미치겠다는 말이에요. **the second it's over** 는 끝나는 그 순간 바로, 즉 끝나자마자라는 뜻입니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "훨씬 넓은데 한 달에 100달러밖에 안 비싼 집을 찾았거든. 근데 회사까지 한 40분 걸려. 그래서 넓어지는 게 그만큼 운전해서 다닐 가치가 있는 건지 계속 왔다 갔다 하고 있어.",
+      "text": "I found this place that's way bigger and only a hundred dollars more a month, but it's like forty minutes from work, so I keep going back and forth on whether the extra room is worth the drive.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Found a place that's way bigger and just a hundred bucks more a month, but it's like forty minutes from work, so I can't decide if the extra room's worth the drive."
+        },
+        {
+          "style": "formal",
+          "text": "I found a place that is considerably larger and only one hundred dollars more per month, but it is about forty minutes from work, so I keep going back and forth on whether the additional space is worth the commute."
+        }
+      ],
+      "note": "**go back and forth** 는 이랬다저랬다 마음을 못 정한다는 뜻이에요. **way bigger** 의 way 는 훨씬이라는 강조로, 말할 때 아주 자주 씁니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "내 폰이 요즘 이상해. 화면이 그냥 먹통이 돼. 뭘 눌러도 아무 반응이 없다가, 몇 초 뒤에 내가 누른 걸 한꺼번에 다 실행해.",
+      "text": "My phone's been doing this weird thing where the screen just stops responding. I'll tap something and nothing happens, and then a few seconds later it does everything I tapped all at once.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Phone's acting weird. Screen just freezes, I tap stuff, nothing, then a few seconds later it does it all at once."
+        },
+        {
+          "style": "formal",
+          "text": "My phone has been doing something strange where the screen simply stops responding. I will tap something and nothing happens, and then a few seconds later it does everything I tapped all at once."
+        }
+      ],
+      "note": "**stops responding** 은 반응이 없다, 먹통이 된다는 뜻이에요. **all at once** 는 한꺼번에, 동시에라는 말입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "우리 고양이가 부엌 찬장 여는 법을 알아내서 전부 아기용 잠금장치를 달았거든. 근데 이제 집에서 아무것도 못 여는 사람이 나 하나뿐이야.",
+      "text": "Our cat figured out how to open the kitchen cabinets, so we put those baby locks on everything, and now I'm the only one in the house who can't get into anything.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Cat figured out the kitchen cabinets, so we babyproofed everything, and now I'm the only one here who can't open anything."
+        },
+        {
+          "style": "formal",
+          "text": "Our cat learned how to open the kitchen cabinets, so we installed child safety locks on everything, and now I am the only person in the house who cannot get into anything."
+        }
+      ],
+      "note": "**figured out how to** 는 어떻게 하는지 알아냈다는 뜻이에요. **get into** 는 여기서 안에 든 걸 꺼낼 수 있게 열고 들어간다는 의미입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어: 어젯밤에 언제 정전이 됐는지 알람시계가 초기화돼 버려서 는 어색해서, 어젯밤에 언젠가 정전이 됐었나 봐 로 고침",
+    "1번 formal: I came here 는 그 자리에서 잘 안 쓰는 말이라 I arrived 로 고침",
+    "2번 casual: makes me nuts 는 드물게 쓰는 말이라 원어민이 흔히 쓰는 drives me nuts 로 고침",
+    "3번 한국어: 그 거리를 운전할 만한 건지 는 번역투임. 또 영어의 extra room 은 앞의 way bigger 와 이어지는 넓은 공간이라는 뜻인데 방 하나 더 로 옮겨져 있어 뜻에 맞게 고침",
+    "3번 formal: keep reconsidering 은 이랬다저랬다 한다는 뜻이 약해서 keep going back and forth 를 살리고 drive 를 commute 로 격식 있게 고침",
+    "4번 casual: 앞부분이 text 와 거의 같아서 더 짧고 축약된 구어로 새로 씀",
+    "4번 한국어: 내 폰이 요즘 이상한 게, 는 문장이 늘어져서 두 문장으로 나눔",
+    "5번 casual: baby-locked 는 원어민이 쓰지 않는 말이라 babyproofed 로 고침"
+  ]
+}

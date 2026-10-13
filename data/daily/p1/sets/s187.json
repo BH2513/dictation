@@ -1,0 +1,114 @@
+{
+  "setId": "s187",
+  "videoId": "daily-s187",
+  "title": "Set 187",
+  "madeAt": "2026-10-13",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "좋아, 걔가 좀 너드 같긴 해. 가만두면 자전거 얘기를 끝도 없이 늘어놓을 거야. 근데 네 생일 꼬박꼬박 챙겨 주는 그런 사람이야. 솔직히 지금 너한테 필요한 게 딱 그런 사람 같아.",
+      "text": "Okay, so he's a little nerdy, like he'll tell you way too much about bikes if you let him, but he's the kind of guy who remembers your birthday, and honestly I think that's what you need right now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Look, he's kinda nerdy, won't stop talking bikes if you let him, but he remembers birthdays. Trust me, you need that right now."
+        },
+        {
+          "style": "formal",
+          "text": "He is admittedly a bit of an enthusiast, and he will tell you far more about bicycles than you may wish to hear, but he is the sort of person who remembers your birthday, and I genuinely believe that is what you need at the moment."
+        }
+      ],
+      "note": "**way too much** 는 지나치게 많이라는 뜻이에요. **if you let him** 은 가만두면, 말리지 않으면이라는 말로 뒤에 붙여 쓰기 좋아요.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "네가 맨날 얘기하던 그 라멘집 드디어 가 봤어. 국물은 네 말대로 진짜 맛있더라. 근데 자꾸 빨리 먹으라고 눈치를 줘서 먹는 내내 우리가 민폐 끼치는 느낌이었어.",
+      "text": "We finally went to that ramen place you kept talking about, and you were right about the broth, but they kept rushing us, so I felt like we were in the way the whole time.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We finally tried that ramen spot you wouldn't shut up about, and yeah, the broth was great, but they kept hurrying us, so it felt like we were in the way the whole time."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the ramen restaurant you had recommended so often, and you were correct about the broth, but the staff continued to hurry us, so I felt as though we were in the way throughout the meal."
+        }
+      ],
+      "note": "**in the way** 는 걸리적거리다, 방해가 되다라는 뜻이에요. casual 의 **wouldn't shut up about** 은 그 얘기를 입에 달고 살다라는 말이에요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그만두겠다는 건 아닌데, 점심시간에 다른 회사 자리를 좀 보기 시작했어. 내일 누가 지금이랑 같은 돈 준다고 하면 아마 옮길 것 같아.",
+      "text": "I'm not saying I'm going to quit, but I've started looking at other jobs on my lunch break, and if somebody offered me the same money tomorrow, I think I'd probably take it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Not saying I'm gonna quit, but I've been checking out other jobs at lunch, and if someone offered me the same money tomorrow, I'd probably take it."
+        },
+        {
+          "style": "formal",
+          "text": "I am not saying that I intend to resign, but I have begun looking at other positions during my lunch break, and if someone offered me the same salary tomorrow, I believe I would most likely accept."
+        }
+      ],
+      "note": "**I'm not saying** 은 딱 잘라 말하지 않고 운을 띄울 때 쓰는 말머리예요. **on my lunch break** 는 점심시간에라는 뜻이에요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "더 있고 싶은데 내일 아침 일찍 비행기라서. 짐도 아직 안 쌌거든. 괜히 한 잔 더 하게 되기 전에 이만 가 봐야겠다.",
+      "text": "I'd love to stay, but I've got an early flight tomorrow and I still haven't packed, so I should probably get going before I talk myself into another drink.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wish I could stay, but I've got an early flight and haven't even packed, so I'd better head out before I talk myself into one more drink."
+        },
+        {
+          "style": "formal",
+          "text": "I would very much like to stay, but I have an early flight tomorrow and I have not yet packed, so I ought to leave before I persuade myself to have another drink."
+        }
+      ],
+      "note": "**talk myself into** 는 스스로를 설득해서 결국 하게 되다라는 뜻이에요. **get going** 은 이제 가 봐야겠다고 자리에서 일어날 때 써요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "돈 좀 아껴 보려고 그 비싼 커피 머신 하나 샀거든. 근데 한 번 청소하는 데 10분은 걸려서 아예 안 쓰게 되고, 결국 아직도 출근길에 커피 사 마시고 있어.",
+      "text": "I bought one of those fancy coffee machines because I thought I'd save money, but it takes like ten minutes to clean, so I never use it and I'm still stopping for coffee on the way to work.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got one of those fancy coffee machines thinking I'd save money, but it's like ten minutes to clean, so I never use it and I'm still grabbing coffee on my way to work."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased one of those expensive coffee machines because I expected to save money, but it requires approximately ten minutes to clean, so I never use it and I continue to buy coffee on my way to work."
+        }
+      ],
+      "note": "**stopping for coffee** 는 가는 길에 들러서 커피를 사다라는 뜻이에요. **like ten minutes** 의 like 는 한, 대략이라는 느낌이에요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 studious 는 공부를 열심히 한다는 뜻이라 nerdy(한 가지에 푹 빠진 괴짜)와 뜻이 달라서 고쳤습니다.",
+    "1번 casual 이 text 의 뒷부분(he's the guy who remembers your birthday, and honestly that's what you need right now)을 거의 그대로 따라가서 더 짧은 구어로 바꿨습니다.",
+    "4번 한국어 '한 잔만 더 하자고 넘어가기 전에'가 어색하고 talk myself into 의 뜻(내가 나를 설득해 버림)도 잘 안 드러나서 '괜히 한 잔 더 하게 되기 전에'로 고쳤습니다."
+  ]
+}

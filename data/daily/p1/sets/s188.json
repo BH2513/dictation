@@ -1,0 +1,113 @@
+{
+  "setId": "s188",
+  "videoId": "daily-s188",
+  "title": "Set 188",
+  "madeAt": "2026-10-13",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그래, 네가 보자던 프로 보자. 근데 또 처음 한 시간 동안 아무 일도 안 일어나는 거면 나 그냥 잘 거야.",
+      "text": "Fine, we can watch your thing, but if it's another one where nothing happens for the first hour, I'm going to bed.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, we'll watch your show, but if nothing happens for the first hour again, I'm going to bed."
+        },
+        {
+          "style": "formal",
+          "text": "Very well, we may watch your selection, but if it is another one in which nothing happens during the first hour, I will be going to bed."
+        }
+      ],
+      "note": "**another one where** 는 또 그런 식인 것, 즉 같은 부류가 하나 더 나온다는 뜻이에요. **I'm going to bed** 는 자러 갈 거야라는 말로, 불평 섞인 경고에 자주 써요.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "한 달쯤은 기타에 완전 빠져 있었는데, 손가락이 아프기 시작해서 일주일 쉬었거든. 그랬더니 지금은 그냥 구석에 세워져서 나 죄책감만 들게 해.",
+      "text": "I was really into the guitar for like a month, but then my fingers started hurting, so I took a week off, and now it's just sitting in the corner making me feel guilty.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was super into guitar for like a month, then my fingers started hurting, so I took a week off, and now it just sits in the corner guilt-tripping me."
+        },
+        {
+          "style": "formal",
+          "text": "I was quite enthusiastic about the guitar for approximately a month; however, my fingers began to hurt, so I took a week off, and now it simply sits in the corner and makes me feel guilty."
+        }
+      ],
+      "note": "**into** 는 무언가에 푹 빠져 있다는 뜻이에요. casual 의 **guilt-tripping** 은 죄책감을 느끼게 만든다는 말이에요.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "응, 미안, 오늘 아침에 지하철이 엄청 느렸어. 아니 그 앞 차만 탔어도 괜찮았을 텐데, 뭐, 못 탔지.",
+      "text": "Yeah, sorry, the train was super slow this morning. I mean, if I'd caught the one before it I would've been fine, but, you know, I didn't.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, sorry, train was crazy slow this morning. If I'd made the earlier one I'd have been fine, but yeah, I didn't."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize; the train was extremely slow this morning. Had I caught the previous one, I would have arrived on time, but unfortunately I did not."
+        }
+      ],
+      "note": "**if I'd caught the one before it** 은 그 앞 차를 탔더라면이라는 지나간 일에 대한 가정이에요. **caught** 는 버스나 기차를 시간 맞춰 잡아탄다는 뜻이에요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "아래층 가게 이제 샌드위치 하나에 8달러 받는 거 봤어? 내가 여기 처음 들어왔을 때는 5달러쯤이었는데, 샌드위치가 커진 것도 아니잖아.",
+      "text": "Did you see they want eight dollars for a sandwich at the place downstairs now? It was like five when I started working here, and it's not like the sandwiches got any bigger.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The place downstairs wants eight bucks for a sandwich now, did you see? It was like five when I started here, and the sandwiches sure didn't get any bigger."
+        },
+        {
+          "style": "formal",
+          "text": "Have you noticed that the restaurant downstairs now charges eight dollars for a sandwich? It was approximately five dollars when I began working here, and the sandwiches have not become any larger."
+        }
+      ],
+      "note": "**they want eight dollars** 는 8달러를 달라고 한다, 즉 그 값을 받는다는 말이에요. **it's not like** 는 ~한 것도 아니잖아라며 따질 때 써요.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "잠깐, 너 아직 그 회사 다녀, 아니면 드디어 그만뒀어? 지난번에 봤을 때 계속 그만둘 거라고 해서 농담인지 진짜인지 모르겠더라.",
+      "text": "Wait, are you still at that same job, or did you finally leave? Last time I saw you, you kept saying you were going to quit, and I couldn't tell if you were kidding.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hang on, you're still at that job? Or did you finally quit? Last time I saw you, you kept saying you were gonna quit, and I couldn't tell if you were joking."
+        },
+        {
+          "style": "formal",
+          "text": "Just a moment, are you still in the same position, or did you eventually leave? When I last saw you, you repeatedly said that you intended to resign, and I could not tell whether you were joking."
+        }
+      ],
+      "note": "**I couldn't tell if** 는 ~인지 아닌지 알 수가 없었다는 뜻이에요. **kidding** 은 농담하다로, joking 과 같은 뜻이에요.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "다섯째 문장 formal 의 Excuse me 는 상대 말을 따지거나 끼어들 때 쓰는 말이라 잠깐이라는 뜻이 아님. Just a moment 로 바꾸고, working at the same position 은 전치사가 어색해 in the same position 으로 고침",
+    "다섯째 문장 casual 의 Or'd you 는 글자로 적으면 알아보기 힘든 축약이라 Or did you 로 고침"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "setId": "s191",
+  "videoId": "daily-s191",
+  "title": "Set 191",
+  "madeAt": "2026-10-14",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "학교에서 현장학습 때문에 보낸 이메일 받았어? 우리 아들은 동의서를 받은 적이 절대 없다는데, 솔직히 걔가 잃어버린 건지 학교에서 깜빡하고 안 보낸 건지 모르겠어.",
+      "text": "Did you get that email from the school about the field trip? My son swears they never gave him a permission slip, and I honestly can't tell if he lost it or if they just forgot to send one home.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You see the school's email about the field trip? My kid swears he never got a permission slip, and honestly I can't tell if he lost it or they just forgot to send one."
+        },
+        {
+          "style": "formal",
+          "text": "Did you receive the email from the school regarding the field trip? My son insists that he was never given a permission slip, and I honestly cannot tell whether he lost it or whether they simply forgot to send one home."
+        }
+      ],
+      "note": "**swears** 는 정말이라고 우기다, 맹세하다라는 뜻이에요. **permission slip** 은 학교 행사에 보호자가 서명하는 동의서예요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "진짜 편하긴 해. 근데 우리 고양이가 왼쪽 팔걸이를 긁어 놔서 그쪽에 긁힌 자국이 좀 있어. 그래도 벽에 붙여 놓으면 전혀 티 안 날 거야.",
+      "text": "It's really comfortable, I'll say that, but our cat got to the left arm, so there's some scratching on that side. If you put it up against a wall, though, you'd never even know.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Super comfy, I'll give it that, but our cat went after the left arm, so that side's kinda scratched up. Stick it against a wall, though, and you'd never know."
+        },
+        {
+          "style": "formal",
+          "text": "It is very comfortable, I will say that, but our cat damaged the left arm, so there is some scratching on that side. If you place it against a wall, however, you would never notice."
+        }
+      ],
+      "note": "**got to** 는 여기서 무언가를 건드려서 망쳐 놓다라는 뜻이에요. **you'd never even know** 는 전혀 티가 안 난다는 말이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이 스탠딩 책상 괜히 샀나 싶어. 하루 종일 서 있을 줄 알았는데 결국 앉아 있게 되더라. 그래서 이제 그냥 이상한 소리 나는 엄청 비싼 책상이 됐어.",
+      "text": "I kind of wish I hadn't bought this standing desk. I thought I'd be standing all day, but I end up sitting anyway, so now it's just a really expensive desk that makes a weird noise.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Kinda regret getting this standing desk. Figured I'd stand all day, but I just sit anyway, so now it's a super pricey desk that makes a weird noise."
+        },
+        {
+          "style": "formal",
+          "text": "I somewhat regret purchasing this standing desk. I expected to be standing all day, but I end up sitting regardless, so it is now simply a very expensive desk that makes an unusual noise."
+        }
+      ],
+      "note": "**I kind of wish I hadn't** 는 그러지 말걸 그랬다는 후회를 부드럽게 말하는 표현이에요. **end up** 은 결국 ~하게 되다라는 뜻이에요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "음, 색은 너한테 진짜 잘 어울리는데 핏은 잘 모르겠어. 어깨가 좀 헐렁하니까 아직 반품할 수 있으면 한 사이즈 작은 걸로 입어 보는 건 어때?",
+      "text": "Okay, I love the color on you, but I'm not sure about the fit. It's kind of loose in the shoulders, so if you can still return it, maybe try a size down?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Love the color on you, but the fit's kinda off. It's a little loose in the shoulders, so if you can still return it, maybe go a size down?"
+        },
+        {
+          "style": "formal",
+          "text": "I really like the color on you, but I am not certain about the fit. It is somewhat loose in the shoulders, so if you are still able to return it, perhaps you could try a smaller size?"
+        }
+      ],
+      "note": "**the color on you** 는 너한테 그 색이 어울린다는 뜻이에요. **a size down** 은 한 치수 작은 것을 말해요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "장 본 게 드디어 왔는데 절반이 잘못 왔어. 일반 우유 시켰는데 귀리 우유가 왔고, 아보카도 세 개 대신 양파를 세 개 보냈더라. 뭐 양파는 쓰긴 하겠는데 오늘 저녁에 과카몰리 만들려고 했단 말이야.",
+      "text": "So the groceries finally showed up, but half the stuff is wrong. Like, I asked for regular milk and got oat milk, and they gave me three onions instead of three avocados. I mean, I'll use the onions, but I was going to make guacamole tonight.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Groceries finally came, but like half of it's wrong. I wanted regular milk and got oat milk, and they sent three onions instead of three avocados. I'll use the onions, but I was gonna make guac tonight."
+        },
+        {
+          "style": "formal",
+          "text": "The groceries have finally arrived, but half of the items are incorrect. I ordered regular milk and received oat milk, and they gave me three onions instead of three avocados. I will use the onions, but I had planned to make guacamole this evening."
+        }
+      ],
+      "note": "**showed up** 은 여기서 도착하다라는 뜻이에요. **I was going to** 는 원래 ~하려고 했다는 계획을 말할 때 써요.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어에서 앞은 현장학습, 뒤는 체험학습 동의서라고 해서 말이 어긋났습니다. 그냥 동의서로 바꾸고 아들 말을 옮기는 말투로 다듬었습니다.",
+    "2번 한국어의 이건 인정할게는 I'll say that 을 그대로 옮긴 티가 납니다. 진짜 편하긴 해로 바꿨습니다. 고양이가 팔걸이를 건드려서도 got to 의 뜻(긁어서 망쳐 놓음)이 잘 안 살아서 긁어 놔서로 고쳤습니다."
+  ]
+}

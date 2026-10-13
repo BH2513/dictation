@@ -1,0 +1,112 @@
+{
+  "setId": "s189",
+  "videoId": "daily-s189",
+  "title": "Set 189",
+  "madeAt": "2026-10-14",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "퇴근하고 진짜 헬스장 가려고 했는데, 소파에 먼저 앉은 게 실수였어. 나는 한번 소파에 앉으면 다시 못 일어나거든. 네가 10분만 일찍 문자했으면 아마 갔을 거야.",
+      "text": "I was totally going to go to the gym after work, but I made the mistake of sitting down on the couch first, and once I'm on that couch I'm not getting back up. If you'd texted me ten minutes earlier, I probably would've gone.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Swear I was gonna hit the gym after work, but I sat on the couch first. Big mistake. Once I'm on that couch, I'm not getting up. If you'd texted ten minutes sooner, I probably would've gone."
+        },
+        {
+          "style": "formal",
+          "text": "I had fully intended to go to the gym after work, but I made the mistake of sitting down on the couch first, and once I am on the couch, I do not get back up. Had you sent me a message ten minutes earlier, I likely would have gone."
+        }
+      ],
+      "note": "**made the mistake of** ~ing 는 ~한 게 실수였다는 뜻이에요. **once I'm on that couch** 처럼 once 는 일단 ~하면 이라는 뜻으로 써요.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "글쎄, 나 그 드라마 진짜 좋아했는데, 주인공이 빠지고 나서부터는 그냥 되는 대로 만드는 것 같더라. 그래서 좀 안 보게 됐어.",
+      "text": "I don't know, I used to love that show, but ever since the main guy left, it just feels like they're making it up as they go, so I kind of stopped watching.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Dunno, I used to love that show, but since the main guy left it feels like they're just winging it, so I kinda quit watching."
+        },
+        {
+          "style": "formal",
+          "text": "I am not entirely sure. I used to enjoy that program very much, but since the lead actor left, it seems as though they are improvising the story as they go, so I have more or less stopped watching."
+        }
+      ],
+      "note": "**making it up as they go** 는 계획 없이 그때그때 지어낸다는 뜻이에요. casual 의 **winging it** 도 같은 뜻으로 즉흥으로 때운다는 말이에요.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "있잖아, 나 목요일 밤까지는 여기서 못 빠져나가거든. 그러니까 네가 먼저 비행기 타고 가서 렌터카 받아 놓으면 어때? 나는 금요일 아침에 거기서 만나면 되고.",
+      "text": "Okay, I can't get out of here until Thursday night, so what if you fly out first and pick up the rental car, and I'll just meet you there Friday morning?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I'm stuck here till Thursday night. How about you fly out first, grab the rental car, and I'll meet you there Friday morning?"
+        },
+        {
+          "style": "formal",
+          "text": "I am unable to leave until Thursday night. Would it be possible for you to fly out first and collect the rental car? I will then meet you there on Friday morning."
+        }
+      ],
+      "note": "**what if you** ~ 는 ~하면 어때 하고 제안할 때 써요. **can't get out of here** 는 여기서 빠져나갈 수가 없다, 일에 묶여 있다는 뜻이에요.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "안녕하세요, 3B호인데요. 화장실 수도꼭지가 밤새 물이 똑똑 떨어져서 제가 직접 조여 봤는데, 더 망가뜨린 것 같아요. 이번 주 중에 사람 좀 보내 주실 수 있을까요?",
+      "text": "Hi, this is 3B. The bathroom faucet's been dripping all night, and I tried tightening it myself, but I think I made it worse, so could you send someone over sometime this week?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, it's 3B. Bathroom faucet's been dripping all night. I tried tightening it but I think I made it worse. Can you send someone over sometime this week?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is the resident of unit 3B. The bathroom faucet has been dripping throughout the night. I attempted to tighten it myself, but I believe I may have made it worse. Would you be able to send someone over sometime this week?"
+        }
+      ],
+      "note": "**dripping** 은 물이 똑똑 떨어진다는 뜻이에요. **send someone over** 는 사람을 이쪽으로 보내 달라고 할 때 쓰는 표현이에요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "주말 내내 아무것도 안 했어. 옷도 안 갈아입었다니까. 토요일에는 좀 찔렸는데, 일요일 밤쯤 되니까 이걸 왜 더 자주 안 하지? 싶더라.",
+      "text": "I didn't do anything all weekend, like I didn't even get dressed, and I felt kind of guilty about it on Saturday, but by Sunday night I was like, why don't I do this more often?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did nothing all weekend. Didn't even get dressed. Felt kinda guilty Saturday, but by Sunday night I was like, why don't I do this more?"
+        },
+        {
+          "style": "formal",
+          "text": "I did nothing at all over the weekend, and I did not even get dressed. I felt somewhat guilty about it on Saturday, but by Sunday night I found myself wondering why I do not do this more often."
+        }
+      ],
+      "note": "**get dressed** 는 옷을 갖춰 입는다는 뜻이에요. **I was like** 는 속으로 이런 생각이 들었다고 말할 때 대화에서 자주 써요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 prob 은 문자로 쓰는 줄임말이라 소리내어 말하면 어색해서 probably 로 고침"
+  ]
+}

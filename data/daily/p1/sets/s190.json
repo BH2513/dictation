@@ -1,0 +1,114 @@
+{
+  "setId": "s190",
+  "videoId": "daily-s190",
+  "title": "Set 190",
+  "madeAt": "2026-10-14",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아니 삼촌이 저녁 먹는 내내 나 얼마 버냐고 묻더니, 내가 안 알려 주니까 사람들 다 있는 데서 대놓고 금액을 막 찍어 보기 시작하더라.",
+      "text": "So my uncle spent the whole dinner asking how much I make, and when I wouldn't tell him, he just started guessing out loud in front of everybody.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My uncle grilled me about my salary all through dinner, and when I wouldn't say, he started throwing out guesses in front of everyone."
+        },
+        {
+          "style": "formal",
+          "text": "My uncle spent the entire dinner asking about my salary, and when I declined to tell him, he began guessing aloud in front of everyone."
+        }
+      ],
+      "note": "**how much I make** 는 내가 얼마 버는지, 즉 연봉이나 월급을 묻는 일상적인 말입니다. **guessing out loud** 는 속으로 생각하지 않고 입 밖으로 소리 내어 짐작한다는 뜻입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "응, 그 기침 때문에 드디어 병원 가 봤어. 알고 보니 그냥 알레르기더라고, 다행이긴 한데 그거 때문에 오전을 통째로 쉬고 간 게 좀 민망하네.",
+      "text": "Yeah, I finally went in about that cough. Turns out it's just allergies, which is good, but now I kind of feel silly for taking the whole morning off for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally got that cough checked out. It's just allergies, which is great, but I kinda feel dumb for blowing the whole morning on it."
+        },
+        {
+          "style": "formal",
+          "text": "I finally saw a doctor about my cough. It turned out to be only allergies, which is good news, but I now feel rather foolish for having taken the entire morning off."
+        }
+      ],
+      "note": "**Turns out** 는 알고 보니 ~더라는 뜻으로 말할 때 It을 자주 뺍니다. **went in about** 은 어떤 증상 때문에 병원에 가 봤다는 구어 표현입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "택배가 벌써 6일째 같은 물류창고에서 꼼짝을 안 해. 그냥 다시 주문할까 싶은데, 그러다 처음 거까지 오면 두 개가 되잖아. 그럼 하나는 반품하느라 귀찮아질 거고.",
+      "text": "My package has been stuck at the same warehouse for six days now. I'd just order it again, but then if the first one shows up I'll have two, and I'll have to deal with sending one back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My package hasn't moved from the same warehouse in six days. I'd just order another, but if the first one turns up I'm stuck with two and gotta send one back."
+        },
+        {
+          "style": "formal",
+          "text": "My package has remained at the same warehouse for six days. I would simply order it again, but if the original arrives, I will have two and will need to arrange a return."
+        }
+      ],
+      "note": "**stuck** 은 어디에 걸려서 움직이지 않는 상태를 말합니다. **deal with** 는 귀찮은 일을 처리하거나 감당한다는 뜻으로 아주 자주 씁니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "일주일 내내 설탕 안 먹고 버텼는데, 금요일에 누가 회사에 도넛을 사 와서 결국 세 개나 먹어 버렸어. 월요일에 다시 처음부터 해야겠다.",
+      "text": "I'd gone a whole week without sugar, but somebody brought donuts into work on Friday and I ended up eating three of them, so I guess I'm starting over again on Monday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I made it a whole week with no sugar, then someone brought donuts to work Friday and I had three, so I guess it's back to day one on Monday."
+        },
+        {
+          "style": "formal",
+          "text": "I had gone an entire week without sugar, but someone brought donuts to the office on Friday and I ate three of them, so I suppose I will be starting again on Monday."
+        }
+      ],
+      "note": "**ended up** 은 의도하지 않았는데 결국 ~하게 됐다는 뜻입니다. **starting over** 는 처음부터 다시 시작한다는 말입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "왜 그런지 모르겠는데, 자꾸 새벽 네 시쯤 깨서 다시 잠이 안 와. 뭐 때문에 깨는지만 알아도 어떻게든 해 볼 텐데.",
+      "text": "I don't know what's going on, but I keep waking up at like four and I just can't get back to sleep. If I knew what was waking me up, I could at least do something about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No idea what's up, but I keep waking up around four and can't fall back asleep. If I knew what was doing it, I could at least try to fix it."
+        },
+        {
+          "style": "formal",
+          "text": "I am not sure what is happening, but I continue to wake at around four o'clock and am unable to fall asleep again. If I knew the cause, I could at least take some action."
+        }
+      ],
+      "note": "**get back to sleep** 은 깬 뒤에 다시 잠든다는 뜻입니다. **at like four** 의 like 는 대충 그쯤이라는 느낌을 주는 말버릇입니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 casual 의 reorder 는 원어민이 이 자리에서 잘 안 쓰는 말이라 order another 로 바꿨습니다.",
+    "2번 한국어의 빼먹은 은 수업을 빠진 느낌이 나서, 오전에 회사를 쉬고 간 뜻이 드러나도록 고쳤습니다.",
+    "4번 한국어 월요일부터 다시 처음부터 는 부터가 겹쳐서 월요일에 다시 처음부터 로 고쳤습니다."
+  ]
+}

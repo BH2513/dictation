@@ -1,0 +1,112 @@
+{
+  "setId": "s194",
+  "videoId": "daily-s194",
+  "title": "Set 194",
+  "madeAt": "2026-10-15",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "한 2년 만에 처음으로 스피닝 수업에 갔는데, 너무 무리했나 봐. 오늘 아침에 일어나니까 열이 나고 온몸이 다 아파. 그래서 뭐, 당분간은 다시 안 갈 거야.",
+      "text": "I went to a spin class for the first time in like two years, and I guess I overdid it, because I woke up this morning with a fever and everything hurts. So yeah, I'm not doing that again for a while.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "First spin class in like two years and I totally overdid it. Woke up with a fever, everything hurts. Yeah, not doing that again for a while."
+        },
+        {
+          "style": "formal",
+          "text": "I attended a spin class for the first time in approximately two years, and I believe I overexerted myself, as I woke this morning with a fever and pain throughout my body. I will not be doing that again for some time."
+        }
+      ],
+      "note": "**overdid it** 는 너무 무리했다는 뜻이에요. 운동이나 먹는 것을 지나치게 했을 때 써요. **for a while** 는 당분간이라는 뜻이에요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "드디어 허리 때문에 병원에 갔는데, 의사가 한마디로 덜 앉아 있고 더 걸으라고 하더라. 결국 아내가 1년 내내 하던 말을 듣는 데 120달러를 낸 거야.",
+      "text": "I finally went to the doctor about my back, and she basically told me to sit less and walk more. So I paid a hundred and twenty dollars to hear what my wife's been telling me for a year.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally got my back checked out, and the doc's like, sit less, walk more. So I paid a hundred and twenty bucks to hear what my wife's been saying for a year."
+        },
+        {
+          "style": "formal",
+          "text": "I finally consulted a doctor regarding my back, and she essentially advised me to sit less and walk more. In other words, I paid one hundred and twenty dollars to hear what my wife has been telling me for a year."
+        }
+      ],
+      "note": "**basically** 는 한마디로, 요컨대라는 뜻으로 말을 간추릴 때 써요. casual 의 **got my back checked out** 은 허리를 진찰받았다는 뜻이에요.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "열한 시쯤 자러 눕는데, 그날 했던 바보 같은 말을 하나하나 다 곱씹느라 그냥 누워만 있어. 그러다 결국 폰을 집어 들어. 그러면 더 안 좋아지는 거 아는데도.",
+      "text": "I go to bed at like eleven, but then I just lie there going over every dumb thing I said that day, so I end up grabbing my phone, which I know only makes it worse.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm in bed by eleven, but then I'm just lying there replaying every dumb thing I said all day, so I grab my phone, which I know just makes it worse."
+        },
+        {
+          "style": "formal",
+          "text": "I go to bed at around eleven, but I then lie awake reviewing every foolish thing I said that day, so I end up reaching for my phone, which I know only makes matters worse."
+        }
+      ],
+      "note": "**going over** 는 무언가를 하나씩 되짚어 본다는 뜻이에요. **end up** 은 결국 ~하게 된다는 뜻이에요.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "내가 말했던 회사 그 사람 알지? 오늘 회의에서 내 아이디어를 자기 거인 것처럼 발표하더라. 끝나고 내가 그 얘기를 꺼냈더니, 우리 같은 팀이니까 상관없대.",
+      "text": "You know that guy I told you about at work? He presented my idea in the meeting today like it was his, and when I brought it up afterwards, he said it didn't matter because we're on the same team.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Remember that guy from work I told you about? He pitched my idea in the meeting today like it was his, and when I called him on it, he's like, doesn't matter, we're on the same team."
+        },
+        {
+          "style": "formal",
+          "text": "Do you recall the colleague I mentioned to you? He presented my idea in today's meeting as though it were his own, and when I raised the matter afterwards, he said it was of no importance because we are on the same team."
+        }
+      ],
+      "note": "**brought it up** 은 어떤 이야기를 꺼냈다는 뜻이에요. casual 의 **called him on it** 은 상대의 잘못을 짚어서 따졌다는 뜻이에요.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "택배가 두 시에 배달 완료라고 나오는데, 문 앞에 없어. 이웃집에도 없고 프런트 직원도 못 봤대. 그래서 누구한테 전화해야 할지도 모르겠어.",
+      "text": "It says my package was delivered at two, but it's not at my door, the neighbors don't have it, and the guy at the front desk hasn't seen it either, so I don't even know who I'm supposed to call.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking says my package got dropped off at two, but it's not at my door, the neighbors don't have it, front desk guy hasn't seen it, so I've got no clue who to even call."
+        },
+        {
+          "style": "formal",
+          "text": "According to the tracking information, my package was delivered at two, but it is not at my door, my neighbors do not have it, and the front desk attendant has not seen it either, so I am unsure whom I should contact."
+        }
+      ],
+      "note": "**who I'm supposed to call** 은 누구한테 전화해야 하는지라는 뜻이에요. casual 의 **I've got no clue** 는 전혀 모르겠다는 뜻이에요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "5번 한국어: 영어는 누구한테(who) 전화해야 하는지인데 한국어가 어디에로 되어 있어 누구한테로 고침"
+  ]
+}

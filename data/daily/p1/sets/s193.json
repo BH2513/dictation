@@ -1,0 +1,114 @@
+{
+  "setId": "s193",
+  "videoId": "daily-s193",
+  "title": "Set 193",
+  "madeAt": "2026-10-15",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "예전엔 금요일마다 그 피자집에 갔었는데, 작년에 주인이 바뀌고 나서 도우가 골판지 맛이 나. 그래서 이제는 굳이 안 가.",
+      "text": "We used to go to that pizza place every Friday, but they changed owners last year, and now the crust tastes like cardboard, so I don't even bother anymore.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every Friday we'd hit that pizza place, but it got new owners last year and the crust's like cardboard now, so I just don't bother."
+        },
+        {
+          "style": "formal",
+          "text": "We used to visit that pizza restaurant every Friday, but it changed ownership last year, and the crust now tastes like cardboard, so I no longer go there."
+        }
+      ],
+      "note": "**used to** 는 예전에는 자주 했지만 지금은 안 하는 일을 말할 때 씁니다. **don't even bother** 는 해 봐야 소용없어서 아예 안 한다는 뜻입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "형이 놀러 와서 토요일에 조카들 데리고 동물원에 갔는데, 진짜 한 10마일은 걸은 것 같아. 아직도 다리가 쑤셔.",
+      "text": "My brother was in town, so we took his kids to the zoo on Saturday, and I swear I walked like ten miles. I'm still sore.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Took my brother's kids to the zoo Saturday since he was in town, and I swear I walked like ten miles. Still sore."
+        },
+        {
+          "style": "formal",
+          "text": "My brother was visiting, so we took his children to the zoo on Saturday, and I must have walked about ten miles. I am still sore."
+        }
+      ],
+      "note": "**was in town** 은 다른 데 사는 사람이 잠깐 이 동네에 와 있다는 뜻입니다. **I swear** 는 과장 섞어 진짜라고 강조할 때 쓰고, **sore** 는 많이 써서 근육이 쑤시는 것입니다.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "식기세척기 고치는 법 좀 찾아보려고 유튜브를 켰는데, 어쩌다 보니 두 시간 뒤에 어떤 아저씨가 낡은 보트 고치는 걸 보고 있더라. 식기세척기는 아직도 고장 난 그대로야.",
+      "text": "I only opened YouTube to figure out how to fix the dishwasher, and somehow two hours later I was watching some guy fix up an old boat. And the dishwasher's still broken.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went on YouTube just to figure out the dishwasher, and two hours later I'm watching some guy fix up an old boat. Dishwasher's still broken, by the way."
+        },
+        {
+          "style": "formal",
+          "text": "I only opened YouTube to learn how to repair the dishwasher, and somehow, two hours later, I was watching a man restore an old boat. The dishwasher is still broken."
+        }
+      ],
+      "note": "**figure out** 은 방법이나 답을 알아내는 것입니다. **fix up** 은 낡은 것을 손봐서 쓸 만하게 고치는 것을 말합니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "어머, 이게 얼마 만이야! 너희 아직 호숫가 쪽에 살아, 아니면 결국 시내로 다시 이사 왔어?",
+      "text": "Oh my gosh, it's been forever! Are you guys still living out by the lake, or did you finally move back to the city?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No way, it's been ages! You guys still out by the lake, or back in the city now?"
+        },
+        {
+          "style": "formal",
+          "text": "Goodness, it has been such a long time! Are you still living out by the lake, or did you eventually move back to the city?"
+        }
+      ],
+      "note": "**it's been forever** 는 정말 오랜만이라는 뜻으로 반갑게 인사할 때 씁니다. **out by the lake** 는 시내에서 좀 떨어진 호숫가 근처를 말합니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "늦어서 미안해. 아침에 누가 내 차 바로 뒤에 차를 대 놔서, 그게 누구 차인지 알아내는 데 한참 걸렸어.",
+      "text": "Sorry I'm late, somebody parked right behind my car this morning, and it took me forever to figure out whose it was.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My bad, someone parked right behind me this morning and it took forever to find out whose car it was."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for being late. Someone parked directly behind my car this morning, and it took me a very long time to find out whose car it was."
+        }
+      ],
+      "note": "**took me forever** 는 어떤 일을 하는 데 시간이 엄청 오래 걸렸다는 말입니다. **whose it was** 는 문장 안에 들어가서 그게 누구 것인지를 나타내는 말로, 여기서는 누구 차인지를 뜻합니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal: I believe 는 I swear 의 과장하며 강조하는 느낌을 약하게 만들어서, 그 느낌이 남는 I must have walked about ten miles 로 고침",
+    "4번 casual: or'd you 는 소리로는 나도 글로 적으면 어색하고 읽기도 어려워서, 더 짧은 구어인 or back in the city now? 로 고침",
+    "5번 note: whose it was 는 묻는 말이 아니라 문장 안에 들어간 말인데 묻는 표현이라고 설명해서, 누구 것인지를 나타내는 말이라고 바로잡음"
+  ]
+}

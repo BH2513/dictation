@@ -1,0 +1,114 @@
+{
+  "setId": "s195",
+  "videoId": "daily-s195",
+  "title": "Set 195",
+  "madeAt": "2026-10-16",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "음, 이거 우리 거 아닌 것 같은데. 우리는 팟타이 시켰는데, 이건 무슨 케빈이라는 사람한테 갈 온 가족이 먹을 저녁이야. 가게에 전화할까, 아니면 케빈이 찾으러 올 것 같아?",
+      "text": "Um, I don't think this is ours. We ordered pad thai, and this is like a whole family dinner for somebody named Kevin. Should I call them, or do you think Kevin's going to come looking for it?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wait, pretty sure this isn't ours. We got pad thai, and this is basically a whole family dinner for some guy named Kevin. Should I call them, or is Kevin gonna come looking for it?"
+        },
+        {
+          "style": "formal",
+          "text": "I do not believe this is our order. We ordered pad thai, and this appears to be an entire family dinner for someone named Kevin. Should I call them, or do you think Kevin will come looking for it?"
+        }
+      ],
+      "note": "**come looking for it** 은 그걸 찾으러 오다라는 뜻입니다. **somebody named Kevin** 처럼 이름 앞에 named 를 붙이면 케빈이라는 사람이 됩니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "솔직히? 너랑 별로 안 어울려. 아니 재킷 자체는 예쁜데, 입은 뒤로 계속 소매를 잡아당기고 있잖아. 입고 있는 것도 불편해 보여.",
+      "text": "Honestly? It's not really you. I mean, it's a nice jacket, but you've been pulling at the sleeves since you put it on, so I don't think you're even comfortable in it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Eh, honestly? Not really your style. Nice jacket and all, but you've been tugging at the sleeves since you put it on, so I don't think you're even comfy in it."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, I do not think it suits you. It is a lovely jacket, but you have been pulling at the sleeves since you put it on, so I do not believe you are comfortable in it."
+        }
+      ],
+      "note": "**It's not really you** 는 너답지 않다, 너한테 안 어울린다는 말입니다. **pulling at** 은 무언가를 자꾸 잡아당기는 동작을 말합니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "6월 둘째 주는 되는데 첫째 주는 안 돼. 그 주 토요일에 우리 언니가 결혼하거든. 그러니까 너희가 일주일만 미뤄 주면 나도 갈게.",
+      "text": "I can do the second week of June, but not the first, because my sister's getting married that Saturday. So if you guys can push it back a week, I'm in.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Second week of June works, but not the first, 'cause my sister's getting married that Saturday. So if you guys can bump it back a week, I'm in."
+        },
+        {
+          "style": "formal",
+          "text": "I am available the second week of June, but not the first, as my sister is getting married that Saturday. If you are able to postpone it by one week, I would be glad to join."
+        }
+      ],
+      "note": "**push it back** 은 일정을 뒤로 미루다는 뜻이고, 캐주얼하게는 **bump it back** 이라고도 합니다. **I'm in** 은 나도 낄게, 나도 할게라는 말입니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이사할지 말지 계속 마음이 왔다 갔다 해. 보고 온 집이 회사에서 훨씬 가깝긴 한데, 한 달에 200달러쯤 더 비싸거든. 하루에 40분 아끼는 게 그만한 값어치가 있는지 모르겠어.",
+      "text": "I keep going back and forth about moving. The place I looked at is way closer to work, but it's like two hundred dollars more a month, and I don't know if saving forty minutes a day is worth that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Still can't make up my mind about moving. The place I saw is way closer to work, but it's like two hundred bucks more a month, and I dunno if saving forty minutes a day is worth it."
+        },
+        {
+          "style": "formal",
+          "text": "I remain undecided about moving. The apartment I viewed is much closer to work, but it costs approximately two hundred dollars more per month, and I am not certain that saving forty minutes a day is worth that."
+        }
+      ],
+      "note": "**go back and forth** 는 결정을 못 하고 마음이 왔다 갔다 한다는 뜻입니다. **way closer** 의 way 는 훨씬이라는 뜻으로 비교를 강조합니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그래서 다이어트는 수요일까지 갔어. 잘 하고 있었는데, 엄마가 오셔서 라자냐를 만들어 주셨거든. 엄마한테 나 탄수화물 끊었다고 말할 생각은 전혀 없었지.",
+      "text": "So the diet lasted till Wednesday. I was doing fine, but then my mom came over and made her lasagna, and I wasn't about to tell her I'm off carbs.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Yeah, the diet made it to Wednesday. I was doing okay, then my mom came over and made her lasagna, and no way was I telling her I'm off carbs."
+        },
+        {
+          "style": "formal",
+          "text": "The diet lasted until Wednesday. I was doing well, but then my mother visited and prepared her lasagna, and I was not about to tell her that I am avoiding carbohydrates."
+        }
+      ],
+      "note": "**wasn't about to** 는 그럴 생각이 전혀 없었다는 뜻입니다. **off carbs** 는 탄수화물을 끊은 상태를 말합니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal: 같이 사는 사람에게 하는 말인데 Excuse me 로 시작하면 남에게 말을 거는 것처럼 들려서 뺐습니다.",
+    "1번 ko: '온 가족 저녁 한 상'이 어색해서 '온 가족이 먹을 저녁'으로 고쳤습니다.",
+    "3번 casual: 일정을 미룬다는 뜻으로는 bump it a week 보다 bump it back a week 가 자연스러워서 back 을 넣었고, note 도 그에 맞췄습니다."
+  ]
+}

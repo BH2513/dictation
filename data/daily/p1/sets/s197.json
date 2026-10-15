@@ -1,0 +1,113 @@
+{
+  "setId": "s197",
+  "videoId": "daily-s197",
+  "title": "Set 197",
+  "madeAt": "2026-10-16",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "요즘 폰이 좀 이상해. 화면이 1초쯤 갑자기 까맣게 꺼지는데, 폰은 켜져 있어. 음악 나오는 소리도 계속 들리거든. 벌써 두 번이나 껐다 켰는데, 이제 뭘 더 해 봐야 할지 모르겠어.",
+      "text": "My phone's been doing this weird thing where the screen just goes black for a second, but it's still on, like I can still hear the music playing. I already restarted it twice, so I don't really know what else to try.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my screen keeps randomly going black for like a second, but the phone's still on, I can still hear my music. Restarted it twice already and I've got no clue what else to do."
+        },
+        {
+          "style": "formal",
+          "text": "My phone has been behaving strangely. The screen goes black for a second, yet it remains on, and I can still hear the music playing. I have already restarted it twice, so I am not sure what else to try."
+        }
+      ],
+      "note": "**doing this weird thing where** 는 기계나 몸이 뭔가 이상하게 굴 때 그 증상을 뒤에 이어서 설명하는 말투입니다. **goes black** 은 화면이 까맣게 꺼진다는 뜻입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "오늘 아침에 헬스장 갈 준비 다 해 놨는데, 이어폰이 아무 데도 없는 거야. 미안하지만 옆에서 웬 남자가 끙끙대는 소리 들으면서 운동 한 판 다 할 생각은 없어.",
+      "text": "I was all set to go to the gym this morning, but I couldn't find my headphones anywhere, and I'm sorry, I'm not doing a whole workout listening to some guy grunting next to me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Totally had the gym planned this morning, but my headphones were just gone, and sorry, I'm not gonna do a whole workout with some guy grunting next to me."
+        },
+        {
+          "style": "formal",
+          "text": "I had fully intended to go to the gym this morning, but I could not find my headphones anywhere, and I am afraid I am not willing to do an entire workout while listening to someone grunting beside me."
+        }
+      ],
+      "note": "**all set to** 는 무엇을 할 준비가 다 됐다는 뜻입니다. **I'm sorry, I'm not** 은 사과가 아니라 미안하지만 그건 못 하겠다고 딱 자를 때 씁니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "아니, 그건 지금 시작하면 안 돼. 너 중간에 잠들 거고, 그럼 나는 네가 따라올 때까지 기다려야 하잖아. 그냥 우리 둘 다 이미 본 거 틀면 안 될까?",
+      "text": "No, we can't start that one, because you'll fall asleep halfway through and then I'll have to wait for you to catch up. Can we just put on something we've both already seen?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nope, not that one. You're gonna pass out halfway and then I've gotta wait for you to catch up. Can't we just watch something we've both seen?"
+        },
+        {
+          "style": "formal",
+          "text": "No, I would rather we did not start that one, because you will fall asleep halfway through and I will then have to wait for you to catch up. Could we instead watch something we have both already seen?"
+        }
+      ],
+      "note": "**fall asleep halfway through** 는 보다가 중간에 잠든다는 뜻입니다. **catch up** 은 놓친 부분을 따라잡는다는 말이고, **put on** 은 영화나 음악을 튼다는 뜻입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "노트북은 잘 돌아가요. 다만 미리 솔직하게 말씀드리면, 배터리가 예전처럼 오래 안 가서 아마 거의 항상 충전기를 꽂아 두고 쓰셔야 할 거예요. 그래서 80달러만 받으려는 거예요.",
+      "text": "The laptop works fine, I just want to be upfront that the battery doesn't hold a charge like it used to, so you'll probably want to keep it plugged in most of the time. That's why I'm only asking eighty dollars for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It runs fine. Just so you know, though, the battery's not what it used to be, so you'll wanna keep it plugged in most of the time. That's why I'm only asking eighty bucks."
+        },
+        {
+          "style": "formal",
+          "text": "The laptop works perfectly well. I do want to be transparent that the battery does not hold a charge as it once did, so you will likely need to keep it plugged in most of the time. That is why I am asking only eighty dollars for it."
+        }
+      ],
+      "note": "**be upfront** 는 숨기지 않고 미리 솔직하게 말한다는 뜻입니다. **hold a charge** 는 배터리가 충전된 상태를 유지한다는 말입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "일요일에 사촌 생일 모임에 갔는데, 진짜로 이모, 고모들이 한 명도 빠짐없이 결혼 언제 하냐고 묻더라. 그래서 다섯 번째부터는 그냥 내년에 한다고 했어. 그래야 날 좀 내버려 둘 것 같아서.",
+      "text": "I went to my cousin's birthday thing on Sunday, and I swear every single aunt asked me when I'm getting married, so by the fifth one I just started saying next year so they'd leave me alone.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sunday was my cousin's birthday thing, and swear to God every aunt there asked when I'm getting married, so by number five I was just saying next year to get them off my back."
+        },
+        {
+          "style": "formal",
+          "text": "I attended my cousin's birthday gathering on Sunday, and truly, every one of my aunts asked me when I intend to marry, so by the fifth one I simply began answering next year so that they would leave me alone."
+        }
+      ],
+      "note": "**I swear** 는 과장 같지만 진짜라고 강조할 때 씁니다. **leave me alone** 은 나 좀 내버려 두라는 뜻이고, casual 의 **get them off my back** 도 잔소리를 떼어 낸다는 비슷한 말입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 의 sit through a whole workout 은 앉아서 견딘다는 말이라 운동에 안 맞아 do a whole workout 으로 고침",
+    "4번 casual 이 쉼표로 두 문장을 붙여 놓아 It runs fine 뒤에서 끊고 Just so you know, though 로 나눔"
+  ]
+}

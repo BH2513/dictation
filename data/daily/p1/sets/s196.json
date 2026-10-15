@@ -1,0 +1,117 @@
+{
+  "setId": "s196",
+  "videoId": "daily-s196",
+  "title": "Set 196",
+  "madeAt": "2026-10-16",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저기요, 윗집인데요, 또 연락드려요. 난방기가 아직도 안 돼요. 화요일에 기사님이 오신다고 하셨는데 아무도 안 왔어요. 그분한테 한 번 더 전화해 주실 수 있어요? 밤에는 진짜 추워요.",
+      "text": "Hey, it's me from upstairs again. The heater still isn't working, and I know you said the guy would come by Tuesday, but nobody showed up, so could you give him another call? It's getting really cold at night.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hi, upstairs unit again. Heater's still busted. Your guy was supposed to come Tuesday, but nobody came, so can you call him again? It's freezing at night."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is your tenant from upstairs again. The heater is still not working. I understand the repairman was supposed to come on Tuesday, but no one arrived, so would you mind calling him once more? It has been getting very cold at night."
+        }
+      ],
+      "note": "**come by** 는 잠깐 들르다라는 뜻이에요. **give him another call** 은 그 사람한테 다시 전화하다라는 말이에요. give someone a call 은 call someone 보다 가볍고 흔하게 쓰는 말투예요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이번 주말에 집 전체를 대청소하려고 했는데, 결국 소파에서 책 읽고 낮잠만 잤어요. 근데 솔직히 몇 주 만에 제일 몸이 개운해요.",
+      "text": "I was going to clean the whole apartment this weekend, but I ended up just reading on the couch and taking naps, and honestly, I feel better than I have in weeks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna clean the whole place this weekend, but I just read on the couch and napped instead, and honestly? Best I've felt in weeks."
+        },
+        {
+          "style": "formal",
+          "text": "I had planned to clean the entire apartment this weekend, but instead I spent the time reading on the couch and napping, and to be honest, I feel better than I have in weeks."
+        }
+      ],
+      "note": "**ended up** 은 계획과 달리 결국 ~하게 됐다는 뜻이에요. **I feel better than I have in weeks** 는 몇 주 만에 가장 기분이 좋다는 자연스러운 표현이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "자꾸 회사 그만둘까 생각하는데, 아직 옮길 데가 정해진 것도 없고, 잘하고 있는 일을 지루하다는 이유만으로 그만두면 좀 바보 같을 것 같아요.",
+      "text": "I keep thinking about quitting, but I don't have anything else lined up yet, and I'd feel kind of stupid leaving a job I'm actually good at just because I'm bored.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Thinking about quitting, but I've got nothing lined up, and it'd be kinda dumb to ditch a job I'm actually good at just 'cause I'm bored."
+        },
+        {
+          "style": "formal",
+          "text": "I have been considering resigning, but I do not have another position arranged yet, and I would feel rather foolish leaving a job I am genuinely good at simply because I am bored."
+        }
+      ],
+      "note": "**lined up** 은 다음 일이나 계획이 미리 잡혀 있다는 뜻이에요. **kind of** 는 좀, 약간이라는 뜻으로 말을 부드럽게 해 줘요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "커피 들고 앉을 자리 찾느라 그 카페를 한 세 바퀴는 돌았는데, 테이블마다 노트북 하는 사람이 한 명씩 앉아 있더라고요. 그래서 결국 그냥 차에서 마셨어요.",
+      "text": "We walked around that cafe like three times with our coffees looking for a seat, but every single table had one guy on a laptop, so we just ended up drinking them in the car.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We did like three laps of that cafe with our coffees trying to find a seat, but every table had some guy on a laptop, so we just drank them in the car."
+        },
+        {
+          "style": "formal",
+          "text": "We walked around that cafe about three times with our coffees looking for a seat, but every table was occupied by someone on a laptop, so we ended up drinking them in the car."
+        }
+      ],
+      "note": "**like three times** 에서 like 는 대략, 한 ~쯤이라는 뜻이에요. **every single** 은 every 를 강조해서 하나도 빠짐없이 전부라는 느낌을 줘요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그래서 걔한테 말해야 돼, 말아야 돼? 말하면 속상해할 텐데, 내가 알고 있었다는 걸 나중에 알게 되면 그게 훨씬 더 안 좋잖아. 아, 모르겠다. 하룻밤 자면서 생각해 볼래.",
+      "text": "So should I tell her or not? Because if I tell her, she's going to be upset, but if she finds out later that I knew, that's way worse. Okay, I don't know, let me sleep on it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Do I tell her or not? If I do, she's gonna be upset, but if she finds out later I knew, that's way worse. Ugh, I dunno, I'll sleep on it."
+        },
+        {
+          "style": "formal",
+          "text": "Should I tell her or not? If I tell her, she will be upset, but if she later discovers that I knew, that would be far worse. I am not certain, so I will think it over tonight."
+        }
+      ],
+      "note": "**sleep on it** 은 바로 결정하지 않고 하룻밤 자면서 생각해 보겠다는 뜻이에요. **way worse** 의 way 는 훨씬이라는 뜻으로 말할 때 자주 써요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 upstairs neighbor 는 집주인에게 하는 말로 맞지 않아서(집주인은 이웃이 아님) 윗집 세입자라는 뜻이 되게 고침",
+    "1번 한국어 밤에 진짜 추워지고 있어요 는 번역투라 밤에는 진짜 추워요 로 고침",
+    "1번 note 에서 give him another call 이 call again 보다 부드럽다는 설명은 근거가 약해서, give someone a call 이 가볍고 흔한 말투라는 설명으로 바꿈",
+    "3번 casual 의 Quitting's always on my mind 는 오히려 글말 같아서 더 짧은 구어로 고침",
+    "3번 한국어에 영어에 없는 솔직히 가 들어가 있어서 뺌",
+    "5번 한국어 훨씬 더 최악 은 어색해서 훨씬 더 안 좋잖아 로 고치고, 앞 문장을 자연스럽게 이음"
+  ]
+}

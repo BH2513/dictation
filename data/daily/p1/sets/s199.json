@@ -1,0 +1,112 @@
+{
+  "setId": "s199",
+  "videoId": "daily-s199",
+  "title": "Set 199",
+  "madeAt": "2026-10-17",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 아빠 차고 정리하는 거 도와드렸는데, 한 시간이면 끝날 줄 알았거든. 근데 아빠가 물건 하나하나마다 얽힌 사연을 다 얘기해 주셔서 저녁때까지 거기 있었어.",
+      "text": "I helped my dad clean out his garage on Saturday, and I thought it'd take like an hour, but he had to tell me the story behind every single thing, so we were there till dinner.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Spent Saturday helping my dad clear out his garage. Figured it'd take like an hour, but he had a story for every single thing, so we didn't wrap up till dinner."
+        },
+        {
+          "style": "formal",
+          "text": "On Saturday I helped my father clean out his garage. I expected it to take about an hour, but he wanted to tell me the story behind every item, so we were there until dinner."
+        }
+      ],
+      "note": "**clean out** 은 안에 든 것을 다 꺼내서 싹 정리한다는 뜻이에요. **every single thing** 은 하나도 빼놓지 않고 전부라고 힘주어 말할 때 써요.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "요즘 계란 값 얼마인지 봤어? 예전엔 가격도 안 보고 열두 개짜리 한 팩 그냥 집었는데, 어제 보니까 거의 6달러더라. 그래서 요즘은 우리 엄마가 그러셨던 것처럼 가격을 꼼꼼히 보고 있어.",
+      "text": "Did you see how much eggs are now? I used to just grab a dozen without even looking, but they were almost six dollars yesterday, so now I'm checking prices like my mom used to.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Have you seen egg prices lately? I used to just grab a dozen without looking, but they were almost six bucks yesterday, so now I'm checking prices like my mom did."
+        },
+        {
+          "style": "formal",
+          "text": "Have you noticed how expensive eggs have become? I used to buy a dozen without even looking, but yesterday they were almost six dollars, so now I check prices the way my mother used to."
+        }
+      ],
+      "note": "**grab** 은 고민 없이 휙 집어 드는 느낌이에요. **used to** 는 예전에는 늘 그랬는데 지금은 아니라는 말이에요.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "나 오늘 밤엔 좀 일찍 갈게. 다섯 시에 일어나서 동생 공항까지 태워다 줘야 하거든. 그래도 너희는 남아서 재밌게 놀아, 알았지?",
+      "text": "I'm going to head out a little early tonight, because I have to be up at five to drive my sister to the airport. But you guys stay and have fun, okay?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gonna take off a bit early tonight 'cause I gotta be up at five to drive my sister to the airport. You guys stick around and have fun though, okay?"
+        },
+        {
+          "style": "formal",
+          "text": "I am going to leave a little early this evening, because I need to be up at five to drive my sister to the airport. Please stay and enjoy yourselves, though."
+        }
+      ],
+      "note": "**head out** 은 자리를 뜨다, 나가 보다라는 뜻이에요. casual 의 **take off** 도 같은 뜻으로 많이 써요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그러니까 그 사람이 간호사인데 밤에 일하거든. 그게 아직 혼자인 이유이기도 한데, 솔직히 내가 아는 남자 중에 제일 착한 사람 중 하나야. 그리고 요리도 해, 진짜 제대로. 파스타 정도가 아니라.",
+      "text": "So he's a nurse and he works nights, which is kind of why he's still single, but he's honestly one of the nicest guys I know. And he cooks, like really cooks, not just pasta.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nurse, works the night shift, which is kinda why he's still single, but honestly he's one of the nicest guys I know. And he cooks, like actually cooks, not just pasta."
+        },
+        {
+          "style": "formal",
+          "text": "He is a nurse who works nights, which is partly why he is still single, but he is genuinely one of the kindest men I know. He also cooks, and I mean truly cooks, not just pasta."
+        }
+      ],
+      "note": "**works nights** 는 야간 근무를 한다는 말이에요. **kind of why** 는 딱 그것 때문은 아니어도 어느 정도 그 이유라는 뜻이에요.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "새 매트리스 들이고 나서부터 잠을 잘 못 자. 허리에 좋다고는 하는데 너무 푹신해서 몸이 푹 꺼지는 느낌이라 자꾸 새벽 세 시에 깨.",
+      "text": "I haven't been sleeping well since we got the new mattress. It's supposed to be great for your back, but it's so soft I feel like I'm sinking, so I keep waking up at three in the morning.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ever since we got the new mattress I've been sleeping awful. It's supposed to be great for your back, but it's so soft I feel like I'm sinking, so I keep waking up at three a.m."
+        },
+        {
+          "style": "formal",
+          "text": "I have not been sleeping well since we purchased the new mattress. It is supposed to be excellent for the back, but it is so soft that I feel as though I am sinking, so I keep waking up at three in the morning."
+        }
+      ],
+      "note": "**supposed to** 는 원래 그렇다고들 하는데 실제로는 아니라는 느낌을 줘요. **keep waking up** 은 자꾸 깬다는 뜻이에요.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 casual: 두 문장을 쉼표로만 붙여 끊어 읽기 어색해서 'cause 를 넣어 이유로 이어지게 고침"
+  ]
+}

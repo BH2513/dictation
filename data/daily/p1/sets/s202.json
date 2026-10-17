@@ -1,0 +1,113 @@
+{
+  "setId": "s202",
+  "videoId": "daily-s202",
+  "title": "Set 202",
+  "madeAt": "2026-10-18",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "애가 같은 책을 네 번이나 읽어 달라더니, 그다음엔 물 달라고 하고, 그다음엔 진짜 중요한 할 말이 있다고 하더라고. 들어 보니 상어 얘기였어. 그래서 겨우 잠들었을 때쯤엔 저녁 먹을 기운도 없었어.",
+      "text": "He made me read the same book four times, and then he wanted water, and then he had to tell me something really important, which turned out to be about sharks. So by the time he was finally asleep, I didn't even have the energy to eat dinner.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Same book, four times, then he wanted water, then he had this super important thing to tell me, and it was about sharks. By the time he was finally out, I was too wiped to even eat dinner."
+        },
+        {
+          "style": "formal",
+          "text": "He had me read the same book four times, after which he asked for water, and then he insisted on telling me something very important, which turned out to concern sharks. By the time he had finally fallen asleep, I did not even have the energy to eat dinner."
+        }
+      ],
+      "note": "**turned out to be** 는 알고 보니 ~였다는 뜻이에요. **by the time** 은 ~할 때쯤에는, casual 의 **wiped** 는 녹초가 됐다는 말이에요.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나도 맥스 진짜 맡아 주고 싶어. 정말이야. 근데 우리 집주인이 반려동물에 엄청 깐깐해서 알게 되면 우리 큰일 나. 젠한테는 물어봤어? 걔 이번 주 내내 집에 있을걸.",
+      "text": "I'd love to watch Max for you, I really would, but our landlord's super strict about pets, and if he found out, we'd be in real trouble. Have you asked Jen? I think she's home all week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Man, I wish I could take Max, I really do, but our landlord's crazy strict about pets, and if he found out, we'd be in so much trouble. Did you try Jen? I think she's home all week."
+        },
+        {
+          "style": "formal",
+          "text": "I would be glad to look after Max for you, I truly would, but our landlord is very strict regarding pets, and if he were to find out, we would be in serious trouble. Have you asked Jen? I believe she is at home all week."
+        }
+      ],
+      "note": "**watch** 는 여기서 잠깐 돌봐 준다는 뜻이에요. **I really would** 를 붙이면 진심으로 그러고 싶다는 게 강조돼요.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "사실 퇴근하고 달리기하러 가려고 했거든. 근데 소파에 한 1분 앉았는데 그걸로 끝이었어. 뭐, 내일 가지. 아마도.",
+      "text": "I was actually going to go for a run after work, but then I sat down on the couch for like one minute, and that was it. I mean, I'll go tomorrow. Probably.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna run after work, then I sat on the couch for a sec and that was it. Tomorrow, probably."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to go for a run after work, but I sat down on the couch for about a minute, and that was the end of it. I will go tomorrow. Probably."
+        }
+      ],
+      "note": "**that was it** 은 그걸로 끝이었다, 더는 아무것도 안 했다는 뜻이에요. **I mean** 은 말을 고쳐 잇거나 덧붙일 때 써요.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이번 주말에 캠핑 가기로 했는데 이틀 내내 비가 온대서 그냥 집에 있기로 했어. 애들이 꽤 속상해해서 거실에 텐트라도 쳐 줄까 해.",
+      "text": "We were supposed to go camping this weekend, but it's going to rain both days, so we're just staying home. The kids are pretty upset, so I might set up the tent in the living room for them.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Camping's off this weekend, it's gonna rain both days, so we're just staying in. The kids are pretty bummed, so I might put the tent up in the living room for them."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to go camping this weekend, but rain is forecast for both days, so we will be staying at home. The children are rather disappointed, so I may set up the tent in the living room for them."
+        }
+      ],
+      "note": "**were supposed to** 는 ~하기로 되어 있었다는 뜻이에요. **set up the tent** 는 텐트를 치다, casual 의 **bummed** 는 실망했다는 말이에요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이번 달에 설탕 끊는다고 사람들한테 다 말해 놨거든. 그래서 지금은 아무도 못 보게 거의 차 안에서 쿠키를 먹고 있어. 알아, 좋은 징조는 아니지.",
+      "text": "I told everybody I was cutting out sugar this month, so now I'm basically eating cookies in the car so nobody sees me, which, I know, isn't a great sign.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I told everyone I'm quitting sugar this month, and now I'm basically sneaking cookies in the car so nobody sees. Yeah, I know, not a great sign."
+        },
+        {
+          "style": "formal",
+          "text": "I told everyone that I was giving up sugar this month, so now I am essentially eating cookies in the car so that no one sees me, which, I realize, is not a promising sign."
+        }
+      ],
+      "note": "**cutting out sugar** 는 설탕을 끊는다는 뜻이에요. **isn't a great sign** 은 좋은 신호가 아니다, 안 좋은 쪽으로 가고 있다는 말이에요.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 casual 이 text 와 앞부분이 거의 같아서(So I was gonna go for a run after work, but I sat down on the couch...) 더 짧고 축약된 구어로 고쳤습니다.",
+    "5번 한국어 '다들한테' 는 어색해서 '사람들한테 다' 로 고쳤습니다."
+  ]
+}

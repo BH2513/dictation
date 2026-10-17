@@ -1,0 +1,113 @@
+{
+  "setId": "s201",
+  "videoId": "daily-s201",
+  "title": "Set 201",
+  "madeAt": "2026-10-18",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "잠깐, 지난번에 봤을 때 아직 은행 다니고 있었지? 지금도 거기 있어, 아니면 맨날 얘기하던 빵집 드디어 차렸어?",
+      "text": "Wait, last time I saw you, you were still at the bank, right? Are you still there, or did you finally open that bakery you kept talking about?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hang on, weren't you still at the bank last time I saw you? You still there, or'd you finally open that bakery you kept going on about?"
+        },
+        {
+          "style": "formal",
+          "text": "If I remember correctly, you were still working at the bank when we last met. Are you still there, or did you finally open the bakery you had mentioned so often?"
+        }
+      ],
+      "note": "**kept talking about** 는 계속 얘기하던 이라는 뜻이에요. casual 의 **going on about** 는 질릴 만큼 계속 떠들어 댄다는 느낌이 더 들어가요.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "벌써 엿새째 같은 물류창고에 묶여 있는데, 전화할 때마다 영업일로 이틀만 더 기다려 달래. 솔직히 이제 그냥 없어진 거 아닌가 싶어.",
+      "text": "It's been stuck at the same warehouse for six days now, and every time I call, they tell me to give it two more business days, so honestly, I'm starting to think it's just gone.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Six days now it's been sitting at the same warehouse, and every time I call they're like, give it two more business days. Honestly? I think it's gone."
+        },
+        {
+          "style": "formal",
+          "text": "It has remained at the same warehouse for six days, and each time I call, I am told to allow two more business days. I am beginning to believe it has been lost."
+        }
+      ],
+      "note": "**give it two more business days** 는 영업일로 이틀만 더 기다려 보라는 말이에요. **it's just gone** 은 그냥 잃어버린 것 같다고 포기할 때 써요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "누가 전화만 하면 폰이 그냥 멈춰 버리고, 다시 돌아올 때쯤이면 상대가 벌써 끊었어. 그러니까 내가 전화 안 받으면 그래서 그런 거야. 일부러 안 받는 거 아니야, 진짜야.",
+      "text": "Every time somebody calls me, my phone just freezes, and by the time it comes back, they've already hung up. So if I don't pick up, that's why. I'm not ignoring you, I promise.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My phone freezes every single time someone calls, and when it unfreezes they've already hung up. So if I don't answer, that's why. I'm not ignoring you, swear."
+        },
+        {
+          "style": "formal",
+          "text": "Whenever someone calls me, my phone freezes, and by the time it recovers, the caller has already hung up. If I do not answer, that is the reason. I assure you I am not ignoring you."
+        }
+      ],
+      "note": "**hung up** 은 전화를 끊었다는 뜻이고, **pick up** 은 전화를 받는다는 뜻이에요. **I promise** 는 진짜야, 정말이야 하고 다짐할 때 써요.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "늦어서 미안. 모퉁이에 있는 집이 꽉 차서 역 옆에 있는 데 가 봤는데 거기도 꽉 찼더라고. 그래서 그냥 포기하고 바로 여기로 왔어.",
+      "text": "Sorry we're late. The place on the corner was packed, so we tried the one by the station, and that was packed too, so we kind of gave up and just came straight here.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, sorry, we're late. Corner place was packed, the one by the station was packed too, so we kinda gave up and came straight here."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for our late arrival. The café on the corner was full, so we tried the one near the station, which was also full, and in the end we decided to come directly here."
+        }
+      ],
+      "note": "**packed** 는 가게가 사람으로 꽉 찼다는 뜻이에요. **kind of gave up** 의 kind of 는 좀, 그냥 하고 말을 부드럽게 만들어요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "타는 데는 문제없는데, 미리 말해 두자면 뒷브레이크가 좀 물렁해서 한번 점검받아 보는 게 좋을 거야. 그거 신경 쓰기 싫으면 20달러 빼 줄게.",
+      "text": "It rides fine, but I should tell you the back brake's a little soft, so you'd probably want to get it looked at. If you'd rather not deal with that, I can take twenty bucks off.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Rides fine, but heads up, the back brake's kinda soft, so you'll wanna get it checked. Don't wanna bother? I'll knock twenty bucks off."
+        },
+        {
+          "style": "formal",
+          "text": "It rides well, but I should mention that the rear brake is somewhat soft, so you may wish to have it inspected. If you would prefer not to handle that, I can reduce the price by twenty dollars."
+        }
+      ],
+      "note": "**get it looked at** 은 맡겨서 한번 봐 달라고 한다는 뜻이에요. **take twenty bucks off** 는 20달러 깎아 준다는 말이고, casual 의 **knock twenty bucks off** 도 같은 뜻이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 formal 에서 restaurant 라고 해 상황(카페)과 text 의 place 와 뜻이 달라져 café 로 고침",
+    "2번 한국어가 text 의 I'm starting to think 를 담지 못해 '이제 그냥 없어진 거 아닌가 싶어' 로 고침"
+  ]
+}

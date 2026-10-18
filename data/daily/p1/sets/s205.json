@@ -1,0 +1,112 @@
+{
+  "setId": "s205",
+  "videoId": "daily-s205",
+  "title": "Set 205",
+  "madeAt": "2026-10-19",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아니야 엄마, 아무 일 없어. 그냥 요즘 너무 바빴어, 그게 다야. 그래서 전화를 못 한 거야. 다음 달에 집에 가면 다 얘기해 줄게, 알았지?",
+      "text": "No, Mom, everything's fine, I've just been really busy, that's all. That's why I haven't called. I'll tell you all about it when I come home next month, okay?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Mom, I'm fine, really. Work's just been crazy, that's why I haven't called. I'll fill you in when I'm home next month, okay?"
+        },
+        {
+          "style": "formal",
+          "text": "No, Mother, everything is fine. I have simply been very busy, and that is the only reason I have not called. I will tell you everything when I come home next month."
+        }
+      ],
+      "note": "**that's all** 은 그게 다야라는 뜻으로, 별일 아니라고 말을 맺을 때 씁니다. 캐주얼한 쪽의 **fill you in** 은 자세한 얘기를 해 주다라는 뜻입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "거의 1년 만에 스피닝 수업에 갔는데, 너무 무리했나 봐. 오늘 아침에 난간을 안 잡고는 계단도 못 내려갔어. 게다가 이제 감기 기운까지 있는 것 같아.",
+      "text": "I went to a spin class for the first time in like a year, and I guess I pushed way too hard, because this morning I couldn't even walk down the stairs without holding the railing. And now I think I'm coming down with something too.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "First spin class in like a year, and I totally overdid it. This morning I had to grab the railing just to get down the stairs. And now I think I'm getting sick too."
+        },
+        {
+          "style": "formal",
+          "text": "I attended a spin class for the first time in about a year, and I believe I pushed myself far too hard, because this morning I could not walk down the stairs without holding the railing. I also think I may be coming down with something."
+        }
+      ],
+      "note": "**coming down with something** 은 뭔가 병에 걸리려고 하다, 몸살 기운이 있다는 뜻입니다. **pushed way too hard** 는 너무 무리했다는 말이고, 캐주얼한 쪽의 **overdid it** 도 같은 뜻입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "솔직히 말해 줄까? 색은 너한테 진짜 잘 어울리는데, 어깨가 잘 안 맞는 것 같아. 아직 반품할 수 있으면 나라면 한 치수 작은 걸로 입어 보겠어.",
+      "text": "Honestly? The color's great on you, but I don't think it fits right in the shoulders. If you can still take it back, I'd try the next size down.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wanna know the truth? Love the color on you, but the shoulders look kinda off. If you can still return it, I'd go a size smaller."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, the color suits you very well, but I do not think it fits properly in the shoulders. If it is still possible to return it, I would suggest trying one size smaller."
+        }
+      ],
+      "note": "**take it back** 은 산 물건을 가게에 돌려주다, 반품하다라는 뜻입니다. **the next size down** 은 한 치수 작은 것입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "배송 조회에는 2시에 배달 완료라고 나오는데, 나 오후 내내 집에 있었고 아무도 문 안 두드렸어. 그러니까 다른 집 문 앞에 놓여 있거나, 아니면 누가 들고 가 버린 거야.",
+      "text": "The tracking says it was delivered at two o'clock, but I was home all afternoon and nobody knocked. So either it's sitting at somebody else's door, or somebody walked off with it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It says delivered at two, but I was home all afternoon and nobody knocked. So it's either at someone else's door or somebody took it."
+        },
+        {
+          "style": "formal",
+          "text": "According to the tracking information, it was delivered at two o'clock, but I was at home all afternoon and no one knocked. Therefore, it has either been left at someone else's door or someone has taken it."
+        }
+      ],
+      "note": "**walked off with it** 은 남의 물건을 가지고 가 버렸다, 슬쩍 들고 갔다는 뜻입니다. **either ... or ...** 로 두 가능성을 나란히 말합니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "계속 그만둘까 생각하는데, 말을 꺼내려고 할 때마다 상사가 엄청 잘해 줘서 미안해지는 거야. 솔직히 월급만 조금 더 많았어도 아마 이런 생각도 안 하고 있을걸.",
+      "text": "I keep thinking about quitting, but every time I'm about to say something, my boss does something really nice, and then I feel bad. I mean, if the pay were a little better, I probably wouldn't even be thinking about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I wanna quit, but every time I'm about to bring it up, my boss is super nice to me and I feel bad. If the pay was better, I wouldn't even be thinking about it."
+        },
+        {
+          "style": "formal",
+          "text": "I continue to consider resigning, but whenever I am about to raise the matter, my manager does something very kind, and then I feel guilty. If the salary were somewhat higher, I would probably not be considering it at all."
+        }
+      ],
+      "note": "**every time I'm about to** 는 막 ~하려고 할 때마다라는 뜻입니다. **I mean** 은 말을 덧붙이거나 속마음을 털어놓을 때 쓰는 말버릇입니다. 캐주얼한 쪽의 **bring it up** 은 말을 꺼내다라는 뜻입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "5번 casual: prolly 는 글로 쓰는 철자라 말하기 연습에 맞지 않고, whenever I'm gonna say something 은 어색하며 장식으로 붙인 Honestly 와 함께 text 와 뼈대가 거의 같아서 더 짧은 구어로 새로 씀"
+  ]
+}

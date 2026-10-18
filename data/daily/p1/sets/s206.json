@@ -1,0 +1,116 @@
+{
+  "setId": "s206",
+  "videoId": "daily-s206",
+  "title": "Set 206",
+  "madeAt": "2026-10-19",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "네가 말해 준 태국 음식점 드디어 가 봤는데, 커리는 진짜 네 말대로였어. 근데 자리 나기까지 거의 한 시간을 기다려야 해서, 다음엔 평일 저녁에 갈까 봐.",
+      "text": "We finally tried that Thai place you told us about, and you were totally right about the curry. But we had to wait almost an hour for a table, so next time I think we'll go on a weeknight.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally hit up that Thai place you mentioned, and yeah, the curry was amazing. Took almost an hour to get a table though, so next time we're gonna try a weeknight."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended, and you were entirely correct about the curry. However, we had to wait nearly an hour for a table, so I believe we will go on a weeknight next time."
+        }
+      ],
+      "note": "**you were totally right about** ~ 는 ~에 대해서는 네 말이 완전히 맞았다는 뜻이에요. **weeknight** 는 주말이 아닌 평일 저녁을 말해요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "회사에 내가 한 걸 자꾸 자기가 한 것처럼 가로채는 사람이 있는데, 오늘은 회의에서 내 아이디어를 자기 것처럼 내놨어. 근데 제일 짜증 나는 건 내가 아무 말도 안 했다는 거야. 다들 있는 데서 쪼잔해 보이기 싫어서.",
+      "text": "So there's this guy at work who keeps taking credit for my stuff, and today he pitched my idea in the meeting like it was his. And the worst part is I didn't say anything, because I didn't want to look petty in front of everybody.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, this guy at work keeps taking credit for my stuff. Today he pitched my idea like it was his, and I just sat there, 'cause I didn't wanna look petty."
+        },
+        {
+          "style": "formal",
+          "text": "There is a colleague at work who repeatedly takes credit for my work, and today he presented my idea in the meeting as if it were his own. The worst part is that I did not say anything, because I did not wish to appear petty in front of everyone."
+        }
+      ],
+      "note": "**taking credit for** ~ 는 남이 한 일의 공을 가로챈다는 뜻이에요. **petty** 는 사소한 일에 집착하는, 쪼잔한이라는 뜻이에요.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "우리 고양이가 내 침대 옆 협탁에 있는 물건을 떨어뜨리면 내가 일어나서 밥을 준다는 걸 알아 버렸어. 그래서 이제 매일 아침 알람 울리기 전에 그래. 내가 버릇을 더 나쁘게 만들고 있다는 건 아는데, 그럼 어떡해, 그냥 누워 있어?",
+      "text": "Our cat's figured out that if she knocks stuff off my nightstand, I'll get up and feed her. So now she does it every morning before my alarm goes off, and I know I'm only making it worse, but what am I supposed to do, just lie there?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Our cat knocks stuff off my nightstand every morning till I get up and feed her. Always before my alarm, too. I know I'm making it worse, but what, I'm just gonna lie there?"
+        },
+        {
+          "style": "formal",
+          "text": "Our cat has learned that if she knocks items off my nightstand, I will get up and feed her. She now does this every morning before my alarm goes off, and I realize I am only reinforcing the behavior, but what else am I to do, simply lie there?"
+        }
+      ],
+      "note": "**figured out** 은 스스로 알아내다, 터득하다라는 뜻이에요. **what am I supposed to do** 는 그럼 나더러 어쩌라고 하는 느낌으로 되묻는 말이에요.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "자, 걔가 처음엔 좀 말이 없거든. 그러니까 처음 몇 분 동안 말을 별로 안 해도 기분 나빠하지 마. 근데 일단 좀 편해지면 진짜 웃기고, 네가 한 얘기를 진짜로 기억해 주는 그런 사람이야.",
+      "text": "Okay, so he's kind of quiet at first, so don't take it personally if he doesn't say much for the first few minutes. But once he warms up, he's really funny, and he's the kind of guy who actually remembers what you told him.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Heads up, he's kinda quiet at first, so don't take it personally if he barely talks the first few minutes. Once he warms up though, he's super funny, and he's the type who actually remembers what you tell him."
+        },
+        {
+          "style": "formal",
+          "text": "He tends to be rather quiet at first, so please do not take it personally if he says little during the first few minutes. Once he becomes comfortable, however, he is very funny, and he is the kind of person who genuinely remembers what you have told him."
+        }
+      ],
+      "note": "**don't take it personally** 는 너한테 그러는 게 아니니 기분 나빠하지 말라는 뜻이에요. **warms up** 은 사람이 낯을 풀고 편해진다는 뜻이에요.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "내일 차 타고 호수 가려고 했는데, 하루 종일 바람이 엄청 분대서 아마 그냥 다음 주말로 미룰 것 같아. 아니, 비만 오는 거면 그래도 가겠는데, 그런 날씨에 애들 데리고 배 타러 나가는 건 안 하지.",
+      "text": "We were going to drive up to the lake tomorrow, but they're saying it's going to be really windy all day, so we'll probably just push it to next weekend. I mean, if it was just rain, I'd still go, but I'm not taking the kids out on a boat in that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Lake trip's probably off tomorrow. It's supposed to be super windy all day, so we'll just bump it to next weekend. Rain I could deal with, but no way I'm putting the kids on a boat in that."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to drive up to the lake tomorrow, but the forecast indicates that it will be very windy throughout the day, so we will likely postpone the trip until next weekend. If it were only rain, I would still go, but I am not willing to take the children out on a boat in those conditions."
+        }
+      ],
+      "note": "**push it to** ~ 는 일정을 ~로 미룬다는 뜻이에요. **they're saying** 은 일기예보나 사람들이 그렇다더라 하고 전할 때 써요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어 '너가'를 맞춤법에 맞게 '네가'로 고침",
+    "2번 casual이 text와 앞부분이 거의 같아 더 짧고 축약된 구어로 새로 씀",
+    "2번 한국어 '제일 최악인 건'은 겹말이라 '제일 짜증 나는 건'으로, '다들 앞에서'는 '다들 있는 데서'로 고침",
+    "3번 casual이 text와 구조와 앞부분이 거의 같아 새로 씀",
+    "5번 casual이 text와 앞부분이 거의 같아 더 짧은 구어로 새로 씀"
+  ]
+}

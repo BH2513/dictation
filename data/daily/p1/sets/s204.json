@@ -1,0 +1,112 @@
+{
+  "setId": "s204",
+  "videoId": "daily-s204",
+  "title": "Set 204",
+  "madeAt": "2026-10-19",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이번 주말에 집 밖으로 한 번도 안 나갔어. 좀 죄책감이 들 줄 알았는데 안 들더라. 아무도 나한테 뭘 바라지 않는 이틀이 그냥 정말 필요했나 봐.",
+      "text": "I didn't leave the apartment once this weekend, and I kind of thought I'd feel guilty about it, but I don't. I think I just really needed two days where nobody needed anything from me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Didn't step outside all weekend. Figured I'd feel bad about it, but nope. Guess I just needed two days where nobody wanted anything from me."
+        },
+        {
+          "style": "formal",
+          "text": "I did not leave the apartment at all this weekend, and I expected to feel guilty about it, but I do not. I believe I simply needed two days in which no one required anything of me."
+        }
+      ],
+      "note": "**kind of** 는 말을 살짝 흐릴 때 붙이는 말로, 좀, 약간 정도의 뜻입니다. **feel guilty about** 는 ~에 대해 죄책감이 들다라는 뜻입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그래서 결국 허리 때문에 병원에 갔거든. 엑스레이 찍으라고 하거나 뭐 그럴 줄 알았는데, 의사가 그냥 책상 의자가 너무 낮다고, 좀 더 자주 일어나서 걸어 다니라고 하더라. 아내가 1년 내내 하던 말을 40달러 내고 들은 거지.",
+      "text": "So I finally went to the doctor about my back, and I was sure they'd send me for X-rays or something, but she just said my desk chair's too low and I need to get up and walk around more. So I paid forty bucks to hear what my wife's been telling me for a year.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally got my back checked out. Thought for sure they'd want X-rays, but nope, she says my desk chair's too low and I gotta get up and move more. Forty bucks to hear what my wife's been saying for a year!"
+        },
+        {
+          "style": "formal",
+          "text": "I finally consulted the doctor about my back, and I was certain I would be sent for X-rays, but she simply said that my desk chair is too low and that I need to stand up and walk around more often. I paid forty dollars to hear what my wife has been telling me for a year."
+        }
+      ],
+      "note": "**I was sure** 는 분명히 ~일 줄 알았다는 뜻으로, 예상이 빗나갔을 때 자주 씁니다. **forty bucks** 의 buck 은 달러를 편하게 부르는 말입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 비싼 믹서기는 정말 사지 말걸 그랬어. 출근 전에 스무디 만들어 먹으려고 샀는데, 너무 시끄러워서 온 식구가 다 깨. 그래서 지금은 그냥 조리대 위에 놓여만 있어.",
+      "text": "I really wish I hadn't bought that fancy blender. I got it so I could make smoothies before work, but it's so loud it wakes up the whole house, so now it's just sitting there on the counter.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Man, I shouldn't have bought that fancy blender. Got it for smoothies before work, but it's so loud it wakes everybody up, so now it just sits on the counter."
+        },
+        {
+          "style": "formal",
+          "text": "I sincerely regret purchasing that expensive blender. I bought it so that I could make smoothies before work, but it is so loud that it wakes the entire household, so it now sits unused on the counter."
+        }
+      ],
+      "note": "**I wish I hadn't bought** 는 사지 말걸 그랬다는 후회를 나타냅니다. **just sitting there** 는 쓰지 않고 그냥 놓여만 있다는 뜻입니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "변기 고치는 법 좀 알아보려고 유튜브에 들어간 건데, 어쩌다 보니 두 시간 뒤에 웬 아저씨가 낡은 배 고치는 영상을 보고 있더라. 아 그리고 변기는 아직도 물이 계속 안 멈춰.",
+      "text": "I only went on YouTube to figure out how to fix the toilet, and somehow two hours later I was watching some guy restore an old boat. And the toilet's still running, by the way.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "All I wanted was a video on fixing the toilet, and two hours later I'm watching some dude restore an old boat. Toilet's still running, by the way."
+        },
+        {
+          "style": "formal",
+          "text": "I only went on YouTube to learn how to repair the toilet, and somehow, two hours later, I was watching a man restore an old boat. The toilet is, incidentally, still running."
+        }
+      ],
+      "note": "**somehow** 는 어쩌다 보니, 나도 모르게라는 뜻입니다. 변기가 **still running** 이라는 말은 물이 멈추지 않고 계속 흐른다는 뜻이고, **by the way** 는 아 그리고, 참고로처럼 말을 덧붙일 때 씁니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이사할지 말지 계속 왔다 갔다 하고 있어. 3월에 월세가 200달러 오르니까 나가는 게 맞긴 한데, 또 짐 다 싸고 애들 새 학교 알아볼 생각을 하면 그냥 여기 눌러살고 싶어.",
+      "text": "We keep going back and forth about moving. The rent's going up two hundred dollars in March, so it'd make sense to leave, but then I think about packing everything up again and finding the kids a new school, and I just want to stay put.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We can't make up our minds about moving. Rent's going up two hundred bucks in March, so leaving makes sense, but then I picture packing it all up again and finding the kids a new school, and I'm like, nah, let's just stay."
+        },
+        {
+          "style": "formal",
+          "text": "We continue to go back and forth about whether to move. Our rent will increase by two hundred dollars in March, so leaving would be sensible, but when I consider packing everything once more and finding a new school for the children, I would simply prefer to remain where we are."
+        }
+      ],
+      "note": "**go back and forth** 는 마음을 못 정하고 이랬다저랬다 한다는 뜻입니다. **stay put** 은 옮기지 않고 그 자리에 그대로 있다는 뜻입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 한국어: running toilet 은 물이 새는 것이 아니라 물이 멈추지 않고 계속 흐르는 것이라 '물이 계속 새' 를 '물이 계속 안 멈춰' 로 고침"
+  ]
+}

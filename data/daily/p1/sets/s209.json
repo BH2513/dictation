@@ -1,0 +1,116 @@
+{
+  "setId": "s209",
+  "videoId": "daily-s209",
+  "title": "Set 209",
+  "madeAt": "2026-10-20",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "애를 겨우 재워 놓기만 하면 위층 사람들이 피아노라도 옮기는 것처럼 쿵쿵거리기 시작해. 한 번 올라가서 말도 했는데, 솔직히 이제 뭘 더 해야 할지 모르겠어.",
+      "text": "Every time I finally get the baby to sleep, the people upstairs start stomping around like they're moving a piano, and I already went up there once, so I honestly don't know what else I can do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I swear, the second I get the baby down, the upstairs people start stomping like they're hauling a piano, and I already went up once, so I dunno what else I'm supposed to do."
+        },
+        {
+          "style": "formal",
+          "text": "Whenever I finally manage to get the baby to sleep, the neighbors upstairs begin stomping as though they were moving a piano. I have already spoken to them once, so I genuinely do not know what else I can do."
+        }
+      ],
+      "note": "**get the baby to sleep** 은 아기를 재우다는 뜻이에요. 캐주얼에서는 **get the baby down** 이라고도 해요. **stomping around** 는 쿵쿵거리며 돌아다니는 거예요.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "엄마 생일 선물을 2주 전에 주문했는데 아직도 발송 전이래. 금요일까지 안 오면 그냥 선물 사진 붙인 카드나 드려야 할 것 같아.",
+      "text": "I ordered my mom's birthday present two weeks ago, and it still says it hasn't shipped, so if it doesn't show up by Friday, I guess I'm just giving her a card with a picture of it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ordered my mom's present two weeks ago and it still hasn't shipped, so if it's not here by Friday, guess she's just getting a card with a picture of it."
+        },
+        {
+          "style": "formal",
+          "text": "I ordered my mother's birthday present two weeks ago, and it still has not shipped. If it does not arrive by Friday, I suppose I will simply give her a card with a picture of it."
+        }
+      ],
+      "note": "**hasn't shipped** 는 아직 발송되지 않았다는 뜻이에요. **show up** 은 여기서 택배가 도착하다는 말이에요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "음, 나쁘진 않은데 좀 너답지가 않달까? 사기 전에 나한테 물어봤으면 아마 파란 걸로 하라고 했을 거야.",
+      "text": "I mean, it's not bad, but it's not really you, you know? If you'd asked me before you bought it, I probably would've said go with the blue one.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Eh, it's not bad, just not really you, y'know? If you'd asked me first, I'd have told you to get the blue one."
+        },
+        {
+          "style": "formal",
+          "text": "It is not bad, but I do not think it quite suits you. Had you asked me before purchasing it, I would likely have recommended the blue one."
+        }
+      ],
+      "note": "**it's not really you** 는 너답지 않다, 너한테 안 어울린다는 뜻이에요. **go with** 는 여러 개 중에 그걸로 고르다는 말이에요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "소파는 진짜 편한데, 미리 말해 두자면 우리 집에 고양이가 있어. 그러니까 너희 집에 알레르기 있는 사람이 있으면 안 가져가는 게 나을 거야. 사실 그래서 이렇게 싼 거기도 해.",
+      "text": "The couch is really comfortable, but I should tell you we have a cat, so if anybody in your house is allergic, I wouldn't take it. That's kind of why it's so cheap.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Super comfy couch, but heads up, we've got a cat, so if anyone at your place is allergic, I'd skip it. That's kinda why it's so cheap."
+        },
+        {
+          "style": "formal",
+          "text": "The couch is very comfortable, but I should mention that we have a cat. If anyone in your household is allergic, I would not recommend taking it. That is partly why it is priced so low."
+        }
+      ],
+      "note": "**I should tell you** 는 미리 알려 둘 게 있을 때 쓰는 말이고, 캐주얼에서는 **heads up** 이라고 해요. **kind of why** 는 그게 좀 이유라는 뜻이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "진짜 미안한데 나 이제 가 봐야 해. 베이비시터한테 9시까지 온다고 했거든. 또 늦으면 시터가 다시는 안 올 것 같아.",
+      "text": "I'm so sorry, but I've got to get going. I told the babysitter we'd be back by nine, and if I'm late again, I don't think she's going to come back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, sorry, I gotta run. Told the sitter we'd be back by nine, and if I'm late again, I don't think she's coming back."
+        },
+        {
+          "style": "formal",
+          "text": "I do apologize, but I must be leaving. I told the babysitter we would return by nine, and if I am late again, I do not believe she will be willing to come back."
+        }
+      ],
+      "note": "**I've got to get going** 은 이제 가 봐야 한다는 뜻이에요. 캐주얼에서는 **I gotta run** 이라고 해요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: 문장 맨 앞의 Swear, 만으로는 어색해서 원어민이 실제로 쓰는 I swear, 로 고침",
+    "2번 casual: Got my mom's birthday present 는 선물을 받았다는 뜻으로 읽혀 원문과 뜻이 반대가 됨. Ordered 로 바꾸고, 말로는 어색한 still says not shipped 를 still hasn't shipped 로 고침",
+    "3번 casual: I'd prob've said 는 글로 줄여 쓴 모양이라 소리내어 말하지 않음. I'd have told you to get the blue one 으로 고침",
+    "3번 ko: 알지? 가 문장 중간에 끼어 번역투라서 한국어 말투로 다시 씀",
+    "5번 ko: 베이비시터를 그분이라고 부르는 것이 딱딱해서 시터가로 고침"
+  ]
+}

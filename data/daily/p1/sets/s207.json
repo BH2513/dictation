@@ -1,0 +1,113 @@
+{
+  "setId": "s207",
+  "videoId": "daily-s207",
+  "title": "Set 207",
+  "madeAt": "2026-10-20",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "헬스장 가려고 준비 다 했는데, 운동화를 언니 차에 두고 온 게 생각났어. 쪼리 신고 운동할 순 없으니까, 오늘은 그냥 쉬는 날인가 봐.",
+      "text": "I was all set to go to the gym, but then I realized I left my shoes in my sister's car, and I'm not working out in flip-flops, so I guess today's a rest day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was totally gonna hit the gym, then remembered my shoes are in my sister's car. Not doing it in flip-flops, so rest day, I guess."
+        },
+        {
+          "style": "formal",
+          "text": "I had fully intended to go to the gym, but I then realized that I had left my shoes in my sister's car. I am not willing to exercise in flip-flops, so I suppose today will be a rest day."
+        }
+      ],
+      "note": "**all set to** 는 ~할 준비가 다 됐다는 뜻이에요. **rest day** 는 운동을 쉬는 날을 말해요.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "저기요, 지난주부터 난방이 됐다 안 됐다 해요. 낮에는 괜찮은데 밤에는 정말 추워져서 거의 후드티 입고 자고 있어요. 더 추워지기 전에 누가 와서 좀 봐 주실 수 있을까요?",
+      "text": "Hey, so the heat's been going on and off since last week. It's fine during the day, but at night it gets really cold, and I've basically been sleeping in a hoodie. Do you think somebody could take a look before it gets any colder?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Heads up, the heat's been cutting in and out since last week. Days are okay, but nights get super cold and I'm pretty much sleeping in a hoodie. Can someone come check it before it gets colder?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I wanted to let you know that the heating has been turning on and off intermittently since last week. It is fine during the day, but at night it becomes very cold, and I have essentially been sleeping in a sweatshirt. Would it be possible for someone to inspect it before the weather gets any colder?"
+        }
+      ],
+      "note": "**going on and off** 는 켜졌다 꺼졌다 한다는 뜻이에요. **take a look** 는 한번 봐 주다, 점검하다라는 말로 수리를 부탁할 때 자주 써요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "요즘 어떻게 지내? 인스타 보니까 이사했던데 어딘지는 모르겠더라. 댓글로 물어보기도 좀 이상해서.",
+      "text": "So how's everything? I saw on Instagram that you moved, but I couldn't tell where, and it felt kind of weird to ask in the comments.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "What's up with you? Saw on Insta you moved, but I couldn't figure out where, and asking in the comments felt kinda weird."
+        },
+        {
+          "style": "formal",
+          "text": "How have you been? I noticed on Instagram that you had moved, but I was not able to tell where, and I felt it would be somewhat awkward to ask in the comments."
+        }
+      ],
+      "note": "**how's everything?** 는 요즘 어떻게 지내냐고 가볍게 안부를 묻는 말이에요. **I couldn't tell** 는 봐도 알 수가 없었다는 뜻이에요.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "내 폰이 요즘 진짜 이상해. 배터리가 40퍼센트라고 떠 있다가 그냥 꺼져 버리고, 다시 충전기 꽂으면 30퍼센트쯤이야. 배터리 문제인지 폰 문제인지 모르겠는데, 지금은 좀 못 믿겠어.",
+      "text": "My phone's been acting really weird. It'll say it's at forty percent, and then it just dies, and when I plug it back in, it's at like thirty. So I don't know if it's the battery or the phone, but I can't really trust it right now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Phone's being super weird. Says forty percent, then just dies, and when I plug it in it's at like thirty. Dunno if it's the battery or the phone, but I can't really count on it right now."
+        },
+        {
+          "style": "formal",
+          "text": "My phone has been behaving very strangely. It will indicate that it is at forty percent and then shut off completely, and when I plug it back in, it shows about thirty percent. I am not sure whether the problem is the battery or the phone itself, but I cannot rely on it at the moment."
+        }
+      ],
+      "note": "**acting weird** 는 기계가 이상하게 군다는 뜻이에요. **it just dies** 처럼 die 는 전자기기가 갑자기 꺼질 때도 써요.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "나 14일부터 18일까지는 되는데, 월요일에 출근해야 해서 일요일 밤까지는 돌아와야 해. 너희는 더 있고 싶으면 더 있다 와도 돼, 난 완전 괜찮아. 나 혼자 비행기 타고 먼저 올게.",
+      "text": "I can do the fourteenth through the eighteenth, but I'd have to be back by Sunday night because I've got work Monday. If you guys want to stay longer, that's totally fine, I'll just fly back on my own.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm free the fourteenth to the eighteenth, but I gotta be back Sunday night 'cause I work Monday. You guys wanna stay longer? Totally cool, I'll just fly back by myself."
+        },
+        {
+          "style": "formal",
+          "text": "I am available from the fourteenth through the eighteenth, but I would need to return by Sunday night because I have work on Monday. If you would all like to stay longer, that is perfectly fine. I will simply fly back on my own."
+        }
+      ],
+      "note": "**I can do the fourteenth through the eighteenth** 에서 I can do 는 그 날짜가 된다는 뜻이에요. **on my own** 은 혼자서라는 말이에요.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 casual 이 text 와 같은 My phone's 로 시작해서, 주어를 빼고 Phone's being super weird 로 시작하게 고침",
+    "5번 한국어 '너희가 더 있고 싶으면 완전 괜찮아' 가 번역투라 '너희는 더 있고 싶으면 더 있다 와도 돼, 난 완전 괜찮아' 로 고침"
+  ]
+}

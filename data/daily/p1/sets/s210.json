@@ -1,0 +1,116 @@
+{
+  "setId": "s210",
+  "videoId": "daily-s210",
+  "title": "Set 210",
+  "madeAt": "2026-10-21",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아, 병원? 괜찮았어. 아마 그냥 축농증일 거라고 해서 항생제를 좀 받아 왔고, 금요일까지 안 나으면 다시 가 봐야 돼.",
+      "text": "Oh, the doctor? It was fine. She said it's probably just a sinus infection, so she gave me some antibiotics, and if it's not better by Friday, I have to go back in.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Doctor was fine. She thinks it's just a sinus thing, so I got antibiotics, and if it's not better by Friday I gotta go back in."
+        },
+        {
+          "style": "formal",
+          "text": "As for my appointment with the doctor, it went fine. She said it is most likely just a sinus infection, so she prescribed antibiotics, and if it has not improved by Friday, I will need to return."
+        }
+      ],
+      "note": "**sinus infection** 은 축농증(부비동염)이에요. **go back in** 은 병원에 다시 가서 진료를 받는다는 말이에요.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그래서 다이어트는 한 4일 갔어. 동생 생일 전까지는 진짜 잘하고 있었는데, 케이크 한 조각쯤은 괜찮겠지 했거든. 근데 다음 날 남은 피자가 또 있는 거야. 그래서 월요일부터 다시 시작해야 할 것 같아.",
+      "text": "So the diet lasted about four days. I was doing really well until my sister's birthday, and I figured one piece of cake wouldn't hurt, but then there was leftover pizza the next day, so I guess I'm starting over again on Monday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Yeah, the diet made it like four days. I was doing great till my sister's birthday, figured one slice of cake wouldn't hurt, then there was leftover pizza the next day, so I guess I'm starting over Monday."
+        },
+        {
+          "style": "formal",
+          "text": "The diet lasted approximately four days. I was doing very well until my sister's birthday, and I thought one piece of cake would do no harm, but then there was leftover pizza the following day, so I suppose I will be starting again on Monday."
+        }
+      ],
+      "note": "**wouldn't hurt** 는 해가 될 건 없겠지, 괜찮겠지라는 뜻이에요. **starting over** 는 처음부터 다시 시작한다는 말이에요.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 드라마 진짜 좋아했었는데, 시즌 2 끝나고 작가들을 다 바꿔 버려서 이제는 매 회가 다 똑같은 느낌이야. 아니 뭐, 아직 보고는 있는데, 그냥 지금까지 들인 시간이 아까워서 보는 거야.",
+      "text": "I used to love that show, but they changed all the writers after the second season, and now every episode feels the same. I mean, I'm still watching it, but only because I've already put so much time into it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was totally into that show, but they swapped out all the writers after season two, and now every episode's the same. I mean, I'm still watching, but just because I've already sunk so much time into it."
+        },
+        {
+          "style": "formal",
+          "text": "I used to enjoy that program very much, but they replaced the entire writing staff after the second season, and now every episode feels the same. I am still watching it, admittedly, but only because I have already invested so much time in it."
+        }
+      ],
+      "note": "**used to** 는 예전에는 그랬지만 지금은 아니라는 뜻이에요. **put so much time into** 는 어떤 일에 시간을 많이 들였다는 말이에요.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "오늘 밤에 애 재우는 데 한 시간 반은 걸렸어. 잠들었구나 싶어서 방에서 살금살금 나가려고 하면 눈을 뜨고 울기 시작하는 거야. 그래서 결국 아기 침대 옆 바닥에 누워 있었는데, 아마 애보다 내가 먼저 잠든 것 같아.",
+      "text": "It took me like an hour and a half to get her down tonight. Every time I thought she was out and tried to sneak out of the room, she'd open her eyes and start crying, so I ended up lying on the floor next to her crib, and I'm pretty sure I fell asleep before she did.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "An hour and a half to get her down tonight. Every time I tried to sneak out, she'd wake up crying, so I ended up on the floor by her crib, and pretty sure I conked out first."
+        },
+        {
+          "style": "formal",
+          "text": "It took me approximately an hour and a half to put her to sleep this evening. Each time I believed she was asleep and tried to leave the room quietly, she would open her eyes and begin crying, so I eventually lay down on the floor beside her crib, and I believe I fell asleep before she did."
+        }
+      ],
+      "note": "**get her down** 은 아이를 재운다는 말이고, **she was out** 은 완전히 잠들었다는 뜻이에요. **ended up** 은 결국 그렇게 됐다는 말이에요.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "솔직히 이번 주말에 제일 좋았던 건 아무 계획이 없었다는 거야. 늦잠 자고, 팬케이크 만들어 먹고, 오후 내내 소파에서 그냥 영화 봤어. 한 달 만에 처음으로 이렇게 푹 쉰 느낌이야.",
+      "text": "Honestly, the best part of my weekend was that we didn't have any plans. I slept in, I made pancakes, and we just watched movies on the couch all afternoon, and I feel more rested than I have in like a month.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Best part of my weekend? Zero plans. Slept in, made pancakes, movies on the couch all afternoon. Haven't felt this rested in like a month."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, the best part of my weekend was that we had no plans. I slept late, I made pancakes, and we watched films on the sofa all afternoon, and I feel more rested than I have in about a month."
+        }
+      ],
+      "note": "**slept in** 은 늦게까지 푹 잤다는 말이에요. **more rested than I have in** 은 ~만에 이렇게 푹 쉰 건 처음이라는 뜻이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 prob 은 문자에서 쓰는 줄임말이라 말로는 어색해서 고치고, 본문과 덜 겹치게 더 짧은 구어로 바꿨습니다.",
+    "2번 한국어 '남은 피자가 있었고, 그래서' 가 번역투라 친구에게 하는 말투로 고쳤습니다.",
+    "4번 casual 이 본문 첫 문장과 거의 같아서, 더 짧고 줄여 말하는 구어로 새로 썼습니다.",
+    "5번 casual 의 뒷부분이 본문과 글자 그대로 같아서 줄여 말하는 구어로 바꿨습니다.",
+    "5번 note 의 slept in 을 '일부러 늦잠' 이라고 했는데, 일부러라는 뜻은 없고 늦게까지 푹 잤다는 말이라 고쳤습니다."
+  ]
+}

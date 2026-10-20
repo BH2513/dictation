@@ -1,0 +1,113 @@
+{
+  "setId": "s211",
+  "videoId": "daily-s211",
+  "title": "Set 211",
+  "madeAt": "2026-10-21",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그래서 아직 그 은행 다녀? 마지막으로 봤을 때 너 곧 그만둔다고 했었잖아. 그러고는 연락도 없이 사라졌잖아.",
+      "text": "So are you still at that bank? Because the last time I saw you, you were about to quit, and then you kind of disappeared on me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You still at that bank? Last I saw you, you were about to quit, and then you kinda just vanished on me."
+        },
+        {
+          "style": "formal",
+          "text": "Are you still working at that bank? When I last saw you, you were about to resign, and after that I did not hear from you at all."
+        }
+      ],
+      "note": "**disappeared on me** 는 상대가 말도 없이 사라져서 내가 서운했다는 느낌을 담아요. 동사 뒤에 붙는 on me 가 그 일 때문에 내가 곤란했다는 뜻을 더합니다. casual 의 **Last I saw you** 는 When I last saw you 를 줄여 말하는 구어예요.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "우리 개가 요즘 내가 열쇠만 집으면 침대 밑에 숨어. 내가 나가는 걸 알거든. 수의사 말로는 분리불안이래. 그래서 이제 출근할 때마다 미안해 죽겠어.",
+      "text": "My dog's started hiding under the bed every time I pick up my keys, because he knows I'm leaving. The vet says it's separation anxiety, so now I feel guilty every single time I go to work.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every time I grab my keys now, my dog hides under the bed. He knows I'm heading out. Vet says it's separation anxiety, so I feel awful every time I leave for work."
+        },
+        {
+          "style": "formal",
+          "text": "My dog has begun hiding under the bed whenever I pick up my keys, because he knows that I am leaving. The veterinarian says it is separation anxiety, so I now feel guilty each time I go to work."
+        }
+      ],
+      "note": "**separation anxiety** 는 분리불안이에요. **every single time** 은 every time 을 강조해서 한 번도 빠짐없이 매번이라는 느낌을 줍니다. casual 의 **heading out** 은 나간다, 집을 나선다는 뜻으로 일상에서 자주 써요.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "나 진짜 헬스장 주차장에 앉아 있었거든. 근데 친구가 저녁 먹을래? 하고 문자를 보낸 거야. 먼저 운동하고 가면 늦겠다 싶어서 그냥 차 몰고 가 버렸어.",
+      "text": "I was literally sitting in the gym parking lot, but then my friend texted asking if I wanted to get dinner, and I figured if I went in first I'd be late, so I just drove off.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was literally in the gym parking lot, and then my friend texts me about dinner, and I'm like, if I go in now I'll be late, so I just left."
+        },
+        {
+          "style": "formal",
+          "text": "I was actually sitting in the gym parking lot, but then my friend sent me a message asking whether I would like to have dinner, and I thought that if I went in first I would be late, so I simply drove away."
+        }
+      ],
+      "note": "**I figured** 는 내 생각에 ~하겠다 싶었다는 뜻으로, I thought 보다 훨씬 구어적이에요. **drove off** 는 차를 몰고 그 자리를 떠났다는 말입니다. casual 의 **I'm like** 는 속으로 이런 생각이 들었다를 이야기하듯 전할 때 씁니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "카페에 자리가 전부 노트북 하는 사람들로 차 있어서, 커피 들고 한 10분을 돌아다녔어. 결국 그냥 내 차에 가서 마셨어.",
+      "text": "Every table at the coffee place was taken by people on laptops, so I walked around holding my coffee for like ten minutes, and in the end I just went and drank it in my car.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The coffee place was packed with laptop people, so I wandered around with my coffee for like ten minutes and ended up drinking it in my car."
+        },
+        {
+          "style": "formal",
+          "text": "Every table at the coffee shop was occupied by people working on laptops, so I walked around holding my coffee for about ten minutes, and eventually I went and drank it in my car."
+        }
+      ],
+      "note": "**taken** 은 자리가 이미 찼다는 뜻으로, Is this seat taken? 처럼 써요. **in the end** 는 결국, 끝내 라는 말입니다. casual 의 **ended up** ~ing 도 결국 ~하게 됐다는 뜻으로 아주 자주 쓰여요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "파티를 뒷마당에서 하려고 했는데, 토요일에 하루 종일 비가 온대. 그래서 지금 거실에 스무 명을 어떻게 다 넣을지 궁리 중이야.",
+      "text": "We were going to have the party out in the backyard, but they're saying it's going to rain all day Saturday, so now we're trying to figure out how to fit twenty people in our living room.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We were gonna do the party in the backyard, but it's supposed to rain all day Saturday, so now we're figuring out how to cram twenty people into our living room."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to hold the party in the backyard, but the forecast says it will rain all day on Saturday, so we are now trying to work out how to fit twenty people into our living room."
+        }
+      ],
+      "note": "**they're saying** 은 누가 딱 정해진 건 아니고 일기예보나 사람들이 그렇다더라는 뜻이에요. **figure out** 은 방법을 궁리해서 알아내다라는 뜻입니다. casual 의 **cram** 은 좁은 곳에 억지로 꽉꽉 밀어 넣는다는 느낌이에요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어 끝이 '연락이 좀 끊겼고'로 어정쩡하게 끝나고 disappeared on me 의 서운한 느낌이 안 살아서 '그러고는 연락도 없이 사라졌잖아'로 고침",
+    "5번 한국어 '어떻게 다 들어가게 할지'가 어색해서 친구에게 하는 말투로 '어떻게 다 넣을지'로 고침"
+  ]
+}

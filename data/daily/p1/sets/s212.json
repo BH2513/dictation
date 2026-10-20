@@ -1,0 +1,112 @@
+{
+  "setId": "s212",
+  "videoId": "daily-s212",
+  "title": "Set 212",
+  "madeAt": "2026-10-21",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "미안, 미안. 알람이 울리긴 했는데 자다가 내가 끈 것 같아. 눈 떠 보니까 9시 15분이더라고. 차 막혔다고는 안 할게.",
+      "text": "Sorry, sorry. My alarm did go off, but I must've turned it off in my sleep, because the next thing I knew it was nine fifteen. I'm not even going to pretend it was traffic.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My bad, my bad. The alarm went off, I just must've shut it off half asleep, and next thing I know it's nine fifteen. Not gonna pretend it was traffic."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize. My alarm did go off, but I must have switched it off while I was still asleep, because when I woke up it was already nine fifteen. I will not pretend that it was the traffic."
+        }
+      ],
+      "note": "**must've turned it off** 는 분명히 기억은 안 나지만 그랬던 게 틀림없다는 짐작이에요. **the next thing I knew** 는 정신 차려 보니 어느새 그렇게 돼 있었다는 뜻이에요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그 사람 간호사인데 밤 근무를 해. 그러니까 답장이 좀 늦어도 그래서 그런 거야. 그래도 진짜 말이 잘 통하는 사람이고 등산도 좋아해서 최소한 그 얘기는 같이 할 수 있을 거야.",
+      "text": "So she's a nurse and she works nights, so if she takes a while to text you back, that's why. But she's really easy to talk to, and she's into hiking too, so you'd at least have that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Heads up, she's on night shifts, so if she's slow to text back, that's why. Super easy to talk to though, and she's into hiking too, so there's that."
+        },
+        {
+          "style": "formal",
+          "text": "She is a nurse and works night shifts, so if she is slow to reply to your messages, that is the reason. However, she is very easy to talk to, and she also enjoys hiking, so you would at least have that in common."
+        }
+      ],
+      "note": "**easy to talk to** 는 말이 잘 통하고 대하기 편한 사람이라는 뜻이에요. **you'd at least have that** 는 적어도 그 공통점은 있다는 말이에요.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "네가 맨날 얘기하던 그 타코집에 드디어 가 봤는데, 그래, 이제 알겠어. 생선 타코는 좀 긴가민가했는데 너무 맛있어서 다 먹기도 전에 더 시켰어.",
+      "text": "We finally went to that taco place you keep talking about, and okay, I get it now. I wasn't sure about the fish ones, but they were so good we ended up ordering more before we even finished.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, we finally tried that taco place you're always going on about, and yeah, I get it now. Wasn't sure about the fish ones, but they were so good we ordered more before we were even done."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the taco restaurant you have mentioned so often, and I now understand why. I had my doubts about the fish tacos, but they were so good that we ordered more before we had even finished."
+        }
+      ],
+      "note": "**you keep talking about** 는 상대가 계속 얘기하던 것을 가리켜요. **I get it now** 는 이제야 왜 그런지 알겠다는 뜻이고, **ended up** 은 결국 그렇게 됐다는 말이에요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "금요일에 퇴근하고 출발하면 거의 자정이나 돼야 도착할 텐데, 그냥 토요일 아침에 가서 하룻밤 더 자고 오는 게 어때? 근데 월요일에 쉴 수 있는지 알아봐야 해.",
+      "text": "If we leave Friday after work, we won't get there till like midnight, so why don't we just go Saturday morning and stay an extra night? I'd have to see if I can get Monday off, though.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Leaving Friday after work means getting in around midnight, so how about we just go Saturday morning and stay an extra night? Gotta check if I can get Monday off, though."
+        },
+        {
+          "style": "formal",
+          "text": "If we leave on Friday after work, we will not arrive until around midnight, so would it not be better to leave on Saturday morning and stay an additional night? I would need to find out whether I can take Monday off, however."
+        }
+      ],
+      "note": "**why don't we** 는 우리 ~하는 게 어때 하고 제안할 때 써요. **get Monday off** 는 월요일에 휴가를 내다는 뜻이에요.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그 부츠 온라인으로 사는 게 아니었는데. 사진으로는 멋있었는데 너무 딱딱해서 신고 걷지를 못하겠어. 상자도 벌써 버려서 반품은 안 될 것 같아.",
+      "text": "I really shouldn't have bought those boots online. They looked great in the pictures, but they're so stiff I can barely walk in them, and I already threw out the box, so I don't think I can send them back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, buying those boots online was a mistake. They looked great in the pics, but they're so stiff I can barely walk, and I already tossed the box, so I don't think I can return them."
+        },
+        {
+          "style": "formal",
+          "text": "I really should not have purchased those boots online. They looked lovely in the photographs, but they are so stiff that I can hardly walk in them, and since I have already discarded the box, I do not believe I am able to return them."
+        }
+      ],
+      "note": "**shouldn't have bought** 는 사지 말았어야 했다는 후회예요. **send them back** 은 반품하다는 뜻이고, **threw out** 은 내다 버렸다는 말이에요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 이 text 와 앞부분(She's a nurse, works nights)이 거의 같아서 더 짧은 구어로 새로 씀"
+  ]
+}

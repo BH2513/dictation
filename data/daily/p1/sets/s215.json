@@ -1,0 +1,115 @@
+{
+  "setId": "s215",
+  "videoId": "daily-s215",
+  "title": "Set 215",
+  "madeAt": "2026-10-22",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "나 그 기타 샀던 거 기억나? 한 2주 정도는 매일 밤 연습했는데, 손가락이 너무 아파서 하루씩 빼먹기 시작했거든. 이제는 그냥 구석에 세워져 있는데, 그 앞을 지나갈 때마다 좀 미안한 마음이 들어.",
+      "text": "Remember when I bought that guitar? I practiced every night for like two weeks, but my fingers hurt so much that I started skipping days, and now it's just sitting in the corner, and I kind of feel bad every time I walk past it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You know that guitar I got? I played it every night for like two weeks, but my fingers hurt so bad I started skipping days. Now it's just sitting in the corner and I kinda feel guilty every time I walk by it."
+        },
+        {
+          "style": "formal",
+          "text": "Do you remember when I purchased that guitar? I practiced every evening for about two weeks, but my fingers hurt so much that I began skipping days. Now it simply sits in the corner, and I feel somewhat guilty each time I pass by it."
+        }
+      ],
+      "note": "**for like two weeks** 는 한 2주쯤이라는 뜻이고, like 가 대충 그 정도라는 느낌을 줍니다. **feel bad** 는 미안하다, 마음이 안 좋다는 뜻이고 casual 의 **feel guilty** 는 죄책감이 든다는 말입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이번 주말에 진짜 아무것도 안 했어. 정말 하나도. 일요일엔 옷도 안 갈아입었다니까. 근데 있잖아, 내가 인정하고 싶었던 것보다 그게 훨씬 필요했던 것 같아.",
+      "text": "I didn't do a single thing this weekend, and I mean nothing. I didn't even get dressed on Sunday, and you know what? I think I needed that more than I wanted to admit.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did absolutely nothing this weekend. Like, nothing. Didn't even get dressed Sunday, and honestly? I think I needed it more than I wanted to admit."
+        },
+        {
+          "style": "formal",
+          "text": "I did not do a single thing this weekend, and I truly mean nothing. I did not even get dressed on Sunday, and I believe I needed that rest more than I was willing to admit."
+        }
+      ],
+      "note": "**and I mean nothing** 은 앞에 한 말을 강조해서 정말 하나도라고 못 박는 표현입니다. **you know what?** 는 있잖아, 근데 말이야 하고 하고 싶은 말을 꺼낼 때 씁니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "걔가 같은 책을 네 번이나 읽어 달라고 하더니, 그다음엔 물 달라고 하고, 그다음엔 공룡에 대해 아주 중요한 얘기를 꼭 해야 한대. 그래서 걔가 잠들었을 때쯤엔 나는 너무 지쳐서 저녁 먹을 힘도 없었어.",
+      "text": "He made me read the same book four times, and then he wanted water, and then he had to tell me something really important about dinosaurs, so by the time he was asleep, I was too tired to even eat dinner.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Four times. He made me read the same book four times, then he wanted water, then he just had to tell me something super important about dinosaurs. By the time he fell asleep I was too wiped to even eat dinner."
+        },
+        {
+          "style": "formal",
+          "text": "He asked me to read the same book four times, and then he requested water, and then he needed to tell me something very important about dinosaurs. By the time he was asleep, I was too exhausted to eat dinner."
+        }
+      ],
+      "note": "**made me read** 는 읽게 시켰다는 뜻으로, make 사람 동사 꼴입니다. **by the time** 은 ~할 때쯤에는이라는 뜻이고, casual 의 **wiped** 는 완전히 녹초가 됐다는 말입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "드디어 허리 때문에 병원에 가 봤는데, 그냥 근육이 놀란 거래. 그래서 스트레칭 몇 가지를 알려 줬어. 아니, 스트레칭하라는 말 들으려고 두 시간을 기다린 거야. 그래도 큰 병은 아니라서 다행이지.",
+      "text": "I finally went in about my back, and it's just a pulled muscle, so they gave me some stretches to do. I mean, I waited two hours just to be told to stretch, but at least it's nothing serious.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I finally got my back checked, and it's just a pulled muscle. They gave me some stretches. I mean, I sat there two hours just so they could tell me to stretch, but hey, at least it's nothing serious."
+        },
+        {
+          "style": "formal",
+          "text": "I finally had my back examined, and it is only a pulled muscle, so they gave me some stretches to do. I did wait two hours simply to be told to stretch, but at least it is nothing serious."
+        }
+      ],
+      "note": "**went in about my back** 은 허리 때문에 병원에 갔다는 뜻으로, go in 이 진료받으러 간다는 말로 쓰였습니다. **a pulled muscle** 은 근육이 늘어나거나 놀란 것이고, **at least** 는 그래도, 적어도라는 뜻입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "자, 너라면 어떻게 할 것 같아? 회사에서 10분 거리라서 그 아파트를 잡고 싶은 마음도 있는데, 지금 사는 집보다 너무 좁아. 모르겠다. 미안, 나 계속 이랬다저랬다 하지.",
+      "text": "Okay, so what would you do? Part of me wants to take the apartment because it's ten minutes from work, but it's so much smaller than my place now. I don't know. Sorry, I know I keep going back and forth on this.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, what would you do? Part of me wants the apartment since it's ten minutes from work, but it's way smaller than where I'm at now. I dunno. Sorry, I keep flip-flopping on this."
+        },
+        {
+          "style": "formal",
+          "text": "What would you do in my position? Part of me would like to take the apartment because it is ten minutes from work, but it is considerably smaller than my current home. I am not certain. I apologize. I realize I keep going back and forth on this."
+        }
+      ],
+      "note": "**Part of me wants** 는 한편으로는 ~하고 싶은 마음도 있다는 뜻입니다. **going back and forth** 는 마음을 못 정하고 이랬다저랬다 한다는 말이고, casual 의 **flip-flopping** 도 같은 뜻입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 casual 의 just to hear stretch 는 따옴표 없이 읽으면 stretch 가 무슨 말인지 순간 헷갈려서 just so they could tell me to stretch 로 고침",
+    "5번 casual 의 flip flopping 은 보통 하이픈을 넣어 flip-flopping 으로 쓰므로 casual 과 note 를 같이 고침",
+    "5번 formal 의 I apologize, I realize 는 쉼표로 두 문장을 붙여 놓은 것이라 마침표로 나눔",
+    "5번 한국어 이거 계속 왔다 갔다 하는 거 나도 알아 는 옮긴 티가 나서 친구에게 하는 말투인 나 계속 이랬다저랬다 하지 로 고침"
+  ]
+}

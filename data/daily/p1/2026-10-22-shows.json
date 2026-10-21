@@ -1,0 +1,248 @@
+{
+  "videoId": "shows-2026-10-22",
+  "title": "From your videos · 2026-10-22",
+  "date": "2026-10-22",
+  "source": "shows",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그래서, 금융 쪽 일은 요즘 어때?",
+      "text": "So, how's it going down there in financial services?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "How's finance treating you?"
+        },
+        {
+          "style": "formal",
+          "text": "How is your work in financial services going these days?"
+        }
+      ],
+      "note": "**how's it going down there in** 다음에 부서나 업계를 넣으면 '거기 일은 좀 어때?' 하고 가볍게 안부를 묻는 말이 됩니다. 오랜만에 만난 친구나 다른 부서 동료에게 그대로 쓰면 됩니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1343
+      },
+      "start": 3416.36,
+      "end": 3419.359,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "프랑스어 정말 잘하시던데요, 그래도 이번 역은 다른 분으로 가야 할 것 같아요.",
+      "text": "That was some really good French, but I think we're going to go with someone else for the part.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Great French, but we're picking someone else for the role."
+        },
+        {
+          "style": "formal",
+          "text": "Your French was excellent, but I believe we will be choosing another person for the part."
+        }
+      ],
+      "note": "**go with someone else**는 오디션이나 면접, 업체 선정처럼 여럿 중에 다른 사람을 고를 때 부드럽게 거절하는 말입니다. **some really good**은 앞에 붙여 '꽤 괜찮은'이라고 칭찬할 때 씁니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 934
+      },
+      "start": 2411.079,
+      "end": 2415.92,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "거기 가려면 기차를 세 번은 갈아타야 돼. 아주 좋네.",
+      "text": "That's like three trains away, which is great.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's, like, three trains from here. Awesome."
+        },
+        {
+          "style": "formal",
+          "text": "It is roughly three trains away, which is wonderful."
+        }
+      ],
+      "note": "**three trains away**처럼 거리를 몇 킬로미터가 아니라 갈아탈 횟수로 말할 수 있습니다. 뒤에 붙인 **which is great**는 진심으로 좋다고 할 때도 쓰지만, 이렇게 먼 곳 얘기 끝에 붙이면 비꼬는 말로 들립니다.",
+      "situation": "The Ones with the Whole Gang from Season 5 | Friends",
+      "from": {
+        "videoId": "RSLnwpSfe-4",
+        "i": 211
+      },
+      "start": 471.039,
+      "end": 474.479,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "보아하니 다른 사람들도 똑같은 실수를 했나 봐.",
+      "text": "Apparently, other people have made the same mistakes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Guess I'm not the only one who messed up."
+        },
+        {
+          "style": "formal",
+          "text": "It appears that other people have made the same mistakes."
+        }
+      ],
+      "note": "**Apparently**는 남에게 듣거나 찾아보고 알게 된 사실을 전할 때 문장 맨 앞에 붙입니다. '~라더라', '~인가 봐'에 가까운 말입니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1314
+      },
+      "start": 3343.44,
+      "end": 3345.759,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "얘들아, 나 옷 좀 봐 줄래? 패션 조언이 필요해.",
+      "text": "Hey guys, uh I need some fashion advice.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Guys, help me pick an outfit?"
+        },
+        {
+          "style": "formal",
+          "text": "Excuse me, everyone, I would like some advice on what to wear."
+        }
+      ],
+      "note": "**I need some ~ advice**는 앞에 fashion, dating, career 같은 말만 바꿔 넣으면 무엇이든 조언을 구할 때 쓸 수 있습니다. 여럿에게 한꺼번에 말을 걸 때는 **Hey guys**로 시작하면 자연스럽습니다.",
+      "situation": "The Ones with the Whole Gang from Season 10 | Friends",
+      "from": {
+        "videoId": "FlrWUyB_j90",
+        "i": 410
+      },
+      "start": 1071.12,
+      "end": 1073.28,
+      "recording": null
+    },
+    {
+      "i": 5,
+      "ko": "야, 누구 나랑 공 좀 주고받을 사람?",
+      "text": "Hey, who wants to uh throw the ball around a little?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Anyone up for tossing the ball around?"
+        },
+        {
+          "style": "formal",
+          "text": "Would anyone like to play catch with me for a while?"
+        }
+      ],
+      "note": "**throw the ball around**는 시합이 아니라 공을 가볍게 주고받으며 노는 것을 말해요. 같이 할 사람을 찾을 때는 **who wants to**로 시작하면 자연스럽습니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 303
+      },
+      "start": 803.96,
+      "end": 806.399,
+      "recording": null
+    },
+    {
+      "i": 6,
+      "ko": "글쎄, 나도 뭐라 해 줄 말이 없네.",
+      "text": "Well, I don't know what to tell you, dear.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Not sure what to say, hon."
+        },
+        {
+          "style": "formal",
+          "text": "I am afraid I do not know what else I can say, dear."
+        }
+      ],
+      "note": "**I don't know what to tell you**는 상대가 불평하거나 무리한 것을 바랄 때 '나도 어쩔 수 없다'는 뜻으로 써요. 말 그대로 할 말을 몰라서 하는 말이 아닙니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 1234
+      },
+      "start": 3160.839,
+      "end": 3162.96,
+      "recording": null
+    },
+    {
+      "i": 7,
+      "ko": "하루 종일 목욕 가운 입고 땅콩 초콜릿이나 먹으려고 했단 말이야.",
+      "text": "I wanted to wear my bathrobe and eat peanut clusters all day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "All I wanted was a lazy day in my robe with peanut clusters."
+        },
+        {
+          "style": "formal",
+          "text": "My plan was to spend the entire day in my bathrobe eating peanut clusters."
+        }
+      ],
+      "note": "쉬는 날 계획이 틀어져서 투덜댈 때 **I wanted to** ... **all day**를 그대로 쓰면 돼요. **bathrobe**는 목욕 가운이고, 줄여서 **robe**라고도 합니다.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 314
+      },
+      "start": 823.68,
+      "end": 827.6,
+      "recording": null
+    },
+    {
+      "i": 8,
+      "ko": "너희 이거 알고 있었으면서 우리한테 말도 안 했어?",
+      "text": "You guys knew about this and you didn't tell us.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wait, you knew and didn't say anything?"
+        },
+        {
+          "style": "formal",
+          "text": "Both of you were aware of this, yet you did not inform us."
+        }
+      ],
+      "note": "나만 몰랐다는 걸 알고 서운해서 따질 때 쓰는 말이에요. **You guys**는 남녀 상관없이 여러 사람을 부를 때 씁니다. **knew about this**는 '이 일을 알고 있었다'라는 뜻이에요.",
+      "situation": "The Ones with the Whole Gang from Season 3 | Friends",
+      "from": {
+        "videoId": "6nVAQaiLNkY",
+        "i": 513
+      },
+      "start": 1419.36,
+      "end": 1422,
+      "recording": null
+    },
+    {
+      "i": 9,
+      "ko": "너희 이거 벌써 4시간째 하고 있어.",
+      "text": "You guys have been doing this for 4 hours.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Four hours, guys. Seriously?"
+        },
+        {
+          "style": "formal",
+          "text": "All of you have been at this for four hours."
+        }
+      ],
+      "note": "**have been doing this for**는 '~째 계속 하고 있다'는 뜻으로, 너무 오래 한다고 핀잔줄 때 딱 맞아요. **at this**도 같은 뜻인데 조금 더 짧게 말하는 방법입니다.",
+      "situation": "The Ones That Make You Laugh: Part 3 | Friends",
+      "from": {
+        "videoId": "Wj3ZcW-5JXc",
+        "i": 38
+      },
+      "start": 87.439,
+      "end": 89.439,
+      "recording": null
+    }
+  ]
+}

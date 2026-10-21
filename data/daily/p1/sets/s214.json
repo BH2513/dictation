@@ -1,0 +1,114 @@
+{
+  "setId": "s214",
+  "videoId": "daily-s214",
+  "title": "Set 214",
+  "madeAt": "2026-10-22",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "응, 엄마, 아무 일 없어. 요즘 회사 일이 좀 바빠서 그래. 목소리가 피곤하게 들리면 그것 때문이야. 이번 주말에 시간 좀 더 날 때 전화할게.",
+      "text": "Yeah, everything's fine, Mom. Work's just been kind of busy, so if I sound tired, that's all it is. I'll call you this weekend when I've got more time to talk.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm fine, Mom, really. Work's been kinda crazy, that's why I sound tired. I'll call you this weekend when I've got more time."
+        },
+        {
+          "style": "formal",
+          "text": "Yes, everything is fine, Mom. Work has simply been rather busy, so if I sound tired, that is the only reason. I will call you this weekend when I have more time to talk."
+        }
+      ],
+      "note": "**that's all it is** 는 다른 이유는 없고 그게 전부라는 뜻이에요. 걱정하는 상대를 안심시킬 때 자주 써요. 캐주얼한 **kinda crazy** 는 정신없이 바쁘다는 말이에요.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "사촌이 만나는 사람 있냐고 물어봤을 때는 그 질문에 벌써 한 다섯 번은 대답한 뒤라서 그냥 있다고 해 버렸어. 그랬더니 이제 온 가족이 나 여자친구 있는 줄 알아.",
+      "text": "By the time my cousin asked if I was seeing anybody, I'd already answered that like five times, so I just said yes, and now my whole family thinks I have a girlfriend.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My cousin asked if I was seeing anyone, and I'd already heard that like five times, so I just said yes. Now the whole family thinks I've got a girlfriend."
+        },
+        {
+          "style": "formal",
+          "text": "By the time my cousin asked whether I was seeing anyone, I had already answered that question about five times, so I simply said yes, and now my entire family believes I have a girlfriend."
+        }
+      ],
+      "note": "**seeing anybody** 는 사귀는 사람이 있다는 뜻이에요. **By the time** 은 ~할 즈음엔 이미 그랬다는 흐름을 만들어 줘요.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "배송 조회에는 어제 2시에 배달 완료라고 나오는데 우리 집 문 앞에 없어. 이웃들도 아무도 안 받았대. 다른 동으로 잘못 간 건지 누가 그냥 가져간 건지 모르겠어.",
+      "text": "The tracking says it was delivered yesterday at two, but it's not at my door, and none of my neighbors have it, so I don't know if it went to the wrong building or somebody just took it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Supposedly it got dropped off yesterday at two, but it's not here and none of my neighbors have it. So either it went to the wrong building or somebody swiped it."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking information states that it was delivered yesterday at two, but it is not at my door, and none of my neighbors have it, so I do not know whether it was delivered to the wrong building or someone simply took it."
+        }
+      ],
+      "note": "**The tracking says** 는 배송 조회에 그렇게 나온다는 말이에요. 캐주얼의 **swiped** 는 슬쩍 훔쳐 갔다는 뜻이에요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "좋아, 솔직하게 말해 줄까? 색은 너한테 진짜 잘 어울려. 근데 한 치수 큰 것 같아, 어깨에서 좀 흘러내리거든. 아직 반품할 수 있어?",
+      "text": "Okay, do you want me to be honest? The color's great on you, but I think it's a size too big, because it's kind of hanging off your shoulders. Can you still take it back?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Want my honest take? The color looks great on you, but it's a size too big, it's kinda hanging off your shoulders. Can you still return it?"
+        },
+        {
+          "style": "formal",
+          "text": "Would you like my honest opinion? The color suits you very well, but I believe it is one size too large, as it seems to be hanging off your shoulders. Are you still able to return it?"
+        }
+      ],
+      "note": "**a size too big** 는 한 치수 크다는 말이에요. **take it back** 은 산 물건을 반품하거나 환불하러 가져간다는 뜻이에요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "계속 회사 그만둘까 생각하는데, 말 꺼내려고 할 때마다 상사가 새 프로젝트를 줘서 하다 말고 나가기가 미안해. 그리고 솔직히 말하면 그만두고 뭘 할지도 잘 모르겠어.",
+      "text": "I keep thinking about quitting, but every time I'm about to say something, my boss gives me a new project and I feel bad leaving in the middle of it. And if I'm being honest, I don't really know what I'd do instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm always thinking about quitting, but whenever I'm about to say something, my boss hands me a new project and I feel bad bailing halfway through. Plus, honestly, I don't really know what I'd do instead."
+        },
+        {
+          "style": "formal",
+          "text": "I continue to consider resigning, but each time I am about to raise the matter, my manager assigns me a new project, and I feel uncomfortable leaving in the middle of it. To be honest, I am also not certain what I would do instead."
+        }
+      ],
+      "note": "**keep thinking about** 은 자꾸 그 생각이 든다는 말이에요. **if I'm being honest** 는 솔직히 말하면이라는 뜻으로 속마음을 털어놓을 때 써요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 Nah 는 아니라는 대답이라 잘 지내냐는 엄마 물음에 반대 뜻으로 들립니다. I'm fine 으로 바꿨습니다.",
+    "2번 casual 의 I'd already gotten that 은 그 자리에서 조금 어색해서 I'd already heard that 으로 바꿨습니다.",
+    "3번 casual 이 Tracking says it got dropped off yesterday at two 로 시작해 text 앞부분과 거의 같았습니다. Supposedly 로 시작하게 바꿨습니다."
+  ]
+}

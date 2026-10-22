@@ -1,0 +1,115 @@
+{
+  "setId": "s217",
+  "videoId": "daily-s217",
+  "title": "Set 217",
+  "madeAt": "2026-10-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저기요, 히터 때문에 또 연락드려요. 아직도 밤마다 쾅쾅거리는 소리가 나는데요, 지난주에 보내 주신 기사님이 부품을 새로 갈아야 한다고 하셨거든요. 그 부품 대체 언제쯤 오는지 아세요?",
+      "text": "Hey, it's me again about the heater. It's still making that banging noise at night, and the guy you sent last week said it needs a new part, so do you know when that's actually coming?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Me again about the heater. It's still banging all night, and your guy last week said it needs a new part. Any idea when that's actually showing up?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I am contacting you again regarding the heater. It is still making a banging noise at night, and the technician you sent last week said that it requires a new part. Do you know when that part will arrive?"
+        }
+      ],
+      "note": "**it's me again** 은 같은 일로 또 연락할 때 쓰는 말로, 또 저예요 정도의 느낌입니다. **the guy you sent** 는 보내 주신 사람이라는 뜻으로, 수리 기사를 편하게 부르는 말입니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "음, 걔가 처음에는 좀 조용한데, 편해지면 진짜 웃겨. 근데 전 여자친구 얘기만 꺼내지 마. 아직 그 얘기 나오면 좀 이상해지거든.",
+      "text": "Okay, so he's kind of quiet at first, but once he gets comfortable he's really funny. Just don't bring up his ex, because he's still a little weird about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Kinda quiet at first, but super funny once he warms up. Just don't mention the ex, he's still weird about that."
+        },
+        {
+          "style": "formal",
+          "text": "He is rather quiet at first, but once he feels comfortable, he is very funny. Please do not mention his former partner, because he is still somewhat uncomfortable about it."
+        }
+      ],
+      "note": "**bring up** 은 어떤 이야기를 꺼내다라는 뜻입니다. **once he gets comfortable** 은 일단 편해지면이라는 뜻으로, once 가 ~하기만 하면의 뜻으로 쓰였습니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 피자집 예전에 엄청 맛있었던 거 기억나? 지난주에 다시 가 봤는데 아무 맛도 안 나더라. 요리사가 바뀌었거나 뭐 그런 것 같아.",
+      "text": "Remember how good that pizza place used to be? I went back last week and it just didn't taste like anything, so I'm pretty sure they got a new cook or something.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You know that pizza place that used to be so good? Went back last week and it was totally bland. Pretty sure they've got a new cook or something."
+        },
+        {
+          "style": "formal",
+          "text": "Do you remember how good that pizza restaurant used to be? I returned last week and the food had no flavor at all, so I am fairly certain they have hired a new cook."
+        }
+      ],
+      "note": "**didn't taste like anything** 은 아무 맛도 안 났다는 뜻입니다. **or something** 은 말끝에 붙여 확실하지 않을 때 쓰는 말로, ~거나 뭐 그런 거 정도의 느낌입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "오늘 아침에 수업 가려고 준비 다 해 놨는데, 딱 나가려는 참에 개가 러그에 토했어. 그거 다 치우고 나니까 이미 수업 놓쳤더라.",
+      "text": "I was all set to go to my class this morning, but the dog threw up on the rug right as I was leaving, and by the time I cleaned it up, I'd already missed it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Totally meant to hit class this morning, but the dog puked on the rug just as I was heading out. Cleaned it up and boom, missed it."
+        },
+        {
+          "style": "formal",
+          "text": "I was fully prepared to attend my class this morning, but the dog vomited on the rug just as I was leaving, and by the time I had cleaned it, I had already missed the class."
+        }
+      ],
+      "note": "**all set** 은 준비가 다 됐다는 뜻입니다. **right as I was leaving** 은 막 나가려던 참에라는 뜻이고, **by the time** 은 ~할 즈음에는 이미라는 뜻입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "요즘 계란값 봤어? 어제 열두 개에 거의 7달러 줬어. 진짜 얼마 전까지만 해도 2달러쯤이었던 것 같은데. 요즘 다들 어떻게 가족 먹여 살리는지 모르겠어.",
+      "text": "Have you seen what eggs cost now? I paid almost seven dollars for a dozen yesterday, and I swear they were like two bucks not that long ago. I don't know how anybody's feeding a family right now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Seen egg prices lately? Almost seven bucks for a dozen yesterday, and I swear they were like two bucks not long ago. No idea how anyone's feeding a family right now."
+        },
+        {
+          "style": "formal",
+          "text": "Have you noticed what eggs cost now? I paid almost seven dollars for a dozen yesterday, and I am certain they were about two dollars not long ago. I do not know how anyone is managing to feed a family at the moment."
+        }
+      ],
+      "note": "**bucks** 는 dollars 를 편하게 부르는 말입니다. **I swear** 는 진짜로, 맹세코라는 뜻으로 말을 힘주어 할 때 씁니다. 참고로 **a dozen** 은 열두 개입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어: actually 의 답답한 느낌이 '실제로'로 번역투가 되어 '대체 언제쯤'으로 고침",
+    "2번 casual: text 와 앞부분(he's kind of quiet at first)이 거의 같아 더 짧은 구어로 바꿈",
+    "4번 casual: I was totally ready 가 text 의 I was all set 과 같은 틀이라 다르게 고침",
+    "5번 한국어: 한국에서 계란 한 판은 30개라 a dozen(12개)과 안 맞음. '열두 개에'로 고침"
+  ]
+}

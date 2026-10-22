@@ -1,0 +1,114 @@
+{
+  "setId": "s216",
+  "videoId": "daily-s216",
+  "title": "Set 216",
+  "madeAt": "2026-10-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "우리 고양이가 새벽 다섯 시쯤 조리대 위 물건을 떨어뜨리면 누가 일어나서 밥을 준다는 걸 알아냈어. 그래서 이제는 거의 우리가 길들여진 거나 마찬가지야.",
+      "text": "Our cat's figured out that if she knocks stuff off the counter at like five in the morning, somebody gets up and feeds her, so now we're basically the ones who've been trained.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Cat's worked out that knocking stuff off the counter at 5 a.m. gets her fed, so yeah, she's basically trained us."
+        },
+        {
+          "style": "formal",
+          "text": "Our cat has learned that if she knocks items off the counter at around five in the morning, someone will get up and feed her. As a result, it seems that we are the ones who have been trained."
+        }
+      ],
+      "note": "**figured out** 는 알아내다, 깨닫다라는 뜻이에요. **we're basically the ones who've been trained** 는 사실상 우리가 길들여진 쪽이라는 말로, 입장이 뒤바뀐 걸 재미있게 말할 때 써요.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "네가 말해 준 그 태국 음식점 드디어 가 봤어. 음식은 진짜 맛있었는데 자리 나기까지 거의 40분을 기다려서, 금요일 저녁에 또 갈지는 잘 모르겠어.",
+      "text": "So we finally tried that Thai place you told us about. The food was really good, but we waited almost forty minutes for a table, so I don't know if I'd go back on a Friday night.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally hit up that Thai place you mentioned. Food was great, but we waited like forty minutes for a table, so I dunno about going back on a Friday night."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended. The food was excellent, but we waited nearly forty minutes for a table, so I am not certain I would return on a Friday evening."
+        }
+      ],
+      "note": "**tried that Thai place** 처럼 try 는 식당에 처음 가 볼 때도 써요. **I don't know if I'd go back** 은 다시 갈지 모르겠다는 말을 부드럽게 하는 표현이에요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "현장학습 이메일 받았어? 내일까지 돈을 내래. 근데 우리 아들이 신청서를 오늘 아침에야 줬어. 알고 보니 2주 동안 가방에 그대로 들어 있었대.",
+      "text": "Did you get that email about the field trip? They want the money by tomorrow, and my son only gave me the form this morning, because apparently it's been sitting in his backpack for two weeks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You see the field trip email? They need the money by tomorrow, and my kid just handed me the form this morning. It's been in his backpack for two weeks, apparently!"
+        },
+        {
+          "style": "formal",
+          "text": "Have you received the email regarding the field trip? They would like payment by tomorrow, and my son only gave me the form this morning, as it had apparently been in his backpack for two weeks."
+        }
+      ],
+      "note": "**field trip** 은 학교 현장학습이에요. **apparently** 는 나중에 알고 보니 그렇더라는 느낌으로, 남한테 들었거나 뒤늦게 안 사실을 말할 때 써요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "설탕 끊기 진짜 잘하고 있었는데, 회사 일이 정신없어지면서 휴게실에 있는 걸 아무거나 집어 먹기 시작했어. 그래서 뭐, 거의 원점으로 돌아왔어.",
+      "text": "I was doing really well with the no sugar thing, but then work got crazy and I started grabbing whatever was in the break room, so yeah, I'm kind of back where I started.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The no sugar thing was going great till work got nuts and I started grabbing whatever's in the break room. So yeah, kinda back to square one."
+        },
+        {
+          "style": "formal",
+          "text": "I was making good progress with avoiding sugar, but when work became very demanding, I began eating whatever was available in the break room. I am afraid I have more or less returned to where I started."
+        }
+      ],
+      "note": "**work got crazy** 는 일이 갑자기 엄청 바빠졌다는 말이에요. **back where I started** 는 처음 자리로 돌아왔다, 원점이라는 뜻이에요.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "앉을 데 찾느라 카페를 세 군데나 돌았는데 다 꽉 차 있었어. 겨우 자리 잡았을 때는 커피 생각도 없더라.",
+      "text": "We went to three different coffee shops looking for somewhere to sit, and they were all packed, so by the time we finally found a table, I didn't even want coffee anymore.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hit three coffee shops trying to find a seat, all packed. By the time we got a table, I didn't even want coffee anymore."
+        },
+        {
+          "style": "formal",
+          "text": "We visited three different coffee shops in search of a place to sit, and each one was full. By the time we finally found a table, I no longer wanted any coffee."
+        }
+      ],
+      "note": "**packed** 는 사람으로 꽉 찼다는 뜻이에요. **by the time** 은 ~할 즈음에는이라는 뜻으로, 그때는 이미 상황이 달라졌다고 말할 때 써요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 formal 이 text 의 kind of(거의) 뉘앙스를 빼먹어서 more or less 를 넣어 뜻을 맞춤",
+    "5번 casual 의 for a seat 가 어색해서 trying to find a seat 로 고치고 더 짧은 구어로 다듬음",
+    "5번 한국어의 그래서가 앞뒤 흐름상 어색해서 빼고 친구에게 하는 말투로 다듬음"
+  ]
+}

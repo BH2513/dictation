@@ -1,0 +1,114 @@
+{
+  "setId": "s218",
+  "videoId": "daily-s218",
+  "title": "Set 218",
+  "madeAt": "2026-10-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "진짜 열받는 게 뭔지 알아? 회의 내내 한마디도 안 하다가 끝나자마자 우리 상사한테 쪼르르 가서 전부 자기 아이디어였던 것처럼 굴어.",
+      "text": "You know what really gets me? He doesn't say a word the whole meeting, and then the second it's over, he goes straight to my boss and acts like it was all his idea.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Here's what drives me nuts. Guy's totally quiet the whole meeting, then the minute it ends he runs right to my boss like it was all his idea."
+        },
+        {
+          "style": "formal",
+          "text": "Do you know what truly frustrates me? He does not say a single word during the entire meeting, and then, as soon as it is over, he goes directly to my manager and presents it as though it were entirely his idea."
+        }
+      ],
+      "note": "**gets me** 는 짜증 나게 하다, 열받게 하다라는 뜻이에요. **the second it's over** 는 끝나자마자라는 뜻으로, second 대신 minute 를 써도 같아요.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아니, 나쁘진 않은데 너답지가 않아. 네가 직접 고른 걸 몰랐으면 누가 사 준 건 줄 알았을 거야.",
+      "text": "I mean, it's not bad, but it's not really you. If I didn't know you picked it out yourself, I'd have thought somebody bought it for you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly? It's okay, just not very you. If I didn't know you'd picked it, I'd figure it was a gift or something."
+        },
+        {
+          "style": "formal",
+          "text": "It does not look bad, but it does not really suit you. Had I not known that you chose it yourself, I would have assumed someone had bought it for you."
+        }
+      ],
+      "note": "**not really you** 는 너답지 않다, 너한테 안 어울린다는 뜻이에요. 물건 이름 대신 you 를 넣어 그 사람 스타일을 말해요. **picked it out** 은 여럿 중에서 골랐다는 말이에요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "미안, 오늘 아침에 기차가 엉망이었어. 신호에 문제가 생겨서 한 20분 동안 그냥 멈춰 있었는데 아무도 아무 말도 안 해 주더라.",
+      "text": "Sorry, the train was a mess this morning. Something was wrong with the signals, so we just sat there for like twenty minutes and nobody told us anything.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, sorry, trains were a disaster today. Signal problems, so we were stuck for like twenty minutes and nobody said a thing."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize. The train service was very disrupted this morning. There was a problem with the signals, so we waited for about twenty minutes and no one gave us any information."
+        }
+      ],
+      "note": "**a mess** 는 엉망진창이라는 뜻으로 교통, 방, 일정 어디에나 써요. **for like twenty minutes** 의 like 는 한, 대충이라는 뜻의 말버릇이에요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "잘 돌아가긴 하는데, 미리 말하자면 배터리가 예전만큼 오래 안 가. 하루 종일 쓸 거면 아마 계속 충전기에 꽂아 둬야 할 거야. 그래서 80달러만 받는 거야.",
+      "text": "It works fine, but I should tell you the battery doesn't last like it used to, so if you're going to use it all day, you'll probably have to keep it plugged in. That's why I'm only asking eighty for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Works fine, but heads up, the battery's not what it used to be. Using it all day? You'll kinda need it plugged in. That's why I'm only asking eighty."
+        },
+        {
+          "style": "formal",
+          "text": "It works properly, but I should inform you that the battery does not last as long as it once did, so if you intend to use it all day, you will likely need to keep it plugged in. That is why I am asking only eighty for it."
+        }
+      ],
+      "note": "**doesn't last like it used to** 는 예전만큼 오래가지 않는다는 뜻이에요. **asking eighty** 는 중고로 팔 때 80달러를 부른다는 말이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "아니야 아빠, 밥 잘 먹고 있어, 진짜야. 어젯밤엔 직접 요리도 했고 요즘 일찍 자고 있어. 그러니까 엄마 아빠 진짜 내 걱정 안 해도 돼.",
+      "text": "No, Dad, I'm eating, I promise. I actually cooked last night, and I've been going to bed early, so you guys really don't have to worry about me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Dad, c'mon, I'm eating, I swear. I even cooked last night, and I've been getting to bed early, so you guys can stop worrying."
+        },
+        {
+          "style": "formal",
+          "text": "No, Dad, I am eating properly, I promise. I actually cooked dinner last night, and I have been going to bed early, so there is truly no need for you and Mom to worry about me."
+        }
+      ],
+      "note": "**I promise** 는 진짜야, 약속해라는 뜻으로 상대를 안심시킬 때 붙여요. **you guys** 는 여러 사람을 한꺼번에 부르는 말로, 여기서는 엄마 아빠를 함께 가리켜요.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal 의 It is not unattractive 는 원문 not bad 보다 돌려 말하는 느낌이 강해 뜻이 달라짐. It does not look bad 로 고침",
+    "3번 casual 의 stuck like twenty minutes 는 for 가 빠져 어색함. stuck for like twenty minutes 로 고침",
+    "3번 한국어 그냥 서 있었는데 는 사람이 서 있었다는 뜻으로도 읽혀서 그냥 멈춰 있었는데 로 고침"
+  ]
+}

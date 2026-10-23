@@ -1,0 +1,115 @@
+{
+  "setId": "s221",
+  "videoId": "daily-s221",
+  "title": "Set 221",
+  "madeAt": "2026-10-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "진짜 이해가 안 돼. 하루 종일 피곤해 죽겠는데 눕기만 하면 잠이 확 깨. 그래서 결국 새벽 한 시쯤까지 폰을 보게 되는데, 그게 더 안 좋게 만든다는 건 나도 알아.",
+      "text": "I don't get it. I'm exhausted all day, but the second I lie down I'm wide awake, so I end up on my phone till like one, and I know that's just making it worse.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Makes no sense. I'm wiped all day, then I hit the pillow and boom, I'm wide awake. So I'm on my phone till like one, and yeah, I know it's making it worse."
+        },
+        {
+          "style": "formal",
+          "text": "I do not understand it. I am exhausted throughout the day, yet as soon as I lie down I am wide awake, so I end up on my phone until around one o'clock, and I realize that is only making it worse."
+        }
+      ],
+      "note": "**the second I lie down** 은 눕자마자라는 뜻이에요. **wide awake** 는 잠이 완전히 깬 상태를 말해요.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "네가 말해 준 그 식당 드디어 가 봤는데, 디저트는 네 말이 맞더라. 솔직히 저녁은 그냥 그랬는데, 그 초콜릿 디저트 하나 먹으러 또 갈 것 같아.",
+      "text": "We finally went to that place you told us about, and you were right about the dessert. The dinner was just okay, honestly, but I'd go back just for that chocolate thing.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So we finally tried that place you mentioned, and yep, you were spot on about the dessert. Dinner was kinda meh, honestly, but I'd totally go back just for that chocolate thing."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the restaurant you recommended, and you were correct about the dessert. To be honest, the dinner was merely adequate, but I would return for the chocolate dessert alone."
+        }
+      ],
+      "note": "**just okay** 는 나쁘진 않지만 특별할 것도 없다는 뜻이에요. **I'd go back just for** 는 그거 하나 때문에라도 다시 가겠다는 말이에요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "한 일 년 만에 처음으로 헬스장에 갔거든. 나는 꽤 살살 했다고 생각했는데, 자고 일어나니까 열이 나고 온몸이 다 아파. 무리하지 말라고 몸이 신호 보내는 건가 봐.",
+      "text": "I went to the gym for the first time in like a year, and I thought I took it pretty easy, but I woke up with a fever and everything hurts, so I guess my body's trying to tell me something.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "First time at the gym in like a year, and I thought I went pretty easy, but I woke up with a fever and I'm sore all over. Guess my body's trying to tell me something."
+        },
+        {
+          "style": "formal",
+          "text": "I went to the gym for the first time in about a year, and I believed I had taken it fairly easy, but I woke up with a fever and I am in pain all over, so I suppose my body is trying to tell me something."
+        }
+      ],
+      "note": "**took it pretty easy** 는 무리하지 않고 살살 했다는 뜻이에요. **my body's trying to tell me something** 은 몸이 보내는 신호라는 농담 섞인 표현이에요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "너희 딸 담임 선생님 작년이랑 같은 분이야? 우리 아들이 요즘 집에 오면 말이 너무 없고, 학교 어땠냐고 물어보면 괜찮았다고만 하고 위층으로 올라가 버려서, 무슨 일 있는 건 아닌가 좀 걱정돼.",
+      "text": "Does your daughter have the same teacher as last year? Because my son's been coming home really quiet, and when I ask how school was, he just says fine and goes upstairs, so I'm kind of worried something's going on.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Is your daughter's teacher the same one from last year? 'Cause my son's been coming home super quiet, and when I ask about school he just goes fine and heads upstairs. Kinda worried something's up."
+        },
+        {
+          "style": "formal",
+          "text": "Does your daughter have the same teacher as she did last year? I ask because my son has been coming home very quiet, and when I ask how school was, he simply says it was fine and goes upstairs, so I am somewhat concerned that something is wrong."
+        }
+      ],
+      "note": "**coming home really quiet** 는 집에 와서 말수가 적다는 뜻이에요. **something's going on** 은 무슨 일이 있다는 뜻으로 걱정할 때 자주 써요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "안녕하세요, 또 연락드려서 죄송한데요, 부엌 수도꼭지가 아직도 새요. 밑에 그릇을 받쳐 놨는데 두어 시간마다 비워야 해서요, 이번 주 안에 사람 좀 보내 주실 수 있을까요? 참고로 저는 여섯 시 이후엔 집에 있어요.",
+      "text": "Hi, sorry to bother you again, but the kitchen faucet's still leaking. I put a bowl under it, but I have to empty it every couple of hours, so could you send someone this week? I'm home after six if that helps.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, sorry to bug you again, but the kitchen faucet's still dripping. I've got a bowl under it, but I'm emptying it every couple hours, so can you get someone out here this week? I'm home after six if that works."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I apologize for disturbing you again, but the kitchen faucet is still leaking. I have placed a bowl beneath it, but I must empty it every couple of hours. Would you be able to send someone this week? I am home after six o'clock, if that is helpful."
+        }
+      ],
+      "note": "**sorry to bother you again** 은 또 번거롭게 해서 미안하다는 공손한 말이에요. **every couple of hours** 는 두어 시간마다라는 뜻이에요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual: you nailed it on the dessert 는 추천이 맞았다는 자리에 쓰기엔 어색함. you were spot on about the dessert 로 바꿈",
+    "3번 ko: 몸이 나한테 뭔가 말하려나 봐 는 영어를 그대로 옮긴 번역투라 무리하지 말라는 신호인가 봐 로 바꿈",
+    "3번 formal: had been fairly gentle with myself 는 어색함. had taken it fairly easy 로 바꿈",
+    "5번 ko: 도움이 되실지 모르겠지만 은 if that helps 를 그대로 옮긴 번역투라 참고로 로 바꿈"
+  ]
+}

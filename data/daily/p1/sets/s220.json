@@ -1,0 +1,116 @@
+{
+  "setId": "s220",
+  "videoId": "daily-s220",
+  "title": "Set 220",
+  "madeAt": "2026-10-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "싱크대 고치는 법 좀 찾아보려고 유튜브 들어간 건데, 어쩌다 보니 두 시간 뒤에 웬 남자가 녹슨 옛날 칼 닦는 영상을 보고 있더라. 싱크대는 아직도 고장 난 채야.",
+      "text": "I only went on YouTube to figure out how to fix the sink, and somehow two hours later I was watching some guy clean up an old rusty knife. And the sink's still broken.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went on YouTube just to see how to fix the sink, and two hours later I'm watching some dude clean up a rusty old knife. Sink's still broken, by the way."
+        },
+        {
+          "style": "formal",
+          "text": "I only went on YouTube to learn how to repair the sink, and somehow, two hours later, I was watching a man restore an old rusty knife. The sink is still broken."
+        }
+      ],
+      "note": "**figure out how to** 는 ~하는 법을 알아내다, 찾아보다라는 뜻이에요. **somehow** 는 나도 모르게, 어쩌다 보니라는 느낌을 줍니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이번엔 다이어트를 목요일까지 버텼어. 나한텐 거의 기록이야. 그런데 언니 생일 모임이 있어서 케이크 한 조각쯤은 괜찮겠지 했거든. 결국 세 조각 먹어서 월요일부터 다시 시작하려고.",
+      "text": "I made it all the way to Thursday on my diet this time, which is kind of a record for me, but then my sister had her birthday thing and I figured one slice of cake wouldn't hurt. I ended up having three, so I'm starting over Monday.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Made it to Thursday on my diet this time, which is kind of a record for me. Then my sister had her birthday thing, and I'm like, one slice of cake won't hurt. Had three. So yeah, starting over Monday."
+        },
+        {
+          "style": "formal",
+          "text": "I managed to stay on my diet until Thursday this time, which is something of a record for me. However, my sister had her birthday celebration, and I thought one slice of cake would not hurt. I ended up having three, so I will be starting again on Monday."
+        }
+      ],
+      "note": "**made it all the way to** 는 ~까지 버텨 냈다는 말이에요. **wouldn't hurt** 는 그 정도는 괜찮겠지, **ended up** 은 결국 ~하게 됐다는 뜻입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "있잖아, 나 귀가 안 들리는 것 같다고 했었잖아? 드디어 검사받아 봤는데 그냥 귀지였어. 의사가 한 2분 만에 싹 빼 줬는데 이제 모든 소리가 엄청 크게 들려.",
+      "text": "So you know how I thought I was losing my hearing? I finally got it checked, and it was just wax. The doctor cleaned it out in like two minutes, and now everything sounds so loud.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Remember when I thought I was going deaf? Finally got it checked, and it was just wax. Doc cleaned it out in like two minutes, and now everything's super loud."
+        },
+        {
+          "style": "formal",
+          "text": "You may recall that I thought I was losing my hearing. I finally had it examined, and it was only wax. The doctor removed it in about two minutes, and now everything sounds extremely loud."
+        }
+      ],
+      "note": "**you know how** 는 있잖아, 내가 ~했던 거 알지 하고 이야기를 꺼낼 때 써요. **got it checked** 는 검사를 받았다는 뜻입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "내 택배가 벌써 5일째 같은 물류창고에 그대로 있는데, 왜 그런지 아무도 말을 못 해 줘. 이렇게 오래 걸릴 줄 알았으면 그냥 가게 가서 돈 좀 더 주고 샀을 거야.",
+      "text": "My package has been sitting at the same warehouse for five days now, and nobody can tell me why. If I'd known it was going to take this long, I would've just gone to the store and paid a little more.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Package's been stuck at the same warehouse for five days and nobody knows why. If I'd known, I'd have just gone to the store and paid a bit more."
+        },
+        {
+          "style": "formal",
+          "text": "My package has remained at the same warehouse for five days, and no one has been able to explain why. Had I known it would take this long, I would have simply gone to the store and paid a little more."
+        }
+      ],
+      "note": "**has been sitting** 은 계속 그 자리에 멈춰 있다는 느낌이에요. **If I'd known** 으로 시작해 **would've** 로 받으면 그럴 줄 알았으면 ~했을 텐데라는 후회 표현이 됩니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "야, 주문이 잘못 왔어. 우리 피자 대신 다른 사람 초밥이 왔더라. 벌써 전화했는데 한 시간쯤은 아무도 못 보낸대. 그냥 초밥 먹을래?",
+      "text": "Hey, they brought us the wrong order. We got somebody's sushi instead of our pizza, and I already called, but they said they can't send anyone for like an hour, so do you just want to eat the sushi?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, they messed up our order. We got someone's sushi, not our pizza. I called already, but they can't send anybody for like an hour. Wanna just eat the sushi?"
+        },
+        {
+          "style": "formal",
+          "text": "It looks like they delivered the wrong order. We were given someone else's sushi instead of our pizza. I have already called, but they said they cannot send anyone for about an hour. Shall we just have the sushi?"
+        }
+      ],
+      "note": "**instead of** 는 ~대신에라는 뜻이에요. **do you just want to** 는 그냥 ~할래? 하고 가볍게 제안할 때 씁니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 의 kinda a record 는 소리내면 어색해서 kind of a record 로 고침",
+    "3번 formal 의 Do you recall that I thought 는 딱딱하고 부자연스러워서 You may recall that I thought 로 고침",
+    "4번 casual 이 My package has been 으로 text 와 앞부분이 겹쳐서 더 짧은 구어(Package's been stuck)로 고치고 뒷부분도 줄임",
+    "4번 note 의 If I'd known, I would've 는 text 에 그 모양 그대로 나오지 않아서 If I'd known 과 would've 로 나눠 짚음",
+    "5번 formal 의 Excuse me 는 친구가 아니라 가게 직원에게 말하는 것처럼 들려서 상황이 바뀌므로 It looks like 로 고치고, simply eat 은 어색해서 Shall we just have 로 고침"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "setId": "s223",
+  "videoId": "daily-s223",
+  "title": "Set 223",
+  "madeAt": "2026-10-25",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "솔직히 유모차 상태는 꽤 좋은데요, 돌릴 때 바퀴 하나가 좀 뻑뻑하게 걸려서 지금 말씀드리려고요. 돈 다 내신 다음에 아시게 되는 건 싫었거든요.",
+      "text": "Honestly, the stroller's in pretty good shape, but one of the wheels kind of sticks when you turn, so I wanted to tell you now. I didn't want you to find out after you'd already paid for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The stroller's actually in good shape, but one wheel kinda sticks on turns, so I figured I'd say something now. Didn't want you finding out after you'd paid."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, the stroller is in quite good condition, but one of the wheels tends to stick when you turn it, so I wanted to let you know now. I did not want you to discover it after you had already paid for it."
+        }
+      ],
+      "note": "**in pretty good shape** 는 물건 상태가 꽤 괜찮다는 말이에요. **sticks** 는 바퀴나 문이 매끄럽게 안 돌고 걸린다는 뜻이고, **find out** 은 나중에 알게 된다는 뜻이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그 드라마 정말 좋아했었는데, 작가들이 바뀐 뒤로는 인물들이 뭘 원하는지 아무도 모르는 것 같더라고. 그래서 시즌 중간쯤에 그냥 안 보게 됐어.",
+      "text": "I used to love that show, but ever since they changed the writers, it's like nobody knows what the characters want anymore, so I just stopped watching halfway through the season.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was really into that show, but once they swapped out the writers, nobody seemed to know what the characters wanted, so I quit watching halfway through the season."
+        },
+        {
+          "style": "formal",
+          "text": "I used to enjoy that program very much, but since they changed the writers, it seems as though no one knows what the characters want anymore, so I stopped watching halfway through the season."
+        }
+      ],
+      "note": "**ever since** 는 그때부터 지금까지 쭉이라는 뜻이에요. **it's like** 는 말할 때 마치 ~ 같다며 느낌을 전하는 표현이고, **halfway through** 는 무언가를 하다가 중간쯤에서라는 뜻이에요.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "연휴 끝나면 그만둬야지 계속 이러는데, 작년에도 똑같은 소리 했거든. 솔직히 말하면 더 나은 데를 못 찾을까 봐 그냥 겁나는 것 같아.",
+      "text": "I keep telling myself I'll quit after the holidays, but I said the same thing last year, and if I'm being honest, I think I'm just scared I won't find anything better.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Said I'd quit after the holidays last year too, and here I am saying it again. Honestly? I'm just scared I won't find anything better."
+        },
+        {
+          "style": "formal",
+          "text": "I keep telling myself that I will resign after the holidays, but I said the same thing last year, and to be honest, I believe I am simply afraid that I will not find anything better."
+        }
+      ],
+      "note": "**I keep telling myself** 는 스스로에게 자꾸 다짐하듯 말한다는 뜻이에요. **if I'm being honest** 는 솔직히 털어놓자면 하고 속마음을 꺼낼 때 써요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 개가 너무 늙어서 이제 계단을 못 올라와. 그래서 요즘은 남편이 개랑 같이 소파에서 자. 개를 혼자 아래층에 두면 낑낑 울거든.",
+      "text": "Our dog's gotten so old that he can't make it up the stairs anymore, so now my husband sleeps on the couch with him, because the dog cries if he's left downstairs by himself.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The dog's so old now he can't get up the stairs, so my husband sleeps on the couch with him. The dog cries if he's left down there alone."
+        },
+        {
+          "style": "formal",
+          "text": "Our dog has become so old that he is no longer able to climb the stairs, so my husband now sleeps on the couch with him, because the dog cries if he is left downstairs by himself."
+        }
+      ],
+      "note": "**can't make it up the stairs** 는 계단을 끝까지 올라가지 못한다는 뜻이에요. **by himself** 는 혼자서라는 뜻이고, 개한테도 he 를 써요.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그 사람이 자꾸 금요일 네 시 반 같은 시간에 내 일정에 회의를 넣어. 그래서 물어봤더니 다들 시간 되는 게 그때뿐이래. 근데 내가 보기엔 그냥 아침을 싫어하는 것 같아.",
+      "text": "She keeps putting meetings on my calendar at like four thirty on a Friday, and when I asked her about it, she said that's the only time everyone's free. But I'm pretty sure she just doesn't like mornings.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every Friday it's another meeting at like four thirty, and when I asked, she said it's the only time everyone's free. Pretty sure she just hates mornings, though."
+        },
+        {
+          "style": "formal",
+          "text": "She continues to schedule meetings on my calendar at around four thirty on Fridays, and when I asked her about it, she said that is the only time everyone is available. However, I am fairly certain she simply does not like mornings."
+        }
+      ],
+      "note": "**at like four thirty** 의 like 는 대충 그쯤이라는 뜻으로 말할 때 붙여요. **I'm pretty sure** 는 확실하진 않아도 거의 그렇다고 생각한다는 표현이에요.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 casual 이 text 와 똑같이 I keep 으로 시작해서 앞부분을 바꾸고 더 짧은 구어로 고침",
+    "3번 한국어 '계속 스스로한테 말하는데' 가 번역투라 '그만둬야지 계속 이러는데' 로 고침",
+    "4번 casual 의 뒷문장 He cries 가 남편인지 개인지 헷갈려서 The dog cries 로 고침",
+    "5번 casual 이 text 와 똑같이 She keeps 로 시작해서 앞부분을 바꿈"
+  ]
+}

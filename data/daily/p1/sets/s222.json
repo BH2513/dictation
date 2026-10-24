@@ -1,0 +1,116 @@
+{
+  "setId": "s222",
+  "videoId": "daily-s222",
+  "title": "Set 222",
+  "madeAt": "2026-10-25",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그 에어프라이어 진짜 매일 쓸 줄 알았거든. 근데 너무 커서 조리대를 반이나 차지해. 그래서 지금은 그냥 돈 아낄 걸 그랬나 싶어.",
+      "text": "I really thought I'd use that air fryer every day, but it's so big that it takes up half the counter, so now I kind of wish I'd just kept the money.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Figured I'd be using that air fryer every day, but the thing's huge and hogs half the counter, so now I kinda wish I'd just kept the money."
+        },
+        {
+          "style": "formal",
+          "text": "I truly believed that I would use the air fryer every day, but it is so large that it occupies half of the counter, and I now somewhat regret not keeping the money."
+        }
+      ],
+      "note": "**takes up** 는 공간을 차지한다는 뜻이에요. **I kind of wish I'd just** 는 차라리 그냥 ~할 걸 그랬다고 살짝 후회할 때 써요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "토요일에 차 타고 호수에 가려고 했는데 주말 내내 비 온대. 그래서 그냥 집에서 피자나 시켜 먹으려고.",
+      "text": "We were going to drive up to the lake on Saturday, but they said it's going to rain all weekend, so we're just staying home and ordering pizza instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the plan was to drive up to the lake Saturday, but supposedly it's gonna rain all weekend, so we're just gonna stay in and get pizza."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to drive to the lake on Saturday, but the forecast says it will rain throughout the weekend, so we will remain at home and order pizza instead."
+        }
+      ],
+      "note": "**drive up to** 는 차를 몰고 좀 떨어진 곳까지 간다는 느낌이에요. **they said** 는 일기예보처럼 누가 한 말인지 딱 집지 않고 ~래 할 때 써요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "아니야 엄마, 나 진짜 괜찮아. 회사도 별일 없고 밥도 잘 먹어. 응, 목소리 좀 이상한 거 알아. 근데 낮잠 자다 막 깨서 그래, 그게 다야.",
+      "text": "No, I'm good, Mom, really. Work's fine, I'm eating, and yeah, I know I sound a little off, but I just woke up from a nap, that's all.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Mom, I'm fine, seriously. Work's okay, I'm eating, and yeah, I know I sound kinda weird, but I just woke up from a nap, that's it."
+        },
+        {
+          "style": "formal",
+          "text": "No, I am fine, Mother, truly. Work is going well, I am eating properly, and yes, I realize I sound a little unusual, but I have only just woken from a nap."
+        }
+      ],
+      "note": "**I'm good** 는 괜찮다, 됐다는 뜻으로 걱정이나 권유를 사양할 때 써요. **sound a little off** 는 목소리가 평소랑 좀 다르게 들린다는 말이에요.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "회사 가까이로 이사할까 말까 계속 왔다 갔다 해. 그러면 하루에 한 시간 정도는 아낄 텐데, 거기는 월세가 훨씬 비싸고 친구들이랑 가까이 사는 게 그리울 것 같아.",
+      "text": "I keep going back and forth about moving closer to work. I'd save like an hour every day, but rent's a lot higher over there, and I'd miss being close to all my friends.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Can't make up my mind about moving closer to work. It'd save me like an hour a day, but rent's way higher there, and I'd miss being near all my friends."
+        },
+        {
+          "style": "formal",
+          "text": "I remain undecided about relocating closer to my workplace. I would save approximately an hour each day, but the rent there is considerably higher, and I would miss living near my friends."
+        }
+      ],
+      "note": "**go back and forth** 는 마음을 못 정하고 이랬다저랬다 한다는 뜻이에요. **I'd miss being close to** 는 ~ 가까이 있는 게 그리울 것 같다는 말이에요.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "내 폰이 배터리 40퍼센트쯤에서 자꾸 꺼져. 가끔은 통화하는 중에 저 혼자 재부팅되기도 하고. 그래서 배터리 문제인지 폰을 새로 사야 하는 건지 모르겠어.",
+      "text": "My phone keeps dying at like forty percent, and sometimes it just restarts by itself in the middle of a call, so I don't know if it's the battery or if I need a new phone.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my phone dies at like forty percent, and sometimes it just restarts on its own mid-call, so is it the battery or do I need a new phone?"
+        },
+        {
+          "style": "formal",
+          "text": "My phone repeatedly shuts down at around forty percent, and occasionally it restarts by itself during a call, so I am not certain whether the battery is at fault or whether I require a new phone."
+        }
+      ],
+      "note": "**keeps dying** 는 배터리가 자꾸 나간다는 뜻이에요. 휴대폰이 꺼질 때 **die** 를 써요. **by itself** 는 저 혼자, 저절로라는 뜻이에요.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: 문장 앞의 Honestly는 뜻에 보태는 것 없이 장식으로 붙어 있어서 뺐습니다",
+    "2번 casual: So the plan was driving up은 원어민이 잘 안 하는 꼴이라 So the plan was to drive up으로 고쳤습니다",
+    "2번 ko: 집에 있으면서 대신 피자나는 군더더기가 겹쳐 번역투라서 그냥 집에서 피자나 시켜 먹으려고로 다듬었습니다",
+    "2번 note: drive up to의 up은 실제로 올라간다는 뜻보다 차를 몰고 좀 멀리 간다는 느낌이라 설명을 고쳤습니다",
+    "5번 casual: mid call은 mid-call로 붙여 쓰는 것이 맞아 고쳤습니다"
+  ]
+}

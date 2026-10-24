@@ -1,0 +1,116 @@
+{
+  "setId": "s224",
+  "videoId": "daily-s224",
+  "title": "Set 224",
+  "madeAt": "2026-10-25",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아니, 그거 말고. 우리 그거 이미 보기 시작했잖아. 너 1화 보다가 중간에 잠들었어. 그러니까 그거 다시 틀면 너 또 계속 지금 무슨 상황이냐고 나한테 물어볼 거야.",
+      "text": "No, not that one. We already started it, and you fell asleep halfway through the first episode, so if we put it on again you're just going to keep asking me what's going on.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nah, we started that one already. You passed out halfway through episode one, so you'd just keep asking me what's happening."
+        },
+        {
+          "style": "formal",
+          "text": "No, not that one. We have already started it, and you fell asleep halfway through the first episode, so if we put it on again, you will simply keep asking me what is happening."
+        }
+      ],
+      "note": "**fell asleep halfway through** 는 보다가 중간에 잠들었다는 말입니다. **put it on** 은 드라마나 영화를 튼다는 뜻으로 자주 씁니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "토요일에 동생 이사 도와주기로 했었는데 동생 트럭이 고장 났어. 그래서 결국 텅 빈 동생 집 바닥에 앉아서 피자만 먹었지. 솔직히 좀 재밌었어.",
+      "text": "I was supposed to help my brother move on Saturday, but his truck broke down, so we just ended up sitting on the floor of his empty apartment eating pizza. Honestly, it was kind of fun.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I was gonna help my brother move Saturday, but his truck died, and we ended up just sitting on the floor of his empty place eating pizza. Kinda fun, honestly."
+        },
+        {
+          "style": "formal",
+          "text": "I was meant to help my brother move on Saturday, but his truck broke down, so we ended up sitting on the floor of his empty apartment eating pizza. To be honest, it was rather enjoyable."
+        }
+      ],
+      "note": "**was supposed to** 는 원래 하기로 되어 있었는데 못 했을 때 씁니다. **ended up** 은 계획과 다르게 결국 어떻게 됐다는 말입니다.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "주말 내내 아무 데도 안 갔어. 일요일에는 잠옷도 안 갈아입었는데, 몇 주 만에 제일 개운해. 나 진짜 그게 필요했나 봐.",
+      "text": "I didn't go anywhere all weekend. I didn't even get out of my pajamas on Sunday, and I feel better than I have in weeks, so I guess I really needed that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Didn't go anywhere all weekend. Didn't even change out of my pajamas Sunday, and I feel better than I have in weeks, so I guess I really needed it."
+        },
+        {
+          "style": "formal",
+          "text": "I did not go anywhere all weekend. I did not even change out of my pajamas on Sunday, and I feel better than I have in weeks, so I suppose I truly needed that."
+        }
+      ],
+      "note": "**get out of my pajamas** 는 잠옷을 벗고 옷을 갈아입는다는 말입니다. **better than I have in weeks** 는 몇 주 만에 제일 낫다는 뜻입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "나도 정말 돕고 싶은데, 토요일 아침에 우리 애 축구 경기가 있어. 도와준다고 하면 분명 중간에 빠져나오게 될 거야. 대신 다음 주말에 도와줘도 될까?",
+      "text": "I'd love to help, but I've got my kid's soccer game Saturday morning, and if I say yes I know I'll end up leaving halfway through. Could I help you out next weekend instead?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wish I could, but my kid's got a soccer game Saturday morning, and if I say yes I'm gonna end up bailing halfway through. Can I help you out next weekend?"
+        },
+        {
+          "style": "formal",
+          "text": "I would be glad to help, but I have my child's soccer game on Saturday morning, and if I agree, I know I will end up leaving partway through. Would it be all right if I helped you next weekend instead?"
+        }
+      ],
+      "note": "**I'd love to help, but** 는 부탁을 부드럽게 거절할 때 쓰는 말입니다. **help you out** 은 help 보다 더 친근하게 들립니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "회사 근처에서 점심을 10달러 정도면 먹었는데, 지금은 똑같은 샌드위치가 14달러야. 그래서 집에서 도시락을 싸 오기 시작했는데, 벌써 매일 똑같은 거 먹는 게 지겨워.",
+      "text": "I used to get lunch near work for like ten bucks, and now the same sandwich is fourteen. So I started bringing food from home, but I'm already sick of eating the same thing every day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Lunch near work used to be like ten bucks, and now that same sandwich is fourteen. So I started bringing food from home, but I'm already so tired of eating the same stuff every day."
+        },
+        {
+          "style": "formal",
+          "text": "I used to buy lunch near work for about ten dollars, and now the same sandwich costs fourteen. As a result, I started bringing food from home, but I am already tired of eating the same thing every day."
+        }
+      ],
+      "note": "**bucks** 는 dollars 를 편하게 부르는 말입니다. **sick of** 는 어떤 것이 지겹다, 질렸다는 뜻입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 ko: 영어에 없는 '저 드라마'가 들어가 있어서 뺐습니다.",
+    "1번 casual: 앞부분 'Nah, not that one'이 text와 거의 같아서 더 짧은 구어로 새로 썼습니다. 'tried it'은 뜻이 '시작했다'와 달라서 'started that one'으로 고쳤습니다.",
+    "4번 formal: 'Would it be possible to help you'는 누가 돕는지 어색하게 들려서 'Would it be all right if I helped you'로 고쳤습니다.",
+    "4번 ko: '간다고 하면'은 영어 'say yes'와 어긋나서 '도와준다고 하면'으로 고쳤습니다.",
+    "5번 formal: 'I therefore began'은 글말 냄새가 심해서 'As a result, I started'로 고쳤습니다."
+  ]
+}

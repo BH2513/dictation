@@ -1,0 +1,117 @@
+{
+  "setId": "s225",
+  "videoId": "daily-s225",
+  "title": "Set 225",
+  "madeAt": "2026-10-26",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "음, 색깔은 너한테 진짜 잘 어울리는데, 한 치수 큰 것 같아. 아직 반품할 수 있으면 나라면 작은 걸로 바꾸겠어. 지금은 옷에 좀 파묻혀 보이거든.",
+      "text": "Okay, the color's great on you, but I think it's a size too big. If you can still take it back, I'd get the smaller one, because right now it's kind of swallowing you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Love the color on you, but it's a size too big. If you can still return it, grab the smaller one. Right now it's kinda swallowing you."
+        },
+        {
+          "style": "formal",
+          "text": "The color suits you very well, but I believe it is one size too large. If you are still able to return it, I would exchange it for the smaller size, because at the moment it looks rather too large on you."
+        }
+      ],
+      "note": "**a size too big** 는 한 치수 크다는 뜻이에요. **swallowing you** 는 옷이 너무 커서 사람이 옷에 파묻혀 보인다는 표현이에요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "오늘 오후에 배송 완료라고 나오는데 문 앞에 아무것도 없어. 그러니까 다른 집으로 갔거나 누가 가져간 거지. 근데 물어보려고 해도 전화로 상담원 연결이 안 돼.",
+      "text": "It says it was delivered this afternoon, but there's nothing at my door, so either it went to the wrong house or somebody took it. And I can't even get a real person on the phone to ask.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking says it got delivered this afternoon, but there's nothing here. So it's either at the wrong house or someone swiped it. And I can't even get an actual person on the phone."
+        },
+        {
+          "style": "formal",
+          "text": "According to the tracking information, it was delivered this afternoon, but there is nothing at my door, so it was either delivered to the wrong address or someone has taken it. Furthermore, I have been unable to reach a representative by phone to inquire."
+        }
+      ],
+      "note": "**get a real person on the phone** 은 자동 응답 말고 진짜 사람과 통화하게 되다는 뜻이에요. casual 의 **swiped** 는 슬쩍 훔쳤다는 말이에요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 사람이 첫눈에 확 띄는 타입은 아닌데, 진짜 세심해. 그러니까, 내가 생일 얘기를 한 번 지나가듯 했는데 그걸 기억하더라. 아무튼 네가 기회만 한번 줘 보면 너희 둘 진짜 잘 맞을 것 같아.",
+      "text": "He's not the kind of guy you'd notice right away, but he's really thoughtful. Like, I mentioned my birthday to him once, and he remembered it. Anyway, I really think you two would get along if you just gave him a chance.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You might not notice him at first, but he's super thoughtful. I brought up my birthday one time and he actually remembered. Seriously, you two would totally hit it off if you gave him a shot."
+        },
+        {
+          "style": "formal",
+          "text": "He is not someone who stands out immediately, but he is genuinely thoughtful. For example, I mentioned my birthday to him on one occasion, and he remembered it. In any case, I truly believe the two of you would get along well if you were to give him a chance."
+        }
+      ],
+      "note": "**get along** 은 사이좋게 잘 지내다, **gave him a chance** 는 한번 만나 볼 기회를 주다는 뜻이에요. casual 의 **hit it off** 는 처음부터 죽이 잘 맞다는 말이에요.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "오늘 밤에 애 재우는 데 거의 두 시간 걸렸어. 잠든 줄 알고 살금살금 나오려고 할 때마다 눈을 또 뜨는 거야. 그래서 결국 애가 버티다 잠들 때까지 침대 옆 바닥에 누워 있었어.",
+      "text": "It took me almost two hours to get her down tonight. Every time I thought she was asleep and tried to sneak out, she'd open her eyes again, so I ended up lying on the floor next to her bed until she finally gave up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Took me almost two hours to get her to sleep tonight. Every time I thought she was out and tried to sneak off, her eyes popped open again. I ended up lying on the floor by her bed till she finally gave up."
+        },
+        {
+          "style": "formal",
+          "text": "It took me nearly two hours to get her to sleep this evening. Each time I believed she was asleep and attempted to leave quietly, she would open her eyes again, so I eventually lay on the floor beside her bed until she finally stopped fighting it and fell asleep."
+        }
+      ],
+      "note": "**get her down** 은 아이를 재우다는 뜻이에요. **sneak out** 은 몰래 살짝 빠져나가다, **ended up** 은 결국 ~하게 되다는 말이에요.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "우리 드디어 네가 말해 준 그 태국 음식점 가 봤어. 음식은 진짜 맛있었는데 자리 나는 데 한참 기다려야 했어. 그래서 또 갈 생각은 있는데, 다음엔 평일 저녁에 가려고.",
+      "text": "So we finally tried that Thai place you told us about. The food was really good, but we had to wait forever for a table, so I'd go back, just maybe on a weeknight.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We finally checked out that Thai place you mentioned. Food was awesome, but the wait for a table took forever. I'd go again, just maybe on a weeknight."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended to us. The food was excellent, but we had to wait a very long time for a table, so I would return, though perhaps on a weeknight."
+        }
+      ],
+      "note": "**wait forever** 는 엄청 오래 기다리다는 과장 표현이에요. **weeknight** 는 주말이 아닌 평일 저녁을 말해요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 rather overwhelming you 는 옷 얘기에 어색해서 it looks rather too large on you 로 바꿈",
+    "1번 한국어 옷이 너를 잡아먹는 느낌 은 영어를 직역한 티가 나서 옷에 파묻혀 보인다로 바꿈",
+    "3번 한국어 예를 들면 은 Like 를 그대로 옮긴 번역투라 그러니까로 바꾸고 끝을 더 말하듯 다듬음",
+    "4번 formal 의 put her to bed 는 침대에 눕힌다는 뜻이라 get her down 과 달라 get her to sleep 으로 고치고, fell asleep 만 쓰면 gave up 의 버티다 포기한 느낌이 빠져 stopped fighting it 을 더함",
+    "4번 한국어 애가 마침내 포기할 때까지 를 문장 끝에 붙인 번역투를 고쳐 버티다 잠들 때까지 로 앞에 둠",
+    "5번 한국어 주중 저녁 을 더 흔한 말인 평일 저녁으로 바꿈"
+  ]
+}

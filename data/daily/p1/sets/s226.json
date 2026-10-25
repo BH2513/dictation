@@ -1,0 +1,113 @@
+{
+  "setId": "s226",
+  "videoId": "daily-s226",
+  "title": "Set 226",
+  "madeAt": "2026-10-26",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "모르겠어. 그냥 말해 버리고 싶은 마음도 있는데, 잘 안 되면 다 같이 놀 때마다 어색해질 거잖아. 그러니까 기다리는 게 나을까? 미안, 나 아까부터 계속 같은 말만 하고 있네.",
+      "text": "I don't know. Part of me just wants to tell her, but if it goes badly, things are going to be weird every time we're all hanging out, so maybe I should wait? Sorry, I know I'm going in circles here.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, I dunno. Kinda wanna just tell her, but if it goes bad, it's gonna be weird every time we all hang out, so maybe I wait? Sorry, I'm going in circles."
+        },
+        {
+          "style": "formal",
+          "text": "I am not certain. Part of me would simply like to tell her, but if it does not go well, things will be awkward whenever we are all together, so perhaps I should wait? I apologize, I realize I am going in circles."
+        }
+      ],
+      "note": "**going in circles** 는 결론 없이 같은 얘기만 맴돈다는 뜻입니다. **Part of me** 는 마음 한편으로는 ~하고 싶다고 할 때 씁니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "새 집에 마당이 있어서 애들은 엄청 좋아할 텐데, 엄마 집에서 30분이 더 멀어져. 엄마는 벌써부터 더 자주 오라고 하시는데. 그래서 지금 이사하는 게 맞는지 모르겠어.",
+      "text": "The new place has a yard, which the kids would love, but it's another half hour away from my mom, and she's already asking me to come over more, so I'm not sure now's the right time to move.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The kids'd love the yard at the new place, but it's another half hour from my mom, and she's already on me to come over more, so I dunno if now's the time to move."
+        },
+        {
+          "style": "formal",
+          "text": "The new house has a yard, which the children would love, but it is another half hour away from my mother, and she is already asking me to visit more often, so I am not certain this is the right time to move."
+        }
+      ],
+      "note": "**another half hour away** 는 지금보다 30분 더 멀다는 뜻입니다. **come over** 는 누구 집에 들르다, 놀러 가다라는 말입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "응, 엄마, 여기는 다 괜찮아. 차에서 소리가 좀 나긴 하는데 별거 아니야. 그러니까 아빠한테는 말하지 마. 아빠는 또 여기까지 차 몰고 와서 직접 봐야 한다고 하실 거야.",
+      "text": "Yeah, we're all good here, Mom. The car's making a little noise, but it's nothing, so please don't tell Dad, because he's just going to want to drive up here and look at it himself.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We're fine, Mom. Car's making a little noise, but it's nothing, so don't tell Dad, okay? He's just gonna wanna drive up and check it out himself."
+        },
+        {
+          "style": "formal",
+          "text": "Everything is fine here, Mom. The car is making a slight noise, but it is nothing serious, so please do not mention it to Dad, because he will only want to drive up here and inspect it himself."
+        }
+      ],
+      "note": "**we're all good** 는 아무 문제 없다, 다 괜찮다는 뜻입니다. **it's nothing** 은 별거 아니라고 걱정을 덜어 줄 때 씁니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그럼 내가 금요일에 휴가 내면 목요일 밤에 출발해서 차 막히기 전에 갈 수 있어. 근데 너 일요일 아침에 일 있다고 했지? 그러면 어차피 토요일 밤까지는 돌아와야겠네.",
+      "text": "So if I take Friday off, we could leave Thursday night and beat the traffic. But you said you've got something Sunday morning, right? So we'd have to be back by Saturday night anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "If I take Friday off, we can head out Thursday night and beat traffic. But you've got something Sunday morning, right? So we gotta be back Saturday night anyway."
+        },
+        {
+          "style": "formal",
+          "text": "If I take Friday off, we could depart on Thursday evening and avoid the traffic. However, you mentioned that you have a commitment on Sunday morning, correct? In that case, we would need to return by Saturday evening regardless."
+        }
+      ],
+      "note": "**beat the traffic** 은 길이 막히기 전에 먼저 출발한다는 뜻입니다. **take Friday off** 는 금요일에 휴가를 낸다는 말입니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "어, 이거 다른 사람 봉투 준 것 같은데. 나는 치킨 샐러드 하나 시켰는데, 이건 음료 세 개까지 있는 가족 세트 같아. 가게에 전화할까, 아니면 시킨 사람이 찾으러 올까?",
+      "text": "Uh, I think they gave us someone else's bag. I ordered one chicken salad, and this is like a whole family meal with three drinks. Should I call them, or do you think whoever ordered it is going to come looking for it?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Uh, pretty sure this is someone else's bag. I got one chicken salad, and this is like a whole family meal plus three drinks. Should I call 'em, or you think whoever ordered it's gonna come looking?"
+        },
+        {
+          "style": "formal",
+          "text": "I believe they have given us someone else's order. I ordered a single chicken salad, and this appears to be an entire family meal with three drinks. Should I call them, or do you think the person who ordered it will come looking for it?"
+        }
+      ],
+      "note": "**whoever ordered it** 는 누군지는 모르지만 그걸 시킨 사람이라는 뜻입니다. **come looking for it** 는 그걸 찾으러 온다는 말입니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 formal: 엄마와 통화하는 말에 Mother/Father 를 쓰면 말투가 올라가는 게 아니라 차갑고 어색해짐. 부르는 말은 Mom/Dad 로 두고 문장만 격식 있게 고침",
+    "4번 casual: we'd gotta 는 문법이 꼬인 말. we gotta 로 고침"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "setId": "s231",
+  "videoId": "daily-s231",
+  "title": "Set 231",
+  "madeAt": "2026-10-28",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "에어프라이어 사면 매일 쓸 줄 알았는데, 한 달째 조리대 위에 그냥 놓여 있어. 상자를 벌써 버려서 반품도 못 해.",
+      "text": "I really thought I'd use that air fryer every day, but it's been sitting on the counter for a month, and I can't even take it back now because I already threw out the box.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Man, I was so sure I'd use that air fryer daily, but it's just been sitting on the counter for a month, and I can't even return it since I already tossed the box."
+        },
+        {
+          "style": "formal",
+          "text": "I had fully expected to use that air fryer every day; however, it has remained on the counter for a month, and I am unable to return it because I have already discarded the box."
+        }
+      ],
+      "note": "**sitting on the counter** 는 쓰지 않고 그냥 놓여 있다는 느낌이에요. **threw out** 은 버렸다는 뜻이고, casual 에서는 **tossed** 라고도 해요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그러니까 그 친구가 간호사인데 밤에 일하거든. 그래서 문자 답장이 바로 안 올 거야. 그래도 기분 나빠하지는 마. 친해지면 진짜 웃긴 애야.",
+      "text": "So she's a nurse and she works nights, which means she's not going to text you back right away, but don't take it personally. She's really funny once she gets to know you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Heads up, she's a nurse on night shifts, so she won't text you back right away. Don't take it personally, though. She's super funny once she gets to know you."
+        },
+        {
+          "style": "formal",
+          "text": "She is a nurse who works night shifts, so she may not reply to your messages immediately, but please do not take it personally. She is very amusing once she becomes acquainted with you."
+        }
+      ],
+      "note": "**don't take it personally** 는 너한테 뭐가 있어서 그런 게 아니니 마음에 두지 말라는 말이에요. **once she gets to know you** 는 일단 서로 알고 나면이라는 뜻이에요.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "윗집에 꼬마가 있는데 매일 밤 열한 시쯤까지 왔다 갔다 뛰어다녀. 애들이 다 그렇지 하고 이해는 하는데, 난 여섯 시에 일어나야 되니까 좀 미칠 것 같아.",
+      "text": "The people upstairs have a little kid who runs back and forth until like eleven every night, and I get it, kids are kids, but I have to be up at six, so I'm kind of losing my mind.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "There's this little kid upstairs who runs back and forth till like eleven every night. I get it, kids are kids, but I gotta be up at six, so I'm kinda losing it."
+        },
+        {
+          "style": "formal",
+          "text": "The family upstairs has a young child who runs back and forth until about eleven o'clock every night. I understand that children will be children; however, I must be up at six, so my patience is wearing very thin."
+        }
+      ],
+      "note": "**kids are kids** 는 애들이 원래 그렇지라는 말이에요. **losing my mind** 는 미치겠다는 뜻으로, casual 에서는 짧게 **losing it** 이라고 해요.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "미안, 미안! 밤새 폰 배터리가 나가서 알람이 아예 안 울렸어. 옆집 개가 짖기 시작해서 겨우 깼어.",
+      "text": "Sorry, sorry! My phone died overnight, so my alarm never went off, and I only woke up because the neighbor's dog started barking.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Oh man, sorry! My phone died last night so my alarm didn't go off. I only woke up 'cause the neighbor's dog started barking."
+        },
+        {
+          "style": "formal",
+          "text": "I do apologize. My phone's battery ran out overnight, so my alarm did not go off, and I only woke up because the neighbor's dog began barking."
+        }
+      ],
+      "note": "**My phone died** 는 폰 배터리가 다 됐다는 뜻이에요. 알람이 울리는 건 **went off** 라고 해요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "아니 글쎄, 매운 국수를 시켰는데 땅콩 들어간 걸 보냈더라고. 나 땅콩 알레르기라서 먹지도 못해. 가게에 전화는 할 건데 지금 너무 배고파서 그러는데, 네 감자튀김 좀 먹어도 돼?",
+      "text": "Okay, so I ordered the spicy noodles, but they sent the ones with peanuts in them, and I'm allergic, so I can't even eat them. I'm going to call them, but I'm starving, so can I have some of your fries?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, I ordered the spicy noodles, but they sent the peanut ones, and I'm allergic, so I can't eat them. I'm gonna call, but I'm starving. Can I steal some of your fries?"
+        },
+        {
+          "style": "formal",
+          "text": "I ordered the spicy noodles, but they delivered the ones containing peanuts, and as I am allergic, I am unable to eat them. I intend to call the restaurant, but I am very hungry. Would you mind if I had some of your fries?"
+        }
+      ],
+      "note": "**I'm starving** 은 배고파 죽겠다는 뜻이에요. casual 에 나오는 **steal some of your fries** 는 남의 음식을 조금 집어 먹을 때 장난스럽게 쓰는 말이에요.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "5번 casual 의 I got the spicy noodles 는 받았다는 뜻으로도 읽혀 엉뚱한 걸 받았다는 말과 헷갈리므로 I ordered 로 고침",
+    "5번 formal 의 Might I have 는 지나치게 예스러워 실제로 쓰는 공손한 말투인 Would you mind if I had 로 고침"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "setId": "s230",
+  "videoId": "daily-s230",
+  "title": "Set 230",
+  "madeAt": "2026-10-27",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "동생이 또 돈 좀 빌려 달래. 도와주고 싶긴 한데, 지난번에 빌려 간 것도 아직 안 갚았거든. 근데 안 된다고 했다가 동생한테 무슨 일이라도 생기면 너무 마음이 안 좋을 것 같아. 아, 모르겠다. 너라면 어떻게 할 거야?",
+      "text": "My brother asked if he could borrow some money again, and I want to help him, but he still hasn't paid me back from last time. But if I say no and something happens to him, I'm going to feel terrible. Ugh, I don't know. What would you do?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my brother wants to borrow money again. I wanna help him, but he never paid me back from last time. But if I say no and something happens to him, I'm gonna feel terrible. I dunno. What would you do?"
+        },
+        {
+          "style": "formal",
+          "text": "My brother has asked whether he may borrow some money once again, and I would like to help him, but he has not yet repaid me for the last loan. However, if I decline and something happens to him, I will feel terrible. I am not sure what to do. What would you do?"
+        }
+      ],
+      "note": "**paid me back** 는 빌린 돈을 갚았다는 뜻이고, **hasn't paid me back** 이라고 하면 아직 안 갚았다는 말이 됩니다. **What would you do?** 는 너라면 어떻게 하겠냐고 조언을 구할 때 쓰는 말입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그러니까 나는 정오쯤 도착하는데 너는 그날 밤에야 오는 거 맞지? 그럼 나는 그냥 체크인하고 호텔에서 너 기다릴까, 아니면 먼저 혼자 박물관 다녀올까?",
+      "text": "Okay, so I land around noon, but you don't get in until that night, right? So should I just check in and wait for you at the hotel, or do you want me to go ahead and do the museum by myself?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I get in around noon and you're not there till that night, right? So I just check in and wait at the hotel, or want me to go hit the museum on my own?"
+        },
+        {
+          "style": "formal",
+          "text": "I will be arriving at around noon, but you will not arrive until that evening, is that correct? Should I check in and wait for you at the hotel, or would you prefer that I visit the museum on my own?"
+        }
+      ],
+      "note": "**land** 는 비행기가 도착한다는 뜻으로 일상에서 많이 씁니다. **go ahead and** 는 상대를 기다리지 않고 먼저 해 버린다는 느낌을 줍니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "배송 조회가 한 5일째 그대로야. 멤피스에 있다고만 나와서 잃어버린 건지 그냥 어디 창고에 처박혀 있는 건지 알 수가 없어. 근데 금요일까지는 꼭 받아야 돼. 여동생 생일 선물이거든.",
+      "text": "The tracking hasn't changed in like five days. It just says it's in Memphis, so I can't tell if it's lost or if it's just sitting in a warehouse somewhere. And I really need it by Friday, because it's my sister's birthday present.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's been stuck on the same tracking update for like five days. Just says Memphis, so I can't tell if it's lost or just sitting in some warehouse. And I really need it by Friday, it's my sister's birthday present."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking information has not been updated in approximately five days. It indicates only that the package is in Memphis, so I cannot determine whether it has been lost or is simply being held in a warehouse. I do need it by Friday, as it is a birthday present for my sister."
+        }
+      ],
+      "note": "**sitting in a warehouse** 는 물건이 창고에서 움직이지 않고 그대로 있다는 말입니다. **I can't tell if** 는 ~인지 아닌지 모르겠다고 할 때 씁니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이번 주말에 차고 정리하려고 했는데, 결국 내내 소파에 누워서 책만 읽었어. 근데 솔직히 하나도 안 찔려. 그렇게 쉬어 본 게 진짜 오랜만이거든.",
+      "text": "I was going to clean out the garage this weekend, but I ended up just lying on the couch and reading the whole time. And honestly, I don't even feel bad about it, because I haven't done that in so long.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So much for cleaning out the garage this weekend. I just lay on the couch reading the whole time. And honestly? I don't even feel bad, cause I haven't done that in forever."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to clean out the garage this weekend, but I ended up lying on the couch and reading the entire time. To be honest, I do not feel guilty about it, as I have not done that in a very long time."
+        }
+      ],
+      "note": "**ended up** 은 원래 계획과 달리 결국 ~하게 됐다는 뜻입니다. **I don't even feel bad about it** 은 그것 때문에 전혀 찜찜하지 않다는 말입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "토요일에 룸메이트랑 그 스피닝 수업에 갔거든. 처음엔 괜찮았는데 다음 날 아침에 일어나니까 열이 나고 온몸이 쑤시는 거야. 한 1년 만에 다시 하는 건데 너무 무리했나 봐.",
+      "text": "So I went to that spin class with my roommate on Saturday, and I felt fine at first, but I woke up the next morning with a fever and my whole body hurt. I guess I pushed way too hard for my first time back in like a year.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Saturday I did that spin class with my roommate, felt fine at first, then woke up the next morning with a fever and my whole body hurting. Guess I way overdid it for my first time back in like a year."
+        },
+        {
+          "style": "formal",
+          "text": "On Saturday I attended that spin class with my roommate. I felt well at first, but I woke up the following morning with a fever and pain throughout my body. I suppose I exerted myself far too much for my first time back in about a year."
+        }
+      ],
+      "note": "**pushed way too hard** 는 몸을 너무 무리하게 썼다는 뜻이고, casual 의 **overdid it** 도 같은 말입니다. **first time back** 은 한동안 쉬었다가 처음 다시 한다는 뜻입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 repaid me from the last time 은 어색해서 repaid me for the last loan 으로 고침",
+    "2번 casual 이 text 의 뒷부분(So should I just check in and wait for you at the hotel)을 그대로 되풀이해서 더 짧고 축약된 구어로 바꿈 (hit the museum 은 들르다는 뜻으로 맞게 씀)",
+    "2번 한국어 첫머리 '자, 나는' 이 번역투라 '그러니까 나는' 으로 고침",
+    "4번 한국어 '하나도 안 미안해' 는 누구에게 미안한 상황이 아니라 뜻이 어긋나서 '하나도 안 찔려' 로 고침"
+  ]
+}

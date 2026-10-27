@@ -1,0 +1,116 @@
+{
+  "setId": "s229",
+  "videoId": "daily-s229",
+  "title": "Set 229",
+  "madeAt": "2026-10-27",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "과학 경진대회 메일 봤어? 애들한테 집에서 전부 만들어 오래. 그게 결국 부모가 만들라는 소리잖아. 나는 아직 시작도 못 했어.",
+      "text": "Did you see the email about the science fair? They want the kids to build the whole thing at home, which really means the parents are building it, and I haven't even started.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You get that science fair email? The kids are supposed to build the whole thing at home, so basically us parents are doing it, and I haven't even started."
+        },
+        {
+          "style": "formal",
+          "text": "Have you seen the email regarding the science fair? They would like the children to build the entire project at home, which in practice means the parents will be building it, and I have not yet begun."
+        }
+      ],
+      "note": "**which really means** 는 앞에서 한 말을 받아서 그러니까 사실은 이런 뜻이라고 덧붙일 때 씁니다. **I haven't even started** 는 아직 손도 못 댔다는 말입니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나도 그러고 싶은데, 요즘 뭐든 다 하겠다고 했더니 좀 바닥난 느낌이야. 그래서 이번엔 빠져야 할 것 같아. 그래도 다음에 또 말해 줘, 알았지?",
+      "text": "I wish I could, but I've been saying yes to everything lately and I'm kind of running on empty, so I think I need to sit this one out. Ask me next time, though, okay?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wish I could, but I've been saying yes to everything and I'm kinda running on fumes, so I'm gonna skip this one. Ask me next time, okay?"
+        },
+        {
+          "style": "formal",
+          "text": "I wish I were able to, but I have been agreeing to everything recently and I am rather exhausted, so I believe I need to decline this time. Please do ask me next time, though."
+        }
+      ],
+      "note": "**running on empty** 는 기름이 바닥난 차처럼 기운이 하나도 안 남았다는 뜻입니다. **sit this one out** 은 이번 한 번은 빠지겠다고 부드럽게 거절할 때 씁니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "자꾸 새벽 세 시쯤 깨. 그러고는 알람 울릴 때까지 그냥 누워서, 내가 어떻게 할 수도 없는 일들을 생각해. 한 번이라도 밤새 안 깨고 자면 완전 딴사람이 될 것 같아.",
+      "text": "I keep waking up at like three, and then I just lie there until the alarm goes off, thinking about stuff I can't do anything about. If I could sleep through the night even once, I think I'd be a different person.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm up at three every night, just lying there till the alarm, stressing about stuff I can't fix. One full night's sleep and I'd be a whole new person."
+        },
+        {
+          "style": "formal",
+          "text": "I have been waking at around three o'clock, and then I lie awake until the alarm sounds, thinking about matters I cannot change. If I could sleep through the night even once, I believe I would feel like a different person."
+        }
+      ],
+      "note": "**sleep through the night** 는 중간에 깨지 않고 아침까지 쭉 잔다는 말입니다. 시간 앞의 **at like three** 에서 like 는 세 시쯤이라는 대충의 뜻입니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "요즘 달걀값 봤어? 예전엔 열두 개짜리를 보지도 않고 집었는데, 오늘은 진짜 들었다가 도로 내려놨어. 달걀에 7달러는 도저히 못 쓰겠더라.",
+      "text": "Have you seen what eggs cost now? I used to grab a dozen without even looking, but today I actually picked them up and put them back, because I just couldn't do seven bucks for eggs.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You seen egg prices lately? I used to grab a dozen without looking, but today I picked them up and put them right back. Seven bucks for eggs? No way."
+        },
+        {
+          "style": "formal",
+          "text": "Have you noticed the current price of eggs? I used to purchase a dozen without even checking, but today I picked them up and returned them to the shelf, because I simply could not justify spending seven dollars on eggs."
+        }
+      ],
+      "note": "**I just couldn't do seven bucks** 에서 do 는 그 돈을 내다, 감당하다는 뜻으로 말에서 자주 씁니다. **bucks** 는 달러를 편하게 부르는 말이고, **a dozen** 은 열두 개입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "노트북이랑 음료 들고 그 카페를 두 바퀴나 돌았는데, 테이블마다 한 사람이 앉아서 옆 의자에 가방을 올려놨더라. 그래서 결국 포기하고 차에서 마셨어.",
+      "text": "I walked around that whole coffee shop twice with my laptop and my drink, and every table had one person with their bag on the other chair, so I finally gave up and drank it in the car.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I did two whole laps around that coffee shop with my laptop and my drink, and every table had one person with their bag on the other chair, so I gave up and drank it in the car."
+        },
+        {
+          "style": "formal",
+          "text": "I walked through the entire coffee shop twice carrying my laptop and my drink, and at every table there was one person who had placed their bag on the other chair, so I eventually gave up and drank it in my car."
+        }
+      ],
+      "note": "**gave up** 은 포기했다는 뜻이고, 앞에 **finally** 를 붙이면 버티다가 결국 그랬다는 느낌이 납니다. casual 의 **two whole laps** 는 두 바퀴나 돌았다는 말입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어 '나도 가고 싶은데'는 초대를 받은 상황으로 좁혀 버려 '부탁'과 영어 I wish I could 에 안 맞음. '나도 그러고 싶은데'로, Ask me next time 도 '다음에 또 말해 줘'로 고침",
+    "3번 casual 이 text 와 앞부분(I keep waking up ... three)이 겹쳐서 더 짧은 구어로 새로 씀",
+    "3번 formal 의 I continue to wake 는 원어민이 안 쓰는 어색한 표현이라 I have been waking 으로 고침",
+    "4번 한국어 '한 판'은 한국에서 30개라 a dozen(12개)과 숫자가 안 맞음. '열두 개짜리'로 고침",
+    "1번 한국어 '과학 발표회'를 science fair 에 맞게 '과학 경진대회'로 고침"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "setId": "s228",
+  "videoId": "daily-s228",
+  "title": "Set 228",
+  "madeAt": "2026-10-27",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "회사에 어떤 사람이 무슨 메일이든 맨날 전체 답장을 누르거든. 오늘은 고맙다는 말 한마디 하려고 200명 정도한테 전체 답장을 보냈어. 그러고는 아까 그거 미안하다고 또 하나 보낸 거야. 진짜 한 번만 더 그러면 나 한마디 할 거야.",
+      "text": "This guy at work keeps hitting reply all on everything, and today he did it to like two hundred people just to say thanks. And then he sent another one to say sorry for the first one, so I swear, if he does it again, I'm going to say something.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Guy at work replies all to literally everything. Today it was like two hundred people, just to say thanks. Then another one saying sorry for that. I swear, one more time and I'm saying something."
+        },
+        {
+          "style": "formal",
+          "text": "A colleague of mine repeatedly uses reply all on every message, and today he did so to approximately two hundred people simply to say thank you. He then sent a second message to apologize for the first, so if he does it once more, I intend to say something to him."
+        }
+      ],
+      "note": "**hit reply all** 은 메일에서 전체 답장을 누르는 것입니다. **I swear** 는 진짜, 맹세코라는 뜻으로 짜증이나 각오를 강조할 때 씁니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "어머, 이게 얼마 만이야! 아직도 시내에 있는 그 회사 다녀, 아니면 말했던 대로 결국 그만뒀어?",
+      "text": "Oh my God, it's been forever! Are you still at that same place downtown, or did you finally quit like you said you were going to?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wow, it's been ages! Still at that place downtown? Or'd you finally quit like you said?"
+        },
+        {
+          "style": "formal",
+          "text": "It has been such a long time! Are you still working at the same place downtown, or did you eventually leave as you had said you would?"
+        }
+      ],
+      "note": "**it's been forever** 는 정말 오랜만이다라는 뜻의 과장 표현입니다. casual 의 **it's been ages** 도 같은 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "저기, 죄송한데요, 귀찮게 해 드리려는 건 아닌데 화요일부터 난방이 안 들어와서 밤에 너무 추워요. 이번 주에 아무도 못 오시면 전기 난로라도 하나 갖다 주실 수 있을까요?",
+      "text": "Hey, sorry, I don't want to be a pain, but the heat's been out since Tuesday, and it's getting really cold at night. If nobody can come out this week, could you at least drop off a space heater or something?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hate to be a pain, but the heat's been out since Tuesday and it's freezing at night. Can't get anyone out this week? Maybe just drop off a space heater?"
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for the trouble, but the heating has not been working since Tuesday, and it is becoming very cold at night. If no one is able to come this week, would it be possible for you to at least bring a space heater?"
+        }
+      ],
+      "note": "**I don't want to be a pain** 은 귀찮게 하고 싶지 않지만이라며 부탁을 꺼낼 때 씁니다. **the heat's been out** 은 난방이 끊겼다는 뜻이고, **drop off** 는 가져다 놓고 가다라는 뜻입니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그러니까 자전거는 타는 데 문제없는데, 뒷브레이크가 좀 약하고 체인에 녹이 좀 슬었어요. 그래서 80달러만 받는 거예요. 먼저 동네 한 바퀴 타 보고 싶으시면 타 보세요.",
+      "text": "So the bike rides fine, but the back brake's a little weak, and there's some rust on the chain. That's why I'm only asking eighty bucks for it, but if you want to take it around the block first, go ahead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Rides fine, back brake's kinda weak, chain's a bit rusty. So, eighty bucks. Take it around the block if you want."
+        },
+        {
+          "style": "formal",
+          "text": "The bicycle rides well, although the rear brake is somewhat weak and there is some rust on the chain. That is why I am asking only eighty dollars for it, but you are welcome to ride it around the block first."
+        }
+      ],
+      "note": "**bucks** 는 달러를 편하게 부르는 말입니다. **take it around the block** 은 한 바퀴 돌아 보다, 시험 삼아 타 보다라는 뜻이고, **go ahead** 는 그렇게 하라고 허락할 때 씁니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "추수감사절에 이모네 갔는데, 한 명도 빠짐없이 다 만나는 사람 있냐고 묻는 거야. 디저트 먹을 때쯤엔 그만 좀 물어보라고 그냥 있다고 해 버렸어. 그랬더니 지금 엄마는 나 남자친구 있는 줄 알아.",
+      "text": "I went to my aunt's for Thanksgiving, and every single person asked me if I'm seeing anyone. By the time we got to dessert, I just started saying yes so they'd leave me alone, and now my mom thinks I have a boyfriend.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Thanksgiving at my aunt's, and literally everyone asked if I'm seeing someone. By dessert I was just saying yes to shut them up. Now my mom thinks I've got a boyfriend."
+        },
+        {
+          "style": "formal",
+          "text": "I spent Thanksgiving at my aunt's home, and every person there asked whether I was seeing anyone. By the time dessert was served, I had begun saying yes so that they would leave me alone, and now my mother believes I have a boyfriend."
+        }
+      ],
+      "note": "**seeing anyone** 은 사귀는 사람이 있다는 뜻입니다. **leave me alone** 은 나 좀 내버려 둬라는 뜻이고, **by the time** 은 ~할 때쯤에는이라는 뜻입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 뒷부분이 거의 같아 더 짧은 구어로 다시 씀",
+    "1번 한국어 '200명쯤 되는 사람한테 그걸 했어' 가 번역투라 자연스럽게 고침",
+    "2번 casual 이 text 를 거의 그대로 따라가서 더 짧게 줄임 (it's been ages 는 note 때문에 남김)",
+    "3번 casual 뒷문장이 text 와 글자까지 같아 다시 씀",
+    "3번 한국어 '밤에 정말 추워지고 있어요' 가 번역투라 고침",
+    "4번 casual 이 text 와 앞뒤가 많이 겹쳐 더 짧게 나눔",
+    "4번 한국어 '그래도 먼저 ... 타 보세요' 의 그래도가 어색해 고침",
+    "5번 casual 이 text 와 겹쳐 더 짧은 구어로 바꿈",
+    "5번 한국어 '내버려 두라고 있다고 대답하기 시작했거든' 이 어색하고 번역투라 고침"
+  ]
+}

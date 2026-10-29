@@ -1,0 +1,116 @@
+{
+  "setId": "s235",
+  "videoId": "daily-s235",
+  "title": "Set 235",
+  "madeAt": "2026-10-29",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "딴 사람 주문을 보냈더라고. 봉투에 딴 사람 이름까지 떡하니 적혀 있다니까. 그래서 먹기가 좀 미안한데, 전화해 봤자 그냥 드시라고 할 것 같아.",
+      "text": "They sent me somebody else's order, like there's a different name on the bag and everything. So now I feel kind of bad eating it, but if I call, they're probably just going to tell me to keep it anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got somebody else's order. Like, their name's right there on the bag. Kinda feel bad eating it, but if I call they're probably just gonna say keep it anyway."
+        },
+        {
+          "style": "formal",
+          "text": "I received another customer's order; the bag even has a different name on it. I feel somewhat uncomfortable eating it, but if I call, they will most likely tell me to keep it regardless."
+        }
+      ],
+      "note": "**and everything** 은 말끝에 붙여 이것저것 다 그렇다, 아주 확실하다는 느낌을 더하는 말입니다. **keep it** 은 돌려주지 말고 그냥 가지라는 뜻이에요.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "앞에 두 군데가 꽉 차서 세 군데나 돌아다녀야 했어. 겨우 자리를 잡았을 때는 커피 생각도 없더라. 그냥 앉고 싶었어.",
+      "text": "We had to try three different places because the first two were packed, and by the time we finally found a table, I didn't even want coffee anymore. I just wanted to sit down.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "First two places were packed, so we ended up trying three. By the time we got a table I didn't even want coffee. I just wanted to sit."
+        },
+        {
+          "style": "formal",
+          "text": "We had to visit three different places because the first two were full, and by the time we finally found a table, I no longer wanted coffee. I simply wanted to sit down."
+        }
+      ],
+      "note": "**packed** 는 가게나 장소가 사람으로 꽉 찼다는 뜻입니다. **by the time** 은 ~할 즈음에는, ~했을 때는 이미 라는 뜻이에요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이번 주말에 집 밖으로 한 번도 안 나갔거든. 답답해서 미칠 줄 알았는데 그게 딱 필요했나 봐. 이제야 좀 사람 사는 것 같아.",
+      "text": "I didn't leave the house once this weekend, and I thought I'd go stir crazy, but it was exactly what I needed. I actually feel like a person again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Didn't leave the house once all weekend. Thought I'd go nuts, but it was exactly what I needed. I actually feel human again."
+        },
+        {
+          "style": "formal",
+          "text": "I did not leave the house at all this weekend, and I expected to become restless, but it was exactly what I needed. I genuinely feel like myself again."
+        }
+      ],
+      "note": "**go stir crazy** 는 한곳에 갇혀 있어서 답답해 미칠 것 같다는 뜻입니다. **feel like a person again** 은 지쳤다가 다시 사람 사는 것 같다는 말이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "솔직히 말해도 돼? 색은 마음에 드는데 핏은 잘 모르겠어. 너한테 한 치수 커 보여서, 아직 반품되면 작은 걸로 바꿔 봐.",
+      "text": "Honestly? I like the color, but I'm not sure about the fit. It kind of looks a size too big on you, so if you can still return it, I'd maybe try the smaller one.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Want my honest take? Love the color, not so sure about the fit. Kinda looks a size too big on you, so if you can still return it, maybe grab the smaller one."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, I like the color, but I am not certain about the fit. It appears to be one size too large on you, so if it can still be returned, I would perhaps try the smaller size."
+        }
+      ],
+      "note": "**fit** 은 옷이 몸에 맞는 정도, 핏을 말합니다. **a size too big** 은 한 치수 크다는 뜻이에요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그냥 싼 청소기 살걸 그랬어. 이건 내가 평생 안 쓸 기능만 잔뜩이고, 너무 무거워서 꺼내기도 싫어. 이럴 거면 뭐 하러 샀나 몰라.",
+      "text": "I really should've just gotten the cheaper vacuum. This one does all this stuff I'm never going to use, and it's so heavy I don't even want to take it out, so what was the point?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Shoulda just gotten the cheaper vacuum. This one does a ton of stuff I'm never gonna use, and it's so heavy I don't even wanna take it out. What was the point?"
+        },
+        {
+          "style": "formal",
+          "text": "I really should have purchased the less expensive vacuum. This one has many features I will never use, and it is so heavy that I do not even want to take it out, so what was the point of buying it?"
+        }
+      ],
+      "note": "**should've just gotten** 은 그냥 ~살걸 그랬다는 후회를 나타냅니다. **what was the point?** 는 그게 다 무슨 소용이었냐는 말이에요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어 '봉투에 이름도 다르게 적혀 있고 아주 그냥' 은 and everything 을 글자대로 옮긴 티가 나서 '봉투에 딴 사람 이름까지 떡하니 적혀 있다니까' 로 고침",
+    "3번 한국어 '딱 내가 필요했던 거였어' 는 exactly what I needed 를 그대로 옮긴 번역투라 '그게 딱 필요했나 봐' 로, '이제 좀 사람 같아' 는 '이제야 좀 사람 사는 것 같아' 로 고침",
+    "4번 casual 'Looks kinda one size too big' 은 어순이 어색하고 원어민은 a size too big 이라고 하므로 'Kinda looks a size too big' 으로 고침",
+    "4번 한국어 '큰 것 같아 보여서' 는 겹친 말이라 '커 보여서' 로, return 은 환불이 아니라 반품이라 '반품되면 작은 걸로 바꿔 봐' 로 고침",
+    "5번 formal 'what was the purpose?' 는 원어민이 이 자리에서 안 쓰는 말이라 'what was the point of buying it?' 으로 고침"
+  ]
+}

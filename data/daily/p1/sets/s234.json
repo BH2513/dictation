@@ -1,0 +1,115 @@
+{
+  "setId": "s234",
+  "videoId": "daily-s234",
+  "title": "Set 234",
+  "madeAt": "2026-10-29",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 조카랑 농구를 했거든. 그때는 괜찮은 줄 알았는데 자고 일어나니까 온몸이 쑤셔서 계단을 거의 못 내려가겠어. 다친 것도 아니야. 그냥 체력이 그 정도로 엉망인 거야.",
+      "text": "So I played basketball with my nephew on Saturday, and I thought I was fine, but I woke up so sore I can barely walk down the stairs. I didn't even get hurt, I'm just that out of shape.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Shot hoops with my nephew Saturday and figured I was fine, but I woke up so sore I can barely make it down the stairs. Didn't even get hurt, I'm just that out of shape."
+        },
+        {
+          "style": "formal",
+          "text": "I played basketball with my nephew on Saturday and believed I was fine, but I woke up so sore that I can barely walk down the stairs. I was not even injured. I am simply that out of shape."
+        }
+      ],
+      "note": "**sore** 는 운동을 한 뒤 근육이 뻐근하고 쑤시는 상태예요. **out of shape** 는 몸이 굳고 체력이 떨어졌다는 말로, 앞에 that 을 붙이면 그 정도로 체력이 엉망이라는 뜻이 돼요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "정말 미안한데 나 이제 가 봐야 해. 베이비시터가 9시까지밖에 못 있고, 지난번에 내가 늦었거든. 그러니까 이번에는 괜히 아슬아슬하게 굴고 싶지 않아.",
+      "text": "I'm so sorry, I've got to get going. The babysitter can only stay until nine, and I was late last time, so I really don't want to push it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, gotta run! Babysitter's only here till nine, and I was late last time, so I really don't wanna push it."
+        },
+        {
+          "style": "formal",
+          "text": "I do apologize, but I must be going. The babysitter is only able to stay until nine, and I was late last time, so I would rather not push my luck."
+        }
+      ],
+      "note": "**I've got to get going** 은 자리를 뜰 때 쓰는 말로 이제 가 봐야겠다는 뜻이에요. **push it** 은 괜찮겠지 하고 무리하다, 운을 시험하다라는 뜻이라 don't want to push it 은 괜히 무리하고 싶지 않다는 말이 돼요. formal 의 **push my luck** 도 같은 뜻이에요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "집주인이 1년 더 살아도 된대. 근데 월세를 200달러 올린대. 더 싼 데를 찾을 수는 있을 것 같은데, 그러면 또 이사해야 하잖아. 이사한 지 얼마 되지도 않았는데. 아, 모르겠다. 하룻밤 자면서 생각해 볼게.",
+      "text": "My landlord says I can stay another year, but he's raising the rent by two hundred bucks. I could probably find something cheaper, but then I'd have to move again, and I just did that. Ugh, I don't know. Let me sleep on it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Landlord says I can stay another year, but he's bumping the rent up two hundred bucks. I could prob find something cheaper, but then I'd have to move again, and I just did. Ugh, dunno. Lemme sleep on it."
+        },
+        {
+          "style": "formal",
+          "text": "My landlord has said that I may stay for another year, but he is raising the rent by two hundred dollars. I could likely find something less expensive, but then I would have to move again, and I have only just done so. I am not certain. I would like to think it over tonight."
+        }
+      ],
+      "note": "**sleep on it** 은 바로 정하지 않고 하룻밤 자면서 생각해 본다는 뜻이에요. **bucks** 는 dollars 를 편하게 부르는 말이에요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "오늘 밤에 애 재우는 데 거의 두 시간 걸렸어. 잠들었나 싶으면 벌떡 일어나 앉아서 물 달라고 하고, 계속 그러는 거야. 그래서 진짜 잠들었을 때는 내가 너무 지쳐서 하려고 했던 일을 하나도 못 했어.",
+      "text": "It took me almost two hours to get her down tonight. Every time I thought she was out, she'd sit up and ask for water, so by the time she actually fell asleep, I was too tired to do any of the stuff I'd planned.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Took me almost two hours to get her down tonight. Every time I thought she was out, she'd pop up and want water, so by the time she finally crashed, I was too wiped to do anything I'd planned."
+        },
+        {
+          "style": "formal",
+          "text": "It took me nearly two hours to put her to bed this evening. Each time I believed she was asleep, she would sit up and ask for water, so by the time she actually fell asleep, I was too tired to do any of the things I had planned."
+        }
+      ],
+      "note": "**get her down** 은 아이를 재운다는 뜻이고, **she was out** 은 아이가 곯아떨어졌다는 말이에요. **she'd** 는 she would 를 줄인 말로, 여기서는 그런 일이 몇 번이고 되풀이됐다는 뜻이에요.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "아니지, 어젯밤에는 네가 보고 싶은 거 봤잖아. 그러니까 오늘은 내 차례야. 그리고 이번에도 처음 10분 만에 잠들 거면 너랑 새 드라마 안 시작할 거야.",
+      "text": "No, we watched your thing last night, so it's my turn. And I'm not starting a new show with you if you're just going to fall asleep in the first ten minutes again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nope, we did your thing last night, so it's my turn. And I'm not starting a new show with you if you're gonna pass out in the first ten minutes again."
+        },
+        {
+          "style": "formal",
+          "text": "No, we watched your program last night, so it is my turn. And I will not start a new series with you if you are simply going to fall asleep within the first ten minutes again."
+        }
+      ],
+      "note": "**it's my turn** 은 이제 내 차례라는 뜻이에요. **show** 는 TV 드라마나 시리즈를 두루 가리키는 말이고, **your thing** 은 상대가 고른 것이나 좋아하는 것을 편하게 부르는 말이에요.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 note: push it 설명이 '한계까지 버틴다'로 되어 있어 실제 뜻(괜히 무리하다, 운을 시험하다)과 어긋나 고침",
+    "3번 formal: Allow me to think it over tonight 는 상대에게 허락을 구하는 말투라 이 자리에서 어색해 I would like to think it over tonight 로 고침",
+    "4번 ko: '또 그러고' 가 어색하게 끝나서 되풀이된 일이 잘 드러나도록 고침",
+    "5번 ko: No 를 '안 돼'로 옮기면 거절처럼 들리는데, 여기서는 상대 말을 받아치는 것이라 '아니지'로 고침"
+  ]
+}

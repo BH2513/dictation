@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-10-29",
+    "count": 0,
+    "generatedAt": "2026-10-29T00:09:05.466Z",
+    "hasShows": true,
+    "showsCount": 10
+  },
+  {
     "date": "2026-10-28",
     "count": 0,
     "generatedAt": "2026-10-27T23:55:26.971Z",

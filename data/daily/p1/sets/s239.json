@@ -1,0 +1,114 @@
+{
+  "setId": "s239",
+  "videoId": "daily-s239",
+  "title": "Set 239",
+  "madeAt": "2026-10-30",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "나도 정말 도와주고 싶은데, 차 빌려주는 건 좀 마음이 편치 않아. 너라서 그런 건 아니고, 혹시 차에 무슨 일이라도 생기면 내가 너무 괴로울 것 같아서 그래. 차를 빌려주는 대신 내가 태워다 주면 안 될까?",
+      "text": "I'd really like to help, but I'm not comfortable lending my car out. It's nothing personal, I'd just feel terrible if something happened to it. Could I give you a ride instead?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Man, I wanna help, but I'm not really comfy lending my car out. It's not you, I'd just feel awful if something happened to it. Can I just drive you instead?"
+        },
+        {
+          "style": "formal",
+          "text": "I would very much like to help, but I am not comfortable lending my car. Please do not take it personally. I would simply feel terrible if anything happened to it. Might I offer you a ride instead?"
+        }
+      ],
+      "note": "**It's nothing personal** 는 너를 못 믿어서 그러는 게 아니라고 상대를 안심시킬 때 쓰는 말입니다. **give you a ride** 는 차로 태워다 준다는 뜻입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그러니까 나는 목요일 밤까지는 회사에서 못 빠져나와. 그래도 금요일 아침 일찍 출발하는 비행기를 타면 주말은 통째로 쓸 수 있어. 너는 그렇게 해도 괜찮아? 아니면 시간이 너무 빠듯할까?",
+      "text": "Okay, so I can't get off work until Thursday night, but if we take the early flight on Friday, we'd still have the whole weekend. Would that work for you, or is that cutting it too close?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I'm stuck at work till Thursday night, but if we grab the early flight Friday, we'd still get the whole weekend. That work for you, or is it too tight?"
+        },
+        {
+          "style": "formal",
+          "text": "I am unable to leave work until Thursday night, but if we take the early flight on Friday, we would still have the entire weekend. Would that suit you, or would that be cutting it too close?"
+        }
+      ],
+      "note": "**get off work** 는 일을 마치고 퇴근한다는 뜻입니다. **cutting it too close** 는 시간 여유가 거의 없어 아슬아슬하다는 말입니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "있잖아, 내가 피자를 라지로 시켰는데 스몰을 갖다 주고 돈은 라지 값으로 받아 갔어. 뭐 겨우 5달러 정도 차이긴 한데, 돈 문제가 아니라 원칙의 문제잖아, 안 그래?",
+      "text": "Hey, so I ordered a large pizza, but they gave me a small one and still charged me for the large. I mean, it's only like five bucks, but it's the principle, you know?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, got a small instead of the large I ordered, and they still charged me for the large. It's like five bucks, but still, it's the principle."
+        },
+        {
+          "style": "formal",
+          "text": "I ordered a large pizza, but I received a small one and was still charged for the large. It is only about five dollars, but it is a matter of principle."
+        }
+      ],
+      "note": "**it's the principle** 는 액수보다 옳고 그름이 문제라고 할 때 씁니다. **bucks** 는 달러를 편하게 부르는 말입니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "늦어서 미안해! 커피 가게에 줄이 엄청 길었는데, 네 라떼 없이 빈손으로 가기는 싫어서 그냥 기다렸어.",
+      "text": "Sorry I'm late! There was this huge line at the coffee place, and I didn't want to show up without your latte, so I just waited.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My bad! The coffee line was huge and I wasn't gonna show up without your latte, so I waited."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for being late. There was a very long line at the coffee shop, and I did not want to arrive without your latte, so I simply waited."
+        }
+      ],
+      "note": "**show up** 은 약속 자리에 나타난다는 뜻으로 말에서 아주 자주 씁니다. 캐주얼에서는 사과할 때 **My bad** 라고 가볍게 말합니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이사 온 날부터 한다고 말만 하던 차고 정리를 드디어 했어. 근데 하다가 고등학교 때 받은 옛날 편지가 든 상자를 발견하는 바람에, 정리는 안 하고 바닥에 주저앉아서 두 시간 동안 편지만 읽었지 뭐야.",
+      "text": "I finally cleaned out the garage, which I've been saying I'd do since we moved in. But then I found a box of old letters from high school, so I ended up sitting on the floor reading them for two hours instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Garage is finally clean. I've been saying I'd do it since we moved in. But then I found a box of old high school letters and ended up on the floor reading them for two hours."
+        },
+        {
+          "style": "formal",
+          "text": "I have finally cleaned out the garage, which I have been saying I would do since we moved in. However, I then came across a box of old letters from high school, and I ended up sitting on the floor reading them for two hours instead."
+        }
+      ],
+      "note": "**clean out** 은 안에 있는 것을 싹 치워 정리한다는 뜻입니다. **ended up** 은 하려던 것과 달리 결국 그렇게 되어 버렸다는 말입니다.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 casual 이 text 와 앞부분(I ordered a large pizza)이 겹쳐서 더 짧은 구어로 새로 썼습니다.",
+    "3번 formal 끝의 you understand 는 어색하게 들려서 빼고 a matter of principle 로 끝냈습니다.",
+    "4번 casual 의 My bad, I'm late! 는 이어 붙인 말이 어색해서 My bad! 로 끊고 줄 이야기로 바로 넘어가게 했습니다."
+  ]
+}

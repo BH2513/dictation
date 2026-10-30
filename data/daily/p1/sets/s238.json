@@ -1,0 +1,114 @@
+{
+  "setId": "s238",
+  "videoId": "daily-s238",
+  "title": "Set 238",
+  "madeAt": "2026-10-30",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "어제 택배가 하루 종일 배송 중으로 떠 있어서 집에서 기다렸거든. 근데 밤 9시에 갑자기 배송 시도로 바뀌는 거야. 아무도 문 안 두드렸어! 나 그동안 계속 문 바로 앞에 앉아 있었는데.",
+      "text": "My package said out for delivery all day yesterday, so I stayed home and waited, and then at nine it just switched to delivery attempted. Nobody even knocked! I was sitting right by the door the whole time.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking had it out for delivery all day, so I stayed in. Then at nine it flips to delivery attempted. No knock, nothing! I was right by the door."
+        },
+        {
+          "style": "formal",
+          "text": "My package was marked as out for delivery all day yesterday, so I remained at home to wait for it, and then at nine o'clock the status simply changed to delivery attempted. No one knocked at all! I was sitting right beside the door the entire time."
+        }
+      ],
+      "note": "**out for delivery** 는 배송 조회에서 쓰는 배송 출발, 배송 중이라는 말이에요. 캐주얼에 나오는 **flips to** 는 상태가 휙 바뀐다는 느낌으로 switched to 대신 씁니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "도예를 진짜 제대로 배워 보고 싶어서 재료를 이것저것 다 샀는데, 수업은 딱 세 번 가고 말았어. 이제는 너무 오래돼서 다시 나가기가 좀 민망해. 그래서 다 그냥 옷장에 처박혀 있어.",
+      "text": "I bought all this stuff because I really wanted to get into pottery, but I only made it to three classes, and now it's been so long that I'd feel weird showing up again. So it's all just sitting in my closet.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got all this pottery stuff since I really wanted to get into it, but I only went to three classes. It's been so long now it'd be weird to show back up, so it's all just sitting in my closet."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased all of these supplies because I genuinely wanted to take up pottery, but I attended only three classes, and it has now been so long that I would feel uncomfortable returning. As a result, everything is simply sitting in my closet."
+        }
+      ],
+      "note": "**get into** 는 어떤 취미에 빠져들다, 제대로 시작하다라는 뜻이에요. **just sitting in my closet** 은 쓰지도 않고 옷장에 그냥 놓여 있다는 말입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "식기세척기 고치는 법을 찾아보려던 거였는데, 어쩌다 보니 어떤 아저씨가 낡은 배 고치는 영상을 두 시간이나 보고 있더라. 덕분에 배에 대해서는 쓸데없이 많이 알게 됐는데, 식기세척기는 아직도 고장 나 있어.",
+      "text": "I was supposed to be looking up how to fix the dishwasher, but somehow I ended up watching some guy fix up an old boat for two hours. So now I know way too much about boats, and the dishwasher's still broken.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went to look up how to fix the dishwasher and somehow ended up watching a guy redo an old boat for two hours. Now I know way too much about boats, and the dishwasher's still busted."
+        },
+        {
+          "style": "formal",
+          "text": "I was meant to be researching how to repair the dishwasher, but somehow I spent two hours watching a man restore an old boat. Consequently, I now know far too much about boats, and the dishwasher is still not working."
+        }
+      ],
+      "note": "**ended up** ~ing 는 원래 계획과 달리 결국 ~하게 됐다는 뜻이에요. 캐주얼의 **busted** 는 broken 을 편하게 말한 고장 났다입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "윗집 사람이 거의 이틀에 한 번꼴로 새벽 2시에 가구를 옮겨. 한 번은 말하려고 올라갔는데 아무도 안 나오더라. 그래서 지금은 쪽지를 붙여야 할지 아니면 바로 집주인한테 말해야 할지 모르겠어.",
+      "text": "Somebody upstairs moves furniture around at two in the morning, like every other night. I went up to say something once, but nobody answered, so now I don't know if I should leave a note or just go straight to the landlord.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Upstairs is dragging furniture around at like 2 a.m., every other night. Went up once, nobody came to the door, so I dunno, leave a note or just go straight to the landlord?"
+        },
+        {
+          "style": "formal",
+          "text": "Someone in the unit above moves furniture around at two o'clock in the morning, roughly every other night. I went upstairs once to mention it, but no one answered, so I am now unsure whether I should leave a note or go directly to the landlord."
+        }
+      ],
+      "note": "**every other night** 는 이틀에 한 번이라는 뜻이에요. **go straight to the landlord** 는 중간 단계 없이 바로 집주인한테 간다는 말입니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "아들이 한 번만 더 읽어 달라고 계속 졸라서 결국 같은 책을 네 번이나 읽어 줬는데, 나중에는 애보다 내가 먼저 잠들고 있더라. 아마 애 방 바닥에서 몇 분 졸았던 것 같아. 깨 보니까 애가 내 얼굴을 콕콕 찌르고 있었거든.",
+      "text": "My son kept asking for one more, so I ended up reading him the same book four times, and by the end I was falling asleep before he was. I'm pretty sure I dozed off on his floor for a few minutes, because I woke up and he was poking my face.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My kid kept begging for one more, so I read him the same book four times, and by the end I was nodding off before he was. Pretty sure I passed out on his floor for a few minutes, since I woke up to him poking my face."
+        },
+        {
+          "style": "formal",
+          "text": "My son kept requesting one more reading, so I read him the same book four times, and by the end I was falling asleep before he did. I believe I dozed off on his floor for a few minutes, because when I awoke he was poking my face."
+        }
+      ],
+      "note": "**dozed off** 는 깜빡 졸다, 잠깐 잠들다라는 뜻이에요. 캐주얼의 **nodding off** 도 고개를 꾸벅이며 조는 걸 말합니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual이 text와 앞부분이 거의 같아서(Tracking said out for delivery all day yesterday, so I stayed in and waited) 더 짧고 축약된 구어로 새로 씀. note의 flips to는 그대로 살림",
+    "4번 casual이 text와 앞부분이 겹쳐서(Whoever's upstairs is moving furniture around at two a.m., like every other night) 주어를 생략한 짧은 구어로 바꿈. note의 go straight to the landlord는 text에 그대로 있음",
+    "5번 formal이 text와 거의 같아서(continued to ask 말고는 그대로) 말투를 조금 더 올림. 뜻은 그대로 둠"
+  ]
+}

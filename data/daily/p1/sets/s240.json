@@ -1,0 +1,116 @@
+{
+  "setId": "s240",
+  "videoId": "daily-s240",
+  "title": "Set 240",
+  "madeAt": "2026-10-31",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이걸 할지 말지 계속 왔다 갔다 해. 그 일을 받으면 돈은 더 받는데 애들 얼굴을 거의 못 볼 거고, 안 받으면 나중에 후회할까 봐 겁나. 모르겠어. 너라면 어떻게 할 거야?",
+      "text": "I keep going back and forth on it. If I take the job, the money's better, but I'd barely see the kids, and if I don't, I'm scared I'll regret it. I don't know. What would you do?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, I can't make up my mind. Take the job and the money's better, but I'd hardly see the kids. Don't take it and I'm scared I'll regret it. No idea. What would you do?"
+        },
+        {
+          "style": "formal",
+          "text": "I have been going back and forth on this decision. If I accept the position, the salary is better, but I would rarely see my children, and if I do not, I am afraid I will regret it. I am not certain. What would you do?"
+        }
+      ],
+      "note": "**go back and forth** 는 이쪽저쪽으로 마음이 계속 바뀌며 못 정하는 것을 말해요. **barely** 는 거의 ~ 못 한다는 뜻이에요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "제발 또 실화 범죄물은 보지 말자, 응? 지난번 거 보고 나서 아직도 잠을 제대로 못 자. 그러니까 오늘 밤은 내가 고르고 다음번엔 네가 골라.",
+      "text": "Can we please not do another true crime thing? I still haven't slept right since the last one, so I'm picking tonight, and you can pick next time.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No more true crime, please? Still haven't slept right since the last one. I'm picking tonight, you get next time."
+        },
+        {
+          "style": "formal",
+          "text": "Could we please choose something other than true crime this time? I have not slept properly since the last one, so I would like to choose tonight, and you may choose next time."
+        }
+      ],
+      "note": "**true crime** 은 실제 범죄를 다룬 다큐나 드라마 장르예요. **haven't slept right** 는 잠을 제대로 못 잤다는 말을 편하게 하는 표현이에요.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "주말 내내 진짜 아무것도 안 했는데 하나도 찔리지가 않아. 내가 생각했던 것보다 훨씬 더 쉬는 게 필요했나 봐.",
+      "text": "I literally did nothing all weekend, and I don't even feel bad about it. I think I needed that way more than I realized.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did absolutely nothing all weekend and I don't even feel bad. Guess I needed it way more than I thought."
+        },
+        {
+          "style": "formal",
+          "text": "I did nothing at all this weekend, and I do not feel guilty about it. I believe I needed that far more than I had realized."
+        }
+      ],
+      "note": "**literally** 는 말 그대로, 진짜로 하고 강조할 때 써요. **way more than** 은 훨씬 더라는 뜻의 구어체 표현이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "사실 오늘 아침에 헬스장 가려고 했거든. 근데 이어폰이 어디에도 안 보이는 거야. 음악 없이는 운동 안 하니까, 그냥 오늘은 가지 말라는 건가 보다 했어.",
+      "text": "I was actually going to go to the gym this morning, but I couldn't find my headphones anywhere, and I'm not working out without music, so I figured it just wasn't meant to be.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna hit the gym this morning, but couldn't find my headphones, and I'm not working out without music. Guess it just wasn't meant to be."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to go to the gym this morning, but I was unable to find my headphones anywhere, and I do not exercise without music, so I concluded that it simply was not meant to be."
+        }
+      ],
+      "note": "**it just wasn't meant to be** 는 될 운명이 아니었나 보다 하고 가볍게 넘길 때 써요. **I figured** 는 ~라고 생각했다, ~인가 보다 했다는 뜻이에요.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "진짜 재밌었는데, 내일 아침 일찍 비행기인데 아직 짐도 안 쌌거든. 그래서 이제 가 볼게. 조만간 또 이렇게 보자, 알았지?",
+      "text": "This was so much fun, but I've got an early flight tomorrow and I haven't even packed yet, so I'm going to head out. Let's do this again soon, okay?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Had so much fun, but I've got an early flight tomorrow and haven't even packed, so I'm gonna get going. Let's do it again soon, yeah?"
+        },
+        {
+          "style": "formal",
+          "text": "I have enjoyed this very much, but I have an early flight tomorrow and I have not yet packed, so I will be leaving now. Shall we do this again soon?"
+        }
+      ],
+      "note": "**head out** 은 자리를 뜨다, 이제 가 보다라는 뜻이에요. **Let's do this again soon** 은 헤어질 때 다음에 또 보자고 하는 말이에요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal의 I continue to go back and forth 는 원어민이 안 쓰는 말이라 I have been going back and forth 로 고침",
+    "2번 casual의 can't sleep right after the last one 은 '보고 난 직후'로도 읽혀서 text처럼 since 로 고치고 더 짧게 끊음",
+    "2번 formal의 something other than another true crime program 은 other than 과 another 가 겹쳐 어색해서 something other than true crime this time 으로 고침",
+    "4번 casual이 text와 길이와 짜임이 거의 같아서 주어를 빼고 짧게 줄임 (hit the gym 은 뜻에 맞게 쓴 관용구라 그대로 둠)",
+    "5번 한국어 '비행기라 짐도 안 쌌거든'이 비행기 때문에 짐을 안 싼 것처럼 읽혀서 '비행기인데 아직 짐도 안 쌌거든'으로 고침"
+  ]
+}

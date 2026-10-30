@@ -1,0 +1,116 @@
+{
+  "setId": "s242",
+  "videoId": "daily-s242",
+  "title": "Set 242",
+  "madeAt": "2026-10-31",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이번엔 설탕을 거의 2주나 끊었는데, 누가 사무실에 도넛을 사 와서 하나쯤은 괜찮겠지 했어. 그게 화요일이었는데 그 뒤로 매일 하나씩 먹고 있어.",
+      "text": "I made it almost two weeks without sugar this time, but then somebody brought donuts into the office and I figured one wouldn't hurt. That was Tuesday, and I've had one every day since.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went almost two weeks with no sugar this time. Then someone brought donuts to work and I'm like, eh, one won't kill me. That was Tuesday. I've had one every day since."
+        },
+        {
+          "style": "formal",
+          "text": "I managed nearly two weeks without sugar this time, but then a colleague brought donuts into the office and I thought one would do no harm. That was on Tuesday, and I have had one every day since then."
+        }
+      ],
+      "note": "**made it** 는 어떤 기간을 버텨 냈다는 뜻이에요. **I figured** 는 ~라고 생각했다, ~겠거니 했다는 말이고, **one wouldn't hurt** 는 하나쯤은 괜찮겠지라는 뜻이에요.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "휴대폰이 배터리 40퍼센트쯤에서 자꾸 꺼지고, 가끔은 통화하다가 저절로 재부팅돼. 껐다 켜 보는 건 이미 해 봤으니까 서비스센터에 맡겨야 할 것 같아.",
+      "text": "My phone keeps dying at like forty percent, and sometimes it just restarts by itself in the middle of a call. I already tried turning it off and on again, so I think I'm going to have to take it in.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my phone dies at like forty percent, and sometimes it just restarts on me mid-call. Already tried turning it off and on, so I'm gonna have to take it in."
+        },
+        {
+          "style": "formal",
+          "text": "My phone repeatedly shuts down at around forty percent, and it occasionally restarts on its own during a call. I have already tried turning it off and on again, so I believe I will need to have it repaired."
+        }
+      ],
+      "note": "**keeps dying** 는 배터리가 자꾸 나간다, 자꾸 꺼진다는 뜻이에요. **take it in** 은 수리점에 맡기러 가져간다는 말이에요.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "아, 별거 아니었어. 혈압 다시 재 보자고 한 거였어. 의사가 혈압이 좀 높다고 해서 이제 소금을 줄여야 하는데, 뭐, 그게 되겠어?",
+      "text": "Oh, it was nothing, they just wanted to check my blood pressure again. The doctor said it's a little high, so now I'm supposed to cut back on salt, which, I mean, good luck with that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nah, no big deal. Just a blood pressure recheck. Doc says it's kinda high, so I gotta cut back on salt. Yeah, good luck with that."
+        },
+        {
+          "style": "formal",
+          "text": "It was nothing serious. They simply wanted to check my blood pressure again. The doctor said it is slightly elevated, so I am now supposed to reduce my salt intake, which I expect will be rather difficult."
+        }
+      ],
+      "note": "**cut back on** 은 무엇을 줄인다는 뜻이에요. **good luck with that** 은 그게 잘 되겠냐며 비꼬듯 하는 말이에요.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "알았어, 네가 물어봤으니까 솔직하게 말할게. 그 색은 너랑 잘 안 어울리는 것 같아. 나쁘진 않은데 좀 피곤해 보여. 아직 교환할 수 있으면 파란색으로 해 보는 건 어때?",
+      "text": "Okay, you asked, so I'm going to be honest. I don't think that color's really you. It's not bad, it just kind of makes you look tired, so if you can still exchange it, maybe try the blue one?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly? Not really your color. It's not bad, it just kinda makes you look tired. Can you still swap it? Maybe go with the blue one."
+        },
+        {
+          "style": "formal",
+          "text": "Since you asked, I will be honest with you. I do not think that color really suits you. It is not unattractive, but it does make you look somewhat tired, so if it is still possible to exchange it, perhaps you could try the blue one?"
+        }
+      ],
+      "note": "**that color's really you** 는 그 색이 너한테 딱 어울린다는 뜻이고, 부정하면 너랑 안 어울린다는 말이 돼요. **kind of** 는 좀, 약간이라는 뜻으로 말을 부드럽게 해 줘요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "네가 알려 준 타코집 가 봤는데, 음식은 진짜 맛있었어. 근데 너무 시끄러워서 내내 서로 말이 하나도 안 들렸어. 그래서 또 가긴 할 텐데, 아마 그냥 포장해 올 것 같아.",
+      "text": "We went to that taco place you sent me, and the food was really good, but it was so loud we couldn't hear each other the whole time. So I'd definitely go back, but I'd probably just get it to go.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tried that taco place you sent me. Food was super good, but it was so loud we couldn't hear each other at all. I'd totally go back, but I'd prob just get takeout."
+        },
+        {
+          "style": "formal",
+          "text": "We visited the taco restaurant you recommended, and the food was excellent, but it was so loud that we could not hear each other the entire time. I would certainly return, but I would most likely order it to go."
+        }
+      ],
+      "note": "**get it to go** 는 음식을 포장해 간다는 뜻이에요. **the whole time** 은 그동안 내내라는 말이에요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 casual 이 text 와 앞부분(it was nothing, they just wanted to check my blood pressure again)이 거의 같아서 더 짧은 구어로 새로 씀",
+    "3번 한국어 '재 보고 싶었던 거래' 가 번역투라서 '다시 재 보자고 한 거였어' 로 고침",
+    "4번 casual 이 text 와 같은 'you asked, so' 로 시작해서 더 짧게 새로 씀",
+    "4번 한국어 '피곤해 보이게 해' 가 번역투라서 '좀 피곤해 보여' 로 고침",
+    "5번 formal 의 'order my meal to take away' 는 영국식이고 딱딱해서 미국식 'order it to go' 로 고침"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "setId": "s243",
+  "videoId": "daily-s243",
+  "title": "Set 243",
+  "madeAt": "2026-11-01",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이사를 갈까 말까 계속 왔다 갔다 해. 여기 월세가 너무 비싸긴 한데, 이사 가면 다들 있는 데서 한 시간쯤 떨어지게 되거든. 그래서 한 달에 300달러 아끼자고 너희를 아예 못 보는 게 맞나 모르겠어.",
+      "text": "I keep going back and forth about moving. The rent here is way too high, but if I leave, I'd be like an hour from everybody, so I don't know if saving three hundred bucks a month is worth never seeing you guys.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Can't decide if I should move. Rent here's crazy, but I'd be like an hour away from all of you, so is saving three hundred bucks a month really worth never seeing you guys? I dunno."
+        },
+        {
+          "style": "formal",
+          "text": "I have been going back and forth about whether to move. The rent here is far too high, but if I leave, I would be about an hour away from everyone, so I am not sure that saving three hundred dollars a month is worth never seeing all of you."
+        }
+      ],
+      "note": "**going back and forth** 는 마음을 못 정하고 이랬다저랬다 한다는 뜻입니다. **bucks** 는 dollars 를 편하게 부르는 말입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "자, 그 친구가 처음엔 좀 조용한데 그걸로 당황하지 마. 일단 편해지면 진짜 웃기거든. 그리고 엄청 아끼는 강아지가 있으니까, 할 말 떨어지면 그냥 강아지 얘기 물어봐.",
+      "text": "Okay, so he's a little quiet at first, but don't let that throw you, because once he warms up he's actually really funny. And he's got a dog he's obsessed with, so if you run out of things to say, just ask about the dog.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "He's kinda quiet at first, but don't worry about it, he gets really funny once he warms up. Oh, and he's obsessed with his dog, so if you get stuck, just ask about the dog."
+        },
+        {
+          "style": "formal",
+          "text": "He is a little quiet at first, but please do not let that put you off, because once he becomes comfortable he is actually very funny. He also has a dog that he adores, so if the conversation runs dry, simply ask him about the dog."
+        }
+      ],
+      "note": "**don't let that throw you** 는 그것 때문에 당황하거나 흔들리지 말라는 말입니다. **warms up** 은 사람이 낯을 풀고 편해진다는 뜻입니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "잠깐, 너 아직도 사촌 결혼식에서 만난 그 남자랑 만나? 저번에 얘기할 때는 잘될지 모르겠다고 했잖아.",
+      "text": "Wait, are you still with that guy you met at your cousin's wedding? Because the last time we talked, you weren't sure if it was going anywhere.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hold on, you're still seeing that guy from your cousin's wedding? Last time we talked you weren't sure it was going anywhere."
+        },
+        {
+          "style": "formal",
+          "text": "Sorry, just to check, are you still in a relationship with the man you met at your cousin's wedding? When we last spoke, you were not certain whether it was going anywhere."
+        }
+      ],
+      "note": "**going anywhere** 는 관계가 진지하게 발전하고 있다는 뜻으로, 보통 부정이나 의문으로 씁니다. **are you still with** 는 아직 사귀고 있냐는 말입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "아니야 엄마, 아무 일 없어. 그냥 회사가 좀 바빴어, 그게 다야. 일요일에 전화할게, 약속해. 그때 다 얘기해 줄게.",
+      "text": "No, Mom, everything's fine, work's just been busy, that's all. I'll call you on Sunday, I promise, and I'll tell you everything then.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Mom, I'm fine, really. Work's just been crazy, that's it. I'll call you Sunday, promise, and tell you everything."
+        },
+        {
+          "style": "formal",
+          "text": "No, Mom, everything is fine. Work has simply been busy, that is all. I will call you on Sunday, I promise, and I will tell you everything then."
+        }
+      ],
+      "note": "**that's all** 은 말끝에 붙여 별일 아니고 그게 전부라고 안심시키는 표현입니다. **work's just been busy** 처럼 현재완료로 요즘 계속 바빴다는 느낌을 냅니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "치킨 샌드위치를 시켰는데 무슨 채소 랩을 갖다 줬어. 너무 배고파서 그냥 먹을 것 같긴 한데, 이번 주에만 벌써 두 번째라서 한마디는 꼭 할 거야.",
+      "text": "So I ordered the chicken sandwich, but they brought me some kind of veggie wrap instead. I'm so hungry I'm probably just going to eat it, but I'm definitely going to say something, because this is the second time this week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, I ordered the chicken sandwich and they sent me some veggie wrap. I'm starving so I'll probably just eat it, but I'm totally gonna say something, 'cause that's twice this week."
+        },
+        {
+          "style": "formal",
+          "text": "I ordered the chicken sandwich, but they brought me a vegetable wrap instead. I am so hungry that I will probably eat it, but I certainly intend to mention it, because this is the second time this week."
+        }
+      ],
+      "note": "**say something** 은 불만이나 문제를 말한다는 뜻으로, 한마디 하다에 가깝습니다. **some kind of** 는 정체가 확실하지 않은 무슨 무슨 것을 가리킬 때 씁니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 formal 의 Excuse me 는 따지는 말투로 들려서 Wait 을 높인 말이 아님. Sorry, just to check 로 바꿈",
+    "4번 formal 의 Mother 는 차갑고 어색하게 들림. 말투만 높이도록 Mom 을 그대로 둠",
+    "5번 casual 의 I got the chicken sandwich 는 샌드위치를 받았다는 뜻으로 읽혀 내용과 반대가 됨. I ordered 로 바꾸고 brought 대신 sent 를 씀"
+  ]
+}

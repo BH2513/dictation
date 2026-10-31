@@ -1,0 +1,116 @@
+{
+  "setId": "s245",
+  "videoId": "daily-s245",
+  "title": "Set 245",
+  "madeAt": "2026-11-01",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "글쎄 우리 딸이 반 애들한테 다 우리 집에 수영장 있다고 했나 봐. 그래서 지금 애들이 전부 딸 생일 파티가 수영장 파티인 줄 알아. 걔가 그런 말을 어디서 들었는지 모르겠어. 우리 집엔 수영장 절대 없거든.",
+      "text": "So apparently my daughter told her whole class we have a pool, and now all these kids think her birthday party's going to be a pool party. I have no idea where she got that from, because we definitely don't have a pool.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, so my kid told her whole class we've got a pool, and now they all think her birthday's gonna be a pool party. No clue where she got that, cuz we totally don't have one."
+        },
+        {
+          "style": "formal",
+          "text": "Apparently, my daughter informed her entire class that we have a pool, and now all of the children believe her birthday party will be a pool party. I have no idea where she got that idea, because we certainly do not have a pool."
+        }
+      ],
+      "note": "**apparently** 는 남한테 들어서 알게 된 일을 꺼낼 때 쓰는 말로, ~했나 봐, 듣자 하니 정도의 느낌입니다. **I have no idea where she got that from** 은 걔가 그걸 어디서 주워들었는지 모르겠다는 뜻입니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나 회사 그만둘 것 같아. 근데 3월에 보너스 들어올 때까지는 기다리고 싶어. 지금 나가면 거의 8천 달러를 그냥 버리고 나가는 거라서. 이거 너무한 건가?",
+      "text": "I think I'm going to quit, but I want to wait until my bonus comes through in March, because if I leave now I'm basically walking away from like eight thousand bucks. Is that terrible?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Pretty sure I'm gonna quit, but I wanna hold off till my bonus hits in March, cuz if I bail now I'm basically leaving like eight grand on the table. Is that awful?"
+        },
+        {
+          "style": "formal",
+          "text": "I believe I am going to resign, but I would like to wait until my bonus is paid in March, because if I leave now I would essentially be giving up about eight thousand dollars. Would that be terrible?"
+        }
+      ],
+      "note": "**walking away from** 은 받을 수 있는 것을 포기하고 떠나다는 뜻입니다. **comes through** 는 돈이나 결과가 실제로 들어오다는 뜻이고, casual 의 **eight grand** 는 8천 달러를 줄여 부르는 말입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "나 진짜 헬스장 주차장까지 갔었거든. 근데 문 바로 앞에 전 애인 차가 있는 거야. 그래서 그냥 차 돌려서 집에 왔어. 내일은 갈게, 진짜로.",
+      "text": "I was literally in the gym parking lot, but then I saw my ex's car right by the door, so I just turned around and went home. I'll go tomorrow, I swear.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Made it all the way to the gym parking lot, then saw my ex's car right by the door, so I just turned around and went home. Tomorrow, I swear."
+        },
+        {
+          "style": "formal",
+          "text": "I was actually in the gym parking lot, but then I noticed my former partner's car right by the entrance, so I turned around and went home. I will go tomorrow, I promise."
+        }
+      ],
+      "note": "**literally** 는 과장이 아니라 정말로 그랬다고 힘줄 때 씁니다. **I swear** 는 맹세해, 진짜야 처럼 약속을 다짐하는 말입니다. **my ex** 는 전 애인을 가리킵니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "바람이 너무 세서 뒷마당에서 파티는 못 하겠어. 그래서 전부 안으로 옮기는데, 그 말은 두 시간 안에 거실을 다 치워야 된다는 거지.",
+      "text": "It's way too windy to have the party out back, so we're moving everything inside, which means I've got like two hours to clean the whole living room.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Way too windy out back for the party, so we're moving it all inside, and now I've got like two hours to clean the whole living room."
+        },
+        {
+          "style": "formal",
+          "text": "It is far too windy to hold the party in the backyard, so we are moving everything indoors, which means I have about two hours to clean the entire living room."
+        }
+      ],
+      "note": "**way too windy** 처럼 **way too** 는 너무 심하게 ~하다고 강조합니다. **out back** 은 집 뒤쪽, 뒷마당이라는 뜻입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "수의사가 우리 개가 10파운드 과체중이라고 해서 다이어트를 시켜야 했어. 근데 아빠가 자꾸 식탁 밑으로 몰래 치즈를 줘서 별로 효과가 없는 것 같아.",
+      "text": "We had to put the dog on a diet because the vet said he's ten pounds overweight, but my dad keeps sneaking him cheese under the table, so I don't think it's really working.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Vet says the dog's ten pounds overweight, so we had to put him on a diet, but my dad keeps sneaking him cheese under the table, so it's kinda not working."
+        },
+        {
+          "style": "formal",
+          "text": "We had to put our dog on a diet because the veterinarian said he is ten pounds overweight, but my father continues to secretly give him cheese under the table, so I do not believe it is really working."
+        }
+      ],
+      "note": "**put the dog on a diet** 는 개에게 다이어트를 시키다는 뜻입니다. **sneaking him cheese** 의 **sneak** 은 남몰래 슬쩍 주다는 뜻입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: for sure don't 는 부정문 앞에서 어색해서 totally don't have one 으로 고침",
+    "2번 casual: comes in in March 는 in 이 겹쳐 소리내면 걸려서 hits in March 로 고침",
+    "2번 ko: 너무 못된 건가 보다 친구끼리 쓰는 말투인 너무한 건가 로 고침",
+    "4번 ko: 그러면 나 거실 전체를 이 번역투라 그 말은 두 시간 안에 거실을 다 치워야 된다는 거지 로 고침",
+    "5번 formal: sneaking 의 몰래 라는 뜻이 빠져 secretly 를 넣음"
+  ]
+}

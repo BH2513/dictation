@@ -1,0 +1,115 @@
+{
+  "setId": "s247",
+  "videoId": "daily-s247",
+  "title": "Set 247",
+  "madeAt": "2026-11-02",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "진짜 오늘 애 재우는 데 한 시간 걸렸어. 잠들었나 싶어서 살금살금 빠져나오려고 할 때마다 눈을 번쩍 뜨고 또 물 달라고 하는 거야. 그래서 지금은 너무 피곤해서 저녁 할 기운도 없어.",
+      "text": "I swear it took him an hour to fall asleep tonight. Every time I thought he was out and tried to sneak away, he'd open his eyes and ask for water again, so now I'm too tired to even make dinner.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Swear to God, he took an hour to conk out tonight. Every time I figured he was asleep and tried to slip out, his eyes would pop open and he'd want more water, so now I'm way too wiped to even cook."
+        },
+        {
+          "style": "formal",
+          "text": "I assure you, it took him an hour to fall asleep this evening. Each time I believed he was asleep and attempted to leave quietly, he would open his eyes and ask for water again, so I am now too tired even to prepare dinner."
+        }
+      ],
+      "note": "**I swear** 는 진짜야, 정말이라니까 하고 힘주어 말할 때 앞에 붙입니다. **sneak away** 는 들키지 않게 살짝 빠져나가는 것이고, **out** 은 여기서 곯아떨어졌다는 뜻입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "택배가 화요일에 왔어야 하는데 배송 조회는 아직도 배송 중으로 떠. 거의 10분마다 확인하고 있는데 아직 전화는 안 하고 싶어. 지난번에 40분이나 대기했거든.",
+      "text": "My package was supposed to come on Tuesday, and the tracking still says out for delivery. I've been checking it like every ten minutes, but I don't want to call them yet, because last time I was on hold for forty minutes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my package was due Tuesday and tracking's still stuck on out for delivery. I'm checking it like every ten minutes, but I'm not calling yet, 'cause last time they had me on hold forty minutes."
+        },
+        {
+          "style": "formal",
+          "text": "My package was scheduled to arrive on Tuesday, and the tracking information still indicates that it is out for delivery. I have been checking it approximately every ten minutes, but I would prefer not to call them yet, as I was on hold for forty minutes the last time."
+        }
+      ],
+      "note": "**out for delivery** 는 배송 조회에 뜨는 배송 출발, 배송 중 상태입니다. **on hold** 는 전화 연결을 기다리며 대기하는 것을 말합니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "어머, 이게 얼마 만이야! 그래서 요즘 어떻게 지내? 아직 같은 데 다녀, 아니면 고민하던 그 회사로 결국 옮겼어?",
+      "text": "Oh my gosh, it's been forever! So what's going on with you? Are you still at the same place, or did you end up taking that job you were thinking about?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No way, it's been ages! What's new with you? Still at the same spot, or did you end up going for that job you were eyeing?"
+        },
+        {
+          "style": "formal",
+          "text": "Goodness, it has been such a long time! How have you been? Are you still with the same company, or did you ultimately accept the position you were considering?"
+        }
+      ],
+      "note": "**it's been forever** 는 정말 오랜만이다라는 뜻입니다. **end up** ~ing 는 이래저래 하다가 결국 ~하게 됐다는 말입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "왜 그런지 모르겠는데 요즘 잠을 하나도 못 자. 잘 때는 녹초가 돼 있는데, 베개에 머리를 대자마자 내일 해야 할 일들이 줄줄이 생각나기 시작해.",
+      "text": "I don't know what's going on, but I haven't been sleeping at all lately. I'm exhausted when I go to bed, and then the second my head hits the pillow, I start thinking about everything I have to do tomorrow.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No idea what's up, but I'm barely sleeping lately. I'm beat by the time I go to bed, then the minute I lie down, my brain starts going through all the stuff I gotta do tomorrow."
+        },
+        {
+          "style": "formal",
+          "text": "I am not certain what is happening, but I have not been sleeping at all recently. I am exhausted when I go to bed, and then, as soon as I lie down, I begin thinking about everything I need to do the following day."
+        }
+      ],
+      "note": "**the second my head hits the pillow** 는 베개에 머리를 대자마자라는 뜻입니다. **the second** 는 ~하는 순간 바로라는 말로 the minute 와 같습니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그래, 다이어트 또 접었어. 한 일주일은 진짜 잘했거든. 근데 언니 생일이라 다 같이 외식을 했는데, 케이크 한 조각 먹고 나니까 어차피 망했다 싶어서 그냥 좀 포기해 버렸어.",
+      "text": "Okay, so the diet's off again. I was doing really well for like a week, but then we went out for my sister's birthday, and once I had one slice of cake, I figured I'd already messed it up, so I just kind of gave up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Welp, diet's off again. I was crushing it for like a week, then we went out for my sister's birthday, and after one slice of cake I was like, well, I already blew it, so I kinda just quit."
+        },
+        {
+          "style": "formal",
+          "text": "I am afraid I have abandoned my diet once again. I was doing quite well for about a week, but then we went out to celebrate my sister's birthday, and once I had eaten one slice of cake, I assumed I had already ruined it, so I simply gave up."
+        }
+      ],
+      "note": "**the diet's off** 는 다이어트를 그만뒀다는 말입니다. **messed it up** 은 일을 망쳤다, **kind of gave up** 은 그냥 좀 포기해 버렸다는 느낌으로 말을 누그러뜨립니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 casual 의 or'd you 는 소리로는 나도 글로 적으면 읽기 어려워서 or did you 로 풀고, 동사를 eyeing 으로 바꿔 text 와 덜 겹치게 했습니다",
+    "4번 casual 의 hit the bed 는 원어민이 쓰는 말이 아닙니다(hit the sack/hay 가 관용구). by the time I go to bed 로 고쳤습니다",
+    "5번 note 의 mess it up 이 문장에 그대로 나오지 않아(실제는 messed it up) 문장에 있는 꼴로 고쳤습니다",
+    "5번 한국어 어차피 망한 거 싶어서 는 어법이 어색해서 어차피 망했다 싶어서 로 고쳤습니다"
+  ]
+}

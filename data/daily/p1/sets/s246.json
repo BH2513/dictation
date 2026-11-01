@@ -1,0 +1,113 @@
+{
+  "setId": "s246",
+  "videoId": "daily-s246",
+  "title": "Set 246",
+  "madeAt": "2026-11-02",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "우리 드디어 네가 말해 준 그 태국 음식점에 가 봤어. 네가 꼭 시키라던 커리를 시켰는데 나한텐 너무 매워서 거의 밥만 먹었어. 네 말이 틀렸다는 건 아니고, 그냥 넌 나보다 매운 걸 훨씬 잘 먹는 것 같아.",
+      "text": "So we finally tried that Thai place you told us about, and I got the curry you said to get, but it was way too spicy for me, so I mostly just ate rice. I'm not saying you were wrong, I think you just have a much higher tolerance than I do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally hit up that Thai spot you mentioned and got the curry you told me to get, but it was way too hot for me, so I basically just ate rice. Not saying you were wrong, I think you can just handle way more heat than me."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended, and I ordered the curry you suggested, but it was far too spicy for me, so I ate mostly rice. I do not mean to say you were mistaken; I believe your tolerance is simply much higher than mine."
+        }
+      ],
+      "note": "**tolerance** 는 견디는 정도라는 뜻으로, 매운 것이나 술을 얼마나 잘 먹는지 말할 때 써요. 캐주얼하게는 **hit up** 으로 어떤 가게에 가 보다를 말할 수 있어요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "노트북은 잘 돌아가는데, 솔직히 말하면 배터리가 거의 맛이 갔어. 충전기 빼면 한 시간 정도 갈까 말까 해서, 학교 같은 데서 쓸 거면 거의 계속 꽂아 놓고 써야 할 거야. 그래서 200달러만 받는 거야.",
+      "text": "So the laptop works fine, but I'm not going to lie, the battery's pretty much shot. You get maybe an hour off the charger, so if you need it for school or something, you'd basically have to keep it plugged in. That's why I'm only asking two hundred.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Laptop runs fine, but honestly, the battery's pretty much dead. You'll get like an hour unplugged, so if it's for school or whatever, you'd kinda have to keep it plugged in. That's why I'm only asking two hundred."
+        },
+        {
+          "style": "formal",
+          "text": "The laptop functions well, but I must be honest: the battery is in very poor condition. It lasts approximately one hour away from the charger, so if you need it for school or similar purposes, you would essentially have to keep it plugged in. That is why I am asking only two hundred."
+        }
+      ],
+      "note": "**I'm not going to lie** 는 솔직히 말하면이라는 뜻으로 단점을 털어놓기 전에 붙여요. **shot** 은 물건이 다 닳아서 거의 못 쓰게 됐다는 말이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그 에어프라이어 진짜 매일 쓸 줄 알았는데, 너무 커서 조리대에 안 올라가. 그래서 늘 찬장에 넣어 두는데 꺼내는 게 영 귀찮아. 반품할 수 있을 때 그냥 반품할걸.",
+      "text": "I really thought I'd use that air fryer every day, but it's so big it doesn't fit on the counter, so it lives in the cabinet, and I never feel like dragging it out. I should've just returned it when I had the chance.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Swore I'd use that air fryer every day, but it's too big for the counter, so it just sits in the cabinet and I never wanna drag it out. Shoulda returned it when I could."
+        },
+        {
+          "style": "formal",
+          "text": "I genuinely believed I would use the air fryer every day, but it is too large to fit on the counter, so it is kept in the cabinet, and I am never inclined to take it out. I should have returned it while I had the opportunity."
+        }
+      ],
+      "note": "**lives in the cabinet** 는 물건이 늘 그 자리에 들어가 있다는 뜻이에요. **dragging it out** 은 무거운 걸 끙끙대며 꺼내는 느낌이고, **should've** 는 그때 ~할걸 하는 후회예요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "안녕하세요, 3B호 사는 사람인데 또 연락드려요. 히터가 아직도 안 돼요. 월요일에 누가 와 준다고 하셨는데 아무도 안 왔어요. 밤에 꽤 추워지고 있어서요, 정확히 언제 오시는지 알려 주실 수 있을까요?",
+      "text": "Hi, it's the guy in 3B again. The heater still isn't working, and I know you said someone would come by on Monday, but nobody showed up. It's getting pretty cold at night, so could you let me know when they're actually coming?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, 3B again. Heater's still not working. I know you said someone'd come by Monday, but no one showed. It's getting kinda cold at night, so can you let me know when they're actually coming?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is the tenant in unit 3B once again. The heater is still not working, and I understand you said someone would come by on Monday, but no one arrived. It has become quite cold at night, so could you please let me know when they will actually be coming?"
+        }
+      ],
+      "note": "**come by** 는 잠깐 들르다, **showed up** 은 약속한 사람이 나타나다라는 뜻이에요. 약속을 안 지켰을 때 nobody showed up 이라고 많이 말해요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "봄에 노래 몇 곡 배워 보려고 기타를 샀거든. 한 달 정도는 진짜 푹 빠져 있었어. 근데 손가락이 아프기 시작해서 일주일만 쉬었는데, 그 일주일이 어쩌다 보니 6개월이 됐어. 그때 그냥 참고 계속했으면 지금쯤 꽤 잘 쳤을 텐데.",
+      "text": "I bought a guitar back in the spring because I wanted to learn a few songs, and I was really into it for like a month. But then my fingers started hurting, so I took a week off, and that week kind of turned into six months. If I'd just pushed through, I'd probably be pretty good by now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got a guitar in the spring and was super into it for like a month. Then my fingers got sore, so I took a week off, and yeah, that week turned into six months. Shoulda just pushed through."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar in the spring because I wanted to learn a few songs, and I was quite enthusiastic about it for about a month. However, my fingers began to hurt, so I took a week off, and that week ended up becoming six months. Had I persevered, I would likely be fairly proficient by now."
+        }
+      ],
+      "note": "**pushed through** 는 힘들어도 참고 밀고 나가다라는 뜻이에요. **was really into it** 은 무언가에 푹 빠져 있었다는 말이에요.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "5번 casual 이 text 와 거의 같은 문장이라(뒷부분이 사실상 그대로), 더 짧고 축약된 구어로 새로 씀",
+    "5번 formal 의 gradually became 은 어쩌다 보니 길어졌다는 kind of turned into 의 느낌을 살리지 못해 ended up becoming 으로 바꿈"
+  ]
+}

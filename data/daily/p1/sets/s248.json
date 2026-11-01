@@ -1,0 +1,117 @@
+{
+  "setId": "s248",
+  "videoId": "daily-s248",
+  "title": "Set 248",
+  "madeAt": "2026-11-02",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "식기세척기 고치는 법 좀 찾아보려고 앉았는데, 어쩌다 보니 어떤 아저씨가 낡은 배 손보는 걸 두 시간 동안 보고 있었어. 그래서 뭐, 식기세척기는 아직도 고장 난 그대로야.",
+      "text": "I sat down to look up how to fix the dishwasher, and somehow I ended up watching some guy fix up an old boat for two hours. So yeah, the dishwasher's still broken.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went to look up a dishwasher fix and wound up watching some guy redo an old boat for two hours. Dishwasher's still broken, obviously."
+        },
+        {
+          "style": "formal",
+          "text": "I sat down to research how to repair the dishwasher, and somehow I spent two hours watching a man restore an old boat. As a result, the dishwasher is still broken."
+        }
+      ],
+      "note": "**ended up** 은 하려던 것과 달리 결국 어떤 일을 하게 됐다는 말입니다. **fix up** 은 낡은 것을 손봐서 쓸 만하게 만드는 것이고, casual 의 **wound up** 도 ended up 과 같은 뜻입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그 드라마 진짜 좋아했는데, 아빠를 빼 버린 뒤로는 다른 인물들을 어떻게 끌고 가야 할지 모르는 것 같아. 그래서 지난 시즌 중간쯤부터 그냥 안 보게 됐어.",
+      "text": "I used to love that show, but ever since they got rid of the dad, it's like they don't know what to do with anybody. So I kind of stopped watching halfway through last season.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Loved that show, but ever since they wrote the dad out, they've got no clue what to do with anybody. Kinda quit halfway through last season."
+        },
+        {
+          "style": "formal",
+          "text": "I used to enjoy that program very much, but since they removed the father character, the writers do not seem to know what to do with anyone. I therefore stopped watching partway through last season."
+        }
+      ],
+      "note": "**got rid of** 는 무언가를 없애거나 빼 버린다는 말입니다. casual 의 **wrote the dad out** 은 드라마에서 인물을 극에서 하차시켰다는 뜻으로, write 와 out 사이에 인물이 들어갑니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "솔직히? 재킷은 정말 마음에 드는데, 그 바지랑 같이 입는 건 잘 모르겠어. 네 검은 청바지랑 입으면 훨씬 나을 것 같아.",
+      "text": "Honestly? I love the jacket, but I'm not sure about the pants with it. If you wore it with your black jeans, I think it'd look way better.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, real talk? Love the jacket, not so sure about the pants with it. Throw on your black jeans and it'd look way better."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, I love the jacket, but I am not sure the pants suit it. I believe it would look much better with your black jeans."
+        }
+      ],
+      "note": "**I'm not sure about** 은 별로라는 말을 부드럽게 돌려 할 때 씁니다. casual 의 **real talk** 는 솔직하게 말해서라는 뜻의 구어입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "어제 거의 1년 만에 스피닝 수업에 갔는데, 살살 했어야 했는데 강사가 계속 더 세게 하라고 소리를 질렀어. 지금은 계단도 겨우 내려가고, 게다가 열도 나는 것 같아서 오늘은 집에 있으려고.",
+      "text": "I went to a spin class yesterday for the first time in like a year, and I should've taken it easy, but the instructor kept yelling at us to push harder. Now I can barely walk down the stairs, and on top of that I think I'm running a fever, so I'm staying home today.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did spin yesterday, first time in like a year. Should've gone easy, but the instructor wouldn't stop yelling. Now I can barely do stairs, plus I think I've got a fever, so I'm staying home."
+        },
+        {
+          "style": "formal",
+          "text": "Yesterday I attended a spin class for the first time in about a year. I should have taken it easy, but the instructor kept shouting at us to push harder. Now I can hardly walk down the stairs, and in addition I believe I have a fever, so I will be staying home today."
+        }
+      ],
+      "note": "**taken it easy** 는 무리하지 않고 살살 한다는 뜻입니다. **on top of that** 은 게다가, **running a fever** 는 열이 난다는 말입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "요즘 계란 얼마인지 봤어? 예전엔 3달러쯤 냈는데 오늘은 거의 7달러더라. 그래서 그냥 도로 내려놓고 대신 빵 샀어.",
+      "text": "Did you see how much eggs are now? I used to pay like three bucks, and today they were almost seven, so I just put them back and got bread instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Have you seen egg prices lately? Used to be like three bucks, now they're almost seven. I put 'em back and grabbed bread."
+        },
+        {
+          "style": "formal",
+          "text": "Have you noticed the current price of eggs? I used to pay about three dollars, and today they were nearly seven, so I put them back and bought bread instead."
+        }
+      ],
+      "note": "**bucks** 는 달러를 편하게 부르는 말입니다. **put them back** 은 집었던 물건을 도로 제자리에 내려놓는다는 뜻입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 앞부분이 거의 같아서 더 짧은 구어로 바꿈 (a dishwasher fix, obviously)",
+    "2번 casual 의 wrote out the dad 는 원어민이 보통 wrote the dad out 으로 말하므로 어순을 고치고 note 도 맞춤",
+    "2번 formal 의 removed the father 는 사람을 치운 것처럼 들려 removed the father character 로 고침",
+    "3번 formal 의 I am not certain about the trousers with it 이 어색해서 I am not sure the pants suit it 으로 고침 (청바지와 맞춰 pants 로 통일)",
+    "4번 casual 이 text 와 가운데 부분이 그대로 겹쳐서 더 짧고 축약된 말투로 다시 씀",
+    "5번 casual 이 text 와 뒷부분이 같아서 Used to be, put 'em back 처럼 더 줄인 구어로 바꿈"
+  ]
+}

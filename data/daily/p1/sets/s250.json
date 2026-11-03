@@ -1,0 +1,116 @@
+{
+  "setId": "s250",
+  "videoId": "daily-s250",
+  "title": "Set 250",
+  "madeAt": "2026-11-03",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "분위기 깨고 싶진 않은데, 내일 비행기가 진짜 이른 시간이라 이 잔만 마시고 먼저 일어나야 할 것 같아.",
+      "text": "I hate to be that person, but I've got a really early flight tomorrow, so I think I'm going to head out after this drink.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry to bail, but I've got a super early flight tomorrow, so I'm gonna take off after this drink."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for leaving early, but I have a very early flight tomorrow, so I believe I will be leaving after this drink."
+        }
+      ],
+      "note": "**I hate to be that person** 은 분위기 깨는 말을 꺼낼 때 미안한 마음을 담아 쓰는 말이에요. **head out** 은 자리를 뜨다, 가 보다 라는 뜻이고, 캐주얼에 나오는 **bail** 도 먼저 빠지다 라는 뜻이에요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "저기요, 부엌 싱크대에서 또 물이 새요. 일단 밑에 양동이를 받쳐 놨는데 물이 수납장 안까지 스며들기 시작해서요. 더 심해지기 전에 이번 주 안에 사람 좀 보내 주실 수 있을까요?",
+      "text": "Hey, so the kitchen sink's leaking again. I put a bucket under it for now, but the water's starting to get into the cabinet, so could you send someone this week before it gets any worse?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, the kitchen sink's leaking again. There's a bucket under it for now, but water's getting into the cabinet, so can you get someone over this week before it gets worse?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I wanted to let you know that the kitchen sink is leaking again. I have placed a bucket under it for the time being, but the water is beginning to seep into the cabinet. Could you please send someone this week before it gets any worse?"
+        }
+      ],
+      "note": "**for now** 는 일단, 당분간 이라는 뜻이에요. **before it gets any worse** 는 더 나빠지기 전에 라는 말로, 빨리 처리해 달라고 할 때 잘 써요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "우리 고양이가 요즘 새벽 4시에 나를 깨우기 시작했어. 침대 옆 협탁에 있는 물건을 떨어뜨리면 내가 일어나서 밥을 준다는 걸 알아낸 거야. 근데 나는 매번 넘어가 주니까 뭐 내 탓도 좀 있는 것 같아.",
+      "text": "My cat's started waking me up at four in the morning, because she figured out that if she knocks stuff off my nightstand, I'll get up and feed her. And I keep falling for it, so I guess that's kind of on me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my cat's been getting me up at four a.m. now. She figured out if she knocks stuff off my nightstand, I'll get up and feed her. And I fall for it every time, so yeah, that's kinda my fault."
+        },
+        {
+          "style": "formal",
+          "text": "My cat has started waking me at four in the morning, because she has learned that if she knocks items off my nightstand, I will get up and feed her. I continue to give in, so I suppose that is partly my own responsibility."
+        }
+      ],
+      "note": "**fall for it** 은 속아 넘어가다 라는 뜻이에요. **that's on me** 는 그건 내 책임이다, 내 탓이다 라는 말이고, 여기서는 kind of 를 붙여 좀 내 탓이다 라고 누그러뜨렸어요.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "자전거 타는 데는 문제없는데, 미리 말씀드리면 뒷브레이크가 좀 약해요. 한번 점검받아 보시는 게 좋을 거예요. 그래서 80달러만 받는 거예요.",
+      "text": "The bike rides fine, but I should tell you the back brake's a little weak, so you'll probably want to get it looked at. That's why I'm only asking eighty bucks for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Rides fine, but heads up, the back brake's kinda weak, so you'll wanna get it checked. That's why I'm only asking eighty bucks."
+        },
+        {
+          "style": "formal",
+          "text": "The bicycle rides well, but I should mention that the rear brake is somewhat weak, so you will likely want to have it inspected. That is why I am asking only eighty dollars for it."
+        }
+      ],
+      "note": "**get it looked at** 은 맡겨서 점검받다 라는 뜻이에요. **bucks** 는 달러를 편하게 부르는 말이고, 캐주얼의 **heads up** 은 미리 알려 줄 게 있을 때 쓰는 말이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "회사가 싫다거나 그런 건 아닌데, 6년이나 다녔더니 이제 딱히 배우는 게 없어. 지금 안 나가면 10년 뒤에도 똑같은 일 하고 있을 것 같다는 생각이 자꾸 들어.",
+      "text": "I don't hate my job or anything, but I've been there six years and I'm not really learning anything anymore. I keep thinking if I don't leave now, I'm going to wake up in ten years still doing the exact same thing.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's not like I hate my job, but it's been six years and I'm not really learning anything now. I keep thinking if I don't get out now, I'm gonna wake up in ten years doing the exact same stuff."
+        },
+        {
+          "style": "formal",
+          "text": "I do not dislike my job, but I have been there for six years and I am no longer learning anything new. I often think that if I do not leave now, I will find myself ten years from now still doing exactly the same work."
+        }
+      ],
+      "note": "**or anything** 은 문장 끝에 붙여 뭐 그런 건 아니고 처럼 말을 부드럽게 해요. **I keep thinking** 은 자꾸 그런 생각이 든다 라는 뜻이에요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 한국어: started waking me up 의 '요즘 ~하기 시작했다' 뜻이 빠져 있어 '깨우기 시작했어'로 고침",
+    "4번 한국어: '그래서'가 두 번 이어져 어색해서 앞의 것을 뺌",
+    "4번 casual: prob 는 문자에서 쓰는 줄임말이라 소리내어 말하면 어색해서 뺌. It rides great 는 text 의 fine 보다 과장이라 Rides fine 으로 맞춤",
+    "2번 formal: becomes any worse 는 어색해서 gets any worse 로 고침",
+    "5번 formal: no longer learning very much 는 원문(거의 배우는 게 없다)보다 눅여서 no longer learning anything new 로 고침"
+  ]
+}

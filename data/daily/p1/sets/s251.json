@@ -1,0 +1,115 @@
+{
+  "setId": "s251",
+  "videoId": "daily-s251",
+  "title": "Set 251",
+  "madeAt": "2026-11-03",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "배송 조회에는 어제 배송 완료라고 나오는데, 문 앞에도 없고 옆집에도 없대. 그러니까 누가 가져갔거나, 아니면 다른 동에 놓고 갔거나 둘 중 하나야.",
+      "text": "The tracking says it was delivered yesterday, but it's not at my door and the neighbor doesn't have it either. So either somebody took it, or they left it at the wrong building.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Says it got delivered yesterday, but it's not here and my neighbor doesn't have it. So somebody grabbed it, or they dropped it at the wrong building."
+        },
+        {
+          "style": "formal",
+          "text": "According to the tracking information, it was delivered yesterday. However, it is not at my door, and my neighbor does not have it either. Either someone has taken it, or it was left at the wrong building."
+        }
+      ],
+      "note": "**So either somebody took it** 처럼 either 로 시작하면 뒤에 or 로 다른 가능성이 하나 더 온다는 신호입니다. 가능성을 둘로 좁혀 말할 때 씁니다. **The tracking says** 는 배송 조회에 그렇게 나온다는 말입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "폰이 자꾸 저절로 꺼졌다 켜져. 그것도 통화하는 도중에. 배터리 문제인 줄 알았는데 충전기 꽂아 놔도 그러더라고. 아무래도 서비스센터에 맡겨야 할 것 같아.",
+      "text": "My phone keeps restarting on its own, like right in the middle of a call. I thought it was the battery, but it does it even when it's plugged in, so I think I'm going to have to take it in.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my phone won't stop restarting by itself, like right in the middle of calls. Figured it was the battery, but it does it plugged in too, so I'm gonna have to take it in."
+        },
+        {
+          "style": "formal",
+          "text": "My phone continues to restart on its own, even in the middle of a call. I assumed it was the battery, but it happens even while it is charging, so I believe I will need to bring it in for repair."
+        }
+      ],
+      "note": "**keeps restarting** 처럼 keep + ~ing 는 자꾸 ~한다는 뜻입니다. **take it in** 은 고치려고 가게나 서비스센터에 맡긴다는 말입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "마음이 편해질 것 같아서 도자기 수업을 신청했는데, 다른 사람들은 다 이미 할 줄 아는 거야. 그래서 3주 차 지나고는 그냥 슬슬 안 나가게 됐어. 제일 속상한 건 8주 치를 벌써 다 내 놨다는 거야.",
+      "text": "I signed up for a pottery class because I thought it'd be relaxing, but everybody else already knew what they were doing, so after the third week I kind of just stopped going. And the worst part is I'd already paid for all eight weeks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Took a pottery class thinking it'd be relaxing, but everyone else already knew what they were doing, so after week three I kinda just quit going. And I'd already paid for all eight weeks!"
+        },
+        {
+          "style": "formal",
+          "text": "I enrolled in a pottery class because I expected it to be relaxing. However, everyone else was already experienced, so after the third week I stopped attending. Unfortunately, I had already paid for all eight weeks."
+        }
+      ],
+      "note": "**knew what they were doing** 은 다들 이미 할 줄 알았다, 익숙했다는 뜻입니다. **kind of just stopped going** 은 딱 끊었다기보다 어쩌다 보니 안 가게 됐다는 느낌을 줍니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그래서 페퍼로니 라지를 시켰는데, 남의 주문을 갖다준 거야. 샐러드 두 개랑 수프 같은 거. 가게에 전화했더니 배달 기사님이 벌써 가 버렸대. 오늘 저녁은 샐러드 먹게 생겼어.",
+      "text": "So we ordered a large pepperoni, and they brought us somebody else's order, like two salads and some soup. I called the place, but they said the driver was already gone, so I guess we're having salad for dinner.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ordered a large pepperoni, got someone else's order instead. Two salads and some soup. Called them, but the driver was already gone, so salad for dinner, I guess."
+        },
+        {
+          "style": "formal",
+          "text": "We ordered a large pepperoni pizza, but we received another customer's order, which was two salads and some soup. I contacted the restaurant, but they said the driver had already left, so it appears we will be having salad for dinner."
+        }
+      ],
+      "note": "**somebody else's order** 는 다른 사람이 시킨 주문이라는 뜻입니다. **I guess** 는 어쩔 수 없이 받아들일 때 그런가 보다, ~해야겠네 하는 느낌으로 씁니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "딸이 같은 책을 네 번이나 읽어 달래서 읽어 줬는데, 한 장 건너뛰려고 할 때마다 딱 걸렸어. 딸이 겨우 잠들었을 땐 나도 같이 잠들어 버렸지 뭐야. 딸 방 바닥에서 그대로.",
+      "text": "My daughter made me read the same book four times, and every time I tried to skip a page, she caught me. By the time she finally fell asleep, I'd fallen asleep too, right there on her floor.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I had to read my daughter the same book four times, and she caught me every time I tried skipping a page. By the time she was out, I was out too, right there on her floor."
+        },
+        {
+          "style": "formal",
+          "text": "My daughter insisted that I read the same book to her four times, and each time I attempted to skip a page, she noticed. By the time she finally fell asleep, I had also fallen asleep on the floor of her room."
+        }
+      ],
+      "note": "**made me read** 는 누가 시켜서 하게 됐다는 뜻입니다. **she caught me** 는 몰래 하려던 것을 들켰다는 말이고, **By the time** 은 ~할 즈음에는 이라는 뜻입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 note 의 either A, or B 는 문장에 그대로 나오지 않는 표현이라, 실제로 나오는 So either somebody took it 으로 바꿈",
+    "4번 casual 의 We got a large pepperoni 는 시켰다는 뜻인지 받았다는 뜻인지 헷갈려서, 시킨 것과 받은 것이 갈리게 고침",
+    "4번 한국어 마지막 문장이 어색해서 오늘 저녁은 샐러드 먹게 생겼어 로 고침",
+    "5번 formal 의 asked me to read 는 made me read 의 억지로 시킨 느낌을 눅여서 insisted that I read 로 고침"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "setId": "s252",
+  "videoId": "daily-s252",
+  "title": "Set 252",
+  "madeAt": "2026-11-04",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "시험공부를 해야 했는데, 틀어 놓기만 하려고 요리 영상 하나를 켰거든. 그러다 고개를 들어 보니까 오후가 통째로 날아가 있더라. 그래서 이제 늦게까지 안 자고 공부해야 돼. 딱 그게 싫었는데.",
+      "text": "I was supposed to be studying for my test, but I put on one cooking video for background noise, and then I looked up and the whole afternoon was gone. So now I'm going to be up late, which is exactly what I didn't want.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay so I had a test to study for, but I threw on one cooking video just for background noise, and next thing I know the whole afternoon's gone. Now I'm gonna be up late, which is exactly what I didn't want."
+        },
+        {
+          "style": "formal",
+          "text": "I was meant to be preparing for my examination, but I put on a single cooking video for background noise, and when I looked up, the entire afternoon had passed. I will therefore have to stay up late, which is precisely what I had hoped to avoid."
+        }
+      ],
+      "note": "**was supposed to** 는 원래 ~하기로 되어 있었는데 못 했다는 뜻이에요. **background noise** 는 집중해서 보는 게 아니라 그냥 틀어 두는 소리를 말해요.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이번 주말에 차 타고 호수에 가려고 했는데, 이틀 다 비 온다고 해서 그냥 집에 있고 다음 달쯤 가 보려고. 솔직히 좀 다행이야. 운전하고 갈 생각에 별로 내키지 않았거든.",
+      "text": "We were going to drive up to the lake this weekend, but they're saying it's going to rain both days, so we're just going to stay home and maybe go next month instead. I'm kind of relieved, honestly, because I wasn't looking forward to the drive.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the plan was to drive up to the lake this weekend, but it's supposed to rain both days, so we're just gonna stay home and maybe go next month. Kinda relieved, honestly. I wasn't looking forward to that drive."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to drive up to the lake this weekend, but rain is forecast for both days, so we will remain at home and perhaps go next month instead. To be honest, I am somewhat relieved, as I was not looking forward to the drive."
+        }
+      ],
+      "note": "**they're saying** 은 일기예보나 사람들이 그렇다고 하더라는 뜻이에요. **wasn't looking forward to** 는 ~할 생각에 별로 내키지 않았다는 말이에요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "길모퉁이에 있는 피자집이 원래 내 최애였는데, 주인이 바뀌었나 봐. 요즘은 도우가 늘 좀 눅눅하거든. 혹시나 해서 두 번이나 다시 가 봤는데, 그냥 예전 같지가 않아.",
+      "text": "That pizza place on the corner used to be my favorite, but I think they got new owners or something, because now the crust is always kind of soggy. I went back twice just to make sure, and it's just not the same.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You know the pizza place on the corner? Used to be my favorite, but I think it's got new owners or something, since the crust's always kinda soggy now. Went back twice just to be sure, and nope, it's not the same."
+        },
+        {
+          "style": "formal",
+          "text": "The pizza restaurant on the corner used to be my favorite, but I believe it may have changed ownership, because the crust is now consistently rather soggy. I returned twice to be certain, and it is simply not the same."
+        }
+      ],
+      "note": "**used to be** 는 예전에는 그랬지만 지금은 아니라는 뜻이에요. **it's just not the same** 은 예전 같지 않다고 아쉬워할 때 쓰는 말이에요.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이번 주말에 차 빌려주고 싶은데, 여동생한테 벌써 쓰라고 해 놔서 이제 와서 말을 바꾸고 싶지는 않아. 근데 토요일 오전만 쓰는 거면 내가 직접 태워다 줄 수 있어.",
+      "text": "I wish I could lend you my car this weekend, but I already told my sister she could use it, and I don't want to go back on that. If it's just for Saturday morning, though, I could drive you myself.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Man, I'd totally lend you my car this weekend, but I already told my sister she could have it, and I don't wanna back out on her. If it's just Saturday morning, though, I can drive you myself."
+        },
+        {
+          "style": "formal",
+          "text": "I wish I were able to lend you my car this weekend, but I have already promised it to my sister, and I would rather not go back on my word. If you only need it on Saturday morning, however, I could drive you myself."
+        }
+      ],
+      "note": "**go back on** 은 한 말이나 약속을 뒤집는다는 뜻이에요. 문장 끝에 붙는 **though** 는 그래도, 근데 하고 말을 돌릴 때 써요.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "색은 너한테 잘 어울리는데, 글쎄, 어깨가 좀 커 보여. 한 사이즈 작은 게 있으면 택 떼기 전에 그거 한번 입어 봐.",
+      "text": "It's a nice color on you, but I don't know, it looks a little big in the shoulders. If they have it in a smaller size, I'd try that on before you take the tags off.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Love the color on you, but I dunno, the shoulders look kinda big. If they've got a smaller size, I'd try that on before you pull the tags off."
+        },
+        {
+          "style": "formal",
+          "text": "The color suits you nicely, but I must say it appears slightly large in the shoulders. If it is available in a smaller size, I would try that on before you remove the tags."
+        }
+      ],
+      "note": "**a nice color on you** 는 그 색이 너한테 잘 어울린다는 말이에요. **try that on** 은 옷을 입어 보는 것이고, **take the tags off** 는 옷에 달린 택을 떼는 거예요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 한국어 '차를 빌려주면 좋겠는데'는 내가 바라는 것처럼 읽혀 어색함. I wish I could 의 뜻대로 '빌려주고 싶은데'로 고침",
+    "4번 formal 의 'I would not like to'는 딱딱하고 어색해서 'I would rather not'으로 고침. 뜻은 그대로"
+  ]
+}

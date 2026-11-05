@@ -1,0 +1,114 @@
+{
+  "setId": "s256",
+  "videoId": "daily-s256",
+  "title": "Set 256",
+  "madeAt": "2026-11-05",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "3월에 기타를 샀어. 이번엔 진짜 내 취미가 될 줄 알았거든. 한 달 정도는 매일 밤 연습했어. 근데 회사 일이 바빠지면서 지금은 그냥 구석에 세워져 있고, 옆을 지나갈 때마다 괜히 찔려.",
+      "text": "I bought a guitar back in March because I was sure this was finally going to be my thing, and for like a month I practiced every night. But then work got busy, and now it just sits in the corner and makes me feel guilty every time I walk by.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got a guitar in March, totally sure it'd finally be my thing, and I played every night for like a month. Then work got crazy, and now it's just sitting in the corner making me feel guilty every time I walk past it."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar in March because I was certain it would finally become my hobby, and for about a month I practiced every evening. However, work became quite hectic, and now it simply sits in the corner and makes me feel guilty each time I pass by."
+        }
+      ],
+      "note": "**my thing** 은 나한테 딱 맞는 일, 내 취미라는 뜻이에요. **makes me feel guilty** 는 마음이 찔리게 한다, 죄책감이 들게 한다는 말이에요.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "솔직하게 말해 줄까? 나쁘진 않은데 그냥 좀 너답지가 않달까? 너 평소에 심플하게 입잖아. 근데 이건 좀 요란하잖아. 그래도 보자마자 마음에 들었으면 내 말 듣고 마음 바꾸지 마.",
+      "text": "Do you want the honest answer? It's not bad, it's just kind of not you, you know? You usually wear simple stuff, and this has so much going on. But if you saw it and loved it, don't let me talk you out of it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly? Not bad, just kinda not you. You usually go simple, and this is a lot. But hey, if you loved it, don't let me change your mind."
+        },
+        {
+          "style": "formal",
+          "text": "Would you like my honest opinion? It is not bad, but it does not quite seem like your style. You usually wear simpler clothing, and this is rather busy. However, if you saw it and loved it, please do not let me talk you out of it."
+        }
+      ],
+      "note": "**not you** 는 너답지 않다, 네 스타일이 아니다라는 뜻이에요. **has so much going on** 은 이것저것 너무 많아서 요란하다는 말이고, **talk you out of it** 은 말로 설득해서 그만두게 한다는 뜻이에요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "일요일에 날씨가 너무 좋아서 달리기를 하러 나갔어. 2마일 정도만 뛰려고 했는데 결국 5마일을 뛰었고, 지금 몸살 난 것처럼 온몸이 쑤셔. 한 여섯 달 동안 안 뛰었으니까 그걸 하루에 다 만회하려고 했나 봐.",
+      "text": "The weather was so nice on Sunday that I went for a run. I was only going to do a couple of miles, but I ended up doing five, and now my whole body aches like I've got the flu. I hadn't run in like six months, so I guess I tried to make up for it all in one day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sunday was so nice out I went for a run. Meant to do just a couple miles, ended up doing five, and now everything hurts like I've got the flu. Hadn't run in like six months, so I guess I tried to cram it all into one day."
+        },
+        {
+          "style": "formal",
+          "text": "The weather on Sunday was so pleasant that I decided to go for a run. I had intended to run only a couple of miles, but I ended up running five, and now my entire body aches as though I have the flu. I had not run in about six months, so I suppose I tried to make up for it all in a single day."
+        }
+      ],
+      "note": "**ended up doing** 은 하다 보니 결국 ~하게 됐다는 뜻이에요. **make up for** 는 못 한 것을 만회하다, 벌충하다라는 말이에요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "들어가서 코트도 벗기 전에 할머니가 요즘 만나는 사람 있냐고 물어보셨어. 그다음엔 사촌이 애는 언제 낳을 거냐고 묻더라. 나는 속으로, 밥이라도 좀 먹고 나서 하면 안 될까? 싶었지.",
+      "text": "I walked in, and before I even got my coat off, my grandma asked if I'm seeing anybody. Then my cousin wanted to know when I'm having kids, and I'm like, can I at least eat something first?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Coat's not even off yet and Grandma's asking if I'm seeing anyone. Then my cousin wants to know when I'm having kids, and I'm like, can I eat something first, please?"
+        },
+        {
+          "style": "formal",
+          "text": "As soon as I arrived, before I had even taken off my coat, my grandmother asked whether I was seeing anyone. Then my cousin asked when I was planning to have children, and I thought, may I at least have something to eat first?"
+        }
+      ],
+      "note": "**seeing anybody** 는 누구 사귀는 사람 있냐는 뜻이에요. **I'm like** 는 내 반응이나 속마음을 전할 때 쓰는 말로, 나는 ~ 싶었지 정도의 느낌이에요.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "금요일마다 그 바에 가는 걸 정말 좋아했는데, 요즘은 너무 시끄러워서 바로 옆에 앉은 사람 말도 안 들려. 가게가 변한 건지 내가 나이를 먹은 건지 모르겠어.",
+      "text": "I used to love going to that bar on Fridays, but now it's so loud you can't even hear the person sitting next to you. I don't know if the place changed or if I'm just getting old.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Fridays at that bar used to be my favorite, but now it's so loud you can't even hear the guy right next to you. Dunno if the place changed or I'm just getting old."
+        },
+        {
+          "style": "formal",
+          "text": "I used to enjoy going to that bar on Fridays, but it has become so loud that one cannot even hear the person sitting beside them. I am not sure whether the establishment has changed or whether I am simply getting older."
+        }
+      ],
+      "note": "**used to love** 는 예전엔 정말 좋아했다는 뜻으로, 지금은 아니라는 느낌이 담겨 있어요. **getting old** 는 나이를 먹어 가다, 늙어 간다는 말이에요.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 의 앞부분(It's not bad, it's just kinda not you)이 text 와 거의 같아서 더 짧은 구어로 바꿨고, 어색한 a simple-stuff person 을 go simple 로 고침",
+    "2번 한국어 '근데 이건 너무 정신없어' 가 영어(has so much going on)보다 세게 들려서 '이건 좀 요란하잖아' 로 누그러뜨림",
+    "1번 formal 의 work then became busy 가 어색해서 work became quite hectic 으로 고침"
+  ]
+}

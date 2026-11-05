@@ -1,0 +1,115 @@
+{
+  "setId": "s255",
+  "videoId": "daily-s255",
+  "title": "Set 255",
+  "madeAt": "2026-11-05",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "창가에 앉은 커플이 일어나기를 한참 서서 기다렸는데, 일어나자마자 노트북 든 어떤 남자가 들어오더니 그 자리를 그냥 차지해 버렸어. 그래서 결국 차에서 커피 마셨어.",
+      "text": "I stood around forever waiting for this couple by the window to leave, and the second they got up, some guy with a laptop walked in and just took the table. So I ended up drinking my coffee in the car.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Waited forever for this couple by the window to leave, and the second they got up, some laptop guy walks in and grabs the table. So yeah, I had my coffee in the car."
+        },
+        {
+          "style": "formal",
+          "text": "I waited for a very long time for a couple by the window to leave, and as soon as they stood up, a man with a laptop came in and took the table. As a result, I had to drink my coffee in my car."
+        }
+      ],
+      "note": "**the second** 는 ~하자마자 라는 뜻이에요. **ended up** 은 어쩌다 보니 결국 그렇게 됐다는 말이고, **stood around** 는 하는 일 없이 서성이며 기다렸다는 느낌이에요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "요즘 폰이 이상해. 글자 치고 있으면 화면이 혼자 막 난리가 나서, 내가 보내는 문자 절반은 엉뚱한 글자가 섞여서 가. 벌써 두 번이나 껐다 켰는데도 계속 그래. 그러니까 내가 이상한 거 보내면 그래서 그런 거야.",
+      "text": "My phone's been doing this thing where the screen goes crazy while I'm typing, so half my texts go out with random letters in them. I've already restarted it twice and it's still doing it, so if I send you something that doesn't make sense, that's why.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My phone keeps glitching when I type, so like half my texts end up with random letters in them. Restarted it twice already and it's still at it, so if something I send you is gibberish, that's why."
+        },
+        {
+          "style": "formal",
+          "text": "My phone has been malfunctioning while I type, and as a result, about half of my messages are sent with random letters in them. I have already restarted it twice and the problem persists, so if I send you something that does not make sense, that would be why."
+        }
+      ],
+      "note": "**doing this thing where** 는 요즘 이런 증상이 있다고 말을 꺼낼 때 써요. **goes crazy** 는 기계가 제멋대로 날뛴다는 말이고, casual 의 **gibberish** 는 알아볼 수 없는 횡설수설이라는 뜻이에요.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "우리 개는 비가 오면 조금만 와도 밖에 안 나가. 문 앞에 서서 꼭 내 탓이라는 듯이 나를 쳐다봐. 안고 나가면 되는데 너무 커서 그것도 안 되고, 그래서 둘이 그냥 기다려.",
+      "text": "Our dog won't go out if it's raining, even a little. He just stands at the door and looks at me like it's my fault. I'd carry him out, but he's way too big for that, so we both just wait.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The dog won't go out in the rain, not even a little. He just stands at the door giving me this look like it's my fault. I'd carry him, but he's way too big, so we just wait it out together."
+        },
+        {
+          "style": "formal",
+          "text": "Our dog refuses to go outside when it is raining, even lightly. He simply stands at the door and looks at me as though it were my fault. I would carry him outside, but he is far too large, so we both wait."
+        }
+      ],
+      "note": "**won't** 는 고집스럽게 안 하려 한다는 뜻이에요. **like it's my fault** 는 마치 내 탓인 것처럼 이라는 말이고, casual 의 **wait it out** 은 지나갈 때까지 버티며 기다린다는 표현이에요.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "학교에서 현장학습 관련해서 온 이메일 봤어? 동의서에 사인은 했는데, 아무래도 애 가방에 다시 넣는 걸 깜빡한 것 같아. 그래서 애가 못 가게 되면 그건 완전히 내 잘못이야.",
+      "text": "Did you get that email from the school about the field trip? I signed the form, but I'm pretty sure I forgot to put it back in her backpack, so if she can't go, that's totally on me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You see the school email about the field trip? I signed the form but I'm pretty sure I never put it back in her bag, so if she can't go, that's on me."
+        },
+        {
+          "style": "formal",
+          "text": "Did you receive the email from the school regarding the field trip? I signed the form, but I believe I forgot to put it back in her backpack, so if she is unable to attend, it will be entirely my fault."
+        }
+      ],
+      "note": "**that's totally on me** 는 그건 전적으로 내 책임이야 라는 뜻이에요. **I'm pretty sure** 는 거의 확실하다고 생각할 때 써요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "자꾸 새벽 세 시쯤 깨서 그냥 누워만 있어. 커피 때문인 줄 알고 점심 이후로는 아예 안 마셨는데, 별로 나아진 게 없어. 그래서 지금은 여전히 피곤한데 오후 커피도 못 마셔.",
+      "text": "I keep waking up around three and then I just lie there. I thought it was the coffee, so I stopped having any after lunch, but it hasn't really helped. So now I'm still tired, and I don't even get my afternoon coffee.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Keep waking up around three and just lying there. Figured it was the coffee, so I quit having it after lunch, but it hasn't really helped. So now I'm still tired and I don't even get my afternoon coffee."
+        },
+        {
+          "style": "formal",
+          "text": "I have been waking up at around three o'clock and then lying awake. I assumed the coffee was the cause, so I stopped drinking it after lunch, but it has not helped much. Now I am still tired, and I no longer have my afternoon coffee either."
+        }
+      ],
+      "note": "**I keep waking up** 처럼 keep ~ing 는 자꾸 되풀이된다는 뜻이에요. **I don't even get** 은 그것마저 못 누린다는 억울한 느낌을 줘요. casual 의 **Figured** 는 그런 줄 알았다는 말이에요.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal 이 text 의 half 를 many 로 바꿔 뜻이 달라져 about half 로 고쳤고, 마지막의 that is the reason 은 원어민이 그 자리에서 잘 안 쓰는 말이라 that would be why 로 바꿈",
+    "2번 한국어 '화면이 막 미쳐 날뛰어서'가 어색해서 '화면이 혼자 막 난리가 나서'로 고침",
+    "3번 한국어 '안고 나가고 싶어도'는 I'd carry him out 의 뜻(그러면 되는데)과 달라서 '안고 나가면 되는데'로 고침",
+    "4번 formal 의 return it to her backpack 은 원어민이 쓰지 않는 말이라 put it back in her backpack 으로 고침"
+  ]
+}

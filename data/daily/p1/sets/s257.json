@@ -1,0 +1,114 @@
+{
+  "setId": "s257",
+  "videoId": "daily-s257",
+  "title": "Set 257",
+  "madeAt": "2026-11-05",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "잠깐 하소연 좀 할게. 우리 팀에 메일마다 하나도 빼놓지 않고 전체 답장을 누르는 사람이 있는데, 그냥 고맙다는 말 한마디일 때도 그래. 그래서 내 메일함은 하루 종일 거의 그 사람 메일뿐이야. 좋게 그만해 달라고 했더니, 자기는 그냥 모두가 상황을 다 알고 있는 게 좋대.",
+      "text": "Okay, I need to vent for a second. There's this guy on my team who hits reply all on every single email, even when it's just to say thanks, so my inbox is basically him all day. And when I asked him nicely to stop, he said he just likes to keep everybody in the loop.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, lemme vent real quick. This guy on my team hits reply all on literally every email, even just to say thanks, so my inbox is pretty much all him all day. And when I nicely asked him to knock it off, he goes, I just like keeping everybody in the loop."
+        },
+        {
+          "style": "formal",
+          "text": "I would like to share a frustration for a moment. There is a colleague on my team who clicks reply all on every single email, even when he is only saying thank you, so my inbox is essentially filled with his messages all day. When I politely asked him to stop, he said that he simply likes to keep everyone informed."
+        }
+      ],
+      "note": "**vent** 는 쌓인 불만을 털어놓는다는 말이에요. **keep everybody in the loop** 는 모두에게 돌아가는 상황을 계속 알려 준다는 뜻입니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "변기 고치는 법 좀 찾아보려고 유튜브를 켰는데, 어쩌다 보니 어떤 남자가 낡은 배 고치는 걸 두 시간이나 보고 있었어. 변기는 아직도 물이 계속 흐르고. 정작 찾으려던 건 하나도 못 배웠어.",
+      "text": "I only opened YouTube to figure out how to fix the toilet, and somehow I ended up watching some guy fix up an old boat for two hours. And the toilet's still running, so I didn't even learn the one thing I went there for.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went on YouTube just to see how to fix the toilet, and somehow I'm two hours deep watching a guy fix up an old boat. Toilet's still running, too, so I didn't even learn the one thing I went on there for."
+        },
+        {
+          "style": "formal",
+          "text": "I only opened YouTube to learn how to repair the toilet, and somehow I ended up watching a man restore an old boat for two hours. The toilet is still running, so I did not even learn the one thing I went there to find out."
+        }
+      ],
+      "note": "**ended up** 은 의도와 달리 어쩌다 보니 결국 그렇게 됐다는 말이에요. 변기가 **running** 이라고 하면 물이 멈추지 않고 계속 흐른다는 뜻입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "퇴근하고 진짜 헬스장 가려고 했는데, 운동화를 집에 두고 나왔어. 그거 가지러 집에 갔으면 절대 다시 안 나왔을 거야. 그러니까 내일 갈래. 아마도.",
+      "text": "I was totally going to hit the gym after work, but I left my shoes at home, and I know if I'd gone back to get them, I never would've left the house again. So I'll go tomorrow. Probably.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Totally meant to hit the gym after work, but I forgot my shoes at home, and if I'd gone back for 'em, no way I would've left the house again. So, tomorrow. Probably."
+        },
+        {
+          "style": "formal",
+          "text": "I had fully intended to go to the gym after work, but I left my shoes at home, and I know that if I had gone back to get them, I would not have left the house again. So I will most likely go tomorrow."
+        }
+      ],
+      "note": "**hit the gym** 은 헬스장에 가서 운동한다는 구어 표현이에요. **never would've left** 는 그랬다면 절대 안 나갔을 거라는 가정입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이번 주말에 아무것도 안 했는데 너무 좋았어. 부엌 청소라도 해야지 하는 생각은 계속 들었는데 그냥 소파에만 붙어 있었어. 그랬더니 일요일 밤에는 웬일로 진짜 푹 쉰 느낌이 들더라.",
+      "text": "I didn't do a single thing this weekend, and it was so nice. I kept thinking I should at least clean the kitchen, but I just stayed on the couch, and by Sunday night I actually felt rested for once.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did absolutely nothing this weekend and it was awesome. Kept thinking I should at least clean the kitchen, but nope, stayed on the couch, and by Sunday night I actually felt rested for once."
+        },
+        {
+          "style": "formal",
+          "text": "I did not do a single thing this weekend, and it was very pleasant. I kept thinking that I should at least clean the kitchen, but I remained on the couch, and by Sunday evening I actually felt rested for once."
+        }
+      ],
+      "note": "**for once** 는 이번만큼은, 웬일로라는 뜻이에요. **felt rested** 는 피로가 풀리고 푹 쉰 느낌이 든다는 말입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "오늘 밤에 아들 재우는 데 한 시간 반이 걸렸어. 잠든 줄 알고 살금살금 방에서 나가려고 할 때마다 벌떡 일어나 앉아서 물 달라고 하는 거야. 그래서 이제 다른 건 아무것도 할 기운이 없는데, 아직 아홉 시도 안 됐어.",
+      "text": "It took me an hour and a half to get my son down tonight. Every time I thought he was out and tried to sneak out of the room, he'd sit right up and ask for water. So now I've got nothing left for anything else, and it's not even nine.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Took me an hour and a half to get my kid down tonight. Every time I figured he was out and tried sneaking out, he'd pop right up and ask for water. So now I'm totally wiped, and it's not even nine."
+        },
+        {
+          "style": "formal",
+          "text": "It took me an hour and a half to put my son to sleep tonight. Each time I believed he was asleep and tried to leave the room quietly, he would sit up immediately and ask for water. As a result, I have no energy left for anything else, and it is not even nine o'clock."
+        }
+      ],
+      "note": "**get my son down** 은 아이를 재운다는 말이고, **he was out** 은 곯아떨어졌다는 뜻이에요. **nothing left** 는 기운이 하나도 안 남았다는 말입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal: replies to all 은 원어민이 안 쓰는 말이라 clicks reply all 로 고쳤습니다.",
+    "3번 casual: if I'd gone back 뒤에 no way I'm leaving 이 와서 시제가 어긋나 no way I would've left 로 맞췄습니다.",
+    "3번 formal: Therefore 와 따로 떼어 놓은 Most likely 가 글처럼 딱딱해서 So I will most likely go tomorrow 로 합쳤습니다."
+  ]
+}

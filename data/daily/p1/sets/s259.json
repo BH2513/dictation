@@ -1,0 +1,113 @@
+{
+  "setId": "s259",
+  "videoId": "daily-s259",
+  "title": "Set 259",
+  "madeAt": "2026-11-06",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아니, 그건 지금 시작하면 안 돼. 우리 4화 보고 있었고 너 나 기다려 준다고 했잖아. 또 먼저 봤으면 지금 말해. 난 두 번은 안 볼 거니까.",
+      "text": "No, we can't start that one, we're on episode four and you said you'd wait for me. If you watched ahead again, just tell me now, because I'm not watching it twice.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nope, not that one. We're on four and you promised you'd wait. Did you watch ahead again? Just tell me, 'cause I'm not watching it twice."
+        },
+        {
+          "style": "formal",
+          "text": "I am afraid we cannot begin that one. We are on episode four, and you said you would wait for me. If you have watched ahead again, please tell me now, because I do not intend to watch it twice."
+        }
+      ],
+      "note": "**watch ahead** 는 같이 보기로 한 드라마를 상대보다 먼저 혼자 앞서 보는 것을 말합니다. **we're on episode four** 처럼 be on 을 쓰면 지금 몇 화까지 와 있는지 말할 수 있습니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "선생님은 애가 잘 지낸다고 하시는데, 애는 매일 집에 와서 쉬는 시간에 아무도 자기랑 안 논다고 해. 그래서 누구 말을 믿어야 할지 모르겠고, 별일 아니면 괜히 일을 크게 만들고 싶지도 않아.",
+      "text": "Her teacher says she's doing fine, but she comes home every day saying nobody plays with her at recess. So I don't know who to believe, and I don't want to make it a big thing if it's not.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the teacher's like, she's doing fine, but every day she comes home saying nobody plays with her at recess. I dunno who to believe, and I don't wanna make a big deal out of it if it's nothing."
+        },
+        {
+          "style": "formal",
+          "text": "According to her teacher, she is doing well, but she comes home every day saying that no one plays with her at recess. I am therefore unsure whom to believe, and I do not wish to make it a serious matter if it is not one."
+        }
+      ],
+      "note": "**make it a big thing** 은 별것 아닌 일을 크게 키운다는 뜻입니다. casual 에서는 **make a big deal out of it** 이라고 많이 씁니다. **recess** 는 학교의 쉬는 시간입니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "너는 6월 첫째 주에 시간 되고 나는 둘째 주에 되는 거 맞지? 그럼 그 사이 주말에 둘 다 가면 어때? 같이 있는 건 3일 정도밖에 안 되겠지만 아예 안 가는 것보다는 낫잖아.",
+      "text": "You're free the first week of June and I'm free the second, right? So what if we both go the weekend in between? We'd only get like three days together, but that's better than not going at all.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wait, so you're off the first week and I'm off the second? Let's just both do the weekend in between. Only like three days, but beats not going at all."
+        },
+        {
+          "style": "formal",
+          "text": "If I understand correctly, you are available during the first week of June and I am available during the second. Would it be possible for us both to go on the weekend in between? We would only have about three days together, but that would be better than not going at all."
+        }
+      ],
+      "note": "**what if we** 는 이렇게 해 보면 어떠냐고 제안할 때 씁니다. **the weekend in between** 은 두 기간 사이에 낀 주말이고, casual 의 **beats not going** 은 안 가는 것보다 낫다는 뜻입니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "지도 앱만 쓰면 폰이 엄청 뜨거워지고 그냥 꺼져 버려. 배터리가 60퍼센트쯤 남아 있어도 그래. 그래서 어제 친구 집에 가다가 중간에 폰이 꺼지는 바람에 길을 잃었어.",
+      "text": "My phone gets super hot whenever I use the map, and then it just dies, even if it was at like sixty percent. So yesterday I got lost on the way to my friend's place because it shut off halfway there.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every time I use the map my phone gets crazy hot and just dies, even at like sixty percent. So yesterday it shut off halfway to my friend's place and I got lost."
+        },
+        {
+          "style": "formal",
+          "text": "My phone becomes extremely hot whenever I use the map, and then it simply shuts down, even when the battery is at around sixty percent. As a result, I got lost yesterday on the way to my friend's home because it turned off halfway there."
+        }
+      ],
+      "note": "**dies** 는 휴대폰이나 배터리가 나가서 꺼진다는 뜻으로 아주 흔히 씁니다. **shut off halfway there** 는 가는 도중에 꺼졌다는 말입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "일주일 내내 진짜 잘했는데, 동생 생일이라 다 같이 나갔다가 하루쯤은 괜찮겠지 했거든. 근데 하루가 주말 내내가 돼 버려서 이제 거의 처음으로 돌아왔어.",
+      "text": "I did really well all week, but then we went out for my brother's birthday, and I figured one night wouldn't hurt. But one night turned into the whole weekend, and now I'm basically back where I started.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "All week I was doing great, then we went out for my brother's birthday and I thought, eh, one night's fine. Except one night turned into the whole weekend, and now I'm pretty much back to square one."
+        },
+        {
+          "style": "formal",
+          "text": "I did very well all week, but then we went out for my brother's birthday, and I assumed that one night would not cause any harm. However, one night became the entire weekend, and now I am essentially back where I started."
+        }
+      ],
+      "note": "**one night wouldn't hurt** 는 하루쯤은 괜찮겠지 하고 스스로 봐줄 때 쓰는 말입니다. **back where I started** 는 처음 자리로 돌아왔다는 뜻이고, casual 의 **back to square one** 도 같은 뜻입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 뒷부분까지 거의 같아서 더 짧은 구어(We're on four, you promised)로 바꿨습니다.",
+    "3번 casual 이 text 의 앞부분을 거의 그대로 따라가서 새로 썼고, note 의 casual 표현도 바뀐 문장에 맞춰 beats not going 으로 고쳤습니다."
+  ]
+}

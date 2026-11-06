@@ -1,0 +1,115 @@
+{
+  "setId": "s260",
+  "videoId": "daily-s260",
+  "title": "Set 260",
+  "madeAt": "2026-11-06",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "어머, 이게 얼마 만이야! 아직 거기 다녀? 아니면 그만둔다더니 결국 그만뒀어?",
+      "text": "Oh my god, it's been forever! Are you still at that same place, or did you finally quit like you said you were going to?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wow, long time no see! You still at the same job, or did you finally quit like you said you would?"
+        },
+        {
+          "style": "formal",
+          "text": "Goodness, it has been such a long time! Are you still working at the same place, or did you finally resign as you said you intended to?"
+        }
+      ],
+      "note": "**it's been forever** 는 정말 오랜만이라는 뜻으로 반갑게 인사할 때 씁니다. casual 의 **long time no see** 도 같은 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "작동은 잘 되는데, 미리 솔직하게 말할게요. 배터리가 예전만큼 오래 안 가서 아마 계속 충전기에 꽂아 두고 써야 할 거예요. 그래서 80달러만 받는 거예요.",
+      "text": "It works fine, but I just want to be upfront that the battery doesn't hold a charge like it used to, so you'll probably need to keep it plugged in. That's why I'm only asking eighty for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Heads up, it runs fine, but the battery doesn't hold a charge like it used to, so you'll probably have to keep it plugged in. That's why I'm only asking eighty."
+        },
+        {
+          "style": "formal",
+          "text": "It functions properly, but I would like to be transparent that the battery does not hold a charge as well as it once did, so you will likely need to keep it plugged in. That is why I am asking only eighty for it."
+        }
+      ],
+      "note": "**be upfront** 는 숨기지 않고 미리 솔직하게 말한다는 뜻입니다. **hold a charge** 는 배터리가 충전된 상태를 유지한다는 말입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "봄에 도자기 수업을 등록했는데, 한 3주 정도는 정말 재밌게 다녔어. 그러다 일 때문에 한 번 빠졌는데, 그 뒤로는 다시 가기가 좀 어색해서 그냥 안 가게 됐어.",
+      "text": "I signed up for this pottery class back in the spring, and I loved it for like three weeks. But then I missed one because of work, and after that I felt kind of weird going back, so I just never did.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Back in the spring I signed up for a pottery class and loved it for like three weeks. Then I missed one cuz of work, and after that going back felt kinda weird, so I just never did."
+        },
+        {
+          "style": "formal",
+          "text": "I enrolled in a pottery class in the spring, and I thoroughly enjoyed it for approximately three weeks. However, I then missed a session due to work, and afterward I felt rather uncomfortable returning, so I never went back."
+        }
+      ],
+      "note": "**signed up for** 는 수업이나 모임에 등록했다는 뜻입니다. **felt kind of weird** 는 뭔가 좀 어색하고 민망했다는 느낌을 말할 때 씁니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이제 슬슬 가 봐야겠다, 내일 아침 일찍 일어나야 하거든. 근데 솔직히 운전해서 갈 길만 안 멀었으면 한 잔 더 하고 갔을 거야.",
+      "text": "I should probably head out soon, I've got an early morning tomorrow. But honestly, if it wasn't such a long drive, I'd totally stay for another one.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gotta get going soon, I've got an early morning tomorrow. But honestly, if the drive wasn't so long, I'd totally stay for one more."
+        },
+        {
+          "style": "formal",
+          "text": "I should probably leave soon, as I have an early start tomorrow. However, if the drive were not so long, I would gladly stay for another."
+        }
+      ],
+      "note": "**head out** 은 자리를 뜨다, 나가다라는 뜻입니다. **an early morning** 은 다음 날 아침 일찍 일정이 있다는 말이고, **stay for another one** 은 한 잔 더 하고 간다는 뜻입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "네가 말해 준 그 태국 음식점 드디어 가 봤는데, 국수는 네 말대로 진짜 맛있더라. 근데 자리 나는 데 너무 오래 걸려서 금요일 저녁에는 다시 갈지 잘 모르겠어.",
+      "text": "So we finally tried that Thai place you told us about, and you were right about the noodles, they were amazing. But it took forever to get a table, so I'm not sure I'd go back on a Friday night.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We finally hit up that Thai place you mentioned, and yeah, the noodles were amazing, you were totally right. But getting a table took forever, so I dunno about going back on a Friday night."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended, and you were correct about the noodles; they were excellent. However, the wait for a table was very long, so I am not certain I would return on a Friday evening."
+        }
+      ],
+      "note": "**took forever** 는 엄청 오래 걸렸다는 뜻입니다. **get a table** 은 식당에서 자리를 잡는다는 말이고, casual 의 **hit up** 은 어떤 가게에 가 본다는 뜻입니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: same spot 은 직장보다는 장소를 가리키는 말이라 same job 으로 바꾸고, 소리내어 말하기 어색한 or'd you 를 or did you 로 풀었습니다.",
+    "2번 casual: prob 는 문자로 쓰는 줄임말이지 입으로 하는 말이 아니라 probably 로 바꿨습니다.",
+    "5번 casual: the wait for a table was forever 는 좀 어색해서 getting a table took forever 로 고쳤습니다.",
+    "5번 한국어: 너가 를 맞춤법에 맞게 네가 로 고쳤습니다."
+  ]
+}

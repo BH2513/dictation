@@ -1,0 +1,113 @@
+{
+  "setId": "s265",
+  "videoId": "daily-s265",
+  "title": "Set 265",
+  "madeAt": "2026-11-08",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "자기 전에 영상 하나만 보자고 했는데 자동 재생이 계속 넘어가서, 지금 새벽 두 시고 연필 만드는 법을 쓸데없이 너무 많이 알게 됐어.",
+      "text": "I told myself I'd watch one video before bed, but autoplay just kept going, and now it's two in the morning and I know way too much about how they make pencils.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Swore I'd watch just one video before bed, but autoplay kept going, and now it's two in the morning and I know way too much about how pencils get made."
+        },
+        {
+          "style": "formal",
+          "text": "I told myself I would watch only one video before going to bed, but autoplay continued, and now it is two in the morning and I know far too much about how pencils are made."
+        }
+      ],
+      "note": "**told myself** 는 스스로 다짐했다는 뜻이에요. **way too much** 는 너무 지나치게 많다는 말로, way 가 too 를 더 세게 만들어 줘요.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나만 그런 거야, 아니면 마트 물가 또 오른 거야? 예전엔 80달러 정도면 장 다 봤는데, 지금은 100달러가 넘어. 더 많이 사는 것도 아닌데.",
+      "text": "Is it just me, or did everything at the grocery store go up again? I used to get out of there for like eighty bucks, and now it's over a hundred and I'm not even buying more stuff.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, did groceries go up again or is it just me? I used to get out for like eighty bucks, and now it's over a hundred and I'm not even buying more."
+        },
+        {
+          "style": "formal",
+          "text": "Perhaps it is only me, but have prices at the grocery store risen again? I used to spend about eighty dollars there, and now it is over one hundred, even though I am not buying any more than before."
+        }
+      ],
+      "note": "**Is it just me, or** 는 나만 그렇게 느끼는 건지 물을 때 쓰는 말이에요. **bucks** 는 dollars 를 편하게 부르는 말이에요.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "택배가 화요일에 오기로 돼 있었는데, 배송 조회에는 벌써 3일째 배송 중이라고만 떠. 그냥 매장 가서 하나 사고 싶은데, 그러면 두 개가 생기잖아. 이건 이미 돈도 냈고.",
+      "text": "My package was supposed to come on Tuesday, and the tracking's been saying out for delivery for three days now. I'd just go buy one at the store, but then I'd end up with two, and I already paid for this one.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking's said out for delivery for three days now, and it was supposed to show up Tuesday. I'd just grab one at the store, but then I'd have two, and I already paid for this one."
+        },
+        {
+          "style": "formal",
+          "text": "My package was supposed to arrive on Tuesday, and the tracking information has said out for delivery for three days now. I would simply purchase one at the store, but then I would end up with two, and I have already paid for this one."
+        }
+      ],
+      "note": "**out for delivery** 는 배송 조회에 뜨는 배송 중, 배달 출발 상태예요. **end up with** 는 결국 어떤 상황이 된다는 뜻이에요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "팟타이를 시켰는데 웬 남의 햄버거랑 감자튀김이 왔어. 전화하려고 했는데, 그때쯤엔 너무 배고파서 그냥 먹어 버렸어.",
+      "text": "We ordered pad thai, and they sent us somebody's burger and fries instead. I was going to call them, but we were so hungry by then that we just ate it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ordered pad thai, got somebody's burger and fries. Was gonna call, but we were so hungry by then we just ate it."
+        },
+        {
+          "style": "formal",
+          "text": "We ordered pad thai, but they delivered someone else's burger and fries instead. I intended to call the restaurant, but by then we were so hungry that we simply ate it."
+        }
+      ],
+      "note": "**somebody's burger** 는 누군지 모를 남의 햄버거라는 뜻이에요. **I was going to** 는 하려고 했는데 결국 안 했을 때 써요.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이사를 갈지 말지 계속 왔다 갔다 해. 새집이 회사랑 훨씬 가깝긴 한데, 지금 이웃들이 너무 좋거든. 괜히 떠났다가 돌아오기엔 이미 늦었을 때 실수였다는 걸 깨달을까 봐 겁나.",
+      "text": "I keep going back and forth about moving. The new place would be way closer to work, but I really like my neighbors, and I'm scared that if I leave, I'll realize it was a mistake when it's too late to come back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Still can't decide if I should move. The new place'd be way closer to work, but I really like my neighbors, and I'm scared I'll leave and figure out it was a mistake when it's too late to go back."
+        },
+        {
+          "style": "formal",
+          "text": "I continue to go back and forth about whether to move. The new residence would be much closer to my workplace, but I am very fond of my neighbors, and I am afraid that if I leave, I will realize it was a mistake when it is too late to return."
+        }
+      ],
+      "note": "**go back and forth** 는 마음이 이랬다저랬다 결정을 못 하는 것이에요. **too late to come back** 은 돌아오기엔 너무 늦었다는 뜻이에요.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal 의 I used to leave having spent about eighty dollars 는 글로 쓴 티가 나고 어색해서 I used to spend about eighty dollars there 로 바꿈, although 도 even though 로 자연스럽게 고침",
+    "5번 한국어 마지막 문장이 번역투라 돌아오기엔 이미 늦었을 때 ~ 겁나 로 친구에게 하는 말처럼 다듬음"
+  ]
+}

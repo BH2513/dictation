@@ -1,0 +1,114 @@
+{
+  "setId": "s263",
+  "videoId": "daily-s263",
+  "title": "Set 263",
+  "madeAt": "2026-11-07",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "앉을 데 찾느라 카페를 한 세 군데는 돌았는데, 가는 데마다 노트북 하는 사람들로 꽉 차 있더라. 겨우 자리 잡았을 땐 커피고 뭐고 생각도 없고 그냥 집에 가고 싶었어.",
+      "text": "We tried like three different coffee shops looking for a place to sit, and every single one was packed with people on laptops. By the time we finally found a table, I didn't even want coffee anymore, I just wanted to go home.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, we hit like three coffee shops just trying to sit down, and every one was full of laptop people. When we finally got a table, I didn't even want coffee anymore. I just wanted to go home."
+        },
+        {
+          "style": "formal",
+          "text": "We visited three different coffee shops in search of a place to sit, and each one was full of people working on laptops. By the time we finally found a table, I no longer wanted coffee. I simply wanted to go home."
+        }
+      ],
+      "note": "**packed with** 는 무엇으로 꽉 차 있다는 뜻입니다. **By the time** 은 ~할 즈음에는, ~했을 때는 이미 라는 느낌으로 씁니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "저기, 방 난방이 아직도 안 돼요. 지난주에 사람 보내 주신다고 하셨는데 아무도 안 왔고, 밤에는 방이 너무 추워요. 언제 오시는 건지 확실히 좀 알려 주실 수 있을까요?",
+      "text": "Hey, so the heat in the bedroom still isn't working. I know you said you'd send someone last week, but nobody ever showed up, and it's freezing in there at night. Could you let me know when they're actually coming?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hi, just a heads up, the bedroom heat's still busted. You said you'd send someone last week, but nobody came, and it's freezing in there at night. When's someone actually gonna come?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I wanted to let you know that the heating in the bedroom is still not working. I understand you said you would send someone last week, but no one arrived, and the room is extremely cold at night. Could you please tell me when they will be coming?"
+        }
+      ],
+      "note": "**showed up** 은 나타나다, 오다라는 뜻의 구어 표현입니다. **actually coming** 의 actually 는 말로만 말고 진짜로 라는 답답한 마음을 담습니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "나 그만둘까 봐. 아니, 돈은 괜찮은데 매일 아침 출근하는 게 너무 싫어. 이게 정상은 아닌 것 같아. 다른 데 먼저 구해 놓고 나올 걸 그랬어. 그냥 박차고 나올 용기는 없거든.",
+      "text": "I think I might quit. I mean, the money's fine, but I dread going in every single morning, and I don't think that's supposed to be normal. I just wish I had something else lined up first, because I'm not brave enough to just walk out.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly, I might just quit. The pay's okay, but I hate going in every morning, and that can't be normal, right? I just wish I had another job lined up, 'cause I'm not brave enough to just walk out."
+        },
+        {
+          "style": "formal",
+          "text": "I believe I may resign. The salary is adequate, but I dread going to work every morning, and I do not think that is normal. I only wish I had another position arranged first, because I am not brave enough to simply leave."
+        }
+      ],
+      "note": "**dread** 는 어떤 일이 닥치는 게 끔찍하게 싫고 두렵다는 뜻입니다. **lined up** 은 다음 일이 미리 정해져 있다는 말이고, **walk out** 은 대책 없이 그만두고 나가 버리는 것입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "늦어서 미안, 기차가 역 앞에서 한 이십 분은 서 있었어. 그래, 사실 나도 좀 늦잠 자긴 했는데, 기차만 제시간에 왔으면 충분히 안 늦었을 거야.",
+      "text": "Sorry I'm late, my train was stuck outside the station for like twenty minutes. Okay, I also kind of overslept, but if the train had been on time, I totally would've made it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My bad, the train got stuck outside the station for like twenty minutes. Okay, I kinda overslept too, but if the train was on time, I'd totally have made it."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for being late. My train was held outside the station for approximately twenty minutes. I will admit that I also overslept, but had the train been on time, I certainly would have arrived punctually."
+        }
+      ],
+      "note": "**overslept** 는 늦잠을 잤다는 뜻입니다. **kind of** 를 붙이면 인정하기 민망한 걸 살짝 누그러뜨려 말하는 느낌이 납니다. **would've made it** 은 제시간에 도착했을 거라는 뜻입니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그 드라마 원래 제일 좋아했는데, 작가 바뀌고 나서부터는 다들 무슨 이야기인지 모르는 것 같아. 그래도 계속 보긴 해. 여기까지 봤으니까 어떻게 끝나는지는 봐야지.",
+      "text": "That show used to be my favorite, but ever since they changed writers, it's like nobody knows what's going on anymore. I'm still watching it, though, because I've come this far and I want to see how it ends.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I used to love that show, but since the new writers came in, it's like nobody knows what's going on. I'm still watching, though. I've come this far, I wanna see how it ends."
+        },
+        {
+          "style": "formal",
+          "text": "That program was once my favorite, but since the writers were replaced, it seems that no one understands what is happening anymore. I continue to watch it, however, because I have come this far and I would like to see how it ends."
+        }
+      ],
+      "note": "**ever since** 는 ~한 이후로 쭉 이라는 뜻입니다. **I've come this far** 는 여기까지 왔으니 이제 와서 그만둘 수 없다는 느낌으로 자주 씁니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어의 안방은 master bedroom이라서, 영어 the bedroom에 맞춰 그냥 방으로 고침",
+    "3번 I just wish I had은 이미 지난 일을 아쉬워하는 말이라서, 한국어를 구해 놨으면 좋겠어에서 구해 놓고 나올 걸 그랬어로 고침",
+    "4번 한국어 완전 안 늦었을 거야는 어색해서, 영어 totally would've made it에 맞게 충분히 안 늦었을 거야로 고침"
+  ]
+}

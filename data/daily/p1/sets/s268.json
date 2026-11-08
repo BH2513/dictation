@@ -1,0 +1,115 @@
+{
+  "setId": "s268",
+  "videoId": "daily-s268",
+  "title": "Set 268",
+  "madeAt": "2026-11-09",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "애 옆에 한 20분쯤 같이 누워 있었는데, 이제 잠들었나 싶을 때마다 벌떡 일어나서 상어에 대해 뭘 물어보는 거야. 그래서 진짜로 잠들었을 때는 내가 너무 피곤해서, 애 재우고 하려고 미뤄 둔 일을 하나도 못 했어.",
+      "text": "I lay down with her for like twenty minutes, and every time I thought she was out, she'd sit up and ask me something about sharks. So by the time she actually fell asleep, I was too tired to do any of the stuff I'd been saving for after.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Spent like twenty minutes lying down with her, and every time I figured she was out, she'd pop up and ask me something about sharks. By the time she finally crashed, I was too wiped to do any of the stuff I was saving for after."
+        },
+        {
+          "style": "formal",
+          "text": "I lay down with her for approximately twenty minutes, and each time I believed she had fallen asleep, she would sit up and ask me a question about sharks. Consequently, by the time she was actually asleep, I was too tired to do any of the things I had been saving for afterward."
+        }
+      ],
+      "note": "**she was out** 는 잠들었다는 뜻으로 말할 때 씁니다. **by the time** 은 ~할 무렵에는 이미 이라는 뜻이고, **saving for after** 는 나중에 하려고 아껴 두다 라는 말입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "좋아, 둘째 주말은 되는데, 토요일 아침에 출발할 때만 돼. 금요일 밤에 사촌네 일이 있거든. 너는 그렇게 해도 돼? 아니면 그냥 다음 달로 미룰까?",
+      "text": "Okay, so I can do the second weekend, but only if we leave Saturday morning, because I've got my cousin's thing on Friday night. Does that work for you, or should we just push it to next month?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Second weekend works, but only if we head out Saturday morning, since I've got my cousin's thing Friday night. That okay with you, or wanna just bump it to next month?"
+        },
+        {
+          "style": "formal",
+          "text": "I am available on the second weekend, but only if we depart on Saturday morning, as I have my cousin's event on Friday evening. Would that be suitable for you, or would you prefer to postpone it until next month?"
+        }
+      ],
+      "note": "**Does that work for you** 는 일정이 괜찮은지 물을 때 쓰는 말입니다. **push it to next month** 는 다음 달로 미루다 라는 뜻이고, **my cousin's thing** 처럼 thing 으로 모임이나 행사를 가볍게 말할 수 있습니다.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "오늘 아침에 뛰러 가려고 했는데, 신발 한 짝이 안 보이는 거야. 소파 밑에서 찾았을 때는 이미 이런저런 핑계로 안 가기로 해 버렸지 뭐. 내일은 갈게, 진짜로.",
+      "text": "I was going to go for a run this morning, but I couldn't find my other shoe, and by the time I found it under the couch, I'd kind of talked myself out of it. I'll go tomorrow, I promise.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna go running this morning, but I couldn't find my other shoe, and by the time it turned up under the couch, I'd kinda talked myself out of it. I'll go tomorrow, promise."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to go for a run this morning, but I was unable to find my other shoe, and by the time I located it beneath the sofa, I had somewhat persuaded myself not to go. I will go tomorrow, I assure you."
+        }
+      ],
+      "note": "**talked myself out of it** 은 이런저런 핑계를 대다가 스스로 안 하기로 마음을 바꿨다는 뜻입니다. **I was going to** 는 ~하려고 했는데 라는 말입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "안녕하세요, 3B호예요. 식기세척기를 돌릴 때마다 물이 새는데, 이제는 그 앞 바닥이 좀 물렁해지는 것 같아요. 밑으로 물이 스며드는 것 같아서 걱정이에요. 더 심해지기 전에 사람 좀 보내 주실 수 있을까요?",
+      "text": "Hi, it's me from 3B. The dishwasher's been leaking every time we run it, and now the floor in front of it is starting to feel kind of soft. I'm worried the water's getting under there, so could you send someone before it gets worse?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, 3B here. The dishwasher leaks every time we run it, and now the floor in front of it's getting kinda soft. I'm worried water's getting under there, so can you send someone before it gets worse?"
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is the tenant in 3B. The dishwasher has been leaking each time we use it, and the floor in front of it is now beginning to feel somewhat soft. I am concerned that water is getting underneath, so could you please send someone before the problem worsens?"
+        }
+      ],
+      "note": "**it's me from 3B** 는 전화로 자기가 어디 사는 사람인지 밝힐 때 씁니다. **every time we run it** 의 run 은 기계를 돌리다 라는 뜻이고, **before it gets worse** 는 더 나빠지기 전에 라는 말입니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "우리 개가 문 옆에 앉아서 낑낑대면 누가 데리고 나간다는 걸 알아 버렸어. 그래서 이제는 볼일이 없을 때도 거의 한 시간마다 그래. 우리를 가지고 노는 거 아는데, 어쩌다 한 번은 진짜 급한 거면 어떡해?",
+      "text": "Our dog figured out that if he sits by the door and whines, somebody'll take him out, so now he does it like every hour, even when he doesn't need to go. I know he's just playing us, but what if one time he actually does?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "The dog's figured out that if he sits by the door and whines, someone'll take him out. Now he's doing it like every hour, even when he doesn't have to go. I know he's just playing us, but what if one time he really does?"
+        },
+        {
+          "style": "formal",
+          "text": "Our dog has learned that if he sits by the door and whines, someone will take him outside, so he now does so approximately every hour, even when he does not need to go. I realize he is simply manipulating us, but what if on one occasion he genuinely does need to?"
+        }
+      ],
+      "note": "**playing us** 는 우리를 갖고 놀다, 우리를 이용해 먹다 라는 뜻입니다. **figured out** 은 어떻게 하면 되는지 알아내다 라는 말이고, **what if** 는 ~하면 어떡해 하고 걱정할 때 씁니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal 의 an event for my cousin 은 사촌을 위한 행사라는 뜻이 되어 text 의 my cousin's thing 과 어긋나므로 my cousin's event 로 고침",
+    "2번 한국어 너는 그거 괜찮아? 가 번역투라 너는 그렇게 해도 돼? 로 고침",
+    "3번 한국어 이미 가기 싫어져 버렸어 는 talked myself out of it 의 스스로 핑계를 대며 마음을 바꿨다는 뜻이 빠져서 이런저런 핑계로 안 가기로 해 버렸어 로 고침",
+    "4번 formal 의 this is the resident of 3B 는 원어민이 자기를 소개할 때 쓰지 않는 말이라 this is the tenant in 3B 로 고침"
+  ]
+}

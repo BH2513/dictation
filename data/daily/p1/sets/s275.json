@@ -1,0 +1,114 @@
+{
+  "setId": "s275",
+  "videoId": "daily-s275",
+  "title": "Set 275",
+  "madeAt": "2026-11-11",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "걔가 처음 만나면 좀 낯을 가리는데, 일단 친해지면 진짜 웃겨. 간호사라서 근무 시간이 말도 안 되게 길긴 한데, 너희 둘이 잘 맞으면 너한테 시간은 낼 거야.",
+      "text": "So she's kind of shy when you first meet her, but once she warms up she's really funny. She's a nurse, so she works crazy hours, but if you guys hit it off, I think she'd make time for you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Shy at first, but super funny once she warms up. She's a nurse, so her hours are nuts, but if you two click, I bet she'll make time."
+        },
+        {
+          "style": "formal",
+          "text": "She can be rather shy when you first meet her, but once she becomes comfortable, she is very funny. She is a nurse, so she works extremely long hours, but if the two of you get along well, I believe she would make time for you."
+        }
+      ],
+      "note": "**warms up** 는 낯을 가리던 사람이 마음을 열고 편해진다는 뜻입니다. **hit it off** 는 처음 만난 사람끼리 바로 죽이 잘 맞는다는 말입니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "어머, 진짜 오랜만이다! 아직 같은 데 다녀, 아니면 드디어 그만뒀어? 저번에 듣기로는 다시 학교 다닐까 고민 중이라며.",
+      "text": "Oh my god, it's been forever! Are you still at the same place, or did you finally quit? Last I heard, you were thinking about going back to school.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No way, it's been ages! Same job, or'd you finally quit? I thought you were gonna go back to school?"
+        },
+        {
+          "style": "formal",
+          "text": "It has been such a long time! Are you still working at the same place, or did you eventually leave? The last I heard, you were considering returning to school."
+        }
+      ],
+      "note": "**it's been forever** 는 정말 오랜만이라는 뜻으로, 반가운 사람을 만났을 때 바로 꺼내는 말입니다. **Last I heard** 는 내가 마지막으로 들은 소식으로는 이라는 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "요즘 매일 새벽 네 시쯤에 깨는데 다시 잠이 안 와서, 알람 울릴 때까지 그냥 누워 있어. 커피를 끊으면 나아질 줄 알았는데, 2주가 지났는데도 달라진 게 하나도 없어.",
+      "text": "I keep waking up at like four every morning, and I can't get back to sleep, so I just lie there till my alarm goes off. I thought cutting out coffee would help, but it's been two weeks and nothing's changed.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every morning I'm up at like four and can't fall back asleep, so I just lie there till my alarm goes off. I figured quitting coffee would help, but it's been two weeks and nothing's different."
+        },
+        {
+          "style": "formal",
+          "text": "I have been waking up at around four every morning, and I am unable to fall back asleep, so I simply lie there until my alarm goes off. I thought that giving up coffee would help, but it has been two weeks and nothing has changed."
+        }
+      ],
+      "note": "**cutting out coffee** 의 cut out 은 먹던 것을 끊는다는 뜻입니다. **get back to sleep** 은 깬 뒤에 다시 잠든다는 말입니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이번엔 정크푸드 안 먹고 거의 2주를 버텼어. 나한테는 신기록이야. 근데 룸메이트가 피자를 한 판 통째로 사 왔길래 딱 한 조각만 먹자고 했는데, 결국 반 판을 먹어 버렸어. 그래서 월요일부터 다시 시작이야. 또.",
+      "text": "I made it almost two weeks without junk food this time, which is a record for me. But then my roommate brought home a whole pizza, and I told myself I'd just have one slice, and I ended up eating half of it. So I'm starting over on Monday, again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Almost two weeks with no junk food this time, that's a record for me. Then my roommate brought home a whole pizza, I said I'd just have one slice, and I ate like half of it. So yeah, starting over Monday. Again."
+        },
+        {
+          "style": "formal",
+          "text": "This time I managed almost two weeks without junk food, which is a record for me. However, my roommate then brought home an entire pizza, and although I told myself I would have only one slice, I ended up eating half of it. So I will be starting over on Monday, once again."
+        }
+      ],
+      "note": "**made it almost two weeks** 의 make it 은 그 기간을 버텨 냈다는 뜻입니다. **ended up** 은 의도와 달리 결국 그렇게 됐다는 말입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "부모님 가까이로 이사를 갈까 말까 결정을 못 하겠어. 부모님이 점점 나이 드시니까 무슨 일 생기면 한 10분 거리에 있고 싶거든. 근데 친구들이 다 여기 있어서, 가면 외톨이가 될까 봐 좀 무서워.",
+      "text": "I can't decide if I should move closer to my parents. They're getting older, and if something happened, I'd want to be like ten minutes away. But all my friends are here, and I'm kind of scared I'd end up lonely.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Should I move closer to my parents? I can't decide. They're getting older, and if something happened, I'd wanna be like ten minutes away. But all my friends are here, and I'm kinda scared I'd end up lonely."
+        },
+        {
+          "style": "formal",
+          "text": "I cannot decide whether I should move closer to my parents. They are getting older, and if something were to happen, I would want to be about ten minutes away. However, all of my friends are here, and I am somewhat afraid that I would end up feeling lonely."
+        }
+      ],
+      "note": "**They're getting older** 는 부모님이 점점 연세가 드신다는 뜻으로 자주 쓰는 말입니다. **end up lonely** 는 결국 외로워지게 된다는 뜻입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 앞부분(She's kind of shy ...)이 거의 같아서 더 짧고 축약된 말로 바꿈",
+    "2번 casual 의 뒷문장이 text 와 글자까지 똑같아서 더 짧은 구어로 바꿈",
+    "2번 한국어 '마지막으로 들었을 때는 ... 했잖아' 가 번역투라 '저번에 듣기로는 ... 고민 중이라며' 로 바꿈"
+  ]
+}

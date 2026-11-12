@@ -1,0 +1,115 @@
+{
+  "setId": "s278",
+  "videoId": "daily-s278",
+  "title": "Set 278",
+  "madeAt": "2026-11-12",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "잘 되긴 하는데, 미리 솔직하게 말씀드리면 배터리가 이제 충전이 거의 안 돼서 계속 꽂아 두고 쓰셔야 해요. 그래서 40달러만 받는 거예요.",
+      "text": "It works fine, I just want to be upfront that the battery doesn't really hold a charge anymore, so you'd have to keep it plugged in. That's why I'm only asking forty bucks for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Works fine, but heads up, the battery's pretty much dead, so it's gotta stay plugged in. That's why it's only forty bucks."
+        },
+        {
+          "style": "formal",
+          "text": "It functions properly, but I should be honest that the battery no longer holds a charge, so it would need to remain plugged in. That is why I am asking only forty dollars for it."
+        }
+      ],
+      "note": "**be upfront** 는 숨기지 않고 미리 털어놓는다는 뜻이에요. **hold a charge** 는 배터리가 충전된 상태를 유지한다는 말이에요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나도 그러고 싶은데, 이번 주는 매일 밤 일이 있었어. 집에서 조용히 쉬는 저녁이 하루라도 없으면 진짜 돌아버릴 것 같아. 다음 주말에 하면 안 될까?",
+      "text": "I wish I could, but I've had something going on every night this week, and if I don't get one quiet evening at home I'm going to lose it. Can we do it next weekend instead?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, I'd love to, but I've been out every night this week, and if I don't get a night in I'm gonna lose it. Next weekend?"
+        },
+        {
+          "style": "formal",
+          "text": "I would like to, but I have had commitments every evening this week, and if I do not get one quiet evening at home, I will be completely worn out. Would it be possible to do it next weekend instead?"
+        }
+      ],
+      "note": "**lose it** 은 참다 참다 폭발하거나 정신이 나갈 것 같다는 말이에요. **something going on** 은 일정이나 할 일이 있다는 뜻이에요.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "솔직히 별거 안 했어. 차고 정리하려고 했는데 토요일 내내 비가 와서 그냥 집에 있으면서 네가 말해 준 그 드라마를 한 여섯 편쯤 봤어. 이제 네가 왜 그렇게 입에 달고 살았는지 좀 알겠더라.",
+      "text": "Honestly, not much. I was going to clean out the garage, but it rained all Saturday, so I just stayed in and watched like six episodes of that show you told me about. And now I kind of get why you wouldn't shut up about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Not much, really. Was gonna clean the garage, but it rained all Saturday, so I stayed in and binged like six episodes of that show you mentioned. Now I kinda get why you kept going on about it."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, not a great deal. I had planned to clean out the garage, but it rained all of Saturday, so I stayed home and watched about six episodes of the show you recommended. I now understand why you spoke about it so often."
+        }
+      ],
+      "note": "**wouldn't shut up about it** 은 그 얘기를 멈추지 않았다, 입에 달고 살았다는 뜻이에요. **kind of get** 은 좀 이해가 간다는 말이에요.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우유랑 빵 사러 들어갔는데 어쩌다 보니 40달러를 썼어. 재밌는 걸 산 것도 아니고 그냥 늘 사는 것들이었는데, 계속 이 생각만 들더라. 언제 이렇게 다 비싸졌지?",
+      "text": "I went in for milk and bread and somehow spent forty dollars. I didn't even get anything fun, it was just the normal stuff, and I kept thinking, when did all this get so expensive?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ran in for milk and bread and somehow dropped forty bucks. Nothing fun either, just regular stuff, and I'm like, since when is everything this pricey?"
+        },
+        {
+          "style": "formal",
+          "text": "I went to the store for milk and bread and somehow spent forty dollars. I did not buy anything special, only the usual items, and I kept wondering when everything had become so expensive."
+        }
+      ],
+      "note": "**somehow** 는 나도 모르게, 어쩌다 보니라는 뜻이에요. casual 의 **dropped forty bucks** 는 40달러를 썼다는 말이에요.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "윗집 애들이 매일 밤 열 시쯤까지 왔다 갔다 뛰어다니는데, 그래, 애들이니까 이해는 해. 근데 난 일찍 출근하니까, 걔네가 겨우 멈출 때쯤이면 신경이 너무 곤두서서 잠이 안 와.",
+      "text": "The kids upstairs run back and forth every night until like ten, and I get it, they're kids. But I work early, so by the time they finally stop, I'm too wound up to fall asleep.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Those kids upstairs are running around every night till like ten, and yeah, they're kids. But I'm up early, so when they finally quit, I'm way too wired to sleep."
+        },
+        {
+          "style": "formal",
+          "text": "The children who live upstairs run back and forth every evening until around ten, and I understand that they are children. However, I start work early, so by the time they stop, I am too restless to fall asleep."
+        }
+      ],
+      "note": "**wound up** 은 긴장하거나 흥분해서 가라앉지 않는 상태예요. **I get it** 은 이해한다, 알겠다는 뜻이에요.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: Works great 는 text 의 works fine 보다 뜻이 세져서 Works fine 으로 맞춤",
+    "2번 casual: Wish I could 가 text 첫머리와 거의 같아 I'd love to 로 바꾸고 더 줄인 구어로 고침",
+    "2번 formal: lose it 의 세기가 빠지고 뜻이 눅어져서 지칠 대로 지칠 것이라는 말을 되살림",
+    "5번 casual: The upstairs kids run 이 text 첫머리와 겹쳐 Those kids upstairs are running 으로 바꿈"
+  ]
+}

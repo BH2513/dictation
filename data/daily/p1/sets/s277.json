@@ -1,0 +1,115 @@
+{
+  "setId": "s277",
+  "videoId": "daily-s277",
+  "title": "Set 277",
+  "madeAt": "2026-11-12",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "다들 좋다고 계속 얘기하는 에어프라이어 하나 샀는데, 한두 번 썼나 몰라. 조리대를 반이나 차지하고 있어서 토스트 구울 때마다 괜히 샀다 싶어서 좀 짜증 나.",
+      "text": "I bought one of those air fryers everybody keeps talking about, and I've used it maybe twice. It takes up half the counter, so every time I make toast I'm kind of annoyed at myself.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got one of those air fryers everyone's always going on about, and I've maybe used it twice. It hogs half the counter, so whenever I make toast I'm kinda mad at myself."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased one of the air fryers that everyone has been talking about, and I have used it perhaps twice. It occupies half of the counter, so each time I make toast I feel somewhat annoyed with myself."
+        }
+      ],
+      "note": "**takes up** 은 자리를 차지한다는 뜻이에요. casual 의 **hogs** 는 혼자 독차지한다는 느낌이 더 강해요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "네가 말해 준 태국 음식점 가 봤어. 국수는 네 말이 맞더라, 진짜 맛있었어. 근데 음식이 다 얼마나 매운지는 말 안 해 줬잖아. 두 입째에 벌써 눈물 났어.",
+      "text": "We went to that Thai place you told me about. You were right about the noodles, they were amazing, but you didn't mention how spicy everything is. I was crying by the second bite.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tried that Thai place you mentioned. You totally called it on the noodles, they were amazing, but you never said how spicy everything is. Second bite and I was crying."
+        },
+        {
+          "style": "formal",
+          "text": "We visited the Thai restaurant you recommended. You were correct about the noodles; they were excellent. However, you did not mention how spicy everything is. I was in tears by the second bite."
+        }
+      ],
+      "note": "**You were right about** 은 그건 네 말이 맞았다는 뜻이에요. casual 의 **called it** 은 미리 딱 맞혔다는 말이에요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "봄에 이번엔 진짜 배우겠다 싶어서 기타를 샀고, 한 달쯤은 매일 밤 연습했어. 근데 손가락이 아프기 시작하니까 자꾸 미루게 되더라. 지금은 구석에 세워져 있는데 볼 때마다 괜히 찔려.",
+      "text": "I bought a guitar back in spring because I was sure I'd finally learn, and I practiced every night for like a month. But then my fingers started hurting, so I kept putting it off, and now it's just sitting in the corner making me feel guilty.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got a guitar in spring, was sure I'd finally learn. Practiced every night for like a month, then my fingers started killing me, so I kept putting it off. Now it just sits there guilt-tripping me."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar in the spring because I was certain I would finally learn to play, and I practiced every evening for about a month. However, my fingers began to hurt, so I kept postponing my practice, and now the guitar simply sits in the corner and makes me feel guilty."
+        }
+      ],
+      "note": "**kept putting it off** 는 계속 미뤘다는 뜻이에요. **put off** 가 미루다예요.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "내 폰이 통화하다가 화면이 까맣게 꺼지는 일이 자꾸 생겨. 통화는 계속 연결돼 있는데 말이야. 그래서 내가 끊을 수가 없고, 상대방이 먼저 끊을 때까지 기다려야 돼.",
+      "text": "My phone keeps doing this thing where the screen goes black in the middle of a call, but the call's still going. So I can't hang up, and I have to wait for the other person to hang up first.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My phone's got this weird thing where the screen just goes black mid-call, but the call's still on. So I can't hang up, I've gotta wait for the other person to do it first."
+        },
+        {
+          "style": "formal",
+          "text": "My phone has a recurring problem in which the screen turns black during a call, although the call continues. As a result, I am unable to hang up and must wait for the other person to end the call first."
+        }
+      ],
+      "note": "**keeps doing this thing where** 는 자꾸 이런 증상이 있다고 말할 때 써요. **hang up** 은 전화를 끊다예요.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "안녕하세요, 3B호 사는 사람인데요. 일요일부터 난방이 안 돼요. 사람 보내 주신다고 하신 건 아는데 아직 아무도 안 왔어요. 밤에 많이 추워져서 주말 전에 와 주시면 정말 감사하겠습니다.",
+      "text": "Hi, it's the guy in 3B. The heat's been out since Sunday, and I know you said you'd send somebody, but nobody's come yet. It's getting really cold at night, so if they could come before the weekend, I'd really appreciate it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, 3B here. Heat's been out since Sunday, and I know you said you'd send someone, but nobody's shown up yet. It's getting really cold at night, so if they could come before the weekend, that'd be awesome."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is the tenant in unit 3B. The heating has not been working since Sunday, and I understand you said you would send someone, but no one has arrived yet. It is becoming very cold at night, so I would be most grateful if someone could come before the weekend."
+        }
+      ],
+      "note": "**The heat's been out** 은 난방이 나가서 안 된다는 말이에요. **I'd really appreciate it** 은 정중하게 부탁할 때 써요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어: '한 두 번'을 '한두 번'으로 고치고, '나 자신한테 좀 짜증이 나'는 번역투라 '괜히 샀다 싶어서 좀 짜증 나'로 바꿈",
+    "3번 casual: 앞부분 이후가 text와 거의 같아서 더 짧고 축약된 구어로 새로 씀",
+    "3번 formal: 'kept postponing it'의 it이 기타인지 연습인지 헷갈려 'kept postponing my practice'로 고침",
+    "5번 formal: 'you intended to send someone'은 보내 주겠다고 말했다는 뜻이 약해져 'you said you would send someone'으로 고침"
+  ]
+}

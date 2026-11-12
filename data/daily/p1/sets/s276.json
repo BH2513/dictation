@@ -1,0 +1,113 @@
+{
+  "setId": "s276",
+  "videoId": "daily-s276",
+  "title": "Set 276",
+  "madeAt": "2026-11-12",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아니야 엄마, 나 괜찮아. 회사 일 좀 끝내느라 늦게까지 안 자서 목소리가 피곤하게 들리는 것뿐이야. 밥도 잘 먹고 잠도 잘 자, 진짜야. 정말 무슨 일 있으면 내가 엄마한테 전화할 거 알잖아.",
+      "text": "No, Mom, I'm fine, I just sound tired because I was up late finishing something for work. I'm eating, I'm sleeping, I promise. If something was actually wrong, you know I'd call you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Mom, I'm fine, really. I'm just tired, I stayed up late finishing a work thing. I'm eating and sleeping, I promise. If something was wrong, you know I'd call."
+        },
+        {
+          "style": "formal",
+          "text": "No, Mother, I am fine. I only sound tired because I stayed up late finishing something for work. I am eating and sleeping properly, I promise. If anything were actually wrong, you know I would call you."
+        }
+      ],
+      "note": "**I was up late** 는 늦게까지 안 자고 깨어 있었다는 뜻이에요. 끝에 **I promise** 를 붙이면 진짜야, 약속해 하고 상대를 안심시키는 말이 돼요.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "토요일에 회사 사람들이랑 농구를 했는데, 할 때는 진짜 날아갈 것 같았거든. 근데 일요일부터 온몸이 쑤셔. 난간 안 잡으면 계단도 못 내려가서 다음 주는 못 갈 것 같아.",
+      "text": "I played basketball with some guys from work on Saturday, and I felt great while we were playing, but I've been sore all over since Sunday. I can't even go down the stairs without holding the railing, so I don't think I'm going next week.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Played basketball with some work guys Saturday. Felt awesome during the game, but I've been sore everywhere since Sunday. Can't even do stairs without grabbing the railing, so I'm probably skipping next week."
+        },
+        {
+          "style": "formal",
+          "text": "I played basketball with some colleagues on Saturday, and I felt wonderful while we were playing, but I have been sore all over since Sunday. I cannot even go down the stairs without holding the railing, so I do not think I will attend next week."
+        }
+      ],
+      "note": "**sore all over** 는 운동하고 나서 온몸이 쑤시고 뻐근하다는 뜻이에요. **guys from work** 는 회사 사람들을 편하게 부르는 말이에요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "어제 배송 완료라고 나오는데 여기 없어. 이웃들한테도 벌써 물어봤고. 그냥 다시 주문하면 되긴 하는데, 생일 선물이고 파티가 토요일이라서 내일까지 안 오면 진짜 어떡해야 할지 모르겠어.",
+      "text": "It says it was delivered yesterday, but it's not here, and I already asked the neighbors. I'd just order it again, but it's a birthday present and the party's on Saturday, so if it doesn't show up by tomorrow, I don't know what I'm going to do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking says it got delivered yesterday, but nope, not here, and I already checked with the neighbors. I'd just order another one, but it's a birthday present and the party's Saturday. If it's not here by tomorrow, I have no idea what I'm gonna do."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking indicates that it was delivered yesterday, but it has not arrived, and I have already asked the neighbors. I would simply order it again, but it is a birthday present and the party is on Saturday, so if it does not arrive by tomorrow, I do not know what I will do."
+        }
+      ],
+      "note": "**It says** 는 화면이나 안내문에 그렇게 나와 있다는 뜻이에요. **show up** 은 기다리던 물건이나 사람이 도착하다, 나타나다라는 뜻으로 자주 써요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "자, 우리 한 30분째 화면만 넘기고 있는데 내가 고른 건 네가 다 싫다고 했잖아. 그러니까 이번엔 네가 골라. 뭘 고르든 불평 안 할게, 약속해.",
+      "text": "Okay, we've been scrolling for like half an hour, and you've said no to everything I picked. So you choose, and whatever it is, I promise I won't complain.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, it's been like half an hour of scrolling and you've shot down everything I picked. Your turn to pick, and whatever it is, I won't complain. Promise."
+        },
+        {
+          "style": "formal",
+          "text": "We have been scrolling for about half an hour now, and you have declined everything I have chosen. Please make the choice yourself, and whatever you select, I promise I will not complain."
+        }
+      ],
+      "note": "**said no to** 는 무엇을 싫다고 하다, 거절하다라는 뜻이에요. casual 문장의 **shot down** 은 남이 낸 의견을 단칼에 퇴짜 놓았다는 느낌이에요.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그래서 드디어 허리 검사받으러 갔어. 남동생 소파 옮기는 거 도와준 뒤로 계속 아팠거든. 별거 아니래, 의사가 그냥 어디 좀 삐끗한 거니까 2주 정도 무리하지 말래. 솔직히 훨씬 심할 줄 알았어.",
+      "text": "So I finally went to get my back checked, because it's been bothering me ever since I helped my brother move his couch. It's nothing serious, the doctor just said I pulled something and I need to take it easy for a couple weeks. Honestly, I was expecting way worse.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally got my back looked at. It's been bugging me ever since I helped my brother move his couch. Turns out it's nothing serious, I just pulled something and gotta take it easy for a couple weeks. Honestly, I figured it'd be way worse."
+        },
+        {
+          "style": "formal",
+          "text": "I finally went to have my back examined, because it has been troubling me ever since I helped my brother move his couch. It is nothing serious. The doctor said I strained a muscle and need to rest for a couple of weeks. To be honest, I was expecting something much worse."
+        }
+      ],
+      "note": "**pulled something** 은 근육 같은 데를 삐끗했다는 뜻이에요. **take it easy** 는 무리하지 않고 쉬엄쉬엄 지낸다는 말이에요.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal 의 I felt very well 은 몸 상태가 좋다는 뜻으로 읽혀 어색해서 I felt wonderful 로 고침",
+    "3번 casual 의 reorder 는 원어민이 이 자리에서 잘 안 쓰는 말이라 order it again 으로 고침"
+  ]
+}

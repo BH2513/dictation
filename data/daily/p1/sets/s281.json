@@ -1,0 +1,114 @@
+{
+  "setId": "s281",
+  "videoId": "daily-s281",
+  "title": "Set 281",
+  "madeAt": "2026-11-13",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "학교에서 온 현장학습 메일 봤어? 금요일까지 돈을 내래. 근데 엠마는 아예 가기 싫다고 계속 그래서, 억지로라도 보내야 할지 그냥 집에 있게 둬야 할지 모르겠어.",
+      "text": "Did you see that email from the school about the field trip? They want the money by Friday, but Emma keeps saying she doesn't even want to go, so I don't know if I should push her or just let her stay home.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, you get the school's field trip email? Money's due Friday, but Emma keeps saying she doesn't even wanna go, so I dunno if I should push her or just let her stay home."
+        },
+        {
+          "style": "formal",
+          "text": "Did you receive the email from the school regarding the field trip? They would like the payment by Friday; however, Emma continues to say that she does not wish to attend, so I am unsure whether I should encourage her or simply allow her to stay home."
+        }
+      ],
+      "note": "**push her** 는 하기 싫어하는 아이를 밀어붙여 시키다는 뜻이에요. **keeps saying** 은 같은 말을 자꾸 한다는 느낌을 줍니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이 부츠 정말 괜히 샀어. 가게에서는 예뻐 보였거든. 근데 두 번 신었는데 두 번 다 점심때쯤 되니까 발이 아파 죽겠더라. 밖에서 이미 신어서 반품도 못 해.",
+      "text": "I really shouldn't have bought these boots. They looked great in the store, but I've worn them twice, and both times my feet were killing me by lunch. And I can't even take them back, because I already wore them outside.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, buying these boots was a mistake. They looked great in the store, but I've worn 'em twice and both times my feet were killing me by lunch. And I can't return 'em, 'cause I already wore 'em outside."
+        },
+        {
+          "style": "formal",
+          "text": "I truly should not have purchased these boots. They looked very nice in the store, but I have worn them twice, and on both occasions my feet were in considerable pain by lunchtime. Moreover, I am unable to return them, as I have already worn them outdoors."
+        }
+      ],
+      "note": "**my feet were killing me** 는 발이 너무 아프다는 구어 표현이에요. **shouldn't have bought** 는 사지 말았어야 했다는 후회를 나타냅니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그러니까 내가 개 사료를 시켰는데, 그 대신 고양이 모래를 엄청 큰 상자로 보내 준 거야. 전화했더니 제대로 된 걸 다시 보내 줄 테니까 고양이 모래는 그냥 가지라는 거야. 우리 집엔 고양이도 없는데!",
+      "text": "So I ordered dog food, and they brought me this giant box of cat litter instead. I called them, and they said they'd send the right one and I could just keep the litter, and we don't even have a cat!",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, so I order dog food, right, and they send me this huge box of cat litter. I call 'em, they say they'll send the right one and I can keep the litter. We don't even have a cat!"
+        },
+        {
+          "style": "formal",
+          "text": "I placed an order for dog food, and I received a very large box of cat litter instead. When I contacted the company, they said they would send the correct item and that I was welcome to keep the litter, although we do not even have a cat!"
+        }
+      ],
+      "note": "**instead** 는 원래 것 대신 엉뚱한 것이 왔을 때 씁니다. **we don't even have a cat** 의 even 은 심지어 고양이도 없다는 황당함을 살려 줍니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "저기, 또 연락드려서 죄송한데요, 부엌 싱크대가 아직도 새요. 밑에 그릇을 받쳐 두고 있는데 밤새 가득 차요. 그래서 이번 주에 누가 와서 좀 봐 주시면 정말 좋겠어요.",
+      "text": "Hey, sorry to bother you again, but the kitchen sink's still leaking. I've been keeping a bowl under it, but it fills up overnight, so if somebody could come take a look this week, that'd be great.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hi, sorry, me again. Sink in the kitchen's still leaking. I've got a bowl under it, but it's full by morning, so if someone could swing by this week, that'd be awesome."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I apologize for contacting you again, but the kitchen sink is still leaking. I have been keeping a bowl beneath it, but it fills up overnight, so I would greatly appreciate it if someone could come and inspect it this week."
+        }
+      ],
+      "note": "**sorry to bother you again** 은 또 연락해서 미안하다고 부드럽게 시작하는 말이에요. **come take a look** 은 와서 한번 봐 달라는 뜻입니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "빨리 자라고 옆에 같이 누워 있었는데도 한 시간 반은 걸렸어. 잠든 줄 알 때마다 또 질문을 하더라고. 겨우 잠들고 나니까 나도 너무 지쳐서 일어나서 설거지할 힘도 없었어.",
+      "text": "I lay down with him so he'd fall asleep faster, and it still took like an hour and a half, because every time I thought he was out, he'd ask me another question. By the time he finally fell asleep, I was too tired to even get up and do the dishes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Lay down with him so he'd conk out faster, and it still took like an hour and a half, 'cause every time I thought he was out, he'd ask another question. When he finally dropped off, I was too wiped to even get up and do the dishes."
+        },
+        {
+          "style": "formal",
+          "text": "I lay down beside him so that he would fall asleep more quickly, yet it still took approximately an hour and a half, because each time I believed he was asleep, he would ask me another question. By the time he finally fell asleep, I was too exhausted even to get up and wash the dishes."
+        }
+      ],
+      "note": "**he was out** 은 완전히 곯아떨어졌다는 뜻이에요. **too tired to even get up** 은 너무 피곤해서 일어나지도 못할 정도라는 말입니다.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어: '예뻐 보였는데, 두 번 신었는데' 처럼 '-는데'가 겹쳐 어색해서 자연스럽게 고침",
+    "5번 casual: 'Laid down'은 문법상 틀린 형태라 학습용으로 'Lay down'으로 고침",
+    "5번 한국어: '마침내'는 번역투라 '겨우 잠들고 나니까'로 고침"
+  ]
+}

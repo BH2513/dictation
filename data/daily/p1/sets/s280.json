@@ -1,0 +1,114 @@
+{
+  "setId": "s280",
+  "videoId": "daily-s280",
+  "title": "Set 280",
+  "madeAt": "2026-11-13",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "설탕 끊기 진짜 잘하고 있었는데, 회사 동료 생일이 있었거든. 컵케이크 하나 먹는다고 안 죽겠지 싶었지. 근데 두 개를 먹었고, 주말쯤엔 아무 일 없었다는 듯이 차 안에서 쿠키를 먹고 있더라.",
+      "text": "I was doing so well with the no sugar thing, but then it was my coworker's birthday, and I figured one cupcake wasn't going to kill me. Then I had two, and by the weekend I was eating cookies in the car like nothing ever happened.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay so the no sugar thing was going great, till my coworker's birthday. Figured one cupcake wouldn't kill me. Then I had two, and by the weekend I'm eating cookies in the car like nothing happened."
+        },
+        {
+          "style": "formal",
+          "text": "I had been making excellent progress with avoiding sugar; however, it was then my colleague's birthday, and I assumed that one cupcake would do no harm. I then had a second, and by the weekend I was eating cookies in my car as though nothing had ever happened."
+        }
+      ],
+      "note": "**wasn't going to kill me** 는 그 정도로는 큰일 안 난다는 뜻으로 가볍게 핑계 댈 때 씁니다. **like nothing ever happened** 는 아무 일 없었다는 듯이라는 말입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "잠깐, 너 아직도 형이랑 같이 살아? 저번에 봤을 때 집 구하면 바로 나간다고 했잖아. 근데 난 솔직히 그냥 하는 말인 줄 알았어.",
+      "text": "Wait, are you still living with your brother? Last time I saw you, you said you'd move out as soon as you found a place, but I kind of figured that was just talk.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hold on, you're still at your brother's? Last time you said you'd move out the second you found a place, but I kinda figured you were just saying that."
+        },
+        {
+          "style": "formal",
+          "text": "Just a moment, are you still living with your brother? When we last met, you said you would move out as soon as you found a place, although I suspected you were not entirely serious."
+        }
+      ],
+      "note": "**that was just talk** 는 말만 그렇지 실제로 할 생각은 없다는 뜻입니다. **as soon as** 는 ~하자마자, casual 의 **the second** 도 같은 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "언니가 결혼식 들러리 서 달라고 했는데, 나도 진짜 하고 싶거든. 근데 플로리다에서 해서 비행기에 호텔에 드레스까지 하면 천 달러 정도 들어. 거절하는 사람이 되긴 싫은데 지금은 솔직히 그 돈이 없어. 모르겠다, 그냥 가고 돈은 나중에 어떻게든 할까?",
+      "text": "My sister asked me to be in her wedding, and I really want to, but it's in Florida, and between the flight and the hotel and the dress, it's like a thousand dollars. I don't want to be the one who says no, but I can't really afford it right now. I don't know, maybe I just go and figure out the money later?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So my sister wants me in her wedding, and I really wanna do it, but it's in Florida. Flight, hotel, dress, that's like a thousand bucks. I don't wanna be the one saying no, but I kinda can't afford it right now. I dunno, maybe I just go and deal with the money later?"
+        },
+        {
+          "style": "formal",
+          "text": "My sister has asked me to be in her wedding, and I would very much like to, but it is in Florida, and the flight, the hotel, and the dress together come to approximately one thousand dollars. I would prefer not to be the one who declines, but I cannot really afford it at the moment. I am not sure. Perhaps I should simply attend and work out the finances afterward?"
+        }
+      ],
+      "note": "**be in her wedding** 은 하객이 아니라 들러리처럼 결혼식에 직접 서는 것을 말합니다. **figure out the money later** 는 돈 문제는 나중에 어떻게든 해결한다는 뜻입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "처음엔 좀 말이 없는데 기분 나빠하지 마. 누구한테나 다 그래. 고등학교 화학 선생님이고, 요리에 푹 빠져 있고, 네가 3주 전에 한 말도 기억하는 그런 사람이야. 기회만 줘 보면 너도 진짜 좋아할 거야.",
+      "text": "Okay, so he's a little quiet at first, but don't take it personally, he's like that with everybody. He teaches high school chemistry, he's really into cooking, and he's the kind of guy who remembers something you said three weeks ago. I think you'd really like him if you give him a chance.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So yeah, he's kinda quiet at first, but don't take it personally, he's like that with everyone. He teaches high school chem, he's super into cooking, and he's the guy who remembers stuff you said three weeks ago. Give him a chance, I think you'd really like him."
+        },
+        {
+          "style": "formal",
+          "text": "He can be somewhat reserved at first, but please do not take it personally; he is that way with everyone. He teaches chemistry at a high school, he is very interested in cooking, and he is the kind of person who remembers something you said three weeks earlier. I believe you would like him very much if you gave him a chance."
+        }
+      ],
+      "note": "**don't take it personally** 는 너 때문에 그러는 게 아니니 마음에 두지 말라는 뜻입니다. **really into** 는 무엇에 푹 빠져 있다는 말입니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "우리 개가 문 앞에 앉아서 낑낑대면 누군가 데리고 나간다는 걸 알아챘어. 그래서 이제는 밤에 한 여섯 번은 그래. 볼일이 급한 것도 아니고 그냥 마당 냄새 맡고 싶은 거야. 근데 우린 매번 넘어가. 혹시 이번엔 진짜 급한 거면 어떡해?",
+      "text": "Our dog figured out that if he sits by the door and whines, one of us will take him out. So now he does it like six times a night, and he doesn't even need to go, he just wants to sniff around the yard. But we keep falling for it, because what if this time he actually has to go?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the dog's figured out if he sits by the door and whines, one of us'll take him out. Now he's doing it like six times a night, and he doesn't even have to go, he just wants to sniff around the yard. But we fall for it every time, because what if this time he really does?"
+        },
+        {
+          "style": "formal",
+          "text": "Our dog has learned that if he sits by the door and whines, one of us will take him outside. He now does so approximately six times each night, although he does not actually need to go; he simply wishes to explore the yard. Nevertheless, we continue to give in, because it is always possible that this time he genuinely needs to go."
+        }
+      ],
+      "note": "**fall for it** 은 알면서도 또 속아 넘어간다는 뜻입니다. **take him out** 은 개를 데리고 나가 볼일을 보게 한다는 말입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 'however, then it was my colleague's birthday' 는 however 와 then 이 겹쳐 어색해서 'however, it was then my colleague's birthday' 로 고침",
+    "2번 formal 의 'Excuse me' 는 놀라서 되묻는 자리에서 쓰면 따지는 말투로 들려 'Just a moment' 로 고침",
+    "5번 note 의 fall for it 설명을 '속는 줄 알면서도'에서 '알면서도 속아 넘어간다'로 다듬음 (fall for it 은 속는다는 뜻이 중심)"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "setId": "s282",
+  "videoId": "daily-s282",
+  "title": "Set 282",
+  "madeAt": "2026-11-14",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아 진짜, 5분만 앉아 있으면 누가 꼭 만나는 사람 있냐고 물어보는 거야. 이모는 모두 있는 앞에서 왜 아직도 월세 사냐고 묻기까지 했어. 그래서 일어날 핑계 만들려고 계속 사람들한테 마실 거 갖다줄까 하고 물어봤어.",
+      "text": "Oh my god, I couldn't sit down for five minutes without somebody asking if I'm seeing anyone. My aunt even asked why I'm still renting, in front of everybody, so I just kept offering to get people drinks so I'd have an excuse to get up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Seriously, every five minutes somebody's asking if I'm seeing anyone. My aunt even asked why I'm still renting, right in front of everyone, so I just kept offering to grab people drinks so I'd have an excuse to get up."
+        },
+        {
+          "style": "formal",
+          "text": "Honestly, I could not sit down for five minutes without someone asking whether I was seeing anyone. My aunt even asked, in front of everyone, why I was still renting, so I kept offering to get people drinks in order to have a reason to stand up."
+        }
+      ],
+      "note": "**seeing anyone** 은 사귀는 사람이 있다는 뜻이에요. **have an excuse to** 는 ~할 핑계가 있다는 말로, 자리를 뜨고 싶을 때 자주 써요.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "주말 내내 아무것도 안 했는데 후회 하나도 안 해. 빨래라도 해야지 하고 계속 생각만 하다가 그냥 소파에 붙어 있었는데, 솔직히 오늘이 한 달 만에 제일 개운해.",
+      "text": "I didn't do a single thing all weekend, and I'm not even sorry. I kept telling myself I should at least do laundry, but I just stayed on the couch, and honestly, I feel better today than I have in like a month.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did absolutely nothing all weekend and I'm not even sorry. Kept telling myself I should at least do laundry, but I just stayed on the couch, and honestly I feel better today than I have in like a month."
+        },
+        {
+          "style": "formal",
+          "text": "I did not do a single thing all weekend, and I do not regret it. I kept telling myself that I should at least do the laundry, but I remained on the couch, and I feel better today than I have in about a month."
+        }
+      ],
+      "note": "**not even sorry** 는 전혀 후회 안 한다는 뜻으로, 당당하게 말할 때 써요. **than I have in like a month** 는 한 달 만에 제일 그렇다는 말이에요. like 는 대충 그쯤이라는 느낌이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이번 주말에 캠핑 가기로 했는데, 토요일 밤에 천둥번개가 친다고 해서 그냥 당일치기 등산만 하기로 했어. 비만 오는 거면 그래도 갔을 텐데, 번개 치는데 텐트에서 자는 건 싫어.",
+      "text": "We were supposed to go camping this weekend, but they're saying there's a thunderstorm coming Saturday night, so we're just doing a day hike instead. I mean, if it was only rain I'd still go, but I'm not sleeping in a tent with lightning around.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So camping was the plan this weekend, but there's supposed to be a thunderstorm Saturday night, so we're just doing a day hike. If it was just rain I'd still go, but I'm not sleeping in a tent with lightning around."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to go camping this weekend, but a thunderstorm is forecast for Saturday night, so we will take a day hike instead. If it were only rain, I would still go, but I am not willing to sleep in a tent with lightning nearby."
+        }
+      ],
+      "note": "**they're saying** 은 일기예보나 사람들 말로는 ~래, 할 때 써요. **day hike** 는 하루에 다녀오는 등산이에요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "늦어서 미안해, 밤에 충전기 꽂는 걸 깜빡해서 폰이 꺼져 있었고, 그래서 알람이 아예 안 울렸어. 문자라도 했을 텐데, 집에서 뛰어나갈 때까지 몇 시인지도 몰랐어.",
+      "text": "Sorry I'm late, my phone died overnight because I forgot to plug it in, so my alarm never went off. I would've texted you, but I didn't even realize what time it was until I was running out the door.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My bad, my phone died overnight since I forgot to charge it, so my alarm never went off. I would've texted, but I had no clue what time it was till I was running out the door."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for being late. My phone ran out of battery overnight because I forgot to charge it, so my alarm did not go off. I would have sent you a message, but I did not realize what time it was until I was already leaving."
+        }
+      ],
+      "note": "**my phone died** 는 폰 배터리가 다 됐다는 뜻이에요. **went off** 는 알람이 울린다는 말로, never went off 하면 안 울렸다는 뜻이에요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "응, 다 괜찮아요, 아빠. 일이 좀 정신없긴 한데 좋은 쪽으로 정신없는 거라 걱정 안 하셔도 돼요. 그건 그렇고 제 얘기는 이제 됐고, 무릎은 병원 가서 보셨어요?",
+      "text": "Yeah, everything's fine, Dad. Work's been kind of crazy, but it's the good kind of crazy, so don't worry about it. Anyway, enough about me, did you ever get your knee looked at?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Dad, I'm fine, really. Work's kinda nuts, but it's the good kind of nuts, so don't worry. Anyway, enough about me, did you ever get your knee checked out?"
+        },
+        {
+          "style": "formal",
+          "text": "Yes, everything is fine, Dad. Work has been rather hectic, but in a good way, so please do not worry about it. In any case, enough about me. Did you ever have your knee examined?"
+        }
+      ],
+      "note": "**the good kind of crazy** 는 바쁘지만 즐거운 정신없음을 말해요. **enough about me** 는 내 얘기는 그만하고 화제를 상대에게 돌릴 때 써요. **get your knee looked at** 은 무릎을 진찰받다는 뜻이에요.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal: 같은 문장 안에서 was 와 am 이 섞여 있어 시제를 맞춤 (why I was still renting)",
+    "2번 note: I feel better than I have in a month 는 문장에 이 모양 그대로 나오지 않음. 문장에 실제로 있는 than I have in like a month 로 바꿈",
+    "2번 한국어: 미안하지도 않아 는 번역투라 후회 하나도 안 해 로 바꿈",
+    "4번 한국어: 문자라도 보냈어야 했는데 는 I should have 의 뜻임. 영어 I would've texted you 에 맞춰 문자라도 했을 텐데 로 바꿈"
+  ]
+}

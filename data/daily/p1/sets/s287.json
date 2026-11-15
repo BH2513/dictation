@@ -1,0 +1,114 @@
+{
+  "setId": "s287",
+  "videoId": "daily-s287",
+  "title": "Set 287",
+  "madeAt": "2026-11-15",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "금요일 밤까지 퇴근을 못 한다고? 그럼 그냥 토요일 아침에 출발하자. 하루 종일 일하고 나서 깜깜한 밤에 네 시간 운전하는 건 진짜 싫거든.",
+      "text": "So you can't get off work until Friday night? Then why don't we just leave Saturday morning, because I really don't want to be driving four hours in the dark after a full day at work.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wait, you're stuck at work till Friday night? Let's just head out Saturday morning then. I'm not gonna drive four hours in the dark after a full workday."
+        },
+        {
+          "style": "formal",
+          "text": "So you are unable to leave work until Friday evening? In that case, perhaps we could depart on Saturday morning instead, as I would prefer not to drive four hours in the dark after a full day at work."
+        }
+      ],
+      "note": "**get off work** 는 퇴근하다라는 뜻이에요. **why don't we** 는 우리 ~하는 게 어때 하고 가볍게 제안할 때 써요.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "주말 내내 남동생 이사하는 거 도와줬어. 한 세 시간이면 끝날 줄 알았는데, 걔가 짐을 하나도 안 싸 놨더라고. 그래서 밤 열 시까지 쓰레기봉투에 물건을 막 집어넣었어.",
+      "text": "I spent the whole weekend helping my brother move. I figured it'd take like three hours, but he hadn't packed a single thing, so we were throwing stuff into trash bags until ten at night.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Helped my brother move all weekend. Thought it'd be like three hours, but he hadn't packed a thing, so we were tossing stuff in trash bags till ten at night."
+        },
+        {
+          "style": "formal",
+          "text": "I spent the entire weekend helping my brother move. I had expected it to take approximately three hours, but he had not packed anything at all, so we were putting his belongings into trash bags until ten in the evening."
+        }
+      ],
+      "note": "**I figured** 는 ~일 줄 알았다, ~라고 생각했다는 뜻이에요. **hadn't packed a single thing** 은 하나도 안 쌌다를 힘주어 말하는 표현이에요.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "원래 뒷마당에서 파티를 하려고 했는데, 토요일에 바람이 너무 불어서 텐트가 자꾸 날아가려고 하는 거야. 그래서 그냥 사람들을 다 차고로 옮겼어. 솔직히 사람들은 오히려 거기서 더 재밌게 논 것 같아.",
+      "text": "We were going to have the party out in the backyard, but it got so windy on Saturday that the tent kept trying to blow away, so we just moved everybody into the garage. Honestly, I think people had more fun in there anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Party was supposed to be out back, but Saturday got so windy the tent almost blew away like five times, so we just stuck everyone in the garage. Honestly? I think it was more fun in there anyway."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to hold the party in the backyard, but it became so windy on Saturday that the tent kept threatening to blow away, so we moved all of the guests into the garage. To be honest, I believe everyone enjoyed it more there in any case."
+        }
+      ],
+      "note": "**kept trying to** 는 자꾸 ~하려고 했다는 뜻이에요. 문장 끝의 **anyway** 는 어차피, 오히려라는 느낌을 더해 줘요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "일할 데가 필요했는데, 가는 카페마다 창가에 높은 의자 하나 정도밖에 안 남아 있어서 결국 도서관으로 갔어. 처음부터 그냥 도서관으로 갈 걸 그랬어.",
+      "text": "I needed somewhere to get some work done, but every coffee shop I tried had like one stool left by the window, so I ended up at the library. I should've just gone there in the first place.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Had some work to get done, but every coffee shop I hit only had like one stool left by the window, so I wound up at the library. Shoulda just gone there to begin with."
+        },
+        {
+          "style": "formal",
+          "text": "I needed a place to get some work done, but every coffee shop I visited had only a single stool available by the window, so I eventually went to the library. I should have gone there in the first place."
+        }
+      ],
+      "note": "**ended up** 은 결국 ~하게 됐다는 뜻이에요. **should've just gone there in the first place** 는 처음부터 거기 갈 걸 하고 후회할 때 써요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "삼촌이 요즘 돈 얼마 버냐고 자꾸 묻는 거야. 내가 말을 돌릴 때마다 또 물어보고. 그래서 결국 삼촌이 먼저 말해 주면 나도 말하겠다고 했더니, 금방 그 얘기를 접더라.",
+      "text": "My uncle kept asking me how much I make now, and every time I changed the subject, he just asked again. So finally I said I'd tell him if he told me first, and he dropped it pretty fast.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My uncle wouldn't stop asking what I make now, and every time I changed the subject he'd just ask again. So I finally go, I'll tell you if you tell me first, and he dropped it real quick."
+        },
+        {
+          "style": "formal",
+          "text": "My uncle repeatedly asked me how much I earn now, and each time I changed the subject, he simply asked again. Eventually I told him I would answer if he told me his salary first, and he let the matter go rather quickly."
+        }
+      ],
+      "note": "**changed the subject** 는 말을 돌리다, 화제를 바꾸다라는 뜻이에요. **dropped it** 은 그 얘기를 그만두다, 더 묻지 않다라는 뜻이에요.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual: Thought it'd be(과거) 뒤에 we're tossing(현재)이 붙어 시제가 갑자기 튀어서 we were tossing 으로 맞췄습니다.",
+    "3번 casual: the tent kept almost blowing away 는 원어민이 쓰지 않는 어색한 조합이라 the tent almost blew away like five times 로 바꿨습니다.",
+    "3번 formal: the tent was nearly blown away 는 한 번 날아갈 뻔했다는 뜻이 되어 자꾸 날아가려 했다는 text 의 뜻과 달라서 the tent kept threatening to blow away 로 고쳤습니다."
+  ]
+}

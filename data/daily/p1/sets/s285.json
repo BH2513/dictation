@@ -1,0 +1,112 @@
+{
+  "setId": "s285",
+  "videoId": "daily-s285",
+  "title": "Set 285",
+  "madeAt": "2026-11-15",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "택배가 화요일에 오기로 돼 있었는데 배송 조회는 아직도 배송 중이라고만 떠. 어디 있는지만 알면 내가 직접 가서 찾아올 텐데, 아무도 알려 주는 사람이 없어.",
+      "text": "My package was supposed to come on Tuesday, and the tracking still says it's out for delivery. I'd just go pick it up myself if I knew where it was, but nobody can tell me anything.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Still no package. It was due Tuesday and tracking's stuck on out for delivery. I'd grab it myself if I knew where it was, but nobody's got a clue."
+        },
+        {
+          "style": "formal",
+          "text": "My package was scheduled to arrive on Tuesday, and the tracking information still indicates that it is out for delivery. I would collect it myself if I knew where it was, but no one is able to give me any information."
+        }
+      ],
+      "note": "**was supposed to** 는 원래 그러기로 돼 있었는데 안 됐을 때 써요. **out for delivery** 는 택배 조회에 뜨는 배송 출발, 배송 중이라는 말이에요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "윗집 남자가 밤 12시쯤에 가구를 옮기는데, 대체 위에서 뭘 하는 건지 모르겠어. 올라가서 문을 두드려야 하나 계속 생각은 하는데, 괜히 유난 떠는 이웃 되기는 싫어서 그냥 누워서 듣고만 있어.",
+      "text": "The guy upstairs moves furniture around at like midnight, and I have no idea what he's even doing up there. I keep thinking I should go knock on his door, but I don't want to be that neighbor, so I just lie there listening to it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Upstairs guy's dragging furniture around at like midnight, no clue what he's up to. I keep meaning to go knock, but I don't wanna be that neighbor, so I just lie there and listen."
+        },
+        {
+          "style": "formal",
+          "text": "The man who lives upstairs moves furniture around at approximately midnight, and I do not know what he is doing. I have often thought that I should knock on his door, but I do not wish to be a difficult neighbor, so I simply lie there and listen."
+        }
+      ],
+      "note": "**that neighbor** 는 다들 피곤해하는 그런 이웃이라는 뜻이에요. **at like midnight** 의 like 는 한 ~쯤, 대충이라는 느낌으로 말할 때 붙여요.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그냥 그 애한테 내 마음을 말해야 하나 싶기도 한데, 잘 안 되면 다시 친구로는 못 돌아가잖아. 그러니까 그냥 기다릴까? 근데 벌써 1년째 기다리고 있으니까, 모르겠어.",
+      "text": "Part of me thinks I should just tell her how I feel, but if it goes badly, we can't really go back to being friends. So maybe I wait? I mean, I've already been waiting for a year, so I don't know.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Kinda feel like I should just tell her, but if it goes bad, we're not going back to being friends. So I wait? I mean, it's already been a year, so I dunno."
+        },
+        {
+          "style": "formal",
+          "text": "Part of me believes I should simply tell her how I feel, but if it does not go well, we will not be able to return to being friends. Perhaps I should wait. However, I have already been waiting for a year, so I am not certain."
+        }
+      ],
+      "note": "**Part of me thinks** 는 마음 한편으로는 ~라는 생각이 든다는 말이에요. **I mean** 은 앞에 한 말에 덧붙이거나 고쳐 말할 때 써요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "스탠딩 책상을 무조건 쓸 줄 알고 샀는데, 한 10분 서 있다가 바로 다시 앉아 버려. 먼저 한번 써 보기라도 했으면 500달러는 아낄 수 있었을 텐데.",
+      "text": "I got one of those standing desks because I was so sure I'd use it, but I stand for like ten minutes and then sit right back down. If I'd tried one out first, I could've saved myself five hundred bucks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Totally thought I'd use that standing desk, but I stand for like ten minutes and sit right back down. Should've tried one first. Coulda saved five hundred bucks."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a standing desk because I was certain I would use it, but I stand for approximately ten minutes and then sit down again. Had I tried one beforehand, I could have saved five hundred dollars."
+        }
+      ],
+      "note": "**sit right back down** 은 곧바로 다시 앉는다는 뜻이에요. **bucks** 는 dollars 를 편하게 부르는 말이에요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "애가 같은 책을 네 번이나 읽어 달라고 하더니, 그다음엔 물 달라고, 또 다른 이불 달라고 해서 잠들 때쯤엔 거의 두 시간을 그 방에 있었어. 잠깐 쉬려고 소파에 앉았는데, 눈 떠 보니 밤 12시였고 신발도 그대로 신고 있더라.",
+      "text": "She made me read the same book four times, then she needed water, then a different blanket, so by the time she fell asleep I'd been in there almost two hours. I sat down on the couch to rest for a minute, and I woke up at midnight with my shoes still on.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Same book four times, then water, then a different blanket. By the time she was out I'd been in there almost two hours. Sat on the couch for a sec and woke up at midnight, shoes still on."
+        },
+        {
+          "style": "formal",
+          "text": "She asked me to read the same book four times, then she wanted water, and then a different blanket, so by the time she fell asleep I had been in her room for nearly two hours. I sat down on the couch to rest for a moment, and I woke up at midnight still wearing my shoes."
+        }
+      ],
+      "note": "**by the time** 은 ~할 즈음에는 이미 그렇게 돼 있었다고 말할 때 써요. **with my shoes still on** 은 신발을 신은 채로라는 뜻이에요.",
+      "situation": "아이 재우다가 진 빠진 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 영어에 like 가 두 번 나와 군말처럼 들려서 뒤의 like 를 빼고, 한국어와 casual, formal 도 영어에 맞춰 대략이라는 말을 뺐습니다"
+  ]
+}

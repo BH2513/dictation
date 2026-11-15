@@ -1,0 +1,114 @@
+{
+  "setId": "s286",
+  "videoId": "daily-s286",
+  "title": "Set 286",
+  "madeAt": "2026-11-15",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "퇴근하고 헬스장 갈 준비가 다 돼 있었는데, 신발 벗으려고 딱 1초 앉았다가 그걸로 끝났어. 도저히 다시 일어날 수가 없더라.",
+      "text": "I was all set to go to the gym after work, but I sat down for one second to take my shoes off, and that was it, I just couldn't make myself get back up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Totally meant to hit the gym after work, but I sat down for one sec to take my shoes off and that was it, I just couldn't get myself back up."
+        },
+        {
+          "style": "formal",
+          "text": "I had fully intended to go to the gym after work; however, I sat down for one moment to remove my shoes, and after that I simply could not bring myself to get up again."
+        }
+      ],
+      "note": "**all set to** 는 ~할 준비가 다 됐다는 뜻이에요. **couldn't make myself** 는 하려고 해도 내 몸이 안 따라 줬다는 느낌이고, **that was it** 은 거기서 끝이었다는 말이에요.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "이번 주말엔 웬일로 아무 약속도 안 잡아서 아무도 어디 갈 필요가 없었는데, 몇 달 만에 처음으로 알람을 안 맞춘 것 같아. 주말이 맨날 그랬으면 좋겠다.",
+      "text": "We didn't make any plans this weekend for once, so nobody had to be anywhere, and I think it's the first time in months I didn't set an alarm. I could really get used to weekends like that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No plans this weekend for once. Nobody had to be anywhere, I didn't even set an alarm. First time in months! Could totally get used to that."
+        },
+        {
+          "style": "formal",
+          "text": "For once, we did not make any plans this weekend, so no one had to be anywhere, and I believe it was the first time in months that I did not set an alarm. I could certainly become accustomed to weekends like that."
+        }
+      ],
+      "note": "**for once** 는 웬일로, 모처럼 이라는 뜻이에요. **could really get used to** ~ 는 이런 거라면 얼마든지 익숙해질 수 있겠다, 즉 맨날 이랬으면 좋겠다는 말이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "나 진짜 미치게 하는 게 뭔지 알아? 회사에 어떤 여자가 있는데 메일마다 전체 답장을 눌러. 그냥 고맙다고 할 때도. 그래서 점심 먹고 오면 새 메일이 한 마흔 개 와 있는데 정작 중요한 건 하나도 없어.",
+      "text": "You know what drives me crazy? There's this woman at work who hits reply all on every single email, even just to say thanks, so I come back from lunch and there are like forty new emails and none of them actually matter.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wanna know what drives me nuts? This woman at work hits reply all on every single email, even just to say thanks, so I get back from lunch to like forty new emails and none of them even matter."
+        },
+        {
+          "style": "formal",
+          "text": "Do you know what I find extremely frustrating? There is a woman at work who uses reply all on every single email, even simply to say thank you, so I return from lunch to approximately forty new emails, none of which are actually important."
+        }
+      ],
+      "note": "**drives me crazy** 는 짜증 나서 미치겠다는 뜻이에요. **reply all** 은 메일의 전체 답장이고, 여기서는 **hits reply all** 처럼 누른다는 동사 hit 과 같이 써요.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "미안, 미안! 어젯밤에 정전돼서 알람 시계가 초기화됐어. 옆집 개가 짖기 시작해서 겨우 깼다니까.",
+      "text": "Sorry, sorry, the power went out last night, so my alarm clock reset itself, and I only woke up because the neighbor's dog started barking.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, so sorry! Power went out last night, so my alarm reset, and the only reason I woke up was the neighbor's dog barking."
+        },
+        {
+          "style": "formal",
+          "text": "I do apologize. The power went out last night, so my alarm clock reset itself, and I only woke up because the neighbor's dog began barking."
+        }
+      ],
+      "note": "**the power went out** 은 정전됐다는 말이에요. **reset itself** 는 저절로 초기화됐다는 뜻이고, **only woke up because** 는 그 덕분에 겨우 깼다는 느낌이에요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "미아 선생님이 과학 숙제 관련해서 뭐 보낸 거 있어? 미아 말로는 월요일까지래. 근데 오늘 밤에야 나한테 말해 주더라고. 이번 주말엔 화산 만들게 생겼네.",
+      "text": "Did Mia's teacher send you anything about the science project? Mia says it's due Monday, but she only told me about it tonight, so I guess we're building a volcano this weekend.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, you get anything from Mia's teacher about the science project? Mia says it's due Monday, but she just told me tonight, so I guess we're building a volcano this weekend."
+        },
+        {
+          "style": "formal",
+          "text": "Did you receive anything from Mia's teacher regarding the science project? Mia says it is due on Monday, but she only informed me of it this evening, so it appears we will be building a volcano this weekend."
+        }
+      ],
+      "note": "**due Monday** 는 월요일까지 내야 한다는 뜻이에요. **I guess we're** ~ 는 어쩔 수 없이 ~하게 생겼다는 체념 섞인 말투예요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 note: 별표로 감싼 I could get used to 는 본문에 그대로 나오지 않음(본문은 I could really get used to). 본문에 있는 could really get used to 로 고침",
+    "2번 casual: 앞부분만 바뀌고 뒤는 text 와 거의 같아서, 더 짧게 끊은 구어로 다시 씀",
+    "3번 formal: replies to all on every single email 은 원어민이 쓰지 않는 표현이라 uses reply all on every single email 로 고침"
+  ]
+}

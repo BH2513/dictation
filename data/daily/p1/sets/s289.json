@@ -1,0 +1,114 @@
+{
+  "setId": "s289",
+  "videoId": "daily-s289",
+  "title": "Set 289",
+  "madeAt": "2026-11-16",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "월세가 한 달에 200달러씩 오른다고 해서 좀 더 외곽 쪽 집들을 알아보고 있어. 아니 돈은 아끼겠지만 다들 있는 데서 한 40분 거리가 될 거고, 그러다 아예 밖에 안 나가게 될까 봐 좀 걱정돼.",
+      "text": "My rent's going up two hundred a month, so I've been looking at places a little farther out. I mean, I'd save money, but I'd be like forty minutes from everybody, and I'm kind of worried I'd just stop going out.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Rent's going up two hundred a month, so I've been checking out places a bit farther out. Like, I'd save money, but I'd be forty minutes from everybody, and I'm kinda scared I'd just never go out anymore."
+        },
+        {
+          "style": "formal",
+          "text": "My rent is increasing by two hundred dollars a month, so I have been looking at places a little farther from the city. I would save money, but I would be about forty minutes away from everyone, and I am somewhat concerned that I would simply stop going out."
+        }
+      ],
+      "note": "**a little farther out** 는 도심에서 좀 더 떨어진 외곽 쪽을 말할 때 씁니다. **I mean** 은 말을 고쳐 잇거나 덧붙일 때 쓰는 말버릇으로, 아니 또는 그러니까 정도의 느낌입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아니야 엄마, 밥 잘 먹고 있다니까, 진짜야. 거의 매일 저녁 해 먹고 있어. 그래, 매일은 아닐 수도 있는데, 그래도 목요일쯤부터 피자는 안 먹었으니까 그것도 어디야.",
+      "text": "No, Mom, I'm eating fine, I promise. I've been cooking almost every night. Okay, maybe not every night, but I haven't had pizza since like Thursday, so that counts for something.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Mom, seriously, I'm eating fine. I cook pretty much every night. Okay, not every night, but I haven't had pizza since Thursday, so that's gotta count for something, right?"
+        },
+        {
+          "style": "formal",
+          "text": "Mother, I assure you that I am eating well. I have been cooking nearly every evening. Admittedly, not every evening, but I have not had pizza since Thursday, so I believe that counts for something."
+        }
+      ],
+      "note": "**that counts for something** 은 대단하진 않아도 그래도 의미가 있다, 그것도 어디냐는 뜻입니다. **since like Thursday** 의 like 는 대략, 한 정도라는 뜻으로 붙이는 말입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "거기 원래 내 최애 가게였는데, 작년에 주인이 바뀌고 나서는 음식이 다 냉동 같은 맛이 나. 그날만 별로였길 바라면서 지난주에 다시 가 봤는데, 아니더라, 똑같았어. 그래서 이제 거기는 안 가려고.",
+      "text": "That place used to be my favorite, but they got new owners last year and now everything tastes kind of frozen. I went back last week hoping it was just a bad night, but nope, it was the same, so I think I'm done with it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I used to love that place, but new owners took over last year and now it all tastes kinda frozen. Went back last week thinking maybe it was just a bad night, but nope, same thing. I'm done with it."
+        },
+        {
+          "style": "formal",
+          "text": "That restaurant was once my favorite, but it came under new ownership last year, and now everything tastes as though it was frozen. I returned last week in the hope that it had simply been a bad evening, but it was the same, so I do not intend to go back."
+        }
+      ],
+      "note": "**I'm done with it** 은 이제 그만두겠다, 더는 안 하겠다는 뜻입니다. **a bad night** 는 가게나 주방이 그날따라 유독 잘 못한 날이라는 뜻이고, **nope** 은 no 를 가볍게 말하는 표현입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "드디어 손목 검사를 받았는데, 의사가 별거 아니래. 타자만 좀 덜 치면 된대. 근데 그게 사실상 내 일 전부거든, 그래서 타자 덜 치는 건 아무래도 못 할 것 같아.",
+      "text": "So I finally got my wrist checked, and the doctor said it's nothing serious, I just need to stop typing so much. Which, you know, is basically my whole job, so I don't really see that happening.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally had the doctor look at my wrist, and it's nothing serious, I just gotta stop typing so much. Which, I mean, is pretty much my whole job, so yeah, that's not gonna happen."
+        },
+        {
+          "style": "formal",
+          "text": "I finally had my wrist examined, and the doctor said it is nothing serious; I simply need to type less. However, that is essentially my entire job, so I do not expect that to happen."
+        }
+      ],
+      "note": "**got my wrist checked** 는 손목을 검사받았다는 뜻으로, get + 대상 + checked 형태로 진료나 점검을 받을 때 씁니다. **I don't really see that happening** 은 그렇게 될 것 같지 않다는 뜻입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "일요일에 한 1년 만에 처음으로 달리기를 했는데, 뛰는 내내 기분이 너무 좋았어. 근데 월요일에 일어났더니 온몸이 다 아프더라. 내 몸은 나만큼 신나지 않았나 봐.",
+      "text": "I went for a run on Sunday for the first time in like a year, and I felt amazing the whole time. But then I woke up Monday and everything hurt, so I guess my body wasn't as excited about it as I was.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went for a run Sunday, first time in like a year, and I felt awesome the whole way. Then Monday I woke up and everything hurt, so I guess my body wasn't as into it as I was."
+        },
+        {
+          "style": "formal",
+          "text": "I went running on Sunday for the first time in about a year, and I felt wonderful the entire time. However, when I woke up on Monday, everything ached, so I suppose my body was not as enthusiastic about it as I was."
+        }
+      ],
+      "note": "**for the first time in like a year** 는 한 1년 만에 처음으로라는 뜻입니다. **wasn't as excited about it as I was** 는 나만큼 신이 나지 않았다는 뜻으로, 몸을 사람처럼 말하는 농담입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어: '오른대서' 는 남에게 전해 들은 말처럼 읽혀서 '오른다고 해서' 로 고침",
+    "3번 note: a bad night 를 '운이 나빴던 날' 로 설명했는데, 여기서는 가게(주방)가 그날따라 잘 못한 날이라는 뜻이라 맞게 고침",
+    "4번 한국어: '그럴 일은 별로 없을 것 같아' 는 영어의 I don't really see that happening(그렇게는 못 할 것 같다)과 결이 달라서 '타자를 덜 치는 건 못 할 것 같아' 로 고침"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "setId": "s290",
+  "videoId": "daily-s290",
+  "title": "Set 290",
+  "madeAt": "2026-11-16",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "매니저가 나보고 새 팀을 맡으래. 좋은 일이긴 한데, 지난주까지 친구였던 사람들 위에서 상사 노릇을 하게 되는 거잖아. 거절하면 다시는 기회를 안 줄 것 같고, 하겠다고 하면 다 달라질까 봐 좀 걱정돼. 솔직히 어떻게 해야 할지 모르겠어.",
+      "text": "So my manager wants me to lead the new team, which is great, but I'd basically be the boss of people who were my friends last week. And if I say no, I don't think they'll ask me again, but if I say yes, I'm kind of worried it'll change everything. I honestly don't know what to do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My manager wants me running the new team. Great, right? Except I'd pretty much be bossing around people who were my buddies last week. If I turn it down, they probably won't ask again, but if I take it, I'm kinda scared it'll change everything. I seriously don't know what to do."
+        },
+        {
+          "style": "formal",
+          "text": "My manager would like me to lead the new team, which is wonderful, but I would essentially be supervising people who were my friends only last week. If I decline, I do not believe they will offer it again, yet if I accept, I am somewhat concerned that it will change everything. I truly do not know what to do."
+        }
+      ],
+      "note": "**which is great, but** 은 앞에 한 말을 받아서 좋긴 한데 하고 걸리는 점을 붙일 때 씁니다. **turn it down** 은 제안을 거절한다는 뜻으로, say no 보다 조금 부드럽게 들립니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "잠깐, 우리 얼마 만이지, 한 2년 됐나? 아직 시내에 있는 그 회사 다녀? 아니면 맨날 그만둔다더니 드디어 그만뒀어?",
+      "text": "Wait, how long has it been, like two years? Are you still at that place downtown, or did you finally quit like you kept saying you would?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hold on, it's been what, two years? You still at that downtown place, or did you finally quit like you kept saying?"
+        },
+        {
+          "style": "formal",
+          "text": "How long has it been, about two years? Are you still working at that company downtown, or did you eventually resign as you had often said you would?"
+        }
+      ],
+      "note": "**how long has it been** 은 오랜만에 만났을 때 이게 얼마 만이야 하고 반가워하는 말입니다. **like you kept saying you would** 는 너가 계속 그러겠다고 하던 것처럼이라는 뜻입니다.",
+      "situation": "오랜만에 만난 친구한테 근황 묻기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "부엌 싱크대 고치는 영상 하나만 보려고 유튜브를 켰는데, 어쩌다 보니 어떤 아저씨가 낡은 배 고치는 걸 한 세 시간 동안 보고 있더라. 근데 싱크대는 아직도 물이 새. 정작 보려던 건 하나도 못 배운 거지.",
+      "text": "I opened YouTube to watch one video on how to fix the kitchen sink, and somehow I ended up watching some guy restore an old boat for like three hours. And the sink's still leaking, so I didn't even learn the one thing I went on there for.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I went on YouTube for one video on fixing the kitchen sink, and next thing I know I've spent like three hours watching some guy restore an old boat. Sink's still leaking, too, so I didn't even learn the one thing I was there for."
+        },
+        {
+          "style": "formal",
+          "text": "I opened YouTube to watch a single video on repairing the kitchen sink, and somehow I spent about three hours watching a man restore an old boat. The sink is still leaking, so I did not even learn the one thing I had gone there to find."
+        }
+      ],
+      "note": "**ended up** 은 의도하지 않았는데 결국 그렇게 되어 버렸다는 뜻입니다. **went on there for** 는 거기 들어간 목적을 말할 때 씁니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "일주일 내내 폰이 진짜 이상해. 배터리가 한 60에서 몇 분 만에 0이 되는데, 충전기를 꽂으면 다시 50이라고 떠. 그래서 진짜로 꺼질지 안 꺼질지 도무지 알 수가 없어.",
+      "text": "My phone's been acting really weird all week. The battery goes from like sixty to zero in a few minutes, but then when I plug it in, it says it's back at fifty, so I never know if it's actually going to die on me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My phone's been super weird all week. Battery drops from like sixty to zero in a few minutes, then I plug it in and it says fifty, so I've got no clue if it's actually gonna die on me."
+        },
+        {
+          "style": "formal",
+          "text": "My phone has been behaving very strangely all week. The battery falls from about sixty percent to zero within a few minutes, but when I plug it in, it shows fifty percent again, so I can never tell whether it is actually going to shut down."
+        }
+      ],
+      "note": "**acting really weird** 는 기계나 사람이 평소와 다르게 이상하게 군다는 뜻입니다. **die on me** 는 쓰고 있는데 하필 꺼져 버린다는 느낌으로, 배터리나 차가 갑자기 멈출 때 씁니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "너가 말해 준 태국 음식점 드디어 가 봤는데, 커리는 진짜 너 말이 딱 맞더라. 근데 자리 나는 데 거의 한 시간을 기다려서, 다시 가면 그냥 포장해 올 것 같아.",
+      "text": "We finally tried that Thai place you told me about, and you were totally right about the curry. But we waited almost an hour for a table, so if we go back, I think we're just getting takeout.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We finally hit up that Thai place you mentioned, and dude, that curry? You weren't kidding. But we waited almost an hour for a table, so next time it's just takeout."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended, and you were entirely correct about the curry. However, we waited nearly an hour for a table, so if we return, I believe we will simply order takeout."
+        }
+      ],
+      "note": "**you were totally right about** 은 그건 네 말이 완전 맞았다고 인정할 때 씁니다. **getting takeout** 은 음식을 포장해 간다는 뜻입니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 mess everything up 은 망친다는 뜻이라 원문의 다 달라진다(change everything)보다 세졌다. change everything 으로 맞췄다",
+    "1번 note 의 say no 와 함께 아주 자주 쓴다는 설명이 어색해서 say no 보다 조금 부드러운 말이라고 고쳤다",
+    "2번 casual 의 or'd you 는 글로 적으면 알아보기 어려운 축약이라 or did you 로 고쳤다",
+    "3번 한국어 들어간 이유였던 딱 하나도 못 배운 거지 는 번역투라 정작 보려던 건 하나도 못 배운 거지 로 고쳤다",
+    "4번 note 의 acting weird 는 문장에 그대로 나오지 않는다(acting really weird). 문장에 있는 그대로 짚게 고쳤다",
+    "5번 casual 의 you nailed it on the curry 는 추천이 맞았다는 뜻으로는 어색한 쓰임이다. that curry? You weren't kidding 으로 바꿨다"
+  ]
+}

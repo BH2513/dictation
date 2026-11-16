@@ -1,0 +1,118 @@
+{
+  "setId": "s288",
+  "videoId": "daily-s288",
+  "title": "Set 288",
+  "madeAt": "2026-11-16",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "우유랑 빵만 사러 들어갔는데 어쩌다 40달러나 썼어. 재밌는 걸 산 것도 아니고 다 그냥 평범한 거였거든. 애 있는 집들은 대체 어떻게 사는지 솔직히 모르겠다.",
+      "text": "I just went in for milk and bread and somehow spent like forty bucks. And I didn't even get anything fun, it was all normal stuff, so I honestly don't know how people with kids are doing it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ran in for milk and bread and somehow dropped like forty bucks. Nothing fun either, just normal stuff, so I seriously dunno how people with kids manage."
+        },
+        {
+          "style": "formal",
+          "text": "I only went in for milk and bread, and somehow I spent about forty dollars. I did not even buy anything enjoyable; it was all ordinary items, so I truly do not know how people with children manage."
+        }
+      ],
+      "note": "**went in for** 는 무엇을 사러 가게에 들어갔다는 뜻입니다. **forty bucks** 의 bucks 는 dollars 를 편하게 부르는 말이고, casual 의 **dropped** 도 돈을 썼다는 뜻으로 씁니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "나도 그러고 싶은데 토요일에 엄마 병원에 모셔다 드려야 해서 페인트칠은 못 도와줘. 혹시 일요일에 하게 되면 나 무조건 갈게. 알려만 줘.",
+      "text": "I wish I could, but I'm driving my mom to an appointment on Saturday, so I can't help you paint. If you end up doing it Sunday instead, I'm totally in, so just let me know.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Can't, sorry, I'm taking my mom to an appointment Saturday, so I can't help with the painting. If it ends up being Sunday though, I'm totally in, just tell me."
+        },
+        {
+          "style": "formal",
+          "text": "I wish I were able to, but I am driving my mother to an appointment on Saturday, so I cannot help you paint. If you decide to do it on Sunday instead, I would certainly be there, so please let me know."
+        }
+      ],
+      "note": "**I'm totally in** 은 나도 끼겠다, 무조건 하겠다는 말입니다. **end up doing** 은 결국 그렇게 하게 된다는 뜻입니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "나 이제 먼저 갈게, 미안. 일 때문에 엄청 일찍 일어나야 하거든. 한 잔만 더 하면 결국 세 잔까지 마실 게 뻔해.",
+      "text": "Hey, I'm going to head out, sorry. I have to be up really early for work, and I know if I stay for one more drink, I'm going to end up staying for three.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, I'm gonna take off. Gotta be up super early for work, and if I stay for one more drink, it's gonna turn into three."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize, but I am going to leave now. I need to be up very early for work, and I know that if I stay for one more drink, I will end up staying for three."
+        }
+      ],
+      "note": "**head out** 은 자리를 뜨다, 먼저 가다는 뜻입니다. casual 의 **take off** 도 같은 뜻으로 씁니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "안녕하세요, 주문이 잘못 온 것 같아서요. 저는 피자를 시켰는데 치킨 샐러드 두 개가 왔어요. 식당에 전화했더니 그쪽을 통해서 처리해야 한다고 하더라고요.",
+      "text": "Hi, I think you guys sent me the wrong order. I ordered a pizza, but I got two chicken salads, and when I called the restaurant, they said I have to go through you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hi, pretty sure this is the wrong order. I ordered pizza and got two chicken salads, and the restaurant says I gotta go through you guys."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I believe I have received the wrong order. I ordered a pizza, but I received two chicken salads, and when I called the restaurant, I was told that I need to go through you."
+        }
+      ],
+      "note": "**go through you** 는 당신을 거쳐서 일을 처리해야 한다는 뜻입니다. 배달 앱이나 고객센터에 연락할 때 자주 씁니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "자전거는 잘 나가는데 뒷브레이크가 좀 물렁해서 한번 점검받아 보는 게 좋을 거예요. 그래서 80달러만 받는 거고요. 솔직히 언덕에서 알게 되시는 것보다 지금 말씀드리는 게 낫잖아요.",
+      "text": "So the bike rides great, but the back brake's a little soft, so you'll probably want to get it looked at. That's why I'm only asking eighty for it, and honestly, I'd rather tell you now than have you find out on a hill.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Rides great, but the back brake's kinda soft, so you'll wanna get it checked. That's why I'm only asking eighty, and I'd rather tell you now than have you find out on a hill."
+        },
+        {
+          "style": "formal",
+          "text": "The bicycle rides very well, but the rear brake is somewhat soft, so you will likely want to have it inspected. That is why I am asking only eighty dollars for it, and frankly, I would rather tell you now than have you discover it on a hill."
+        }
+      ],
+      "note": "**get it looked at** 은 전문가에게 한번 봐 달라고 맡긴다는 뜻입니다. **I'd rather A than B** 는 B 하느니 A 하는 게 낫다는 말입니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어가 문장을 끊어 놓아 어색해서 친구에게 투덜대는 말투로 다듬음",
+    "2번 한국어 '병원 예약에 모셔다 드려야'는 번역체라 '병원에 모셔다 드려야'로 고침",
+    "2번 casual 의 'so no painting for me' 는 '나는 칠할 기회가 없다'로도 읽혀 'so I can't help with the painting' 으로 고침",
+    "2번 formal 의 'I would be glad to help' 는 'I'm totally in' 의 적극적인 느낌을 약하게 만들어 'I would certainly be there' 로 고침",
+    "3번 한국어 마지막 문장이 'I know' 의 느낌을 살리지 못해 '뻔해'로 고침",
+    "4번 casual 의 'Yeah hi' 는 전화를 처음 걸 때 쓰기 어색해서 'Hi,' 로 고침",
+    "5번 formal 에서 eighty 만 쓰면 격식체로는 단위가 빠져 어색해서 'eighty dollars' 로 고침"
+  ]
+}

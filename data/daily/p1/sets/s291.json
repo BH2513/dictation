@@ -1,0 +1,116 @@
+{
+  "setId": "s291",
+  "videoId": "daily-s291",
+  "title": "Set 291",
+  "madeAt": "2026-11-17",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "여름에 기타를 샀는데, 이번엔 진짜 꾸준히 할 줄 알았어. 근데 코드 한 세 개 배운 게 다고, 이젠 그냥 구석에 처박혀 있어서 옆을 지나갈 때마다 마음이 찔려.",
+      "text": "I bought a guitar over the summer, and I really thought I'd stick with it this time. But I only ever learned like three chords, and now it just sits in the corner and makes me feel bad every time I walk past it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got a guitar this summer and was sure I'd actually stick with it this time. Nope, I only know like three chords, and now it's just sitting in the corner making me feel bad every time I walk by."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar over the summer, and I genuinely believed I would continue with it this time. However, I only ever learned about three chords, and now it simply sits in the corner and makes me feel bad every time I walk past it."
+        }
+      ],
+      "note": "**stick with it** 는 포기하지 않고 계속하다라는 뜻이에요. **makes me feel bad** 는 괜히 마음이 불편하다, 찔린다는 느낌을 그대로 말할 때 써요.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "우리 고양이가 요즘 매일 아침 다섯 시에 나를 깨워. 서랍장 위 물건을 떨어뜨리면 내가 일어나서 밥을 준다는 걸 알아냈거든. 져 주면 안 되는 건 아는데, 안 그러면 한 시간 내내 우는 소리를 들어야 해.",
+      "text": "Our cat's started waking me up at five every morning, because she figured out that if she knocks stuff off the dresser, I'll get up and feed her. I know I shouldn't give in, but it's either that or listen to her for an hour.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My cat's been getting me up at five every morning. She figured out if she knocks stuff off the dresser, I'll get up and feed her. I know I shouldn't cave, but it's that or listening to her for an hour."
+        },
+        {
+          "style": "formal",
+          "text": "Our cat has begun waking me at five every morning, as she has discovered that if she knocks items off the dresser, I will get up and feed her. I am aware that I should not give in, but the alternative is listening to her for an hour."
+        }
+      ],
+      "note": "**give in** 은 버티다가 결국 져 주다라는 뜻이에요. **it's either that or** 는 그게 아니면 ~해야 한다, 둘 중 하나라는 말이에요.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "올해 말까지만 이 회사 다녀 보자고 계속 다짐하는데, 솔직히 3월부터 그 말만 하고 있어. 월급은 괜찮아. 그냥 거기서 더 배우는 게 없고, 1년 더 있다가는 아예 신경도 안 쓰게 될까 봐 좀 무서워.",
+      "text": "I keep telling myself I'll give this job until the end of the year, but honestly, I've been saying that since March. The pay's fine, it's just that I'm not learning anything there anymore, and I'm kind of scared that if I stay another year, I'll stop caring.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Been saying I'll give it till the end of the year since March, honestly. Pay's okay, I'm just not learning anything anymore, and I'm kinda scared one more year there and I'll stop caring."
+        },
+        {
+          "style": "formal",
+          "text": "I continue to tell myself that I will give this position until the end of the year, but frankly, I have been saying so since March. The salary is adequate; it is simply that I am no longer learning anything there, and I am somewhat concerned that if I remain another year, I will no longer care."
+        }
+      ],
+      "note": "**I keep telling myself** 는 스스로에게 계속 다짐하다, 되뇌다라는 뜻이에요. **stop caring** 은 신경을 끄다, 아무래도 상관없어지다라는 말이에요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "커피 들고 한 10분을 자리 나기만 기다리고 서 있었어. 어떤 남자가 재킷을 입길래 나가는 줄 알았거든. 근데 그냥 다시 앉더니 노트북을 또 여는 거야. 그래서 결국 카운터에 서서 마셨어.",
+      "text": "I stood there holding my coffee for like ten minutes waiting for a table, because this guy had his jacket on and it looked like he was leaving. But then he just sat back down and opened his laptop again, so I ended up drinking it standing at the counter.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Stood there with my coffee for like ten minutes waiting on a table, since this guy had his jacket on and looked like he was leaving. Then he just sat back down and opened his laptop again, so I wound up drinking it at the counter."
+        },
+        {
+          "style": "formal",
+          "text": "I stood holding my coffee for approximately ten minutes while waiting for a table, because a gentleman had put his jacket on and appeared to be leaving. However, he then sat back down and opened his laptop again, so I ultimately drank it standing at the counter."
+        }
+      ],
+      "note": "**ended up** 은 어쩌다 보니 결국 ~하게 됐다는 뜻이에요. **sat back down** 은 일어나려다 도로 앉았다는 말이에요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이번 주말엔 정말 아무것도 안 했어. 집 밖에도 안 나갔어. 토요일엔 좀 찔렸는데, 일요일쯤 되니까 신경도 안 쓰이더라. 그랬더니 오히려 오늘은 몇 주 만에 제일 개운해.",
+      "text": "I didn't do a single thing this weekend, I didn't even leave the house. I felt kind of guilty about it on Saturday, but by Sunday I'd stopped caring, and I actually feel better today than I have in weeks.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did absolutely nothing this weekend, didn't even leave the house. Felt kinda guilty Saturday, but by Sunday I just didn't care, and I actually feel better today than I have in weeks."
+        },
+        {
+          "style": "formal",
+          "text": "I did not do a single thing this weekend; I did not even leave the house. I felt somewhat guilty about it on Saturday, but by Sunday I had stopped caring, and I actually feel better today than I have in weeks."
+        }
+      ],
+      "note": "**didn't do a single thing** 은 아무것도 안 했다를 강조하는 말이에요. **than I have in weeks** 는 feel better 뒤에 붙여서 몇 주 만에 제일 좋다는 뜻이 돼요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 casual 이 text 와 앞부분이 거의 같아서(I keep saying I'll give this job till...) 더 짧은 구어로 새로 썼습니다.",
+    "3번 formal 의 cease to care 는 지나치게 딱딱해서 뜻은 그대로 두고 will no longer care 로 바꿨습니다.",
+    "3번 한국어의 아무 생각 없이 다니게 될까 봐 는 stop caring 의 뜻과 조금 달라서 아예 신경도 안 쓰게 될까 봐 로 고쳤습니다.",
+    "5번 note 의 better than I have in weeks 는 문장에 그대로 나오지 않아서(사이에 today 가 있음) than I have in weeks 로 고쳤습니다.",
+    "5번 한국어의 근데 는 actually 의 뜻(뜻밖에 오히려)을 살리지 못해서 그랬더니 오히려 로 고쳤습니다."
+  ]
+}

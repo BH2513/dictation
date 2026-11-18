@@ -1,0 +1,114 @@
+{
+  "setId": "s294",
+  "videoId": "daily-s294",
+  "title": "Set 294",
+  "madeAt": "2026-11-18",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "내 폰이 자꾸 혼자 재부팅돼. 어제도 집주인한테 문자 쓰다 말고 그냥 꺼져 버려서, 지금 그 사람이 받았는지도 모르겠어.",
+      "text": "My phone keeps restarting on its own. Like yesterday I was halfway through a text to my landlord and it just shut off, so now I don't even know if he got it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my phone won't stop rebooting itself. Yesterday it died halfway through a text to my landlord, so now I've got no clue if he got it."
+        },
+        {
+          "style": "formal",
+          "text": "My phone continues to restart by itself. Yesterday, for example, I was in the middle of writing a message to my landlord when it suddenly shut off, so I do not know whether he received it."
+        }
+      ],
+      "note": "**keeps restarting** 는 자꾸 재시작된다는 뜻으로, keep + ~ing 는 계속 반복되는 짜증나는 일을 말할 때 씁니다. **halfway through** 는 무언가를 하는 도중에, 반쯤 하다가라는 뜻입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "회사에 어떤 사람이 자꾸 내가 한 걸 자기가 한 것처럼 가로채. 오늘 회의에서 또 그랬는데, 쪼잔해 보이기 싫어서 아무 말도 안 했거든. 근데 지금은 그냥 앉아서 나한테 너무 열받아.",
+      "text": "This guy at work keeps taking credit for my stuff. He did it again in the meeting today, and I didn't say anything because I didn't want to look petty, but now I'm just sitting here mad at myself.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Some guy at work keeps stealing credit for my stuff. Did it again today, and I let it go 'cause I didn't wanna look petty. Now I'm kicking myself."
+        },
+        {
+          "style": "formal",
+          "text": "A colleague of mine repeatedly takes credit for my work. He did so again in today's meeting, and I did not say anything because I did not wish to appear petty, but now I am simply sitting here, angry with myself."
+        }
+      ],
+      "note": "**taking credit for** 는 남이 한 일의 공을 가로챈다는 뜻입니다. **petty** 는 사소한 일에 집착하는, 쪼잔한이라는 뜻이에요. **kicking myself** 는 내가 한 일이나 안 한 일 때문에 스스로를 탓한다는 말입니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "나 그 드라마 진짜 좋아했는데, 작가 바뀌고 나서부터는 매주 그 개그가 그 개그야. 이미 네 시즌이나 본 게 아까워서 계속 보는 거야.",
+      "text": "I used to love that show, but ever since they changed writers it's kind of the same jokes every week. I only keep watching because I've already put four seasons into it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was so into that show, but since the new writers came in it's kinda the same jokes every week. Honestly I'm only still watching 'cause I'm four seasons deep."
+        },
+        {
+          "style": "formal",
+          "text": "I used to enjoy that show very much, but since the writers changed, it has been rather repetitive, with the same jokes every week. I continue watching only because I have already invested four seasons in it."
+        }
+      ],
+      "note": "**ever since** 는 그때 이후로 쭉이라는 뜻입니다. **put four seasons into it** 은 네 시즌이나 들인 게 있다는 말로, 이미 쏟은 시간이 아까워 못 그만둔다는 느낌입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "그래, 그 타코집은 네 말이 맞았어. 음식 진짜 맛있더라. 근데 현금만 받는다는 말은 안 했잖아! 그래서 나 ATM 찾으러 길 따라 뛰어갔다 왔어. 데이트 상대는 그냥 앉아서 기다리고 있었고.",
+      "text": "Okay, you were right about that taco place, the food was great. But you didn't tell me it was cash only, so I had to run down the street to find an ATM while my date just sat there waiting.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Fine, you were right, that taco place was great. But you didn't say it was cash only! I had to run down the street hunting for an ATM while my date just sat there waiting."
+        },
+        {
+          "style": "formal",
+          "text": "I must admit that you were right about that taco restaurant; the food was excellent. However, you did not mention that it only accepted cash, so I had to hurry down the street to find a cash machine while my date sat there waiting."
+        }
+      ],
+      "note": "**cash only** 는 현금만 받는다는 뜻으로 가게에서 자주 보는 표현입니다. **you were right about** ~ 는 ~에 대해서는 네 말이 맞았다고 인정할 때 씁니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "요즘 커피 한 잔에 6달러 받는 거 봤어? 예전엔 매일 아침 출근길에 하나씩 사 갔는데, 이제는 차라리 집에서 내려 마시고 좀 서글퍼하고 말래.",
+      "text": "Have you seen they're charging six bucks for a coffee now? I used to grab one every morning on the way in, but at this point I'd rather just make it at home and be a little sad about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did you see coffee's six bucks now? I used to grab one every morning on my way in, but at this point I'll just make it at home and be kinda sad about it."
+        },
+        {
+          "style": "formal",
+          "text": "Have you noticed that they are now charging six dollars for a coffee? I used to buy one every morning on my way to work, but at this point I would rather make it at home, even if I am a little disappointed about it."
+        }
+      ],
+      "note": "**grab one** 은 하나 사 간다, 가볍게 집어 간다는 뜻의 일상 표현입니다. **I'd rather** 는 차라리 ~하는 게 낫다는 뜻이고, **bucks** 는 달러를 편하게 부르는 말이에요.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 이 text 와 끝부분(and now I'm just sitting here mad at myself)까지 거의 같아서, 더 짧고 축약된 구어로 바꾸고 끝을 kicking myself 로 고침",
+    "2번 한국어 '나 자신한테 화가 나' 가 번역투라 '나한테 너무 열받아' 로 고침",
+    "5번 한국어 '좀 슬퍼하는 게 나아' 가 어색해서 '좀 서글퍼하고 말래' 로 고침"
+  ]
+}

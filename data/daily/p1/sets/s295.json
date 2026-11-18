@@ -1,0 +1,116 @@
+{
+  "setId": "s295",
+  "videoId": "daily-s295",
+  "title": "Set 295",
+  "madeAt": "2026-11-18",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아 그러니까 걔가 처음엔 좀 말이 없는데, 친해지면 진짜 웃겨. 그러니까 저녁 먹을 때 처음 10분 정도 좀 어색해도 한 번만 기회를 줘 봐. 갈수록 훨씬 나아지거든.",
+      "text": "Okay, so he's really funny once he warms up, but he's kind of quiet at first. So if dinner feels a little awkward for the first ten minutes, just give him a chance, because he gets so much better.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "He's kinda shy at first, but once he warms up he's hilarious. So if dinner's a bit awkward for the first ten minutes, just give him a chance. He gets way better."
+        },
+        {
+          "style": "formal",
+          "text": "He is very funny once he becomes comfortable, but he is rather quiet at first. If dinner feels slightly awkward for the first ten minutes, please give him a chance, because he becomes much more engaging."
+        }
+      ],
+      "note": "**warms up** 은 사람이 낯을 가리다가 편해지는 것을 말합니다. **give him a chance** 는 섣불리 판단하지 말고 기회를 줘 보라는 뜻입니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "토요일 아침에 폰을 꺼 놓고 일요일 밤까지 안 켰어. 근데 솔직히 내가 없어진 걸 아무도 눈치 못 챘더라. 그게 서운할 줄 알았는데 오히려 좀 좋던데.",
+      "text": "I turned my phone off Saturday morning and didn't turn it back on until Sunday night. And honestly, nobody even noticed I was gone, which I thought would bother me, but it was actually kind of nice.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Turned my phone off Saturday morning and left it off till Sunday night. Nobody even noticed I was gone. Thought that'd bug me, but honestly it was kinda nice."
+        },
+        {
+          "style": "formal",
+          "text": "I turned off my phone on Saturday morning and did not turn it back on until Sunday night. To be honest, no one noticed my absence, which I expected would bother me, but it was actually rather pleasant."
+        }
+      ],
+      "note": "**didn't turn it back on until** 은 ~할 때까지 다시 안 켰다는 뜻입니다. **kind of nice** 는 꽤 괜찮았다, 은근히 좋았다는 느낌으로 자주 씁니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "상사한테 그만둘까 생각 중이라고 했더니 그 자리에서 바로 월급을 올려 주겠다는 거야. 그래서 지금 어떻게 해야 할지 모르겠어. 아니 돈이 더 들어오면 도움이야 되겠지만, 애초에 돈이 문제였던 적은 없었거든, 알지?",
+      "text": "When I told my boss I was thinking about leaving, he offered me a raise right there. So now I don't know what to do. I mean, the money would help, but the money was never really the problem, you know?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I told my boss I might quit, and he offered me a raise on the spot. Now I've got no clue what to do. The money'd help, sure, but it was never really about the money, you know?"
+        },
+        {
+          "style": "formal",
+          "text": "When I informed my manager that I was considering leaving, he offered me a raise immediately. I am now uncertain what to do. The additional money would help, but money was never truly the issue."
+        }
+      ],
+      "note": "**right there** 는 그 자리에서 바로라는 뜻입니다. **I mean** 은 말을 덧붙이거나 고쳐 말할 때 쓰는 말버릇으로, 아니 내 말은 정도의 느낌입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "강아지한테 80달러쯤 하는 비싼 침대를 사 줬는데 근처에도 안 가. 화장실 바닥에서 자는 게 더 좋은가 봐. 이제 거기가 걔 침대인가 봐.",
+      "text": "We got the dog this fancy bed that cost like eighty bucks, and she won't even go near it. She'd rather sleep on the bathroom floor, so I guess that's her bed now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Dropped like eighty bucks on a fancy dog bed, and she won't touch it. Bathroom floor's her bed now, I guess."
+        },
+        {
+          "style": "formal",
+          "text": "We bought the dog an expensive bed that cost about eighty dollars, and she will not even approach it. She prefers to sleep on the bathroom floor, so I suppose that is now her bed."
+        }
+      ],
+      "note": "**won't even go near it** 은 근처에도 안 간다는 강한 거부를 나타냅니다. **She'd rather** 는 차라리 ~하는 게 낫다, 더 좋아한다는 뜻입니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "추수감사절에 이모가 다들 있는 데서 나한테 언제 결혼하냐고 묻는 거야. 그래서 만나는 사람도 없다고 했더니, 그 자리에서 식탁에 앉은 채로 자기 치과 선생님이랑 엮어 주려고 하더라니까!",
+      "text": "At Thanksgiving, my aunt asked me in front of everybody when I'm getting married. And when I said I'm not even seeing anyone, she started trying to set me up with her dentist, right there at the table!",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My aunt asked me at Thanksgiving, in front of everyone, when I'm getting married. I said I'm not even seeing anybody, and she started trying to hook me up with her dentist, right there at the table!"
+        },
+        {
+          "style": "formal",
+          "text": "At Thanksgiving, my aunt asked me in front of the entire family when I intend to marry. When I explained that I am not seeing anyone, she began trying to introduce me to her dentist, right there at the table!"
+        }
+      ],
+      "note": "**seeing anyone** 은 누군가와 사귀고 있다는 뜻입니다. **set me up with** 는 누구와 소개팅을 시켜 주다, 엮어 주다라는 뜻입니다.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 he improves a great deal 은 사람이 아니라 실력을 말하는 것처럼 들려서 he becomes much more engaging 으로 고침",
+    "2번 casual 의 Phone went off 는 알람이 울렸다는 뜻으로도 읽혀서 Turned my phone off 로 고침",
+    "3번 한국어 돈이 있으면 도움은 되겠지만 을 영어 뜻에 맞게 돈이 더 들어오면 도움이야 되겠지만 으로 고침",
+    "4번 casual 이 text 와 거의 같아서 더 짧고 축약된 구어로 새로 씀",
+    "4번 한국어 끝맺음 침대인가 보다 해 가 어색해서 침대인가 봐 로 고침"
+  ]
+}

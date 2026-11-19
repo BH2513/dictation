@@ -1,0 +1,117 @@
+{
+  "setId": "s297",
+  "videoId": "daily-s297",
+  "title": "Set 297",
+  "madeAt": "2026-11-19",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저 또 욕실 환풍기 때문에 연락드려요. 별일 아닌 것처럼 들리실 수도 있는데, 환풍기가 안 돌아가니까 욕실 전체가 계속 축축하고 천장에 곰팡이가 피기 시작했어요. 주말 전에 사람 좀 보내 주실 수 있을까요? 제가 회사에 있으면 열쇠는 이웃집에 맡겨 둘게요.",
+      "text": "Hey, it's me again about the bathroom fan. I know it doesn't sound like a big deal, but without it the whole room stays wet, and I'm starting to see mold on the ceiling. Could you send someone before the weekend? If I'm at work, I can leave the key with my neighbor.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, the bathroom fan again. I know it seems minor, but nothing ever dries in there and there's mold on the ceiling now. Any chance someone can come before the weekend? If I'm not home, I'll leave the key with my neighbor."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, I am contacting you again regarding the bathroom fan. I realize it may not seem like a serious matter, but without it the entire room remains wet, and I have begun to notice mold on the ceiling. Would it be possible to send someone before the weekend? If I am at work, I can leave the key with my neighbor."
+        }
+      ],
+      "note": "**it doesn't sound like a big deal** 은 별일 아닌 것처럼 들린다는 뜻으로, 사소해 보여도 중요하다고 말할 때 앞에 깔아 둡니다. **send someone** 은 수리할 사람을 보내 달라고 할 때 씁니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "자리가 하나도 없어서 쟁반 들고 바보처럼 10분 동안 돌아다녔어. 겨우 자리를 찾았더니 바로 문 옆이라서 누가 들어올 때마다 찬바람을 맞았어.",
+      "text": "Every single table was taken, so I just walked around with my tray like an idiot for ten minutes. And when I finally found a seat, it was right by the door, so every time somebody came in, I got hit with cold air.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "There wasn't one free table, so I wandered around with my tray like an idiot for ten minutes. Then when I finally got a seat, it was right by the door, and every time someone walked in, cold air hit me."
+        },
+        {
+          "style": "formal",
+          "text": "All of the tables were occupied, so I spent ten minutes walking around with my tray, feeling rather foolish. When I finally found a seat, it was next to the door, so each time someone entered, I was hit by a draft of cold air."
+        }
+      ],
+      "note": "**Every single table was taken** 은 테이블이 하나도 빠짐없이 다 찼다는 뜻으로, single 이 하나도 남김없이를 강조합니다. **got hit with cold air** 는 찬바람을 정통으로 맞았다는 말입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "마음이 편해질 줄 알고 도자기 수업을 신청했는데, 만드는 것마다 다 삐뚤어졌어. 그러다 2주 연속으로 빠졌고, 그 뒤로는 좀 민망해서 다시 못 가겠더라.",
+      "text": "I signed up for a pottery class because I thought it'd be relaxing, but everything I made came out lopsided. And then I missed two weeks in a row, and after that I was kind of too embarrassed to go back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Signed up for pottery since I figured it'd be relaxing, but all my stuff came out lopsided. Then I missed two weeks straight, and after that I was kinda too embarrassed to go back."
+        },
+        {
+          "style": "formal",
+          "text": "I enrolled in a pottery class because I expected it to be relaxing, but everything I made turned out uneven. Then I missed two consecutive weeks, and after that I felt too embarrassed to return."
+        }
+      ],
+      "note": "**lopsided** 는 한쪽으로 기울어 삐뚤어진 모양을 말합니다. **two weeks in a row** 는 2주 연속이라는 뜻이고, casual 의 **two weeks straight** 도 같은 뜻입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "토요일에 이사하는 거 정말 도와주고 싶은데, 지난번에 다친 허리가 아직 다 안 나았어. 또 다치면 일주일은 일을 못 하거든. 대신 너희 점심 사 가도 될까?",
+      "text": "I really wish I could help you move on Saturday, but my back still isn't right from last time, and if I hurt it again, I won't be able to work for a week. Can I bring you guys lunch instead?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wish I could help you guys move Saturday, but my back's still messed up from last time, and if I hurt it again I'm out for a week. How about I bring you lunch instead?"
+        },
+        {
+          "style": "formal",
+          "text": "I truly wish I were able to help you move on Saturday, but my back has not fully recovered from last time, and if I injure it again, I will be unable to work for a week. Would it be all right if I brought you lunch instead?"
+        }
+      ],
+      "note": "**my back still isn't right** 는 허리가 아직 정상이 아니라는 뜻으로, 몸이 완전히 회복되지 않았을 때 씁니다. **instead** 를 붙여 거절하면서 다른 걸 제안할 수 있습니다.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "퇴근하고 헬스장 갈 준비가 다 돼 있었는데, 메일 하나만 답하려고 소파에 앉았다가 정신 차려 보니 9시더라. 그래서 오늘은 쉬는 날로 하기로 했어. 딱히 쉴 만큼 한 것도 없지만.",
+      "text": "I was all set to go to the gym after work, but I sat down on the couch to answer one email, and the next thing I knew it was nine. So I'm calling it a rest day, even though I didn't really do anything to rest from.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was totally gonna hit the gym after work, but I sat on the couch to answer one email and suddenly it was nine. So, rest day I guess. Not that I did anything to rest from."
+        },
+        {
+          "style": "formal",
+          "text": "I had fully intended to go to the gym after work, but I sat down on the sofa to reply to a single email, and before I realized it, it was nine o'clock. I am therefore treating today as a rest day, although I did not actually do anything that required rest."
+        }
+      ],
+      "note": "**the next thing I knew** 는 정신 차려 보니라는 뜻으로, 시간이 훌쩍 지나간 걸 말할 때 씁니다. **I'm calling it a rest day** 는 오늘을 쉬는 날로 치겠다는 말입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual이 text와 앞부분(Me again about the bathroom fan, without it the whole room stays wet)이 거의 그대로 겹쳐서 더 짧은 구어로 새로 썼습니다.",
+    "1번 한국어 '환풍기가 없으니까'는 고장 난 상황과 안 맞아서 '환풍기가 안 돌아가니까'로 고쳤습니다.",
+    "2번 한국어 '식판'은 급식·구내식당 느낌이라 카페에 맞게 '쟁반'으로 고쳤습니다.",
+    "3번 casual의 'cause 는 앞에 붙은 아포스트로피가 따옴표처럼 보일 수 있어 since 로 바꿨습니다.",
+    "4번 casual의 I'm out of work 는 실직했다는 뜻으로 읽혀서 I'm out for a week 로 고쳤습니다.",
+    "5번 casual 뒷부분이 text와 글자까지 똑같아서(So I'm calling it a rest day, even though...) 더 짧은 구어로 바꿨습니다."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "setId": "s299",
+  "videoId": "daily-s299",
+  "title": "Set 299",
+  "madeAt": "2026-11-19",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그 소파는 진짜 사지 말았어야 했어. 매장에서는 멋져 보였는데 우리 거실에는 너무 커서, 이제 부엌에 들어갈 때마다 옆으로 비집고 지나가야 해. 게다가 세일 상품이라 환불도 안 해 준대.",
+      "text": "I really shouldn't have bought that couch. It looked great in the store, but it's way too big for our living room, and now we have to squeeze past it every time we go into the kitchen. And they won't take it back because it was on sale.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, buying that couch was a mistake. Looked great in the store, but it's way too big for our living room, so now we gotta squeeze past it every time we go into the kitchen. And they won't take it back since it was on sale."
+        },
+        {
+          "style": "formal",
+          "text": "I truly should not have purchased that sofa. It looked wonderful in the store, but it is far too large for our living room, and now we must squeeze past it every time we enter the kitchen. Unfortunately, they will not accept a return because it was on sale."
+        }
+      ],
+      "note": "**shouldn't have bought** 는 사지 말았어야 했다는 후회를 말할 때 씁니다. **squeeze past** 는 좁은 틈으로 몸을 비집고 지나간다는 뜻입니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "네가 말해 준 그 태국 음식점 드디어 가 봤어. 카레는 끝내줬는데 너무 매워서 겨우 다 먹었어. 그래서 다음번엔 비웃어도 순하게 해 달라고 할 거야.",
+      "text": "So we finally tried that Thai place you told us about. The curry was amazing, but it was so spicy I could barely finish it, so next time I'm asking them to make it mild, even if they laugh at me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We finally hit up that Thai place you mentioned. Curry was amazing, but it was so spicy I could barely finish it, so next time I'm asking for mild, even if they laugh at me."
+        },
+        {
+          "style": "formal",
+          "text": "We finally visited the Thai restaurant you recommended to us. The curry was excellent, but it was so spicy that I could hardly finish it, so next time I will ask them to make it mild, even if they laugh at me."
+        }
+      ],
+      "note": "**could barely finish** 는 겨우겨우 다 먹었다는 뜻입니다. **make it mild** 는 음식을 순하게, 덜 맵게 해 달라고 할 때 씁니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "윗집 남자가 밤 열한 시쯤에 운동을 하기 시작했는데, 꼭 우리 집 천장에 바로 아령을 떨어뜨리는 소리가 나. 지난주에 쪽지를 남겼는데 오히려 더 심해져서, 그냥 직접 가서 문을 두드려 볼까 해.",
+      "text": "The guy upstairs has started working out at like eleven at night, and it sounds like he's dropping weights right on my ceiling. I left him a note last week, but it's only gotten worse, so I think I'm just going to go knock on his door.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My upstairs neighbor's been working out at like eleven at night, and it sounds like he's dropping weights right on my ceiling. Left him a note last week, but it's only gotten worse, so I think I'm just gonna go knock on his door."
+        },
+        {
+          "style": "formal",
+          "text": "The gentleman who lives upstairs has begun exercising at around eleven o'clock at night, and it sounds as though he is dropping weights directly onto my ceiling. I left him a note last week, but the situation has only become worse, so I believe I will simply go and knock on his door."
+        }
+      ],
+      "note": "**at like eleven** 의 like 는 대략, 쯤이라는 뜻으로 말할 때 자주 붙습니다. **it's only gotten worse** 는 나아지기는커녕 더 심해졌다는 뜻입니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "피자를 시켰는데 다른 사람이 시킨 초밥이 왔어. 가게에 전화했더니 제대로 된 주문을 다시 보내 준다고 했는데, 그게 벌써 한 시간 전이야. 솔직히 그냥 초밥 먹어 버릴까 싶어.",
+      "text": "I ordered a pizza and they brought me somebody else's sushi. I called the place and they said they'd send the right order, but that was an hour ago, so honestly, I'm about to just eat the sushi.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I order a pizza and they show up with somebody else's sushi. Called them and they said they'd send the right order, but that was an hour ago, so honestly, I'm about to just eat the sushi."
+        },
+        {
+          "style": "formal",
+          "text": "I ordered a pizza, but the restaurant delivered another customer's sushi instead. I called them, and they said they would send the correct order, but that was an hour ago, so to be honest, I am about to simply eat the sushi."
+        }
+      ],
+      "note": "**I'm about to** 는 막 무엇을 하려는 참이라는 뜻으로, 여기서는 기다리다 지쳐 그냥 초밥을 먹으려 한다는 말입니다. **the right order** 는 원래 시킨 제대로 된 주문을 말합니다.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "요즘 새벽 두 시쯤까지 잠이 안 와. 침대에서 휴대폰을 봐서 그런 것 같은데, 휴대폰을 부엌에 두고 오면 이번엔 깜빡하고 못 한 일들만 생각하면서 그냥 누워 있어.",
+      "text": "Lately I can't fall asleep until like two. I think it's because I'm on my phone in bed, but when I leave it in the kitchen, I just lie there thinking about everything I forgot to do.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Can't sleep till like two these days. Probably my phone, but if I leave it in the kitchen, I just lie there thinking about all the stuff I forgot to do."
+        },
+        {
+          "style": "formal",
+          "text": "Recently, I have been unable to fall asleep until around two o'clock. I believe it is because I use my phone in bed, but when I leave it in the kitchen, I simply lie awake thinking about everything I forgot to do."
+        }
+      ],
+      "note": "**fall asleep** 은 잠이 들다는 뜻이고, **can't fall asleep until like two** 는 두 시쯤이 되어서야 잠이 든다는 말입니다. **lie there** 는 잠 못 들고 그냥 누워 있는 모습을 말합니다.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal의 prepare it mild 는 어색해서 make it mild 로 고침",
+    "2번 한국어 비웃음을 당하더라도 가 번역투라 비웃어도 로 고침",
+    "4번 note의 be about to 는 문장에 그대로 나오지 않아 실제 표현인 I'm about to 를 짚도록 고침",
+    "4번 formal에서 just 의 뜻(그냥)이 빠져 simply 를 살림",
+    "5번 casual이 text와 앞부분이 거의 같아 더 짧은 구어로 새로 씀",
+    "5번 note의 can't fall asleep until two 는 문장에 그대로 없어서 until like two 로 맞춤"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "setId": "s298",
+  "videoId": "daily-s298",
+  "title": "Set 298",
+  "madeAt": "2026-11-19",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 소풍 가기로 했는데 오후 내내 비가 쏟아진대서, 그냥 다들 우리 집으로 오기로 했어. 그 말은 오늘 밤에 집을 싹 다 치워야 한다는 거지.",
+      "text": "We were supposed to have a picnic on Saturday, but it's going to pour all afternoon, so now everyone's just coming over to our place instead. Which means I have to clean the whole apartment tonight.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Saturday's picnic is a no-go since it's gonna pour all afternoon, so now everyone's just coming over to our place. Which means I gotta clean the whole apartment tonight."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to have a picnic on Saturday; however, heavy rain is expected all afternoon, so everyone will be coming to our home instead. This means I will need to clean the entire apartment this evening."
+        }
+      ],
+      "note": "**supposed to** 는 원래 ~하기로 되어 있었다는 뜻으로, 계획이 틀어졌을 때 자주 씁니다. **pour** 는 비가 퍼붓다, casual 의 **no-go** 는 못 하게 됐다는 말입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "기침 때문에 드디어 병원에 갔는데, 의사가 아마 그냥 알레르기일 거래. 그래서 2주 동안 알레르기 약 먹으면서 기침이 없어지는지 보라는데, 솔직히 좀 더 센 약을 기대했거든.",
+      "text": "I finally went in about that cough, and the doctor said it's probably just allergies. So I'm supposed to take some allergy pills for two weeks and see if it goes away, and honestly, I was kind of hoping for something a little stronger.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally got that cough checked out. Doc says it's probably just allergies, so it's allergy pills for two weeks and we'll see. Kinda wanted something stronger, honestly."
+        },
+        {
+          "style": "formal",
+          "text": "I finally saw a doctor about my cough, and the doctor said it is most likely allergies. I have been told to take allergy medication for two weeks to see whether it goes away, and frankly, I had been hoping for something somewhat stronger."
+        }
+      ],
+      "note": "**went in about** 은 ~때문에 진찰받으러 갔다는 말입니다. **see if it goes away** 는 증상이 없어지는지 지켜보다라는 뜻이고, casual 의 **got that cough checked out** 도 진찰을 받았다는 뜻입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "자, 지난번엔 네가 골랐는데 20분 보다가 껐잖아. 그러니까 오늘은 내가 고를 차례야. 그리고 실화 범죄물은 이제 안 돼. 너 그거 보고 나면 꼭 자기 전에 문 잠겼는지 두 번씩 확인하잖아.",
+      "text": "Okay, you picked last time and we turned it off after twenty minutes, so I think I get to choose tonight. And no, not another true crime thing, because you always end up checking the locks twice before bed.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Uh-uh, you picked last time and we bailed after twenty minutes. Tonight's my pick. And no more true crime, you always end up checking the locks twice."
+        },
+        {
+          "style": "formal",
+          "text": "You chose last time, and we stopped watching after twenty minutes, so I believe it is my turn to choose this evening. And I would rather not watch another true crime program, since you always end up checking the locks twice before going to bed."
+        }
+      ],
+      "note": "**I get to choose** 는 이번엔 내가 고를 권리가 있다는 느낌입니다. **end up** 은 결국 ~하게 되다, casual 의 **bailed** 는 중간에 그만두다라는 뜻입니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "어젯밤에 젠 남자친구가 데이팅 앱에 올라와 있는 걸 봤어. 젠한테 말해야 할까? 내가 말하면 안 믿을 수도 있는데, 말 안 했다가 내가 알고 있었다는 걸 젠이 알게 되면 나를 절대 용서 안 할 거야. 아, 모르겠다. 하룻밤 자면서 생각해 볼게.",
+      "text": "I saw Jen's boyfriend on a dating app last night. Do you think I should tell her? Because if I say something, she might not believe me, but if I don't and she finds out I knew, she's never going to forgive me. Ugh, I don't know. Let me sleep on it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So Jen's boyfriend's on a dating app. Saw him last night. Do I tell her? She might not even believe me, but if she finds out I knew, she'll never forgive me. Ugh, I dunno. I'll sleep on it."
+        },
+        {
+          "style": "formal",
+          "text": "Last night I saw Jen's boyfriend on a dating app. Do you think I ought to tell her? If I say something, she may not believe me, but if I do not and she learns that I knew, she will never forgive me. I am honestly not sure. Let me think it over tonight."
+        }
+      ],
+      "note": "**sleep on it** 은 바로 정하지 않고 하룻밤 자면서 생각해 보다라는 뜻입니다. **finds out** 은 몰랐던 사실을 알게 되다입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "내 솔직한 생각 듣고 싶어? 재킷은 멋진데 바지가 좀 과해. 둘을 같이 입으면 코스튬 파티 가는 사람 같아. 재킷은 그대로 두고 청바지랑 입는 게 어때?",
+      "text": "You want my real opinion? The jacket's great, but those pants are kind of a lot. Wear both at once and it looks like you're on your way to a costume party, so maybe keep the jacket and just wear it with jeans.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Honestly? Love the jacket, but those pants are kinda a lot. Together it looks like you're headed to a costume party, so maybe keep the jacket and just throw it on with jeans."
+        },
+        {
+          "style": "formal",
+          "text": "Would you like my honest opinion? The jacket is excellent, but the trousers are rather bold. When the two are worn together, it gives the impression that you are on your way to a costume party, so perhaps keep the jacket and wear it with jeans instead."
+        }
+      ],
+      "note": "**kind of a lot** 은 좀 과하다, 너무 튄다는 말을 부드럽게 하는 표현입니다. **on your way to** 는 ~에 가는 길이다, casual 의 **throw it on** 은 대충 걸쳐 입다라는 뜻입니다.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번: 한국어 '결국 다들 대신 우리 집으로' 에서 '대신' 이 번역투라 빼고, 뒷문장도 친구에게 하는 말투로 다듬음",
+    "2번: casual 이 text 와 뒷부분이 거의 같아서(I'm supposed to take ... and honestly ...) 더 짧고 끊어지는 구어로 새로 씀",
+    "3번: casual 첫머리 Nope 는 물음에 답할 때 쓰는 말인데 앞에 물음이 없어서 어색함. Uh-uh 로 바꾸고 뒤를 짧게 끊음",
+    "4번: casual 이 text 의 가운데 문장을 그대로 옮겨 놓아서 더 짧고 축약된 말로 새로 씀. 한국어 '데이트 앱에 있는 걸' 을 '데이팅 앱에 올라와 있는 걸' 로 자연스럽게 고침",
+    "5번: text 의 If you wear them together 에서 them 이 바지만 가리키는지 재킷과 바지 둘 다인지 순간 헷갈려서 Wear both at once 로 고침. formal 도 같은 뜻이 분명하게 다듬음"
+  ]
+}

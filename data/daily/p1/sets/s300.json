@@ -1,0 +1,113 @@
+{
+  "setId": "s300",
+  "videoId": "daily-s300",
+  "title": "Set 300",
+  "madeAt": "2026-11-20",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "엄마가 일주일 동안 우리 집에 와 계시기 전까지는 진짜 잘하고 있었거든. 근데 엄마 요리는 도저히 거절을 못 하잖아. 그래서 거의 원점으로 돌아왔어.",
+      "text": "I was doing really well until my mom came to stay with us for a week, and you can't say no to her cooking, so I'm pretty much back where I started.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was crushing it till Mom came for a week. Who's gonna say no to her cooking? So yeah, back to square one."
+        },
+        {
+          "style": "formal",
+          "text": "I had been making very good progress until my mother came to stay with us for a week, and one simply cannot refuse her cooking, so I have essentially returned to where I began."
+        }
+      ],
+      "note": "**back where I started** 는 처음 자리로 돌아왔다, 즉 원점이라는 뜻이고 캐주얼의 **back to square one** 도 같은 말입니다. **can't say no to** 는 ~을 거절하지 못하다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그만둘까 계속 생각하는데, 막상 다른 데 알아보려고 앉으면 더 안 좋은 데로 가게 될까 봐 겁이 나서 그냥 노트북을 덮어 버려.",
+      "text": "I keep thinking about quitting, but every time I sit down to actually look for something else, I get scared I'll end up somewhere worse, so I just close the laptop.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Quitting's on my mind all the time, but whenever I actually sit down to look for something else, I get scared I'll land somewhere worse, so I just shut the laptop."
+        },
+        {
+          "style": "formal",
+          "text": "I continually consider resigning; however, each time I sit down to search for another position, I become afraid that I will end up somewhere worse, and so I simply close the laptop."
+        }
+      ],
+      "note": "**end up** 은 결국 어떤 곳이나 상황에 이르게 되다라는 뜻입니다. 캐주얼의 **land somewhere worse** 도 더 나쁜 곳에 떨어지다라는 비슷한 말이에요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "싱크대 고치는 영상 하나만 보려고 했는데, 어쩌다 보니 두 시간 뒤에 웬 아저씨가 낡은 배 고치는 걸 보고 있더라. 싱크대는 아직도 고장 난 채로 있고.",
+      "text": "I only meant to watch one video on how to fix the sink, and somehow two hours later I was watching some guy fix up an old boat, and the sink's still broken.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was just gonna watch one video on fixing the sink, and two hours later I'm watching some guy fix up an old boat. Sink's still broken, by the way."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to watch only one video on how to repair the sink, yet two hours later I found myself watching a man restore an old boat, and the sink is still broken."
+        }
+      ],
+      "note": "**somehow** 는 어쩌다 보니, 왠지 모르게. **fix up** 은 낡은 것을 손봐서 쓸 만하게 만들다라는 뜻입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "배송 조회가 화요일부터 그대로야. 택배가 오하이오 어딘가에 있다고만 나와. 여동생 생일 선물이라 토요일까지는 받아야 하는데, 그냥 쇼핑몰 가서 대신 다른 걸 사 줄까 봐.",
+      "text": "The tracking hasn't changed since Tuesday. It just says the package is somewhere in Ohio, and I need it by Saturday because it's my sister's birthday present, so I might just go buy her something at the mall instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tracking's been stuck since Tuesday. Just says it's somewhere in Ohio, and I need it by Saturday 'cause it's my sister's birthday present, so I might just grab her something at the mall instead."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking information has not been updated since Tuesday. It indicates only that the package is somewhere in Ohio. I require it by Saturday, as it is a birthday present for my sister, so I may purchase something for her at the mall instead."
+        }
+      ],
+      "note": "**tracking** 은 배송 조회입니다. **might just** 는 그냥 ~할까 봐, 하고 마음이 기우는 말투예요.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "솔직히 별거 없었어. 토요일에 등산 가기로 했는데 차 시동이 안 걸려서 주말 내내 그냥 집에서 영화만 봤어. 근데 속으로는 좀 좋더라.",
+      "text": "Not much, honestly. We were supposed to go hiking on Saturday, but my car wouldn't start, so we just stayed in and watched movies all weekend, and I was kind of secretly happy about it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Eh, not much. We were gonna go hiking Saturday, but my car wouldn't start, so we just stayed in and watched movies all weekend. Kinda secretly loved it, though."
+        },
+        {
+          "style": "formal",
+          "text": "Not a great deal, to be honest. We had planned to go hiking on Saturday, but my car would not start, so we remained at home and watched films all weekend, and I was rather secretly pleased about it."
+        }
+      ],
+      "note": "**were supposed to** 는 ~하기로 했었는데 결국 못 했다는 뜻입니다. **stayed in** 은 밖에 안 나가고 집에 있었다, **wouldn't start** 는 시동이 안 걸렸다.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: 'Mom stayed with us for a week and I was crushing it before that' 은 순서가 뒤집혀 말로 들으면 무엇이 먼저인지 헷갈림. text 와 같은 순서로 짧게 다시 씀",
+    "1번 formal: 'It is impossible to decline her cooking' 은 딱딱한 번역투라 'one simply cannot refuse her cooking' 으로 고침 (뜻은 같음)"
+  ]
+}

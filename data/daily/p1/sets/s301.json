@@ -1,0 +1,116 @@
+{
+  "setId": "s301",
+  "videoId": "daily-s301",
+  "title": "Set 301",
+  "madeAt": "2026-11-20",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "차 정말 빌려주고 싶은데, 내 보험은 나만 보장돼서 혹시 무슨 일 생기면 우리 둘 다 곤란해져. 그냥 내가 거기까지 태워다 줄까?",
+      "text": "I'd really like to lend you the car, but my insurance only covers me, so if anything happened, we'd both be in trouble. Could I just drive you there instead?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wish I could lend you the car, but the insurance is just for me, so if something happened we'd both be screwed. Want me to just drive you?"
+        },
+        {
+          "style": "formal",
+          "text": "I would be glad to lend you the car, but my insurance covers only me, so if anything were to happen, we would both be in a difficult position. Would it be all right if I drove you there instead?"
+        }
+      ],
+      "note": "**covers** 는 보험이 누구까지 보장하는지 말할 때 씁니다. **drive you there** 는 차로 거기까지 데려다준다는 뜻이에요.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "제일 먼저 빠져서 미안한데, 내일 아침 7시 비행기인데 짐을 아직 하나도 안 쌌어. 괜히 한 잔만 더 하게 되기 전에 그만 집에 가 봐야겠다.",
+      "text": "I hate to be the first one out, but I've got a seven a.m. flight tomorrow and I haven't even started packing, so I should probably head home before I talk myself into one more drink.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry to bail first, but I've got a 7 a.m. flight and haven't even packed yet, so I'd better get going before I talk myself into another drink."
+        },
+        {
+          "style": "formal",
+          "text": "I am sorry to be the first to leave, but I have a seven a.m. flight tomorrow and I have not yet begun packing, so I ought to go home before I persuade myself to have one more drink."
+        }
+      ],
+      "note": "**talk myself into** 는 이런저런 핑계로 스스로를 설득해서 결국 하게 된다는 말입니다. 캐주얼한 **bail** 은 자리에서 먼저 빠진다는 뜻이에요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "제일 끔찍했던 게 뭔지 알아? 한 명도 빠짐없이 다들 취직은 했냐고 묻는 거야. 그래서 디저트 나올 때쯤엔 사람들 피하려고 그냥 부엌에 숨어서 설거지만 하고 있었어.",
+      "text": "You know what the worst part was? Every single person asked me if I'd found a job yet, so by dessert I was just hiding in the kitchen doing dishes to get away from everyone.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wanna know the worst part? Literally everyone asked if I'd found a job yet, so by dessert I was hiding in the kitchen doing dishes just to get away."
+        },
+        {
+          "style": "formal",
+          "text": "Would you like to know what the worst part was? Every person there asked whether I had found a job yet, so by dessert I had retreated to the kitchen to wash dishes, simply to avoid everyone."
+        }
+      ],
+      "note": "**Every single person** 은 every person 을 강조해서 정말 한 명도 빠짐없이라는 느낌을 줍니다. **get away from** 은 누구를 피해 벗어난다는 뜻이에요.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "6월 첫째 주는 사촌 결혼식 때문에 안 되는데, 그다음 주에 가면 내가 금요일에 휴가 내서 그래도 4박은 할 수 있어. 너는 그때 괜찮아?",
+      "text": "So I can't do the first week of June because of my cousin's wedding, but if we went the week after, I could take Friday off and we'd still get four nights. Would that work for you?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Can't do the first week of June, my cousin's getting married. But if we go the week after, I can take Friday off and we'd still get four nights. That work?"
+        },
+        {
+          "style": "formal",
+          "text": "I am unable to travel during the first week of June because of my cousin's wedding, but if we went the following week, I could take Friday off and we would still have four nights. Would that suit you?"
+        }
+      ],
+      "note": "**take Friday off** 는 금요일 하루 휴가를 낸다는 말입니다. **Would that work for you?** 는 상대 일정이 괜찮은지 물을 때 자주 써요.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이번 주말에 진짜 아무것도 안 했어, 정말 하나도. 일요일엔 옷도 안 갈아입었어. 그러고 나면 죄책감 들 줄 알았는데, 솔직히 몇 달 만에 이렇게 푹 쉰 기분은 처음이야.",
+      "text": "I didn't do a single thing this weekend, I mean nothing. I didn't even get dressed on Sunday, and I thought I'd feel guilty about it, but honestly, I haven't felt this rested in months.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I did zero this weekend, like literally nothing. Didn't even get dressed Sunday, and I figured I'd feel guilty, but honestly? Haven't felt this rested in months."
+        },
+        {
+          "style": "formal",
+          "text": "I did not do a single thing this weekend, truly nothing. I did not even get dressed on Sunday, and I expected to feel guilty about it, but in truth, I have not felt this rested in months."
+        }
+      ],
+      "note": "**I mean** 은 앞에 한 말을 다시 강조하며 덧붙일 때 씁니다. **haven't felt this rested in months** 는 몇 달 동안 이만큼 개운했던 적이 없다는 뜻이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 'we would both be in difficulty' 는 원어민이 안 쓰는 말이라 'we would both be in a difficult position' 으로 고쳤습니다.",
+    "1번 한국어 '나만 운전할 때만 돼서' 가 어색해서 '나만 보장돼서' 로 다듬었습니다.",
+    "2번 한국어 '한 잔만 더 하자고 나 스스로 넘어가기 전에' 가 talk myself into 를 그대로 옮긴 번역투라 '괜히 한 잔만 더 하게 되기 전에' 로 고쳤습니다.",
+    "3번 한국어 '제일 최악이' 는 겹말이라 '제일 끔찍했던 게' 로 고쳤습니다.",
+    "3번 formal 의 'staying in the kitchen' 은 숨어 있었다는 뜻이 빠져서 'had retreated to the kitchen' 으로 고쳤습니다."
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "setId": "s305",
+  "videoId": "daily-s305",
+  "title": "Set 305",
+  "madeAt": "2026-11-21",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이번 주말에 차고 정리하려고 계획을 잔뜩 세워 놨는데, 결국 이틀 다 현관 앞에 앉아서 책만 읽었어. 근데 있잖아, 그게 하나도 찔리지 않아. 오늘 아침엔 웬일로 정말 회사에 오고 싶은 마음으로 출근했거든.",
+      "text": "I had all these plans to clean out the garage this weekend, but I ended up just reading on the porch both days. And you know what? I don't even feel bad about it, because for once I came into work this morning actually wanting to be here.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna clean out the garage this weekend, but nope, just read on the porch both days. And honestly? Zero guilt, 'cause for once I actually wanted to come in to work this morning."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to clean out the garage this weekend, but I spent both days reading on the porch instead. I do not regret it, because for once I arrived at work this morning genuinely wanting to be here."
+        }
+      ],
+      "note": "**ended up** 은 계획과 달리 결국 ~하게 됐다는 뜻입니다. **for once** 는 웬일로 이번만큼은이라는 느낌이고, **I don't even feel bad about it** 은 그걸로 전혀 미안하거나 찔리지 않는다는 말입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "배송 조회에는 어제 두 시에 택배가 배달됐다고 나오는데, 우리 집 문 앞에는 아무것도 없어. 나 오후 내내 집에 있었거든. 그러니까 다른 건물로 갔거나 누가 가져갔거나 둘 중 하나인데, 택배 회사는 하루만 더 기다려 보라는 말만 계속해.",
+      "text": "The tracking says my package was delivered yesterday at two, but there's nothing at my door, and I was home all afternoon. So either it went to the wrong building or somebody took it, and the company just keeps telling me to wait another day.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Apparently it got dropped off yesterday at two, but there's nothing here, and I was home all afternoon. So wrong building or somebody swiped it, and they just keep saying give it another day."
+        },
+        {
+          "style": "formal",
+          "text": "According to the tracking information, my package was delivered yesterday at two o'clock, but it is not at my door, and I was home the entire afternoon. Either it was delivered to the wrong building or someone has taken it, and the company continues to ask me to wait another day."
+        }
+      ],
+      "note": "**either ... or** 는 둘 중 하나라는 뜻으로, 가능성을 두 개로 좁힐 때 씁니다. **keeps telling me** 는 같은 말을 자꾸 되풀이한다는 답답함이 담깁니다. 캐주얼의 **swiped** 는 슬쩍 훔쳐 갔다는 뜻입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "디저트까지 먹고 가고 싶은데, 아이 봐 주시는 분이 아홉 시까지밖에 안 되거든. 또 늦으면 그분 다시는 안 오실 것 같아.",
+      "text": "I'd love to stay for dessert, but our babysitter can only stay till nine, and if we're late again, I'm pretty sure she's not coming back.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wish I could stay for dessert, but the sitter's only good till nine, and if we're late again, she's probably done with us."
+        },
+        {
+          "style": "formal",
+          "text": "I would love to stay for dessert, but our babysitter is only available until nine, and if we are late again, I am fairly certain she will not return."
+        }
+      ],
+      "note": "**I'd love to ~, but** 은 정말 그러고 싶지만 안 된다고 부드럽게 거절할 때 씁니다. **till** 은 until 의 말할 때 쓰는 짧은 형태이고, **I'm pretty sure** 는 거의 확실하다는 뜻입니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "너도 현장학습 이메일 받았어? 금요일까지 40달러 내라는데, 정작 애들이 어디로 가는지는 아무도 안 알려 줬잖아. 그래서 나는 다른 누가 먼저 물어보나 좀 기다려 보는 중이야.",
+      "text": "Did you get that email about the field trip too? They want forty dollars by Friday, but nobody's told us where they're actually going, so I'm kind of waiting to see if anyone else asks first.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You get that field trip email too? Forty bucks by Friday, and nobody's said where they're even going, so I'm kinda waiting for someone else to ask first."
+        },
+        {
+          "style": "formal",
+          "text": "Did you also receive the email regarding the field trip? They are requesting forty dollars by Friday, but no one has told us where the children are actually going, so I am waiting to see whether anyone else inquires first."
+        }
+      ],
+      "note": "**field trip** 은 학교 현장학습입니다. 캐주얼의 **forty bucks** 처럼 bucks 는 달러를 편하게 부르는 말이고, **kind of** 는 좀, 약간 하고 말을 누그러뜨립니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그래서 포틀랜드 쪽에서 일자리 제안이 왔거든. 돈은 더 주는데, 애들을 학년 중간에 학교에서 빼야 해. 아니 솔직히, 나 혼자였으면 벌써 짐 싸고 있었을 거야. 모르겠다. 내일 마이크랑 얘기해 보고 전화해도 돼?",
+      "text": "So they offered me the job in Portland, and it's more money, but we'd have to pull the kids out of school halfway through the year. I mean, if it were just me, I'd already be packing. I don't know. Can I call you tomorrow after I talk to Mike?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I got the Portland job offer, and it pays more, but we'd have to yank the kids out of school halfway through the year. Like, if it was just me, I'd be packing already. I dunno. Can I call you tomorrow once I talk to Mike?"
+        },
+        {
+          "style": "formal",
+          "text": "I have been offered the position in Portland, and it pays more, but we would have to withdraw the children from school halfway through the year. If it were only me, I would already be packing. I am not certain. May I call you tomorrow after I have spoken with Mike?"
+        }
+      ],
+      "note": "**halfway through the year** 는 한 해의 중간, 여기서는 학년 도중이라는 뜻입니다. **if it were just me** 는 나 혼자라면 하고 가정할 때 쓰고, **I mean** 은 말을 고쳐 덧붙일 때 아니 내 말은 하는 느낌입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 이 Tracking says 로 시작해 text 와 앞부분이 겹쳐서, Apparently 로 시작하고 뒷부분도 더 짧은 구어(So wrong building or somebody swiped it)로 바꿈"
+  ]
+}

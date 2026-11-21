@@ -1,0 +1,113 @@
+{
+  "setId": "s303",
+  "videoId": "daily-s303",
+  "title": "Set 303",
+  "madeAt": "2026-11-21",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "진짜 가려고 했어, 맹세해. 근데 운동화가 아직 언니 차에 있는데 언니가 일요일까지 안 와. 그러니까 그때까지는 나 안 가도 되는 거지?",
+      "text": "I was totally going to go, I swear, but my sneakers are still in my sister's car, and she's not back until Sunday. So I guess I'm off the hook until then, right?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Swear I was gonna go! But my sneakers are still in my sister's car and she's gone till Sunday. So I'm kinda off the hook till then, right?"
+        },
+        {
+          "style": "formal",
+          "text": "I fully intended to go, I assure you, but my sneakers are still in my sister's car, and she will not return until Sunday. I suppose I am excused until then, am I not?"
+        }
+      ],
+      "note": "**off the hook** 은 해야 할 일이나 책임에서 풀려났다는 뜻이에요. **I swear** 는 진짜야, 맹세해 처럼 말을 강조할 때 씁니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "알았어, 네가 맨날 얘기하는 그 요리 프로그램 볼게. 근데 처음 한두 편은 건너뛰면 안 돼? 너도 3화쯤 돼야 재밌어진다고 했잖아.",
+      "text": "Okay, I'll watch that cooking show you keep talking about, but can we skip the first couple episodes? Because you said yourself it doesn't really get good until like episode three.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Fine, I'll watch that cooking show you won't stop talking about. Can we just skip the first couple episodes though? You said it doesn't get good till like episode three."
+        },
+        {
+          "style": "formal",
+          "text": "Very well, I will watch the cooking show you have mentioned so often, but might we skip the first two episodes? You said yourself that it does not really become worth watching until the third episode."
+        }
+      ],
+      "note": "**get good** 은 재밌어지다, 볼만해지다라는 뜻이에요. **you said yourself** 는 네 입으로 말했잖아 하고 상대 말을 근거로 댈 때 씁니다.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그러니까 그 사람은 선생님이고, 기타도 치고, 솔직히 내가 아는 남자 중에 제일 착한 편이야. 딱 하나 걸리는 건 자기 개 얘기를 엄청 한다는 건데, 개 별로 안 좋아하면 지금 말해 주는 게 좋을 거야.",
+      "text": "So he's a teacher, he plays guitar, and he's honestly one of the nicest guys I know. The only thing is he talks about his dog a lot, so if you're not a dog person, you might want to tell me now.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "He's a teacher, plays guitar, and honestly he's one of the nicest guys I know. Only thing is he talks about his dog a lot, so if you're not into dogs, better tell me now."
+        },
+        {
+          "style": "formal",
+          "text": "He is a teacher, he plays the guitar, and he is truly one of the kindest people I know. The only concern is that he speaks about his dog quite often, so if you do not care for dogs, please let me know now."
+        }
+      ],
+      "note": "**dog person** 은 개를 좋아하는 사람이라는 뜻이에요. **The only thing is** 는 딱 하나 걸리는 건 하고 아쉬운 점을 꺼낼 때 씁니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "네가 말해 준 그 타코집 가 봤는데, 네 말이 맞더라. 음식 진짜 맛있었어. 근데 자리 나는 데 거의 한 시간을 기다려서, 6시 전에 가는 거 아니면 다시는 안 갈 것 같아.",
+      "text": "We went to that taco place you told us about, and you were right, the food was amazing. But we waited almost an hour for a table, so I don't think I'd go back unless we got there before six.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Tried that taco place. You were so right, the food was amazing! But like an hour wait for a table, so I'd only go back if we got there before six."
+        },
+        {
+          "style": "formal",
+          "text": "We visited the taco restaurant you recommended, and you were correct, the food was excellent. However, we waited nearly an hour for a table, so I would not return unless we arrived before six."
+        }
+      ],
+      "note": "**waited almost an hour for a table** 은 자리 나기를 거의 한 시간 기다렸다는 말이에요. **unless** 는 ~하지 않는 한, ~가 아니면 이라는 조건을 붙입니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "미안, 미안, 밤새 폰 배터리가 나가서 알람이 아예 안 울렸어. 충전해 놨어야 했는데, 나도 알아. 근데 너무 피곤해서 폰을 손에 든 채로 그냥 잠들어 버렸어.",
+      "text": "Sorry, sorry, my phone died overnight, so my alarm never went off. I mean, I should've plugged it in, I know, but I was so tired I just fell asleep with it in my hand.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry! My phone died overnight so my alarm didn't go off. I know, I should've plugged it in, but I was so wiped I just passed out with it in my hand."
+        },
+        {
+          "style": "formal",
+          "text": "I apologize. My phone lost its charge overnight, so my alarm did not go off. I realize I should have plugged it in, but I was so tired that I fell asleep holding it."
+        }
+      ],
+      "note": "**my phone died** 는 폰 배터리가 다 나갔다는 뜻이에요. **went off** 는 알람이 울리다라는 말로, never went off 는 아예 안 울렸다는 뜻입니다.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 formal: does not become very good 는 어색해서 does not really become worth watching 로 바꿨습니다.",
+    "4번 casual: text 와 거의 그대로 겹쳐서 더 짧고 끊어 말하는 구어로 새로 썼습니다."
+  ]
+}

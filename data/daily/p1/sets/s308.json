@@ -1,0 +1,113 @@
+{
+  "setId": "s308",
+  "videoId": "daily-s308",
+  "title": "Set 308",
+  "madeAt": "2026-11-22",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그래서 안마의자를 하나 샀거든. 응, 편하긴 편해. 근데 거실 반을 차지하고, 상자를 벌써 버려서 반품도 못 해.",
+      "text": "So I bought one of those massage chairs, and yeah, it's comfortable and everything, but it takes up half the living room, and I can't even return it because I already threw out the box.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got one of those massage chairs. Yeah, it's comfy and all, but it eats up half the living room, and I can't even send it back 'cause I already tossed the box."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased one of those massage chairs, and while it is certainly comfortable, it occupies half of the living room, and I am unable to return it because I have already discarded the box."
+        }
+      ],
+      "note": "**takes up** 는 공간을 차지한다는 뜻이에요. **and everything** 은 말끝에 붙여서 그런 것들 다, 라는 느낌을 주고, 뒤에 but 이 오면 좋긴 한데 하고 아쉬운 점을 꺼낼 때 써요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "너 걔 진짜 마음에 들 거야. 간호사라서 근무 시간이 좀 들쭉날쭉하긴 한데, 엄청 말이 잘 통하고 영화 보는 눈이 너처럼 형편없어서 둘이 할 얘기가 절대 안 떨어질걸.",
+      "text": "You'd really like her. She's a nurse, so she works kind of weird hours, but she's super easy to talk to, and she has the same terrible taste in movies as you, so you two would never run out of things to talk about.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Oh, you'd love her. She's a nurse, so her hours are kinda all over the place, but she's super easy to talk to, and her taste in movies is just as bad as yours, so you guys would never run out of stuff to talk about."
+        },
+        {
+          "style": "formal",
+          "text": "I believe you would like her very much. She is a nurse, so her working hours are somewhat irregular, but she is very easy to talk to, and she shares your unfortunate taste in films, so the two of you would never run out of things to discuss."
+        }
+      ],
+      "note": "**run out of things to talk about** 은 할 얘기가 떨어진다는 뜻이에요. **easy to talk to** 는 말이 잘 통하는, 편하게 얘기할 수 있는 사람을 말해요.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "요즘 내가 왜 이러는지 모르겠는데, 자꾸 새벽 세 시쯤 깨서 그냥 누운 채로 회사 일 생각을 해. 그러다 겨우 다시 잠들 때쯤 되면 알람이 울려.",
+      "text": "I don't know what's going on with me lately, but I keep waking up at like three and just lying there thinking about work, and by the time I finally fall back asleep, my alarm goes off.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "No idea what's up with me lately, but I keep waking up around three and just lying there thinking about work, and by the time I'm finally back asleep, boom, my alarm's going off."
+        },
+        {
+          "style": "formal",
+          "text": "I am not certain what has been happening with me recently, but I continue to wake at approximately three o'clock and lie awake thinking about work, and by the time I manage to fall asleep again, my alarm sounds."
+        }
+      ],
+      "note": "**by the time** 은 ~할 때쯤에는, 이라는 뜻이에요. **at like three** 의 like 는 대충, 쯤이라는 뜻으로 말할 때 아주 자주 써요. 알람이 울리는 건 **goes off** 라고 해요.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "퇴근하고 헬스장 가려고 했어, 진짜로. 근데 먼저 좀 쉬려고 소파에 잠깐 앉았는데, 한번 앉고 나니까 다시 일어날 수가 없더라.",
+      "text": "I was going to go to the gym after work, I really was, but I sat down on the couch for a minute to rest first, and once I sat down, there was no way I was getting back up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was totally gonna hit the gym after work, I swear, but I plopped down on the couch for a sec first, and once I was down, I wasn't getting back up."
+        },
+        {
+          "style": "formal",
+          "text": "I had fully intended to go to the gym after work, but I sat down on the sofa to rest for a moment first, and once I had sat down, I found it impossible to get up again."
+        }
+      ],
+      "note": "**I really was** 는 앞 말을 한 번 더 받아서 진짜 그러려고 했다고 강조하는 말이에요. **there was no way** 는 도저히 ~할 수 없었다는 뜻이에요.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "점심 먹으면서 영상 딱 하나만 보려고 했는데, 자동 재생이 계속 넘어가는 바람에 노트북이 꺼질 때까지 몰랐어. 그래서 오늘 해야 할 일은 하나도 못 했어.",
+      "text": "I told myself I'd watch one video while I ate lunch, but autoplay just kept going, and I didn't even notice until my laptop died, so I never got to any of the stuff I was supposed to do today.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was just gonna watch one video over lunch, but autoplay kept going and I didn't even notice till my laptop died, so I didn't get any of my stuff done today."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to watch only one video during lunch, but autoplay continued, and I did not notice until my laptop's battery ran out, so I was unable to complete any of the tasks I had planned for today."
+        }
+      ],
+      "note": "**I told myself** 는 스스로 다짐했다, ~하자고 마음먹었다는 뜻이에요. 배터리가 다 돼서 기계가 꺼지는 건 **died** 라고 해요. **never got to** 는 ~까지 손도 못 댔다는 뜻이에요.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual: cause 는 because 를 줄인 말이라 'cause 로 적어야 합니다.",
+    "5번 casual: so I got none of my stuff done 은 말로 하기엔 딱딱해서 so I didn't get any of my stuff done 으로 바꿨습니다."
+  ]
+}

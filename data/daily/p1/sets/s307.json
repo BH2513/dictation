@@ -1,0 +1,115 @@
+{
+  "setId": "s307",
+  "videoId": "daily-s307",
+  "title": "Set 307",
+  "madeAt": "2026-11-22",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "그래, 그럼 너 목요일까지 회사에서 못 빠지면 내가 그냥 먼저 비행기 타고 가 있고 네가 거기로 오는 건 어때? 그러면 서로 기다리느라 하루를 통째로 날리지 않아도 되잖아.",
+      "text": "Okay, so if you can't get off work until Thursday, why don't I just fly out first and you meet me there? That way we don't lose a whole day waiting on each other.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Can't get off till Thursday? Fine, I'll just fly out first and you meet me there. Then we're not wasting a whole day waiting around for each other."
+        },
+        {
+          "style": "formal",
+          "text": "If you are unable to leave work until Thursday, perhaps I could fly out first and you could meet me there. That way, we would not lose an entire day waiting for each other."
+        }
+      ],
+      "note": "**get off work** 는 퇴근하다, 회사에서 빠져나오다라는 뜻이에요. **why don't I** 는 내가 ~할까?처럼 내 쪽에서 제안할 때 쓰고, **fly out** 은 비행기 타고 떠나다예요.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "알아, 알아, 늦었지. 그 발표 자료 끝내느라 너무 늦게까지 안 자서 알람 울리는 것도 모르고 계속 잤나 봐. 그래서 커피 마실 시간도 없었어.",
+      "text": "I know, I know, I'm late. I was up way too late finishing that presentation, and I guess I slept right through my alarm, so I didn't even have time for coffee.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Yeah, yeah, I'm late, I know. Stayed up way too late doing that presentation and totally slept through my alarm, so I didn't even get to grab coffee."
+        },
+        {
+          "style": "formal",
+          "text": "I am aware that I am late, and I apologize. I stayed up far too late finishing the presentation, and I must have slept through my alarm, so I did not even have time for coffee."
+        }
+      ],
+      "note": "**slept right through my alarm** 은 알람이 울리는데도 모르고 계속 잤다는 말이에요. **way too late** 의 way 는 too 를 더 세게 만들어서 너무너무 늦게라는 느낌을 줘요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "저기, 또 귀찮게 해서 죄송한데요, 샤워기에서 아직도 찬물만 나와요. 지난주에 보내 주신 기사님이 부품 가지고 다시 오신다고 했는데 아무도 안 왔어요. 혹시 저 대신 그분한테 전화 좀 해 주실 수 있을까요?",
+      "text": "Hey, sorry to bug you again, but the shower's still only running cold. The guy you sent last week said he'd come back with a part, but nobody ever showed up, so could you maybe call him for me?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, me again! Shower's still ice cold. The guy from last week said he'd be back with a part, but he never came, so could you give him a call for me?"
+        },
+        {
+          "style": "formal",
+          "text": "I apologize for disturbing you again, but the shower is still producing only cold water. The technician you sent last week said he would return with a part, but no one ever came, so would you be able to contact him on my behalf?"
+        }
+      ],
+      "note": "**sorry to bug you** 는 귀찮게 해서 미안하다는 편한 말이에요. **showed up** 은 나타나다, 오다라는 뜻이고 **running cold** 는 물이 차갑게 나온다는 말이에요.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "네가 말했던 그 이탈리안 식당 가 봤어. 파스타는 진짜 맛있었는데 안이 너무 시끄러워서 서로 말소리도 안 들리더라. 그래서 다음엔 그냥 포장해 올까 봐.",
+      "text": "We went to that Italian place you were talking about. The pasta was really good, but it was so loud in there we couldn't even hear each other, so next time I think we'll just get it to go.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So we tried that Italian place you told us about. Pasta was great, but it was crazy loud, we couldn't hear a thing, so next time we're probably just gonna get takeout."
+        },
+        {
+          "style": "formal",
+          "text": "We visited the Italian restaurant you had mentioned. The pasta was excellent, but it was so noisy inside that we could not hear one another, so next time I believe we will simply order it to go."
+        }
+      ],
+      "note": "**get it to go** 는 음식을 포장해 가다라는 뜻이에요. casual 의 **get takeout** 도 같은 뜻으로 많이 써요.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "솔직히 아무것도 안 하려고 했는데, 토요일에 여동생이 전화해서 이사하는 것 좀 도와 달라고 하는 거야. 그래서 주말 내내 박스 들고 계단으로 3층까지 날랐어. 아직도 허리가 너무 아파.",
+      "text": "Honestly, I was going to do nothing, but my sister called on Saturday and needed help moving, so I spent the whole weekend carrying boxes up three flights of stairs. My back's still killing me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I was gonna do nothing, honestly, but my sister called Saturday and needed help moving, so I was hauling boxes up three flights of stairs all weekend. My back's still killing me."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, I had planned to do nothing, but my sister called on Saturday and needed help moving, so I spent the entire weekend carrying boxes up three flights of stairs. My back is still very sore."
+        }
+      ],
+      "note": "**killing me** 는 너무 아파 죽겠다는 말이에요. **three flights of stairs** 는 계단 세 층을 뜻하고, **needed help moving** 은 이사하는 데 도움이 필요했다는 말이에요.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "3번 casual 의 Shower's still cold only 는 원어민이 안 하는 어순이라 Shower's still ice cold 로 고침",
+    "4번 formal 의 order it to take away 는 영국식이고 text 의 to go 와 동떨어져 order it to go 로 맞춤",
+    "4번 한국어 너가 를 네가 로 고침",
+    "5번 한국어 계단 3층을 오르내렸어 는 영어(박스를 들고 3층까지 올렸다)와 뜻이 달라 계단으로 3층까지 날랐어 로 고침"
+  ]
+}

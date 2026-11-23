@@ -1,0 +1,114 @@
+{
+  "setId": "s311",
+  "videoId": "daily-s311",
+  "title": "Set 311",
+  "madeAt": "2026-11-23",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "제이크 담임 선생님이 다음 주에 우리 좀 보자고 하는데, 전화로는 무슨 일인지 말을 안 해 줘서 좀 불안해. 제이크는 자긴 진짜 아무것도 안 했대.",
+      "text": "So Jake's teacher wants to meet with us next week, and she wouldn't tell me what it's about on the phone, which is kind of making me nervous, and he swears he hasn't done anything.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got a call from Jake's teacher, she wants to meet us next week but wouldn't say what about. Kinda freaking me out, and he swears he didn't do anything."
+        },
+        {
+          "style": "formal",
+          "text": "Jake's teacher would like to meet with us next week, and she would not tell me what it concerns over the phone, which is making me rather nervous. He insists that he has not done anything."
+        }
+      ],
+      "note": "**swears** 는 맹세한다는 뜻인데, 일상에서는 절대 아니라고 우길 때 자주 써요. **kind of making me nervous** 는 좀 불안하게 만든다는 말로, kind of 가 말을 부드럽게 해 줍니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "거의 1년 만에 스피닝 수업에 갔는데, 끝나고는 멀쩡했거든. 근데 다음 날 아침에 일어나니까 온몸이 쑤시고 열이 나는 거야. 스무 살짜리들 따라가려다가 이 꼴 난 거지 뭐.",
+      "text": "I went to a spin class for the first time in like a year, and I felt fine afterwards, but I woke up the next morning aching all over with a fever. So I guess that's what I get for trying to keep up with the twenty-year-olds.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "First spin class in like a year, felt totally fine after, then woke up the next morning sore all over with a fever. That's what I get for trying to keep up with the twenty-year-olds, I guess."
+        },
+        {
+          "style": "formal",
+          "text": "I attended a spin class for the first time in about a year, and I felt fine afterwards, but I woke up the following morning aching all over with a fever. I suppose that is what I deserve for trying to keep up with the twenty-year-olds."
+        }
+      ],
+      "note": "**that's what I get for** ~ing 는 ~한 대가로 이렇게 됐다, 자업자득이라는 뜻이에요. **aching all over** 는 온몸이 쑤신다는 말입니다.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "요즘 계란값 얼마나 하는지 봤어? 예전엔 가격도 안 보고 열두 개짜리 하나 그냥 집었는데, 지난주엔 거의 7달러더라. 그래서 이젠 카트에 뭐 하나 넣기 전에 진짜 가격부터 봐.",
+      "text": "Have you seen what they're charging for eggs now? I used to just grab a dozen without even looking, but last week it was almost seven dollars, so now I actually check the price before I put anything in the cart.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Seen egg prices lately? I'd just grab a dozen without looking, but last week they were almost seven bucks, so now I check before anything goes in the cart."
+        },
+        {
+          "style": "formal",
+          "text": "Have you noticed how much they are charging for eggs now? I used to buy a dozen without looking, but last week they were nearly seven dollars, so I now check the price before I place anything in my cart."
+        }
+      ],
+      "note": "**what they're charging for** ~ 는 ~를 얼마에 파는지, 값을 얼마나 받는지를 말할 때 씁니다. **grab** 은 별 생각 없이 휙 집는 느낌이에요.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "치킨 샐러드 하나 시켰는데, 남의 집 가족 저녁을 통째로 갖다줬어. 립이 네 박스쯤 되더라. 전화해서 말했더니 그냥 가지라고 하네. 그래서 앞으로 사흘은 립만 먹게 생겼어.",
+      "text": "I ordered one chicken salad, and they brought me somebody's whole family dinner, like four boxes of ribs. I called to tell them, but they said I could just keep it, so I guess we're eating ribs for the next three days.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ordered one chicken salad and got somebody's whole family dinner instead, like four boxes of ribs. Called 'em about it, they said just keep it, so I guess it's ribs for the next three days."
+        },
+        {
+          "style": "formal",
+          "text": "I ordered a single chicken salad, and they delivered someone's entire family dinner, about four boxes of ribs. I called to let them know, but they said I could keep it, so I suppose we will be eating ribs for the next three days."
+        }
+      ],
+      "note": "**I guess we're eating ribs** 처럼 I guess 를 앞에 붙이면 어쩔 수 없이 그렇게 됐다는 체념한 느낌이 납니다. **keep it** 은 돌려줄 필요 없이 그냥 가지라는 말이에요.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "그 기침 때문에 드디어 병원에 갔는데, 세 시간이나 있었는데 정작 의사 얼굴은 5분밖에 못 봤어. 아마 그냥 알레르기일 거래. 그래서 약 좀 먹어 보고 안 나으면 다시 오라더라.",
+      "text": "I finally went to the doctor about that cough, and I was there for like three hours, but I only actually saw her for five minutes. She thinks it's probably just allergies, so I'm supposed to try some pills and go back if it doesn't clear up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Finally got that cough checked out. Was there like three hours and only saw her for five minutes. She figures it's probably just allergies, so I gotta try some pills and go back if it doesn't clear up."
+        },
+        {
+          "style": "formal",
+          "text": "I finally saw the doctor about my cough, and I was there for about three hours, although I was only with her for five minutes. She believes it is probably just allergies, so I have been told to try some pills and return if it does not clear up."
+        }
+      ],
+      "note": "**clear up** 은 기침이나 피부 트러블 같은 증상이 싹 낫는다는 뜻이에요. **I'm supposed to** 는 누가 시켜서 ~하기로 되어 있다는 말로, 의사 지시를 전할 때 딱 맞습니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어의 '맹세를 하고' 는 swear 를 그대로 옮긴 번역투라 '자긴 진짜 아무것도 안 했대' 로 고침",
+    "4번 한국어의 '웬 집 가족 저녁' 이 어색해서 '남의 집 가족 저녁' 으로 고침",
+    "4번 formal 의 'it appears' 는 체념하는 I guess 의 느낌을 '그런 것 같다' 는 추측으로 바꿔 버려서 'I suppose' 로 고침"
+  ]
+}

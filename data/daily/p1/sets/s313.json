@@ -1,0 +1,115 @@
+{
+  "setId": "s313",
+  "videoId": "daily-s313",
+  "title": "Set 313",
+  "madeAt": "2026-11-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "어디에도 빈자리가 하나도 없어서 결국 어떤 나이 지긋한 아저씨랑 합석했어. 아저씨는 흔쾌히 괜찮다고 했는데, 그러더니 손주 얘기를 줄줄이 늘어놓기 시작해서 우리끼리는 정작 한마디도 못 했어.",
+      "text": "There wasn't a single seat anywhere, so we ended up sharing a table with this older guy. He was really nice about it, but then he started telling us all about his grandkids, and we never actually got to talk to each other.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Place was packed, no seats at all, so we got stuck at a table with some older guy. Super nice about it, but then he got going on his grandkids and we never really got to talk to each other."
+        },
+        {
+          "style": "formal",
+          "text": "There was not a single seat available anywhere, so we ended up sharing a table with an older gentleman. He was very gracious about it, but he then began telling us all about his grandchildren, and we never actually had the chance to speak with each other."
+        }
+      ],
+      "note": "**ended up** 는 계획한 건 아닌데 결국 그렇게 됐다는 뜻이에요. **nice about it** 은 불편한 상황을 너그럽게 받아 줬다는 말이고, **never actually got to** 는 하려던 걸 끝내 못 했다는 느낌이에요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "부탁 하나만 하자, 9시쯤 나한테 전화 좀 해 줘, 알았지? 저녁까지 먹고 간다고 이미 말해 놨는데, 내가 아침 일찍 비행기를 타야 하거든. 누가 빠져나갈 핑계를 안 만들어 주면 또 내가 맨 마지막까지 남아 있게 될 거야.",
+      "text": "Do me a favor and call me around nine, okay? I already said I'd stay for dinner, but I've got an early flight, and if nobody gives me a reason to leave, I'll end up being the last one out again.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Can you call me around nine? I said I'd stay for dinner, but I've got an early flight, and if nobody gives me an out, I'm gonna be the last one there again."
+        },
+        {
+          "style": "formal",
+          "text": "Would you please call me at around nine o'clock? I have already agreed to stay for dinner, but I have an early flight, and if no one gives me a reason to leave, I will once again be the last person to go."
+        }
+      ],
+      "note": "**Do me a favor and** 는 부탁할 때 앞에 붙이는 말로, 좀 해 줄래 정도의 느낌이에요. casual 의 **an out** 은 빠져나갈 구실을 뜻해요.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이 일은 이제 그만해야 할 것 같아. 일이 힘들어서가 아니라, 이젠 그냥 아무래도 상관없어졌어. 완전히 지쳐서 다른 일자리 알아볼 힘도 없을 때까지 버티느니 지금 그만두는 게 나아.",
+      "text": "I think I'm done with this job. It's not even the work, it's that I've just stopped caring, and I'd rather leave now than wait until I'm so burnt out I can't even look for something else.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Yeah, I'm kinda done with this job. It's not the work, I just don't care anymore, and I'd rather get out now than wait till I'm too burnt out to even look for something else."
+        },
+        {
+          "style": "formal",
+          "text": "I believe I am finished with this position. It is not the work itself; rather, I have simply stopped caring, and I would prefer to leave now rather than wait until I am so exhausted that I cannot even search for another position."
+        }
+      ],
+      "note": "**done with** 는 더는 안 하겠다, 질렸다는 뜻이에요. **I'd rather A than B** 는 B 하느니 차라리 A 하겠다는 말이고, **burnt out** 은 지쳐서 완전히 바닥난 상태를 말해요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "나 주말에 시간 되는 게 3월 둘째 주말밖에 없어. 그러니까 그때 네가 안 되면 여름으로 미뤄야 할 수도 있어. 그 먼 데까지 가서 딱 이틀만 있다 오기는 진짜 싫거든.",
+      "text": "The only weekend I've got free is the second one in March, so if that doesn't work for you, we might have to push it to summer. I really don't want to go all that way just for two days.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'm only free the second weekend in March, so if that's no good for you, we might have to bump it to summer. I really don't wanna go all that way for just two days."
+        },
+        {
+          "style": "formal",
+          "text": "The only weekend I have available is the second weekend in March, so if that does not suit you, we may need to postpone it until the summer. I would prefer not to travel that far for only two days."
+        }
+      ],
+      "note": "**push it to** 는 일정을 뒤로 미룬다는 뜻이에요. casual 의 **bump it to** 도 같은 뜻이에요. **all that way** 는 그 먼 길을 다 간다는 느낌을 줘요.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "다들 인생이 바뀐다길래 그 엄청 비싼 블렌더를 샀는데, 딱 두 번 썼어. 날 좀 따뜻해지면 다시 스무디를 만들어 먹으면 좋겠는데, 지금은 그냥 조리대 반을 차지하고 있어.",
+      "text": "I got that really expensive blender because everyone kept saying it would change my life, and I've used it exactly twice. Hopefully I'll start making smoothies again when it gets warmer, but right now it's just taking up half the counter.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Everyone said that super pricey blender would change my life, so I got it, and I've used it like twice. Maybe I'll get back into smoothies when it warms up, but right now it's just hogging half the counter."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased that very expensive blender because everyone insisted it would change my life, and I have used it exactly twice. I hope to begin making smoothies again once the weather becomes warmer, but at present it is simply occupying half of the counter."
+        }
+      ],
+      "note": "**change my life** 는 삶이 확 달라진다는 과장 섞인 칭찬이에요. **exactly twice** 는 딱 두 번밖에 안 썼다고 자기를 두고 웃으며 하는 말이고, **taking up** 은 자리를 차지한다는 뜻이에요.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어 '나 좀 도와준다 치고'가 Do me a favor and 를 그대로 옮긴 번역투라 '부탁 하나만 하자'로 고침",
+    "3번 한국어 '아무 관심이 안 생겨'가 I've just stopped caring(이제 신경이 안 쓰이게 됨)의 뜻과 어긋나서 '이젠 그냥 아무래도 상관없어졌어'로 고침",
+    "4번 한국어 '3월 둘째 주'를 영어의 second weekend 에 맞게 '3월 둘째 주말'로 고침",
+    "5번 note 에서 exactly twice 를 '비꼬는 말투'라고 했는데 남을 비꼬는 게 아니라 자기를 두고 하는 우스갯소리라서 설명을 고침"
+  ]
+}

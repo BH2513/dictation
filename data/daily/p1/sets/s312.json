@@ -1,0 +1,115 @@
+{
+  "setId": "s312",
+  "videoId": "daily-s312",
+  "title": "Set 312",
+  "madeAt": "2026-11-24",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "이번 주말에 캠핑 가려고 준비 다 해 놨는데, 이틀 내내 비 온대서 2주 뒤로 미뤘어. 하루만 비 오는 거였으면 그냥 가자고 했을 거야.",
+      "text": "We were all set to go camping this weekend, but it's supposed to rain both days, so we pushed it back two weeks. If it was just gonna rain one day, I would've said let's go anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Camping's off this weekend. It's gonna rain both days, so we moved it two weeks out. If it was only one day, I'd have been like, eh, let's just go."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to go camping this weekend, but rain is forecast for both days, so we have postponed the trip by two weeks. Had it been expected to rain on only one day, I would have suggested that we go regardless."
+        }
+      ],
+      "note": "**all set to** 는 ~할 준비가 다 됐다는 뜻이에요. **pushed it back** 은 일정을 뒤로 미루다라는 말이에요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "뭐 하나 물어봐도 돼? 엄마도 이제 연세가 있으시니까 엄마 가까이로 이사 갈까 생각 중이거든. 근데 친구들이 다 여기 있어서, 이사 간 것 때문에 괜히 엄마를 원망하게 될까 봐 좀 겁나.",
+      "text": "Can I ask you something? I've been thinking about moving closer to my mom, because she's not getting any younger, but all my friends are here, and I'm kind of scared I'd end up resenting her for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, weird question. I've been thinking about moving near my mom, since she's getting older, but my friends are all here and I'm kinda scared I'd end up resenting her for it."
+        },
+        {
+          "style": "formal",
+          "text": "May I ask you something? I have been considering moving closer to my mother, as she is not getting any younger. However, all of my friends are here, and I am somewhat afraid that I might come to resent her for it."
+        }
+      ],
+      "note": "**not getting any younger** 는 나이가 점점 들어간다는 걸 부드럽게 돌려 말하는 표현이에요. **end up resenting** 은 결국 원망하게 되다라는 뜻이에요.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "우리 맨날 가던 타코집 기억나? 어떤 음식 블로그에 소개되더니, 이제 매일 밤 가게 밖까지 줄이 서 있고 양은 거의 반으로 줄었어. 그래서 몇 달째 안 갔어.",
+      "text": "Remember that taco place we used to go to all the time? Some food blog wrote about it, and now there's a line out the door every night and the portions are like half the size, so I haven't been back in months.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You know that taco spot we were always at? Some food blog wrote it up, and now there's a line out the door every night and the portions are like half the size. Haven't been back in months."
+        },
+        {
+          "style": "formal",
+          "text": "Do you remember the taco restaurant we used to visit so often? A food blog wrote about it, and now there is a line out the door every evening and the portions are roughly half the size, so I have not returned in months."
+        }
+      ],
+      "note": "**a line out the door** 는 가게 밖까지 줄이 늘어선 모습을 말해요. **haven't been back** 은 그 뒤로 다시 안 갔다는 뜻이에요.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "아, 별로 한 거 없어. 동생네 부엌 페인트칠 도와주기로 했는데 토요일 아침에 동생이 펑크를 내서, 그냥 애들 데리고 공원 갔다가 집에 오는 길에 피자 사 먹었어.",
+      "text": "Oh, I didn't really do much. I was supposed to help my brother paint his kitchen, but he bailed on me Saturday morning, so I just took the kids to the park and we grabbed pizza on the way home.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Eh, nothing really. Was gonna help my brother paint, but he bailed Saturday morning. So I took the kids to the park and we got pizza after."
+        },
+        {
+          "style": "formal",
+          "text": "I did not do very much, actually. I was meant to help my brother paint his kitchen, but he cancelled on Saturday morning, so I simply took the children to the park, and we picked up pizza on the way home."
+        }
+      ],
+      "note": "**bailed on me** 는 약속해 놓고 갑자기 빠져 버렸다는 뜻이에요. **grabbed pizza** 는 피자를 간단히 사 먹었다는 말이에요.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이모들 만날 때마다 똑같은 질문 세 개야. 결혼은 언제 하니, 집은 언제 사니, 그 회사는 왜 아직도 다니니? 아니, 나 생각해서 그러는 건 알아. 근데 디저트 나올 때쯤이면 나는 부엌에 숨어서 설거지하고 있어.",
+      "text": "Every time I see my aunts, it's the same three questions. When are you getting married, when are you buying a house, and why are you still at that job? I mean, I know they care, but by the time dessert comes out, I'm hiding in the kitchen doing the dishes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My aunts ask me the same three things every time. When're you getting married, when're you buying a house, and why're you still at that job? Like, I know they care, but by dessert I'm hiding in the kitchen doing dishes."
+        },
+        {
+          "style": "formal",
+          "text": "Whenever I see my aunts, they ask me the same three questions: when I am getting married, when I am buying a house, and why I am still at that job. I understand that they care, but by the time dessert is served, I am hiding in the kitchen washing the dishes."
+        }
+      ],
+      "note": "**by the time** 은 ~할 때쯤이면이라는 뜻이에요. **I mean** 은 말을 덧붙이거나 살짝 바로잡을 때 자연스럽게 붙이는 말이에요.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 첫마디 So camping this weekend? 는 묻는 말처럼 들려 뜻이 흐려지므로, 캠핑이 취소됐다는 말로 바로 시작하게 고쳤습니다.",
+    "2번 casual 에 kinda 가 두 번 나와 말버릇을 장식처럼 넣은 느낌이라 하나를 뺐습니다.",
+    "4번 casual 이 text 와 앞부분이 거의 같아서 더 짧고 줄인 구어로 다시 썼습니다.",
+    "5번 한국어의 그 회사는 아직도 다니니 는 영어의 why 가 빠져 있어서 그 회사는 왜 아직도 다니니 로 고쳤습니다."
+  ]
+}

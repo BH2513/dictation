@@ -1,0 +1,117 @@
+{
+  "setId": "s315",
+  "videoId": "daily-s315",
+  "title": "Set 315",
+  "madeAt": "2026-11-25",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "아니 글쎄 팀장이 보고서를 처음부터 다시 쓰라고 했거든. 뭐, 그건 그렇다 쳐. 근데 회의에서 그걸 자기 아이디어인 것처럼 발표하는 거야. 난 그냥 앉아서 웃고 있어야 했고.",
+      "text": "So my manager made me redo the whole report, which, fine, whatever, but then in the meeting he presented it like it was his idea, and I just had to sit there and smile.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "My boss had me redo the whole report, fine, whatever. But then in the meeting he pitched it like it was his idea, and I just had to sit there smiling."
+        },
+        {
+          "style": "formal",
+          "text": "My manager required me to redo the entire report, which I reluctantly accepted, but during the meeting he presented it as though it were his own idea, and I simply had to sit there and smile."
+        }
+      ],
+      "note": "**made me redo** 는 시켜서 억지로 다시 하게 했다는 뜻입니다. **fine, whatever** 는 마음에 안 들지만 그냥 넘어가겠다는 말투예요.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "쉬는 시간을 15분으로 줄인대, 들었어? 독서 시간을 늘리고 싶은 건 알겠는데, 에마는 학교에서 못 뛰어놀면 집에 와서 정신없이 날뛰어.",
+      "text": "Did you hear they're cutting recess down to fifteen minutes? I mean, I get that they want more time for reading, but if Emma doesn't get to run around at school, she comes home bouncing off the walls.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "They're cutting recess to fifteen minutes, did you hear? I get it, they want more reading time, but if Emma can't run around at school, she's bouncing off the walls when she gets home."
+        },
+        {
+          "style": "formal",
+          "text": "Have you heard that they are reducing recess to fifteen minutes? I understand that they would like more time for reading, but if Emma is not able to run around at school, she comes home extremely restless."
+        }
+      ],
+      "note": "**bouncing off the walls** 는 힘이 넘쳐서 잠시도 가만히 못 있는 모습을 말합니다. **cutting recess down to** 는 쉬는 시간을 ~로 줄인다는 뜻이에요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "3월에 도자기 수업에 등록했는데, 한 3주는 진짜 재밌었어. 근데 일 때문에 한 번 빠지고 나니까 다시 가기가 좀 어색하더라. 그래서 지금 남은 건 엄청 못생긴 그릇 하나뿐이고, 환불도 못 받았어.",
+      "text": "I signed up for a pottery class back in March, and I loved it for like three weeks, but then I missed one because of work, and after that it just felt weird going back. So now I've got one really ugly bowl and no refund.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Back in March I signed up for pottery and loved it for, like, three weeks. Then work made me miss one, and going back after that just felt weird. Now I've got one super ugly bowl and no refund."
+        },
+        {
+          "style": "formal",
+          "text": "I enrolled in a pottery class in March and enjoyed it very much for about three weeks. However, I missed one session because of work, and afterward it felt awkward to return. As a result, I now have one rather unattractive bowl and no refund."
+        }
+      ],
+      "note": "**felt weird going back** 은 다시 가기가 어색하고 민망했다는 뜻입니다. **back in March** 는 지난 3월에, 하고 예전 일을 꺼낼 때 씁니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "일요일에 조카랑 농구를 했는데, 대학 때 이후로 처음이었어. 그날 밤엔 괜찮았는데 월요일이 되니까 온몸이 너무 아파서 침대에서 겨우 일어났어. 그래서 병가를 냈는데, 너무 창피해서 왜 아픈지는 말도 안 했어.",
+      "text": "I played basketball with my nephew on Sunday for the first time since college, and I felt fine that night, but by Monday everything hurt so bad I could barely get out of bed. So I had to call in sick, and I didn't even tell them why because it was so embarrassing.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sunday I shot hoops with my nephew, first time since college. Felt fine that night, but by Monday I was so sore I could barely get up. Had to call in sick, and I didn't even say why 'cause it was way too embarrassing."
+        },
+        {
+          "style": "formal",
+          "text": "On Sunday I played basketball with my nephew for the first time since college. I felt well that evening, but by Monday I was in so much pain that I could hardly get out of bed. I had to call in sick, and I did not explain the reason because it was so embarrassing."
+        }
+      ],
+      "note": "**call in sick** 는 회사에 아프다고 연락하고 쉰다는 뜻입니다. casual 의 **shot hoops** 는 가볍게 농구를 했다는 말이에요.",
+      "situation": "오랜만에 운동했다가 몸살 난 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "나도 같이 가고 싶어, 진짜로. 근데 감기가 아직 덜 나은 것 같아서, 지금 무리하면 또 일주일은 앓을 거야. 토요일에 하면 안 될까?",
+      "text": "I'd come with you, I really would, but I think I'm still getting over that cold, and if I push it now I'll just be sick for another week. Can we do Saturday instead?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I'd totally come, but I'm kinda still getting over that cold. If I push it now I'll be sick another whole week. How about Saturday?"
+        },
+        {
+          "style": "formal",
+          "text": "I would gladly come with you, truly, but I believe I am still recovering from that cold, and if I overexert myself now, I will simply be ill for another week. Would Saturday work instead?"
+        }
+      ],
+      "note": "**getting over** 는 병이 낫는 중이라는 뜻이고, **push it** 은 몸 상태를 생각 안 하고 무리한다는 뜻입니다.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 한국어: 영어 앞머리의 So 는 말을 꺼내는 소리라 '그래서'로 옮기면 앞 내용이 있는 것처럼 들려서 '아니 글쎄'로 바꿈",
+    "1번 formal: which I accepted 는 fine, whatever 의 마지못해 넘어가는 느낌을 지워서 reluctantly 를 넣어 뜻을 살림",
+    "3번 한국어: '그릇 하나랑, 환불도 못 받았어' 는 문장이 꼬여 있어 '그릇 하나뿐이고, 환불도 못 받았어'로 고침. '수업을 등록했는데'도 '수업에 등록했는데'로 바로잡음",
+    "4번 casual: 쉼표로 두 문장을 그냥 붙여서(comma splice) 'cause 로 이어 줌",
+    "5번 casual: Really wanna come, I do 는 주어가 빠져 어색하고 text 의 가정(I'd come)과도 말투가 달라 I'd totally come 으로 새로 씀",
+    "5번 formal: I would like to come 은 text 의 '사정만 아니면 가겠다'는 뜻과 달라서 I would gladly come 으로 고침"
+  ]
+}

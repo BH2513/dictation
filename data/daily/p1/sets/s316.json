@@ -1,0 +1,113 @@
+{
+  "setId": "s316",
+  "videoId": "daily-s316",
+  "title": "Set 316",
+  "madeAt": "2026-11-25",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "오늘 아침에 파머스 마켓 가려고 했는데, 바람이 너무 세서 천막이 막 넘어가더라. 그래서 결국 언니네 가서 거실 가구 배치 바꾸는 거 도와줬어.",
+      "text": "We were going to do the farmers market this morning, but it was so windy the tents were blowing over, so we ended up at my sister's helping her rearrange her living room instead.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Wanted to hit the farmers market this morning, but the wind was knocking the tents over, so we wound up at my sister's helping her move her living room around instead."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to visit the farmers market this morning, but it was so windy that the tents were blowing over, so we spent the time at my sister's home helping her rearrange her living room instead."
+        }
+      ],
+      "note": "**ended up** 은 계획과 다르게 결국 ~하게 됐다는 뜻이에요. 캐주얼의 **wound up** 도 같은 뜻입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그 드라마가 일주일 내내 기다리던 유일한 낙이었는데, 남자 주인공이 빠지고 나서는 나머지 인물들을 어떻게 해야 할지 모르는 것 같아. 이미 여기까지 봤으니까 그냥 계속 보는 거야.",
+      "text": "That show used to be the one thing I looked forward to all week, but ever since the main guy left, it's like they don't know what to do with any of the other characters. I only keep watching because I've already come this far.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "I used to look forward to that show all week, but since the main guy left, they've got no clue what to do with anybody else. I'm only still watching because I'm this far in already."
+        },
+        {
+          "style": "formal",
+          "text": "That program was once the one thing I looked forward to each week, but since the lead actor departed, the writers seem unsure what to do with any of the other characters. I continue watching only because I have already come this far."
+        }
+      ],
+      "note": "**look forward to** 는 기대하며 기다리다예요. **come this far** 는 여기까지 왔다, 이만큼 해 왔다는 말입니다.",
+      "situation": "예전엔 좋았는데 지금은 별로라고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "야, 네가 말한 그 태국 음식점 드디어 가 봤어. 카레 진짜 맛있더라, 네 말이 완전 맞았어. 근데 자리 나는 데 한 40분 기다려서, 다음엔 그냥 포장해 올 것 같아.",
+      "text": "Okay, so I finally tried that Thai place you told me about. The curry was amazing, you were totally right, but we waited like forty minutes for a table, so I'd probably just get takeout next time.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I finally hit that Thai place you mentioned. Curry was amazing, you totally called it, but we waited like forty minutes for a table, so I'll probably just do takeout next time."
+        },
+        {
+          "style": "formal",
+          "text": "I finally visited the Thai restaurant you recommended. The curry was excellent, and you were entirely correct, but we waited approximately forty minutes for a table, so next time I would probably order takeout instead."
+        }
+      ],
+      "note": "캐주얼의 **you totally called it** 은 네 말이 딱 맞았다, 네가 정확히 맞혔다는 뜻이에요. **takeout** 은 포장 음식입니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "아니야 엄마, 밥 잘 먹고 있어, 진짜로. 요즘 일이 좀 바빴던 것뿐이야. 목소리가 피곤하게 들리면 어젯밤에 늦게 자서 그런 거지, 무슨 일 있어서 그런 거 아니야.",
+      "text": "No, Mom, I'm eating fine, I promise. Work's just been kind of busy, that's all. If I sound tired, it's because I stayed up late last night, not because anything's wrong.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Mom, I'm eating, I swear. Work's just kinda busy. I was up late last night, that's why I sound tired. Nothing's wrong."
+        },
+        {
+          "style": "formal",
+          "text": "No, Mother, I am eating well, I assure you. Work has simply been rather busy, that is all. If I sound tired, it is because I stayed up late last night, not because anything is wrong."
+        }
+      ],
+      "note": "**that's all** 은 그게 다야, 그것뿐이야라는 말이에요. **stayed up late** 는 늦게까지 안 자고 있었다는 뜻입니다.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "아, 진짜 별거 아니었어. 침대 프레임에 발가락을 찧어서 부러진 줄 알았는데, 엑스레이 찍어 보니까 그냥 멍든 거래. 그래서 응급실에서 두 시간 앉아 있다가 얼음찜질하라는 말 한마디 듣고 왔어.",
+      "text": "Oh, it was nothing, really. I thought I'd broken my toe on the bed frame, but they did an X-ray and it's just bruised, so I sat in the ER for two hours just so somebody could tell me to put ice on it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Eh, no big deal. Thought I broke my toe on the bed frame, but nope, just bruised. Two hours in the ER just to get told to ice it."
+        },
+        {
+          "style": "formal",
+          "text": "Oh, it was nothing serious. I believed I had broken my toe on the bed frame, but an X-ray showed that it was only bruised, so I waited in the emergency room for two hours simply to be told to apply ice to it."
+        }
+      ],
+      "note": "**it was nothing** 은 별거 아니었다는 말이에요. 캐주얼의 **ice it** 은 거기에 얼음찜질하다라는 뜻입니다.",
+      "situation": "병원 갔다 온 얘기 가볍게 하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 캐주얼의 뒷문장이 본문과 거의 똑같아서(If I sound tired, it's because...) 더 짧은 구어로 바꿈",
+    "5번 캐주얼이 본문과 같은 뼈대(sat in the ER for two hours)를 그대로 따라가서 더 짧게 끊어 말하는 구어로 바꿈"
+  ]
+}

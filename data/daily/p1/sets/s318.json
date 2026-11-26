@@ -1,0 +1,115 @@
+{
+  "setId": "s318",
+  "videoId": "daily-s318",
+  "title": "Set 318",
+  "madeAt": "2026-11-26",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "노트북 들고 한 30분은 돌아다녔는데 카페마다 자리가 꽉 차 있어서, 결국 포기하고 그냥 차에서 일했어.",
+      "text": "I walked around with my laptop for like half an hour, and every coffee shop was packed, so I finally just gave up and worked from my car.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Spent like half an hour lugging my laptop around and every coffee shop was packed, so I gave up and just worked in my car."
+        },
+        {
+          "style": "formal",
+          "text": "I walked around with my laptop for about half an hour, and every coffee shop was full, so I eventually gave up and worked from my car."
+        }
+      ],
+      "note": "**packed** 는 사람이 꽉 들어찬 상태를 말해요. 캐주얼에 나온 **lugging** 은 무거운 걸 힘들게 끌고 다닌다는 느낌이에요.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "회사를 그만둘까 말까 계속 왔다 갔다 해. 돈도 괜찮고 사람들도 그리울 거란 건 아는데, 일요일 밤만 되면 속이 꼬이는 것 같아. 이거 정상 아니지?",
+      "text": "I keep going back and forth on whether to quit. The money's good, and I know I'd miss the people, but every Sunday night I get this knot in my stomach, and I don't think that's normal, is it?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Can't decide if I should quit. Pay's good and I'd miss everybody, but I get this knot in my stomach every Sunday night, and that's not normal, right?"
+        },
+        {
+          "style": "formal",
+          "text": "I continue to go back and forth on whether I should resign. The salary is good, and I know I would miss my colleagues, but every Sunday evening I feel a knot in my stomach, and I do not believe that is normal, is it?"
+        }
+      ],
+      "note": "**go back and forth** 는 이랬다저랬다 마음을 못 정하는 거예요. **a knot in my stomach** 는 긴장이나 걱정으로 속이 뭉치는 느낌이에요.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "안 돼, 오늘 밤엔 새 시리즈 시작 안 해. 너 맨날 1화 중간쯤에 잠들잖아. 그러면 나는 네가 따라올 때까지 일주일을 기다려야 된다고.",
+      "text": "No, we're not starting another series tonight, because you always fall asleep halfway through the first episode, and then I have to wait a week for you to catch up.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nope, no new show tonight. You always conk out halfway through episode one, and then I'm stuck waiting a week for you to catch up."
+        },
+        {
+          "style": "formal",
+          "text": "No, we will not begin another series this evening, because you always fall asleep halfway through the first episode, and then I have to wait a week for you to catch up."
+        }
+      ],
+      "note": "**catch up** 은 뒤처진 걸 따라잡는다는 뜻이에요. 캐주얼의 **conk out** 은 곯아떨어진다는 말이에요.",
+      "situation": "넷플릭스에서 뭐 볼지 정하다가 옥신각신하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이사 도와주고 싶은데, 그날 언니네 애들 봐 주기로 이미 약속했어. 대신 일요일에도 짐 싸고 있으면 내가 가서 그거 도와줄게.",
+      "text": "I wish I could help you move, but I already promised my sister I'd watch her kids that day. If you're still packing on Sunday, though, I can come over and help with that.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sorry, can't make the move. Told my sister I'd watch her kids that day. Still packing Sunday? I can swing by and help."
+        },
+        {
+          "style": "formal",
+          "text": "I wish I were able to help you move, but I have already promised my sister that I would look after her children that day. However, if you are still packing on Sunday, I can come over and assist with that."
+        }
+      ],
+      "note": "**watch her kids** 는 아이들을 봐 준다는 말이에요. 캐주얼의 **swing by** 는 잠깐 들른다는 뜻이에요.",
+      "situation": "친구 부탁을 부드럽게 거절하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "주말 내내 아무것도 안 했는데, 솔직히 너무 좋았어. 화장실 청소라도 해야 하나 계속 생각은 했는데, 어차피 월요일에도 화장실은 어디 안 갈 테니까 그냥 소파에 계속 누워 있었어.",
+      "text": "I didn't do a single thing all weekend, and honestly, it was great. I kept thinking I should at least clean the bathroom, but I figured it'd still be there on Monday, so I just stayed on the couch.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Did nothing all weekend and it was awesome. Kept thinking I should at least clean the bathroom, but figured it'd still be there Monday, so I just stayed on the couch."
+        },
+        {
+          "style": "formal",
+          "text": "I did not do a single thing all weekend, and to be honest, it was wonderful. I kept thinking that I should at least clean the bathroom, but I decided it would still be there on Monday, so I simply remained on the couch."
+        }
+      ],
+      "note": "**I figured** 는 ~라고 생각했다, ~겠거니 했다는 뜻이에요. **didn't do a single thing** 은 아무것도 안 했다고 강조하는 말이에요.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어: '속이 꽉 막힌 것처럼 답답해져'는 a knot in my stomach(긴장으로 속이 꼬이는 느낌)와 결이 달라 '속이 꼬이는 것 같아'로 고침",
+    "4번 casual: 'Wish I could help with the move'가 text 앞부분(I wish I could help you move)과 거의 같아 더 짧은 구어로 새로 씀",
+    "5번 casual: 'and honestly, it was great'가 text와 그대로 겹쳐 다른 말로 바꿈",
+    "5번 한국어: '월요일에도 화장실은 그대로 있을 테니까'가 번역투라 '어차피 월요일에도 화장실은 어디 안 갈 테니까'로 고침"
+  ]
+}

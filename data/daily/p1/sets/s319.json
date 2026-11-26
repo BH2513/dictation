@@ -1,0 +1,116 @@
+{
+  "setId": "s319",
+  "videoId": "daily-s319",
+  "title": "Set 319",
+  "madeAt": "2026-11-26",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "요즘 나 왜 이러는지 모르겠어. 열 시만 되면 녹초가 되는데, 막상 침대에 누우면 세 시쯤까지 정신이 말똥말똥해. 그래서 일찍 자려는 것도 거의 포기했어.",
+      "text": "I don't know what's going on with me lately. I'm exhausted by ten, but then I get into bed and I'm wide awake until like three, so I've kind of stopped even trying to go to bed early.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Something's up with me lately. I'm dead tired by ten, then I get in bed and I'm up till like three, so I've kinda given up on going to bed early."
+        },
+        {
+          "style": "formal",
+          "text": "I am not sure what has been happening to me recently. I am exhausted by ten, yet once I get into bed I remain wide awake until about three, so I have more or less stopped trying to go to bed early."
+        }
+      ],
+      "note": "**wide awake** 는 잠이 하나도 안 오고 정신이 말똥말똥하다는 뜻이에요. casual 의 **dead tired** 는 완전히 녹초가 됐다는 말이에요.",
+      "situation": "요즘 잠을 못 잔다고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "그냥 내 마음을 고백해 버릴까 싶기도 한데, 걔가 나랑 같은 마음이 아니면 매일 회사에서 엄청 어색할 거야. 모르겠다, 하룻밤 자면서 생각해 볼래.",
+      "text": "Part of me thinks I should just tell her how I feel, but if she doesn't feel the same way, it's gonna be really awkward at work every day. I don't know, I guess I'll sleep on it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Kinda wanna just tell her how I feel, but if she's not into me, work's gonna be super awkward every day. Dunno, I'll sleep on it."
+        },
+        {
+          "style": "formal",
+          "text": "Part of me believes I should simply tell her how I feel, but if she does not feel the same way, it will be very uncomfortable at work every day. I am not certain. I suppose I will think it over tonight."
+        }
+      ],
+      "note": "**sleep on it** 은 바로 정하지 않고 하룻밤 자면서 생각해 본다는 뜻이에요. **Part of me** 는 한편으로는 그러고 싶은 마음도 있다는 말이에요.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "솔직하게 말해 줄까? 색은 너한테 진짜 잘 어울리는데, 어깨가 좀 큰 것 같아. 작은 사이즈 있으면 나라면 가서 바꾸겠어.",
+      "text": "Honestly? I love the color on you, but I think it's a little big in the shoulders. If they have a smaller size, I'd go back and swap it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, real talk? The color's great on you, but it's kinda big in the shoulders. I'd swap it for a smaller one if they've got it."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest, the color suits you very well, but I think it is slightly large in the shoulders. If they have a smaller size, I would go back and exchange it."
+        }
+      ],
+      "note": "**swap** 은 다른 것으로 바꾸다, 교환하다라는 뜻이에요. **big in the shoulders** 처럼 in 뒤에 부위를 붙이면 어디가 큰지 말할 수 있어요.",
+      "situation": "친구가 산 옷 어떠냐고 물었을 때 솔직하게 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "카메라만 켜면 폰이 계속 멈추고, 그러다 혼자 꺼졌다 켜져. 앱도 벌써 잔뜩 지웠는데 아직도 그래서, 아무래도 수리 맡겨야 할 것 같아.",
+      "text": "My phone keeps freezing every time I open the camera, and then it just restarts on its own. I already deleted a bunch of apps, but it's still doing it, so I think I'm gonna have to take it in.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, every time I open the camera my phone freezes and then restarts itself. Already deleted a bunch of apps and it's still happening, so I'm gonna have to take it in."
+        },
+        {
+          "style": "formal",
+          "text": "My phone freezes every time I open the camera, and then it restarts by itself. I have already deleted several applications, but the problem continues, so I think I will have to bring it in for repair."
+        }
+      ],
+      "note": "**take it in** 은 물건을 수리하러 가게에 맡긴다는 뜻이에요. **on its own** 은 저절로, 혼자서라는 말이에요.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "노아는 새 학교 마음에 들어 해? 미아는 아는 애가 아무도 없어서 첫 주에 좀 힘들어했는데, 미술 시간에 어떤 여자애 옆자리에 앉혀 줬더니 지금은 둘이 붙어서 떨어질 줄을 몰라.",
+      "text": "How's Noah liking the new school? Mia had a rough first week because she didn't know anybody, but then they sat her next to this one girl in art class, and now they're inseparable.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Noah like the new school? Mia's first week was rough since she didn't know anyone, but then they sat her by this girl in art and now they're joined at the hip."
+        },
+        {
+          "style": "formal",
+          "text": "How is Noah finding the new school? Mia had a difficult first week because she did not know anyone, but then they seated her next to a girl in art class, and now the two of them are inseparable."
+        }
+      ],
+      "note": "**inseparable** 은 떼어 놓을 수 없을 만큼 늘 붙어 다닌다는 뜻이에요. casual 의 **joined at the hip** 도 같은 뜻으로 많이 써요.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 hit the bed 는 원어민이 잘 안 쓰는 조합이라(hit the sack/hay 가 관용구) get in bed 로 바꿨습니다",
+    "2번 casual 의 if she's not into me too 에서 too 가 어색해서 뺐습니다",
+    "2번 한국어의 그 사람이 는 친구한테 하는 말로 딱딱해서 걔가 로 바꿨습니다",
+    "3번 formal 의 I would return and exchange it 은 return 이 반품으로 읽혀 헷갈려서 I would go back and exchange it 으로 바꿨습니다",
+    "5번 casual 이 So is Noah liking the new school? 로 text 와 앞부분이 거의 같아서 더 짧은 구어로 바꿨습니다"
+  ]
+}

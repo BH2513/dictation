@@ -1,0 +1,112 @@
+{
+  "setId": "s320",
+  "videoId": "daily-s320",
+  "title": "Set 320",
+  "madeAt": "2026-11-26",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "미안, 미안! 밤새 폰이 꺼져서 알람이 아예 안 울렸어. 옆집 개가 짖기 시작해서 겨우 깼다니까.",
+      "text": "Sorry, sorry! My phone died overnight, so my alarm never went off, and I only woke up because the neighbor's dog started barking.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my bad! Phone died last night, alarm never rang, and the only thing that woke me up was the neighbor's dog barking."
+        },
+        {
+          "style": "formal",
+          "text": "I do apologize. My phone lost power overnight, so my alarm did not go off, and I only woke up because my neighbor's dog began barking."
+        }
+      ],
+      "note": "**My phone died** 는 폰 배터리가 다 나가서 꺼졌다는 뜻이에요. 알람이 울리는 것은 **went off** 라고 하고, casual 에서는 **alarm never rang** 이라고도 해요.",
+      "situation": "늦잠 자서 늦은 이유 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "응, 다이어트 끝났어. 목요일까지는 버텼는데 누가 회사에 도넛을 사 왔거든. 하나 먹고 나니까 어차피 이번 주는 망했다 싶더라.",
+      "text": "Yeah, the diet's over. I made it to Thursday, but then someone brought donuts to work, and once I had one, I figured the whole week was ruined anyway.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Diet's done. Got to Thursday, then somebody brought donuts into work, I had one, and figured, eh, the week's blown anyway."
+        },
+        {
+          "style": "formal",
+          "text": "Yes, I have ended the diet. I lasted until Thursday, but then a colleague brought donuts to the office, and once I had eaten one, I decided the entire week was already ruined."
+        }
+      ],
+      "note": "**I made it to Thursday** 는 목요일까지 버텼다는 뜻이에요. **I figured** 는 ~라고 생각했다, ~인 것 같았다는 말로 일상에서 아주 자주 써요.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "작동은 잘 되는데, 소리를 끝까지 올리면 왼쪽 스피커가 살짝 지직거려. 그래서 40달러만 받으려고.",
+      "text": "It works fine, but the left speaker crackles a little when you turn it all the way up, so I'm only asking forty bucks for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Works fine, it's just the left speaker crackles a bit when it's cranked all the way up, so I'm only asking forty bucks."
+        },
+        {
+          "style": "formal",
+          "text": "It works properly, but the left speaker crackles slightly at maximum volume, so I am asking only forty dollars for it."
+        }
+      ],
+      "note": "**crackles** 는 지직거리다, 치직 소리가 나다는 뜻이에요. 물건을 팔 때 부르는 값은 **asking forty bucks** 처럼 ask 로 말하고, bucks 는 dollars 의 구어예요.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "아니 글쎄, 팟타이를 시켰는데 온 게 햄버거 두 개랑 밀크셰이크야. 전화해서 따지고 싶은데 솔직히 너무 배고파서 그냥 먹으려고.",
+      "text": "So I ordered pad thai, and what shows up is two burgers and a milkshake. I'd call and complain, but honestly I'm starving, so I'm just gonna eat them.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ordered pad thai, got two burgers and a milkshake instead. Could call and complain, but I'm starving, so I'm just gonna eat 'em."
+        },
+        {
+          "style": "formal",
+          "text": "I ordered pad thai, but what arrived was two hamburgers and a milkshake. I would call to complain, but frankly, I am very hungry, so I intend to simply eat them."
+        }
+      ],
+      "note": "**what shows up is** 는 실제로 온 게 ~였다는 말이에요. **I'd call and complain, but** 은 따지고 싶긴 한데 안 할 거라는 뜻으로, 뒤에 하지 않는 이유가 붙어요.",
+      "situation": "배달 시켰는데 엉뚱한 게 와서 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "퇴근하고 헬스장 가려고 했는데, 딱 나가려는 참에 언니한테 전화가 왔어. 전화 끊고 나니까 거의 9시더라. 그래서 안 갔어. 그렇게 늦게 운동하면 잠이 안 오거든.",
+      "text": "I was gonna go to the gym after work, but my sister called right as I was leaving, and by the time we hung up it was almost nine. So I skipped it, because if I work out that late, I can't fall asleep.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Was gonna hit the gym after work, but my sister called just as I was heading out, and when we got off the phone it was almost nine. Skipped it, 'cause if I work out that late I can't sleep."
+        },
+        {
+          "style": "formal",
+          "text": "I had planned to go to the gym after work, but my sister telephoned just as I was leaving, and by the time our call ended it was nearly nine o'clock. I therefore skipped it, because if I exercise that late, I am unable to fall asleep."
+        }
+      ],
+      "note": "**right as I was leaving** 은 막 나가려던 참에라는 뜻이에요. 전화를 끊다는 **hung up**, 할 일을 건너뛰다는 **skipped it** 이라고 해요.",
+      "situation": "운동 가려다 말게 된 핑계 대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "4번 한국어 첫머리 '그래서'는 앞 말에 이어지는 것처럼 들려 어색함. 영어의 So 는 이야기를 꺼내는 말이라 '아니 글쎄'로 바꿈"
+  ]
+}

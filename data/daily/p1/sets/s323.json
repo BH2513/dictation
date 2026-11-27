@@ -1,0 +1,114 @@
+{
+  "setId": "s323",
+  "videoId": "daily-s323",
+  "title": "Set 323",
+  "madeAt": "2026-11-27",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "저기, 나 저녁 먹고 바로 슬쩍 빠져야 할 것 같아. 베이비시터가 10시까지밖에 못 있거든. 또 늦으면 진짜 그만둔다고 할 것 같아.",
+      "text": "Hey, I'm gonna have to sneak out right after dinner, because the babysitter can only stay till ten, and if we're late again I think she might actually quit on us.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gotta bolt right after dinner, the sitter can only stay till ten, and if we're late again she's probably gonna quit on us."
+        },
+        {
+          "style": "formal",
+          "text": "I am afraid I will need to leave immediately after dinner. The babysitter can only stay until ten o'clock, and if we are late again, I believe she may actually quit."
+        }
+      ],
+      "note": "**sneak out** 은 눈치 안 보이게 슬쩍 빠져나가는 것입니다. **quit on us** 는 우리를 두고 그만둬 버린다는 뜻으로, 곤란하게 만든다는 느낌이 들어 있습니다.",
+      "situation": "저녁 모임에서 먼저 일어날 구실 만들기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "싱크대 고치는 영상 하나만 보려고 했는데, 어쩌다 보니 세 시간 뒤에 웬 아저씨가 녹슨 옛날 칼 닦는 걸 보고 있더라. 싱크대는 아직도 물이 똑똑 새고.",
+      "text": "I only meant to watch one video on how to fix the sink, and somehow three hours later I'm watching some guy clean up a rusty old knife, and the sink's still dripping.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went to watch one sink video, and three hours later I'm watching some guy clean up a rusty knife. Sink's still dripping."
+        },
+        {
+          "style": "formal",
+          "text": "I had intended to watch only one video on how to repair the sink, yet three hours later I found myself watching a man clean up a rusty old knife, and the sink is still dripping."
+        }
+      ],
+      "note": "**somehow** 는 어쩌다 보니, 나도 모르게라는 뜻입니다. **dripping** 은 물이 한 방울씩 똑똑 떨어지는 것입니다.",
+      "situation": "유튜브 보다가 시간 다 날린 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "내가 에어프라이어 얘기 입에 달고 살았던 거 기억나? 딱 두 번 썼는데 조리대 반을 차지해서, 이제는 그냥 그 돈 아낄 걸 그랬나 싶어.",
+      "text": "Remember that air fryer I wouldn't shut up about? I've used it twice, and it takes up half the counter, so now I kind of wish I'd just kept the money.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You know that air fryer I kept going on about? Used it twice, it hogs half the counter, and now I kinda wish I'd just kept the cash."
+        },
+        {
+          "style": "formal",
+          "text": "Do you recall the air fryer I talked about constantly? I have used it only twice, it occupies half of the counter, and I now rather wish I had simply kept the money."
+        }
+      ],
+      "note": "**wouldn't shut up about** 은 어떤 얘기를 입에 달고 살았다는 말입니다. **takes up** 은 자리를 차지한다는 뜻이고, 캐주얼한 **hogs** 는 혼자 다 차지한다는 느낌입니다.",
+      "situation": "새로 산 물건이 후회된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "안녕하세요, 3B호 세입자인데요. 화요일부터 히터가 안 돼요. 사람 보내 주신다고 하신 건 아는데, 아직 아무도 안 왔어요. 언제 오는지 아세요? 밤에 진짜 추워지고 있어서요.",
+      "text": "Hi, it's the tenant in 3B. The heater's been out since Tuesday, and I know you said you'd send someone, but nobody's come by yet. Do you know when they're coming? Because it's getting really cold at night.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Hey, 3B here. Heater's been dead since Tuesday, and I know you said you'd send someone, but nobody's shown up. Any idea when they're coming? It's getting super cold at night."
+        },
+        {
+          "style": "formal",
+          "text": "Hello, this is the tenant in apartment 3B. The heater has not been working since Tuesday, and although you mentioned that you would send someone, no one has arrived yet. Could you tell me when they will be coming? It is becoming very cold at night."
+        }
+      ],
+      "note": "**The heater's been out** 은 히터가 고장 나서 계속 안 된다는 뜻입니다. **come by** 는 잠깐 들른다는 말입니다.",
+      "situation": "집주인이랑 고장 난 것 고쳐 달라고 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "요즘 계란 값 얼마 받는지 봤어? 한 네 가지 사러 들어갔는데 60달러가 나왔어. 비싼 거 산 것도 없는데.",
+      "text": "Did you see what they're charging for eggs now? I went in for like four things and it came to sixty bucks, and I didn't even get anything fancy.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Have you seen egg prices lately? I grabbed like four things and it was sixty bucks, and none of it was fancy!"
+        },
+        {
+          "style": "formal",
+          "text": "Have you noticed what they are charging for eggs now? I went in for approximately four items and the total came to sixty dollars, and I did not purchase anything expensive."
+        }
+      ],
+      "note": "**it came to** 는 합계가 얼마 나왔다고 할 때 씁니다. **bucks** 는 달러를 편하게 부르는 말입니다.",
+      "situation": "물가 오른 거 투덜대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal 의 resign 은 회사에서 사직할 때 쓰는 말이라 베이비시터에게는 어색해서 quit 으로 고침",
+    "2번 alts 가 restore 를 써서 text 의 clean up 과 뜻이 어긋났음. alts 를 clean up 으로 맞추고, casual 은 앞부분이 text 와 덜 겹치게 고침",
+    "3번 formal 의 spoke about so often 은 wouldn't shut up about 의 뜻을 눅였음. talked about constantly 로 고침"
+  ]
+}

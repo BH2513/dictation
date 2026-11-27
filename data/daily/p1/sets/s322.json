@@ -1,0 +1,116 @@
+{
+  "setId": "s322",
+  "videoId": "daily-s322",
+  "title": "Set 322",
+  "madeAt": "2026-11-27",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 다시 전화한다고 했던 거 알아. 근데 주말 내내 폰을 꺼 놨거든. 솔직히 몇 달 만에 제일 좋은 이틀이었어.",
+      "text": "I know I said I'd call you back on Saturday, but I turned my phone off for the whole weekend, and honestly, it was the best two days I've had in months.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So I was gonna call you back Saturday, I know, but my phone was off all weekend, and honestly? Best two days I've had in months."
+        },
+        {
+          "style": "formal",
+          "text": "I realize I said I would return your call on Saturday; however, I turned my phone off for the entire weekend, and frankly, they were the best two days I have had in months."
+        }
+      ],
+      "note": "**call you back** 은 다시 전화하다라는 뜻이고, **for the whole weekend** 는 주말 내내라는 말입니다. **the best two days I've had in months** 는 몇 달 만에 최고의 이틀이었다는 표현입니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "1월에 집 계약이 끝나. 새로 찾은 집이 훨씬 좋긴 한데, 지금보다 엄마 집에서 훨씬 멀어. 엄마가 이제 무슨 일 생기면 내가 빨리 달려가야 하는 상황이 돼 가고 있거든.",
+      "text": "My lease is up in January, and the new place I found is way nicer, but it's a lot farther from my mom, and she's getting to the point where I need to be able to get there fast if something happens.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Lease is up in January. New place is way nicer, but it's way farther from my mom, and she's kinda getting to where I gotta be able to get there fast."
+        },
+        {
+          "style": "formal",
+          "text": "My lease expires in January, and the new apartment I have found is considerably nicer; however, it is much farther from my mother, and she is reaching the point where I need to be able to get to her quickly should something happen."
+        }
+      ],
+      "note": "**My lease is up** 는 임대 계약이 끝난다는 뜻입니다. **getting to the point where** 는 ~할 지경이 돼 가다라는 표현이고, **way nicer** 는 훨씬 좋다는 구어체입니다.",
+      "situation": "이사를 갈까 말까 고민 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "밤 9시 넘어서 우리가 돌아다니기만 하면 아랫집에서 천장을 쾅쾅 쳐. 그래서 이제는 우리 집인데도 무슨 잘못이라도 한 것처럼 까치발로 다녀.",
+      "text": "The people downstairs keep banging on their ceiling every time we walk around after nine, so now we're tiptoeing around our own apartment like we're the ones doing something wrong.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Downstairs bangs on the ceiling anytime we move after nine, so now we tiptoe around our own place like we did something wrong."
+        },
+        {
+          "style": "formal",
+          "text": "Our downstairs neighbors repeatedly knock on their ceiling whenever we walk around after nine o'clock, so we now find ourselves tiptoeing through our own apartment as though we were the ones doing something wrong."
+        }
+      ],
+      "note": "**keep banging on** 은 계속 쾅쾅 두드린다는 뜻입니다. **tiptoeing around** 는 까치발로 살금살금 다닌다는 말이고, **like we're the ones doing something wrong** 은 마치 우리가 잘못한 사람인 것처럼이라는 표현입니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "자, 그 친구 간호사인데 밤에 일하거든. 그러니까 답장이 바로 안 와도 서운해하지 마. 그리고 표정 하나 안 바꾸고 툭툭 던지는 유머 스타일이라, 너를 놀리기 시작하면 너 좋아한다는 뜻이야.",
+      "text": "Okay, so she's a nurse and she works nights, so if she doesn't text you back right away, don't take it personally. And she's got a really dry sense of humor, so if she starts making fun of you, that means she likes you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So heads up, she's a nurse and works nights, so if she doesn't text back right away, it's not about you. And she's got a super dry sense of humor, so if she starts teasing you, it means she likes you."
+        },
+        {
+          "style": "formal",
+          "text": "She is a nurse who works night shifts, so if she does not reply to your message immediately, please do not take it personally. She also has a very dry sense of humor, so if she begins to tease you, it means that she likes you."
+        }
+      ],
+      "note": "**don't take it personally** 는 너 때문이라고 생각하지 말라, 서운해하지 말라는 뜻입니다. **dry sense of humor** 는 무표정하게 툭 던지는 유머 감각이고, **making fun of you** 는 놀린다는 말입니다.",
+      "situation": "친구 소개팅 주선하면서 상대가 어떤 사람인지 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "이번엔 진짜 배워 보겠다고 봄에 기타를 샀거든. 근데 처음 2주 정도 손가락이 너무 아파서 계속 미뤘더니, 지금은 구석에 그냥 세워져 있어서 볼 때마다 찔려.",
+      "text": "I bought a guitar back in the spring because I thought I'd finally learn, but my fingers hurt so much the first couple of weeks that I kept putting it off, and now it's just sitting in the corner making me feel guilty.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Got a guitar in the spring since I figured I'd finally learn, but my fingers hurt so bad the first couple weeks that I kept putting it off, and now it's just sitting in the corner guilt-tripping me."
+        },
+        {
+          "style": "formal",
+          "text": "I purchased a guitar in the spring because I believed I would finally learn to play, but my fingers were so sore during the first few weeks that I kept postponing it, and now it simply sits in the corner, making me feel guilty."
+        }
+      ],
+      "note": "**kept putting it off** 는 계속 미뤘다는 뜻입니다. **the first couple of weeks** 는 처음 2주쯤이고, **making me feel guilty** 는 나를 죄책감 들게 한다, 찔리게 한다는 표현입니다.",
+      "situation": "새 취미를 시작했다가 흐지부지된 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 casual 이 text 와 앞부분이 거의 같아서(So my lease ends in January, and the new place is way nicer...) 더 짧고 축약된 구어로 새로 썼습니다.",
+    "2번 한국어의 꽤 멀어는 a lot farther 의 비교 뜻이 빠져 있어서 지금보다 훨씬 멀어로 고쳤습니다.",
+    "3번 casual 이 text 의 순서만 바꾸고 낱말은 거의 그대로라서 더 짧은 구어로 새로 썼습니다.",
+    "4번 한국어의 유머가 되게 무덤덤한 스타일은 어색해서 dry sense of humor 의 뜻에 맞게 표정 하나 안 바꾸고 툭툭 던지는 유머로 고쳤습니다.",
+    "5번 한국어의 나를 찔리게 만들고 있어는 번역투라서 볼 때마다 찔려로 고쳤습니다."
+  ]
+}

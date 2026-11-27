@@ -1,0 +1,118 @@
+{
+  "setId": "s321",
+  "videoId": "daily-s321",
+  "title": "Set 321",
+  "madeAt": "2026-11-27",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "토요일에 바비큐 하기로 했는데, 오후 내내 비가 퍼붓는다고 해서 일요일로 옮겼거든. 근데 이제 사람들 절반이 못 온대.",
+      "text": "We were supposed to have the barbecue on Saturday, but they're saying it's gonna pour all afternoon, so we moved it to Sunday, and now half the people can't come.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Barbecue was gonna be Saturday, but it's supposed to pour all afternoon, so we pushed it to Sunday. Now half the people can't make it."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to hold the barbecue on Saturday, but heavy rain is forecast for the entire afternoon, so we moved it to Sunday, and now half of the guests are unable to attend."
+        }
+      ],
+      "note": "**be supposed to** 는 원래 ~하기로 되어 있었다는 뜻이에요. **pour** 는 비가 억수같이 쏟아진다는 말이고, casual 의 **make it** 은 모임에 갈 수 있다는 뜻이에요.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "아기 데려온 뒤로 우리 강아지가 좀 이상해. 사나워진 건 아닌데, 이제 침실에 안 들어오려고 해. 전에는 밤마다 거기서 잤던 애라 마음이 좀 안 좋아.",
+      "text": "Our dog's been acting kind of weird since we brought the baby home. He's not mean or anything, he just won't come in the bedroom anymore, and I feel bad because he used to sleep in there every night.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ever since we brought the baby home, the dog's been kinda weird. He's not mean, he just won't come in the bedroom anymore. Makes me feel bad, he used to sleep in there every night."
+        },
+        {
+          "style": "formal",
+          "text": "Our dog has been behaving somewhat strangely since we brought the baby home. He is not aggressive, but he no longer comes into the bedroom, and I feel guilty because he used to sleep there every night."
+        }
+      ],
+      "note": "**or anything** 은 문장 끝에 붙여서 뭐 그런 건 아니고라는 느낌을 줘요. **used to** 는 예전에는 늘 ~했다는 뜻이에요.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "목요일 밤까지 오면 금요일 아침 일찍 사람 몰리기 전에 등산부터 하면 되겠다. 근데 금요일에야 비행기 타고 오는 거면, 더울 때 하느니 차라리 그냥 안 할래.",
+      "text": "If you can get there by Thursday night, we could do the hike first thing Friday before it gets crowded. But if you're not flying in till Friday, I'd rather just skip it than do it in the heat.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Get here by Thursday night and we can hit the trail first thing Friday, before the crowds. If you're not landing till Friday though, I'd rather skip it than hike in that heat."
+        },
+        {
+          "style": "formal",
+          "text": "If you are able to arrive by Thursday evening, we could do the hike early on Friday morning before it becomes crowded. However, if you will not be arriving until Friday, I would prefer to skip it rather than hike in the heat."
+        }
+      ],
+      "note": "**first thing** 은 아침에 제일 먼저, 일어나자마자라는 뜻이에요. **I'd rather A than B** 는 B 하느니 차라리 A 하겠다는 표현이고, casual 의 **hit the trail** 은 등산길에 나선다는 말이에요.",
+      "situation": "친구랑 여행 일정 맞추기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "음식 더 가지러 갈 때마다 다른 사람이 또 언제 결혼하냐고 묻는 거야. 그래서 결국 그냥 부엌에 박혀서 설거지 도왔어.",
+      "text": "Every time I went back for more food, somebody else asked me when I'm getting married, so I finally just stayed in the kitchen and helped with the dishes.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Every single time I went for seconds, someone else asked when I'm getting married. So I gave up, hid in the kitchen, and did dishes."
+        },
+        {
+          "style": "formal",
+          "text": "Each time I returned for more food, another person asked me when I would be getting married, so I eventually ended up staying in the kitchen and helping with the dishes."
+        }
+      ],
+      "note": "**every time** 은 ~할 때마다라는 뜻이에요. casual 의 **seconds** 는 음식을 한 번 더 가져다 먹는 것을 말해요.",
+      "situation": "친척들 모인 자리에서 질문 공세 받은 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "아니야, 차는 이제 괜찮아. 벌써 고쳤어. 그냥 이상한 소리가 난 거였으니까 진짜 돈 안 보내도 돼, 알았지?",
+      "text": "No, the car's fine now, I already got it fixed. It was just a weird noise, so you really don't need to send me any money, okay?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Nah, car's good now, I got it fixed already. It was just a weird noise. Seriously, don't send me any money, okay?"
+        },
+        {
+          "style": "formal",
+          "text": "No, the car is fine now. I have already had it repaired. It was only an unusual noise, so there is truly no need to send me any money, all right?"
+        }
+      ],
+      "note": "**got it fixed** 는 내가 직접 고친 게 아니라 맡겨서 고쳤다는 뜻이에요. **you really don't need to** 는 정말 ~ 안 해도 된다고 상대를 안심시킬 때 써요.",
+      "situation": "부모님 안부 전화에서 잘 지낸다고 둘러대기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 의 half of everybody 는 원어민이 안 쓰는 말이라 half the people 로 고침",
+    "2번 한국어의 절대는 영어 won't ... anymore 보다 세서 뺌",
+    "2번 formal 의 feel terrible 은 원문 feel bad 보다 세서 feel guilty 로 맞춤",
+    "3번 casual 의 honestly 는 뜻 없이 붙인 말버릇이라 뺌",
+    "3번 한국어 더운 데서는 in the heat 의 뜻(더울 때)과 달라 더울 때로 고침",
+    "4번 formal 의 remained in the kitchen 은 어색해서 ended up staying in the kitchen 으로 고침",
+    "5번 note 의 get it fixed 는 문장에 그대로 나오지 않아 got it fixed 로 고침"
+  ]
+}

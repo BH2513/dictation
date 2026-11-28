@@ -1,0 +1,115 @@
+{
+  "setId": "s325",
+  "videoId": "daily-s325",
+  "title": "Set 325",
+  "madeAt": "2026-11-28",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "솔직히 말씀드릴게요. 소파가 사진으로는 정말 좋아 보이는데, 고양이가 팔걸이 한쪽을 긁어 놨어요. 그래서 여기까지 멀리 오시기 전에 지금 말씀드리려고요.",
+      "text": "I'll be honest, the couch looks great in the pictures, but the cat got to one of the arms, so I wanted to tell you now before you drive all the way out here.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Gotta be honest, it looks great in the pics, but the cat got to one arm. Figured I'd say something before you drive out."
+        },
+        {
+          "style": "formal",
+          "text": "To be honest with you, the couch looks very good in the photographs, but our cat damaged one of the arms, so I wanted to let you know now, before you drive all the way out here."
+        }
+      ],
+      "note": "**got to** 는 여기서 동물이나 아이가 손대서 망가뜨려 놨다는 뜻입니다. **all the way out here** 는 이 먼 데까지 일부러 온다는 느낌을 줍니다.",
+      "situation": "중고로 물건 팔면서 상태 솔직히 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "배송 조회에는 월요일부터 배송 중이라고 떠 있어요. 놓칠까 봐 일부러 재택까지 하고 있는데 아직도 안 왔어요. 이젠 회사에 전화해도 아무도 안 받아요.",
+      "text": "The tracking's been saying out for delivery since Monday, and I've been working from home just so I don't miss it, but it still hasn't shown up, and now nobody at the company will even pick up the phone.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "It's said out for delivery since Monday, and I've been working from home so I don't miss it, but it's still not here, and now nobody at the company's even picking up."
+        },
+        {
+          "style": "formal",
+          "text": "The tracking information has shown it as out for delivery since Monday, and I have been working from home so that I would not miss it. However, it still has not arrived, and now no one at the company will even answer the phone."
+        }
+      ],
+      "note": "**out for delivery** 는 배송 조회에 뜨는 배송 중이라는 말입니다. **pick up the phone** 은 전화를 받다이고, **just so I don't miss it** 은 놓치지 않으려고 일부러 그랬다는 뜻입니다.",
+      "situation": "택배가 안 와서 답답한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "자리 찾느라 가게를 한 세 군데는 들어가 봤는데, 겨우 찾은 자리가 하필 화장실 문 바로 옆이었어. 근데 그때쯤엔 너무 지쳐서 그냥 앉았어.",
+      "text": "We went into like three places looking for a table, and when we finally found one, it was right by the bathroom door, but by then we were so tired we just took it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "We tried like three places for a table, and the one we finally got was right by the bathroom door, but we were so wiped by then we just took it."
+        },
+        {
+          "style": "formal",
+          "text": "We went into about three cafés looking for a table, and when we finally found one, it was right beside the restroom door. However, by that point we were so tired that we simply took it."
+        }
+      ],
+      "note": "**like three places** 의 like 는 한 세 군데쯤이라는 어림입니다. **by then** 은 그때쯤엔, casual 의 **wiped** 는 녹초가 됐다는 말입니다.",
+      "situation": "카페에 자리가 없어서 헤맨 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 고양이가 싱크대 밑 수납장 여는 법을 알아냈어. 그래서 아침마다 내려와 보면 바닥에 물건이 잔뜩 널려 있는데, 아직 한 번도 현장을 못 잡았어.",
+      "text": "Our cat figured out how to open the cabinet under the sink, so every morning I come down and there's stuff all over the floor, and I still haven't caught her doing it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "So the cat's figured out the cabinet under the sink, and every morning I come down to stuff all over the floor, and I've still never caught her at it."
+        },
+        {
+          "style": "formal",
+          "text": "Our cat has learned how to open the cabinet under the sink, so every morning when I come downstairs there are items all over the floor, and I have not yet caught her in the act."
+        }
+      ],
+      "note": "**figured out how to** 는 ~하는 법을 스스로 알아냈다는 뜻입니다. **caught her doing it** 은 하는 중에 딱 걸리게 잡다이고, formal 에서는 **in the act** 로 씁니다.",
+      "situation": "키우는 강아지나 고양이 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "학교에서 온 현장학습 이메일 받았어? 금요일까지 돈을 내라는데 애들이 어디 가는지는 아직도 말을 안 해 줬어. 그래서 다른 사람이 먼저 물어보나 좀 기다려 보는 중이야.",
+      "text": "Did you get that email from the school about the field trip? They want us to pay by Friday, but they still haven't said where the kids are going, so I'm kind of waiting to see if anybody else asks first.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "You get the school's email about the field trip? They want the money by Friday but still haven't said where the kids are going, so I'm kinda waiting to see if someone else asks first."
+        },
+        {
+          "style": "formal",
+          "text": "Did you receive the email from the school regarding the field trip? They would like us to pay by Friday, but they have not yet said where the children are going, so I am waiting to see whether anyone else asks first."
+        }
+      ],
+      "note": "**field trip** 은 학교 현장학습입니다. **kind of waiting to see if** 는 ~하는지 좀 지켜보는 중이라는 뜻으로, kind of 가 말을 부드럽게 해 줍니다.",
+      "situation": "애들 학교 얘기 나누기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 casual 이 text 와 거의 같은 문장이라 더 짧고 축약된 구어로 새로 씀",
+    "2번 formal 의 has indicated that it was out for delivery since Monday 는 시제가 맞지 않아 has shown it as out for delivery since Monday 로 고침",
+    "3번 formal 이 상황(카페)과 달리 restaurants 라고 해서 cafés 로 고치고, approximately three 와 simply accepted it 은 사람이 하는 말 같지 않아 about three 와 simply took it 으로 고침",
+    "4번 한국어 아직 한 번도 하는 걸 현장에서 못 잡았어 가 어색해서 아직 한 번도 현장을 못 잡았어 로 고침"
+  ]
+}

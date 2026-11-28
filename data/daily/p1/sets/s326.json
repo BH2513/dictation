@@ -1,0 +1,115 @@
+{
+  "setId": "s326",
+  "videoId": "daily-s326",
+  "title": "Set 326",
+  "madeAt": "2026-11-28",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "일요일엔 옷도 안 갈아입었어. 그냥 하루 종일 현관 앞에 앉아서 책만 읽었는데, 아무도 나한테 뭘 바라지 않을 때 그게 얼마나 좋은지 좀 잊고 살았더라.",
+      "text": "I didn't even get dressed on Sunday. I just sat out on the porch and read all day, and I kind of forgot how good that feels when nobody needs anything from you.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Sunday I never even got dressed. Just sat on the porch reading all day, and I kinda forgot how good it feels when nobody needs anything from you."
+        },
+        {
+          "style": "formal",
+          "text": "On Sunday I did not even get dressed. I simply sat on the porch and read all day, and I had somewhat forgotten how pleasant it is when no one needs anything from you."
+        }
+      ],
+      "note": "**didn't even get dressed** 는 옷도 안 갈아입었다는 뜻으로, 하루 종일 집에서 늘어져 있었다는 느낌을 줍니다. **kind of forgot** 는 좀 잊고 있었다처럼 말을 부드럽게 할 때 씁니다.",
+      "situation": "주말에 아무것도 안 하고 쉰 게 좋았다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "윗집 남자가 거의 매일 밤 자정쯤에 뭔가 무거운 걸 떨어뜨려. 두 번이나 가서 말했는데 자기는 절대 아니래. 그래서 이제는 그냥 누워서 그 소리 나기만 기다려.",
+      "text": "The guy upstairs drops something heavy like every night around midnight, and I've talked to him twice, but he swears he's not doing anything, so now I just lie there waiting for it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Upstairs guy drops something heavy pretty much every night around midnight. I've talked to him twice, but he swears he's not doing anything, so now I just lie there waiting for it."
+        },
+        {
+          "style": "formal",
+          "text": "The man who lives upstairs drops something heavy nearly every night at around midnight. I have spoken with him twice, but he insists he is not doing anything, so now I simply lie there waiting for it."
+        }
+      ],
+      "note": "**swears** 는 맹세한다는 뜻보다 펄쩍 뛰며 아니라고 우긴다는 느낌으로 많이 씁니다. **like every night** 의 like 는 거의, 한 정도로 대충 말할 때 붙입니다.",
+      "situation": "층간소음 때문에 힘들다고 하소연하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "이번 주말에 바닷가로 드라이브 가려고 했는데, 큰 폭풍이 온대서 아마 그냥 다음 달에 갈 것 같아. 뭐, 토요일 아침까지 날이 개면 갈 수도 있는데 별로 기대는 안 해.",
+      "text": "We were gonna drive out to the coast this weekend, but there's a big storm coming in, so we're probably just gonna go next month. I mean, if it clears up by Saturday morning we might still go, but I'm not counting on it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Coast trip was the plan this weekend, but a big storm's rolling in, so we'll prob just go next month. I mean, if it clears up by Saturday morning, maybe, but I'm not counting on it."
+        },
+        {
+          "style": "formal",
+          "text": "We had planned to drive to the coast this weekend, but a large storm is approaching, so we will most likely go next month instead. If the weather clears by Saturday morning we may still go, but I am not counting on it."
+        }
+      ],
+      "note": "**clears up** 는 날이 갠다는 뜻입니다. **I'm not counting on it** 은 그렇게 될 거라고 기대하지 않는다, 별로 믿지 않는다는 말입니다.",
+      "situation": "날씨 때문에 계획 바꾼 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "이번엔 다이어트 2주 버텼거든. 근데 언니 생일이라 하루만 봐주자 했다가 그냥 그 뒤로 다시는 못 돌아갔어.",
+      "text": "I lasted two weeks on my diet this time, but then I let myself have one night off for my sister's birthday, and I just never got back on it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Made it two weeks on my diet this time, then gave myself one night off for my sister's birthday and just never got back on it."
+        },
+        {
+          "style": "formal",
+          "text": "I managed to stay on my diet for two weeks this time, but then I allowed myself one night off for my sister's birthday, and I never returned to it."
+        }
+      ],
+      "note": "**lasted two weeks** 는 2주 버텼다는 뜻입니다. **one night off** 는 그날 저녁 하루만 쉬어 가는 것, **got back on it** 은 다이어트 같은 것을 다시 시작한다는 말입니다.",
+      "situation": "다이어트가 또 실패한 얘기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "있잖아, 회사에 어떤 사람이 회의 때마다 내가 한 걸 자꾸 자기가 한 것처럼 가져가. 뭐라고 하고 싶은데, 그 사람이 우리 상사랑 엄청 친해서 말해 봤자 의미가 있나 모르겠어. 내가 너무 예민한 건가?",
+      "text": "So this guy at work keeps taking credit for my stuff in meetings, and I'd say something, but he's really tight with my boss, so I don't know if it's worth it. Am I overreacting?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Okay, there's this guy at work who keeps taking credit for my stuff in meetings. I'd say something, but he's super tight with my boss, so I dunno if it's worth it. Am I overreacting?"
+        },
+        {
+          "style": "formal",
+          "text": "A colleague of mine keeps taking credit for my work in meetings. I would raise the issue, but he is very close to my manager, so I am not sure it is worth it. Do you think I am overreacting?"
+        }
+      ],
+      "note": "**taking credit for** 는 남이 한 일을 자기 공으로 가로챈다는 뜻입니다. **tight with** 는 누구와 아주 친하다는 말이고, **Am I overreacting?** 은 내가 과민반응하는 건가 하고 물을 때 씁니다.",
+      "situation": "회사 사람 때문에 짜증난 걸 친구한테 털어놓기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "2번 한국어: swears 의 펄쩍 뛰며 우기는 느낌이 빠져 있어 '자기는 절대 아니래' 로 고침",
+    "4번 note: one night off 를 '하루 쉬는 날' 이 아니라 그날 저녁 하루만 봐준다는 뜻으로 고침",
+    "5번 한국어: '그럴 만한 가치가 있나' 가 번역투라 '말해 봤자 의미가 있나' 로, '어떤 남자' 를 '어떤 사람' 으로 고침",
+    "5번 formal: close with 보다 formal 에서 자연스러운 close to 로 고침"
+  ]
+}

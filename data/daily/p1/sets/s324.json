@@ -1,0 +1,116 @@
+{
+  "setId": "s324",
+  "videoId": "daily-s324",
+  "title": "Set 324",
+  "madeAt": "2026-11-28",
+  "source": "daily",
+  "sentences": [
+    {
+      "i": 0,
+      "ko": "통화만 하면 화면이 까맣게 꺼지고 다시 안 켜져서, 자꾸 얼굴로 전화를 끊어 버려. 폰 케이스 때문인 줄 알았는데, 케이스를 빼도 계속 그래.",
+      "text": "Every time I'm on a call, the screen goes black and won't come back on, so I keep hanging up on people with my face. I thought it was my phone case, but I took it off and it's still doing it.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Whenever I'm on the phone my screen just goes black and stays off, so I keep hanging up on people with my cheek. Figured it was the case, but nope, took it off and it's still happening."
+        },
+        {
+          "style": "formal",
+          "text": "Whenever I am on a call, the screen turns black and does not come back on, so I keep accidentally hanging up on people with my face. I assumed the phone case was the cause, but I removed it and the problem persists."
+        }
+      ],
+      "note": "**hang up on people** 은 통화하던 상대의 전화를 끊어 버린다는 말입니다. 화면이 꺼질 때는 **goes black** 이라고 하고, casual 의 **Figured** 는 I figured 를 줄인 말로 ~인 줄 알았다는 뜻입니다.",
+      "situation": "폰이 자꾸 이상하다고 설명하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 1,
+      "ko": "있잖아, 남동생이 또 돈을 빌려 달래. 안 된다고 하면 몇 달은 나한테 서운해할 거 뻔해. 근데 지난번에 빌려준 돈은 다시는 구경도 못 했거든. 모르겠다. 너라면 어떻게 할 거야?",
+      "text": "So my brother wants to borrow money again, and I know if I say no he's gonna be upset with me for months. But the last time I lent him money, I never saw it again. I don't know. What would you do?",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Ugh, my brother's asking to borrow money again, and if I say no he'll be mad at me for months. But last time I lent him some, I never got it back. I dunno. What would you do?"
+        },
+        {
+          "style": "formal",
+          "text": "My brother would like to borrow money again, and I know that if I refuse, he will be upset with me for months. However, the last time I lent him money, it was never repaid. I am not sure what to do. What would you do in my position?"
+        }
+      ],
+      "note": "**I never saw it again** 은 빌려준 돈을 다시는 구경도 못 했다는 말입니다. **be upset with me** 는 나한테 화나 있다, 서운해한다는 뜻이고, 몇 달씩 갈 때는 for months 를 붙입니다.",
+      "situation": "친구한테 고민 상담하면서 결론은 못 내리기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 2,
+      "ko": "그래, 네가 거기를 왜 그렇게 좋아하는지 완전 알겠어. 근데 현금만 받는다는 말은 안 해 줬잖아. 그래서 다들 나 기다리는 동안 저 아래 ATM까지 뛰어갔다 와야 했어.",
+      "text": "Okay, I totally get why you love that place. But you didn't tell me it was cash only, so I had to run to an ATM down the street while everybody waited for me.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Yeah, I get it now, that place is great. But you never said it was cash only, so I had to run down the street to an ATM with everyone waiting on me."
+        },
+        {
+          "style": "formal",
+          "text": "I completely understand why you are so fond of that restaurant. However, you did not mention that it only accepted cash, so I had to go to an ATM down the street while everyone waited for me."
+        }
+      ],
+      "note": "**I totally get why** 는 왜 그런지 완전 이해된다는 말입니다. 가게가 현금만 받을 때는 **cash only** 라고 합니다.",
+      "situation": "친구가 추천한 식당 다녀와서 후기 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 3,
+      "ko": "우리 상사는 연휴만 지나면 나아질 거라고 계속 그러는데, 작년에도 똑같은 소리 했거든. 다른 데 정해 둔 데가 있었으면 아마 벌써 나갔을 거야.",
+      "text": "My boss keeps saying things are gonna get better after the holidays, but he said that last year too. If I had something else lined up, I think I'd already be gone.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Apparently it's all gonna get better after the holidays. That's what my boss said last year too. If I had another job lined up, I'd be outta here already."
+        },
+        {
+          "style": "formal",
+          "text": "My manager continues to say that things will improve after the holidays, but he said the same thing last year. If I had another position arranged, I believe I would have already left."
+        }
+      ],
+      "note": "**lined up** 은 다음 일자리처럼 미리 정해 둔 것이 있다는 말입니다. **I'd already be gone** 은 벌써 그만두고 나갔을 거라는 뜻입니다.",
+      "situation": "회사를 그만둘까 고민된다고 말하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    },
+    {
+      "i": 4,
+      "ko": "토요일에 차 타고 할아버지 뵈러 갔어. 처음에는 내가 누군지 잘 못 알아보셨는데, 옛날 사진을 좀 보여 드렸더니 나중에는 내가 한 번도 못 들어 본 얘기를 해 주시더라.",
+      "text": "We drove up to see my grandfather on Saturday. He didn't really know who I was at first, but then I showed him some old pictures, and by the end he was telling me stories I'd never heard before.",
+      "alts": [
+        {
+          "style": "casual",
+          "text": "Went up to see my grandpa Saturday. He didn't recognize me at first, but I showed him some old photos and by the end he was telling me stories I'd never heard."
+        },
+        {
+          "style": "formal",
+          "text": "We drove up to visit my grandfather on Saturday. At first he did not quite recognize me, but after I showed him some old photographs, by the end he was sharing stories I had never heard before."
+        }
+      ],
+      "note": "**drove up to see** 는 차를 몰고 누구를 보러 갔다는 말입니다. **by the end** 는 끝 무렵에는, 나중에는 이라는 뜻입니다.",
+      "situation": "친구한테 주말에 뭐 했는지 얘기하기",
+      "start": null,
+      "end": null,
+      "recording": null
+    }
+  ],
+  "reviewed": [
+    "1번 formal: the problem continues 는 어색해서 the problem persists 로 고침",
+    "3번 casual: I totally get/see why 로 시작이 text 와 겹쳐서 더 짧은 구어로 새로 씀",
+    "4번 casual: My boss keeps 로 시작이 text 와 겹치고, Honestly 는 뜻 없이 붙인 말버릇이라 빼고 새로 씀",
+    "5번 casual: kinda didn't know 는 원어민이 잘 안 쓰는 어순이라 He didn't recognize me at first 로 고침",
+    "5번 formal: he was telling me stories by the end that I had never heard 는 어순이 꼬여 읽기 힘들어서 by the end 를 앞으로 옮김"
+  ]
+}
